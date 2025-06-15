@@ -4,26 +4,287 @@
 # -> e.g. {$page.identifier.navigation.mainRoot}
 # Usage in Fluid (needs dataProcessing, see "Page.typoscript"):
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
+categories:
+  Rlt3sitepackage:
+    label: 'ResterLand Site Package'
+  Rlt3sitepackage.themes:
+    description: 'Choose your preferred theme - This will chang the entire Layout'
+    label: 'Themes'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.templates:
+    label: 'Templates'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.meta:
+    label: 'Meta'
+    description: 'Global page meta settings'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.header:
+    label: 'Header'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.header.logo:
+    label: 'Logo'
+    parent: Rlt3sitepackage.header
+  Rlt3sitepackage.header.navigation:
+    label: 'Navigation'
+    parent: Rlt3sitepackage.header
+  Rlt3sitepackage.footer:
+    label: 'Footer'
+    description: 'Footer settings and configuration'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.footer.navigation:
+    label: 'Navigation'
+    parent: Rlt3sitepackage.footer
+  Rlt3sitepackage.footer.copyright:
+    label: 'Copyright'
+    parent: Rlt3sitepackage.footer
+  Rlt3sitepackage.footer.socialmedia:
+    label: 'Social Media'
+    parent: Rlt3sitepackage.footer
+  Rlt3sitepackage.footer.socialmedia.subscriptions:
+    label: 'Subscriptions'
+    parent: Rlt3sitepackage.footer.socialmedia
+  Rlt3sitepackage.config:
+    label: 'Configuration'
+    description: 'Global system configuration settings'
+    parent: Rlt3sitepackage
+
 settings:
-  config.headerComment:
-    label: LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:settings.config.headerComment
+  page.themes.theme:
+    label: 'Choose a theme'
+    category: Rlt3sitepackage.themes
+    type: string
+    default: 'light'
+    enum:
+      light: 'Light theme'
+      dark: 'Dark theme'
+      resterland: 'ResterLand theme'
+
+  page.templates.template_path:
+    label: 'Page template path'
+    category: Rlt3sitepackage.templates
+    description: 'Path to the templates of the ResterLand Site Package.'
+    type: string
+    default: 'EXT:rlt3_site_package/Resources/Private/Templates/'
+
+  ### Meta data settings
+  # Favicon
+  page.meta.favicon:
+    label: 'Favicon'
+    description: 'This icon is displayed in search engine results and in the browser tab'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'EXT:rlt3_site_package/Resources/Public/Icons/favicon.ico'
+
+  page.meta.viewport:
+    label: 'Responsive design'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'width=device-width, initial-scale=1'
+
+  page.meta.robots:
+    label: 'robots'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'index,follow'
+
+  page.meta.apple-mobile-web-app-capable:
+    label: 'apple-mobile-web-app-capable'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'no'
+
+  page.meta.compatible:
+    label: 'compatible'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'IE=edge'
+
+  page.meta.google:
+    label: 'google'
+    category: Rlt3sitepackage.meta
+    type: string
+    default: 'notranslate'
+
+  page.meta.google-site-verification:
+    label: 'google-site-verification'
+    category: Rlt3sitepackage.meta
     type: string
     default: ''
 
-  ### Page settings/variables
-  page.identifier.navigation.mainRoot:
-    label: 'Root page UID of main navigation'
-    type: int
-    default: 1
-  page.identifier.navigation.footerRoot:
-    label: 'Root page UID of footer navigation'
-    type: int
-    default: 123
-  page.identifier.storage.newsRecords:
-    label: 'Storage page UID for news records'
-    type: int
-    default: 42
-  page.meta.viewport:
-    label: 'Viewport meta tag'
+  ### Header
+  # Logo
+  page.header.logo.file:
+    label: 'Logo File'
+    category: Rlt3sitepackage.header.logo
+    description: 'Path to the logo of Rlt3 Site Package.'
     type: string
-    default: 'width=device-width, initial-scale=1.0'
+    default: 'EXT:rlt3_site_package/Resources/Public/Images/Logos/Default/Logo.svg'
+
+  page.header.logo.alt:
+    label: 'Logo Alt text'
+    category: Rlt3sitepackage.header.logo
+    description: 'Alternative text of the logo for the visually impaired'
+    type: string
+    default: 'Logo'
+
+  page.header.logo.width:
+    label: 'Logo Width'
+    category: Rlt3sitepackage.header.logo
+    type: number
+    default: 64
+
+  page.header.logo.height:
+    label: 'Logo Height'
+    category: Rlt3sitepackage.header.logo
+    type: number
+    default: 0
+
+  # Header Language Navigation
+  page.header.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: Rlt3sitepackage.header.navigation
+    type: bool
+    default: true
+
+  page.header.languagenavigation.languageValue:
+    label: 'Language Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: Rlt3sitepackage.header.navigation
+    type: string
+    default: 'auto'
+
+  ### Footer settings
+  page.footer.navigation.enable:
+    label: 'Enable Footer Navigation'
+    category: Rlt3sitepackage.footer.navigation
+    type: bool
+    default: true
+
+  page.footer.navigation.menuRoot:
+    label: 'Footer menu root uid'
+    description: 'The subpages of this page are displayed in the footer'
+    category: Rlt3sitepackage.footer.navigation
+    type: int
+    default: 6
+
+  page.footer.navigation.includeNotInMenu:
+    label: 'Include items not in menu'
+    category: Rlt3sitepackage.footer.navigation
+    type: bool
+    default: false
+
+  # Footer Language Navigation
+  page.footer.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: Rlt3sitepackage.footer.navigation
+    type: bool
+    default: true
+
+  page.footer.languagenavigation.languageValue:
+    label: ' Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: Rlt3sitepackage.footer.navigation
+    type: string
+    default: 'auto'
+
+  # Copyright settings
+  page.footer.copyright.enable:
+    label: 'Enable Copyright'
+    category: Rlt3sitepackage.footer.copyright
+    type: bool
+    default: true
+
+  # Social Media settings
+  page.footer.socialmedia.enable:
+    label: 'Enable Social Media'
+    category: Rlt3sitepackage.footer.socialmedia
+    type: bool
+    default: true
+
+  page.footer.socialmedia.subscriptions.github.label:
+    label: 'GitHub Label'
+    category: Rlt3sitepackage.footer.socialmedia.subscriptions
+    type: string
+    default: 'GitHub'
+
+  page.footer.socialmedia.channels.github.url:
+    label: 'GitHub Url'
+    description: 'Insert the full account url'
+    category: Rlt3sitepackage.footer.socialmedia.subscriptions
+    type: string
+    default: ''
+
+  page.footer.socialmedia.channels.linkedin.label:
+    label: 'LinkedIn Label'
+    category: Rlt3sitepackage.footer.socialmedia.subscriptions
+    type: string
+    default: 'LinkedIn'
+
+  page.footer.socialmedia.channels.linkedin.url:
+    label: 'LinkedIn Url'
+    description: 'Insert the full account url'
+    category: Rlt3sitepackage.footer.socialmedia.subscriptions
+    type: string
+    default: ''
+
+  ### Global configuration settings
+  config.no_cache:
+    label: 'No Cache'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: false
+
+  config.removeDefaultJS:
+    label: 'Remove default JavaScript'
+    category: Rlt3sitepackage.config
+    type: string
+    enum:
+      '0': 'Do not remove'
+      '1': 'Remove'
+      'external': 'Move to external file'
+    default: '0'
+
+  config.compressJs:
+    label: 'Compress JavaScript'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+
+  config.compressCss:
+    label: 'Compress CSS'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+
+  config.concatenateJs:
+    label: 'Concatenate JavaScript'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+
+  config.concatenateCss:
+    label: 'Concatenate CSS'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+
+  config.admPanel:
+    label: 'Admin Panel'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+
+  config.headerComment:
+    label: 'Header Comment'
+    category: Rlt3sitepackage.config
+    type: string
+    default: 'Made from scratch according to the sophisticated TYPO3 documentations found on https://docs.typo3
+    .org/m/typo3/tutorial-sitepackage/main/en-us/Index.html - '
+
+  config.sendCacheHeaders:
+    label: 'Send cache headers'
+    description: 'Allow appropriate caching by transparent proxies and browser clients'
+    category: Rlt3sitepackage.config
+    type: bool
+    default: true
+

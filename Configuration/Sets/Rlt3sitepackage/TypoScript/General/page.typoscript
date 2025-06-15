@@ -1,0 +1,61 @@
+page = PAGE
+page {
+    typeNum = 0
+    bodyTagAdd = data-bs-theme="{$page.themes.theme}"
+    shortcutIcon = {$page.meta.favicon}
+
+    headerData {
+        // Flip ahead browsing for IE10/11
+        // http://msdn.microsoft.com/en-us/library/ie/jj883726(v=vs.85).aspx
+        10 = HMENU
+        10 {
+            special = browse
+            special {
+                items = prev|next
+            }
+            1 = TMENU
+            1.NO {
+                allWrap = <link rel="prev" href="|"> |*| <link rel="next" href="|">
+                doNotLinkIt = 1
+                stdWrap {
+                    typolink {
+                        parameter.data = field:uid
+                        returnLast = url
+                    }
+                }
+            }
+        }
+    }
+
+    10 = PAGEVIEW
+    10 {
+        paths {
+            0 = EXT:rlt3sitepackage/Resources/Private/PageView/
+            10 = {$page.templates.template_path}
+        }
+        variables {
+            parentPageTitle = TEXT
+            parentPageTitle.data = levelfield:-1:title
+        }
+
+        dataProcessing {
+            # makes content elements available as {content} in Fluid template
+            10 = page-content
+        }
+    }
+
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        # Google
+        google = {$page.meta.google}
+        google-site-verification = {$page.meta.google-site-verification}
+    }
+}

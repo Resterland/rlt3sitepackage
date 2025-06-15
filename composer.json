@@ -1,7 +1,7 @@
 {
     "name": "resterland/rlt3sitepackage",
     "type": "typo3-cms-extension",
-    "description": "Sitepackage Starter Kit for TYPO3 CMS. Contains website templates, assets, configuration and custom code for my TYPO3 projects.",
+    "description": "TYPO3 CMS Sitepackage Starter Kit. Contains website templates, assets, configuration and custom code for my TYPO3 projects.",
     "license": ["GPL-2.0-or-later"],
     "homepage": "https://resterland.org",
     "authors": [
@@ -21,7 +21,9 @@
         "tsconfig"
     ],
     "require": {
-        "typo3/cms-core": "^13.4"
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
     },
     "suggest": {
     },

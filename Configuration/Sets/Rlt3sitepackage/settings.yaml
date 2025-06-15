@@ -14,30 +14,18 @@ favicons:
 
 ### EXT:fluid_styled_content
 styles:
+  templates:
+    layoutRootPath: EXT:rlt3sitepackage/Resources/Private/ContentElements/Layouts
+    partialRootPath: EXT:rlt3sitepackage/Resources/Private/ContentElements/Partials
+    templateRootPath: EXT:rlt3sitepackage/Resources/Private/ContentElements/Templates
   content:
     defaultHeaderType: 2
     textmedia:
-      maxW: 900
-      maxWInText: 500
+      maxW: 1200
+      maxWInText: 600
       linkWrap:
         width: 1200m
         height: 900m
-        lightboxEnabled: 1
+        lightboxEnabled: true
         lightboxCssClass: 'lightbox'
         lightboxRelAttribute: 'lightbox'
-  templates:
-    templateRootPath: 'EXT:rlt3sitepackage/Resources/Private/Templates/ContentElements/'
-    partialRootPath: 'EXT:rlt3sitepackage/Resources/Private/Partials/ContentElements/'
-    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Layouts/ContentElements/'
-
-config:
-  headerComment: 'Made with ♥ and TYPO3'
-
-### Page settings/variables
-page:
-  identifier:
-    navigation:
-      mainRoot: 1
-      footerRoot: 123
-    storage:
-      newsRecords: 42

@@ -1,0 +1,16 @@
+page {
+    10 {
+        dataProcessing {
+            40 = language-menu
+            40 {
+                as = languagemenu
+                languages = {$page.header.languagenavigation.languageValue}
+            }
+            45 = language-menu
+            45 {
+                as = languagemenu
+                languages = {$page.footer.languagenavigation.languageValue}
+            }
+        }
+    }
+}

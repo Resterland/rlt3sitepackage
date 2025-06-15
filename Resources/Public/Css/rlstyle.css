@@ -1,0 +1,61 @@
+:root {
+    --rl-body-color: #a86a24;
+    --rl-font-color: #edd886;
+    --rl-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-font-size: normal 1em;
+    --rl-footer-background-color: rgb(165, 42, 42);
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
+    background-size: 3px;
+}
+
+/* GLOBAL layout settings */
+body {
+    background: var(--rl-body-color);
+    margin: 0 auto;
+    font-size: var(--rl-font-size);
+    font-family: var(--rl-font-family), sans-serif;
+    color: var(--rl-font-color);
+}
+
+.navbar-brand img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--rl-body-color),var(--bs-bg-opacity)) !important;
+}
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex:
+            0 0 auto;
+        width: auto;
+    }
+}
+/*header,*/
+/*footer {*/
+/*    padding: 0.2em;*/
+/*    !* background-color: #502a2b; *!*/
+/*    background-color: var(--rl-footer-background-color);*/
+/*}*/
+
+/*.nav {*/
+/*    --rl-nav-link-color: var(--rl-body-color);*/
+/*    --rl-nav-link-hover-color: var(--rl-dark);*/
+/*}*/
+
+/*.navbar-expand-lg .navbar-nav .nav-link.active {*/
+/*    border-bottom: 2px solid var(--rl-primary);*/
+/*}*/
+
+/*.navbar-expand-lg .navbar-nav .nav-link:hover {*/
+/*    border-bottom: 2px solid var(--rl-primary-bg-subtle);*/
+/*}*/
+
