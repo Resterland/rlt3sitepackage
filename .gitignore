@@ -1,0 +1,124 @@
+########################
+# TYPO3 CMS
+# ResterLand Projects
+# global ignore file
+########################
+#
+# Don't ignore .rej and .orig as we want to see/clean files after conflict resolution.
+#
+# For local exclude patterns please edit .git/info/exclude.
+#
+########################
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+*.[oa]
+*~
+#
+# Ignore temporary files (left by editors and OS)*.bak
+*.swp
+.DS_Store
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+#
+# Ignore by common IDEs used directories/files
+/nbproject
+/.idea
+
+#
+# Temporary files and folders
+.cache
+.php_cs.cache
+.sass-cache
+.session
+phantomjsdriver.log
+
+#
+# Ignore build stuff
+/Build/*
+
+#
+# TypeScript stuff
+.baseDir.ts
+.tscache
+
+#
+# Ignore composer stuff
+/bin/*
+
+#
+# Ignore common TYPO3 CMS files/directories
+/typo3temp/*
+/typo3conf/*
+/fileadmin/*
+/uploads/*
+
+#
+# root .htaccess file
+/.htaccess
+/index.php
+/typo3/
+/FIRST_INSTALL
+/vcs.xml
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+/vendor
+/var
+!/var/log/.gitkeep
+!/var/cache/.gitkeep
+!/var/storage/.gitkeep
+/.env
+/.installed
+/.php_cs.cache
+/.remotes
+
+/config
+
+/public
+/public/_assets
+/public/typo3conf/ext/*
+!/public/typo3conf/ext/
+
+/Resources/Private/Backup/
+/Tests/
+
+*.bak
+*.idea
+*.project
+*GENERATED*
+*NOT_VERSIONED*
+._*
+.DS_Store?
+.env
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
