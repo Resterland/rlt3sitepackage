@@ -64,7 +64,7 @@ settings:
     category: Rlt3sitepackage.templates
     description: 'Path to the templates of the ResterLand Site Package.'
     type: string
-    default: 'EXT:rlt3_site_package/Resources/Private/Templates/'
+    default: 'EXT:rlt3sitepackage/Resources/Private/Templates/'
 
   ### Meta data settings
   # Favicon
@@ -73,7 +73,7 @@ settings:
     description: 'This icon is displayed in search engine results and in the browser tab'
     category: Rlt3sitepackage.meta
     type: string
-    default: 'EXT:rlt3_site_package/Resources/Public/Icons/favicon.ico'
+    default: 'EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico'
 
   page.meta.viewport:
     label: 'Responsive design'
@@ -118,7 +118,7 @@ settings:
     category: Rlt3sitepackage.header.logo
     description: 'Path to the logo of Rlt3 Site Package.'
     type: string
-    default: 'EXT:rlt3_site_package/Resources/Public/Images/Logos/Default/Logo.svg'
+    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
 
   page.header.logo.alt:
     label: 'Logo Alt text'
