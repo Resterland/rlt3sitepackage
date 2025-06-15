@@ -1,0 +1,21 @@
+//
+// Default values for new records
+// ------------------------------------------
+
+//
+// Content elements
+//
+TCAdefaults.tt_content {
+    header_layout = 2
+#    CType = textmedia
+#    imageorient = 17
+}
+
+
+//
+// File references
+//
+TCAdefaults {
+    // Show images in preview (i.e. EXT:news):
+    sys_file_reference.showinpreview = 1
+}

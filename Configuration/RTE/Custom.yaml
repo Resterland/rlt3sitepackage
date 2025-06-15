@@ -1,0 +1,84 @@
+# Load default processing options
+imports:
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+
+# Add configuration for the editor
+# For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
+editor:
+  config:
+    # Size of editing area:
+    height: 500
+
+    # Additional stylesheet for the editor:
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:rlt3sitepackage/Resources/Public/Css/rte_ckeditor.css"]
+
+    toolbar:
+      items:
+        - style
+        - heading
+        # grouping separator
+        - '|'
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - '|'
+        - findAndReplace
+        - link
+        - SoftHyphen
+        - '|'
+        - removeFormat
+        - undo
+        - redo
+        - '|'
+        - insertTable
+        - '|'
+        - specialCharacters
+        - horizontalLine
+        - sourceEditing
+
+    heading:
+      options:
+        - { model: 'paragraph', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.p' }
+        - { model: 'heading1', view: 'h1', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.h1' }
+        - { model: 'heading2', view: 'h2', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.h2' }
+        - { model: 'heading3', view: 'h3', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.h3' }
+        - { model: 'heading4', view: 'h4', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.h4' }
+        - { model: 'formatted', view: 'pre', title: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:element.pre' }
+
+    style:
+      definitions:
+        - { name: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:styles.p.intro', element: 'p', classes: ['intro'] }
+        - { name: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:styles.p.small', element: 'p', classes: ['text-small'] }
+        - { name: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:styles.list.checkmark', element: 'ul', classes: ['list--checkmark'] }
+        - { name: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:styles.table.striped', element: 'table', classes: ['ce-table', 'ce-table-striped'] }
+        - { name: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:styles.table.bordered', element: 'table', classes: ['ce-table', 'ce-table-bordered'] }
+
+    alignment:
+      options:
+        - { name: 'left', className: 'text-left' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-right' }
+        - { name: 'justify', className: 'text-justify' }
+
+    table:
+      defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
+
+
+# Additional processing of tags and attributes
+processing:
+  allowTags:
+    - wbr

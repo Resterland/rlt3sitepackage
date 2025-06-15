@@ -1,0 +1,92 @@
+//
+// Main PAGE object
+// ------------------------------------------
+page = PAGE
+page {
+    typeNum = 0
+
+    meta {
+        viewport = {$page.meta.viewport}
+        description.field = description
+        og:site_name = TEXT
+        og:site_name.data = siteLanguage:websiteTitle // site:websiteTitle
+    }
+
+    includeCSS {
+        style = EXT:rlt3sitepackage/Resources/Public/Css/style.min.css
+        style.media = all
+    }
+
+    // include JavaScript before </body>:
+    includeJSFooterlibs {
+
+    }
+
+    10 = FLUIDTEMPLATE
+    10 {
+        // Using the following, page template names will be determined automatically.
+        // The "BackendLayouts" keys will be transformed to UpperCamelCase.
+        //
+        // Example: 2_columns_66_33 -> 2Columns6633.html
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+
+            // Default template:
+            ifEmpty = 1Column
+        }
+
+        templateRootPaths {
+            10 = EXT:rlt3sitepackage/Resources/Private/Templates/Page/
+        }
+
+        layoutRootPaths {
+            10 = EXT:rlt3sitepackage/Resources/Private/Layouts/Page/
+        }
+
+        partialRootPaths {
+            10 = EXT:rlt3sitepackage/Resources/Private/Partials/Page/
+        }
+
+        variables {
+
+        }
+
+        dataProcessing {
+            // Site configuration/settings:
+            10 = site
+            10 {
+                as = site
+            }
+
+            // Main navigation:
+            20 = menu
+            20 {
+                special = directory
+                special.value = {$page.identifier.navigation.mainRoot}
+                levels = 3
+                as = mainNavigation
+            }
+
+            // Meta navigation in footer:
+            /*
+            30 = menu
+            30 {
+                special = directory
+                special.value = {$page.identifier.navigation.footerRoot}
+                as = metaNavigation
+            }
+            */
+        }
+    }
+}

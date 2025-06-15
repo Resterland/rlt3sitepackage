@@ -1,0 +1,18 @@
+//
+// TYPO3 Core Engine (Data Handler)
+// ------------------------------------------
+
+//
+// Page permissions
+//
+TCEMAIN {
+    permissions {
+        // assign a BE user group's UID to all new and copied pages:
+        groupid = 1
+
+        // set permissions for owner-user, owner-group and everybody:
+        user = show,editcontent,edit,delete,new
+        group = show,editcontent,edit,new
+        everybody =
+    }
+}

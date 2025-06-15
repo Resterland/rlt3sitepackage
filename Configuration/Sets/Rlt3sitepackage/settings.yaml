@@ -1,0 +1,43 @@
+### Subsets
+
+### Favicon and web app manifest provider
+favicons:
+  full_name: 'My fancy website'
+  short_name: 'My website'
+  theme_color: '#ff8800'
+  favicon_path: 'EXT:rlt3sitepackage/Resources/Public/Icons/Favicons/'
+  favicon_svg: 'favicon.svg'
+  favicon_png: 'favicon-32x32.png'
+  apple_touch_icon: 'apple-touch-icon.png'
+  android_192: 'android-chrome-192x192.png'
+  android_512: 'android-chrome-512x512.png'
+
+### EXT:fluid_styled_content
+styles:
+  content:
+    defaultHeaderType: 2
+    textmedia:
+      maxW: 900
+      maxWInText: 500
+      linkWrap:
+        width: 1200m
+        height: 900m
+        lightboxEnabled: 1
+        lightboxCssClass: 'lightbox'
+        lightboxRelAttribute: 'lightbox'
+  templates:
+    templateRootPath: 'EXT:rlt3sitepackage/Resources/Private/Templates/ContentElements/'
+    partialRootPath: 'EXT:rlt3sitepackage/Resources/Private/Partials/ContentElements/'
+    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Layouts/ContentElements/'
+
+config:
+  headerComment: 'Made with ♥ and TYPO3'
+
+### Page settings/variables
+page:
+  identifier:
+    navigation:
+      mainRoot: 1
+      footerRoot: 123
+    storage:
+      newsRecords: 42

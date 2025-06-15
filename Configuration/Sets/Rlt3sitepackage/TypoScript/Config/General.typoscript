@@ -1,0 +1,14 @@
+//
+// General configuration
+// ------------------------------------------
+config {
+    headerComment = {$config.headerComment}
+    headerComment.if.isTrue = {$config.headerComment}
+
+    forceAbsoluteUrls = 1
+    linkVars = L(0-1)
+
+    // Deactivate all HTML comments from TYPO3, e.g.:
+    // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
+    disablePrefixComment = 1
+}

@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #CKEDITOR
+   ========================================================================== */
+/*
+ * Add your own styles for the RTE CKEditor.
+ *
+ * Any declarations set here are only for display in the editor, not in the frontend.
+ *
+ * 1. Workaround for the <span> element that is added by CKEditor in the editor UI.
+ */
+
+.intro {
+    color: #888;
+    font-size: 1.5em;
+}
+
+
+.list--checkmark {
+    list-style: none;
+}
+
+.list--checkmark li:before {
+    color: green;
+    content: '✓';
+    padding-right: .5em;
+}
+
+.list--checkmark .ck-list-bogus-paragraph {
+    display: inline !important; /* [1] */
+}
+
+
+.text-small {
+    font-size: .875em;
+}
+
+
+.ce-table { width: 100%; max-width: 100%; }
+.ce-table th, .ce-table td { padding: 0.5em 0.75em; vertical-align: top; }
+.ce-table thead th { border-bottom: 2px solid #dadada; }
+.ce-table th, .ce-table td { border-top: 1px solid #dadada; }
+.ce-table-striped tbody tr:nth-of-type(odd) { background-color: rgba(0,0,0,.05); }
+.ce-table-bordered th, .ce-table-bordered td { border: 1px solid #dadada; }

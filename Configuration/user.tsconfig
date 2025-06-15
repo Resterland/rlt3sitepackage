@@ -1,0 +1,33 @@
+//
+// User TSconfig (loaded globally)
+//
+// https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Index.html
+// ------------------------------------------
+
+//
+// Backend user settings
+//
+
+setup.default {
+#    lang = de
+#    startModule = web_list
+    titleLen = 60
+}
+
+
+//
+// Page tree
+//
+options.pageTree {
+#    showPageIdWithTitle = 1
+}
+
+
+//
+// File list (fileadmin)
+//
+options.file_list {
+    enableDisplayThumbnails = activated
+    enableClipBoard = activated
+    primaryActions = view,metadata,copy,cut,delete
+}

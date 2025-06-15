@@ -1,0 +1,15 @@
+//
+// Dependencies
+// ------------------------------------------
+#@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+
+
+//
+// Project setup
+// ------------------------------------------
+@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/Config/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Helper/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/Lib/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/Extensions/*.typoscript'
+#@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/ContentElements/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/Page/Page.typoscript'
