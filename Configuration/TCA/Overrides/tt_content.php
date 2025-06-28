@@ -17,7 +17,7 @@ ExtensionManagementUtility::addTcaSelectItem(
         'group' => 'default',
     ],
     'header',
-    'after',
+    'before',
 );
 
 // Configure the default backend fields for the content element
