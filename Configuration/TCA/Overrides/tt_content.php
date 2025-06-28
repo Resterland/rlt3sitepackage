@@ -14,6 +14,7 @@ ExtensionManagementUtility::addTcaSelectItem(
     [
         'label' => 'Resterland - Basic Content',
         'value' => $key,
+        'icon' => 'EXT:rlt3sitepackage/Resources/Public/Icons/ContentElements/rlt3sitepackage_basiccontent.svg',
         'group' => 'default',
     ],
     'header',
