@@ -12,7 +12,7 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'Resterland - Basic Content',
+        'label' => 'Resterland - Basic Text Element',
         'value' => $key,
         'icon' => 'content-text',
         'group' => 'default',
