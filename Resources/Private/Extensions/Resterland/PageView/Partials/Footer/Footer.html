@@ -1,0 +1,16 @@
+<footer id="page-footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="container">
+        <f:if condition="{settings.page.footer.copyright.enable}">
+            <div class="col-md-4 d-flex align-items-center">
+                <f:render partial="Footer/Copyright" arguments="{_all}"/>
+            </div>
+        </f:if>
+
+        <f:if condition="{settings.page.footer.navigation.enable}">
+            <f:render partial="Navigation/FooterMenu.html" arguments="{_all}"/>
+        </f:if>
+        <f:if condition="{settings.page.footer.languagenavigation.enable}">
+            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+        </f:if>
+    </div>
+</footer>
