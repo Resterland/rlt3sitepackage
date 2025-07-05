@@ -1,4 +1,4 @@
 name: resterland/rlt3sitepackage
 label: Resterland TYPO3 Sitepackage
 dependencies:
-  - typo3/fluid-styled-content-css
+  - typo3/fluid-styled-content
