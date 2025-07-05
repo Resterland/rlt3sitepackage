@@ -14,10 +14,6 @@ favicons:
 
 ### EXT:fluid_styled_content
 styles:
-  templates:
-    layoutRootPath: EXT:fluid_styled_content/Resources/Private/Layouts
-    partialRootPath: EXT:fluid_styled_content/Resources/Private/Partials
-    templateRootPath: EXT:fluid_styled_content/Resources/Private/Pages
   content:
     defaultHeaderType: 2
     textmedia:
