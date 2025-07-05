@@ -66,8 +66,9 @@ settings:
     type: string
     default: 'default'
     enum:
-      EXT:rlt3sitepackage/Resources/Private/PageView/: 'default'
-      EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/PageView/: 'resterland'
+      EXT:rlt3sitepackage/Resources/Private/PageView/: 'Default Theme'
+      EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/PageView/: 'Resterland Theme'
+      EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/PageView/: 'Fluid Styled Content'
 
   ### Meta data settings
   # Favicon
