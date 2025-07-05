@@ -64,7 +64,10 @@ settings:
     category: Rlt3sitepackage.templates
     description: 'Path to the templates of the ResterLand Site Package.'
     type: string
-    default: 'EXT:rlt3sitepackage/Resources/Private/PageView/'
+    default: 'default'
+    enum:
+      default: 'EXT:rlt3sitepackage/Resources/Private/PageView/'
+      resterland: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/PageView/'
 
   ### Meta data settings
   # Favicon
