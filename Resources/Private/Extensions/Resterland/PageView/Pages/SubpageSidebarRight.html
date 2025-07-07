@@ -1,20 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="ResterlandLayout"/>
-<f:section name="Main">
-
-    <f:render partial="Stage" arguments="{_all}"/>
+<f:section name="PageContent">
     <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <f:render partial="Content" arguments="{records: content.main.records}"/>
-            </div>
-            <div class="col-md-4">
-                <f:render partial="Content" arguments="{records: content.sidebar.records}"/>
-            </div>
-        </div>
-    </div>
-
+    <f:render partial="Content" arguments="{records: content.main.records}"/>
+    <f:render partial="Content" arguments="{records: content.sidebar.records}"/>
 </f:section>
 </html>
