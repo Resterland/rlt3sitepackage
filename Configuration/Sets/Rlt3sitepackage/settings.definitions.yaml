@@ -55,9 +55,9 @@ settings:
     type: string
     default: 'light'
     enum:
-      light: 'Light theme'
-      dark: 'Dark theme'
-      resterland: 'ResterLand theme'
+      light: 'Light theme '
+      dark: 'Dark theme '
+      resterland: 'ResterLand theme '
 
   page.templates.template_path:
     label: 'Page template path'
