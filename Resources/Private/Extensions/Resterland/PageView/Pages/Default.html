@@ -2,16 +2,20 @@
 <f:layout name="ResterlandLayout"/>
 
 <f:comment>
-<!--
-    This template will be used for pages with Backend Layout "Default" (database value "-1").
--->
+    <!--
+        This template will be used for pages with Backend Layout "Default" (database value "-1").
+    -->
 </f:comment>
 
 <f:section name="PageContent">
-    <!--TYPO3SEARCH_begin-->
+    <f:comment>
+        <!--TYPO3SEARCH_begin-->
+    </f:comment>
     <div class="container">
         <f:render partial="Content" arguments="{records: content.main.records}"/>
     </div>
-    <!--TYPO3SEARCH_end-->
+    <f:comment>
+        <!--TYPO3SEARCH_end-->
+    </f:comment>
 </f:section>
 </html>
