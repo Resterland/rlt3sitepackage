@@ -15,11 +15,8 @@
             <trans-unit id="backend_layout.subpage_sidebar_right">
                 <source>Subpage Sidebar Right</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.stage">
-                <source>Stage</source>
-            </trans-unit>
             <trans-unit id="backend_layout.column.normal">
-                <source>Normal</source>
+                <source>Main Content</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.left">
                 <source>Aside Left</source>
