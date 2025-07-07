@@ -1,7 +1,8 @@
 <header class="page-header" role="banner">
-
     <f:if condition="{settings.page.header.logo.enable}">
-        <f:render partial="Structure/Logo" arguments="{_all}"/>
+        <f:render
+            partial="Structure/Logo"
+            arguments="{_all}"/>
     </f:if>
 
     <f:render partial="Navigation/Main" arguments="{_all}"/>
@@ -9,5 +10,4 @@
     <f:if condition="{settings.page.header.languagenavigation.enable}">
         <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
     </f:if>
-
 </header>

@@ -1,17 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns="" data-namespace-typo3-fluid="true">
 <f:layout name="ResterlandLayout"/>
-
 <f:section name="PageContent">
-
-    <f:render partial="Stage" arguments="{_all}"/>
-
-    <f:comment>
-        <!--TYPO3SEARCH_begin-->
-    </f:comment>
-
-    <f:render partial="Content" arguments="{records: content.main.records}"/>
-    <f:comment>
-        <!--TYPO3SEARCH_end-->
-    </f:comment>
+    <f:render
+        partial="Content"
+        arguments="{records: content.main.records}"/>
 </f:section>
-</html>
