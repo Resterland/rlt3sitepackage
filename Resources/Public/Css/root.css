@@ -1,0 +1,25 @@
+:root {
+    --rl-body-color: #a86a24;
+    --rl-font-color: #edd886;
+    --rl-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-font-size: normal 1em;
+    --rl-footer-background-color: rgb(165, 42, 42);
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: url("../Images/Logos/rl-logo-inverted.svg");
+    background-color: rgb(53, 41, 37);
+    background-size: 3px;
+}
+
+/* GLOBAL layout settings */
+body {
+    background: var(--rl-body-color);
+    margin: 0 auto;
+    font-size: var(--rl-font-size);
+    font-family: var(--rl-font-family), sans-serif;
+    color: var(--rl-font-color);
+}
