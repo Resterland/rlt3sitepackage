@@ -30,7 +30,6 @@ page {
     10 = PAGEVIEW
     10 {
         paths {
-#            0 = EXT:rlt3sitepackage/Resources/Private/PageView/
             10 = {$page.templates.template_path}
         }
         variables {
