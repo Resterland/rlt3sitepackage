@@ -1,5 +1,5 @@
 lib.contentElement {
-    templateRootPaths.200 = EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/Templates/ContentElements/Templates/ContentElements/
+    templateRootPaths.200 = EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Templates/ContentElements/
 }
 # Article & Media:
 # Any number of media wrapped right around a regular text element.
