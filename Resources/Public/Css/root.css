@@ -25,7 +25,7 @@ html {
 body {
     background: var(--rl-body-color);
     margin: 0 auto;
-    font-size: max(min(1vh, 1rem), 3vh, 2rem);
+    font-size: var(--rl-font-size);
     font-family: var(--rl-font-family), sans-serif;
     color: var(--rl-font-color);
     display: grid;
