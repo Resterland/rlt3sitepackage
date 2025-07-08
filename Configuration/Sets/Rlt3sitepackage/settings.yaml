@@ -12,8 +12,10 @@ favicons:
   android_192: 'android-chrome-192x192.png'
   android_512: 'android-chrome-512x512.png'
 
-### EXT:fluid_styled_content
+### EXT:fluid_styled_content overrides
 styles:
+  templates:
+    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/PageView/Layouts'
   content:
     defaultHeaderType: 2
     textmedia:
