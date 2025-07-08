@@ -16,8 +16,6 @@ favicons:
 styles:
   templates:
     layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Layouts'
-    partialRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Partials'
-    templateRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Templates'
   content:
     defaultHeaderType: 2
     textmedia:
