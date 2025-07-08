@@ -1,7 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <article>
-<f:section name="Header">
+    <f:debug>{_all}</f:debug>
+
+    <f:section name="Header">
 
     <f:if condition="{gallery.position.noWrap} != 1">
         <f:render partial="Header/All" arguments="{_all}" />
