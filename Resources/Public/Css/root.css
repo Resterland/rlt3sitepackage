@@ -111,9 +111,8 @@ main::after {
         #0e76bc 75%
     );
 }
-header#header,
+header.page-header,
 footer {
     padding: 0.2em;
-    /* background-color: #502a2b; */
     background-color: var(--rl-bg-color);
 }
