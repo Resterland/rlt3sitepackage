@@ -2,10 +2,10 @@
 <f:if condition="{data.frame_class} != none">
     <f:then>
 
-        <section
-            class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+        <section id="c{data.uid}"
+                 class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
             <f:if condition="{data._LOCALIZED_UID}">
-                <a></a>
+                <a id="c{data._LOCALIZED_UID}"></a>
             </f:if>
             <f:render section="Before" optional="true">
                 <f:render partial="DropIn/Before/All" arguments="{_all}" />
