@@ -155,3 +155,32 @@ header.page-header p {
 header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
 }
+.main-nav {
+    display: flex;
+    gap: 0 0.25em;
+    justify-content: space-between;
+}
+.main-nav ul {
+    flex: auto initial;
+}
+
+.main-menu,
+.lang-menu {
+    display: flex;
+    gap: 0.25em;
+}
+.main-menu {
+    font-size: 1.2em;
+}
+.main-menu a,
+.lang-menu a {
+    text-decoration: none;
+    padding: 0.25em;
+    display: block;
+}
+.lang-menu {
+    flex-direction: column;
+}
+.search {
+    padding-left: 0.25em;
+}
