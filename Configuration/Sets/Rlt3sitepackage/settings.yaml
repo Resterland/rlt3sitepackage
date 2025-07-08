@@ -15,7 +15,9 @@ favicons:
 ### EXT:fluid_styled_content overrides
 styles:
   templates:
-    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Resterland/PageView/Layouts'
+    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Layouts'
+    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Layouts'
+    layoutRootPath: 'EXT:rlt3sitepackage/Resources/Private/Extensions/FluidStyledContent/Layouts'
   content:
     defaultHeaderType: 2
     textmedia:
