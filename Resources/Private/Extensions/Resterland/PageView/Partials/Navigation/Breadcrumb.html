@@ -1,7 +1,6 @@
 <f:if condition="{breadcrumb}">
-    <div class="container">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary">
+            <ol class="breadcrumb">
                 <f:for each="{breadcrumb}" as="item">
                     <f:if condition="{item.current}">
                         <f:then>
@@ -18,5 +17,4 @@
                 </f:for>
             </ol>
         </nav>
-    </div>
 </f:if>
