@@ -1,5 +1,7 @@
 <footer class="page-footer">
 
+    <f:render partial="Structure/OpenStreetMap" arguments="{_all}"/>
+
     <f:if condition="{settings.page.footer.copyright.enable}">
         <f:render partial="Footer/Copyright" arguments="{_all}"/>
     </f:if>
