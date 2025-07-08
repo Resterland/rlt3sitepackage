@@ -3,7 +3,7 @@
         <ul class="lang-menu push-right">
             <f:for as="item" each="{languagemenu}">
                 <li
-                    class="lang-menu-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
+                    class="lang-menu-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}" lang="">
                     <f:if condition="{item.available}">
                         <f:then>
                             <a class="nav-link"
