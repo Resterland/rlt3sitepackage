@@ -5,7 +5,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-$key = 'rlt3sitepackage_article';
+$key = 'articlemedia';
 
 // Adds the content element to the "Type" dropdown
 ExtensionManagementUtility::addTcaSelectItem(
