@@ -116,3 +116,42 @@ header.page-header,
 footer {
     background-color: var(--rl-bg-color);
 }
+/* header#header grid areas */
+.logo {
+    grid-area: logo;
+}
+.site-name {
+    grid-area: site-name;
+}
+.site-description {
+    grid-area: description;
+}
+.main-nav {
+    grid-area: main-nav;
+}
+.search {
+    grid-area: search;
+}
+header.page-header {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "site-name"
+    "description"
+    "main-nav"
+    "search";
+}
+.logo img {
+    width: 2.5em;
+    margin: 0;
+}
+header.page-header h1,
+header.page-header p {
+    margin: 0;
+    padding: 0;
+    font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
+    text-shadow: 3px 2px 2px rgb(88, 139, 41);
+}
+header.page-header p {
+    font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
+}

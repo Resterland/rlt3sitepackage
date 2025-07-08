@@ -12,9 +12,15 @@
         </f:link.page>
     </h1>
 
-    <f:render partial="Navigation/Main" arguments="{_all}"/>
+    <p class="site-description">Design 001</p>
 
-    <f:if condition="{settings.page.header.languagenavigation.enable}">
-        <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
-    </f:if>
+    <nav class="main-nav" role="navigation">
+        <f:render partial="Navigation/Main" arguments="{_all}"/>
+
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
+            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+        </f:if>
+
+        <f:render partial="Structure/Search" arguments="{_all}"/>
+    </nav>
 </header>
