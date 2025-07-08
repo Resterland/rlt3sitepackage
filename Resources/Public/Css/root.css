@@ -15,17 +15,11 @@ html {
     background-size: 3px;
 }
 
-*,
-::before,
-::after {
-    box-sizing: inherit;
-}
-
 /* GLOBAL layout settings */
 body {
     background: var(--rl-body-color);
     margin: 0 auto;
-    font-size: var(--rl-font-size);
+    font-size: max(min(1vh, 1rem), 3vh, 2rem);
     font-family: var(--rl-font-family), sans-serif;
     color: var(--rl-font-color);
     display: grid;
@@ -81,35 +75,6 @@ footer {
     position: relative;
     margin: 0;
     padding: 0 1em 0 1em;
-}
-
-main::before,
-main::after {
-    position: absolute;
-    content: "";
-    background: linear-gradient(
-        to top,
-        #feb040 25%,
-        #282523 25%,
-        #282523 50%,
-        #34a2da 50%,
-        #34a2da 75%,
-        #0e76bc 75%
-    );
-    height: 1em;
-    left: 0;
-    right: 0;
-}
-main::after {
-    background: linear-gradient(
-        to bottom,
-        #feb040 25%,
-        #282523 25%,
-        #282523 50%,
-        #34a2da 50%,
-        #34a2da 75%,
-        #0e76bc 75%
-    );
 }
 
 header.page-header,
@@ -209,25 +174,6 @@ footer {
         background-color: #a86a24;
         position: relative;
         border-right: 1px solid #edd886;
-    }
-    main::after {
-        position: relative;
-    }
-    aside::before {
-        position: absolute;
-        content: "";
-        background: linear-gradient(
-            to top,
-            #feb040 25%,
-            #282523 25%,
-            #282523 50%,
-            #34a2da 50%,
-            #34a2da 75%,
-            #0e76bc 75%
-        );
-        height: 1em;
-        left: 0;
-        right: 0;
     }
     .logo img {
         width: 4em;
