@@ -5,26 +5,45 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 defined('TYPO3') or die();
 
-$key = 'rlt3sitepackage_basiccontent';
+$key = 'rlt3sitepackage_article';
 
 // Adds the content element to the "Type" dropdown
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'Basic Text Element',
+        'label' => 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_db.xlf:article_content.title',
         'value' => $key,
         'icon' => 'content-idea',
+        'description' => 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_db.xlf:article_content.description',
         'group' => 'default',
     ],
-    'header',
-    'before',
+    'textmedia',
+    'after',
 );
 
 // Configure the default backend fields for the content element
 $GLOBALS['TCA']['tt_content']['types'][$key] = [
     'showitem' => '
             --palette--;;headers,
-            bodytext,
-        ',
+        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:media,
+        assets,
+        --palette--;;mediaAdjustments,
+        --palette--;;gallerySettings,
+        --palette--;;imagelinks,
+    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
+        --palette--;;frames,
+        --palette--;;appearanceLinks,
+    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+        categories',
+    [
+        'columnsOverrides' => [
+            'bodytext' => [
+                'config' => [
+                    'enableRichtext' => true,
+                ],
+            ],
+        ],
+    ],
 ];

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2025-04-12UTC04:19:090" product-name="rlt3_site_package">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-04-12UTC04:19:090" product-name="rlt3sitepackage">
         <header>
             <authorName>Roland Fuhrer</authorName>
             <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
+            <trans-unit id="article_content.title">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="article_content.description">
+                <source>Article content element is useful for any news, blog or other articles. You can include
+                Images and other media files.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
