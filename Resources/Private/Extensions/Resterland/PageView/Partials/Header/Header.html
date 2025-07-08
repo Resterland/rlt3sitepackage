@@ -1,12 +1,16 @@
 <header class="page-header" role="banner">
-    <f:if condition="{settings.page.header.logo.enable}">
-        <f:render
-            partial="Structure/Logo"
-            arguments="{_all}"/>
-    </f:if>
-    <h1 class="site-name">
-        <a href="index.html" title="back to the main page">{siteTitle}</a>
-    </h1>
+    <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+        <f:if condition="{settings.page.header.logo.enable}">
+            <f:render
+                partial="Structure/Logo"
+                arguments="{_all}"/>
+        </f:if>
+    </f:link.page>
+    <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+        <h1 class="site-name">
+            {site.rootPage}
+        </h1>
+    </f:link.page>
 
     <f:render partial="Navigation/Main" arguments="{_all}"/>
 
