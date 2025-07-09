@@ -49,6 +49,12 @@ categories:
     parent: Rlt3sitepackage
 
 settings:
+  # Breadcrumb
+  page.themes.breadcrumb.enable:
+    label: 'Enable breadcrumb navigation'
+    category: Rlt3sitepackage.themes
+    type: bool
+    default: true
   page.themes.theme:
     label: 'Choose a theme'
     category: Rlt3sitepackage.themes
@@ -58,12 +64,6 @@ settings:
       light: 'Light theme '
       dark: 'Dark theme '
       coffee: 'Coffee theme '
-  # Breadcrumb
-  page.themes.breadcrumb.enable:
-    label: 'Enable breadcrumb navigation'
-    category: Rlt3sitepackage.themes
-    type: bool
-    default: true
 
   page.templates.template_path:
     label: 'Page template path'
