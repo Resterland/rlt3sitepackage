@@ -1,3 +1,5 @@
+@import "links.css";
+
 :root {
     --rl-font-sans-serif: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
     --rl-link-focus: none;
@@ -5,7 +7,7 @@
     --rl-body-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
     --rl-body-font-size: 1.2rem;
     --rl-body-font-weight: 400;
-    --rl-body-line-height: 1.5;
+    --rl-body-line-height: 1.2em;
 }
 
 [data-rl-theme="light"] {
@@ -21,8 +23,8 @@
     --rl-link-active-color-rgb: rgb(70, 95, 77);
     --rl-link-hover-color: #465f4d;
     --rl-link-hover-color-rgb: rgb(70, 95, 77);
-    --rl-link-visited-color: #465f4d;
-    --rl-link-visited-color-rgb: rgb(70, 95, 77);
+    --rl-link-visited-color: var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
     --rl-bg-color: var(--rl-body-color);
     --rl-bg-color-rgb: var(--rl-body-color-rgb);
 }
@@ -39,8 +41,8 @@
     --rl-link-active-color-rgb: rgb(174, 189, 179);
     --rl-link-hover-color: #aebdb3;
     --rl-link-hover-color-rgb: rgb(174, 189, 179);
-    --rl-link-visited-color: #aebdb3;
-    --rl-link-visited-color-rgb: rgb(174, 189, 179);
+    --rl-link-visited-color:var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
 }
 
 [data-rl-theme="coffee"] {
@@ -54,10 +56,10 @@
     --rl-link-color-rgb: rgb(222, 184, 135);
     --rl-link-active-color: #f0ffff;
     --rl-link-active-color-rgb: rgb(240, 255, 255);
-    --rl-link-hover-color: #f0ffff;
-    --rl-link-hover-color-rgb: rgb(240, 255, 255);
-    --rl-link-visited-color: #f0ffff;
-    --rl-link-visited-color-rgb: rgb(240, 255, 255);
+    --rl-link-hover-color: #D2691E;
+    --rl-link-hover-color-rgb: rgb(210, 105, 30);
+    --rl-link-visited-color: var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
     --rl-bg-color: #7B3F00;
     --rl-bg-color-rgb: rgb(123, 63, 0);
 }
@@ -82,6 +84,8 @@ body {
     background: var(--rl-body-color);
     margin: 0 auto;
     font-family: var(--rl-body-font-family);
+    font-weight: var(--rl-body-font-weight);
+    line-height: var(--rl-body-line-height);
     color: var(--rl-body-font-color);
     display: grid;
     grid-template-areas:
@@ -222,35 +226,6 @@ footer {
       "location"
       "copy"; */
     /* align-items: center; */
-}
-
-/* link decoration */
-a {
-    outline-color: transparent;
-}
-
-a:focus {
-    text-decoration: var(--rl-link-text-decoration);
-}
-
-a:link {
-    color: var(--rl-link-color);
-    text-decoration: var(--rl-link-text-decoration);
-}
-
-a:active {
-    background: var(--rl-link-active-color);
-    color: var(--rl-link-color);
-}
-
-a:hover {
-    background: var(--rl-link-active-color);
-    color: var(--rl-link-hover-color);
-    text-decoration: var(--rl-link-text-decoration);
-}
-
-a:visited {
-    color:var(--rl-link-visited-color);
 }
 
 /* media queries */
