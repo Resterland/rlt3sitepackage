@@ -58,6 +58,12 @@ settings:
       light: 'Light theme '
       dark: 'Dark theme '
       resterland: 'ResterLand theme '
+  # Breadcrumb
+  page.themes.breadcrumb.enable:
+    label: 'Enable breadcrumb navigation'
+    category: Rlt3sitepackage.themes
+    type: bool
+    default: true
 
   page.templates.template_path:
     label: 'Page template path'
