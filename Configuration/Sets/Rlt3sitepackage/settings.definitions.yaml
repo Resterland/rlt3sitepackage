@@ -57,7 +57,7 @@ settings:
     enum:
       light: 'Light theme '
       dark: 'Dark theme '
-      resterland: 'ResterLand theme '
+      coffee: 'Coffee theme '
   # Breadcrumb
   page.themes.breadcrumb.enable:
     label: 'Enable breadcrumb navigation'

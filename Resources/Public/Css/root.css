@@ -1,3 +1,41 @@
+:root,
+[data-rl-theme="light"] {
+    --rl-emphasis-color-rgb: 0, 0, 0;
+    --rl-link-color: #577760;
+    --rl-link-color-rgb: 87, 119, 96;
+    --rl-link-decoration: underline;
+    --rl-link-hover-color: #465f4d;
+    --rl-link-hover-color-rgb: 70, 95, 77;
+}
+
+[data-rl-theme="dark"] {
+    color-scheme: dark;
+    --rl-emphasis-color-rgb: 255, 255, 255;
+    --rl-link-color: #9aada0;
+    --rl-link-hover-color: #aebdb3;
+    --rl-link-color-rgb: 154, 173, 160;
+    --rl-link-hover-color-rgb: 174, 189, 179;
+}
+
+[data-rl-theme="coffee"] {
+    color-scheme: coffee;
+    --rl-font-sans-serif: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-body-font-family: var(--rl-font-sans-serif);
+    --rl-body-font-size: normal 1rem;
+    --rl-body-font-weight: 400;
+    --rl-body-line-height: 1.5;
+    --rl-body-color: #edd886;
+    --rl-body-color-rgb: 237, 216, 134;
+    --rl-body-bg: #a86a24;
+    --rl-body-bg-rgb: 168, 106, 36;
+    --rl-tertiary-bg: #c17b2c;
+    --rl-tertiary-bg-rgb: 193, 123, 44;
+    --rl-link-color: #edcead;
+    --rl-link-color-rgb: 237, 206, 173;
+    --rl-link-hover-color: #fd7e14;
+    --rl-link-hover-color-rgb: 253, 126, 20;
+}
+
 :root {
     --rl-body-color: #a86a24;
     --rl-font-color: #edd886;
@@ -10,8 +48,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: url("../Images/Logos/rl-logo-inverted.svg");
-    background-color: rgb(53, 41, 37);
+    background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
     background-size: 3px;
 }
 
