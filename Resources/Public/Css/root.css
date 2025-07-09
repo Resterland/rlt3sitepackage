@@ -50,6 +50,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: var(--rl-body-font-size);
     padding: 0;
     margin: 0;
     background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
@@ -66,7 +67,7 @@ html {
 body {
     background: var(--rl-body-color);
     margin: 0 auto;
-    font-size: var(--rl-body-font-size);
+    font-size: 1.2rem;
     font-family: var(--rl-body-font-family);
     color: var(--rl-body-font-color);
     display: grid;
@@ -176,12 +177,6 @@ header.page-header p {
 .main-nav ul {
     flex: auto initial;
 }
-
-.main-menu,
-.lang-menu {
-    display: flex;
-    gap: 0.25em;
-}
 .main-menu {
     font-size: 1.2em;
 }
@@ -239,6 +234,11 @@ footer {
     }
     header.page-header p {
         font-size: max(min(1vh, 1rem), 3vh, 1.75rem);
+    }
+    .main-menu,
+    .lang-menu {
+        display: flex;
+        gap: 0.25em;
     }
     .lang-menu {
         flex-direction: row;
