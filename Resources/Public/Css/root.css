@@ -2,7 +2,7 @@
     --rl-font-sans-serif: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
     --rl-link-decoration: none;
     --rl-body-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
-    --rl-body-font-size: max(min(1vh, 1rem), 3vh, 2rem);
+    --rl-body-font-size: 1.2rem;
     --rl-body-font-weight: 400;
     --rl-body-line-height: 1.5;
 }
@@ -67,7 +67,6 @@ html {
 body {
     background: var(--rl-body-color);
     margin: 0 auto;
-    font-size: 1.2rem;
     font-family: var(--rl-body-font-family);
     color: var(--rl-body-font-color);
     display: grid;
