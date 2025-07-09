@@ -36,14 +36,6 @@
     --rl-link-hover-color-rgb: 253, 126, 20;
 }
 
-:root {
-    --rl-body-color: #a86a24;
-    --rl-font-color: #edd886;
-    --rl-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
-    --rl-font-size: normal 1em;
-    --rl-bg-color: rgb(165, 42, 42);
-}
-
 html {
     box-sizing: border-box;
     padding: 0;
