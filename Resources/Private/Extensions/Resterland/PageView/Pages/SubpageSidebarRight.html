@@ -1,8 +1,11 @@
 <f:layout name="ResterlandLayout"/>
 <f:section name="PageContent">
-    <f:render
-        partial="Navigation/Breadcrumb"
-        arguments="{_all}"/>
+    <f:if condition="{settings.page.themes.breadcrumb.enable}">
+        <f:render
+            partial="Navigation/Breadcrumb"
+            arguments="{_all}"/>
+
+    </f:if>
     <main>
         <f:render
             partial="Content"
