@@ -7,7 +7,7 @@
     --rl-body-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
     --rl-body-font-size: 1.2rem;
     --rl-body-font-weight: 400;
-    --rl-body-line-height: 1.2em;
+    --rl-body-line-height: 1.2;
 }
 
 [data-rl-theme="light"] {
@@ -144,6 +144,7 @@ footer {
 
 main {
     font-size: 1rem;
+    line-height: var(--rl-body-line-height);
 }
 
 header.page-header,
