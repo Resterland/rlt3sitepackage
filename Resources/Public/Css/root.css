@@ -124,9 +124,17 @@ footer {
     padding: 0 1em 0 1em;
 }
 
+main {
+    font-size: 1rem;
+}
+
 header.page-header,
 footer {
     background-color: var(--rl-bg-color);
+}
+
+footer {
+    font-size: 0.75rem;
 }
 
 /* header#header grid areas */
