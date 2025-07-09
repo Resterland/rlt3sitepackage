@@ -1,5 +1,16 @@
-:root,
+:root {
+    --rl-body-color: white;
+    --rl-body-font-color: darkblue;
+    --rl-font-sans-serif: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-body-font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-body-font-size: max(min(1vh, 1rem), 3vh, 2rem);
+    --rl-body-font-weight: 400;
+    --rl-body-line-height: 1.5;
+    --rl-bg-color: rgb(165, 42, 42);
+}
+
 [data-rl-theme="light"] {
+    --rl-body-font-family: var(--rl-body-font-family);
     --rl-emphasis-color-rgb: 0, 0, 0;
     --rl-link-color: #577760;
     --rl-link-color-rgb: 87, 119, 96;
@@ -19,11 +30,9 @@
 
 [data-rl-theme="coffee"] {
     color-scheme: coffee;
-    --rl-font-sans-serif: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
     --rl-body-font-family: var(--rl-font-sans-serif);
-    --rl-body-font-size: normal 1rem;
-    --rl-body-font-weight: 400;
-    --rl-body-line-height: 1.5;
+    /*--rl-body-color: #a86a24;*/
+    --rl-body-font-color: #edd886;
     --rl-body-color: #edd886;
     --rl-body-color-rgb: 237, 216, 134;
     --rl-body-bg: #a86a24;
