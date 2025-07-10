@@ -31,9 +31,8 @@
     --rl-body-line-height: 1.5;
     --rl-link-focus: none;
     --rl-link-text-decoration: none;
-    --rl-body-color: #FAEBD7;
-    --rl-body-color-rgb: rgb(250, 235, 215);
-    --rl-body-font-color: #191970;
+    --rl-body-background: #FAEBD7;
+    --rl-body-color: #191970;
     --rl-link-color: #0048BA;
     --rl-link-active-color: #edd886;
     --rl-link-hover-color: #ff0000;

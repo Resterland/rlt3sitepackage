@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "./RootThemes/root-light.css";
-/*@import "./RootThemes/root-dark.css";*/
-/*@import "./RootThemes/root-coffee.css";*/
+@import "./RootThemes/root-dark.css";
+@import "./RootThemes/root-coffee.css";
 @import "links.css";
 
 *,
@@ -26,12 +26,12 @@ html {
 
 /* GLOBAL layout settings */
 body {
-    background: gre;
+    background: var(--rl-body-background);
     margin: 0 auto;
     font-family: var(--rl-body-font-family);
     font-weight: var(--rl-body-font-weight);
     line-height: var(--rl-body-line-height);
-    color: var(--rl-body-font-color);
+    color: var(--rl-body-color);
     display: grid;
     grid-template-areas:
         "header"
@@ -90,11 +90,6 @@ footer {
 main {
     font-size: 1rem;
     line-height: var(--rl-body-line-height);
-}
-
-header.page-header,
-footer {
-    background-color: var(--rl-bg-color);
 }
 
 footer {
