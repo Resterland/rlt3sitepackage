@@ -25,7 +25,7 @@
     --rl-green-light: #00ff7f;
     --rl-green-lighter: #90ee90;
     --rl-light: #FAEBD7;
-    --rl-body-font-family: system-ui, -apple-system, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    --rl-body-font-family: "Trebuchet MS", Helvetica, Arial;
     --rl-body-font-size: 1rem;
     --rl-body-font-weight: 400;
     --rl-body-line-height: 1.5;

@@ -4,33 +4,27 @@
 @import "./RootThemes/root-coffee.css";*/
 @import "links.css";
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: smooth;
-    }
-}
-
 html {
-    font-size: var(--rl-body-font-size);
     padding: 0;
     margin: 0;
     background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
     background-size: 3px;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* GLOBAL layout settings */
 body {
-    background: var(--rl-body-background);
+    background-color: var(--rl-body-background);
     margin: 0 auto;
-    font-family: var(--rl-body-font-family);
+    font-family: var(--rl-body-font-family), sans-serif;
     font-weight: var(--rl-body-font-weight);
     line-height: var(--rl-body-line-height);
+    font-size: var(--rl-body-font-size);
     color: var(--rl-body-color);
     display: grid;
     grid-template-areas:
