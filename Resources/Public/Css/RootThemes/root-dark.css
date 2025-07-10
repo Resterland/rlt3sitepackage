@@ -1,0 +1,15 @@
+[data-rl-theme="dark"] {
+    color-scheme: dark;
+    --rl-body-color: #00004B;
+    --rl-body-color-rgb: rgb(0, 0, 75);
+    --rl-body-font-color: #FAEBD7;
+    --rl-body-font-color-rgb: rgb(250, 235, 215);
+    --rl-link-color: #9aada0;
+    --rl-link-color-rgb: rgb(154, 173, 160);
+    --rl-link-active-color: #aebdb3;
+    --rl-link-active-color-rgb: rgb(174, 189, 179);
+    --rl-link-hover-color: #aebdb3;
+    --rl-link-hover-color-rgb: rgb(174, 189, 179);
+    --rl-link-visited-color:var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
+}

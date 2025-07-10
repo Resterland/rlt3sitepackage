@@ -1,0 +1,18 @@
+[data-rl-theme="coffee"] {
+    color-scheme: coffee;
+    --rl-body-font-family: var(--rl-font-sans-serif);
+    --rl-body-font-color: #EED9C4;
+    --rl-body-color: #6f4e37;
+    --rl-body-color-rgb: rgb(111, 78, 55);
+    --rl-link-focus: none;
+    --rl-link-color: #deb887;
+    --rl-link-color-rgb: rgb(222, 184, 135);
+    --rl-link-active-color: #f0ffff;
+    --rl-link-active-color-rgb: rgb(240, 255, 255);
+    --rl-link-hover-color: #D2691E;
+    --rl-link-hover-color-rgb: rgb(210, 105, 30);
+    --rl-link-visited-color: var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
+    --rl-bg-color: #7B3F00;
+    --rl-bg-color-rgb: rgb(123, 63, 0);
+}
