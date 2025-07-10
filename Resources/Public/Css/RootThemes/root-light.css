@@ -1,5 +1,6 @@
 :root,
 [data-rl-theme="light"] {
+    color-scheme: light;
     --rl-coffee: #6F4E37;
     --rl-coffee-black: #4B3621;
     --rl-coffee-creme: #A67B5B;
