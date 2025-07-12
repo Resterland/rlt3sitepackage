@@ -99,24 +99,24 @@ body {
         "footer";
 }
 
-/* link decoration */
-a {
-    outline-color: transparent;
-}
+/* link decoration */a {
+                     }
 
 a:link {
-    color: var(--rl-link-color);
-    text-decoration: var(--rl-link-text-decoration);
-}
-
-a:hover {
-    color: var(--rl-link-hover);
-    text-decoration: var(--rl-link-text-decoration);
 }
 
 a:visited {
-    color: var(--rl-link-visited);
 }
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
 
 /* START basic layout settings */
 img,
