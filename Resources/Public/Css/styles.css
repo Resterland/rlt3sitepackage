@@ -108,7 +108,7 @@ body {
 img,
 picture,
 video {
-    max-width: 100%;
+    width: 100%;
 }
 ul {
     padding-left: 0;
