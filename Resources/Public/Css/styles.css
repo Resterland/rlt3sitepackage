@@ -182,7 +182,7 @@ header.page-header p {
     margin: 0;
     padding: 0;
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
-    text-shadow: 3px 2px 2px var(--rl-brown-light);
+    text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
 header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
