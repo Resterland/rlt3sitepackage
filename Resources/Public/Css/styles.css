@@ -146,6 +146,7 @@ footer {
 
 footer {
     font-size: 0.75rem;
+    background-color: var(--rl-bg-color);
 }
 
 /* header#header grid areas */
