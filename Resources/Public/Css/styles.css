@@ -215,10 +215,10 @@ footer {
     display: flex;
     flex-direction: column;
     flex: auto initial;
-    /* grid-template-areas:
+     grid-template-areas:
       "location"
-      "copy"; */
-    /* align-items: center; */
+      "copy";
+     align-items: center;
 }
 
 /* media queries */
@@ -266,8 +266,8 @@ footer {
     footer {
         display: flex;
         flex-direction: row;
-        /* grid-template-columns: 1fr auto;
-        grid-template-areas: "location copy"; */
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "location copy";
     }
 }
 /* END media queries */
