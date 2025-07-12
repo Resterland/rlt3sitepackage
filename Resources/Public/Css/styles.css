@@ -146,6 +146,7 @@ footer {
 
 footer {
     font-size: 0.9rem;
+    background-color: var(--rl-brown-camel);
     display: grid;
     margin-top: 0.5em;
 }
@@ -190,8 +191,7 @@ header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
-.main-nav,
-.footer-nav {
+.main-nav {
     display: flex;
     gap: 0 0.25em;
     justify-content: space-between;
@@ -203,7 +203,8 @@ header.page-header p {
     font-size: 1.2em;
 }
 .main-menu a,
-.lang-menu a {
+.lang-menu a,
+.footer-nav a {
     padding: 0.25em;
     display: block;
 }
@@ -220,6 +221,7 @@ header.page-header p {
 }
 .location-map {
     grid-area: location;
+    padding: 0.5em;
 }
 .footer-nav {
     grid-area: footer-menu;
@@ -271,11 +273,13 @@ footer {
         text-shadow: 3px 2px 2px var(--rl-brown-light);
     }
     .main-menu,
-    .lang-menu {
+    .lang-menu,
+    .footer-nav {
         display: flex;
         gap: 0.25em;
     }
-    .lang-menu {
+    .lang-menu,
+    .footer-nav {
         flex-direction: row;
     }
     footer {
