@@ -3,23 +3,13 @@ a {
     outline-color: transparent;
 }
 
-a:focus {
-    text-decoration: var(--rl-link-text-decoration);
-}
-
 a:link {
     color: var(--rl-link-color);
     text-decoration: var(--rl-link-text-decoration);
 }
 
-a:active {
-    background: var(--rl-link-active-color);
-    color: var(--rl-link-color);
-}
-
 a:hover {
-    background: var(--rl-link-color);
-    color: var(--rl-link-hover-color);
+    color: var(--rl-link-hover);
     text-decoration: var(--rl-link-text-decoration);
 }
 

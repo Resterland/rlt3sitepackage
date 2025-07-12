@@ -63,6 +63,7 @@
     --rl-body-line-height: 1.5;
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
+    --rl-link-text-decoration: none;
     --rl-link-color: var(--rl-blue);
     --rl-link-hover: var(--rl-red);
     --rl-link-visited: var(--rl-brown-dark);
