@@ -5,14 +5,23 @@ a {
 
 a:link {
     color: var(--rl-link-color);
-    text-decoration: var(--rl-link-text-decoration);
-}
-
-a:hover {
-    color: var(--rl-link-hover);
-    text-decoration: var(--rl-link-text-decoration);
 }
 
 a:visited {
-    color: var(--rl-link-visited-color);
+    color: var(--rl-link-visited);
+}
+
+a:focus {
+    text-decoration: var(--rl-link-text-decoration);
+    background:  var(--rl-link-focus);
+}
+
+a:hover {
+    text-decoration:  var(--rl-link-text-decoration);
+    background:  var(--rl-link-hover);
+}
+
+a:active {
+    background: #6900ff;
+    color:  var(--rl-link-active);
 }

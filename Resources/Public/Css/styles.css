@@ -63,9 +63,11 @@
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
     --rl-link-text-decoration: none;
-    --rl-link-color: var(--rl-brown-camel);
-    --rl-link-hover: var(--rl-brown-dark);
-    --rl-link-visited: var(--rl-brown-dark);
+    --rl-link-color: var(--rl-coffee-black);
+    --rl-link-visited: var(--rl-coffee);
+    --rl-link-focus: var(--rl-yellow-fale);
+    --rl-link-hover: var(--rl-yellow);
+    --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
 }
 
@@ -105,26 +107,26 @@ a {
 }
 
 a:link {
-    color: #6900ff;
+    color: var(--rl-link-color);
 }
 
 a:visited {
-    color: #a5c300;
+    color: var(--rl-link-visited);
 }
 
 a:focus {
-    text-decoration: none;
-    background: #bae498;
+    text-decoration: var(--rl-link-text-decoration);
+    background:  var(--rl-link-focus);
 }
 
 a:hover {
-    text-decoration: none;
-    background: #cdfeaa;
+    text-decoration:  var(--rl-link-text-decoration);
+    background:  var(--rl-link-hover);
 }
 
 a:active {
     background: #6900ff;
-    color: #cdfeaa;
+    color:  var(--rl-link-active);
 }
 
 
