@@ -64,8 +64,8 @@
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
     --rl-link-text-decoration: none;
-    --rl-link-color: var(--rl-blue);
-    --rl-link-hover: var(--rl-red);
+    --rl-link-color: var(--rl-coffee-creme);
+    --rl-link-hover: var(--rl-brown-dark);
     --rl-link-visited: var(--rl-brown-dark);
     --rl-bg-color: #a52a2a;
 }
@@ -128,15 +128,6 @@ ul {
 li {
     list-style: none;
 }
-button,
-input,
-select,
-textarea {
-    font-family: inherit;
-    font-size: inherit;
-    background-color: inherit;
-    color: inherit;
-}
 
 aside,
 header.page-header,
@@ -185,7 +176,7 @@ header.page-header p {
     margin: 0;
     padding: 0;
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
-    text-shadow: 3px 2px 2px rgb(88, 139, 41);
+    text-shadow: 3px 2px 2px var(--rl-green-rgb);
 }
 header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
