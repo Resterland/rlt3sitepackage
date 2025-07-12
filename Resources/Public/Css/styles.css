@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "links.css";
 
 :root,
 [data-rl-theme="light"] {
@@ -100,36 +101,6 @@ body {
         "main"
         "aside"
         "footer";
-}
-
-/* link decoration */
-a {
-    outline-color: transparent;
-}
-
-a:link {
-    text-decoration: var(--rl-link-text-decoration);
-    color: var(--rl-link-color);
-}
-
-a:visited {
-    color: var(--rl-link-visited);
-}
-
-a:focus {
-    text-decoration: var(--rl-link-text-decoration);
-    background:  var(--rl-link-focus);
-}
-
-a:hover {
-    text-decoration:  var(--rl-link-text-decoration);
-    background:  var(--rl-link-hover);
-    color: var(--rl-link-hover-color);
-}
-
-a:active {
-    background: var(--rl-blue);
-    color:  var(--rl-link-active);
 }
 
 
