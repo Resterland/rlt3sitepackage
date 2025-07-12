@@ -28,22 +28,21 @@
     --rl-green: #588b29;
     --rl-green-light: #00ff7f;
     --rl-green-lighter: #90ee90;
-    --rl-light: #FAEBD7;
+    --rl-light: #faebd7;
     --rl-body-font-family: "Trebuchet MS", Helvetica, Arial;
     --rl-body-font-size: 1rem;
     --rl-body-font-weight: 400;
     --rl-body-line-height: 1.5;
     --rl-link-focus: none;
     --rl-link-text-decoration: none;
-    --rl-body-background: #FAEBD7;
-    --rl-body-color: #191970;
+    --rl-body-background: var(--rl-light);
+    --rl-body-color: var(--rl-blue-dark);
     --rl-link-color: #0048BA;
     --rl-link-active-color: #edd886;
     --rl-link-hover-color: #ff0000;
     --rl-link-visited-color: #0e76bc;
     --rl-bg-color: #a52a2a;
 }
-
 
 html {
     padding: 0;
