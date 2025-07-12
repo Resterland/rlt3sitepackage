@@ -145,9 +145,10 @@ footer {
 }
 
 footer {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     background-color: var(--rl-bg-color);
     display: grid;
+    margin-top: 0.5em;
 }
 
 /* header#header.page-header grid areas */
@@ -190,7 +191,8 @@ header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
-.main-nav {
+.main-nav,
+.footer-nav {
     display: flex;
     gap: 0 0.25em;
     justify-content: space-between;
@@ -220,7 +222,7 @@ header.page-header p {
 .location-map {
     grid-area: location;
 }
-.footer-menu {
+.footer-nav {
     grid-area: footer-menu;
 }
 .copyright {
