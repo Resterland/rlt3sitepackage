@@ -4,6 +4,7 @@ a {
 }
 
 a:link {
+    text-decoration: var(--rl-link-text-decoration);
     color: var(--rl-link-color);
 }
 
@@ -19,9 +20,10 @@ a:focus {
 a:hover {
     text-decoration:  var(--rl-link-text-decoration);
     background:  var(--rl-link-hover);
+    color: var(--rl-link-hover-color);
 }
 
 a:active {
-    background: #6900ff;
+    background: var(--rl-blue);
     color:  var(--rl-link-active);
 }

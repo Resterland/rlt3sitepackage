@@ -67,6 +67,7 @@
     --rl-link-visited: var(--rl-coffee);
     --rl-link-focus: var(--rl-yellow);
     --rl-link-hover: var(--rl-yellow-fale);
+    --rl-link-hover-color: var(--rl-coffee-black);
     --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
 }
@@ -123,10 +124,11 @@ a:focus {
 a:hover {
     text-decoration:  var(--rl-link-text-decoration);
     background:  var(--rl-link-hover);
+    color: var(--rl-link-hover-color);
 }
 
 a:active {
-    background: #6900ff;
+    background: var(--rl-blue);
     color:  var(--rl-link-active);
 }
 
