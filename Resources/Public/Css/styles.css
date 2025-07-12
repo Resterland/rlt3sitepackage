@@ -63,10 +63,10 @@
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
     --rl-link-text-decoration: none;
-    --rl-link-color: var(--rl-coffee-black);
+    --rl-link-color: var(--rl-blue);
     --rl-link-visited: var(--rl-coffee);
-    --rl-link-focus: var(--rl-yellow-fale);
-    --rl-link-hover: var(--rl-yellow);
+    --rl-link-focus: var(--rl-yellow);
+    --rl-link-hover: var(--rl-yellow-fale);
     --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
 }
@@ -107,6 +107,7 @@ a {
 }
 
 a:link {
+    text-decoration: var(--rl-link-text-decoration);
     color: var(--rl-link-color);
 }
 
