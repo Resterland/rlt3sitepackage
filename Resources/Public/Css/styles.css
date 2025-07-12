@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "links.css";
 
 :root,
 [data-rl-theme="light"] {
@@ -64,7 +63,7 @@
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
     --rl-link-text-decoration: none;
-    --rl-link-color: var(--rl-coffee-creme);
+    --rl-link-color: var(--rl-brown-camel);
     --rl-link-hover: var(--rl-brown-dark);
     --rl-link-visited: var(--rl-brown-dark);
     --rl-bg-color: #a52a2a;
@@ -100,19 +99,23 @@ body {
         "footer";
 }
 
-/* grid areas */
-header {
-    grid-area: header;
+/* link decoration */
+a {
+    outline-color: transparent;
 }
-main {
-    grid-area: main;
-    display: block;
+
+a:link {
+    color: var(--rl-link-color);
+    text-decoration: var(--rl-link-text-decoration);
 }
-aside {
-    grid-area: aside;
+
+a:hover {
+    color: var(--rl-link-hover);
+    text-decoration: var(--rl-link-text-decoration);
 }
-footer {
-    grid-area: footer;
+
+a:visited {
+    color: var(--rl-link-visited);
 }
 
 /* START basic layout settings */
@@ -127,6 +130,22 @@ ul {
 }
 li {
     list-style: none;
+}
+
+
+/* grid areas */
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    display: block;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
 }
 
 aside,
@@ -194,7 +213,6 @@ header.page-header p {
 }
 .main-menu a,
 .lang-menu a {
-    text-decoration: none;
     padding: 0.25em;
     display: block;
 }
