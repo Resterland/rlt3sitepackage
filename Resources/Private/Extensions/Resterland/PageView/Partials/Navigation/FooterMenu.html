@@ -1,8 +1,14 @@
 <f:if condition="{footerMenu}">
-    <ul class="footer-nav">
+    <ul class="footer-menu">
         <f:for each="{footerMenu}" as="menuItem">
             <li class="nav-item">
-                <a href="{menuItem.link}" class="nav-link">{menuItem.title}</a>
+                <a class="nav-link {f:if(condition: menuItem.active, then:'active')}"
+                   href="{menuItem.link}"
+                   target="{menuItem.target}"
+                   title="{menuItem.title}"
+                >
+                    {menuItem.title}
+                </a>
             </li>
         </f:for>
     </ul>
