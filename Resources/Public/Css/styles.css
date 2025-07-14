@@ -215,9 +215,13 @@ header.page-header p {
 }
 
 /* footer#footer.page-footer grid areas */
-.location-map {
+.openstreetmap {
     grid-area: location;
     padding: 0.5em;
+}
+.openstreetmap iframe {
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .footer-nav {
     grid-area: footer-nav;

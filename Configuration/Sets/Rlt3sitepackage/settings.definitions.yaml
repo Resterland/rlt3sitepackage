@@ -42,6 +42,8 @@ categories:
     parent: Rlt3sitepackage.footer
   Rlt3sitepackage.footer.socialmedia.subscriptions:
     label: 'Subscriptions'
+  Rlt3sitepackage.footer.openstreetmap:
+    label: 'OpenStreetMap'
     parent: Rlt3sitepackage.footer.socialmedia
   Rlt3sitepackage.config:
     label: 'Configuration'
@@ -49,7 +51,7 @@ categories:
     parent: Rlt3sitepackage
 
 settings:
-  # Breadcrumb
+  # Breadcrumb & choose theme
   page.themes.breadcrumb.enable:
     label: 'Enable breadcrumb navigation'
     category: Rlt3sitepackage.themes
@@ -209,6 +211,38 @@ settings:
     category: Rlt3sitepackage.footer.copyright
     type: bool
     default: true
+
+  # OpenStreetMap settings
+  page.footer.openstreetmap.enable:
+    label: 'Enable OpenStreetMap'
+    category: Rlt3sitepackage.footer.openstreetmap
+    type: bool
+    default: true
+
+  page.footer.openstreetmap.src:
+    label: 'OpenStreetMap Source (URL)'
+    category: Rlt3sitepackage.footer.openstreetmap
+    description: 'Source URL of the OpenStreetMap'
+    type: string
+    default: 'https://www.openstreetmap.org/export/embed.html?bbox=7.369127869606019%2C46.55292129624824%2C7.372668385505676%2C46.554544443415516&amp;layer=mapnik&amp;marker=46.55373287590018%2C7.370898127555847'
+
+  page.footer.openstreetmap.title:
+    label: 'OpenStreetMap Title'
+    category: Rlt3sitepackage.footer.openstreetmap
+    type: string
+    default: 'OpenStreetMap My Location'
+
+  page.footer.openstreetmap.width:
+    label: 'OpenStreetMap Width'
+    category: Rlt3sitepackage.footer.openstreetmap
+    type: number
+    default: 250
+
+  page.footer.openstreetmap.height:
+    label: 'OpenStreetMap Height'
+    category: Rlt3sitepackage.footer.openstreetmap
+    type: number
+    default: 206
 
   # Social Media settings
   page.footer.socialmedia.enable:
