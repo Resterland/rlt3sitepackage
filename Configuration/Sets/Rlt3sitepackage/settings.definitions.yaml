@@ -42,9 +42,10 @@ categories:
     parent: Rlt3sitepackage.footer
   Rlt3sitepackage.footer.socialmedia.subscriptions:
     label: 'Subscriptions'
+    parent: Rlt3sitepackage.footer.socialmedia
   Rlt3sitepackage.footer.openstreetmap:
     label: 'OpenStreetMap'
-    parent: Rlt3sitepackage.footer.socialmedia
+    parent: Rlt3sitepackage.footer
   Rlt3sitepackage.config:
     label: 'Configuration'
     description: 'Global system configuration settings'
