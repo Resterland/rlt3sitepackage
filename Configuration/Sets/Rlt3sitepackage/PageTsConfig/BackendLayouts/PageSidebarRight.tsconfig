@@ -1,11 +1,11 @@
 #
-# BACKENDLAYOUT: SubpageSidebarLeft
+# BACKENDLAYOUT: PageSidebarRight
 #
 mod {
     web_layout {
         BackendLayouts {
-            SubpageSidebarLeft {
-                title = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.subpage_sidebar_left
+            PageSidebarRight {
+                title = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.page_sidebar_right
                 config {
                     backend_layout {
                         colCount = 2
@@ -14,22 +14,22 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.left
-                                        colPos = 2
-                                        identifier = sidebar
-                                        slideMode = collectReverse
-                                    }
-                                    2 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
                                         colPos = 0
                                         identifier = main
+                                    }
+                                    2 {
+                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.right
+                                        colPos = 2
+                                        identifier = sidebar
+                                        slideMode = collectReverse
                                     }
                                 }
                             }
                         }
                     }
                 }
-                icon = EXT:rlt3sitepackage/Resources/Public/Icons/BackendLayouts/SubpageSidebarLeft.svg
+                icon = EXT:rlt3sitepackage/Resources/Public/Icons/BackendLayouts/PageSidebarRight.svg
             }
         }
     }

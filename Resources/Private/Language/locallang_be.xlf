@@ -9,10 +9,10 @@
             <trans-unit id="backend_layout.default">
                 <source>Default</source>
             </trans-unit>
-            <trans-unit id="backend_layout.subpage_sidebar_left">
+            <trans-unit id="backend_layout.page_sidebar_left">
                 <source>Subpage Sidebar Left</source>
             </trans-unit>
-            <trans-unit id="backend_layout.subpage_sidebar_right">
+            <trans-unit id="backend_layout.page_sidebar_right">
                 <source>Subpage Sidebar Right</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.normal">
