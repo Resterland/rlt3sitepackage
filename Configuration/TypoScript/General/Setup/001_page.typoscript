@@ -35,6 +35,9 @@ page {
         variables {
             parentPageTitle = TEXT
             parentPageTitle.data = levelfield:-1:title
+
+            currentBackendLayout = TEXT
+            currentBackendLayout.data = pagelayout
         }
 
         dataProcessing {
