@@ -1,4 +1,4 @@
 
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Setup/*.typoscript'
-@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Navigation/*.typoscript'
-@import 'EXT:rlt3sitepackage/Configuration/TypoScript/CustomContentElements/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Navigation/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/CustomContentElements/*.typoscript'
