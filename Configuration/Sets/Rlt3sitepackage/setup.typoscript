@@ -1,13 +1,5 @@
-//
-// Dependencies
-// ------------------------------------------
-#@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
 
-
-//
-// Project setup
-// ------------------------------------------
-@import './TypoScript/General/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Setup/*.typoscript'
 @import './TypoScript/Navigation/*.typoscript'
 @import './TypoScript/CustomContentElements/*.typoscript'
 #@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/TypoScript/Config/*.typoscript'
