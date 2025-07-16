@@ -1,4 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:if condition="{data.frame_class} != none && {data.CType} != articlemedia">
     <f:then>
         <div id="c{data.uid}"
@@ -43,7 +44,6 @@
         </article>
     </f:else>
     <f:else>
-
         <a id="c{data.uid}"></a>
         <f:if condition="{data._LOCALIZED_UID}">
             <a id="c{data._LOCALIZED_UID}"></a>
