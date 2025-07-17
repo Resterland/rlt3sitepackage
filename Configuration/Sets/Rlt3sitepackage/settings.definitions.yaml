@@ -73,7 +73,10 @@ settings:
     category: Rlt3sitepackage.templates
     description: 'Path to the templates of the ResterLand Site Package.'
     type: string
-    default: 'EXT:rlt3sitepackage/Resources/Private/Templates/'
+    enum:
+      default: 'EXT:rlt3sitepackage/Resources/Private/Templates/'
+      learning: 'EXT:rlt3sitepackage/Resources/Private/Learning/'
+    default: 'default'
 
   ### Meta data settings
   # Favicon
