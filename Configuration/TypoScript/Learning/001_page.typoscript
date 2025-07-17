@@ -39,4 +39,6 @@ page {
         data = leveltitle:0
         stdWrap.wrap = <p> | </p>
     }
+    10 = TEXT
+    10.data = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:siteTitle
 }
