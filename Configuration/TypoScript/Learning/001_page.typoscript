@@ -27,4 +27,14 @@ page {
             }
         }
     }
+
+    20 = TEXT
+    20 {
+        data = field:abstract
+    }
+
+    30 = TEXT
+    30 {
+        data = leveltitle:0
+    }
 }
