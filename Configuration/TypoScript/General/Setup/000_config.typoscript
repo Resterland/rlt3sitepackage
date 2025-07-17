@@ -45,7 +45,7 @@ config {
 }
 
 ## Always deactivate compression and concatenation in development context
-[applicationContext == "Development"]
+[applicationContext == "Development/Local"]
     config {
         compressCss = 0
         concatenateCss = 0
