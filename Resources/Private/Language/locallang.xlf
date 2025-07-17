@@ -7,6 +7,10 @@
         </header>
         <body>
 
+            <trans-unit id="siteTitle">
+                <source>Seiten Titel</source>
+            </trans-unit>
+
             <trans-unit id="skiptomainnavigation">
                 <source>Skip to main navigation</source>
             </trans-unit>
