@@ -1,0 +1,20 @@
+<f:layout name="ResterlandLayout"/>
+<f:section name="PageContent">
+    <f:if condition="{settings.page.themes.breadcrumb.enable}">
+        <f:render
+            partial="Navigation/Breadcrumb"
+            arguments="{_all}"/>
+
+    </f:if>
+    <aside>
+        <f:render
+            partial="Content"
+            arguments="{records: content.sidebar.records}"/>
+    </aside>
+    <main>
+        <f:render
+            partial="Content"
+            arguments="{records: content.main.records}"/>
+    </main>
+
+</f:section>
