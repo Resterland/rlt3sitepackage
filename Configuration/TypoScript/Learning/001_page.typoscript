@@ -41,4 +41,10 @@ page {
     }
     10 = TEXT
     10.data = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:siteTitle
+
+    35 = TEXT
+    35 {
+        data = pagelayout
+        stdWrap.wrap = <p> | </p>
+    }
 }
