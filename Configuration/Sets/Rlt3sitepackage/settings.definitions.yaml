@@ -76,7 +76,7 @@ settings:
     enum:
       'EXT:rlt3sitepackage/Resources/Private/Templates/': 'default'
       'EXT:rlt3sitepackage/Resources/Private/Learning/': 'learning'
-    default: 'default'
+    default: 'EXT:rlt3sitepackage/Resources/Private/Templates/'
 
   ### Meta data settings
   # Favicon
