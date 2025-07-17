@@ -74,8 +74,8 @@ settings:
     description: 'Path to the templates of the ResterLand Site Package.'
     type: string
     enum:
-      default: 'EXT:rlt3sitepackage/Resources/Private/Templates/'
-      learning: 'EXT:rlt3sitepackage/Resources/Private/Learning/'
+      'EXT:rlt3sitepackage/Resources/Private/Templates/': 'default'
+      'EXT:rlt3sitepackage/Resources/Private/Learning/': 'learning'
     default: 'default'
 
   ### Meta data settings
