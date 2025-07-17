@@ -36,5 +36,6 @@ page {
     30 = TEXT
     30 {
         data = leveltitle:0
+        stdWrap.wrap = <p> | </p>
     }
 }
