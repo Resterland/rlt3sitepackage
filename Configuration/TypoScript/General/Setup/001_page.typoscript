@@ -46,6 +46,8 @@ page {
         }
     }
 
+
+
     meta {
         viewport = {$page.meta.viewport}
         robots = {$page.meta.robots}
@@ -61,3 +63,24 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
 }
+# Using the TSconfig provider of backend layouts
+[tree.pagelayout === "pagets__default"]
+    page.includeCSS {
+        styles = EXT:rlt3sitepackage/Resources/Public/Css/default.css
+    }
+    # ...
+[END]
+# Using the TSconfig provider of backend layouts
+[tree.pagelayout === "pagets__PageSidebarLeft"]
+    page.includeCSS {
+        styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
+    }
+    # ...
+[END]
+# Using the TSconfig provider of backend layouts
+[tree.pagelayout === "pagets__PageSidebarRight"]
+    page.includeCSS {
+        styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
+    }
+    # ...
+[END]

@@ -3,14 +3,6 @@ page {
     typeNum = 0
 
     10 = PAGEVIEW
-    10 {
-        dataProcessing {
-            dataProcessing {
-                20 = menu
-                20.as = myMainMenu
-            }
-        }
-    }
 
     15 = TEXT
     15 {
@@ -40,11 +32,6 @@ page {
     }
     15 = TEXT
     15.data = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:siteTitle
-
-    20 = TEXT
-    20 {
-        data = field:abstract
-    }
 
     30 = TEXT
     30 {
