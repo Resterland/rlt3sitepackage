@@ -6,6 +6,7 @@ page {
     10 {
         value = Hello world
         stdWrap {
+            wrap = <h1> | </h1>
             typolink {
                 parameter = http://www.typo3.org/
                 additionalParams = &parameter=value
