@@ -2,8 +2,18 @@ page = PAGE
 page {
     typeNum = 0
 
-    10 = TEXT
+    10 = PAGEVIEW
     10 {
+        dataProcessing {
+            dataProcessing {
+                10 = menu
+                10.as = myMainMenu
+            }
+        }
+    }
+
+    15 = TEXT
+    15 {
         value = Hello world
         stdWrap {
             wrap = <h1> | </h1>
@@ -39,8 +49,8 @@ page {
         data = leveltitle:0
         stdWrap.wrap = <p> | </p>
     }
-    10 = TEXT
-    10.data = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:siteTitle
+    15 = TEXT
+    15.data = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:siteTitle
 
     35 = TEXT
     35 {
