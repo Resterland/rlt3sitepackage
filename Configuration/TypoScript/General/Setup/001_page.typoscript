@@ -63,31 +63,30 @@ page {
     }
     includeCSS {
         basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        basic.title = basic-layout
-        basic.forceOnTop = true
+        basic.title = basic-style
     }
 }
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__default"]
     page.includeCSS {
-        styles = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        styles.title = default-backend
+        backend = EXT:rlt3sitepackage/Resources/Public/Css/default.css
+        backend.title = default
     }
     # ...
 [END]
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarLeft"]
     page.includeCSS {
-        styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        styles.title = pagesidebarleft-backend
+        backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
+        backend.title = pagesidebarleft
     }
     # ...
 [END]
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarRight"]
     page.includeCSS {
-        styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        styles.title = pagesidebarright-backend
+        backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
+        backend.title = pagesidebarright
     }
     # ...
 [END]
