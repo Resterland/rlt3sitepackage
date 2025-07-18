@@ -7,6 +7,27 @@ body {
         "footer";
 }
 
+/* grid areas */
+header.page-header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    display: block;
+}
+aside {
+    grid-area: aside;
+    background-color: var(--rl-brown-lighter);
+    border-right: 1px solid var(--rl-brown-light);
+}
+footer {
+    grid-area: footer;
+    font-size: 0.9rem;
+    background-color: var(--rl-brown-camel);
+    display: grid;
+    margin-top: 0.5em;
+}
+
 /* media queries */
 @media screen and (min-width: 60rem) {
     body {
