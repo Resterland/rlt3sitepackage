@@ -61,10 +61,6 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
-    includeCSS {
-        basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        basic.title = basic-style
-    }
 }
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__default"]
