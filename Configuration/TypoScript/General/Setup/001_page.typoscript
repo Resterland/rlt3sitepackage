@@ -47,7 +47,6 @@ page {
     }
 
 
-
     meta {
         viewport = {$page.meta.viewport}
         robots = {$page.meta.robots}
@@ -62,11 +61,17 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
+    page.includeCSS {
+        styles = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
+        styles.title = basic-layout
+        styles.forceOnTop = true
+    }
 }
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__default"]
     page.includeCSS {
         styles = EXT:rlt3sitepackage/Resources/Public/Css/default.css
+        styles.title = default-backend
     }
     # ...
 [END]
@@ -74,6 +79,7 @@ page {
 [tree.pagelayout === "pagets__PageSidebarLeft"]
     page.includeCSS {
         styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
+        styles.title = pagesidebarleft-backend
     }
     # ...
 [END]
@@ -81,6 +87,7 @@ page {
 [tree.pagelayout === "pagets__PageSidebarRight"]
     page.includeCSS {
         styles = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
+        styles.title = pagesidebarright-backend
     }
     # ...
 [END]
