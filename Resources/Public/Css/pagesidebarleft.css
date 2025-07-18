@@ -1,11 +1,130 @@
+@charset "UTF-8";
+@import "links.css";
+
+:root,
+[data-rl-theme="light"] {
+    color-scheme: light;
+    --rl-coffee: #6f4e37;
+    --rl-coffee-rgb: rgb(111, 78, 55);
+    --rl-coffee-black: #4b3621;
+    --rl-coffee-black-rgb: rgb(75, 54, 33);
+    --rl-coffee-creme: #a67b5b;
+    --rl-coffee-creme-rgb: rgb(166, 123, 91);
+    --rl-brown-dark: #7b3f00;
+    --rl-brown-dark-rgb: rgb(123, 63, 0);
+    --rl-brown: #964b00;
+    --rl-brown-rgb: rgb(150, 75, 0);
+    --rl-brown-light: #a86a24;
+    --rl-brown-light-rgb: rgb(168, 106, 36);
+    --rl-brown-lighter: #df8549;
+    --rl-brown-lighter-rgb: rgb(223, 133, 73);
+    --rl-brown-camel: #c19a6b;
+    --rl-brown-camel-rgb: rgb(193, 154, 107);
+    --rl-blue-dark: #191970;
+    --rl-blue-dark-rgb: rgb(25, 25, 112);
+    --rl-blue: #0048ba;
+    --rl-blue-rgb: rgb(0, 72, 186);
+    --rl-blue-light: #0e76bc;
+    --rl-blue-light-rgb: rgb(14, 118, 188);
+    --rl-blue-lighter: #34a2da;
+    --rl-blue-lighter-rgb: rgb(52, 162, 218);
+    --rl-red-dark: #a52a2a;
+    --rl-red-dark-rgb: rgb(165, 42, 42);
+    --rl-red: #ff0000;
+    --rl-red-rgb: rgb(255, 0, 0);
+    --rl-white: #ffffff;
+    --rl-white-rgb: rgb(255, 255, 255);
+    --rl-black: #000000;
+    --rl-black-rgb: rgb(0, 0, 0);
+    --rl-chocolate: #d2691e;
+    --rl-chocolate-rgb: rgb(210, 105, 30);
+    --rl-orange: #ff8000;
+    --rl-orange-rgb: rgb(255, 128, 0);
+    --rl-yellow: #feb040;
+    --rl-yellow-rgb: rgb(254, 176, 64);
+    --rl-yellow-fale: #edd886;
+    --rl-yellow-fale-rgb: rgb(237, 216, 134);
+    --rl-green-dark: #006400;
+    --rl-green-dark-rgb: rgb(0, 100, 0);
+    --rl-green: #588b29;
+    --rl-green-rgb: rgb(88, 139, 41);
+    --rl-green-light: #00ff7f;
+    --rl-green-light-rgb: rgb(0, 255, 127);
+    --rl-green-lighter: #90ee90;
+    --rl-green-lighter-rgb: rgb(144, 238, 144);
+    --rl-light: #faebd7;
+    --rl-light-rgb: rgb(250, 235, 215);
+    --rl-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
+    --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --rl-body-font-family: "Nimbus Sans L", "Liberation Sans", "Trebuchet MS", var( --rl-font-sans-serif);
+    --rl-body-font-size: 1rem;
+    --rl-body-font-weight: 400;
+    --rl-body-line-height: 1.5;
+    --rl-body-background: var(--rl-light);
+    --rl-body-color: var(--rl-blue-dark);
+    --rl-link-text-decoration: none;
+    --rl-link-color: var(--rl-blue);
+    --rl-link-visited: var(--rl-coffee);
+    --rl-link-focus: var(--rl-yellow);
+    --rl-link-hover: var(--rl-yellow-fale);
+    --rl-link-hover-color: var(--rl-coffee-black);
+    --rl-link-active: var(--rl-yellow);
+    --rl-bg-color: #a52a2a;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
+    background-size: 3px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* GLOBAL layout settings */
 body {
+    background-color: var(--rl-body-background);
+    margin: 0 auto;
+    font-family: var(--rl-body-font-family), sans-serif;
+    font-weight: var(--rl-body-font-weight);
+    line-height: var(--rl-body-line-height);
+    font-size: var(--rl-body-font-size);
+    color: var(--rl-body-color);
     display: grid;
     grid-template-areas:
         "header"
         "aside"
         "main"
         "footer";
+}
+
+/* START basic layout settings */
+img,
+picture,
+video {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+aside,
+header.page-header,
+main,
+footer {
+    position: relative;
+    margin: 0;
+    padding: 0 1em 0 1em;
 }
 
 /* grid areas */
@@ -28,14 +147,142 @@ footer {
     display: grid;
     margin-top: 0.5em;
 }
+
+/* header#header.page-header grid areas */
+.logo {
+    grid-area: logo;
+}
+.site-name {
+    grid-area: site-name;
+}
+.site-description {
+    grid-area: description;
+}
+.main-nav {
+    grid-area: main-nav;
+}
+.search {
+    grid-area: search;
+}
+header.page-header {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "site-name"
+    "description"
+    "main-nav"
+    "search";
+}
+.logo img {
+    width: 2.5em;
+    margin: 0;
+}
+header.page-header h1,
+header.page-header p {
+    margin: 0;
+    padding: 0;
+    font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
+    text-shadow: 2px 1px 1px var(--rl-brown-light);
+}
+header.page-header p {
+    font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
+    text-shadow: 2px 1px 1px var(--rl-brown-light);
+}
+.main-nav,
+.footer-nav {
+    display: flex;
+    gap: 0 0.25em;
+    justify-content: space-between;
+}
+.main-nav ul,
+.footer-nav ul {
+    flex: auto initial;
+}
+.main-menu {
+    font-size: 1.2em;
+}
+.main-menu a,
+.lang-menu a,
+.footer-menu a {
+    padding: 0.25em;
+    display: block;
+}
+.lang-menu {
+    flex-direction: column;
+}
+.search {
+    padding-left: 0.25em;
+}
+
+/* footer#footer.page-footer grid areas */
+.openstreetmap {
+    grid-area: location;
+    padding: 0.5em;
+}
+.openstreetmap iframe {
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+.footer-nav {
+    grid-area: footer-nav;
+}
+.copyright {
+    grid-area: copyright;
+}
+footer {
+    display: grid;
+    grid-template-areas:
+    "footer-nav"
+    "location"
+    "copyright";
+}
+
 /* media queries */
 @media screen and (min-width: 60rem) {
     body {
+        max-width: 100em;
         grid-template-columns: 12em auto 1fr;
         grid-template-areas:
       "header header header"
       "aside main main"
       "footer footer footer";
+    }
+    aside {
+    }
+    .logo img {
+        width: 4em;
+        margin: 0;
+    }
+    header.page-header {
+        grid-template-columns: 5em 1fr auto;
+        grid-template-areas:
+      "logo site-name site-name"
+      "logo description description"
+      "logo main-nav search";
+    }
+    header.page-header h1 {
+        font-size: max(min(1vh, 1rem), 3vh, 3rem);
+        text-shadow: 3px 2px 2px var(--rl-brown-light);
+    }
+    header.page-header p {
+        font-size: max(min(1vh, 1rem), 3vh, 1.75rem);
+        text-shadow: 3px 2px 2px var(--rl-brown-light);
+    }
+    .main-menu,
+    .lang-menu,
+    .footer-menu {
+        display: flex;
+        gap: 0.25em;
+    }
+    .lang-menu,
+    .footer-menu {
+        flex-direction: row;
+    }
+    footer {
+        grid-template-columns: 5em 1fr auto;
+        grid-template-areas:
+      "footer-nav footer-nav location"
+      "copyright copyright location";
     }
 }
 /* END media queries */
