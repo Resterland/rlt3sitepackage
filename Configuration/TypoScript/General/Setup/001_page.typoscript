@@ -61,14 +61,13 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
-    includeCSS {
-        basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        basic.title = basic-style
-    }
 }
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__default"]
     page.includeCSS {
+        basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
+        basic.title = basic-style
+
         backend = EXT:rlt3sitepackage/Resources/Public/Css/default.css
         backend.title = default
     }
@@ -77,6 +76,8 @@ page {
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarLeft"]
     page.includeCSS {
+        basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
+        basic.title = basic-style
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
         backend.title = pagesidebarleft
     }
@@ -85,6 +86,8 @@ page {
 # Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarRight"]
     page.includeCSS {
+        basic = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
+        basic.title = basic-style
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
         backend.title = pagesidebarright
     }
