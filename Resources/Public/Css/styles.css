@@ -95,6 +95,12 @@ body {
     line-height: var(--rl-body-line-height);
     font-size: var(--rl-body-font-size);
     color: var(--rl-body-color);
+    display: grid;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
 }
 
 /* START basic layout settings */
