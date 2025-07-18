@@ -62,9 +62,9 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
     page.includeCSS {
-        styles = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        styles.title = basic-layout
-        styles.forceOnTop = true
+        basic-layout = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
+        basic-layout.title = basic-layout
+        basic-layout.forceOnTop = true
     }
 }
 # Using the TSconfig provider of backend layouts
