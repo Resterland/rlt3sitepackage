@@ -1,5 +1,6 @@
 /* GLOBAL layout settings */
 body {
+    display: grid;
     grid-template-areas:
         "header"
         "aside"
@@ -9,6 +10,7 @@ body {
 /* media queries */
 @media screen and (min-width: 60rem) {
     body {
+        grid-template-columns: 12em auto 1fr;
         grid-template-areas:
       "header header header"
       "aside main main"
