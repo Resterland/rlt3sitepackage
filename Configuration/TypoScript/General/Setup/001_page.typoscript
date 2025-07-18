@@ -71,6 +71,7 @@ page {
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/default.css
         backend.title = default
+        backend.forceOnTop = true
     }
     # ...
 [END]
@@ -79,6 +80,7 @@ page {
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
         backend.title = pagesidebarleft
+        backend.forceOnTop = true
     }
     # ...
 [END]
@@ -87,6 +89,7 @@ page {
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
         backend.title = pagesidebarright
+        backend.forceOnTop = true
     }
     # ...
 [END]
