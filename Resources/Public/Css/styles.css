@@ -231,7 +231,7 @@ header.page-header p {
 .breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
-    content: "→";
+    content: "»";
 }
 
 /* footer#footer.page-footer grid areas */
