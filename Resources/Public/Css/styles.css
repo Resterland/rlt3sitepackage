@@ -214,11 +214,11 @@ header.page-header p {
     padding-left: 0.25em;
 }
 
-.breadcrumb ul li {
+.breadcrumb li {
     display: inline;
     list-style-type: none;
 }
-.breadcrumb ul li:not(:first-child)::before {
+.breadcrumb li:not(:first-child)::before {
     content: "» ";
 }
 
