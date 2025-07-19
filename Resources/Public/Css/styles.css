@@ -95,9 +95,6 @@ body {
     line-height: var(--rl-body-line-height);
     font-size: var(--rl-body-font-size);
     color: var(--rl-body-color);
-}
-
-.body-wrapper {
     display: grid;
     grid-template-areas:
         "header"
@@ -244,15 +241,12 @@ footer {
 @media screen and (min-width: 60rem) {
     body {
         max-width: 100em;
-    }
-    .body-wrapper {
         display: grid;
         grid-template-columns: 12em auto 1fr;
         grid-template-areas:
       "header header header"
       "main main main"
       "footer footer footer";
-
     }
     .logo img {
         width: 4em;

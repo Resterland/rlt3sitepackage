@@ -1,12 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:comment><!--<f:asset.css identifier="mainstyles"-->
-    <!--             href="EXT:rlt3sitepackage/Resources/Public/Css/styles.css" />--></f:comment>
-<div class="body-wrapper">
-    <div id="top"></div>
-    <f:render partial="Header/Header" arguments="{_all}"/>
+<!--             href="EXT:rlt3sitepackage/Resources/Public/Css/styles.css" />--></f:comment>
 
-    <f:render section="PageContent"/>
+<div id="top"></div>
+<f:render partial="Header/Header" arguments="{_all}"/>
 
-    <f:render partial="Footer/Footer" arguments="{_all}"/>
-</div>
+<f:render section="PageContent"/>
+
+<f:render partial="Footer/Footer" arguments="{_all}"/>
 </html>

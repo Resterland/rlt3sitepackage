@@ -1,6 +1,6 @@
 @import "styles.css";
 
-.body-wrapper {
+body {
     display: grid;
     grid-template-areas:
         "header"
@@ -11,7 +11,7 @@
 
 /* media queries */
 @media screen and (min-width: 60rem) {
-    .body-wrapper {
+    body {
         display: grid;
         grid-template-columns: 12em auto 1fr;
         grid-template-areas:
