@@ -67,18 +67,19 @@ page {
     }
     includeCSS {
         default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        default.if.tree.pagelayout = "pagets__default"
+        default.data = pagelayout
+        default.if.data.value = "pagets__default"
         default.title = default-style
 
         pagesidebarleft = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        pagesidebarleft.title = pagesidebarleft-style
         pagesidebarleft.data = pagelayout
-        pagesidebarleft.if.value = pagets__PageSidebarLeft
+        pagesidebarleft.if.data.value = "pagets__PageSidebarLeft"
+        pagesidebarleft.title = pagesidebarleft-style
 
         pagesidebarright = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        pagesidebarright.title = pagesidebarright-style
         pagesidebarright.data = pagelayout
-        pagesidebarright.if.value = pagets__PageSidebarRight
+        pagesidebarright.if.data.value = "pagets__PageSidebarRight"
+        pagesidebarright.title = pagesidebarright-style
     }
 }
 /*# Using the TSconfig provider of backend layouts
