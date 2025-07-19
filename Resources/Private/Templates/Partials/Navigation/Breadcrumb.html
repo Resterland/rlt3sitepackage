@@ -2,9 +2,9 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol>
                 <f:for each="{breadcrumb}" as="item">
-                    <f:if condition="{rootlineItem.current}">
+                    <f:if condition="{item.current}">
                         <f:then>
-                            <li><span>{item.title}</span></li>
+                            <li><span aria-current="page">{item.title}</span></li>
                         </f:then>
                         <f:else>
                             <li><a href="{item.link}" title="{item.title}">{item.title}</a>
