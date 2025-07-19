@@ -65,44 +65,26 @@ page {
         generalstyles = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
         generalstyles.title = general-style
     }
-    includeCSS {
-        default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        default.data = pagelayout
-        default.if.data.value = "pagets__default"
-        default.title = default-style
-
-        pagesidebarleft = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        pagesidebarleft.data = pagelayout
-        pagesidebarleft.if.data.value = "pagets__PageSidebarLeft"
-        pagesidebarleft.title = pagesidebarleft-style
-
-        pagesidebarright = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        pagesidebarright.data = pagelayout
-        pagesidebarright.if.data.value = "pagets__PageSidebarRight"
-        pagesidebarright.title = pagesidebarright-style
-    }
 }
-/*# Using the TSconfig provider of backend layouts
+
 [tree.pagelayout === "pagets__default"]
     page.includeCSS {
-        backend = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        backend.title = default
+        default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
+        default.title = default-style
     }
     # ...
 [END]
-# Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarLeft"]
     page.includeCSS {
-        backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        backend.title = pagesidebarleft
+        pagesidebarleft = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
+        pagesidebarleft.title = pagesidebarleft-style
     }
     # ...
 [END]
-# Using the TSconfig provider of backend layouts
 [tree.pagelayout === "pagets__PageSidebarRight"]
     page.includeCSS {
-        backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        backend.title = pagesidebarright
+        pagesidebarright = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
+        pagesidebarright.title = pagesidebarright-style
     }
     # ...
-[END]*/
+[END]
