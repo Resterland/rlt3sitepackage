@@ -13,6 +13,7 @@ body {
 @media screen and (min-width: 60rem) {
     body {
         display: grid;
+        grid-template-columns: 25% auto 300px;
         grid-template-areas:
       "header header header"
       "aside main main"
