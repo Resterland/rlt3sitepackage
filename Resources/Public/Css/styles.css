@@ -214,6 +214,14 @@ header.page-header p {
     padding-left: 0.25em;
 }
 
+.breadcrumb ul li {
+    display: inline;
+    list-style-type: none;
+}
+.breadcrumb ul li:not(:first-child)::before {
+    content: "» ";
+}
+
 /* footer#footer.page-footer grid areas */
 .openstreetmap {
     grid-area: location;
