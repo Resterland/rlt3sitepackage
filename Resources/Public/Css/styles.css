@@ -214,9 +214,10 @@ header.page-header p {
     padding-left: 0.25em;
 }
 
-.breadcrumb-item {
-    display: inline;
+ul.horizontal {
+    display: inline-block;
     list-style-type: none;
+    background-color: aqua;
 }
 .breadcrumb-item:not(:first-child)::before {
     content: "» ";
