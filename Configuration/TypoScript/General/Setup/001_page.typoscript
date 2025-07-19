@@ -61,10 +61,6 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
-    includeCSSLibs {
-        generalstyles = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        generalstyles.title = general-style
-    }
 }
 
 [tree.pagelayout === "pagets__default"]
