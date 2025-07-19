@@ -83,7 +83,7 @@ page {
 [tree.pagelayout === "pagets__default"]
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        backend.title = blabladefault
+        backend.title = default
     }
     # ...
 [END]
@@ -91,7 +91,7 @@ page {
 [tree.pagelayout === "pagets__PageSidebarLeft"]
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        backend.title = blablaleft
+        backend.title = pagesidebarleft
     }
     # ...
 [END]
@@ -99,7 +99,7 @@ page {
 [tree.pagelayout === "pagets__PageSidebarRight"]
     page.includeCSS {
         backend = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        backend.title = blablaright
+        backend.title = pagesidebarright
     }
     # ...
 [END]*/
