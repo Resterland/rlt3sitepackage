@@ -242,7 +242,7 @@ footer {
     body {
         max-width: 100em;
         display: grid;
-        grid-template-columns: minmax(12em, min-content) auto minmax(12em, 12em);
+        grid-template-columns: 12em auto 12em;
         grid-template-areas:
       "header header header"
       "main main main"
