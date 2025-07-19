@@ -67,9 +67,8 @@ page {
     }
     includeCSS {
         default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
+        default.if.tree.pagelayout = "pagets__default"
         default.title = default-style
-        default.data = pagelayout
-        default.data.if.value = pagets__default
 
         pagesidebarleft = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
         pagesidebarleft.title = pagesidebarleft-style
