@@ -1,20 +1,17 @@
-<f:if condition="{breadcrumb}">
-    <f:then>
-        <nav class="breadcrumb-nav" aria-label="breadcrumb">
-            <ul class="breadcrumb-menu">
+<f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable}">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
                 <f:for each="{breadcrumb}" as="item">
-                    <li class="nav-item">
-                        <a class="nav-link {f:if(condition: item.active, then:'active')}"
-                           href="{item.link}"
-                           target="{item.target}"
-                           title="{item.title}"
-                        >
-                            {item.title}
-                        </a>
-                    </li>
+                    <f:if condition="{rootlineItem.current}">
+                        <f:then>
+                            <li><span>{item.title}</span></li>
+                        </f:then>
+                        <f:else>
+                            <li><a href="{item.link}" title="{item.title}">{item.title}</a>
+                            </li>
+                        </f:else>
+                    </f:if>
                 </f:for>
-            </ul>
+            </ol>
         </nav>
-    </f:then>
-
 </f:if>
