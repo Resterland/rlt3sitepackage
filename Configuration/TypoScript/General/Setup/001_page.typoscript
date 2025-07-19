@@ -61,11 +61,10 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
-    includeCSS {
+    includeCSSLibs {
         generalstyles = EXT:rlt3sitepackage/Resources/Public/Css/styles.css
-        generalstyles.forceOnTop = 1
-        generalstyles.title = generalstyles
-
+    }
+    includeCSS {
         default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
         default.data = pagelayout
         default.if.value = pagets__default
