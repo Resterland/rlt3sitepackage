@@ -3,20 +3,14 @@
         <nav class="breadcrumb-nav" aria-label="breadcrumb">
             <ul class="breadcrumb-menu">
                 <f:for each="{breadcrumb}" as="item">
-                    <li
-                        class="breadcrumb-menu-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}" lang="">
-                        <f:if condition="{item.available}">
-                            <f:then>
-                                <a class="nav-link"
-                                   href="{item.link}" hreflang="{item.hreflang}"
-                                   title="{item.title}">
-                                    <bdi>{item.navigationTitle}</bdi>
-                                </a>
-                            </f:then>
-                            <f:else>
-                                <span class="nav-link-text">&nbsp;</span>
-                            </f:else>
-                        </f:if>
+                    <li class="nav-item">
+                        <a class="nav-link {f:if(condition: item.active, then:'active')}"
+                           href="{item.link}"
+                           target="{item.target}"
+                           title="{item.title}"
+                        >
+                            {item.title}
+                        </a>
                     </li>
                 </f:for>
             </ul>
