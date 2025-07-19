@@ -217,6 +217,26 @@ header.page-header p {
     background-color: aqua;
     padding: 0.25em;
 }
+.breadcrumb-menu,
+.breadcrumb-menu li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.breadcrumb-menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+.breadcrumb-menu li:not(:first-child)::before {
+    content: "» ";
+    margin: 0 .5em;
+    color: #00e;
+}
+
+.breadcrumb-menu li:last-child::before {
+    color: inherit;
+}
 
 /* footer#footer.page-footer grid areas */
 .openstreetmap {
