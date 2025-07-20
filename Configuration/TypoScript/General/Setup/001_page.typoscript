@@ -36,16 +36,18 @@ page {
         variables {
             pageTitle = TEXT
             pageTitle.data = page:title
+
             parentPageTitle = TEXT
             parentPageTitle.data = levelfield:-1:title
 
             siteTitle = TEXT
             siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
+
             rootPage = TEXT
             rootPage.data = leveluid:0
 
-            backendlayout = TEXT
-            backendlayout {
+            backendLayout = TEXT
+            backendLayout {
                 data = pagelayout
                 replacement.10 {
                     search = pagets__
