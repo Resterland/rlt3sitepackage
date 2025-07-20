@@ -140,7 +140,7 @@ page {
     }
 }
 
-[tree.pagelayout === "pagets__default"]
+/*[tree.pagelayout === "pagets__default"]
     page.includeCSS {
         default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
         default.title = default-style
@@ -160,4 +160,4 @@ page {
         pagesidebarright.title = pagesidebarright-style
     }
     # ...
-[END]
+[END]*/
