@@ -9,11 +9,13 @@
 
         <p>Base url: <f:link.page pageUid="{site.rootPageId}">{site.configuration.base}</f:link.page></p>
 
-        <div>
-            <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
-                following abstract:</p>
-            <p>{page.pageRecord.abstract}</p>
-        </div>
+        <h2>Data in variable page</h2>
+        <f:debug inline="true">{page}</f:debug>
+
+        <h2>Output</h2>
+        <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
+            following abstract:</p>
+        <p>{page.pageRecord.abstract}</p>
 
         <f:render partial="Content" arguments="{records: content.main.records}"/>
     </main>
