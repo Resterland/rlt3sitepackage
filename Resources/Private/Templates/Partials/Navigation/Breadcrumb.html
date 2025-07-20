@@ -1,4 +1,4 @@
-<f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable}">
+<f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable} && !{rootPage}">
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol>
                 <f:for each="{breadcrumb}" as="item">

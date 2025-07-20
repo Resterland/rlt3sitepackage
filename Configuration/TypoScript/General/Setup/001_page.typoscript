@@ -38,7 +38,7 @@ page {
             pageTitle.data = page:title
 
             parentPageTitle = TEXT
-            parentPageTitle.data = page:-1:title
+            parentPageTitle.data = levelfield:-1:title
 
             siteTitle = TEXT
             siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
