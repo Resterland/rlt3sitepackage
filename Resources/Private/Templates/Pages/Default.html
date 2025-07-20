@@ -9,10 +9,30 @@
 
         <p>Base url: <f:link.page pageUid="{site.rootPageId}">{site.configuration.base}</f:link.page></p>
 
+        <h2>Data in variable images</h2>
+        <f:debug inline="true">{images}</f:debug>
+        <h2>Data in variable images</h2>
+
+        <div class="row">
+            <div class="row">
+                <f:for each="{images}" as="image">
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <f:image image="{image}" class="card-img-top" height="250"/>
+                            <div class="card-body">
+                                <h5 class="card-title">{image.title}</h5>
+                                <div class="card-text">{image.description}</div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>
+        </div>
+
         <h2>Data in variable page</h2>
         <f:debug inline="true">{page}</f:debug>
 
-        <h2>Output</h2>
+        <h2>Something else</h2>
         <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
             following abstract:</p>
         <p>{page.pageRecord.abstract}</p>
