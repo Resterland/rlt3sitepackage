@@ -1,5 +1,10 @@
 <f:spaceless>
     <div id="top"></div>
+    <div>
+        <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
+            following abstract:</p>
+        <p>{page.pageRecord.abstract}</p>
+    </div>
     <f:render partial="Header/Header" arguments="{_all}"/>
 
     <f:render section="PageContent"/>

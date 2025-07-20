@@ -1,16 +1,12 @@
 <f:layout name="ResterlandLayout"/>
 <f:section name="PageContent">
     <aside>
-        <f:render
-            partial="Content"
+        <f:render partial="Content"
             arguments="{records: content.sidebar.records}"/>
     </aside>
     <main>
-        <f:render
-            partial="Navigation/Breadcrumb"
-            arguments="{_all}"/>
-        <f:render
-            partial="Content"
+        <f:render partial="Navigation/Breadcrumb" optional="true"/>
+        <f:render partial="Content"
             arguments="{records: content.main.records}"/>
     </main>
 
