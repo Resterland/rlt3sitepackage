@@ -2,29 +2,7 @@
 <f:section name="PageContent">
     <main>
         <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
-        <h2>Data in variable site</h2>
-        <f:debug inline="true">{site}</f:debug>
-
-        <h2>Output</h2>
-
-        <p>Base url: <f:link.page pageUid="{site.rootPageId}">{site.configuration.base}</f:link.page></p>
-
-        <h2>Data in variable page</h2>
-        <f:debug inline="true">{page}</f:debug>
-
-        <h2>Data in variable language</h2>
-        <f:debug inline="true">{language}</f:debug>
-
-        <h2>Data in variable settings</h2>
-        <f:debug inline="true">{settings}</f:debug>
-
-        <h2>Something else</h2>
-        <p>currentBackendLayout: {currentBackendLayout}</p>
-        <p>pagelayout: {pagelayout}</p>
-        <p>logoAlt: {logoAlt}</p>
-        <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
-            following abstract:</p>
-        <p>{page.pageRecord.abstract}</p>
+        <f:render partial="Variables" arguments="{_all}"/>
 
         <f:render partial="Content" arguments="{records: content.main.records}"/>
     </main>

@@ -2,6 +2,9 @@
 <f:section name="PageContent">
     <main>
         <f:render partial="Navigation/Breadcrumb"  arguments="{_all}"/>
+
+        <f:render partial="Variables" arguments="{_all}"/>
+
         <f:render partial="Content"
                   arguments="{records: content.main.records}"/>
     </main>
