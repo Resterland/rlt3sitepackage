@@ -55,9 +55,9 @@ page {
                 }
                 ifEmpty = default
             }
+
             applicationContext = TEXT
             applicationContext.value.data = applicationcontext
-            applicationcontext.equals = Development/Local
 
             logoAlt = COA
             logoAlt {
