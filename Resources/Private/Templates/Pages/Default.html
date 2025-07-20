@@ -3,7 +3,7 @@
     <main>
         <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
         <f:if condition="{page.navigation}">
-        <f:render partial="Variables" arguments="{applicationContext: 'Development/Local'}"/>
+        <f:render partial="Variables" arguments="{applicationContext: Development/Local}"/>
         </f:if>
 
         <f:render partial="Content" arguments="{records: content.main.records}"/>
