@@ -7,7 +7,7 @@
     <main>
         <f:render partial="Navigation/Breadcrumb"  arguments="{_all}"/>
 
-        <f:if condition="{applicationContext} == 'Production'">
+        <f:if condition="{applicationContext} == 'Development/Local'">
             <f:render partial="Variables" arguments="{_all}"/>
         </f:if>
 
