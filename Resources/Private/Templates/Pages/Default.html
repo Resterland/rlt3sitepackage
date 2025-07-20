@@ -1,7 +1,14 @@
 <f:layout name="ResterlandLayout"/>
 <f:section name="PageContent">
     <main>
-        <f:render partial="Navigation/Breadcrumb" optional="true"/>
+        <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+
+        <div>
+            <p>The title of the page with id {page.id} is: {page.pageRecord.title}. It has the
+                following abstract:</p>
+            <p>{page.pageRecord.abstract}</p>
+        </div>
+
         <f:render partial="Content" arguments="{records: content.main.records}"/>
     </main>
 </f:section>
