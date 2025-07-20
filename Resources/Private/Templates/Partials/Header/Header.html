@@ -1,6 +1,6 @@
 <header class="page-header" role="banner">
     <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
-        <f:if condition="{page.header.logo.enable}">
+        <f:if condition="{settings.page.header.logo.enable}">
             <f:render
                 partial="Structure/Logo"
                 arguments="{_all}"/>
@@ -17,7 +17,7 @@
     <nav class="main-nav" role="navigation">
         <f:render partial="Navigation/Main" arguments="{_all}"/>
 
-        <f:if condition="{page.header.languagenavigation.enable}">
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
             <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
         </f:if>
     </nav>

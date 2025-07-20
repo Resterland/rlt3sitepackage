@@ -1,19 +1,19 @@
 <footer class="page-footer">
-    <f:if condition="{page.footer.navigation.enable}">
+    <f:if condition="{settings.page.footer.navigation.enable}">
         <nav class="footer-nav">
             <f:render partial="Navigation/FooterMenu.html" arguments="{_all}"/>
 
-            <f:if condition="{page.footer.languagenavigation.enable}">
+            <f:if condition="{settings.page.footer.languagenavigation.enable}">
                 <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
             </f:if>
         </nav>
     </f:if>
 
-    <f:if condition="{page.footer.openstreetmap.enable}">
+    <f:if condition="{settings.page.footer.openstreetmap.enable}">
         <f:render partial="Structure/OpenStreetMap" arguments="{_all}"/>
     </f:if>
 
-    <f:if condition="{page.footer.copyright.enable}">
+    <f:if condition="{settings.page.footer.copyright.enable}">
         <f:render partial="Footer/Copyright" arguments="{_all}"/>
     </f:if>
 
