@@ -256,6 +256,7 @@ header.page-header p {
 }
 .copyright {
     grid-area: copyright;
+    text-align: center;
 }
 .copyright img {
     vertical-align: middle;
