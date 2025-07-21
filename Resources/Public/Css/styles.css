@@ -296,11 +296,12 @@ footer {
     .footer-menu {
         flex-direction: row;
     }
-   /* footer {
-        grid-template-columns: 5em 1fr auto;
+    footer {
+        display: grid;
+       /* grid-template-columns: 5em 1fr auto;
         grid-template-areas:
       "footer-nav footer-nav location"
-      "copyright copyright location";
-    }*/
+      "copyright copyright location";*/
+    }
 }
 /* END media queries */
