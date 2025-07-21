@@ -199,15 +199,6 @@ header.page-header p {
     flex: auto initial;
 }
 
-.footer-nav {
-    display: flex;
-    gap: 0 0.25em;
-    justify-content: space-between;
-}
-.footer-nav ul {
-    flex: auto initial;
-}
-
 .main-menu {
     font-size: 1.2em;
 }
@@ -254,10 +245,20 @@ header.page-header p {
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .footer-nav {
+    padding: 0.5em 0;
     grid-area: footer-nav;
+    display: flex;
+    gap: 0.25em;
+    justify-content: space-around;
+}
+.footer-nav ul {
+    flex: auto initial;
 }
 .copyright {
     grid-area: copyright;
+}
+.copyright img {
+    vertical-align: middle;
 }
 footer {
     display: grid;
