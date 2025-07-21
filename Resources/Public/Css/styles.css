@@ -74,6 +74,7 @@
 }
 
 html {
+    height: 100%;
     padding: 0;
     margin: 0;
     background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
@@ -188,16 +189,24 @@ header.page-header p {
     font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
-.main-nav,
+.main-nav {
+    display: flex;
+    gap: 0 0.25em;
+    justify-content: space-between;
+}
+.main-nav ul {
+    flex: auto initial;
+}
+
 .footer-nav {
     display: flex;
     gap: 0 0.25em;
     justify-content: space-between;
 }
-.main-nav ul,
 .footer-nav ul {
     flex: auto initial;
 }
+
 .main-menu {
     font-size: 1.2em;
 }
@@ -298,10 +307,6 @@ footer {
     }
     footer {
         display: grid;
-       /* grid-template-columns: 5em 1fr auto;
-        grid-template-areas:
-      "footer-nav footer-nav location"
-      "copyright copyright location";*/
     }
 }
 /* END media queries */
