@@ -17,75 +17,97 @@
             </trans-unit>
             <trans-unit id="purposes.analytics.title">
                 <source>Analytics</source>
+                <target state="translated">Analytik</target>
             </trans-unit>
             <trans-unit id="purposes.analytics.description">
                 <source>These services gather anonymous data for statistical analysis and performance optimization. Enabling analytics services assists website owners in making informed decisions to enhance online services.</source>
+                <target state="translated">Diese Dienste sammeln anonyme Daten zur statistischen Analyse und Leistungsoptimierung. Die Aktivierung von Analysediensten hilft Website-Besitzern dabei, fundierte Entscheidungen zur Verbesserung von Online-Diensten zu treffen.</target>
             </trans-unit>
             <trans-unit id="purposes.misc.title">
                 <source>Miscellaneous</source>
             </trans-unit>
+            <target state="translated">Sonstiges</target>
             <trans-unit id="purposes.misc.description">
                 <source>This includes services that do not fall under the other purposes.</source>
+                <target state="translated">Dazu gehören auch Dienstleistungen, die nicht unter die anderen Zwecke
+                    fallen.</target>
             </trans-unit>
             <trans-unit id="purposes.performance.title">
                 <source>Performance Optimization</source>
+                <target state="translated">Leistungsoptimierung</target>
             </trans-unit>
             <trans-unit id="purposes.performance.description">
                 <source>These services process personal information to optimize the service that this website offers.</source>
+                <target state="translated">Diese Dienste verarbeiten personenbezogene Daten, um den auf dieser Website angebotenen Service zu optimieren.</target>
             </trans-unit>
             <trans-unit id="purposes.security.title">
                 <source>Security</source>
+                <target state="translated">Sicherheit</target>
             </trans-unit>
             <trans-unit id="purposes.security.description">
                 <source>Security services are crucial for safeguarding your online experience. These services help protect your data and privacy by detecting and preventing security threats, such as malware, phishing attempts, and unauthorized access. They ensure a safer browsing environment.</source>
+                <target state="translated">Sicherheitsdienste sind entscheidend für den Schutz Ihrer Online-Erfahrung. Diese Dienste helfen, Ihre Daten und Ihre Privatsphäre zu schützen, indem sie Sicherheitsbedrohungen wie Malware, Phishing-Versuche und unbefugten Zugriff erkennen und verhindern. Sie sorgen für eine sicherere Umgebung beim Surfen.</target>
             </trans-unit>
             <trans-unit id="purposes.videos.title">
                 <source>Videos</source>
+                <target state="translated">Videos</target>
             </trans-unit>
             <trans-unit id="purposes.videos.description">
                 <source>Embedding videos from external platforms to enrich the content on this website.</source>
+                <target state="translated">Einbettung von Videos von externen Plattformen zur Bereicherung des Inhalts dieser Website.</target>
             </trans-unit>
             <trans-unit id="services.google-analytics.title">
                 <source>Google Analytics</source>
             </trans-unit>
             <trans-unit id="services.google-analytics.description">
                 <source>Web analytics service provided by Google, Inc. (&#34;Google&#34;)</source>
+                <target state="translated">Von Google bereitgestellter Webanalysedienst.</target>
             </trans-unit>
             <trans-unit id="services.youtube.title">
                 <source>YouTube</source>
             </trans-unit>
             <trans-unit id="services.youtube.description">
                 <source>The leading video-sharing platform for content creators and developers to enhance user experiences on websites.</source>
+                <target state="translated">DDie führende Plattform für die gemeinsame Nutzung von Videos für Autoren und Entwickler zur Verbesserung der Benutzerfreundlichkeit von Websites.</target>
             </trans-unit>
             <trans-unit id="consentModal.privacyPolicy.name">
                 <source>Privacy policy</source>
+                <target state="translated">Datenschutzbestimmungen</target>
             </trans-unit>
             <trans-unit id="consentModal.privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
+                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {Datenschutzbestimmungen}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.imprint.name">
                 <source>Imprint</source>
+                <target state="translated">Impressum</target>
             </trans-unit>
             <trans-unit id="consentNotice.privacyPolicy.name">
                 <source>Privacy policy</source>
+                <target state="translated">Datenschutzbestimmungen</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>I decline</source>
+                <target state="translated">Ich lehne sie ab</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>close</source>
             </trans-unit>
             <trans-unit id="acceptAll">
                 <source>accept all</source>
+                <target state="translated">Ich akzeptiere alle</target>
             </trans-unit>
             <trans-unit id="acceptSelected">
                 <source>accept selected</source>
+                <target state="translated">Ich akzeptiere die von mir gewählten</target>
             </trans-unit>
             <trans-unit id="service.disableAll.title">
                 <source>Enable or disable all services</source>
+                <target state="translated">Aktiviere oder Deaktiviere alle Dienste</target>
             </trans-unit>
             <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable or disable all services.</source>
+                <target state="translated">Verwenden Sie diesen Switch, um alle Dienste zu aktivieren oder zu deaktivieren.</target>
             </trans-unit>
         </body>
     </file>
