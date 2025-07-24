@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-04-12UTC04:19:090" product-name="rlt3sitepackage">
+        <header>
+            <authorName>Roland Fuhrer</authorName>
+            <authorEmail>webmaster@resterland.org</authorEmail>
+        </header>
+        <body>
+            // Klaro Consent Manager
+            <trans-unit id="consentModal.title">
+                <source>Services we would like to use</source>
+                <target state="translated">Dienste, die wir gerne nutzen würden</target>
+            </trans-unit>
+            <trans-unit id="consentModal.description">
+            <source>Here you can assess and customize the services that we&#39;d like to use on this website. You&#39;re in charge! Enable or disable services as you see fit.</source>
+                <target state="translated">Hier können Sie die Dienste, die wir auf dieser Website verwenden möchten, bewerten und anpassen. Sie sind verantwortlich! Aktivieren oder deaktivieren Sie die Dienste, wie Sie es für richtig halten.</target>
+            </trans-unit>
+            <trans-unit id="purposes.analytics.title">
+                <source>Analytics</source>
+            </trans-unit>
+            <trans-unit id="purposes.analytics.description">
+                <source>These services gather anonymous data for statistical analysis and performance optimization. Enabling analytics services assists website owners in making informed decisions to enhance online services.</source>
+            </trans-unit>
+            <trans-unit id="purposes.misc.title">
+                <source>Miscellaneous</source>
+            </trans-unit>
+            <trans-unit id="purposes.misc.description">
+                <source>This includes services that do not fall under the other purposes.</source>
+            </trans-unit>
+            <trans-unit id="purposes.performance.title">
+                <source>Performance Optimization</source>
+            </trans-unit>
+            <trans-unit id="purposes.performance.description">
+                <source>These services process personal information to optimize the service that this website offers.</source>
+            </trans-unit>
+            <trans-unit id="purposes.security.title">
+                <source>Security</source>
+            </trans-unit>
+            <trans-unit id="purposes.security.description">
+                <source>Security services are crucial for safeguarding your online experience. These services help protect your data and privacy by detecting and preventing security threats, such as malware, phishing attempts, and unauthorized access. They ensure a safer browsing environment.</source>
+            </trans-unit>
+            <trans-unit id="purposes.videos.title">
+                <source>Videos</source>
+            </trans-unit>
+            <trans-unit id="purposes.videos.description">
+                <source>Embedding videos from external platforms to enrich the content on this website.</source>
+            </trans-unit>
+            <trans-unit id="services.google-analytics.title">
+                <source>Google Analytics</source>
+            </trans-unit>
+            <trans-unit id="services.google-analytics.description">
+                <source>Web analytics service provided by Google, Inc. (&#34;Google&#34;)</source>
+            </trans-unit>
+            <trans-unit id="services.youtube.title">
+                <source>YouTube</source>
+            </trans-unit>
+            <trans-unit id="services.youtube.description">
+                <source>The leading video-sharing platform for content creators and developers to enhance user experiences on websites.</source>
+            </trans-unit>
+            <trans-unit id="consentModal.privacyPolicy.name">
+                <source>Privacy policy</source>
+            </trans-unit>
+            <trans-unit id="consentModal.privacyPolicy.text">
+                <source>To learn more, please read our {privacyPolicy}.</source>
+            </trans-unit>
+            <trans-unit id="consentNotice.imprint.name">
+                <source>Imprint</source>
+            </trans-unit>
+            <trans-unit id="consentNotice.privacyPolicy.name">
+                <source>Privacy policy</source>
+            </trans-unit>
+            <trans-unit id="decline">
+                <source>I decline</source>
+            </trans-unit>
+            <trans-unit id="close">
+                <source>close</source>
+            </trans-unit>
+            <trans-unit id="acceptAll">
+                <source>accept all</source>
+            </trans-unit>
+            <trans-unit id="acceptSelected">
+                <source>accept selected</source>
+            </trans-unit>
+            <trans-unit id="service.disableAll.title">
+                <source>Enable or disable all services</source>
+            </trans-unit>
+            <trans-unit id="service.disableAll.description">
+                <source>Use this switch to enable or disable all services.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
