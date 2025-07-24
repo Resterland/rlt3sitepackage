@@ -13,7 +13,7 @@
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {Datenschutzbestimmungen}.</target>
+                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="consentModal.title">
                 <source>Services we would like to use</source>
@@ -84,7 +84,7 @@
             </trans-unit>
             <trans-unit id="consentModal.privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {Datenschutzbestimmungen}.</target>
+                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.imprint.name">
                 <source>Imprint</source>
@@ -108,7 +108,7 @@
             </trans-unit>
             <trans-unit id="save">
                 <source>save</source>
-                <target state="translated">sichern</target>
+                <target state="translated">speichern</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>I decline</source>
@@ -132,6 +132,83 @@
             <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable or disable all services.</source>
                 <target state="translated">Verwenden Sie diesen Switch, um alle Dienste zu aktivieren oder zu deaktivieren.</target>
+            </trans-unit>
+            <trans-unit id="cookies.title">
+                <source>Cookies</source>
+                <target state="translated">Cookies</target>
+            </trans-unit>
+            <trans-unit id="cookies.description">
+                <source>Below you will find a list of all cookies used by %s</source>
+                <target state="translated">Nachstehend finden Sie eine Liste aller Cookies, die von %s benutzt
+                    werden.</target>
+            </trans-unit>
+            <trans-unit id="cookies.headline.name">
+                <source>Name / Pattern</source>
+                <target state="translated">Name / Muster</target>
+            </trans-unit>
+            <trans-unit id="cookies.headline.path">
+                <source>Path</source>
+                <target state="translated">Pfad</target>
+            </trans-unit>
+            <trans-unit id="cookies.headline.domain">
+                <source>Domain</source>
+                <target state="translated">Domäne</target>
+            </trans-unit>
+            <trans-unit id="cookies.headline.expiresAfter">
+                <source>Expires after</source>
+                <target state="translated">Läuft ab nach</target>
+            </trans-unit>
+            <trans-unit id="year">
+                <source>Year</source>
+                <target state="translated">Jahr</target>
+            </trans-unit>
+            <trans-unit id="years">
+                <source>Years</source>
+                <target state="translated">Jahre</target>
+            </trans-unit>
+            <trans-unit id="month">
+                <source>Month</source>
+                <target state="translated">Monat</target>
+            </trans-unit>
+            <trans-unit id="months">
+                <source>Months</source>
+                <target state="translated">Monate</target>
+            </trans-unit>
+            <trans-unit id="day">
+                <source>Day</source>
+                <target state="translated">Tag</target>
+            </trans-unit>
+            <trans-unit id="days">
+                <source>Days</source>
+                <target state="translated">Tage</target>
+            </trans-unit>
+            <trans-unit id="hour">
+                <source>Hour</source>
+                <target state="translated">Stunde</target>
+            </trans-unit>
+            <trans-unit id="hours">
+                <source>Hours</source>
+                <target state="translated">Stunden</target>
+            </trans-unit>
+            <trans-unit id="minute">
+                <source>Minute</source>
+                <target state="translated">Minute</target>
+            </trans-unit>
+            <trans-unit id="minutes">
+                <source>Minutes</source>
+                <target state="translated">Minuten</target>
+            </trans-unit>
+            <trans-unit id="second">
+                <source>Second</source>
+                <target state="translated">Sekunde</target>
+            </trans-unit>
+            <trans-unit id="seconds">
+                <source>Seconds</source>
+                <target state="translated">Sekunden</target>
+            </trans-unit>
+            <trans-unit id="end-of-session">
+                <source>End of session</source>
+                <target state="translated">Ende der Session</target>
             </trans-unit>
         </body>
     </file>

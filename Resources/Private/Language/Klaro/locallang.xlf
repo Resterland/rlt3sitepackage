@@ -103,6 +103,63 @@
             <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable or disable all services.</source>
             </trans-unit>
+            <trans-unit id="cookies.title">
+                <source>Cookies</source>
+            </trans-unit>
+            <trans-unit id="cookies.description">
+                <source>Below you will find a list of all cookies used by %s</source>
+            </trans-unit>
+            <trans-unit id="cookies.headline.name">
+                <source>Name / Pattern</source>
+            </trans-unit>
+            <trans-unit id="cookies.headline.path">
+                <source>Path</source>
+            </trans-unit>
+            <trans-unit id="cookies.headline.domain">
+                <source>Domain</source>
+            </trans-unit>
+            <trans-unit id="cookies.headline.expiresAfter">
+                <source>Expires after</source>
+            </trans-unit>
+            <trans-unit id="year">
+                <source>Year</source>
+            </trans-unit>
+            <trans-unit id="years">
+                <source>Years</source>
+            </trans-unit>
+            <trans-unit id="month">
+                <source>Month</source>
+            </trans-unit>
+            <trans-unit id="months">
+                <source>Months</source>
+            </trans-unit>
+            <trans-unit id="day">
+                <source>Day</source>
+            </trans-unit>
+            <trans-unit id="days">
+                <source>Days</source>
+            </trans-unit>
+            <trans-unit id="hour">
+                <source>Hour</source>
+            </trans-unit>
+            <trans-unit id="hours">
+                <source>Hours</source>
+            </trans-unit>
+            <trans-unit id="minute">
+                <source>Minute</source>
+            </trans-unit>
+            <trans-unit id="minutes">
+                <source>Minutes</source>
+            </trans-unit>
+            <trans-unit id="second">
+                <source>Second</source>
+            </trans-unit>
+            <trans-unit id="seconds">
+                <source>Seconds</source>
+            </trans-unit>
+            <trans-unit id="end-of-session">
+                <source>End of session</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
