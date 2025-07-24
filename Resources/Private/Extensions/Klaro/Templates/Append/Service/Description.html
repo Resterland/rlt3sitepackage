@@ -1,0 +1,106 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+<f:if condition="{service.cookies -> f:count()} > 0">
+    <f:if condition="{configuration.htmlTexts}">
+        <f:then>
+            <f:variable name="serviceTitle" value="{f:render(partial: 'Label', arguments: '{key:\'services.{service.name}.title\', locallang:locallang}')}"/>
+            <p><strong>{f:render(partial: 'Label', arguments: '{key:\'cookies.title\', locallang:locallang}')}</strong></p>
+            <p>{f:render(partial: 'Label', arguments: '{key:\'cookies.description\', locallang:locallang, arguments:\'{0:serviceTitle}\'}')}</p>
+            <f:variable name="pathExists"/>
+            <f:variable name="domainExists"/>
+            <f:for each="{service.cookies}" as="cookie">
+                <f:if condition="{cookie.path}">
+                    <f:variable name="pathExists" value="1"/>
+                </f:if>
+                <f:if condition="{cookie.domain}">
+                    <f:variable name="domainExists" value="1"/>
+                </f:if>
+                <f:if condition="{cookie.expires_after} > 0 || {cookie.expires_after_unit} == 'end-of-session'">
+                    <f:variable name="expiresAfterExists" value="1"/>
+                </f:if>
+            </f:for>
+            <span class="table">
+                <span class="tr">
+                    <span class="th">{f:render(partial: 'Label', arguments: '{key:\'cookies.headline.name\', locallang:locallang}')}</span>
+                    <f:if condition="{pathExists}">
+                        <span class="th">{f:render(partial: 'Label', arguments: '{key:\'cookies.headline.path\', locallang:locallang}')}</span>
+                    </f:if>
+                    <f:if condition="{domainExists}">
+                        <span class="th">{f:render(partial: 'Label', arguments: '{key:\'cookies.headline.domain\', locallang:locallang}')}</span>
+                    </f:if>
+                    <f:if condition="{expiresAfterExists}">
+                        <span class="th">{f:render(partial: 'Label', arguments: '{key:\'cookies.headline.expiresAfter\', locallang:locallang}')}</span>
+                    </f:if>
+                </span>
+                <f:for each="{service.cookies}" as="cookie">
+                    <span class="tr">
+                        <span class="td">
+                            <f:if condition="{cookie.title}">
+                                <f:then>{cookie.title}</f:then>
+                                <f:else>{cookie.pattern}</f:else>
+                            </f:if>
+                        </span>
+                        <f:if condition="{pathExists}">
+                            <span class="td">{cookie.path}</span>
+                        </f:if>
+                        <f:if condition="{domainExists}">
+                            <span class="td">{cookie.domain}</span>
+                        </f:if>
+                        <f:if condition="{expiresAfterExists}">
+                            <span class="td">
+                                <f:if condition="{cookie.expires_after} > 0 || {cookie.expires_after_unit} == 'end-of-session'">
+                                    <f:if condition="{cookie.expires_after_unit} != 'end-of-session'">{cookie.expires_after}</f:if>
+                                    <f:render section="Unit" arguments="{_all}"/>
+                                </f:if>
+                            </span>
+                        </f:if>
+                    </span>
+                </f:for>
+            </span>
+        </f:then>
+        <f:else>
+            ; -
+            <f:variable name="serviceTitle" value="{f:render(partial: 'Label', arguments: '{key:\'services.{service.name}.title\', locallang:locallang}')}"/>
+            {f:render(partial: 'Label', arguments: '{key:\'cookies.title\', locallang:locallang}')} -
+            {f:render(partial: 'Label', arguments: '{key:\'cookies.description\', locallang:locallang,
+            arguments:\'{0:serviceTitle}\'}')}:
+            <f:for each="{service.cookies}" as="cookie" iteration="iterator">
+                🍪 {f:render(partial: 'Label', arguments: '{key:\'cookies.headline.name\', locallang:locallang}')}:
+                {cookie.pattern}
+                <f:if condition="{cookie.path}">
+                    , {f:render(partial: 'Label', arguments: '{key:\'cookies.headline.path\',locallang:locallang}')}:
+                    {cookie.path}
+                </f:if>
+                <f:if condition="{cookie.domain}">
+                    , {f:render(partial: 'Label', arguments:'{key:\'cookies.headline.domain\', locallang:locallang}')}:
+                    {cookie.domain}
+                </f:if>
+                <f:if condition="{cookie.expires_after} > 0 || {cookie.expires_after_unit} == 'end-of-session'">
+                    , {f:render(partial: 'Label', arguments: '{key:\'cookies.headline.expiresAfter\', locallang:locallang}')}:
+                    <f:if condition="{cookie.expires_after_unit} != 'end-of-session'">{cookie.expires_after}</f:if>
+                    <f:render section="Unit" arguments="{_all}"/>
+                </f:if>
+            </f:for>
+        </f:else>
+    </f:if>
+</f:if>
+
+<f:section name="Unit">
+    <f:variable name="unit"/>
+    <f:if condition="{cookie.expires_after} == 1 && {cookie.expires_after_unit} != 'end-of-session'">
+        <f:then>
+            <f:switch expression="{cookie.expires_after_unit}">
+                <f:case value="years"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'year\', locallang:locallang}')}"/></f:case>
+                <f:case value="months"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'month\', locallang:locallang}')}"/></f:case>
+                <f:case value="days"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'day\', locallang:locallang}')}"/></f:case>
+                <f:case value="hours"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'hour\', locallang:locallang}')}"/></f:case>
+                <f:case value="minutes"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'minute\', locallang:locallang}')}"/></f:case>
+                <f:case value="seconds"><f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:\'second\', locallang:locallang}')}"/></f:case>
+            </f:switch>
+        </f:then>
+        <f:else>
+            <f:variable name="unit" value="{f:render(partial: 'Label', arguments: '{key:cookie.expires_after_unit, locallang:locallang}')}"/>
+        </f:else>
+    </f:if>
+    {unit}
+</f:section>
+</html>

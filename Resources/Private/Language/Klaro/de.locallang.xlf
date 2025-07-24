@@ -7,9 +7,17 @@
         </header>
         <body>
             // Klaro Consent Manager
+            <trans-unit id="privacyPolicy.name">
+                <source>privacy policy</source>
+                <target state="translated">Datenschutzbestimmungen</target>
+            </trans-unit>
+            <trans-unit id="privacyPolicy.text">
+                <source>To learn more, please read our {privacyPolicy}.</source>
+                <target state="translated">Um mehr zu erfahren, lesen Sie bitte unsere {Datenschutzbestimmungen}.</target>
+            </trans-unit>
             <trans-unit id="consentModal.title">
                 <source>Services we would like to use</source>
-                <target state="translated">Dienste, die wir gerne nutzen würden</target>
+                <target state="translated">Dienste, welche wir gerne nutzen würden</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
             <source>Here you can assess and customize the services that we&#39;d like to use on this website. You&#39;re in charge! Enable or disable services as you see fit.</source>
@@ -25,8 +33,8 @@
             </trans-unit>
             <trans-unit id="purposes.misc.title">
                 <source>Miscellaneous</source>
+                <target state="translated">Sonstiges</target>
             </trans-unit>
-            <target state="translated">Sonstiges</target>
             <trans-unit id="purposes.misc.description">
                 <source>This includes services that do not fall under the other purposes.</source>
                 <target state="translated">Dazu gehören auch Dienstleistungen, die nicht unter die anderen Zwecke
@@ -85,6 +93,22 @@
             <trans-unit id="consentNotice.privacyPolicy.name">
                 <source>Privacy policy</source>
                 <target state="translated">Datenschutzbestimmungen</target>
+            </trans-unit>
+            <trans-unit id="purposeItem.service">
+                <source>A simple service that I install on my computer.</source>
+                <target state="translated">Ein einfacher Dienst, den ich auf meinem Computer installiere.</target>
+            </trans-unit>
+            <trans-unit id="purposeItem.services">
+                <source>Several simple services that I install on my computer.</source>
+                <target state="translated">Verschiedene einfache Dienste, die ich auf meinem Computer installiere.</target>
+            </trans-unit>
+            <trans-unit id="ok">
+                <source>That&#39;s ok</source>
+                <target state="translated">Schon gut</target>
+            </trans-unit>
+            <trans-unit id="save">
+                <source>save</source>
+                <target state="translated">sichern</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>I decline</source>

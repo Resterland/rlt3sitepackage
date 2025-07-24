@@ -7,6 +7,12 @@
         </header>
         <body>
             // Klaro Consent Manager
+            <trans-unit id="privacyPolicy.name">
+                <source>privacy policy</source>
+            </trans-unit>
+            <trans-unit id="privacyPolicy.text">
+                <source>To learn more, please read our {privacyPolicy}.</source>
+            </trans-unit>
             <trans-unit id="consentModal.title">
                 <source>Services we would like to use</source>
             </trans-unit>
@@ -66,6 +72,18 @@
             </trans-unit>
             <trans-unit id="consentNotice.privacyPolicy.name">
                 <source>Privacy policy</source>
+            </trans-unit>
+            <trans-unit id="purposeItem.service">
+                <source>A simple service that I install on my computer.</source>
+            </trans-unit>
+            <trans-unit id="purposeItem.services">
+                <source>Several simple services that I install on my computer.</source>
+            </trans-unit>
+            <trans-unit id="ok">
+                <source>That&#39;s ok</source>
+            </trans-unit>
+            <trans-unit id="save">
+                <source>save</source>
             </trans-unit>
             <trans-unit id="decline">
                 <source>I decline - No Way!</source>
