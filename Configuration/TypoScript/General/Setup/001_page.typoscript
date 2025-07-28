@@ -182,25 +182,3 @@ page {
         )
     }
 [END]*/
-
-/*[tree.pagelayout === "pagets__default"]
-    page.includeCSS {
-        default = EXT:rlt3sitepackage/Resources/Public/Css/default.css
-        default.title = default-style
-    }
-    # ...
-[END]
-[tree.pagelayout === "pagets__PageSidebarLeft"]
-    page.includeCSS {
-        pagesidebarleft = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css
-        pagesidebarleft.title = pagesidebarleft-style
-    }
-    # ...
-[END]
-[tree.pagelayout === "pagets__PageSidebarRight"]
-    page.includeCSS {
-        pagesidebarright = EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css
-        pagesidebarright.title = pagesidebarright-style
-    }
-    # ...
-[END]*/

@@ -9,7 +9,29 @@
                 >
                     {menuItem.title}
                 </a>
+                <f:if condition="{menuItem.children}">
+                    <f:render section="submenu" arguments="{submenu: Item.children}"/>
+                </f:if>
             </li>
         </f:for>
     </ul>
 </f:if>
+
+<f:section name="submenu">
+    <ul>
+        <f:for each="{submenu}" as="subItem">
+            <li>
+                <a class="nav-link {f:if(condition: subItem.active, then:'active')}"
+                   href="{subItem.link}"
+                   target="{subItem.target}"
+                   title="{subItem.title}"
+                >
+                    {subItem.title}
+                </a>
+                <f:if condition="{subItem.children}">
+                    <f:render section="submenu" arguments="{submenu: subItem.children}"/>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
