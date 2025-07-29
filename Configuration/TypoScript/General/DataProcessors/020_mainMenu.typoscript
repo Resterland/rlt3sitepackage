@@ -7,4 +7,13 @@ dataProcessing {
         levels = 3
         includeSpacer = 1
     }
+    # available as {subMenu} in Fluid template
+    25 = menu
+    25 {
+        as = subMenu
+        entryLevel = 1
+        expandAll = 0
+        levels = 2
+        includeSpacer = 1
+    }
 }
