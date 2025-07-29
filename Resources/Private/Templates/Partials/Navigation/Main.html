@@ -9,6 +9,9 @@
                 >
                     {menuItem.title}
                 </a>
+                <f:if condition="{menuItem.children}">
+                    <f:render section="submenu" arguments="{subMenu: Item.children}"/>
+                </f:if>
             </li>
         </f:for>
     </ul>
