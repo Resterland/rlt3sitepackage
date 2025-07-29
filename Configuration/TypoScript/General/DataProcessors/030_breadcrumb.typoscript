@@ -1,0 +1,10 @@
+# Rootline menu processor
+dataProcessing {
+    # available as {breadcrumb} in Fluid template
+    30 = menu
+    30 {
+        special = rootline
+        special.range = 0|-1
+        as = breadcrumb
+    }
+}

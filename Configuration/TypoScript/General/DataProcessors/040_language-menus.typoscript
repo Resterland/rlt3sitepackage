@@ -1,0 +1,14 @@
+# Language menu processors for Header and Footer
+dataProcessing {
+    # available as {languagemenu} in Fluid template
+    40 = language-menu
+    40 {
+        as = languagemenu
+        languages = {$page.header.languagenavigation.languageValue}
+    }
+    45 = language-menu
+    45 {
+        as = languagemenu
+        languages = {$page.footer.languagenavigation.languageValue}
+    }
+}

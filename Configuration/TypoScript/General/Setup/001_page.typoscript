@@ -79,51 +79,6 @@ page {
             breadcrumbExtendedValue {
             }
         }
-
-        dataProcessing {
-            # makes content elements available as {content} in Fluid template
-            10 = page-content
-            10 {
-                as = content
-            }
-
-            # available as {mainMenu} in Fluid template
-            20 = menu
-            20 {
-                as = mainMenu
-                levels = 3
-                includeSpacer = 1
-            }
-
-            # available as {breadcrumb} in Fluid template
-            30 = menu
-            30 {
-                special = rootline
-                special.range = 0|-1
-                as = breadcrumb
-            }
-
-            # available as {languagemenu} in Fluid template
-            40 = language-menu
-            40 {
-                as = languagemenu
-                languages = {$page.header.languagenavigation.languageValue}
-            }
-            45 = language-menu
-            45 {
-                as = languagemenu
-                languages = {$page.footer.languagenavigation.languageValue}
-            }
-
-            # available as {footerMenu} in Fluid template
-            90 = menu
-            90 {
-                as = footerMenu
-                special = directory
-                special.value = {$page.footer.navigation.menuRoot}
-                includeNotInMenu = {$page.footer.navigation.includeNotInMenu}
-            }
-        }
     }
 
 

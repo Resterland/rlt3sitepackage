@@ -1,4 +1,5 @@
 #plugin.tx_frontend._CSS_DEFAULT_STYLE >
 #@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Learning/*.typoscript'
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Setup/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/DataProcessors/*.typoscript'
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/CustomContentElements/*.typoscript'

@@ -1,0 +1,10 @@
+# Main menu processor for responsive navbar
+dataProcessing {
+    # available as {mainMenu} in Fluid template
+    20 = menu
+    20 {
+        as = mainMenu
+        levels = 3
+        includeSpacer = 1
+    }
+}
