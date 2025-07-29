@@ -270,7 +270,7 @@ footer {
 }
 
 /* media queries */
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 48rem) {
     body {
         max-width: 100em;
         display: grid;
