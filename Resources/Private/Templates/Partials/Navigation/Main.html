@@ -1,16 +1,44 @@
+<h2>Data in variable headerMenu</h2>
+<f:debug inline="true">{mainMenu}</f:debug>
 <f:if condition="{mainMenu}">
+
     <ul class="main-menu">
         <f:for each="{mainMenu}" as="menuItem">
-            <li class="main-menu-item">
-                <a class="nav-link {f:if(condition: menuItem.active, then:'active')}"
-                   href="{menuItem.link}"
-                   target="{menuItem.target}"
-                   title="{menuItem.title}"
-                >
-                    {menuItem.title}
-                </a>
-                <f:if condition="{menuItem.children}">
-                    <f:render section="submenu" arguments="{subMenu: Item.children}"/>
+            <li class="main-menu-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
+                <f:if condition="{menuItem.hasSubpages}">
+                    <f:then>
+                        <!-- Item has children -->
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <f:if condition="{menuItem.files}">
+                                <f:image image="{menuItem.files.0}" class="" width="20"/>
+                            </f:if>
+                            {menuItem.title}
+                        </a>
+                        <div class="dropdown-menu">
+                            <f:for each="{menuItem.children}" as="menuItemLevel2">
+                                <f:if condition="{menuItemLevel2.spacer}">
+                                    <f:then><div class="dropdown-divider"></div></f:then>
+                                    <f:else>
+                                        <f:link.page
+                                            pageUid="{menuItemLevel2.data.uid}"
+                                            class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
+                                            {menuItemLevel2.title}
+                                        </f:link.page>
+                                    </f:else>
+                                </f:if>
+                            </f:for>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <!-- Item has no children -->
+                        <a class="nav-link {f:if(condition: menuItem.active, then:'active')}"
+                           href="{menuItem.link}"
+                           target="{menuItem.target}"
+                           title="{menuItem.title}"
+                        >
+                            {menuItem.title}
+                        </a>
+                    </f:else>
                 </f:if>
             </li>
         </f:for>

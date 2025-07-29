@@ -7,6 +7,8 @@ page.10.dataProcessing {
         as = mainMenu
         levels = 3
         includeSpacer = 1
+        expandAll = 1
+        titleField = nav_title // title
     }
     # available as {subMenu} in Fluid template
     25 = menu
