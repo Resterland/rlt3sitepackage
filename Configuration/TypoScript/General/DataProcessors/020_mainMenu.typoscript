@@ -18,5 +18,6 @@ page.10.dataProcessing {
         expandAll = 0
         levels = 2
         includeSpacer = 1
+        titleField = nav_title // title
     }
 }

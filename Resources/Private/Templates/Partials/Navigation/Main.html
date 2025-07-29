@@ -1,6 +1,9 @@
-
+<div class="hamburger">
+    <f:image
+        src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg"
+        alt="hamburger" />
+</div>
 <f:if condition="{mainMenu}">
-
     <ul class="main-menu">
         <f:for each="{mainMenu}" as="menuItem">
             <li class="main-menu-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
