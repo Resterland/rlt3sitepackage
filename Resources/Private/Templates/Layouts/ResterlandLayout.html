@@ -1,6 +1,6 @@
 <f:asset.css identifier="global" href="EXT:rlt3sitepackage/Resources/Public/Css/styles.css" priority="1" />
 
-<f:asset.css identifier="mdnmenu" href="EXT:rlt3sitepackage/Resources/Public/Css/Mdn/styles.css" />
+<!--<f:asset.css identifier="mdnmenu" href="EXT:rlt3sitepackage/Resources/Public/Css/Mdn/styles.css" />-->
 
 <f:if condition="{backendLayout} == 'default'">
     <f:then>
@@ -16,8 +16,6 @@
 
 <f:spaceless>
     <div id="top"></div>
-    <h2>Data in variable headerMenu</h2>
-    <f:debug inline="true">{mainMenu}</f:debug>
     <f:render partial="Header/Header" arguments="{_all}"/>
 
     <f:render section="PageContent"/>
@@ -25,4 +23,4 @@
     <f:render partial="Footer/Footer" arguments="{_all}"/>
 </f:spaceless>
 
-<f:asset.script identifier="mdnmenu-js" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js" />
+<!--<f:asset.script identifier="mdnmenu-js" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js" />-->
