@@ -99,7 +99,8 @@ page {
 }
 
 includeJSFooterlibs {
-    rl-navbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
+   ## rl-navbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
+    mdnmenu = EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js
 
 }
 /*[!klaroIsActive]
