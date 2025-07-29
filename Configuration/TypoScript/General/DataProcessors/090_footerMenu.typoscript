@@ -1,4 +1,4 @@
-dataProcessing {
+page.10.dataProcessing {
     # available as {footerMenu} in Fluid template
     90 = menu
     90 {

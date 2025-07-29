@@ -1,5 +1,5 @@
 # Page content processor
-dataProcessing {
+page.10.dataProcessing {
     # makes content elements available as {content} in Fluid template
     10 = page-content
     10 {

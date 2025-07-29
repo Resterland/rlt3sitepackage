@@ -1,5 +1,5 @@
 # Rootline menu processor
-dataProcessing {
+page.10.dataProcessing {
     # available as {breadcrumb} in Fluid template
     30 = menu
     30 {

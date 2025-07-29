@@ -1,5 +1,5 @@
 # Language menu processors for Header and Footer
-dataProcessing {
+page.10.dataProcessing {
     # available as {languagemenu} in Fluid template
     40 = language-menu
     40 {
