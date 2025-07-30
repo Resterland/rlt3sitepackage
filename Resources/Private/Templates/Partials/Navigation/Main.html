@@ -6,7 +6,7 @@
 <f:if condition="{mainMenu}">
     <ul class="main-menu">
         <f:for each="{mainMenu}" as="menuItem">
-            <li class="main-menu-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
+            <li class="main-menu-item">
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <!-- Item has children -->
@@ -16,20 +16,17 @@
                             </f:if>
                             {menuItem.title}
                         </a>
-                        <div class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
-                                <f:if condition="{menuItemLevel2.spacer}">
-                                    <f:then><div class="dropdown-divider"></div></f:then>
-                                    <f:else>
-                                        <f:link.page
-                                            pageUid="{menuItemLevel2.data.uid}"
-                                            class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
-                                            {menuItemLevel2.title}
-                                        </f:link.page>
-                                    </f:else>
-                                </f:if>
+                                <li class="dropdown-item">
+                                    <f:link.page
+                                        pageUid="{menuItemLevel2.data.uid}"
+                                        class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
+                                        {menuItemLevel2.title}
+                                    </f:link.page>
+                                </li>
                             </f:for>
-                        </div>
+                        </ul>
                     </f:then>
                     <f:else>
                         <!-- Item has no children -->
