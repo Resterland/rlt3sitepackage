@@ -213,7 +213,6 @@ header.page-header p {
 
 .main-nav.active .main-menu {
     display: block;
-    background-color: whitesmoke;
 }
 .main-menu-item {
     padding: 1em;
@@ -365,23 +364,14 @@ footer {
         display: none;
     }
 
-    .lang-menu,
-    .footer-menu {
+    .main-menu {
+        font-size: 1.2em;
         display: flex;
-        gap: 0.25em;
-    }
-    .lang-menu,
-    .footer-menu {
-        flex-direction: row;
-    }
-    footer {
-        display: grid;
+        animation: dropdown 1000ms ease;
     }
 
     .main-menu-item  {
         display: inline-block;
-        border: none;
-        cursor: pointer;
         border-radius: 5px;
         position: relative;
     }
@@ -398,12 +388,6 @@ footer {
     .dropdown-menu {
         position: absolute;
         top: 100%;
-        left: 0;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        border-radius: 10px;
-        background-color: var(--bg-clr);
-        color: var(--txt-clr);
         animation: dropdown 600ms ease;
         display: none;
     }
@@ -458,6 +442,19 @@ footer {
 
     .dropdown-sub {
         font-size: 0.75rem;
+    }
+
+    .lang-menu,
+    .footer-menu {
+        display: flex;
+        gap: 0.25em;
+    }
+    .lang-menu,
+    .footer-menu {
+        flex-direction: row;
+    }
+    footer {
+        display: grid;
     }
 }
 /* END media queries */
