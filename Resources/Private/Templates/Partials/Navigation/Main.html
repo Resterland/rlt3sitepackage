@@ -10,12 +10,17 @@
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <!-- Item has children -->
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                            <f:if condition="{menuItem.files}">
-                                <f:image image="{menuItem.files.0}" class="" width="20"/>
-                            </f:if>
+                        <span class="main-menu-heading">
+                           <a class="nav-link dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              href="#" role="button"
+                              aria-expanded="false">
                             {menuItem.title}
-                        </a>
+                            </a>
+                        </span>
+                        <f:image src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/down-arrow.svg"
+                            alt="down-arrow"
+                            class="dropdown-arrow"/>
                         <ul class="dropdown-menu">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
                                 <li class="dropdown-item">
