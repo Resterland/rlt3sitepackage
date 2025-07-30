@@ -380,8 +380,7 @@ footer {
     }
 
     .dropdown-menu {
-        position: absolute;
-        top: 100%;
+        position: relative;
         animation: dropdown 600ms ease;
         display: none;
     }
