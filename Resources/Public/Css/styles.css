@@ -206,38 +206,24 @@ header.page-header p {
 
 .main-menu {
     font-size: 1.2em;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0 1em;
-    display: none;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     animation: dropdown 1000ms ease;
-    border-bottom: 1px solid #000;
-    width: 100%;
 }
-
 
 .main-nav.active .main-menu {
     display: block;
     background-color: whitesmoke;
 }
-
 .main-menu-item {
     padding: 1em;
     border-bottom: 1px solid #000;
     cursor: pointer;
 }
-
 .main-menu-item:last-child {
     border: none;
 }
-
 .dropdown-menu {
     display: none;
 }
-
 .main-menu-item.active .dropdown-menu {
     display: block;
     animation: dropdown 600ms ease;
@@ -353,7 +339,8 @@ footer {
       "footer footer footer";
     }
     .logo img {
-        width: 4em;
+        max-width: 4em;
+        min-width: 2em;
         margin: 0;
     }
     header.page-header {
@@ -375,7 +362,7 @@ footer {
     .hamburger {
         display: none;
     }
-    .main-menu,
+
     .lang-menu,
     .footer-menu {
         display: flex;
