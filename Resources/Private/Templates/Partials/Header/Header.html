@@ -6,6 +6,11 @@
                 arguments="{_all}"/>
         </f:if>
     </f:link.page>
+    <div class="hamburger">
+        <f:image
+            src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg"
+            alt="hamburger" />
+    </div>
     <h1 class="site-name">
         <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
             {site.configuration.websiteTitle} - {page.pageRecord.title}
@@ -22,5 +27,5 @@
         </f:if>
     </nav>
 
-        <f:render partial="Structure/Search" arguments="{_all}"/>
+    <f:render partial="Structure/Search" arguments="{_all}"/>
 </header>
