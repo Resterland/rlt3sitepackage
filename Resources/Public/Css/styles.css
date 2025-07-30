@@ -178,6 +178,7 @@ header.page-header {
 .logo img {
     width: 2.5em;
     margin: 0;
+    display: none;
 }
 header.page-header h1,
 header.page-header p {
@@ -206,6 +207,7 @@ header.page-header p {
 
 .main-menu {
     font-size: 1.2em;
+    display: none;
     animation: dropdown 1000ms ease;
 }
 
