@@ -176,7 +176,7 @@ header.page-header {
     "search";
 }
 .logo img {
-    width: 2.5em;
+    width: 1.5em;
     margin: 0;
 }
 header.page-header h1,
@@ -201,7 +201,6 @@ header.page-header p {
 
 .hamburger {
     max-width: 10%;
-    float: right;
     cursor: pointer;
 }
 
@@ -215,12 +214,7 @@ header.page-header p {
     display: block;
 }
 .main-menu-item {
-    padding: 1em;
-    border-bottom: 1px solid #000;
     cursor: pointer;
-}
-.main-menu-item:last-child {
-    border: none;
 }
 .dropdown-menu {
     display: none;
@@ -262,7 +256,7 @@ header.page-header p {
 .dropdown-sub {
     display: none;
 }
-.main-menu a,
+
 .lang-menu a,
 .footer-menu a {
     padding: 0.25em;
@@ -274,7 +268,6 @@ header.page-header p {
 .search {
     padding-left: 0.25em;
 }
-
 
 .breadcrumb {
     padding: 0 0.5rem;
