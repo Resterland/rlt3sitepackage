@@ -101,7 +101,7 @@ page {
 #        rlnavbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
 #        rlnavbar.defer = true
         mdnmenu = EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js
-        mdnmenu.defer = true
+#        mdnmenu.defer = true
 
     }
 }

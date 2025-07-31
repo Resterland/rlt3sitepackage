@@ -132,6 +132,12 @@ footer {
 /* body grid areas */
 header.page-header {
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: sticky;
+    top: 0;
 }
 main {
     grid-area: main;
@@ -160,14 +166,14 @@ footer {
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
 
-.navbar {
+/*.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
     position: sticky;
     top: 0;
-}
+}*/
 
 .hamburger {
     max-width: 10%;
@@ -337,7 +343,7 @@ footer {
         text-shadow: 3px 2px 2px var(--rl-brown-light);
     }
 
-    .navbar {
+    header.page-header {
         border: 1px solid lightgray;
         padding: 0.5em;
     }
