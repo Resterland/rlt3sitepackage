@@ -135,8 +135,6 @@ header.page-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
-    position: sticky;
     top: 0;
 }
 main {
@@ -155,11 +153,15 @@ footer {
     display: grid;
     margin-top: 0.5em;
 }
+.logo {
+    max-width: 50%;
+}
 .logo img {
     width: 1.5em;
     margin: 0;
+    vertical-align: middle;
 }
-.navbar h1 {
+.logo h1 {
     margin: 0;
     padding: 0;
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
@@ -256,10 +258,11 @@ nav.active .navbar-list {
     display: block;
 }
 .lang-menu {
-    flex-direction: column;
+    display: flex;
 }
 .search {
     padding-left: 0.25em;
+    display: none;
 }
 
 
