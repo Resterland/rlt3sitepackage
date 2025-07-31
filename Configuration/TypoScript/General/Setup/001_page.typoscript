@@ -98,9 +98,10 @@ page {
     }
 
     includeJS {
-        ## rl-navbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
-        mdnmenu = EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js
-        mdnmenu.defer = true
+        rl-navbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
+        rl-navbar.defer = true
+#        mdnmenu = EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js
+#        mdnmenu.defer = true
 
     }
 }
