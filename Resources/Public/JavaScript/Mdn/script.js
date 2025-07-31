@@ -1,5 +1,5 @@
 const trigger = document.querySelector('.hamburger')
-const target = document.querySelector('nav')
+const target = document.querySelector('nav.navbar')
 const navItems = document.querySelectorAll('.navbar-item')
 const dropdownLinks = document.querySelectorAll('.dropdown-item a')
 
