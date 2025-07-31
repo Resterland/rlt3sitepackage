@@ -97,9 +97,10 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
 
-    includeJSFooterlibs {
+    includeJS {
         ## rl-navbar = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js
         mdnmenu = EXT:rlt3sitepackage/Resources/Public/JavaScript/Mdn/script.js
+        mdnmenu.defer = true
 
     }
 }

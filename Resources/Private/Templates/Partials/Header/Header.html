@@ -1,31 +1,30 @@
 <header class="page-header" role="banner">
-    <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
-        <f:if condition="{settings.page.header.logo.enable}">
-            <f:render
-                partial="Structure/Logo"
-                arguments="{_all}"/>
-        </f:if>
-    </f:link.page>
-    <span class="hamburger">
-        <f:image
-            src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg"
-            alt="hamburger" />
-    </span>
-    <h1 class="site-name">
-        <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
-            {site.configuration.websiteTitle} - {page.pageRecord.title}
-        </f:link.page>
-    </h1>
-
-    <p class="site-description">Design 001</p>
-
-    <nav class="main-nav" role="navigation">
+    <nav class="navbar" role="navigation">
+        <div class="logo">
+            <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+                <f:if condition="{settings.page.header.logo.enable}">
+                    <f:render
+                        partial="Structure/Logo"
+                        arguments="{_all}"/>
+                </f:if>
+            </f:link.page>
+            <h1 class="site-name">
+                <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+                    {site.configuration.websiteTitle} - {page.pageRecord.title}
+                </f:link.page>
+            </h1>
+        </div>
+        <div class="hamburger">
+            <f:image
+                src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg"
+                alt="hamburger" />
+        </div>
         <f:render partial="Navigation/Main" arguments="{mainMenu:mainMenu}"/>
 
         <f:if condition="{settings.page.header.languagenavigation.enable}">
             <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
         </f:if>
-    </nav>
 
-    <f:render partial="Structure/Search" arguments="{_all}"/>
+        <f:render partial="Structure/Search" arguments="{_all}"/>
+    </nav>
 </header>

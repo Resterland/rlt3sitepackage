@@ -129,7 +129,7 @@ footer {
     padding: 0 1em 0 1em;
 }
 
-/* grid areas */
+/* body grid areas */
 header.page-header {
     grid-area: header;
 }
@@ -149,53 +149,23 @@ footer {
     display: grid;
     margin-top: 0.5em;
 }
-
-/* header#header.page-header grid areas */
-.logo {
-    grid-area: logo;
-}
-.site-name {
-    grid-area: site-name;
-}
-.site-description {
-    grid-area: description;
-}
-.main-nav {
-    grid-area: main-nav;
-}
-.search {
-    grid-area: search;
-}
-header.page-header {
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "site-name"
-    "description"
-    "main-nav"
-    "search";
-}
 .logo img {
     width: 1.5em;
     margin: 0;
 }
-header.page-header h1,
-header.page-header p {
+header.page-header h1 {
     margin: 0;
     padding: 0;
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
-header.page-header p {
-    font-size: max(min(1vh, 1rem), 2vh, 1.25rem);
-    text-shadow: 2px 1px 1px var(--rl-brown-light);
-}
-.main-nav {
+
+.navbar {
     display: flex;
     gap: 0 0.25em;
     justify-content: space-between;
 }
-.main-nav ul {
+.navbar ul {
     flex: auto initial;
 }
 
@@ -210,7 +180,7 @@ header.page-header p {
     animation: dropdown 1000ms ease;
 }
 
-.main-nav.active .main-menu {
+.navbar.active .main-menu {
     display: block;
 }
 .main-menu-item {
@@ -338,19 +308,9 @@ footer {
         min-width: 2em;
         margin: 0;
     }
-    header.page-header {
-        grid-template-columns: 5em 1fr auto;
-        grid-template-areas:
-      "logo site-name site-name"
-      "logo description description"
-      "logo main-nav search";
-    }
+
     header.page-header h1 {
         font-size: max(min(1vh, 1rem), 3vh, 3rem);
-        text-shadow: 3px 2px 2px var(--rl-brown-light);
-    }
-    header.page-header p {
-        font-size: max(min(1vh, 1rem), 3vh, 1.75rem);
         text-shadow: 3px 2px 2px var(--rl-brown-light);
     }
 
@@ -455,7 +415,7 @@ footer {
 
 @keyframes dropdown {
     from {
-        max-height: 0px;
+        max-height: 0;
         overflow: hidden;
     }
     to {
