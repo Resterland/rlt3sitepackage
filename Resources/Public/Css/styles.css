@@ -153,7 +153,7 @@ footer {
     width: 1.5em;
     margin: 0;
 }
-header.page-header h1 {
+.navbar h1 {
     margin: 0;
     padding: 0;
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
@@ -162,11 +162,11 @@ header.page-header h1 {
 
 .navbar {
     display: flex;
-    gap: 0 0.25em;
+    align-items: center;
     justify-content: space-between;
-}
-.navbar ul {
-    flex: auto initial;
+    padding: 1em;
+    position: sticky;
+    top: 0;
 }
 
 .hamburger {
@@ -174,22 +174,39 @@ header.page-header h1 {
     cursor: pointer;
 }
 
-.main-menu {
-    font-size: 1.2em;
+.navbar-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 1em;
     display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     animation: dropdown 1000ms ease;
+    border-bottom: 1px solid #000;
+    width: 100%;
 }
 
-.navbar.active .main-menu {
+nav.active .navbar-list {
     display: block;
+    background-color: whitesmoke;
 }
-.main-menu-item {
+
+.navbar-item {
+    padding: 1em;
+    border-bottom: 1px solid #000;
     cursor: pointer;
 }
+
+.navbar-item:last-child {
+    border: none;
+}
+
 .dropdown-menu {
     display: none;
 }
-.main-menu-item.active .dropdown-menu {
+
+.navbar-item.active .dropdown-menu {
     display: block;
     animation: dropdown 600ms ease;
 }
@@ -218,7 +235,7 @@ header.page-header h1 {
     transition: transform 0.3s ease;
 }
 
-.main-menu-item.active .dropdown-arrow {
+.navbar-item.active .dropdown-arrow {
     transform: rotateX(180deg);
     transform-origin: center;
 }
@@ -226,7 +243,7 @@ header.page-header h1 {
 .dropdown-sub {
     display: none;
 }
-.main-menu a,
+
 .lang-menu a,
 .footer-menu a {
     padding: 0.25em;
@@ -303,49 +320,74 @@ footer {
       "main main main"
       "footer footer footer";
     }
+
+    .logo {
+        cursor: pointer;
+        max-width: 15%;
+        min-width: 180px;
+    }
+
     .logo img {
-        max-width: 4em;
-        min-width: 2em;
+        width: 2em;
         margin: 0;
     }
 
-    header.page-header h1 {
+    .navbar h1 {
         font-size: max(min(1vh, 1rem), 3vh, 3rem);
         text-shadow: 3px 2px 2px var(--rl-brown-light);
+    }
+
+    .navbar {
+        border: 1px solid lightgray;
+        padding: 0.5em;
     }
 
     .hamburger {
         display: none;
     }
 
-    .main-menu {
-        font-size: 1.2em;
+    .navbar-list {
+        position: relative;
         display: flex;
-        animation: dropdown 1000ms ease;
+        align-items: center;
+        border: none;
+        margin: 0;
+        width: 100%;
     }
 
-    .main-menu-item  {
+    .navbar-item {
         display: inline-block;
+        border: none;
+        cursor: pointer;
         border-radius: 5px;
         position: relative;
     }
-    .main-menu-item:hover {
+
+    .navbar-item:hover {
         color: #d00058;
+        background-color: #ffd5e4;
     }
-    .main-menu-item::after {
+
+    .navbar-item::after {
         content: '';
     }
-    .main-menu-item:last-of-type {
+
+    .navbar-item:last-of-type {
         margin-left: auto;
     }
 
     .dropdown-menu {
-        position: relative;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 10px;
         animation: dropdown 600ms ease;
         display: none;
     }
 
-    .main-menu-item:hover > .dropdown-menu {
+    .navbar-item:hover > .dropdown-menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -354,7 +396,7 @@ footer {
         width: max-content;
     }
 
-    .main-menu-item:hover .dropdown-arrow {
+    .navbar-item:hover .dropdown-arrow {
         transform: rotateX(180deg);
         transform-origin: center;
     }
@@ -381,7 +423,7 @@ footer {
         background-color: orange;
     }
 
-    .main-menu-heading,
+    .dropdown-heading,
     .dropdown-sub {
         margin: 0;
         display: block;
