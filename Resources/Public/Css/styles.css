@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "links.css";
-@import "mdn-nav.css";
+/*@import "mdn-nav.css";*/
 
 :root,
 [data-rl-theme="light"] {
