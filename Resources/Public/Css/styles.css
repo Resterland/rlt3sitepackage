@@ -295,7 +295,7 @@ nav.active .navbar-list {
     justify-content: space-around;
 }
 .footer-nav ul {
-    flex: auto initial;
+    flex: auto;
 }
 .copyright {
     grid-area: copyright;
@@ -323,11 +323,10 @@ footer {
       "footer footer footer";
     }
 
-    .logo {
-        cursor: pointer;
+    /*.logo {
         max-width: 15%;
         min-width: 180px;
-    }
+    }*/
 
     .logo img {
         width: 2em;
