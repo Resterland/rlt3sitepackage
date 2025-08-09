@@ -150,6 +150,9 @@ footer {
     display: grid;
     margin-top: 0.5em;
 }
+.page-header {
+    display: flex;
+}
 .logo img {
     width: 1.5em;
     margin: 0;
