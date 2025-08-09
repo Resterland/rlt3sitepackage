@@ -172,7 +172,6 @@ nav.navbar {
 
 .hamburger {
     max-width: 10%;
-    cursor: pointer;
 }
 
 .navbar-list {
@@ -365,8 +364,8 @@ footer {
     }
 
     .navbar-item:hover {
-        color: #d00058;
-        background-color: #ffd5e4;
+        color: var(--rl-link-hover-color);
+        background-color: var(--rl-link-hover);
     }
 
     .navbar-item::after {
