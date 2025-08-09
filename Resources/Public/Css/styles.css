@@ -150,7 +150,7 @@ footer {
     display: grid;
     margin-top: 0.5em;
 }
-.page-header {
+.navbar {
     display: flex;
 }
 .logo img {
@@ -175,7 +175,9 @@ footer {
 }
 .search {
     padding-left: 0.25em;
+    /*
     display: none;
+    */
 }
 
 .breadcrumb {
