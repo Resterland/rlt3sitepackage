@@ -223,7 +223,7 @@ nav.active .navbar-list {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: orange;
+    background-color: var(--rl-blue);
 }
 
 .dropdown-arrow {
@@ -410,7 +410,7 @@ footer {
     }
 
     .dropdown-item:hover {
-        background-color: rgb(226, 223, 223);
+        background-color: var(--rl-link-hover);
     }
 
     .dropdown-item::before {
@@ -420,7 +420,7 @@ footer {
         top: 25%;
         height: 50%;
         width: 3px;
-        background-color: orange;
+        background-color: var(--rl-blue);
     }
 
     .dropdown-heading,

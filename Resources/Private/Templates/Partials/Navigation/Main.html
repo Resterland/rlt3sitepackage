@@ -35,7 +35,7 @@
                         <!-- Item has no children -->
                         <f:link.page
                             pageUid="{menuItem.data.uid}"
-                            class="dropdown-item {f:if(condition: menuItem.active, then: 'active')}"
+                            class="{f:if(condition: menuItem.active, then: 'active')}"
                             target="{menuItem.target}"
                             title="{menuItem.title}">
                             {menuItem.title}
