@@ -162,7 +162,6 @@ footer {
 
 /* body grid areas */
 header.page-header {
-    grid-area: header;
     background: var(--rl-yellow-fale);
 }
 main {
@@ -183,6 +182,7 @@ footer {
 }
 
 .sticky-header-container {
+    grid-area: header;
     position: sticky;
     top: -1px;
     z-index: 1000;
