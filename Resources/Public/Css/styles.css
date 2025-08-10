@@ -182,6 +182,14 @@ footer {
     margin-top: 0.5em;
 }
 
+.sticky-header-container {
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+}
+
 .wrapper-header {
     display: flex;
     align-content: space-evenly;
@@ -282,20 +290,6 @@ footer {
       "header header header"
       "main main main"
       "footer footer footer";
-    }
-
-    .page-header {
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        right: 0;
-    }
-
-    .width-max {
-        max-width: 67vw;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .logo {

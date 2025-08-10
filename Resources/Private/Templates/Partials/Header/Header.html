@@ -1,24 +1,26 @@
-<header class="page-header width-max" role="banner">
-    <f:comment><!-- <h2>Data in variable headerMenu</h2>
+<div class="sticky-header-container">
+    <header class="page-header" role="banner">
+        <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
-    <div class="wrapper-header">
-        <div class="logo">
-            <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
-                <f:if condition="{settings.page.header.logo.enable}">
-                    <f:render
-                        partial="Structure/Logo"
-                        arguments="{_all}"/>
-                </f:if>
-                {site.configuration.websiteTitle} - {page.pageRecord.title}
-            </f:link.page>
-        </div>
-        <f:if condition="{settings.page.header.languagenavigation.enable}">
-            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
-        </f:if>
+        <div class="wrapper-header">
+            <div class="logo">
+                <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+                    <f:if condition="{settings.page.header.logo.enable}">
+                        <f:render
+                            partial="Structure/Logo"
+                            arguments="{_all}"/>
+                    </f:if>
+                    {site.configuration.websiteTitle} - {page.pageRecord.title}
+                </f:link.page>
+            </div>
+            <f:if condition="{settings.page.header.languagenavigation.enable}">
+                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+            </f:if>
 
-        <f:render partial="Structure/Search" arguments="{_all}"/>
-    </div>
-    <nav class="navbar">
-        <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
-    </nav>
-</header>
+            <f:render partial="Structure/Search" arguments="{_all}"/>
+        </div>
+        <nav class="navbar">
+            <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
+        </nav>
+    </header>
+</div>
