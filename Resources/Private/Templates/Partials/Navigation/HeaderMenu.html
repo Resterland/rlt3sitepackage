@@ -9,7 +9,7 @@
             </f:then>
             <f:else>
                 <li>
-                    <f:render partial="MenuItemLink" arguments="{item: menuItem}"/>
+                    <f:render partial="Navigation/MenuItemLink" arguments="{item: menuItem}"/>
                     <f:if condition="{menuItem.children}">
                         <f:render section="headersubmenu" arguments="{headersubmenu: menuItem.children}"/>
                     </f:if>
