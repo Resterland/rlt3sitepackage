@@ -1,0 +1,40 @@
+<h2>Data in variable headerMenu</h2>
+<f:debug inline="true">{headerMenu}</f:debug>
+
+<h2>Output</h2>
+    <ul class="navbar-list">
+        <f:for each="{headerMenu}" as="menuItem">
+            <f:if condition="{menuItem.spacer}">
+                <f:then>
+                </f:then>
+                <f:else>
+                    <li>
+                        <f:render partial="MenuItemLink" arguments="{item: menuItem}"/>
+                        <f:if condition="{menuItem.children}">
+                            <f:render section="headersubmenu" arguments="{headersubmenu: menuItem.children}"/>
+                        </f:if>
+                    </li>
+                </f:else>
+            </f:if>
+        </f:for>
+        </f:if>
+    </ul>
+
+<f:section name="headersubmenu">
+    <ul>
+        <f:for each="{headerSubMenu}" as="headerSubItem">
+            <li>
+                <a class="nav-link {f:if(condition: headerSubItem.active, then:'active')}"
+                   href="{headerSubItem.link}"
+                   target="{headerSubItem.target}"
+                   title="{headerSubItem.title}"
+                >
+                    {headerSubItem.title}
+                </a>
+                <f:if condition="{headerSubItem.children}">
+                    <f:render section="headersubmenu" arguments="{headerSubMenu: headerSubItem.children}"/>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:section>

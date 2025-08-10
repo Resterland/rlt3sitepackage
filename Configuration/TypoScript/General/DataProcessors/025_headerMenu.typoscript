@@ -1,0 +1,20 @@
+
+# Main menu processor for responsive navbar
+page.10.dataProcessing {
+    # available as {headerMenu} in Fluid template
+    25 = menu
+    25 {
+        as = headerMenu
+        levels = 3
+        includeSpacer = 1
+        expandAll = 1
+        titleField = nav_title // title
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = nav_image
+            }
+        }
+    }
+}
+

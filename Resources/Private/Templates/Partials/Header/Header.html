@@ -15,7 +15,7 @@
                 src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg"
                 alt="hamburger" />
         </div>
-        <f:render partial="Navigation/Main" arguments="{mainMenu:mainMenu}"/>
+        <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
 
        <f:if condition="{settings.page.header.languagenavigation.enable}">
             <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
