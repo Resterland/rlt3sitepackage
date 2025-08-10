@@ -186,15 +186,14 @@ footer {
     display: flex;
 }
 
-nav.navbar {
-    display: flex;
-}
-.width-max {
+
+
+/*.width-max {
     max-width: 67vw;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
 .logo img {
     width: 1.5em;
@@ -209,15 +208,7 @@ nav.navbar {
 }
 .search {
     padding-left: 0.25em;
-    display: none;
-}
-.footer-menu a {
-     padding: 0.25em;
-     display: block;
- }
-
-/*.navbar {
-    display: flex;
+    /*display: none;*/
 }
 
 .lang-menu a {
@@ -225,6 +216,14 @@ nav.navbar {
     display: block;
 }
 .lang-menu {
+    display: flex;
+}
+.footer-menu a {
+     padding: 0.25em;
+     display: block;
+ }
+
+/*.navbar {
     display: flex;
 }*/
 
