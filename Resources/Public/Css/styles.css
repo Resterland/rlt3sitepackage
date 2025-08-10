@@ -190,9 +190,9 @@ footer {
     right: 0;
 }
 
-.wrapper-header {
+.header-wrapper {
     display: flex;
-    align-content: space-evenly;
+    justify-content: space-between;
 }
 
 .logo img {
@@ -206,11 +206,6 @@ footer {
     font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
     text-shadow: 2px 1px 1px var(--rl-brown-light);
 }
-.search {
-    padding-left: 0.25em;
-    /*display: none;*/
-}
-
 .lang-menu a {
     padding: 0.25em;
     display: block;
@@ -218,10 +213,10 @@ footer {
 .lang-menu {
     display: flex;
 }
-.footer-menu a {
-     padding: 0.25em;
-     display: block;
- }
+.search {
+    padding-left: 0.25em;
+    display: none;
+}
 
 .navbar ul {
     display: flex;
@@ -255,6 +250,10 @@ footer {
 .openstreetmap iframe {
     border: 1px solid black;
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+.footer-menu a {
+    padding: 0.25em;
+    display: block;
 }
 .footer-nav {
     padding: 0.5em 0;
@@ -307,13 +306,18 @@ footer {
         text-shadow: 3px 2px 2px var(--rl-brown-light);
     }
 
-    /*.lang-menu {*/
-    /*    display: flex;*/
-    /*    gap: 0.25em;*/
-    /*}*/
-    /*.lang-menu {*/
-    /*    flex-direction: row;*/
-    /*}*/
+    .lang-menu {
+        display: flex;
+        gap: 0.25em;
+    }
+    .lang-menu {
+        flex-direction: row;
+    }
+
+    .search {
+        padding-left: 0.25em;
+        display: inline-flex;
+    }
 
     .footer-menu {
         display: flex;

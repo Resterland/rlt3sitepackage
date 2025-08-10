@@ -2,9 +2,9 @@
     <header class="page-header" role="banner">
         <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
-        <div class="wrapper-header">
+        <div class="header-wrapper">
             <div class="logo">
-                <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
+                <f:link.page pageUid="{site.rootPageId}" class="site-name">
                     <f:if condition="{settings.page.header.logo.enable}">
                         <f:render
                             partial="Structure/Logo"
