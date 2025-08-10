@@ -72,6 +72,7 @@
     --rl-link-hover-color: var(--rl-coffee-black);
     --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
+    --rl-max-width: 1280px;
 }
 
 html {
@@ -120,15 +121,12 @@ ul {
 li {
     list-style: none;
 }
-
-/*.page-header,
-aside,
-main,
-footer {
+.pos-relative {
     position: relative;
-    margin: 0;
-    padding: 0 1em 0 1em;
-}*/
+}
+.width-max {
+    max-width: var(--rl-max-width);
+}
 
 /* body grid areas */
 .page-header {
@@ -239,7 +237,7 @@ footer {
 /* media queries */
 @media screen and (min-width: 48rem) {
     body {
-        max-width: 100em;
+        max-width: 99vw;
         display: grid;
         grid-template-areas:
       "header header header"
