@@ -17,8 +17,8 @@ page.10.dataProcessing {
         }
     }
     # available as {headerSubMenu} in Fluid template
-    25 = menu
-    25 {
+    27 = menu
+    27 {
         as = headerSubMenu
         entryLevel = 1
         expandAll = 0
