@@ -72,15 +72,14 @@
     --rl-link-hover-color: var(--rl-coffee-black);
     --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
-    --rl-max-width: 1280px;
 }
 
 html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");
-    background-size: 3px;
+    /*background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");*/
+    /*background-size: 3px;*/
 }
 
 *,
@@ -125,7 +124,10 @@ li {
     position: relative;
 }
 .width-max {
-    max-width: var(--rl-max-width);
+    max-width: 67vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* body grid areas */
@@ -237,7 +239,7 @@ footer {
 /* media queries */
 @media screen and (min-width: 48rem) {
     body {
-        max-width: 99vw;
+        /*max-width: 99vw;*/
         display: grid;
         grid-template-areas:
       "header header header"
