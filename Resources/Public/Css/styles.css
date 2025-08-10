@@ -120,6 +120,16 @@ ul {
 li {
     list-style: none;
 }
+
+aside,
+header.page-header,
+main,
+footer {
+    position: relative;
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
 .pos-relative {
     position: relative;
 }
@@ -131,7 +141,7 @@ li {
 }
 
 /* body grid areas */
-.page-header {
+header.page-header {
     grid-area: header;
 }
 main {
