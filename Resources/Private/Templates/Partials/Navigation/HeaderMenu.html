@@ -2,23 +2,22 @@
 <f:debug inline="true">{headerMenu}</f:debug>
 
 <h2>Output</h2>
-    <ul class="navbar-list">
-        <f:for each="{headerMenu}" as="menuItem">
-            <f:if condition="{menuItem.spacer}">
-                <f:then>
-                </f:then>
-                <f:else>
-                    <li>
-                        <f:render partial="MenuItemLink" arguments="{item: menuItem}"/>
-                        <f:if condition="{menuItem.children}">
-                            <f:render section="headersubmenu" arguments="{headersubmenu: menuItem.children}"/>
-                        </f:if>
-                    </li>
-                </f:else>
-            </f:if>
-        </f:for>
+<ul class="navbar-list">
+    <f:for each="{headerMenu}" as="menuItem">
+        <f:if condition="{menuItem.spacer}">
+            <f:then>
+            </f:then>
+            <f:else>
+                <li>
+                    <f:render partial="MenuItemLink" arguments="{item: menuItem}"/>
+                    <f:if condition="{menuItem.children}">
+                        <f:render section="headersubmenu" arguments="{headersubmenu: menuItem.children}"/>
+                    </f:if>
+                </li>
+            </f:else>
         </f:if>
-    </ul>
+    </f:for>
+</ul>
 
 <f:section name="headersubmenu">
     <ul>
