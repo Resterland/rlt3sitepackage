@@ -78,6 +78,8 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
     /*background: rgb(53, 41, 37) url("../Images/Logos/rl-logo-inverted.svg");*/
     /*background-size: 3px;*/
 }
@@ -107,6 +109,34 @@ body {
 }
 
 /* START basic layout settings */
+
+aside,
+footer,
+header.page-header,
+main {
+    display:block;
+}
+abbr[title] {
+    border-bottom:1px dotted;
+    text-decoration:none
+}
+dfn {
+    font-style:italic
+}
+sub,
+sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+}
+sup {
+    top:-0.5em
+}
+sub {
+    bottom:-0.25em
+}
+
 img,
 picture,
 video {
@@ -143,7 +173,7 @@ footer {
 /* body grid areas */
 header.page-header {
     grid-area: header;
-    background: var(--rl-brown-camel);
+    background: var(--rl-yellow-fale);
 }
 main {
     grid-area: main;
