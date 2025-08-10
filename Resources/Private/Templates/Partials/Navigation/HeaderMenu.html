@@ -3,37 +3,31 @@
 
 <h2>Output</h2>
 <ul class="navbar-list">
-    <f:for each="{headerMenu}" as="menuItem">
-        <f:if condition="{menuItem.spacer}">
+    <f:for each="{headerMenu}" as="menuItem" iteration="headerMenuIteration">
+        <f:if condition="{menuItem.children}">
             <f:then>
+                <li class="nav-item dropdown{f:if(condition:'{menuItem.active}',then:' active')}">
+                    <a href="{menuItem.link}"
+                       class="nav-link dropdown-toggle" id="navbarDropdown{headerMenuIteration.index}">
+                        {menuItem.title}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <f:for each="{menuItem.children}" as="menuChild" iteration="headerChildIteration">
+                            <f:link.page pageUid="{menuChild.data.uid}"
+                                         class="dropdown-item {f:if(condition:'{menuChild.active}',then:' active')}">
+                                {menuChild.title}
+                            </f:link.page>
+                        </f:for>
+                    </div>
+                </li>
             </f:then>
             <f:else>
-                <li>
-                    <f:render partial="Navigation/MenuItemLink" arguments="{item: menuItem}"/>
-                    <f:if condition="{menuItem.children}">
-                        <f:render section="headersubmenu" arguments="{headersubmenu: menuItem.children}"/>
-                    </f:if>
+                <li class="nav-item {f:if(condition:'{menuItem.active}',then:'active')}">
+                    <f:link.page pageUid="{menuItem.data.uid}" class="nav-link">
+                        {menuItem.title}
+                    </f:link.page>
                 </li>
             </f:else>
         </f:if>
     </f:for>
 </ul>
-
-<f:section name="headersubmenu">
-    <ul>
-        <f:for each="{headerSubMenu}" as="headerSubItem">
-            <li>
-                <a class="nav-link {f:if(condition: headerSubItem.active, then:'active')}"
-                   href="{headerSubItem.link}"
-                   target="{headerSubItem.target}"
-                   title="{headerSubItem.title}"
-                >
-                    {headerSubItem.title}
-                </a>
-                <f:if condition="{headerSubItem.children}">
-                    <f:render section="headersubmenu" arguments="{headerSubMenu: headerSubItem.children}"/>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
-</f:section>

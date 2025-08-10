@@ -1,5 +1,4 @@
 <header class="page-header" role="banner">
-    <nav class="navbar">
         <div class="logo">
             <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
                 <f:if condition="{settings.page.header.logo.enable}">
@@ -14,6 +13,7 @@
             <f:image
                 src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg" alt="hamburger" />
         </div>
+    <nav class="navbar">
         <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
 
        <f:if condition="{settings.page.header.languagenavigation.enable}">
