@@ -11,8 +11,8 @@ page.10.dataProcessing {
         titleField = nav_title // title
     }
     # available as {subMenu} in Fluid template
-    25 = menu
-    25 {
+    22 = menu
+    22 {
         as = subMenu
         entryLevel = 1
         expandAll = 0

@@ -9,12 +9,9 @@ page.10.dataProcessing {
         includeSpacer = 1
         expandAll = 1
         titleField = nav_title // title
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references.fieldName = nav_image
-            }
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = nav_image
         }
     }
 }
-
