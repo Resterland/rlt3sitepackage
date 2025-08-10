@@ -6,7 +6,7 @@ page.10.dataProcessing {
     25 {
         as = headerMenu
         levels = 3
-        includeSpacer = 1
+        includeSpacer = 0
         expandAll = 1
         titleField = nav_title // title
         dataProcessing {

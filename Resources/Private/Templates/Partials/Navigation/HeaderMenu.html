@@ -3,6 +3,11 @@
         <f:if condition="{menuItem.children}">
             <f:then>
                 <li class="nav-item dropdown{f:if(condition:'{menuItem.active}',then:' active')}">
+                    <span class="navbar-heading">{menuItem.title}</span>
+                    <f:image
+                        src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/down-arrow.svg"
+                        alt="down-arrow"
+                        class="dropdown-arrow"/>
                     <a href="{menuItem.link}"
                        class="nav-link dropdown-toggle" id="navbarDropdown{headerMenuIteration.index}">
                         {menuItem.title}

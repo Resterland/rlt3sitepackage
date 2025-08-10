@@ -196,15 +196,16 @@ footer {
 }
 
 .logo img {
-    width: 1.5em;
+    width: calc(var(--rl-body-font-size) + 0.35rem);
     margin: 0;
+    padding-right: 0.15rem;
     vertical-align: middle;
 }
 .site-name {
     margin: 0;
     padding: 0;
-    font-size: max(min(1vh, 1rem), 3vh, 1.5rem);
-    text-shadow: 2px 1px 1px var(--rl-brown-light);
+    font-size: calc(var(--rl-body-font-size) + 0.25rem);
+    text-shadow: 0.1em 0.1em 0.1em var(--rl-green-lighter);
 }
 .lang-menu a {
     padding: 0.25em;
@@ -218,9 +219,29 @@ footer {
     display: none;
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    font-size: 0.95rem;
+}
+.navbar .navbar-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 1em;
+    display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation: dropdown 1000ms ease;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.dropdown-arrow {
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    float: right;
+    padding-left: 10px;
+    transition: transform 0.3s ease;
 }
 
 .breadcrumb {
@@ -291,19 +312,17 @@ footer {
       "footer footer footer";
     }
 
-    .logo {
-        max-width: 15%;
-        min-width: 180px;
-    }
-
     .logo img {
-        width: 2em;
+        width: calc(var(--rl-body-font-size) + 2rem);
         margin: 0;
+        padding-right: 0.15rem;
+        vertical-align: middle;
     }
-
     .site-name {
+        margin: 0;
+        padding: 0;
         font-size: max(min(1vh, 1rem), 3vh, 3rem);
-        text-shadow: 3px 2px 2px var(--rl-brown-light);
+        text-shadow: 0.1em 0.1em 0.1em var(--rl-coffee-creme);
     }
 
     .lang-menu {
@@ -317,6 +336,19 @@ footer {
     .search {
         padding-left: 0.25em;
         display: inline-flex;
+    }
+
+    .navbar {
+        font-size: calc(var(--rl-body-font-size) - 0.05rem);
+    }
+    .navbar .navbar-list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        margin: 0;
+        width: 100%;
     }
 
     .footer-menu {
