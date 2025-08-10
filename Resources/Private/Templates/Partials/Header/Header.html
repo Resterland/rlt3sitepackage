@@ -1,5 +1,5 @@
 <header class="page-header" role="banner">
-    <div class="wrapper-header"
+    <div class="wrapper-header">
         <div class="logo">
             <f:link.page pageUid="{site.rootPageId}" class="navbar-brand">
                 <f:if condition="{settings.page.header.logo.enable}">
@@ -10,17 +10,13 @@
                 {site.configuration.websiteTitle} - {page.pageRecord.title}
             </f:link.page>
         </div>
-        <div class="hamburger">
-            <f:image
-                src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/hamburger.svg" alt="hamburger" />
-        </div>
-    <nav class="navbar">
-        <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
-
-       <f:if condition="{settings.page.header.languagenavigation.enable}">
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
             <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
         </f:if>
 
         <f:render partial="Structure/Search" arguments="{_all}"/>
+    </div>
+    <nav class="navbar">
+        <f:render partial="Navigation/HeaderMenu" arguments="{_all}"/>
     </nav>
 </header>
