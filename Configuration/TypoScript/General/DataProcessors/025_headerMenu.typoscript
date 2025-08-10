@@ -9,9 +9,21 @@ page.10.dataProcessing {
         includeSpacer = 1
         expandAll = 1
         titleField = nav_title // title
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
-            references.fieldName = nav_image
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = nav_image
+            }
         }
+    }
+    # available as {headerSubMenu} in Fluid template
+    25 = menu
+    25 {
+        as = headerSubMenu
+        entryLevel = 1
+        expandAll = 0
+        levels = 2
+        includeSpacer = 1
+        titleField = nav_title // title
     }
 }
