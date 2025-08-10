@@ -121,8 +121,8 @@ li {
     list-style: none;
 }
 
+.page-header,
 aside,
-header.page-header,
 main,
 footer {
     position: relative;
@@ -131,7 +131,7 @@ footer {
 }
 
 /* body grid areas */
-header.page-header {
+.page-header {
     grid-area: header;
 }
 main {
@@ -242,6 +242,13 @@ footer {
       "header header header"
       "main main main"
       "footer footer footer";
+    }
+
+    .page-header {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        right: 0;
     }
 
     /*.logo {
