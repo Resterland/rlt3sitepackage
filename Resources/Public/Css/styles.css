@@ -143,6 +143,7 @@ footer {
 /* body grid areas */
 header.page-header {
     grid-area: header;
+    background: var(--rl-brown-camel);
 }
 main {
     grid-area: main;
