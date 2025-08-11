@@ -1,34 +1,19 @@
-const trigger = document.querySelector('.hamburger')
-const target = document.querySelector('nav.navbar')
-const navItems = document.querySelectorAll('.navbar-item')
-const dropdownLinks = document.querySelectorAll('.dropdown-item a')
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-const handleClick = (e) => {
-    target.classList.toggle('active')
-    if (target.classList.contains('active')) {
-        document.body.style.overflow = 'hidden'
-    } else {
-        document.body.style.overflow = 'scroll'
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     }
 }
-
-const handleNavItemClick = (e) => {
-    if (window.innerWidth <= 768) {
-        e.stopPropagation()
-        e.currentTarget.classList.toggle('active')
-    }
-}
-
-const handleDropdownLinkClick = (e) => {
-    e.stopPropagation()
-}
-
-trigger.addEventListener('click', handleClick)
-
-Array.from(navItems).forEach((navItem) =>
-    navItem.addEventListener('click', handleNavItemClick)
-)
-
-Array.from(dropdownLinks).forEach((link) =>
-    link.addEventListener('click', handleDropdownLinkClick)
-)
