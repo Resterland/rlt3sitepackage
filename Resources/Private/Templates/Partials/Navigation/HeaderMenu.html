@@ -1,26 +1,67 @@
-<ul class="navbar">
-    <f:for each="{headerMenu}" as="menuItem" iteration="headerMenuIteration">
-        <f:if condition="{menuItem.children}">
-            <f:then>
-                <li class="dropdown{f:if(condition:'{menuItem.active}',then:' active')}">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <f:for each="{menuItem.children}" as="menuChild" iteration="headerChildIteration">
-                            <f:link.page pageUid="{menuChild.data.uid}"
-                                         class="dropdown-item {f:if(condition:'{menuChild.active}',then:' active')}">
-                                {menuChild.title}
-                            </f:link.page>
-                        </f:for>
-                    </div>
-                </li>
-            </f:then>
-            <f:else>
-                <li class="{f:if(condition:'{menuItem.active}',then:'active')}">
-                    <f:link.page pageUid="{menuItem.data.uid}" class="headerMenu-link">
-                        {menuItem.title}
+<nav class="headermenu" id="myTopnav">
+    <ul class="topnav">
+        <f:for each="{headerMenu}" as="menuItem" iteration="headerMenuIteration">
+            <li class="topnav-content">
+                <f:if condition="{menuItem.hasChildren}">
+                    <f:then>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                {menuItem.title}
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <f:for each="{menuItem.children}" as="menuItemLevel2">
+                                <div class="dropdown-content">
+                                    <f:link.page
+                                        pageUid="{menuItemLevel2.data.uid}"
+                                        class="{f:if(condition: menuItemLevel2.active, then: 'active')}">
+                                        {menuItemLevel2.title}
+                                    </f:link.page>
+                                </div>
+                            </f:for>
+                        </div>
+                    </f:then>
+                    <f:comment>
+                        <!-- Item has no children -->
+                    </f:comment>
+                    <f:else>
+                        <f:link.page
+                            pageUid="{menuItem.data.uid}"
+                            class="{f:if(condition: menuItem.active, then: 'active')}"
+                            target="{menuItem.target}"
+                            title="{menuItem.title}">
+                            {menuItem.title}
+                        </f:link.page>
+
+                    </f:else>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+
+<f:comment><!--
+<f:if condition="{menuItem.children}">
+    <f:then>
+        <li class="dropdown{f:if(condition:'{menuItem.active}',then:' active')}">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <f:for each="{menuItem.children}" as="menuChild" iteration="headerChildIteration">
+                    <f:link.page pageUid="{menuChild.data.uid}"
+                                 class="dropdown-item {f:if(condition:'{menuChild.active}',then:' active')}">
+                        {menuChild.title}
                     </f:link.page>
-                </li>
-            </f:else>
-        </f:if>
-    </f:for>
-</ul>
+                </f:for>
+            </div>
+        </li>
+    </f:then>
+    <f:else>
+        <li class="{f:if(condition:'{menuItem.active}',then:'active')}">
+            <f:link.page pageUid="{menuItem.data.uid}" class="headerMenu-link">
+                {menuItem.title}
+            </f:link.page>
+        </li>
+    </f:else>
+</f:if>
+--></f:comment>
