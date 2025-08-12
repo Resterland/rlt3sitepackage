@@ -1,14 +1,15 @@
 <nav class="headermenu" id="myTopnav">
     <ul class="topnav">
-        <f:for each="{headerMenu}" as="menuItem" iteration="headerMenuIteration">
+        <f:for each="{headerMenu}" as="menuItem">
             <li class="topnav-content">
                 <f:if condition="{menuItem.hasChildren}">
                     <f:then>
+                        <!-- Item has children -->
+                        <button class="dropbtn">
+                            {menuItem.title}
+                            <i class="fa fa-caret-down"></i>
+                        </button>
                         <div class="dropdown">
-                            <button class="dropbtn">
-                                {menuItem.title}
-                                <i class="fa fa-caret-down"></i>
-                            </button>
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
                                 <div class="dropdown-content">
                                     <f:link.page
