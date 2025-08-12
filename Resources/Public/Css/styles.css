@@ -62,7 +62,7 @@
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-body-font-family: "Nimbus Sans L", "Liberation Sans", "Trebuchet MS", var( --rl-font-sans-serif);
-    --rl-body-font-size: max(1.2rem, 1.2vw);
+    --rl-body-font-size: max(1rem, 1vw);
     --rl-body-line-height: 1.5;
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
@@ -214,7 +214,6 @@ footer {
 }
 .search {
     padding-left: 0.25em;
-    display: none;
 }
 
 /*** Navbar Dropdown ***/
