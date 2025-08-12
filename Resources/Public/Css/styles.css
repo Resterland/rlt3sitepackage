@@ -62,7 +62,7 @@
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-body-font-family: "Nimbus Sans L", "Liberation Sans", "Trebuchet MS", var( --rl-font-sans-serif);
-    --rl-body-font-size: max(1rem, 1vw);
+    --rl-body-font-size: max(1rem);
     --rl-body-line-height: 1.5;
     --rl-body-background: var(--rl-light);
     --rl-body-color: var(--rl-blue-dark);
@@ -77,6 +77,9 @@
 }
 
 html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
     font-family: var(--rl-body-font-family), sans-serif;
 }
 
@@ -94,7 +97,7 @@ body {
     font-size: var(--rl-body-font-size);
     color: var(--rl-body-color);
     min-height: 100vh;
-    width: min(1000px, calc(70% + 100px));
+    width: min(100vw, calc(95%));
     display: grid;
     grid-template-areas:
         "header"
@@ -104,10 +107,6 @@ body {
 }
 
 /* START basic layout settings */
-h1 {
-    letter-spacing: 2px;
-    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-}
 aside,
 footer,
 header.page-header,
@@ -194,7 +193,6 @@ footer {
 }
 
 .logo img {
-    width: calc(var(--rl-body-font-size) + 0.35rem);
     margin: 0;
     padding-right: 0.15rem;
     vertical-align: middle;
@@ -202,15 +200,16 @@ footer {
 .site-name {
     margin: 0;
     padding: 0;
-    font-size: calc(var(--rl-body-font-size) + 0.25rem);
+}
+.site-name a {
     text-shadow: 0.1em 0.1em 0.1em var(--rl-green-lighter);
+}
+.lang-menu {
+    display: flex;
 }
 .lang-menu a {
     padding: 0.25em;
     display: block;
-}
-.lang-menu {
-    display: flex;
 }
 .search {
     padding-left: 0.25em;
