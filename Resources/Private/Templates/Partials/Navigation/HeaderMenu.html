@@ -39,29 +39,3 @@
         </f:for>
     </ul>
 </nav>
-
-
-<f:comment><!--
-<f:if condition="{menuItem.children}">
-    <f:then>
-        <li class="dropdown{f:if(condition:'{menuItem.active}',then:' active')}">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <f:for each="{menuItem.children}" as="menuChild" iteration="headerChildIteration">
-                    <f:link.page pageUid="{menuChild.data.uid}"
-                                 class="dropdown-item {f:if(condition:'{menuChild.active}',then:' active')}">
-                        {menuChild.title}
-                    </f:link.page>
-                </f:for>
-            </div>
-        </li>
-    </f:then>
-    <f:else>
-        <li class="{f:if(condition:'{menuItem.active}',then:'active')}">
-            <f:link.page pageUid="{menuItem.data.uid}" class="headerMenu-link">
-                {menuItem.title}
-            </f:link.page>
-        </li>
-    </f:else>
-</f:if>
---></f:comment>
