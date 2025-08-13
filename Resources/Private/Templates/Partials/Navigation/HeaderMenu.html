@@ -2,32 +2,28 @@
     <div class="nav-mobile">
         <a id="nav-toggle" href="#!"><span></span></a>
     </div>
-    <ul>
+    <ul class="nav-list">
         <f:for each="{headerMenu}" as="menuItem">
             <li>
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <!-- Item has children -->
-                        <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                            <f:if condition="{menuItem.files}">
-                                <f:image image="{menuItem.files.0}" width="20"/>
-                            </f:if>
-                            {menuItem.title}
-                        </a>
-                        <div>
+                        <ul class="nav-dropdown">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
-                                <f:if condition="{menuItemLevel2.spacer}">
-                                    <f:then>
-                                        <div></div>
-                                    </f:then>
-                                    <f:else>
-                                        <f:link.page pageUid="{menuItemLevel2.data.uid}">
-                                            {menuItemLevel2.title}
-                                        </f:link.page>
-                                    </f:else>
-                                </f:if>
+                                <li>
+                                    <f:if condition="{menuItemLevel2.hasSubpages}">
+                                        <f:then>
+                                            <div>Has another Level</div>
+                                        </f:then>
+                                        <f:else>
+                                            <f:link.page pageUid="{menuItemLevel2.data.uid}">
+                                                {menuItemLevel2.title}
+                                            </f:link.page>
+                                        </f:else>
+                                    </f:if>
+                                </li>
                             </f:for>
-                        </div>
+                        </ul>
                     </f:then>
                     <f:else>
                         <!-- Item has no children -->
