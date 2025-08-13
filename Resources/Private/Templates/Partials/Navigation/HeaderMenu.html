@@ -1,8 +1,8 @@
-<nav class="headermenu" id="myTopnav">
-    <ul class="topnav">
+<nav class="headermenu">
+    <ul class="navbar"
         <f:for each="{headerMenu}" as="menuItem">
-            <li class="topnav-content {f:if(condition: menuItem.hasChildren, then: 'dropdown')}">
-                <f:if condition="{menuItem.hasChildren}">
+            <li class="nav-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
+                <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <!-- Item has children -->
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
@@ -11,14 +11,13 @@
                             </f:if>
                             {menuItem.title}
                         </a>
-                        <div class="dropdown">
+                        <div class="dropdown-menu">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
                                 <f:if condition="{menuItemLevel2.spacer}">
                                     <f:then><div class="dropdown-divider"></div></f:then>
                                     <f:else>
-                                        <f:link.page
-                                            pageUid="{menuItemLevel2.data.uid}"
-                                            class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
+                                        <f:link.page pageUid="{menuItemLevel2.data.uid}"
+                                                     class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
                                             {menuItemLevel2.title}
                                         </f:link.page>
                                     </f:else>
@@ -26,18 +25,14 @@
                             </f:for>
                         </div>
                     </f:then>
-                    <f:comment>
-                        <!-- Item has no children -->
-                    </f:comment>
                     <f:else>
-                        <f:link.page
-                            pageUid="{menuItem.data.uid}"
-                            class="{f:if(condition: menuItem.active, then: 'active')}"
-                            target="{menuItem.target}"
-                            title="{menuItem.title}">
+                        <!-- Item has no children -->
+                        <f:link.page pageUid="{menuItem.data.uid}" class="nav-link {f:if(condition: menuItem.active, then:'active')}">
+                            <f:if condition="{menuItem.files}">
+                                <f:image image="{menuItem.files.0}" width="20"/>
+                            </f:if>
                             {menuItem.title}
                         </f:link.page>
-
                     </f:else>
                 </f:if>
             </li>

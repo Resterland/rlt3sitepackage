@@ -216,7 +216,9 @@ footer {
 }
 
 /*** Navbar Dropdown ***/
-
+.navbar {
+    display: flex;
+}
 /*** Responsive Navbar ends ***/
 
 .breadcrumb {
