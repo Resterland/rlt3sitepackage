@@ -236,6 +236,15 @@ footer {
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
+.nav-mobile {
+//display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--rl-nav-background);
+    height: var(--rl-nav-height);
+    width: var(--rl-nav-height);
+}
 /*** Responsive Navbar ends ***/
 
 .breadcrumb {
