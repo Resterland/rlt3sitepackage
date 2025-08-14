@@ -1,4 +1,4 @@
-<nav>
+<nav class="navbar">
     <div class="nav-mobile">
         <a id="nav-toggle" href="#!"><span></span></a>
     </div>
@@ -8,6 +8,12 @@
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <!-- Item has children -->
+                        <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <f:if condition="{menuItem.files}">
+                                <f:image image="{menuItem.files.0}" class="" width="20"/>
+                            </f:if>
+                            {menuItem.title}
+                        </a>
                         <ul class="nav-dropdown">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
                                 <li>

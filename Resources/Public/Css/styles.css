@@ -71,9 +71,15 @@
     --rl-link-visited: var(--rl-coffee);
     --rl-link-focus: var(--rl-yellow);
     --rl-link-hover: var(--rl-yellow-fale);
-    --rl-link-hover-color: var(--rl-coffee-black);
     --rl-link-active: var(--rl-yellow);
     --rl-bg-color: #a52a2a;
+
+    --rl-content-width: 1000px;
+    --rl-breakpoint: 799px;
+    --rl-nav-height: 70px;
+    --rl-nav-background: #262626;
+    --rl-nav-font-color: #ffffff;
+    --rl-link-hover-color: #2581dc;
 }
 
 html {
@@ -113,36 +119,12 @@ header.page-header,
 main {
     display:block;
 }
-abbr[title] {
-    border-bottom:1px dotted;
-    text-decoration:none
-}
-dfn {
-    font-style:italic
-}
-sub,
-sup {
-    font-size:75%;
-    line-height:0;
-    position:relative;
-    vertical-align:baseline
-}
-sup {
-    top:-0.5em
-}
-sub {
-    bottom:-0.25em
-}
 
 img,
 picture,
 video {
     max-width: 100%;
     height: auto;
-}
-ul {
-    padding-left: 0;
-    margin: 0;
 }
 
 aside,
@@ -214,7 +196,24 @@ footer {
 
 /*** Navbar Dropdown ***/
 .navbar {
-    display: flex;
+    float: right;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    float: left ;
+    position: relative;
+}
+.navbar ul li a {
+    display: block;
+    padding: 0 0.25em;
+    line-height: var(--rl-nav-height);
+    background: var(--rl-nav-background);
+    color: var(--rl-nav-font-color);
+    text-decoration: none;
 }
 /*** Responsive Navbar ends ***/
 
