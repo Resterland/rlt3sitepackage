@@ -215,6 +215,14 @@ footer {
     color: var(--rl-nav-font-color);
     text-decoration: none;
 }
+.navbar ul li a:hover {
+    background: var(--rl-link-hover-color);
+    color: var(--rl-nav-font-color);
+}
+.navbar ul li a:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
 /*** Responsive Navbar ends ***/
 
 .breadcrumb {
