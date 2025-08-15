@@ -213,7 +213,6 @@ footer {
     line-height: var(--rl-nav-height);
     background: var(--rl-nav-background);
     color: var(--rl-nav-font-color);
-    text-decoration: none;
 }
 .navbar ul li a:hover {
     background: var(--rl-link-hover-color);
