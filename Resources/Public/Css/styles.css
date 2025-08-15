@@ -225,15 +225,17 @@ footer {
 
 /*** Navbar Dropdown ***/
 .navbar {
-    float: right;
+    background: var(--rl-blue-dark);
 }
-.navbar ul {
+.navbar > ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
 }
 .navbar ul li {
-    float: left ;
+    flex: 1 1 0;
     position: relative;
 }
 .navbar ul li a {
@@ -265,7 +267,7 @@ footer {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 .nav-mobile {
-//display: none;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -274,6 +276,16 @@ footer {
     width: var(--rl-nav-height);
 }
 /*** Responsive Navbar ends ***/
+
+@media screen and (min-width: 48rem) {
+    nav > ul {
+        flex-direction: row;
+    }
+    nav li {
+        flex: 1;
+        font-size: 1em;
+    }
+}
 
 .breadcrumb {
     padding: 0 0.5rem;
