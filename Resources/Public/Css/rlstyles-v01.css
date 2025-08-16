@@ -1,6 +1,80 @@
 @charset "UTF-8";
+@import "rlroot.css";
+
 /*
 ### styling responsive
 ###  - with css grid and flexbox
-###  - without @media queries
+###  - using @media queries
 */
+
+/* grid areas */
+.sticky-header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: var(--rl-white);
+    margin: 0 auto;
+    font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans);
+    color: var(--rl-black);
+    min-height: 100vh;
+    width: min(100vw, calc(95%));
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+}
+.header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.site-name {
+    grid-column: auto;
+    background: #888888;
+}
+
+.logo img {
+    margin: 0;
+    padding-right: 0.15rem;
+    vertical-align: middle;
+}
+.lang-menu {
+    grid-column: auto;
+    justify-self: center;
+}
+.lang-menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+    background: #feb040;
+}
+.search {
+    grid-column: auto;
+    justify-self: end;
+}
+

@@ -1,0 +1,21 @@
+:root,
+[data-rl-theme="light"] {
+    color-scheme: light;
+    /* colors */
+    --rl-white: #ffffff;
+    --rl-black: #000000;
+    --rl-blue: #0048ba;
+    --rl-brown: #964b00;
+    --rl-chocolate: #d2691e;
+    --rl-coffee: #6f4e37;
+    --rl-green: #588b29;
+    --rl-orange: #ff8000;
+    --rl-red: #ff0000;
+    --rl-yellow: #feb040;
+    /* font styles */
+    --rl-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
+    --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --rl-font-size: max(1rem);
+    --rl-line-height: 1.5;
+}
