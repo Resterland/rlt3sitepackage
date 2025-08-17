@@ -6,6 +6,7 @@
 */
 :root,
 [data-rl-theme=light] {
+    color-scheme: light;
     /* colors */
     --rl-white: #ffffff;
     --rl-white-almost: #FAEBD7;
@@ -26,7 +27,7 @@
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-font-size: max(1rem, 1vw);
     --rl-line-height: 1.5;
-    --rl-bg-color: var(--rl-white);
+    --rl-bg-color: var(--rl-white-almost);
     --rl-text-color: var(--rl-blue-dark);
     /* viewport break points - responsive */
 }
