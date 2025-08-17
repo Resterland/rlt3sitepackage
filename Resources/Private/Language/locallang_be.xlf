@@ -6,6 +6,9 @@
             <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
+            <trans-unit id="backend_layout.holygrail">
+                <source>Holy Grail Layout</source>
+            </trans-unit>
             <trans-unit id="backend_layout.default">
                 <source>Default</source>
             </trans-unit>

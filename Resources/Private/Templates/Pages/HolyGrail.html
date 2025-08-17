@@ -1,0 +1,22 @@
+<f:layout name="HolyGrailLayout"/>
+<f:section name="PageContent">
+    <aside>
+        <f:render partial="Content/ContentLeft"
+                  arguments="{content: content.sidebar-left.records}"/>
+    </aside>
+    <main>
+        <f:render partial="Navigation/Breadcrumb"  arguments="{_all}"/>
+
+        <f:if condition="{applicationContext} == 'Development/Local'">
+            <f:render partial="Variables" arguments="{_all}"/>
+        </f:if>
+
+        <f:render partial="Content/ContentMain"
+                  arguments="{content: content.main.records}"/>
+    </main>
+    <aside>
+        <f:render partial="Content/ContentRight"
+                  arguments="{content: content.sidebar-right.records}"/>
+    </aside>
+
+</f:section>

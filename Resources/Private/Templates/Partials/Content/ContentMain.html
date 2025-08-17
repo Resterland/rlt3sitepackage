@@ -1,0 +1,7 @@
+<f:for each="{content.main.records}" as="contentElement">
+    <f:cObject
+        typoscriptObjectPath="{contentElement.mainType}"
+        data="{contentElement.rawRecord}"
+        table="{contentElement.mainType}"
+    />
+</f:for>
