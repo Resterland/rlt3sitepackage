@@ -38,12 +38,13 @@ body {
     color: var(--rl-text-color);
     min-height: 100vh;
     /*width: min(100vw, calc(95%));*/
-    width: min(1000px, calc(70% + 100px));
+    /*width: min(1000px, calc(75% + 100px));*/
+    width: min(1260px, calc(70% + 100px));
 }
 
 h1 {
      letter-spacing: 2px;
-     font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+     font-size: clamp(1.4rem, 2.5vw, 2.8rem);
  }
 
 p {

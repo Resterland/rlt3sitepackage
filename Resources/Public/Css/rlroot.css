@@ -19,7 +19,7 @@
     --rl-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --rl-font-size: max(1rem);
+    --rl-font-size: max(1rem, 1vw);
     --rl-line-height: 1.5;
     --rl-bg-color: rgb(var(--rl-white));
     --rl-text-color: rgb(var(--rl-blue-dark));
