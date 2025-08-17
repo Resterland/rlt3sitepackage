@@ -10,17 +10,31 @@
     /* colors */
     --rl-white: #ffffff;
     --rl-white-almost: #FAEBD7;
+    --rl-white-almost2: #EED9C4;
     --rl-black: #000000;
     --rl-blue: #0048ba;
     --rl-blue-dark: #00004B;
+    --rl-blue-light: #0e76bc;
+    --rl-blue-lighter: #34a2da;
     --rl-brown: #964b00;
+    --rl-brown-dark: #7B3F00;
+    --rl-brown-light: #a86a24;
+    --rl-brown-lighter: #df8549;
+    --rl-brown-camel: #C19A6B;
     --rl-chocolate: #d2691e;
     --rl-coffee: #6f4e37;
+    --rl-coffee-black: #4B3621;
+    --rl-coffee-creme: #A67B5B;
     --rl-green: #588b29;
-    --rl-green-light: #9aada0;
+    --rl-green-dark: #006400;
+    --rl-green-light: #00ff7f;
+    --rl-green-lighter: #90ee90;
+    --rl-green-fale: #9aada0;
     --rl-orange: #ff8000;
     --rl-red: #ff0000;
+    --rl-red-dark: #a52a2a;
     --rl-yellow: #feb040;
+    --rl-yellow-fale: #edd886;
     /* font styles */
     --rl-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
@@ -29,21 +43,33 @@
     --rl-line-height: 1.5;
     --rl-bg-color: var(--rl-white-almost);
     --rl-text-color: var(--rl-blue-dark);
+    /* link color and decoration */
+    --rl-link-decoration: none;
+    --rl-link-focus: none;
+    --rl-link-active-color: #edd886;
+    --rl-link-hover-color: #ff0000;
+    --rl-link-visited-color: #0e76bc;
     /* viewport break points - responsive */
 }
 
 [data-rl-theme=dark] {
     color-scheme: dark;
     --rl-link-color: #9aada0;
-    --rl-link-color-rgb: rgb(154, 173, 160);
     --rl-link-active-color: #aebdb3;
-    --rl-link-active-color-rgb: rgb(174, 189, 179);
     --rl-link-hover-color: #aebdb3;
-    --rl-link-hover-color-rgb: rgb(174, 189, 179);
-    /* --rl-link-visited-color:var(--rl-body-color);
-     --rl-link-visited-color-rgb: var(--rl-body-color-rgb);*/
+    --rl-link-visited-color:var(--rl-green-fale);
     --rl-bg-color: var(--rl-blue-dark);
     --rl-text-color: var(--rl-white-almost);
+}
+
+[data-rl-theme=coffee] {
+    color-scheme: coffee;
+    --rl-link-color: #deb887;
+    --rl-link-active-color: #f0ffff;
+    --rl-link-hover-color: #D2691E;
+    --rl-link-visited-color: var(--rl-coffee);
+    --rl-bg-color: rgb(var(--rl-brown-dark));
+    --rl-text-color: var(--rl-white-almost2);
 }
 
 /* grid areas */
