@@ -3,12 +3,15 @@
     color-scheme: light;
     /* colors */
     --rl-white: #ffffff;
+    --rl-white-almost: #FAEBD7;
     --rl-black: #000000;
     --rl-blue: #0048ba;
+    --rl-blue-dark: #00004B;
     --rl-brown: #964b00;
     --rl-chocolate: #d2691e;
     --rl-coffee: #6f4e37;
     --rl-green: #588b29;
+    --rl-green-light: #9aada0;
     --rl-orange: #ff8000;
     --rl-red: #ff0000;
     --rl-yellow: #feb040;
@@ -18,4 +21,21 @@
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-font-size: max(1rem);
     --rl-line-height: 1.5;
+    --rl-bg-color: rgb(var(--rl-white));
+    --rl-text-color: rgb(var(--rl-blue-dark));
+    /* viewport break points - responsive */
+}
+
+[data-rl-theme="dark"] {
+    color-scheme: dark;
+    --rl-link-color: #9aada0;
+    --rl-link-color-rgb: rgb(154, 173, 160);
+    --rl-link-active-color: #aebdb3;
+    --rl-link-active-color-rgb: rgb(174, 189, 179);
+    --rl-link-hover-color: #aebdb3;
+    --rl-link-hover-color-rgb: rgb(174, 189, 179);
+    --rl-link-visited-color:var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
+    --rl-bg-color: rgb(var(--rl-blue-dark));
+    --rl-text-color: rgb(var(--rl-white-almost));
 }
