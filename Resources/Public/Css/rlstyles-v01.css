@@ -1,11 +1,49 @@
 @charset "UTF-8";
-@import "rlroot.css";
-
 /*
 ### styling responsive
 ###  - with css grid and flexbox
 ###  - using @media queries
 */
+:root,
+[data-rl-theme=light] {
+    /* colors */
+    --rl-white: #ffffff;
+    --rl-white-almost: #FAEBD7;
+    --rl-black: #000000;
+    --rl-blue: #0048ba;
+    --rl-blue-dark: #00004B;
+    --rl-brown: #964b00;
+    --rl-chocolate: #d2691e;
+    --rl-coffee: #6f4e37;
+    --rl-green: #588b29;
+    --rl-green-light: #9aada0;
+    --rl-orange: #ff8000;
+    --rl-red: #ff0000;
+    --rl-yellow: #feb040;
+    /* font styles */
+    --rl-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
+    --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --rl-font-size: max(1rem, 1vw);
+    --rl-line-height: 1.5;
+    --rl-bg-color: var(--rl-white);
+    --rl-text-color: var(--rl-blue-dark);
+    /* viewport break points - responsive */
+}
+
+[data-rl-theme=dark] {
+    color-scheme: dark;
+    --rl-link-color: #9aada0;
+    --rl-link-color-rgb: rgb(154, 173, 160);
+    --rl-link-active-color: #aebdb3;
+    --rl-link-active-color-rgb: rgb(174, 189, 179);
+    --rl-link-hover-color: #aebdb3;
+    --rl-link-hover-color-rgb: rgb(174, 189, 179);
+    /* --rl-link-visited-color:var(--rl-body-color);
+     --rl-link-visited-color-rgb: var(--rl-body-color-rgb);*/
+    --rl-bg-color: var(--rl-blue-dark);
+    --rl-text-color: var(--rl-white-almost);
+}
 
 /* grid areas */
 .sticky-header {
