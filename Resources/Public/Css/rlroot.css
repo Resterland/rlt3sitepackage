@@ -1,6 +1,5 @@
 :root,
-[data-rl-theme="light"] {
-    color-scheme: light;
+[data-rl-theme=light] {
     /* colors */
     --rl-white: #ffffff;
     --rl-white-almost: #FAEBD7;
@@ -21,12 +20,12 @@
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-font-size: max(1rem, 1vw);
     --rl-line-height: 1.5;
-    --rl-bg-color: rgb(var(--rl-white));
-    --rl-text-color: rgb(var(--rl-blue-dark));
+    --rl-bg-color: var(--rl-white);
+    --rl-text-color: var(--rl-blue-dark);
     /* viewport break points - responsive */
 }
 
-[data-rl-theme="dark"] {
+[data-rl-theme=dark] {
     color-scheme: dark;
     --rl-link-color: #9aada0;
     --rl-link-color-rgb: rgb(154, 173, 160);
@@ -34,8 +33,8 @@
     --rl-link-active-color-rgb: rgb(174, 189, 179);
     --rl-link-hover-color: #aebdb3;
     --rl-link-hover-color-rgb: rgb(174, 189, 179);
-    --rl-link-visited-color:var(--rl-body-color);
-    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);
-    --rl-bg-color: rgb(var(--rl-blue-dark));
-    --rl-text-color: rgb(var(--rl-white-almost));
+   /* --rl-link-visited-color:var(--rl-body-color);
+    --rl-link-visited-color-rgb: var(--rl-body-color-rgb);*/
+    --rl-bg-color: var(--rl-blue-dark);
+    --rl-text-color: var(--rl-white-almost);
 }
