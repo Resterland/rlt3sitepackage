@@ -17,7 +17,6 @@ mod {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.left
                                         colPos = 2
                                         identifier = sidebar-left
-                                        slideMode = collectReverse
                                     }
                                     2 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
@@ -28,7 +27,6 @@ mod {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.right
                                         colPos = 3
                                         identifier = sidebar-right
-                                        slideMode = collectReverse
                                     }
                                 }
                             }

@@ -67,17 +67,6 @@ settings:
       light: 'Light theme '
       dark: 'Dark theme '
       coffee: 'Coffee theme '
-  # Enable sidebares, left, right, both or none
-  page.themes.sidebarleft.enable:
-    label: 'Enable sidebar left'
-    category: Rlt3sitepackage.themes
-    type: bool
-    default: true
-  page.themes.sidebarright.enable:
-    label: 'Enable sidebar right'
-    category: Rlt3sitepackage.themes
-    type: bool
-    default: true
 
   page.templates.template_path:
     label: 'Page template path'
