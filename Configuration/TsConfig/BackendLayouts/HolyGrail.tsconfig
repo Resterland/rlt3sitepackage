@@ -8,8 +8,8 @@ mod {
                 title = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.holygrail
                 config {
                     backend_layout {
-                        colCount = 3
-                        rowCount = 2
+                        colCount = 2
+                        rowCount = 1
                         rows {
                             1 {
                                 columns {
@@ -26,11 +26,10 @@ mod {
                                     }
                                     3 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.right
-                                        colPos = 2
+                                        colPos = 3
                                         identifier = sidebar-right
                                         slideMode = collectReverse
                                     }
-                                }
                                 }
                             }
                         }

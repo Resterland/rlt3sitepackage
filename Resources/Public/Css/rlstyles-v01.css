@@ -156,34 +156,3 @@ a:active {
     background: var(--rl-blue);
     color:  var(--rl-link-active);
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-}
-.header-wrapper {
-   /* display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 1rem;*/
-}
-/*.site-name {
-    background: #888888;
-}
-
-.logo img {
-    margin: 0;
-    padding-right: 0.15rem;
-    vertical-align: middle;
-}
-.lang-menu {
-    !*justify-self: center;*!
-}
-.lang-menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 1rem;
-    background: #feb040;
-}
-.search {
-    !*justify-self: end;*!
-}*/
-
