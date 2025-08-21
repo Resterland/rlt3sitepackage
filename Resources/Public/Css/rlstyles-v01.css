@@ -36,7 +36,8 @@
     --rl-yellow: #feb040;
     --rl-yellow-fale: #edd886;
     /* font styles */
-    --rl-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-sans-1: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-sans-2: "Nimbus Sans", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-font-size: max(1rem, 1vw);
@@ -74,22 +75,8 @@
     --rl-text-color: var(--rl-white-almost2);
 }
 
-/* grid areas */
-.sticky-header {
-    grid-area: header;
-}
-main {
-    grid-area: main;
-}
-aside {
-    grid-area: aside;
-}
-footer {
-    grid-area: footer;
-}
-
 html {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -100,20 +87,87 @@ html {
 }
 body {
     background: var(--rl-bg-color);
-    margin: 0 auto;
-    font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans);
+    margin: 1rem auto;
+    font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
-    /*min-height: 100vh;*/
-    /*width: min(80rem, calc(70% + 5rem));*/
-    /*display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "header header header"
-      "main main main"
+    display: grid;
+    gap: 0.5em;
+    /*max-width: 75rem;*/
+    /*grid-template-columns: repeat(auto-fill, 20em);*/
+    /*grid-template-areas:
+      "header"
+      "main"
+      "sidebar-left"
+      "sidebar-right"
+      "footer";*/
+}
+/* media queries */
+@media screen and (min-width: 48rem) {
+    body {
+        width: min(80rem, calc(70% + 5rem));
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr min-content;
+        /*display: grid;
+        grid-template-areas:
+      "header header header "
+      "sidebar-left main sidebar-right"
       "footer footer footer";*/
+    }
 }
 
+
+/*!* grid areas *!
+.sticky-header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside.sidebar-left {
+    grid-area: sidebar-left;
+}
+aside.sidebar-right {
+    grid-area: sidebar-right;
+}
+footer {
+    grid-area: footer;
+}*/
+
+.sticky-header {
+    background: #F1F3F4;
+    border-color: #d5d5d5;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+main {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+    background: #ffede0;
+    border-color: #df6c20;
+}
+aside.sidebar-left {
+    background: #fffbf0;
+    border-color: #e7c157;
+}
+aside.sidebar-right {
+    background: #ebf5d7;
+    border-color: #8db243;
+}
+footer {
+    background: #e4ebf2;
+    border-color: #8a9da8;
+}
+.sticky-header,
+main,
+aside.sidebar-left,
+aside.sidebar-right,
+footer {
+    border-radius: 0 0.5em 0.5em;
+    border: thin solid;
+    padding: 1em;
+    grid-column: 1 / -1;
+}
 h1 {
      letter-spacing: 0.125rem;
      font-size: clamp(1.4rem, 2.5vw, 2.8rem);
@@ -122,6 +176,13 @@ h1 {
 p {
     line-height: 1.5;
     font-size: max(1.2rem, 1.2vw);
+}
+
+img,
+picture,
+video {
+    max-width: 100%;
+    height: auto;
 }
 
 /* link decoration */

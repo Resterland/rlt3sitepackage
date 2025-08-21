@@ -1,10 +1,10 @@
 <f:layout name="ResterlandLayout"/>
 <f:section name="PageContent">
-    <f:if condition="{applicationContext} == 'Development/Local'">
+    <f:comment><!-- <f:if condition="{applicationContext} == 'Development/Local'">
         <f:debug>{content.sidebar-left.records}</f:debug>
         <f:debug>{content.main.records}</f:debug>
         <f:debug>{content.sidebar-right.records}</f:debug>
-    </f:if>
+    </f:if>--></f:comment>
 
     <f:if condition="{content.sidebar-left.records}">
         <aside class="sidebar-left">
