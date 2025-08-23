@@ -10,7 +10,7 @@
                 <source>Holy Grail Layout</source>
             </trans-unit>
             <trans-unit id="backend_layout.default">
-                <source>Default - Holy Grail Layout</source>
+                <source>Default</source>
             </trans-unit>
             <trans-unit id="backend_layout.page_sidebar_left">
                 <source>Page Sidebar Left</source>

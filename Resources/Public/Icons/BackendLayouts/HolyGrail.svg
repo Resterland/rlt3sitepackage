@@ -1,0 +1,43 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="300"
+        height="400"
+        viewBox="0 0 300 400"
+        style="border: 1px solid #ccc; background: #000; "
+>
+    <!-- Header Area -->
+    <rect x="10" y="10" width="280" height="75" fill="#e3e3e3" rx="5" />
+    <text x="150" y="70" font-weight="bold" font-size="60" text-anchor="middle" fill="#006400">
+        Header
+    </text>
+
+    <!-- Left Column -->
+    <rect x="10" y="90" width="70" height="220" fill="#f5f5f5" rx="5" />
+    <text x="45" y="150" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
+        Aside
+    </text>
+    <text x="45" y="240" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
+        Left
+    </text>
+
+    <!-- Main Area -->
+    <rect x="85" y="90" width="130" height="220" fill="#f5f5f5" rx="5" />
+    <text x="150" y="200" font-weight="bold" font-size="55" text-anchor="middle" fill="#006400">
+        Main
+    </text>
+
+    <!-- Right Column -->
+    <rect x="220" y="90" width="70" height="220" fill="#e9e9e9" rx="5" />
+    <text x="255" y="150" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
+        Aside
+    </text>
+    <text x="255" y="240" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
+        Right
+    </text>
+
+    <!-- Footer Area -->
+    <rect x="10" y="315" width="280" height="75" fill="#e3e3e3" rx="5" />
+    <text x="150" y="375" font-weight="bold" font-size="60" text-anchor="middle" fill="#006400">
+        Footer
+    </text>
+</svg>
