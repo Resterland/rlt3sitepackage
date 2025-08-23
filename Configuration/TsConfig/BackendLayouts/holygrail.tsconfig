@@ -5,7 +5,7 @@ mod {
     web_layout {
         BackendLayouts {
             HolyGrail {
-                title = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+                title = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.holygrail
                 config {
                     backend_layout {
                         colCount = 2
@@ -19,7 +19,7 @@ mod {
                                         identifier = aside-left
                                     }
                                     2 {
-                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.holygrail
+                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
                                         colPos = 0
                                         identifier = main
                                     }
