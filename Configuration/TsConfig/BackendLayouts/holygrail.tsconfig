@@ -19,7 +19,7 @@ mod {
                                         identifier = aside-left
                                     }
                                     2 {
-                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.holygrail
                                         colPos = 0
                                         identifier = main
                                     }
