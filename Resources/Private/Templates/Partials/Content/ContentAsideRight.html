@@ -1,0 +1,7 @@
+<f:for each="{records}" as="asideContent">
+    <f:cObject
+        typoscriptObjectPath="{asideContent.mainType}"
+        data="{asideContent}"
+        table="{asideContent.mainType}"
+    />
+</f:for>

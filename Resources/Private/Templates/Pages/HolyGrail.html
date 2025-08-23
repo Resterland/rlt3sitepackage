@@ -1,31 +1,31 @@
 <f:layout name="HolyGrailLayout"/>
 <f:section name="HolyGrailContent">
     <f:comment><!-- <f:if condition="{applicationContext} == 'Development/Local'">
-        <f:debug>{content.sidebar-left.records}</f:debug>
+        <f:debug>{content.aside-left.records}</f:debug>
         <f:debug>{content.main.records}</f:debug>
-        <f:debug>{content.sidebar-right.records}</f:debug>
+        <f:debug>{content.aside-right.records}</f:debug>
     </f:if>--></f:comment>
 
-    <f:if condition="{content.sidebar-left.records}">
+    <f:if condition="{content.aside-left.records}">
         <aside class="left">
-            <f:render partial="Content/ContentSidebarLeft"
-                      arguments="{records: content.sidebar-left.records}"/>
+            <f:render partial="Content/ContentAsideLeft"
+                      arguments="{records: content.aside-left.records}"/>
         </aside>
     </f:if>
 
     <main>
-        <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+        <f:comment><!--<f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
         <f:if condition="{applicationContext} == 'Development/Local'">
             <f:render partial="Variables" arguments="{_all}"/>
-        </f:if>
+        </f:if>--></f:comment>
 
-        <f:render partial="Content" arguments="{records: content.main.records}"/>
+        <f:render partial="Content/ContentMain" arguments="{records: content.main.records}"/>
     </main>
 
-    <f:if condition="{content.sidebar-right.records}">
+    <f:if condition="{content.aside-right.records}">
         <aside class="right">
-            <f:render partial="Content/ContentSidebarRight"
-                      arguments="{records: content.sidebar-right.records}"/>
+            <f:render partial="Content/ContentAsideRight"
+                      arguments="{records: content.aside-right.records}"/>
         </aside>
     </f:if>
 </f:section>
