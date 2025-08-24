@@ -6,13 +6,13 @@
         style="border: 1px solid #ccc; background: #00004B; "
 >
     <!-- Header Area -->
-    <rect x="10" y="10" width="280" height="75" fill="#edd886" rx="5" />
+    <rect x="10" y="10" width="280" height="75" fill="#F1F3F4" rx="5" />
     <text x="150" y="70" font-weight="bold" font-size="60" text-anchor="middle" fill="#006400">
         Header
     </text>
 
     <!-- Left Column -->
-    <rect x="10" y="90" width="70" height="220" fill="#fffbf0" rx="5" />
+    <rect x="10" y="90" width="70" height="220" fill="#ebf5d7" rx="5" />
     <text x="45" y="150" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
         Aside
     </text>
@@ -36,7 +36,7 @@
     </text>
 
     <!-- Footer Area -->
-    <rect x="10" y="315" width="280" height="75" fill="#C19A6B" rx="5" />
+    <rect x="10" y="315" width="280" height="75" fill="#e4ebf2" rx="5" />
     <text x="150" y="375" font-weight="bold" font-size="60" text-anchor="middle" fill="#006400">
         Footer
     </text>

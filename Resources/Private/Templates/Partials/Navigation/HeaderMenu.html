@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar-header">
     <div class="nav-mobile">
         <a id="nav-toggle" href="#!"><span></span></a>
     </div>
@@ -19,7 +19,22 @@
                                 <li>
                                     <f:if condition="{menuItemLevel2.hasSubpages}">
                                         <f:then>
-                                            <div>Has another Level</div>
+                                            <!-- Item has children -->
+                                            <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                                <f:if condition="{menuItemLevel2.files}">
+                                                    <f:image image="{menuItemLevel2.files.0}" class="" width="20"/>
+                                                </f:if>
+                                                {menuItemLevel2.title}
+                                            </a>
+                                            <ul class="nav-dropdown">
+                                                <f:for each="{menuItemLevel2.children}" as="menuItemLevel3">
+                                                    <li>
+                                                        <f:link.page pageUid="{menuItemLevel3.data.uid}">
+                                                            {menuItemLevel3.title}
+                                                        </f:link.page>
+                                                    </li>
+                                                </f:for>
+                                            </ul>
                                         </f:then>
                                         <f:else>
                                             <f:link.page pageUid="{menuItemLevel2.data.uid}">

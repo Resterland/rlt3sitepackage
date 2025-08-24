@@ -3,15 +3,13 @@
         <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
         <div class="header-wrapper">
+            <f:if condition="{settings.page.header.logo.enable}">
+                <f:render
+                    partial="Structure/Logo"
+                    arguments="{_all}"/>
+            </f:if>
             <h1 class="site-name">
-                <f:link.page pageUid="{site.rootPageId}" class="logo">
-                    <f:if condition="{settings.page.header.logo.enable}">
-                        <f:render
-                            partial="Structure/Logo"
-                            arguments="{_all}"/>
-                    </f:if>
-                    {site.configuration.websiteTitle} - {page.pageRecord.title}
-                </f:link.page>
+                {site.configuration.websiteTitle} - {page.pageRecord.title}
             </h1>
             <f:if condition="{settings.page.header.languagenavigation.enable}">
                 <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
