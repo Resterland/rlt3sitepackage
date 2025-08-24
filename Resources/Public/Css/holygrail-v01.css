@@ -92,10 +92,13 @@ html {
 }
 body {
     background: var(--rl-bg-color);
-    margin: 1rem auto;
+    margin: 0 auto;
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
+    width: min(80rem, calc(70% + 5rem));
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-auto-flow: dense;
     gap: 0.5em;
     /*max-width: 75rem;*/
     /*grid-template-columns: repeat(auto-fill, 20em);*/
@@ -106,31 +109,30 @@ body {
       "sidebar-right"
       "footer";*/
 }
-/* media queries */
-@media screen and (min-width: 48rem) {
-    body {
-        width: min(80rem, calc(70% + 5rem));
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: auto 1fr min-content;
-        /*display: grid;
-        grid-template-areas:
-      "header header header "
-      "sidebar-left main sidebar-right"
-      "footer footer footer";*/
-    }
-}
+
+/*.sticky-header,
+footer {
+    grid-column: 1 / -1;
+}*/
 
 .sticky-header {
     background: var(--hg-head-bg);
     border-color: #d5d5d5;
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: min-content 1fr;
+}
+.header-wrapper {
+    img {
+        width: 3rem;
+        aspect-ratio: 1/1;
+    }
 }
 .navbar-main,
 .navbar-header {
     background: var(--hg-nav-bg);
     border-color: #e7c157;
+}
+.navbar-main {
+	grid-column: 1 / -1;
 }
 main {
     background: var(--hg-main-bg);
@@ -142,9 +144,15 @@ aside {
     background: var(--hg-aside-bg);
     border-color: #8db243;
 }
+/*aside.sidebar-left {
+}*/
+/*aside.sidebar-right {
+	grid-column: span 2;
+}*/
 footer {
     background: var(--hg-foot-bg);
     border-color: #8a9da8;
+    grid-column: 1 / -1;
 }
 .sticky-header,
 .navbar-main,
@@ -155,8 +163,19 @@ footer {
     border-radius: 0 0.5em 0.5em;
     border: thin solid;
     padding: 1em;
-    grid-column: 1 / -1;
 }
+/* media queries */
+/*@media screen and (min-width: 30rem) {
+    body {
+        !*width: min(80rem, calc(70% + 5rem));*!
+        grid-template-columns: repeat(3, 1fr);
+        !*display: grid;
+        grid-template-areas:
+      "header header header "
+      "sidebar-left main sidebar-right"
+      "footer footer footer";*!
+    }
+}*/
 h1 {
      letter-spacing: 0.125rem;
      font-size: clamp(1.4rem, 2.5vw, 2.8rem);
