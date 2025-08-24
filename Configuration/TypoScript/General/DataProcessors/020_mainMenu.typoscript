@@ -5,7 +5,7 @@ page.10.dataProcessing {
     20 = menu
     20 {
         as = mainMenu
-        levels = 2
+        levels = 3
         includeSpacer = 1
         expandAll = 1
         titleField = nav_title // title
