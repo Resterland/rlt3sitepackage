@@ -45,7 +45,7 @@
     --rl-bg-color: var(--rl-white-almost);
     --rl-text-color: var(--rl-blue-dark);
     /* link color and decoration */
-    --rl-link-decoration: none;
+    --rl-link-decoration: underline;
     --rl-link-focus: none;
     --rl-link: var(--rl-brown-dark);
     --rl-link-active: #edd886;
@@ -120,7 +120,7 @@ body {
     border-color: #e7c157;
 }
 .navbar-main {
-    grid-column: 1 / -1;
+    /*grid-column: 1 / -1;*/
 }
 main {
     background: var(--hg-main-bg);
@@ -158,6 +158,9 @@ h1 {
 p {
     line-height: 1.5;
     font-size: max(1.2em, 1.2vw);
+}
+ul {
+    list-style: none;
 }
 
 img,
@@ -201,23 +204,23 @@ a:active {
 }
 
 /* media queries small */
-@media (min-width: var(--bp-small-2)) and (max-width: var(--bp-small-3)) {
+@media (min-width: 27.75rem) and (max-width: 34.99rem) {
     body {
-        width: min(90em, calc(80% + 5em));
+        width: 99%;
         background: aquamarine;
     }
 }
 
 /* media queries medium */
-@media (min-width: var(--bp-medium)) and (max-width: var(--bp-medium-2)) {
+@media (min-width: 35rem) and (max-width: 49.99rem) {
     body {
-        width: min(90em, calc(80% + 5em));
+        width: 98%;
         background: tomato;
     }
 }
 
 /* media queries large */
-@media (min-width: var(--bp-large)) and (max-width: var(--bp-large-2)) {
+@media (min-width: 50rem) and (max-width: 69.99rem) {
     body {
         width: min(90em, calc(80% + 5em));
         background: olive;
@@ -225,9 +228,9 @@ a:active {
 }
 
 /* media queries xxl */
-@media (min-width: 60em) {
+@media (min-width: 70rem) {
     body {
-        width: min(90em, calc(80% + 5em));
+        width: min(90rem, calc(80% + 5rem));
         background: cornflowerblue;
     }
 }

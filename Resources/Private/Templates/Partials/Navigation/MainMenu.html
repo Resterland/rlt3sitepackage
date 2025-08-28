@@ -20,17 +20,17 @@
                                     <f:if condition="{menuItemLevel2.hasSubpages}">
                                         <f:then>
                                             <!-- Item has children -->
-                                            <a data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                                                <f:if condition="{menuItemLevel2.files}">
-                                                    <f:image image="{menuItemLevel2.files.0}" class="" width="20"/>
-                                                </f:if>
-                                                {menuItemLevel2.title}
-                                            </a>
+                                            <f:if condition="{menuItemLevel2.files}">
+                                                <f:image image="{menuItemLevel2.files.0}" class="" width="20"/>
+                                            </f:if>
+                                            <f:link.page pageUid="{menuItemLevel2.data.uid}">
+                                                → {menuItemLevel2.title}
+                                            </f:link.page>
                                             <ul class="nav-dropdown">
                                                 <f:for each="{menuItemLevel2.children}" as="menuItemLevel3">
                                                     <li>
                                                         <f:link.page pageUid="{menuItemLevel3.data.uid}">
-                                                            {menuItemLevel3.title}
+                                                            → {menuItemLevel3.title}
                                                         </f:link.page>
                                                     </li>
                                                 </f:for>
@@ -38,7 +38,7 @@
                                         </f:then>
                                         <f:else>
                                             <f:link.page pageUid="{menuItemLevel2.data.uid}">
-                                                {menuItemLevel2.title}
+                                                → {menuItemLevel2.title}
                                             </f:link.page>
                                         </f:else>
                                     </f:if>
