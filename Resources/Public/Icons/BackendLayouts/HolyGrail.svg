@@ -8,31 +8,25 @@
     <!-- Header Area -->
     <rect x="10" y="10" width="280" height="75" fill="#F1F3F4" rx="5" />
     <text x="150" y="70" font-weight="bold" font-size="60" text-anchor="middle" fill="#006400">
-        Header
+        header
     </text>
 
-    <!-- Left Column -->
-    <rect x="10" y="90" width="70" height="220" fill="#ebf5d7" rx="5" />
-    <text x="45" y="150" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
-        Aside
-    </text>
-    <text x="45" y="240" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
-        Right
+    <!-- Navigation -->
+    <rect x="10" y="90" width="70" height="220" fill="#fffbf0" rx="5" />
+    <text x="45" y="197" font-weight="bold" font-size="40" text-anchor="middle" fill="#006400">
+        nav
     </text>
 
     <!-- Main Area -->
     <rect x="85" y="90" width="130" height="220" fill="#ffede0" rx="5" />
     <text x="150" y="200" font-weight="bold" font-size="55" text-anchor="middle" fill="#006400">
-        Main
+        main
     </text>
 
-    <!-- Right Column -->
+    <!-- Aside -->
     <rect x="220" y="90" width="70" height="220" fill="#ebf5d7" rx="5" />
-    <text x="255" y="150" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
-        Aside
-    </text>
-    <text x="255" y="240" font-weight="bold" font-size="25" text-anchor="middle" fill="#006400">
-        Right
+    <text x="255" y="195" font-weight="bold" font-size="30" text-anchor="middle" fill="#006400">
+        aside
     </text>
 
     <!-- Footer Area -->
