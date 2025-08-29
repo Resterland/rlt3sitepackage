@@ -45,7 +45,7 @@
     --rl-bg-color: var(--rl-white-almost);
     --rl-text-color: var(--rl-blue-dark);
     /* link color and decoration */
-    --rl-link-decoration: underline;
+    --rl-link-decoration: none;
     --rl-link-focus: none;
     --rl-link: var(--rl-brown-dark);
     --rl-link-active: #edd886;
@@ -104,14 +104,105 @@ body {
     color: var(--rl-text-color);
 }
 
+h1 {
+    letter-spacing: 0.125em;
+    font-size: clamp(1.4em, 2.5vw, 2.8em);
+}
+
+p {
+    line-height: 1.5;
+    font-size: max(1.2em, 1.2vw);
+}
+ul {
+    list-style: none;
+}
+
+img,
+picture,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* link decoration */
+a {
+    outline-color: transparent;
+}
+
+a:link {
+    text-decoration: underline;
+    color: var(--rl-link);
+}
+
+a:visited {
+    color: var(--rl-link-visited);
+}
+
+a:focus {
+    text-decoration: var(--rl-link-decoration);
+    color: var(--rl-white-almost2);
+    background: var(--rl-link-hover);
+}
+
+a:active {
+    background: var(--rl-blue);
+    color:  var(--rl-link-active);
+}
+.sticky-header,
+.navbar-main,
+.navbar-header,
+main,
+aside,
+footer {
+    border-radius: 0 0.5em 0.5em;
+    border: thin solid;
+    padding: 1em;
+}
+
 .sticky-header {
     background: var(--hg-head-bg);
     border-color: #d5d5d5;
+    margin: 0;
+    padding: 0;
 }
-.header-wrapper {
-    img {
-        width: 3em;
+
+header.header-wrapper {
+    background: wheat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .brand {
+        grid-column: 1/-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo img {
+        width: 1.75em;
         aspect-ratio: 1/1;
+        vertical-align: middle;
+    }
+    .site-name {
+        letter-spacing: 0.05em;
+        color: maroon;
+        font-family: "Edwardian Script ITC", "Brush Script MT", "Lucida Handwriting", cursive;
+        text-shadow: 0.1em 0.1em 0.1em var(--rl-green-lighter);
+    }
+    .lang-menu {
+        grid-column: 1/-1;
+        margin:0;
+        padding:0.15em 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .lang-menu li {
+        padding: 0 0.5em;
+    }
+    .search {
+        grid-column: 1/-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 .navbar-main,
@@ -139,68 +230,36 @@ footer {
     background: var(--hg-foot-bg);
     border-color: #8a9da8;
 }
-.sticky-header,
-.navbar-main,
-.navbar-header,
-main,
-aside,
-footer {
-    border-radius: 0 0.5em 0.5em;
-    border: thin solid;
-    padding: 1em;
+
+/***** media queries large *****/
+@media (min-width: 50rem) and (max-width: 69.99rem) {
+    body {
+        width: min(90em, calc(80% + 5em));
+        background: olive;
+    }
 }
 
-h1 {
-     letter-spacing: 0.125em;
-     font-size: clamp(1.4em, 2.5vw, 2.8em);
- }
+/* media queries xxl */
+@media (min-width: 70rem) {
+    body {
+        width: min(90rem, calc(80% + 5rem));
+        background: cornflowerblue;
+    }
+    ul.nav-list li::before {
+        content: "→ ";
+    }
 
-p {
-    line-height: 1.5;
-    font-size: max(1.2em, 1.2vw);
-}
-ul {
-    list-style: none;
-}
+    a:link {
+        text-decoration: var(--rl-link-decoration);
+    }
 
-img,
-picture,
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* link decoration */
-a {
-    outline-color: transparent;
-}
-
-a:link {
-    text-decoration: var(--rl-link-decoration);
-    color: var(--rl-link);
-}
-
-a:visited {
-    color: var(--rl-link-visited);
-}
-
-a:focus {
-    text-decoration: var(--rl-link-decoration);
-    color: var(--rl-white-almost2);
-    background: var(--rl-link-hover);
-}
-
-a:hover {
-    text-decoration:  var(--rl-link-decoration);
-    color: var(--rl-white-almost2);
-    background: var(--rl-link-hover);
-    border-radius: 0.25em;
-    padding: 0 0.25em;
-}
-
-a:active {
-    background: var(--rl-blue);
-    color:  var(--rl-link-active);
+    a:hover {
+        text-decoration:  var(--rl-link-decoration);
+        color: var(--rl-white-almost2);
+        background: var(--rl-link-hover);
+        border-radius: 0.25em;
+        padding: 0 0.25em;
+    }
 }
 
 /* media queries small */
@@ -216,21 +275,5 @@ a:active {
     body {
         width: 98%;
         background: tomato;
-    }
-}
-
-/* media queries large */
-@media (min-width: 50rem) and (max-width: 69.99rem) {
-    body {
-        width: min(90em, calc(80% + 5em));
-        background: olive;
-    }
-}
-
-/* media queries xxl */
-@media (min-width: 70rem) {
-    body {
-        width: min(90rem, calc(80% + 5rem));
-        background: cornflowerblue;
     }
 }

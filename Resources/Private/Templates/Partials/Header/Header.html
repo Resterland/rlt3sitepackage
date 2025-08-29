@@ -1,8 +1,8 @@
 <div class="sticky-header">
-    <header class="page-header" role="banner">
+    <header class="header-wrapper">
         <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
-        <div class="header-wrapper">
+        <div class="brand">
             <f:if condition="{settings.page.header.logo.enable}">
                 <f:render
                     partial="Structure/Logo"
@@ -11,11 +11,11 @@
             <h1 class="site-name">
                 {site.configuration.websiteTitle} - {page.pageRecord.title}
             </h1>
+        </div>
             <f:if condition="{settings.page.header.languagenavigation.enable}">
                 <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
             </f:if>
 
             <f:render partial="Structure/Search" arguments="{_all}"/>
-        </div>
     </header>
 </div>
