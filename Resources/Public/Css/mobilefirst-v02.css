@@ -98,10 +98,10 @@ html {
     box-sizing: border-box;
 }
 body {
-    background: var(--rl-bg-color);
-    margin: 0 auto;
+    margin: 0.5em auto;
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
+    background: var(--rl-bg-color);
     display: grid;
 }
 
@@ -125,111 +125,51 @@ video {
     height: auto;
 }
 
-/* link decoration */
-a {
-    outline-color: transparent;
+.sticky-header,
+.navbar-main,
+footer {
+    grid-column: 1 / -1;
 }
 
-a:link {
-    text-decoration: underline;
-    color: var(--rl-link);
-}
-
-a:visited {
-    color: var(--rl-link-visited);
-}
-
-a:focus {
-    text-decoration: var(--rl-link-decoration);
-    color: var(--rl-white-almost2);
-    background: var(--rl-link-hover);
-}
-
-a:active {
-    background: var(--rl-blue);
-    color:  var(--rl-link-active);
-}
 .sticky-header,
 .navbar-main,
 .navbar-header,
 main,
 aside,
 footer {
-    border-radius: 0 0.5em 0.5em;
-    border: thin solid;
-    padding: 1em;
+    padding: 0 0.25em;
 }
 
 .sticky-header {
-    background: var(--hg-head-bg);
+    background: #f1f3f4;
     border-color: #d5d5d5;
-    margin: 0;
-    padding: 0;
 }
 
-header.header-wrapper {
-    background: wheat;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    .brand {
-        grid-column: 1/-1;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .logo img {
-        width: 1.75em;
-        aspect-ratio: 1/1;
-        vertical-align: middle;
-    }
-    .site-name {
-        letter-spacing: 0.05em;
-        color: maroon;
-        font-family: "Edwardian Script ITC", "Brush Script MT", "Lucida Handwriting", cursive;
-        text-shadow: 0.1em 0.1em 0.1em var(--rl-green-lighter);
-    }
-    .lang-menu {
-        grid-column: 1/-1;
-        margin:0;
-        padding:0.15em 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .lang-menu li {
-        padding: 0 0.5em;
-    }
-    .search {
-        grid-column: 1/-1;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
-.navbar-main,
-.navbar-header {
-    background: var(--hg-nav-bg);
+.navbar-main {
+    background: #fffbf0;
     border-color: #e7c157;
 }
-.navbar-main {
-    /*grid-column: 1 / -1;*/
+
+aside {
+    background: #ebf5d7;
+    border-color: #8db243;
 }
+
 main {
-    background: var(--hg-main-bg);
+    background: #ffede0;
     border-color: #df6c20;
 }
-aside {
-    background: var(--hg-aside-bg);
-    border-color: #8db243;
-    /*grid-column: 1 / -1;*/
-}
-aside.sidebar-left {
-}
-aside.sidebar-right {
-}
+
 footer {
-    background: var(--hg-foot-bg);
+    background: #e4ebf2;
     border-color: #8a9da8;
+}
+
+p::first-letter {
+    color: maroon;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
 }
 
 /* media queries xxl */
@@ -238,10 +178,13 @@ footer {
         width: min(90rem, calc(80% + 5rem));
         background: cornflowerblue;
         grid-template-columns:
-            minmax(min-content, max-content)
-            auto
-            minmax(min-content, max-content);
+            minmax(min-content, 1fr)
+            2fr
+            minmax(min-content, 1fr);
+        gap: 0.3rem;
+        grid-auto-flow: row;
     }
+
     ul.nav-list li::before {
         content: "→ ";
     }
@@ -259,26 +202,15 @@ footer {
     }
 }
 
-/***** media queries large *****/
-@media (min-width: 50rem) and (max-width: 69.99rem) {
+@media (min-width: 45em) and (max-width: 69.99rem) {
+    /* Breite beträgt mindestens 45em */
     body {
         width: min(90em, calc(80% + 5em));
         background: olive;
-    }
-}
-
-/* media queries small */
-@media (min-width: 27.75rem) and (max-width: 34.99rem) {
-    body {
-        width: 99%;
-        background: aquamarine;
-    }
-}
-
-/* media queries medium */
-@media (min-width: 35rem) and (max-width: 49.99rem) {
-    body {
-        width: 98%;
-        background: tomato;
+        grid-template-columns:
+            minmax(min-content, 1fr)
+            2fr
+            minmax(min-content, 1fr);
+        gap: 0.15rem;
     }
 }

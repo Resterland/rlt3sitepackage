@@ -1,5 +1,19 @@
 <f:asset.css identifier="fontawesome" href="EXT:rlt3sitepackage/Resources/Public/Css/Fontawesome/all.min.css" />
-<f:asset.css identifier="global" href="EXT:rlt3sitepackage/Resources/Public/Css/rlstyles-v02.css" priority="1" />
+<f:asset.css identifier="global" href="EXT:rlt3sitepackage/Resources/Public/Css/mobilefirst-v02.css" priority="1" />
+</f:comment>
+
+<f:spaceless>
+    <f:render partial="Header/Header" arguments="{_all}"/>
+    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+
+    <f:render section="AsideContentLeft" optional="true" />
+    <f:render section="MainContent"/>
+    <f:render section="AsideContentRight" optional="true" />
+
+    <f:render partial="Footer/Footer" arguments="{_all}"/>
+</f:spaceless>
+
+
 
 <f:comment>
     <!--
@@ -17,13 +31,4 @@
 
 <f:asset.script identifier="rlmenu" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlmenu.js" defer="defer" />
 -->
-</f:comment>
-
-<f:spaceless>
-    <f:render partial="Header/Header" arguments="{_all}"/>
-
-    <f:render section="PageContent"/>
-
-    <f:render partial="Footer/Footer" arguments="{_all}"/>
-</f:spaceless>
 

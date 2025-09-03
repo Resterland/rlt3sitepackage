@@ -18,14 +18,17 @@
             <trans-unit id="backend_layout.page_sidebar_right">
                 <source>Page Sidebar Right</source>
             </trans-unit>
+            <trans-unit id="backend_layout.column.border">
+                <source>Border</source>
+            </trans-unit>
             <trans-unit id="backend_layout.column.normal">
                 <source>Main Content</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.left">
-                <source>Aside Left</source>
+                <source>Aside Content Left</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.right">
-                <source>Aside Right</source>
+                <source>Aside Content Right</source>
             </trans-unit>
             <trans-unit id="content_element.group.rlt3_site_package">
                 <source>ResterLand Site Package elements</source>
