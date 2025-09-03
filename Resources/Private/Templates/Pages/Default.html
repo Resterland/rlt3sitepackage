@@ -16,7 +16,13 @@
 <f:section name="MainContent">
 
     <main>
-        <f:render partial="Content" arguments="{records: content.main.records}"/>
+        <f:for each="{records}" as="record">
+            <f:cObject
+                typoscriptObjectPath="{record.mainType}"
+                data="{pageUid: '{data.uid}', colPos: '0'}"
+                table="{record.mainType}"
+            />
+        </f:for>
     </main>
 </f:section>
 
