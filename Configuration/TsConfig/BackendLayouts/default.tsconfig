@@ -18,11 +18,12 @@ mod {
                                         colPos = 2
                                         colspan = 1
                                         identifier = aside-left
+                                        slideMode = slide
                                     }
                                     2 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
                                         colPos = 0
-                                        colspan = 3
+                                        colspan = 5
                                         identifier = main
                                     }
                                     3 {
@@ -30,6 +31,7 @@ mod {
                                         colPos = 3
                                         colspan = 1
                                         identifier = aside-right
+                                        slideMode = slide
                                     }
                                 }
                             }

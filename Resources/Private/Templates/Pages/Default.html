@@ -4,33 +4,38 @@
         <f:debug>{content.main.records}</f:debug>
         <f:debug>{content.aside-right.records}</f:debug>
     </f:if>--></f:comment>
-<f:section name="AsideContentLeft">
-    <f:if condition="{content.aside-left.records}">
-        <aside class="aside-left">
-            <f:render partial="Content/ContentAsideLeft"
-                      arguments="{records: content.aside-left.records}"/>
-        </aside>
-    </f:if>
 
-</f:section>
 <f:section name="MainContent">
-
+    <f:section name="AsideContentLeft">
+        <aside class="aside-left">
+            <f:for each="{content.aside-left.records}" as="asideContent">
+                <f:cObject
+                    typoscriptObjectPath="{asideContent.mainType}"
+                    data="{asideContent.rawRecord}"
+                    table="{asideContent.mainType}"
+                />
+            </f:for>
+        </aside>
+    </f:section>
     <main>
-        <f:for each="{records}" as="record">
+        <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+        <f:for each="{content.main.records}" as="record">
             <f:cObject
                 typoscriptObjectPath="{record.mainType}"
-                data="{pageUid: '{data.uid}', colPos: '0'}"
+                data="{record.rawRecord}"
                 table="{record.mainType}"
             />
         </f:for>
     </main>
-</f:section>
-
-<f:section name="AsideContentRight">
-    <f:if condition="{content.aside-right.records}">
+    <f:section name="AsideContentRight">
         <aside class="aside-right">
-            <f:render partial="Content/ContentAsideRight"
-                      arguments="{records: content.aside-right.records}"/>
+            <f:for each="{content.aside-right.records}" as="asideContent">
+                <f:cObject
+                    typoscriptObjectPath="{asideContent.mainType}"
+                    data="{asideContent.rawRecord}"
+                    table="{asideContent.mainType}"
+                />
+            </f:for>
         </aside>
-    </f:if>
+    </f:section>
 </f:section>

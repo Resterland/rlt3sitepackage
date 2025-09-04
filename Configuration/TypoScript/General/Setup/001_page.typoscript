@@ -34,17 +34,8 @@ page {
         }
 
         variables {
-            pageTitle = TEXT
-            pageTitle.data = page:title
-
             parentPageTitle = TEXT
             parentPageTitle.data = levelfield:-1:title
-
-            siteTitle = TEXT
-            siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
-
-            rootPage = TEXT
-            rootPage.data = leveluid:0
 
             backendLayout = TEXT
             backendLayout {
@@ -59,25 +50,6 @@ page {
             applicationContext = TEXT
             applicationContext.value.data = applicationcontext
 
-            logoAlt = COA
-            logoAlt {
-                10 = TEXT
-                10 {
-                    data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
-                    noTrimWrap = || logo|
-                    if.isFalse = {$page.header.logo.alt}
-                }
-                20 = TEXT
-                20 {
-                    value = {$page.header.logo.alt}
-                    if.isTrue = {$page.header.logo.alt}
-                }
-            }
-            # BreadcrumbExtendedValue should be used to display the title of a
-            # single record. For example the title of a news record.
-            breadcrumbExtendedValue = COA
-            breadcrumbExtendedValue {
-            }
         }
     }
 
