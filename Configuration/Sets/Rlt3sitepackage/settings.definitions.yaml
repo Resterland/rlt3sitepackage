@@ -27,6 +27,9 @@ categories:
   Rlt3sitepackage.header.navigation:
     label: 'Navigation'
     parent: Rlt3sitepackage.header
+  Rlt3sitepackage.header.search:
+    label: 'Search'
+    parent: Rlt3sitepackage.header
   Rlt3sitepackage.footer:
     label: 'Footer'
     description: 'Footer settings and configuration'
@@ -171,6 +174,13 @@ settings:
     category: Rlt3sitepackage.header.navigation
     type: string
     default: 'auto'
+
+  # Header Indexed Search Form
+  page.header.search.enable:
+    label: 'Enable Search Form'
+    category: Rlt3sitepackage.header.search
+    type: bool
+    default: false
 
   ### Footer settings
   page.footer.navigation.enable:

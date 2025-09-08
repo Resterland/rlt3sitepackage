@@ -3,19 +3,20 @@
         <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
         <div class="brand">
-            <f:if condition="{settings.page.header.logo.enable}">
-                <f:render
-                    partial="Structure/Logo"
-                    arguments="{_all}"/>
-            </f:if>
             <h1 class="site-name">
+                <f:if condition="{settings.page.header.logo.enable}">
+                    <f:render
+                        partial="Structure/Logo"
+                        arguments="{_all}"/>
+                </f:if>
                 {site.configuration.websiteTitle} - {page.pageRecord.title}
             </h1>
         </div>
-            <f:if condition="{settings.page.header.languagenavigation.enable}">
-                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
-            </f:if>
-
+        <f:if condition="{settings.page.header.search.enable}">
             <f:render partial="Structure/Search" arguments="{_all}"/>
+        </f:if>
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
+            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+        </f:if>
     </header>
 </div>

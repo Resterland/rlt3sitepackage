@@ -1,6 +1,6 @@
 <f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable} && {page.id} !={rootPage}">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol>
+            <ul>
                 <f:for each="{breadcrumb}" as="item">
                     <f:if condition="{item.current}">
                         <f:then>
@@ -12,6 +12,6 @@
                         </f:else>
                     </f:if>
                 </f:for>
-            </ol>
+            </ul>
         </nav>
 </f:if>

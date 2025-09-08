@@ -37,19 +37,11 @@ page {
             parentPageTitle = TEXT
             parentPageTitle.data = levelfield:-1:title
 
-            backendLayout = TEXT
-            backendLayout {
-                data = pagelayout
-                replacement.10 {
-                    search = pagets__
-                    replace =
-                }
-                ifEmpty = default
-            }
+            rootPage = TEXT
+            rootPage.data = leveluid:0
 
             applicationContext = TEXT
             applicationContext.value.data = applicationcontext
-
         }
     }
 

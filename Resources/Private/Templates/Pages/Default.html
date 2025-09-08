@@ -6,36 +6,42 @@
     </f:if>--></f:comment>
 
 <f:section name="MainContent">
-    <f:section name="AsideContentLeft">
-        <aside class="aside-left">
-            <f:for each="{content.aside-left.records}" as="asideContent">
+    <f:comment><!--    <f:debug>{content}</f:debug>--></f:comment>
+    <f:if condition="{content.aside-left.records} || {content.main.records} || {content.aside-right.records}">
+    <div class="content-wrapper">
+        <f:if condition="{content.aside-left.records}">
+            <aside class="aside-left">
+                <f:for each="{content.aside-left.records}" as="asideContent">
+                    <f:cObject
+                        typoscriptObjectPath="{asideContent.mainType}"
+                        data="{asideContent.rawRecord}"
+                        table="{asideContent.mainType}"
+                    />
+                </f:for>
+            </aside>
+        </f:if>
+        <f:if condition="{content.main.records}">
+        <main>
+            <f:for each="{content.main.records}" as="record">
                 <f:cObject
-                    typoscriptObjectPath="{asideContent.mainType}"
-                    data="{asideContent.rawRecord}"
-                    table="{asideContent.mainType}"
+                    typoscriptObjectPath="{record.mainType}"
+                    data="{record.rawRecord}"
+                    table="{record.mainType}"
                 />
             </f:for>
-        </aside>
-    </f:section>
-    <main>
-        <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
-        <f:for each="{content.main.records}" as="record">
-            <f:cObject
-                typoscriptObjectPath="{record.mainType}"
-                data="{record.rawRecord}"
-                table="{record.mainType}"
-            />
-        </f:for>
-    </main>
-    <f:section name="AsideContentRight">
-        <aside class="aside-right">
-            <f:for each="{content.aside-right.records}" as="asideContent">
-                <f:cObject
-                    typoscriptObjectPath="{asideContent.mainType}"
-                    data="{asideContent.rawRecord}"
-                    table="{asideContent.mainType}"
-                />
-            </f:for>
-        </aside>
-    </f:section>
+        </main>
+        </f:if>
+        <f:if condition="{content.aside-right.records}">
+            <aside class="aside-right">
+                <f:for each="{content.aside-right.records}" as="asideContent">
+                    <f:cObject
+                        typoscriptObjectPath="{asideContent.mainType}"
+                        data="{asideContent.rawRecord}"
+                        table="{asideContent.mainType}"
+                    />
+                </f:for>
+            </aside>
+        </f:if>
+    </div>
+    </f:if>
 </f:section>

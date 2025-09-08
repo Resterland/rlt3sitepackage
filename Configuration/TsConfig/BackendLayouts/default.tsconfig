@@ -18,20 +18,21 @@ mod {
                                         colPos = 2
                                         colspan = 1
                                         identifier = aside-left
-                                        slideMode = slide
+                                        slideMode = 0
                                     }
                                     2 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
                                         colPos = 0
                                         colspan = 5
                                         identifier = main
+                                        slideMode = 0
                                     }
                                     3 {
                                         name = LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.right
                                         colPos = 3
                                         colspan = 1
                                         identifier = aside-right
-                                        slideMode = slide
+                                        slideMode = 0
                                     }
                                 }
                             }

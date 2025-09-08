@@ -5,9 +5,9 @@
     <f:render partial="Header/Header" arguments="{_all}"/>
     <f:render partial="Navigation/MainMenu" arguments="{_all}"/>
 
-    <f:render section="AsideContentLeft" optional="true" />
+    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+
     <f:render section="MainContent"/>
-    <f:render section="AsideContentRight" optional="true" />
 
     <f:render partial="Footer/Footer" arguments="{_all}"/>
 </f:spaceless>
