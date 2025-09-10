@@ -106,7 +106,7 @@ body {
 }
 
 h1 {
-    letter-spacing: 0.125em;
+    letter-spacing: 0.015em;
     font-size: clamp(1.4em, 2.5vw, 2.8em);
 }
 
@@ -167,19 +167,14 @@ footer {
 
 .header-wrapper {
     background: #C19A6B;
-    /*gap: 0.15rem;*/
-}
-.header-wrapper > * {
-    display: flex;
+    display: grid;
 }
 .brand {
-    align-items: normal;
-}
-img {
-    width: calc(var(--rl-font-size) + 0.35rem);
+    align-items: center;
 }
 img.middle {
     margin: 0;
+    width: calc(var(--rl-font-size) + 0.35rem);
     padding-right: 0.25rem;
     vertical-align: middle;
 }
@@ -188,9 +183,15 @@ h1.site-name {
 }
 .search {
     padding-left: 0.25em;
+    display: flex;
+    align-items: center;
 }
 .lang-menu {
-    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .lang-menu a {
     padding: 0.25em;
@@ -203,9 +204,55 @@ p::first-letter {
     font-weight: bold;
     font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
 }
+footer {
+    display: grid;
+    margin-top: 0.5em;
+}
 
+
+/* footer#footer.page-footer grid areas */
+/*
+.footer-menu {
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu a {
+    padding: 0.25em;
+    display: block;
+}
+.openstreetmap {
+    padding: 0.5em;
+    text-align: center;
+}
+.openstreetmap small {
+    display: block;
+    font-size: 0.8em;
+}
+.openstreetmap iframe {
+    border: 0.125em solid black;
+}
+*/
+.copyright {
+    text-align: center;
+}
+.copyright img {
+    vertical-align: middle;
+}
+
+.sticky-header,
+.navbar-main,
+.breadcrumb,
+.content-wrapper,
+.footer-nav,
+footer {
+    grid-column: 1 / -1;
+}
 /* media queries up to 44.99rem */
 @media (max-width: 44.99rem) {
+    .lang-menu {
+        font-size: 75%;
+    }
     aside.aside-left,
     aside.aside-right {
         display: none;
@@ -220,6 +267,7 @@ p::first-letter {
         gap: 0.15rem;
     }
 
+    /*
     ul.nav-list li::before {
         content: "→ ";
     }
@@ -233,14 +281,12 @@ p::first-letter {
         color: var(--rl-white-almost2);
         background: var(--rl-link-hover);
     }
+    */
     .header-wrapper {
         background: #C19A6B;
         display: grid;
         grid-template-columns: auto repeat(2, max-content);
         grid-auto-flow: row;
-     }
-    .header-wrapper > * {
-        display: flex;
     }
     .content-wrapper {
         display: flex;
@@ -274,12 +320,4 @@ p::first-letter {
     .content-wrapper > main {
         flex-grow: 3;
     }
-}
-
-.sticky-header,
-.navbar-main,
-.breadcrumb,
-.content-wrapper,
-footer {
-    grid-column: 1 / -1;
 }

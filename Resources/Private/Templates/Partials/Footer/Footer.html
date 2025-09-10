@@ -2,11 +2,10 @@
     <f:if condition="{settings.page.footer.navigation.enable}">
         <nav class="footer-nav">
             <f:render partial="Navigation/FooterMenu.html" arguments="{_all}"/>
-
-            <f:if condition="{settings.page.footer.languagenavigation.enable}">
-                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
-            </f:if>
         </nav>
+        <f:if condition="{settings.page.footer.languagenavigation.enable}">
+            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+        </f:if>
     </f:if>
 
     <f:if condition="{settings.page.footer.openstreetmap.enable}">
