@@ -4,7 +4,7 @@
     </div>
     <ul class="nav-list">
         <f:for each="{mainMenu}" as="menuItem">
-            <li>
+            <li class="nav-item">
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
                         <f:link.page pageUid="{menuItem.data.uid}">

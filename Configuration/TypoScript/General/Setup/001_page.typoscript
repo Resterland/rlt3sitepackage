@@ -60,43 +60,10 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
+    includeJS {
+        jquery = https://code.jquery.com/jquery-3.7.1.min.js
+        jquery.external = 1
+        jquery.integrity = sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=
+        jquery.crossorigin = anonymous
+    }
 }
-/*[!klaroIsActive]
-    page.headerData.100 = TEXT
-    page.headerData.100 {
-        value (
-<script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id={$tagId}"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-    gtag('config', '{$tagId}', {'anonymize_ip':true});
-</script>
-        )
-    }
-[END]
-
-[klaroIsActive]
-    page.headerData.100 = TEXT
-    page.headerData.100 {
-        value (
-<script
-    async
-    data-src="https://www.googletagmanager.com/gtag/js?id={$tagId}"
-    type="text/plain"
-    data-type="application/javascript"
-    data-name="google-analytics"></script>
-<script
-    type="text/plain"
-    data-type="application/javascript"
-    data-name="google-analytics">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-    gtag('config', '{$tagId}', {'anonymize_ip':true});
-</script>
-        )
-    }
-[END]*/
