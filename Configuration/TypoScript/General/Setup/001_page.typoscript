@@ -61,9 +61,10 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
     includeJS {
-        jquery = https://code.jquery.com/jquery-3.7.1.min.js
+        jquery = EXT:rlt3sitepackage/Resources/Public/JavaScript/jQuery/jquery-3.7.1.js
+        /*jquery = https://code.jquery.com/jquery-3.7.1.min.js
         jquery.external = 1
         jquery.integrity = sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=
-        jquery.crossorigin = anonymous
+        jquery.crossorigin = anonymous*/
     }
 }
