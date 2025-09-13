@@ -51,7 +51,7 @@
             </trans-unit>
 
             <trans-unit id="openstreetmap.enlarge">
-                <source>View Larger Map</source>
+                <source>Open in new window</source>
             </trans-unit>
         </body>
     </file>

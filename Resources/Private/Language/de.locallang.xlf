@@ -37,7 +37,7 @@
 
             <trans-unit id="openstreetmap.enlarge">
                 <source>View Larger Map</source>
-                <target state="translated">Grössere Karte anzeigen</target>
+                <target state="translated">In neuem Fenster öffnen</target>
             </trans-unit>
 
         </body>
