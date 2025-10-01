@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 `
                         <button aria-expanded="false">
                             <span class="visually-hidden">Untermenü aufklappen</span>
-                            <img src="EXT:rlt3sitepackage/Resources/Public/Images/mdn/down-arrow.svg"
+                            <img src="EXT:rlt3sitepackage/Resources/Public/Icons/Fontawesome/solid/chevron-right.svg"
             alt="down-arrow"
             class="dropdown-arrow"/>
                         </button>
