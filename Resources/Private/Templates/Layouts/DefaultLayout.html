@@ -1,7 +1,7 @@
-<f:asset.css identifier="fontawesome" href="EXT:rlt3sitepackage/Resources/Public/Css/Fontawesome/all.min.css" />
-<f:asset.css identifier="global" href="EXT:rlt3sitepackage/Resources/Public/Css/mobilefirst-v02.css" priority="1" />
-
-<f:asset.script identifier="rlmenu" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlsample.js" />
+<f:asset.css identifier="fontawesome" href="EXT:rlt3sitepackage/Resources/Public/Css/Fontawesome/css/all.min.css" />
+<f:asset.css identifier="mobilefirst" href="EXT:rlt3sitepackage/Resources/Public/Css/mobilefirst-v03.css" priority="1" />
+<f:asset.script identifier="rlnavbar" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar2.js"
+                type="module" priority="1" />
 
 <f:spaceless>
     <f:render partial="Header/Header" arguments="{_all}"/>
@@ -17,19 +17,9 @@
 
 <f:comment>
     <!--
-    <f:if condition="{backendLayout} == 'default'">
-    <f:then>
-        <f:asset.css identifier="default" href="EXT:rlt3sitepackage/Resources/Public/Css/default.css" />
-    </f:then>
-    <f:else if="{backendLayout} == 'PageSidebarLeft'">
-        <f:asset.css identifier="pagesidebarleft" href="EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarleft.css" />
-    </f:else>
-    <f:else if="{backendLayout} == 'PageSidebarRight'">
-        <f:asset.css identifier="pagesidebarright" href="EXT:rlt3sitepackage/Resources/Public/Css/pagesidebarright.css" />
-    </f:else>
-</f:if>
+<f:asset.script identifier="rlsample" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlsample.js" type="module" />
 
-<f:asset.script identifier="rlmenu" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlmenu.js" defer="defer" />
+<f:asset.script identifier="rlmenu" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rlnavbar.js" defer="defer" />
 -->
 </f:comment>
 

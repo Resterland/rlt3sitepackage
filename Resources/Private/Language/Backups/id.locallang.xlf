@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="id" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
+          product-name="rlt3sitepackage">
+        <header>
+            <authorName>Roland Fuhrer</authorName>
+            <authorEmail>webmaster@resterland.org</authorEmail>
+        </header>
+        <body>
+
+            <!-- skip-link -->
+            <trans-unit id="skip-link">
+                <source>Go straight to the main content</source>
+                <target state="translated">Langsung ke konten utama</target>
+            </trans-unit>
+
+            <!-- cookieconsent -->
+            <trans-unit id="cookieconsent.common.header">
+                <source>Cookies used on the website!</source>
+                <target state="translated">Situs web ini menggunakan cookies!</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.message">
+                <source>This website uses cookies to ensure you get the best experience on our website.</source>
+                <target state="translated">Cookie digunakan untuk memungkinkan Anda memanfaatkan situs web kami secara
+                    optimal.
+                </target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.dismiss">
+                <source>Got it!</source>
+                <target state="translated">Semua jelas!</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.allow">
+                <source>Allow cookies</source>
+                <target state="translated">Izinkan cookies</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.deny">
+                <source>Decline</source>
+                <target state="translated">Menolak</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.link">
+                <source>Learn more</source>
+                <target state="translated">Pelajari selengkapnya</target>
+            </trans-unit>
+
+            <trans-unit id="openstreetmap.enlarge">
+                <source>View Larger Map</source>
+                <target state="translated">Lihat Peta yang lebih besar</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

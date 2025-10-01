@@ -7,6 +7,13 @@
             <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
+
+            <!-- skip-link -->
+            <trans-unit id="skip-link">
+                <source>Go straight to the main content</source>
+                <target state="translated">Direkt zum Hauptinhalt</target>
+            </trans-unit>
+
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

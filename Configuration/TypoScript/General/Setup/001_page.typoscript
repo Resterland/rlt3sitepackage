@@ -61,6 +61,8 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
     includeJS {
+        /*rlsample = EXT:rlt3sitepackage/Resources/Public/JavaScript/rlsample.js
+        rlsample.type = module*/
 #        jquery = EXT:rlt3sitepackage/Resources/Public/JavaScript/jQuery/jquery-3.7.1.js
         /*jquery = https://code.jquery.com/jquery-3.7.1.min.js
         jquery.external = 1

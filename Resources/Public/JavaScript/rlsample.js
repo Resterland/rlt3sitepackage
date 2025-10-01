@@ -1,11 +1,11 @@
+function createParagraph() {
+    const para = document.createElement("p");
+    para.textContent = "You clicked the button!";
+    document.body.appendChild(para);
+}
 
-const myImage = document.querySelector(".middle");
+const buttons = document.querySelectorAll("button");
 
-myImage.addEventListener("click", () => {
-    const mySrc = myImage.getAttribute("src");
-    if (mySrc === "EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg") {
-        myImage.setAttribute("src", "EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/LogoInverded.svg");
-    } else {
-        myImage.setAttribute("src", "EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg");
-    }
-});
+for (const button of buttons) {
+    button.addEventListener("click", createParagraph);
+}
