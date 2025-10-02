@@ -7,14 +7,15 @@
     --></f:comment>
     <ul class="nav-list">
         <f:for each="{mainMenu}" as="menuItem">
-            <li tabindex="0">
+            <li tabindex="0"
+                class="{f:if(condition: menuItem.active, then:'active')}"
+                aria-current="{f:if(condition: menuItem.current, then:'page', else: 'false')}" >
                 <f:if condition="{menuItem.hasSubpages}">
                     <f:then>
-                        <a class="{f:if(condition: menuItem.active, then:'active')}"
+                        <a
                            href="{menuItem.link}"
                            target="{menuItem.target}"
                            title="{menuItem.title}"
-                           aria-current="{f:if(condition: menuItem.current, then:'true', else: 'false')}"
                         >
                             {menuItem.title}
                         </a>
@@ -22,14 +23,14 @@
                         <ul class="nav-dropdown">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
                                 <li tabindex="0"
-                                    aria-current="{f:if(condition: menuItemLevel2.current, then:'true', else: 'false')}">
+                                    class="{f:if(condition: menuItemLevel2.active, then:'active')}"
+                                    aria-current="{f:if(condition: menuItemLevel2.current, then:'page', else: 'false')}">
                                     <f:if condition="{menuItemLevel2.hasSubpages}">
                                         <f:then>
-                                            <a class="{f:if(condition: menuItemLevel2.active, then:'active')}"
+                                            <a
                                                href="{menuItemLevel2.link}"
                                                target="{menuItemLevel2.target}"
                                                title="{menuItemLevel2.title}"
-                                               aria-current="{f:if(condition: menuItemLevel2.current, then:'true', else: 'false')}"
                                             >
                                                 {menuItemLevel2.title}
                                             </a>
@@ -37,8 +38,9 @@
                                             <ul class="nav-dropdown">
                                                 <f:for each="{menuItemLevel2.children}" as="menuItemLevel3">
                                                     <li tabindex="0"
-                                                        aria-current="{f:if(condition: menuItemLevel3.current, then:'true', else: 'false')}">
-                                                        <a class="{f:if(condition: menuItemLevel3.active, then:'active')}"
+                                                        class="{f:if(condition: menuItemLevel3.active, then:'active')}"
+                                                        aria-current="{f:if(condition: menuItemLevel3.current, then:'page', else: 'false')}">
+                                                        <a
                                                            href="{menuItemLevel3.link}"
                                                            target="{menuItemLevel3.target}"
                                                            title="{menuItemLevel3.title}"
@@ -50,11 +52,10 @@
                                             </ul>
                                         </f:then>
                                         <f:else>
-                                            <a class="{f:if(condition: menuItemLevel2.active, then:'active')}"
+                                            <a
                                                href="{menuItemLevel2.link}"
                                                target="{menuItemLevel2.target}"
                                                title="{menuItemLevel2.title}"
-                                               aria-current="{f:if(condition: menuItemLevel2.current, then:'true', else: 'false')}"
                                             >
                                                 {menuItemLevel2.title}
                                             </a>
@@ -66,11 +67,10 @@
                     </f:then>
                     <f:else>
                         <f:comment><!-- Item has no children --></f:comment>
-                        <a class="{f:if(condition: menuItem.active, then:'active')}"
+                        <a
                            href="{menuItem.link}"
                            target="{menuItem.target}"
                            title="{menuItem.title}"
-                           aria-current="{f:if(condition: menuItem.current, then:'true', else: 'false')}"
                         >
                             {menuItem.title}
                         </a>

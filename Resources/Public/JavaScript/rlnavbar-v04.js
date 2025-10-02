@@ -2,29 +2,29 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownExtension();
 
     function dropdownExtension() {
-        const submenus = document.querySelectorAll("nav.navbar-main li > ul");
+        const submenus = document.querySelectorAll("nav li > ul");
         for (let submenu of submenus) {
             submenu.classList.add("submenu");
             submenu.insertAdjacentHTML(
                 "beforebegin",
                 `
-                        <button aria-expanded="false">
+			<button aria-expanded="false">
 				<span class="visually-hidden">Untermenü aufklappen</span>
-                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'>
-                            <path d='M0.3,0.1 0.3,0.9 0.8,0.5z' />
-                        </svg>
-                        </button>
+				<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'>
+				  <path d='M0.3,0.1 0.3,0.9 0.8,0.5z' />
+				</svg>
+			</button>
 		`
             );
         }
         document.documentElement.addEventListener("click", (event) => {
             if (
-                event.target.tagName === "BUTTON" &&
+                event.target.tagName == "BUTTON" &&
                 event.target.hasAttribute("aria-expanded")
             ) {
                 event.target.setAttribute(
                     "aria-expanded",
-                    event.target.getAttribute("aria-expanded") !== "true"
+                    event.target.getAttribute("aria-expanded") != "true"
                 );
                 event.target.nextElementSibling.classList.toggle("visible");
                 event.target.parentNode.childNodes.classList.toggle("visible");
