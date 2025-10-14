@@ -116,7 +116,7 @@ h5,
 h6 {
     padding: 0;
     margin: 0;
- }
+}
 
 p {
     line-height: 1.5;
@@ -265,27 +265,193 @@ footer {
 }
 
 /* Dropdown navbar START */
-.navbar-main > ul {
-    list-style: none;
-    // Safari hack, see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
-    list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+}
+.navbar-main {
+    background-color: #feb040;
+}
+nav.navbar-main > ul {
     margin: 0;
     padding: 0;
-    font-size: 0.95rem;
+    font-size: 0.95em;
     display: flex;
     flex-direction: column;
-    position: relative;
 }
-.navbar-main ul {
-    /*position:relative;*/
-}
-
-.navbar-main li {
-    margin: 0.15rem;
+nav.navbar-main li {
+    margin: 0.15em;
     padding: 0;
     flex: auto;
     position: relative;
 }
+nav.navbar-main a {
+    display: block;
+    padding: 0.4em;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: thin solid var(--background-color);
+    border-radius: .5em;
+    color: gold;
+    background-color: var(--background-color);
+    transition: all .25s ease-in;
+    position: relative;
+}
+.subtitle-wrapper {
+    display: flex;
+}
+/*button.dropbtn {
+    position: relative;
+    width: 24px;
+    height: auto;
+    right: 0.5em;
+    top: 0;
+}*/
+.subtitle {
+    flex: auto;
+}
+
+nav.navbar-main a:focus,
+nav.navbar-main a:hover,
+nav.navbar-main li[aria-current] a:focus,
+nav.navbar-main li[aria-current] a:hover {
+    color: var(--background-color);
+    background-color: var(--accent1-color);
+}
+/*     dropdown navigation links      */
+
+nav.navbar-main .dropdown {
+    visibility: hidden;
+    height: 0;
+    z-index: 1000;
+    position: absolute;
+}
+
+nav.navbar-main .dropdown li {
+    display: block;
+     width: auto;
+}
+/**     Show the dropdown on hover, focus     **/
+
+/*
+nav.navbar-main li:hover ul {
+  visibility: visible;
+  height: auto;
+}
+nav.navbar-main li:hover .dropdown,
+nav.navbar-main li:active .dropdown,
+nav.navbar-main li:focus .dropdown {
+    visibility: visible;
+    height: auto;
+} */
+nav.navbar-main li:focus-within > ul,
+nav.navbar-main li:focus-within .dropdown,
+.visible {
+    visibility: visible;
+    height: auto;
+}
+
+[aria-expanded] {
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    color: var(--accent1-color);
+    background: var(--background-color);
+    /* damit er bei nav a:focus noch sichtbar ist */
+
+    outline: transparent;
+    border: thin solid var(--background-color);
+    border-radius: 0.3em;
+}
+
+[aria-expanded] svg {
+    pointer-events: none;
+    fill: var(--accent1-color);
+    border-radius: 0.3em;
+    z-index: 10;
+}
+nav.navbar-main li:hover [aria-expanded] svg {
+    background: var(--accent1-color);
+    fill: var(--background-color);
+}
+
+nav.navbar-main li:focus [aria-expanded] svg {
+    background: var(--background-color);
+    fill: var(--accent1-color);
+}
+
+[aria-expanded]:focus svg,
+[aria-expanded]:hover svg {
+    fill: var(--background-color);
+    background: var(--accent1-color);
+}
+
+[aria-expanded="true"] svg {
+    transform: translate(0, 0) rotate(90deg);
+}
+
+/*
+
+nav.navbar-main .subtitle:hover::after,
+nav.navbar-main .subtitle:focus::after {
+    content:" ▼";
+}
+nav.navbar-main button {
+    position: relative;
+}
+nav.navbar-main li[aria-current] a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+[aria-expanded] {
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    color: var(--accent1-color);
+    background: var(--background-color);
+    outline: transparent;
+    border: thin solid var(--background-color);
+    border-radius: 0.3em;
+}
+*/
+
+/*
+.navbar-main li.active a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+.navbar-main a:focus,
+.navbar-main a:hover,
+.navbar-main li[aria-current="page"] a:focus,
+.navbar-main li[aria-current="page"] a:hover {
+    color: var(--background-color);
+    background-color: var(--accent1-color);
+}
+!*     submenu navigation links      *!
+.navbar-main ul ul {
+    visibility: hidden;
+    height: 0;
+    z-index: 1000;
+}
+
+.navbar-main ul.nav-dropdown ul {
+    position: absolute;
+    left: 5.125em;
+    top: 0.5em;
+}
+*/
 /* Dropdown navbar END */
 
 /* media queries equal or larger than 70rem */
@@ -310,9 +476,12 @@ footer {
     }
 
     /* Dropdown navbar START */
-    .navbar-main > ul {
+    nav.navbar-main > ul {
         font-size: 1.15rem;
         flex-direction: row;
+    }
+    nav.navbar-main li {
+        flex: 1;
     }
     /* Dropdown navbar END */
 
@@ -357,10 +526,6 @@ footer {
     }
 
     /* Dropdown navbar START */
-    nav.navbar-main > ul {
-        font-size: 1.15rem;
-        flex-direction: row;
-    }
 
     /* Dropdown navbar END */
 
@@ -386,131 +551,6 @@ footer {
         font-size: 0.8rem;
     }
 }
-
-.navbar-main a {
-    display: block;
-    padding: 0.25em;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border: thin solid var(--background-color);
-    border-radius: 0.5em;
-    color: var(--link-color);
-    --link-color: gold;
-    background-color: var(--background-color);
-    transition: all .25s ease-in;
-    position: relative;
-}
-
-.navbar-main li[aria-current="page"] a {
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-
-
-.navbar-main a:focus,
-.navbar-main a:hover,
-.navbar-main li[aria-current="page"] a:focus,
-.navbar-main li[aria-current="page"] a:hover {
-    color: var(--background-color);
-    background-color: var(--accent1-color);
-}
-/*     submenu navigation links      */
-.navbar-main ul ul {
-    visibility: hidden;
-    height: 0;
-    z-index: 1000;
-}
-
-.navbar-main ul.nav-dropdown ul {
-    position: absolute;
-    left: 5.125em;
-    top: 0.5em;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-/*
-.navbar-main ul li {
-    display: block;
-}*/
-
-/*     Show the submenu on hover, but not when nav li button:hover    */
-/*
-.navbar-main li:hover > ul {
-    visibility: visible;
-    height: auto;
-}
-.navbar-main li button:hover ~ ul {
-    visibility: hidden;
-    height: 0;
-}
-.navbar-main li button:hover ~ ul.visible,
-.visible  {
-    visibility: visible;
-    height: auto;
-}
-*/
-
-/*
-[aria-expanded] {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    width:2em;
-    height:2em;
-    padding: 0;
-    color: var(--accent1-color);
-    background: var(--background-color); !*damit er bei nav a:focus noch sichtbar ist*!
-    outline:transparent;
-    border: thin solid var(--background-color);
-    border-radius: 0.3em;
-
-}
-
-[aria-expanded] svg {
-    pointer-events: none;
-    fill: var(--accent1-color);
-    border-radius: 0.3em;
-    z-index:10;
-}
-
-.navbar-main li:hover [aria-expanded] svg {
-    background: var(--accent1-color);
-    fill: var(--background-color);
-}
-
-.navbar-main li:focus [aria-expanded] svg {
-    background: var(--background-color);
-    fill: var(--accent1-color);
-}
-
-[aria-expanded]:focus svg,
-[aria-expanded]:hover svg{
-    fill: var(--background-color);
-    background: var(--accent1-color);
-
-}
-
-[aria-expanded="true"] svg {
-    transform: translate(0,0) rotate(90deg);
-}
-
-.visually-hidden,
-[visually-hidden="true"] {
-    position: absolute !important;
-    clip-path: rect(1px, 1px, 1px, 1px) !important;
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden !important;
-}
-*/
 
 :root {
     --background-color: midnightblue;

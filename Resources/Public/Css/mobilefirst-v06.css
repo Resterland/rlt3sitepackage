@@ -4,6 +4,8 @@
 ###  - with css grid and flexbox
 ###  - using @media queries
 */
+
+/* General settings */
 :root,
 [data-rl-theme=light] {
     color-scheme: light;
@@ -99,7 +101,6 @@ body {
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
     background: var(--rl-bg-color);
-    display: grid;
 }
 
 h1 {
@@ -108,15 +109,10 @@ h1 {
     text-align: center;
     font-family: "Chewy", system-ui;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
- }
+}
 
 p {
     line-height: 1.5;
@@ -126,9 +122,7 @@ ul {
     list-style: none;
 }
 
-img,
-picture,
-video {
+img,picture,video {
     max-width: 100%;
     height: auto;
 }
@@ -153,6 +147,12 @@ footer {
 aside {
     background: #ebf5d7;
     border-color: #8db243;
+}
+.aside-left {
+    background: gold;
+}
+.aside-right {
+    background: hotpink;
 }
 
 main {
@@ -265,26 +265,9 @@ footer {
 }
 
 /* Dropdown navbar START */
-.navbar-main > ul {
-    list-style: none;
-    // Safari hack, see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
-    list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
-    margin: 0;
-    padding: 0;
-    font-size: 0.95rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-.navbar-main ul {
-    /*position:relative;*/
-}
-
-.navbar-main li {
-    margin: 0.15rem;
-    padding: 0;
-    flex: auto;
-    position: relative;
+.navbar-main {
+    width: 100%;
+    background-color: #fff;
 }
 /* Dropdown navbar END */
 
@@ -292,6 +275,7 @@ footer {
 @media (min-width: 70rem) {
     body {
         background: cornflowerblue;
+        display: grid;
         grid-template-columns: minmax(min-content, max-content) auto minmax(
         min-content,
         max-content
@@ -310,9 +294,12 @@ footer {
     }
 
     /* Dropdown navbar START */
-    .navbar-main > ul {
-        font-size: 1.15rem;
+    nav.navbar-main > ul {
         flex-direction: row;
+    }
+    nav.navbar-main li {
+        flex: 1;
+        font-size: 1em;
     }
     /* Dropdown navbar END */
 
@@ -342,6 +329,7 @@ footer {
     /* Breite beträgt mindestens 45rem */
     body {
         background: olive;
+        display: grid;
         gap: 0.15rem;
         grid-template-columns: minmax(min-content, max-content) auto minmax(
         min-content,
@@ -357,10 +345,6 @@ footer {
     }
 
     /* Dropdown navbar START */
-    nav.navbar-main > ul {
-        font-size: 1.15rem;
-        flex-direction: row;
-    }
 
     /* Dropdown navbar END */
 
@@ -385,132 +369,16 @@ footer {
     .copyright {
         font-size: 0.8rem;
     }
+    main {
+        order: 1;
+    }
+    .aside-left {
+        order: 2;
+    }
+    .aside-right {
+        order: 3;
+    }
 }
-
-.navbar-main a {
-    display: block;
-    padding: 0.25em;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border: thin solid var(--background-color);
-    border-radius: 0.5em;
-    color: var(--link-color);
-    --link-color: gold;
-    background-color: var(--background-color);
-    transition: all .25s ease-in;
-    position: relative;
-}
-
-.navbar-main li[aria-current="page"] a {
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-
-
-.navbar-main a:focus,
-.navbar-main a:hover,
-.navbar-main li[aria-current="page"] a:focus,
-.navbar-main li[aria-current="page"] a:hover {
-    color: var(--background-color);
-    background-color: var(--accent1-color);
-}
-/*     submenu navigation links      */
-.navbar-main ul ul {
-    visibility: hidden;
-    height: 0;
-    z-index: 1000;
-}
-
-.navbar-main ul.nav-dropdown ul {
-    position: absolute;
-    left: 5.125em;
-    top: 0.5em;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-/*
-.navbar-main ul li {
-    display: block;
-}*/
-
-/*     Show the submenu on hover, but not when nav li button:hover    */
-/*
-.navbar-main li:hover > ul {
-    visibility: visible;
-    height: auto;
-}
-.navbar-main li button:hover ~ ul {
-    visibility: hidden;
-    height: 0;
-}
-.navbar-main li button:hover ~ ul.visible,
-.visible  {
-    visibility: visible;
-    height: auto;
-}
-*/
-
-/*
-[aria-expanded] {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    width:2em;
-    height:2em;
-    padding: 0;
-    color: var(--accent1-color);
-    background: var(--background-color); !*damit er bei nav a:focus noch sichtbar ist*!
-    outline:transparent;
-    border: thin solid var(--background-color);
-    border-radius: 0.3em;
-
-}
-
-[aria-expanded] svg {
-    pointer-events: none;
-    fill: var(--accent1-color);
-    border-radius: 0.3em;
-    z-index:10;
-}
-
-.navbar-main li:hover [aria-expanded] svg {
-    background: var(--accent1-color);
-    fill: var(--background-color);
-}
-
-.navbar-main li:focus [aria-expanded] svg {
-    background: var(--background-color);
-    fill: var(--accent1-color);
-}
-
-[aria-expanded]:focus svg,
-[aria-expanded]:hover svg{
-    fill: var(--background-color);
-    background: var(--accent1-color);
-
-}
-
-[aria-expanded="true"] svg {
-    transform: translate(0,0) rotate(90deg);
-}
-
-.visually-hidden,
-[visually-hidden="true"] {
-    position: absolute !important;
-    clip-path: rect(1px, 1px, 1px, 1px) !important;
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden !important;
-}
-*/
 
 :root {
     --background-color: midnightblue;

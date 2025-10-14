@@ -7,6 +7,21 @@
         </header>
         <body>
 
+            <trans-unit id="opensubmenu">
+                <source>Open submenu</source>
+            </trans-unit>
+            <trans-unit id="opensubmenu1">
+                <source>Open 1st submenu</source>
+            </trans-unit>
+            <trans-unit id="opensubmenu2">
+                <source>Open 2nd submenu</source>
+            </trans-unit>
+
+
+            <trans-unit id="openstreetmap.enlarge">
+                <source>Open in new window</source>
+            </trans-unit>
+
             <trans-unit id="siteTitle">
                 <source>Seiten Titel</source>
             </trans-unit>
@@ -49,10 +64,6 @@
             </trans-unit>
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
-            </trans-unit>
-
-            <trans-unit id="openstreetmap.enlarge">
-                <source>Open in new window</source>
             </trans-unit>
         </body>
     </file>

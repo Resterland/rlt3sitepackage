@@ -8,6 +8,24 @@
         </header>
         <body>
 
+            <trans-unit id="opensubmenu">
+                <source>Open submenu</source>
+                <target state="translated">Untermenü aufklappen</target>
+            </trans-unit>
+            <trans-unit id="opensubmenu1">
+                <source>Open 1st submenu</source>
+                <target state="translated">1. Untermenü aufklappen</target>
+            </trans-unit>
+            <trans-unit id="opensubmenu2">
+                <source>Open 2nd submenu</source>
+                <target state="translated">2. Untermenü aufklappen</target>
+            </trans-unit>
+
+            <trans-unit id="openstreetmap.enlarge">
+                <source>View Larger Map</source>
+                <target state="translated">In neuem Fenster öffnen</target>
+            </trans-unit>
+
             <!-- skip-link -->
             <trans-unit id="skip-link">
                 <source>Go straight to the main content</source>
@@ -40,11 +58,6 @@
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
                 <target state="translated">Mehr erfahren</target>
-            </trans-unit>
-
-            <trans-unit id="openstreetmap.enlarge">
-                <source>View Larger Map</source>
-                <target state="translated">In neuem Fenster öffnen</target>
             </trans-unit>
 
         </body>

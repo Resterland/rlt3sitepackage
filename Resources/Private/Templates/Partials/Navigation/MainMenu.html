@@ -1,49 +1,79 @@
-<nav class="navbar-main">
-    <f:comment><!--
-    <h2>Responsive Navigation Bar</h2>
-    <div class="nav-mobile">
-        <a id="nav-toggle" href="#!"><span></span></a>
-    </div>
-    --></f:comment>
-    <ul class="nav-list">
+<nav class="navbar-main" role="navigation" id="navbar-main">
+    <p id="demo"></p>
+    <button class="hamburger" type="button">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+        >
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </button>
+    <ul class="main-nav-list" id="main-nav-list">
         <f:for each="{mainMenu}" as="menuItem">
-            <li tabindex="0"
-                class="{f:if(condition: menuItem.active, then:'active')}"
-                aria-current="{f:if(condition: menuItem.current, then:'page', else: 'false')}" >
+            <li tabindex="0" class="main-nav-item">
                 <f:if condition="{menuItem.hasSubpages}">
+                    <!-- Item has children -->
                     <f:then>
-                        <a
-                           href="{menuItem.link}"
-                           target="{menuItem.target}"
-                           title="{menuItem.title}"
-                        >
-                            {menuItem.title}
-                        </a>
-                        <f:comment><!-- Item has children --></f:comment>
-                        <ul class="nav-dropdown">
+                        <div class="subtitle-wrapper">
+                            <a
+                                class="subtitle nav-link {f:if(condition: menuItem.current, then: 'active')}"
+                                href="{menuItem.link}"
+                                target="{menuItem.target}"
+                                title="{menuItem.title}"
+                            >
+                                {menuItem.title}
+                            </a>
+                            <button class="dropbtn"
+                                    aria-expanded="false"
+                                    type="button" name="dropdown">
+                            <span class="visually-hidden" id="fluid">
+                                <f:translate key="opensubmenu1" extensionName="rlt3sitepackage" />
+                            </span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 25 25">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="dropdown">
                             <f:for each="{menuItem.children}" as="menuItemLevel2">
-                                <li tabindex="0"
-                                    class="{f:if(condition: menuItemLevel2.active, then:'active')}"
-                                    aria-current="{f:if(condition: menuItemLevel2.current, then:'page', else: 'false')}">
+                                <li tabindex="0" class="dropdown-content">
                                     <f:if condition="{menuItemLevel2.hasSubpages}">
                                         <f:then>
-                                            <a
-                                               href="{menuItemLevel2.link}"
-                                               target="{menuItemLevel2.target}"
-                                               title="{menuItemLevel2.title}"
-                                            >
-                                                {menuItemLevel2.title}
-                                            </a>
-                                            <f:comment><!-- Item has children --></f:comment>
-                                            <ul class="nav-dropdown">
+                                            <!-- Sub-Item has children -->
+                                            <div class="subtitle-wrapper">
+                                                <a
+                                                    class="nav-link {f:if(condition: menuItemLevel2.current, then: 'active')}"
+                                                    href="{menuItemLevel2.link}"
+                                                    target="{menuItemLevel2.target}"
+                                                    title="{menuItemLevel2.title}"
+                                                >
+                                                    {menuItemLevel2.title}
+                                                </a>
+                                                <button class="dropbtn"
+                                                        aria-expanded="false"
+                                                        type="button" name="dropdown">
+                                                <span class="visually-hidden">
+                                                    {f:translate(key:'opensubmenu2',extensionName:'rlt3sitepackage')}
+                                                </span>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 25 25">
+                                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <ul>
                                                 <f:for each="{menuItemLevel2.children}" as="menuItemLevel3">
-                                                    <li tabindex="0"
-                                                        class="{f:if(condition: menuItemLevel3.active, then:'active')}"
-                                                        aria-current="{f:if(condition: menuItemLevel3.current, then:'page', else: 'false')}">
+                                                    <li tabindex="0" class="dropdown-content">
                                                         <a
-                                                           href="{menuItemLevel3.link}"
-                                                           target="{menuItemLevel3.target}"
-                                                           title="{menuItemLevel3.title}"
+                                                            class="nav-link {f:if(condition: menuItemLevel3.current, then: 'active')}"
+                                                            href="{menuItemLevel3.link}"
+                                                            target="{menuItemLevel3.target}"
+                                                            title="{menuItemLevel3.title}"
                                                         >
                                                             {menuItemLevel3.title}
                                                         </a>
@@ -52,10 +82,12 @@
                                             </ul>
                                         </f:then>
                                         <f:else>
+                                            <!-- Sub-Item has no children -->
                                             <a
-                                               href="{menuItemLevel2.link}"
-                                               target="{menuItemLevel2.target}"
-                                               title="{menuItemLevel2.title}"
+                                                class="nav-link {f:if(condition: menuItemLevel2.current, then: 'active')}"
+                                                href="{menuItemLevel2.link}"
+                                                target="{menuItemLevel2.target}"
+                                                title="{menuItemLevel2.title}"
                                             >
                                                 {menuItemLevel2.title}
                                             </a>
@@ -66,11 +98,12 @@
                         </ul>
                     </f:then>
                     <f:else>
-                        <f:comment><!-- Item has no children --></f:comment>
+                        <!-- Item has no children -->
                         <a
-                           href="{menuItem.link}"
-                           target="{menuItem.target}"
-                           title="{menuItem.title}"
+                            class="nav-link {f:if(condition: menuItem.current, then: 'active')}"
+                            href="{menuItem.link}"
+                            target="{menuItem.target}"
+                            title="{menuItem.title}"
                         >
                             {menuItem.title}
                         </a>
