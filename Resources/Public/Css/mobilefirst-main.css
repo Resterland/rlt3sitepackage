@@ -94,26 +94,20 @@ html {
     box-sizing: border-box;
 }
 body {
-    max-width: 60em;
+    max-width: 90vw;
     margin: 0.5em auto;
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
     background: var(--rl-bg-color);
     display: grid;
 }
-
 h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4em, 2.5vw, 2.8em);
     text-align: center;
     font-family: "Chewy", system-ui;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
 }
@@ -126,9 +120,7 @@ ul {
     list-style: none;
 }
 
-img,
-picture,
-video {
+img,picture,video {
     max-width: 100%;
     height: auto;
 }
@@ -265,6 +257,11 @@ footer {
 }
 
 /* Dropdown navbar START */
+.dont-render-dawg {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -277,181 +274,79 @@ footer {
 .navbar-main {
     background-color: #feb040;
 }
-nav.navbar-main > ul {
+.navbar-main > ul {
     margin: 0;
     padding: 0;
-    font-size: 0.95em;
     display: flex;
     flex-direction: column;
 }
-nav.navbar-main li {
+.navbar-main ul {
+     font-size: 0.95em;
+ }
+.navbar-main li {
     margin: 0.15em;
     padding: 0;
-    flex: auto;
+    flex: 1 1 0;
     position: relative;
 }
-nav.navbar-main a {
+.navbar-main a {
     display: block;
-    padding: 0.4em;
+    padding: 0.25em;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     border: thin solid var(--background-color);
-    border-radius: .5em;
-    color: gold;
+    border-radius: 0.5em;
+    color: var(--accent1-color);
     background-color: var(--background-color);
     transition: all .25s ease-in;
     position: relative;
 }
-.subtitle-wrapper {
-    display: flex;
-}
-/*button.dropbtn {
-    position: relative;
-    width: 24px;
-    height: auto;
-    right: 0.5em;
-    top: 0;
-}*/
-.subtitle {
-    flex: auto;
-}
-
-nav.navbar-main a:focus,
-nav.navbar-main a:hover,
-nav.navbar-main li[aria-current] a:focus,
-nav.navbar-main li[aria-current] a:hover {
-    color: var(--background-color);
-    background-color: var(--accent1-color);
-}
-/*     dropdown navigation links      */
-
-nav.navbar-main .dropdown {
-    visibility: hidden;
-    height: 0;
-    z-index: 1000;
+.dropbtn {
     position: absolute;
+    right: 0.5em;
+    top: 0.3em;
+    padding: 0;
+    color: var(--accent1-color);
+    background: var(--background-color);
+    outline: transparent;
+    border: thin solid var(--background-color);
+    border-radius: 0 0.5em 0.5em 0;
+ }
+.dropbtn svg {
+    pointer-events: none;
+    fill: var(--accent1-color);
+    border-radius: 0.2em;
+    z-index: 10;
+}
+.navbar-main li:hover .dropbtn svg {
+    background: var(--accent1-color);
+    fill: var(--background-color);
 }
 
-nav.navbar-main .dropdown li {
-    display: block;
-     width: auto;
+.navbar-main li:focus .dropbtn svg {
+    background: var(--background-color);
+    fill: var(--accent1-color);
 }
-/**     Show the dropdown on hover, focus     **/
 
-/*
-nav.navbar-main li:hover ul {
+/*     dropdown navigation links      */
+.navbar-main ul ul {
+    visibility: hidden;
+    z-index: 1000;
+    height: 0;
+
+}
+/*     Show the dropdown on hover, focus     */
+.navbar-main li:hover ul {
   visibility: visible;
   height: auto;
 }
-nav.navbar-main li:hover .dropdown,
-nav.navbar-main li:active .dropdown,
-nav.navbar-main li:focus .dropdown {
-    visibility: visible;
-    height: auto;
-} */
-nav.navbar-main li:focus-within > ul,
-nav.navbar-main li:focus-within .dropdown,
+nav li:focus-within > ul,
 .visible {
     visibility: visible;
     height: auto;
 }
 
-[aria-expanded] {
-    position: absolute;
-    right: 0.5em;
-    top: 0.25em;
-    width: 2em;
-    height: 2em;
-    padding: 0;
-    color: var(--accent1-color);
-    background: var(--background-color);
-    /* damit er bei nav a:focus noch sichtbar ist */
-
-    outline: transparent;
-    border: thin solid var(--background-color);
-    border-radius: 0.3em;
-}
-
-[aria-expanded] svg {
-    pointer-events: none;
-    fill: var(--accent1-color);
-    border-radius: 0.3em;
-    z-index: 10;
-}
-nav.navbar-main li:hover [aria-expanded] svg {
-    background: var(--accent1-color);
-    fill: var(--background-color);
-}
-
-nav.navbar-main li:focus [aria-expanded] svg {
-    background: var(--background-color);
-    fill: var(--accent1-color);
-}
-
-[aria-expanded]:focus svg,
-[aria-expanded]:hover svg {
-    fill: var(--background-color);
-    background: var(--accent1-color);
-}
-
-[aria-expanded="true"] svg {
-    transform: translate(0, 0) rotate(90deg);
-}
-
-/*
-
-nav.navbar-main .subtitle:hover::after,
-nav.navbar-main .subtitle:focus::after {
-    content:" ▼";
-}
-nav.navbar-main button {
-    position: relative;
-}
-nav.navbar-main li[aria-current] a {
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-[aria-expanded] {
-    position: absolute;
-    right: 0.5em;
-    top: 0.25em;
-    width: 2em;
-    height: 2em;
-    padding: 0;
-    color: var(--accent1-color);
-    background: var(--background-color);
-    outline: transparent;
-    border: thin solid var(--background-color);
-    border-radius: 0.3em;
-}
-*/
-
-/*
-.navbar-main li.active a {
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-.navbar-main a:focus,
-.navbar-main a:hover,
-.navbar-main li[aria-current="page"] a:focus,
-.navbar-main li[aria-current="page"] a:hover {
-    color: var(--background-color);
-    background-color: var(--accent1-color);
-}
-!*     submenu navigation links      *!
-.navbar-main ul ul {
-    visibility: hidden;
-    height: 0;
-    z-index: 1000;
-}
-
-.navbar-main ul.nav-dropdown ul {
-    position: absolute;
-    left: 5.125em;
-    top: 0.5em;
-}
-*/
 /* Dropdown navbar END */
 
 /* media queries equal or larger than 70rem */
@@ -476,11 +371,11 @@ nav.navbar-main li[aria-current] a {
     }
 
     /* Dropdown navbar START */
-    nav.navbar-main > ul {
-        font-size: 1.15rem;
+    .navbar-main > ul {
         flex-direction: row;
+        height: 3em;
     }
-    nav.navbar-main li {
+    .navbar-main li {
         flex: 1;
     }
     /* Dropdown navbar END */

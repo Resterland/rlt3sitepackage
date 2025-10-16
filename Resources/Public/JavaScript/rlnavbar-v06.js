@@ -1,4 +1,6 @@
-document.getElementById("demo").innerHTML = "Hello, World!";
-
-$("#demo").html("Hello, World!");
-
+$(document).ready(function() {
+    // all custom jQuery will go here
+    $(".trigger").click(function() {
+        $(".overlay").toggle();
+    });
+});

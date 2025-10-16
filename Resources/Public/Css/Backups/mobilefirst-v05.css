@@ -94,7 +94,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    max-width: 90vw;
+    max-width: 60em;
     margin: 0.5em auto;
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
     color: var(--rl-text-color);
@@ -107,7 +107,12 @@ h1 {
     text-align: center;
     font-family: "Chewy", system-ui;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
@@ -120,7 +125,9 @@ ul {
     list-style: none;
 }
 
-img,picture,video {
+img,
+picture,
+video {
     max-width: 100%;
     height: auto;
 }
@@ -257,11 +264,6 @@ footer {
 }
 
 /* Dropdown navbar START */
-.dont-render-dawg {
-    position: absolute;
-    height: 0;
-    width: 0;
-}
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -274,79 +276,181 @@ footer {
 .navbar-main {
     background-color: #feb040;
 }
-.navbar-main > ul {
+nav.navbar-main > ul {
     margin: 0;
     padding: 0;
+    font-size: 0.95em;
     display: flex;
     flex-direction: column;
 }
-.navbar-main ul {
-     font-size: 0.95em;
- }
-.navbar-main li {
+nav.navbar-main li {
     margin: 0.15em;
     padding: 0;
-    flex: 1 1 0;
+    flex: auto;
     position: relative;
 }
-.navbar-main a {
+nav.navbar-main a {
     display: block;
-    padding: 0.25em;
+    padding: 0.4em;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     border: thin solid var(--background-color);
-    border-radius: 0.5em;
-    color: var(--accent1-color);
+    border-radius: .5em;
+    color: gold;
     background-color: var(--background-color);
     transition: all .25s ease-in;
     position: relative;
 }
-.dropbtn {
-    position: absolute;
+.subtitle-wrapper {
+    display: flex;
+}
+/*button.dropbtn {
+    position: relative;
+    width: 24px;
+    height: auto;
     right: 0.5em;
-    top: 0.3em;
-    padding: 0;
-    color: var(--accent1-color);
-    background: var(--background-color);
-    outline: transparent;
-    border: thin solid var(--background-color);
-    border-radius: 0 0.5em 0.5em 0;
- }
-.dropbtn svg {
-    pointer-events: none;
-    fill: var(--accent1-color);
-    border-radius: 0.2em;
-    z-index: 10;
-}
-.navbar-main li:hover .dropbtn svg {
-    background: var(--accent1-color);
-    fill: var(--background-color);
+    top: 0;
+}*/
+.subtitle {
+    flex: auto;
 }
 
-.navbar-main li:focus .dropbtn svg {
-    background: var(--background-color);
-    fill: var(--accent1-color);
+nav.navbar-main a:focus,
+nav.navbar-main a:hover,
+nav.navbar-main li[aria-current] a:focus,
+nav.navbar-main li[aria-current] a:hover {
+    color: var(--background-color);
+    background-color: var(--accent1-color);
 }
-
 /*     dropdown navigation links      */
-.navbar-main ul ul {
-    visibility: hidden;
-    z-index: 1000;
-    height: 0;
 
+nav.navbar-main .dropdown {
+    visibility: hidden;
+    height: 0;
+    z-index: 1000;
+    position: absolute;
 }
-/*     Show the dropdown on hover, focus     */
-.navbar-main li:hover ul {
+
+nav.navbar-main .dropdown li {
+    display: block;
+     width: auto;
+}
+/**     Show the dropdown on hover, focus     **/
+
+/*
+nav.navbar-main li:hover ul {
   visibility: visible;
   height: auto;
 }
-nav li:focus-within > ul,
+nav.navbar-main li:hover .dropdown,
+nav.navbar-main li:active .dropdown,
+nav.navbar-main li:focus .dropdown {
+    visibility: visible;
+    height: auto;
+} */
+nav.navbar-main li:focus-within > ul,
+nav.navbar-main li:focus-within .dropdown,
 .visible {
     visibility: visible;
     height: auto;
 }
 
+[aria-expanded] {
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    color: var(--accent1-color);
+    background: var(--background-color);
+    /* damit er bei nav a:focus noch sichtbar ist */
+
+    outline: transparent;
+    border: thin solid var(--background-color);
+    border-radius: 0.3em;
+}
+
+[aria-expanded] svg {
+    pointer-events: none;
+    fill: var(--accent1-color);
+    border-radius: 0.3em;
+    z-index: 10;
+}
+nav.navbar-main li:hover [aria-expanded] svg {
+    background: var(--accent1-color);
+    fill: var(--background-color);
+}
+
+nav.navbar-main li:focus [aria-expanded] svg {
+    background: var(--background-color);
+    fill: var(--accent1-color);
+}
+
+[aria-expanded]:focus svg,
+[aria-expanded]:hover svg {
+    fill: var(--background-color);
+    background: var(--accent1-color);
+}
+
+[aria-expanded="true"] svg {
+    transform: translate(0, 0) rotate(90deg);
+}
+
+/*
+
+nav.navbar-main .subtitle:hover::after,
+nav.navbar-main .subtitle:focus::after {
+    content:" ▼";
+}
+nav.navbar-main button {
+    position: relative;
+}
+nav.navbar-main li[aria-current] a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+[aria-expanded] {
+    position: absolute;
+    right: 0.5em;
+    top: 0.25em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    color: var(--accent1-color);
+    background: var(--background-color);
+    outline: transparent;
+    border: thin solid var(--background-color);
+    border-radius: 0.3em;
+}
+*/
+
+/*
+.navbar-main li.active a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+.navbar-main a:focus,
+.navbar-main a:hover,
+.navbar-main li[aria-current="page"] a:focus,
+.navbar-main li[aria-current="page"] a:hover {
+    color: var(--background-color);
+    background-color: var(--accent1-color);
+}
+!*     submenu navigation links      *!
+.navbar-main ul ul {
+    visibility: hidden;
+    height: 0;
+    z-index: 1000;
+}
+
+.navbar-main ul.nav-dropdown ul {
+    position: absolute;
+    left: 5.125em;
+    top: 0.5em;
+}
+*/
 /* Dropdown navbar END */
 
 /* media queries equal or larger than 70rem */
@@ -371,11 +475,11 @@ nav li:focus-within > ul,
     }
 
     /* Dropdown navbar START */
-    .navbar-main > ul {
+    nav.navbar-main > ul {
+        font-size: 1.15rem;
         flex-direction: row;
-        height: 3em;
     }
-    .navbar-main li {
+    nav.navbar-main li {
         flex: 1;
     }
     /* Dropdown navbar END */
