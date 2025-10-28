@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // all custom jQuery will go here
-    $(".trigger").click(function() {
-        $(".overlay").toggle();
+    $( ".dropbtn" ).on( "click", function() {
+        alert( "Handler for `click` called." );
     });
 });

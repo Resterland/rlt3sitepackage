@@ -262,15 +262,6 @@ footer {
     height: 0;
     width: 0;
 }
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden !important;
-}
 .navbar-main {
     background-color: #feb040;
 }
@@ -281,6 +272,7 @@ footer {
     flex-direction: column;
 }
 .navbar-main ul {
+    position:relative;
      font-size: 0.95em;
  }
 .navbar-main li {
@@ -297,55 +289,113 @@ footer {
     text-align: center;
     border: thin solid var(--background-color);
     border-radius: 0.5em;
-    color: var(--accent1-color);
+    color: var(--link-color);
+    --link-color: gold;
     background-color: var(--background-color);
     transition: all .25s ease-in;
     position: relative;
 }
 
-.dropbtn {
+.navbar-main li[aria-current] a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+
+.navbar-main a:focus,
+.navbar-main a:hover,
+.navbar-main li[aria-current] a:focus,
+.navbar-main li[aria-current] a:hover {
+    color: var(--background-color);
+    background-color: var(--accent1-color);
+}
+/*     submenu navigation links      */
+.navbar-main ul ul {
+    visibility: hidden;
+    height: 0;
+    z-index: 1000;
+}
+
+.navbar-main ul ul ul{
+    position: absolute;
+    right: 2.5em;
+    top: 0.5em;
+}
+.navbar-main ul ul ul li {
+    width: 30em;
+}
+
+.navbar-main ul li {
+    display: block;
+}
+
+/*     Show the submenu on hover, but not when nav li button:hover    */
+.navbar-main li:hover > ul {
+    visibility: visible;
+    height: auto;
+}
+.navbar-main li button:hover ~ ul {
+    visibility: hidden;
+    height: 0;
+}
+.navbar-main li button:hover ~ ul.visible,
+.visible  {
+    visibility: visible;
+    height: auto;
+}
+
+[aria-expanded] {
     position: absolute;
     right: 0.5em;
     top: 0.3em;
+    width:2em;
+    height:2em;
     padding: 0;
     color: var(--accent1-color);
-    background: var(--background-color);
-    outline: transparent;
+    background: var(--background-color); /* damit er bei nav a:focus noch sichtbar ist */
+    outline:transparent;
     border: thin solid var(--background-color);
-    border-radius: 0 0.5em 0.5em 0;
- }
-.dropbtn svg {
+    border-radius: 0.3em;
+
+}
+
+[aria-expanded] svg {
     pointer-events: none;
     fill: var(--accent1-color);
-    border-radius: 0.2em;
-    z-index: 10;
+    border-radius: 0.3em;
+    z-index:10;
 }
-.navbar-main li:hover .dropbtn svg {
+
+.navbar-main li:hover [aria-expanded] svg {
     background: var(--accent1-color);
     fill: var(--background-color);
 }
 
-.navbar-main li:focus .dropbtn svg {
+.navbar-main li:focus [aria-expanded] svg {
     background: var(--background-color);
     fill: var(--accent1-color);
 }
 
-/*     dropdown navigation links      */
-.navbar-main ul ul {
-    visibility: hidden;
-    z-index: 1000;
-    height: 0;
+[aria-expanded]:focus svg,
+[aria-expanded]:hover svg{
+    fill: var(--background-color);
+    background: var(--accent1-color);
 
 }
-/*     Show the dropdown on hover, focus     */
-/*.navbar-main li:hover ul {
-  visibility: visible;
-  height: auto;
+
+[aria-expanded="true"] svg {
+    transform: translate(0,0) rotate(90deg);
 }
-nav li:focus-within > ul,*/
-.visible {
-    visibility: visible;
-    height: auto;
+
+.visually-hidden,
+[visually-hidden="true"] {
+    position: absolute !important;
+    /*clip-path: rect(1px, 1px, 1px, 1px) !important;*/
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
 }
 
 /* Dropdown navbar END */
@@ -378,6 +428,8 @@ nav li:focus-within > ul,*/
     }
     .navbar-main li {
         flex: 1;
+        flex-basis: auto;
+        flex-shrink: 0;
     }
     /* Dropdown navbar END */
 

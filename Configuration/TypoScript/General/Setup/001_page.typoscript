@@ -60,7 +60,4 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
-    includeJS {
-        jquery = EXT:rlt3sitepackage/Resources/Public/JavaScript/jQuery/jquery-3.7.1.min.js
-    }
 }

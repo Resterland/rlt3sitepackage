@@ -22,6 +22,7 @@
         </f:if>
         <f:if condition="{content.main.records}">
         <main id="content-main">
+            <simple-greeting name="World"></simple-greeting>
             <f:for each="{content.main.records}" as="record">
                 <f:cObject
                     typoscriptObjectPath="{record.mainType}"
