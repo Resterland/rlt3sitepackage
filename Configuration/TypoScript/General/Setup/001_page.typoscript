@@ -60,4 +60,8 @@ page {
         google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
     }
+    #includeJSFooter {
+     #   litelement = EXT:rlt3sitepackage/Resources/Public/JavaScript/my-element.js
+     #   litelement.type = module
+    #}
 }
