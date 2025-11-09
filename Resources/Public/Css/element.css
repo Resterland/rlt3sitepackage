@@ -1,9 +1,0 @@
-:host {
-    display: contents;
-}
-
-:host(:not([loaded], :focus-within)) {
-    slot[name="dropdown"] {
-        display: none;
-    }
-}
