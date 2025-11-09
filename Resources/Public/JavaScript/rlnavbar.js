@@ -1,7 +1,3 @@
-
-if (HTMLScriptElement.supports?.("module")) {
-    console.log("Browser supports module.");
-}
 document.addEventListener("DOMContentLoaded", function () {
     dropdownExtension();
 

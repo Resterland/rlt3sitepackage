@@ -61,7 +61,7 @@ page {
         google-site-verification = {$page.meta.google-site-verification}
     }
     #includeJSFooter {
-     #   litelement = EXT:rlt3sitepackage/Resources/Public/JavaScript/my-element.js
+     #   litelement = EXT:rlt3sitepackage/Resources/Public/JavaScript/my-rldropdown.js
      #   litelement.type = module
     #}
 }

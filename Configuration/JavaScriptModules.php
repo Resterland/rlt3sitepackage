@@ -16,6 +16,7 @@
 return [
     'dependencies' => ['core'],
     'imports' => [
-        '@resterland/rlt3sitepackage' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/',
+        'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
+        'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
     ],
 ];
