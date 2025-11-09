@@ -122,3 +122,8 @@ fabric.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+/Resources/Public/Icons/Backups/
+/Resources/Public/JavaScript/Backups/
+/Resources/Private/Backups/
+/Configuration/Backups/
+/Resources/Public/Css/Backups/
