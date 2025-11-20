@@ -1,138 +1,96 @@
-<nav class="navbar-main" role="navigation" id="navbar-main">
-    <button class="hamburger" type="button">
-        <svg
-            class="icon"
-            height="20"
-            width="20"
-            viewBox="0 0 24 24"
-        >
-            <use href="#hamburger"></use>
-        </svg>
-    </button>
-    <ul class="main-nav-list">
-        <f:for each="{mainMenu}" as="menuItem">
-            <li class="main-nav-item" tabindex="0">
-                <f:if condition="{menuItem.hasSubpages}">
-                    <!-- Item has children -->
-                    <f:then>
-                        <div class="subnav-title">
-                            <a
-                                class="subtitle nav-link {f:if(condition: menuItem.current, then: 'active')}"
-                                href="{menuItem.link}"
-                                target="{menuItem.target}"
-                                title="{menuItem.title}"
-                            >
-                                {menuItem.title}
-                            </a>
-                            <button
-                                class="dropbtn"
-                                type="button"
-                                aria-expanded="false"
-                            >
-                            <span class="visually-hidden">
-                                <f:translate key="opensubmenu1" extensionName="rlt3sitepackage" />
-                            </span>
-                                <svg
-                                    class="icon"
-                                    viewBox="0 0 20 20">
-                                    <use href="#chevron-down"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="dropdown-list">
-                            <f:for each="{menuItem.children}" as="menuItemLevel2">
-                                <li class="dropdown-item" tabindex="0">
-                                    <f:if condition="{menuItemLevel2.hasSubpages}">
-                                        <f:then>
-                                            <!-- Sub-Item has children -->
-                                            <div class="subnav-title">
-                                                <a
-                                                    class="sitetitle nav-link {f:if(condition: menuItemLevel2.current, then: 'active')}"
-                                                    href="{menuItemLevel2.link}"
-                                                    target="{menuItemLevel2.target}"
-                                                    title="{menuItemLevel2.title}"
-                                                >
-                                                    {menuItemLevel2.title}
-                                                </a>
-                                                <button class="dropbtn"
-                                                        aria-expanded="false"
-                                                        type="button" name="dropdown">
-                                                <span class="visually-hidden">
-                                                    {f:translate(key:'opensubmenu2',extensionName:'rlt3sitepackage')}
-                                                </span>
-                                                    <svg
-                                                        class="icon"
-                                                        height="24"
-                                                        width="24"
-                                                        viewBox="0 0 24 24">
-                                                        <use href="#chevron-down"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <ul class="dropdown-list">
-                                                <f:for each="{menuItemLevel2.children}" as="menuItemLevel3">
-                                                    <li tabindex="0" class="dropdown-item">
-                                                        <a
-                                                            class="nav-link {f:if(condition: menuItemLevel3.current, then: 'active')}"
-                                                            href="{menuItemLevel3.link}"
-                                                            target="{menuItemLevel3.target}"
-                                                            title="{menuItemLevel3.title}"
-                                                        >
-                                                            {menuItemLevel3.title}
-                                                        </a>
-                                                    </li>
-                                                </f:for>
-                                            </ul>
-                                        </f:then>
-                                        <f:else>
-                                            <!-- Sub-Item has no children -->
+<nav class="navigation" data-scheme="" data-open="false">
+    <button class="navigation__button" type="button" aria-expanded="false" aria-controls="navigation__popup" aria-label="Toggle navigation"></button>
+    <div class="navigation__popup" id="navigation__popup">
+        <div class="navigation__menu">
+            <nav class="menu">
+                <f:for each="{mainMenu}" as="menuItem">
+                    <div class="menu__tab" data-section="{menuItem.title}">
+                        <f:if condition="{menuItem.hasSubpages}">
+                            <!-- Item has children -->
+                            <f:then>
+                                <mdn-dropdown loaded="">
+                                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
+                                        <span class="menu__tab-label">{menuItem.title}</span>
+                                    </button>
+                                    <div class="menu__panel" slot="dropdown" id="">
+                                        <p class="menu__panel-title">
                                             <a
-                                                class="nav-link {f:if(condition: menuItemLevel2.current, then: 'active')}"
-                                                href="{menuItemLevel2.link}"
-                                                target="{menuItemLevel2.target}"
-                                                title="{menuItemLevel2.title}"
-                                            >
-                                                {menuItemLevel2.title}
-                                            </a>
-                                        </f:else>
-                                    </f:if>
-                                </li>
-                            </f:for>
-                        </ul>
-                    </f:then>
-                    <f:else>
-                        <!-- Item has no children -->
-                        <a
-                            class="nav-link {f:if(condition: menuItem.current, then: 'active')}"
-                            href="{menuItem.link}"
-                            target="{menuItem.target}"
-                            title="{menuItem.title}"
-                        >
-                            {menuItem.title}
-                        </a>
-                    </f:else>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
-
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        id="Layer_1" x="0" y="0"
-        width="24" height="24"
-        xml:space="preserve"
-        class="dont-render-dawg">
-
-        <defs>
-            <path
-                id="hamburger"
-                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-            <path
-                id="chevron-down"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-            <path
-                id="chevron-right"
-                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-        </defs>
-    </svg>
+                                                href="{menuItem.link}"
+                                                target="{menuItem.target}"
+                                                title="{menuItem.title}"
+                                                data-glean-id="menu_click_menu: html -&gt; {menuItem.link}">
+                                                {menuItem.title}</a>
+                                        </p>
+                                        <ul>
+                                            <f:for each="{menuItem.children}" as="menuItemLevel2">
+                                                <li>
+                                                    <f:if condition="{menuItemLevel2.hasSubpages}">
+                                                        <!-- Subitem has children -->
+                                                        <f:then>
+                                                            <mdn-dropdown loaded="">
+                                                                <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
+                                                                    <span class="menu__tab-label">{menuItemLevel2.title}</span>
+                                                                </button>
+                                                                <div class="menu__panel" slot="dropdown" id="">
+                                                                    <p class="menu__panel-title">
+                                                                        <a
+                                                                            href="{menuItemLevel2.link}"
+                                                                            target="{menuItemLevel2.target}"
+                                                                            title="{menuItemLevel2.title}"
+                                                                            data-glean-id="menu_click_menu: html -&gt; {menuItemLevel2.link}">
+                                                                            {menuItemLevel2.title}</a>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <f:for each="{menuItemLevel2.children}"
+                                                                               as="menuItemLevel3">
+                                                                            <li>
+                                                                                <a
+                                                                                    class="menu__tab-link"
+                                                                                    href="{menuItemLevel3.link}"
+                                                                                    target="{menuItemLevel3.target}"
+                                                                                    title="{menuItemLevel3.title}"
+                                                                                    data-glean-id="menu_click_submenu: html -&gt; {menuItemLevel3.link}">{menuItemLevel3.title}</a>
+                                                                            </li>
+                                                                        </f:for>
+                                                                    </ul>
+                                                                </div>
+                                                            </mdn-dropdown>
+                                                        </f:then>
+                                                        <f:else>
+                                                            <!-- Subitem has no children -->
+                                                            <a
+                                                                class="menu__tab-link"
+                                                                href="{menuItemLevel2.link}"
+                                                                target="{menuItemLevel2.target}"
+                                                                title="{menuItemLevel2.title}"
+                                                                data-glean-id="menu_click_link: top-level -&gt; {menuItemLevel2.link}"
+                                                            >
+                                                                {menuItemLevel2.title}
+                                                            </a>
+                                                        </f:else>
+                                                    </f:if>
+                                                </li>
+                                            </f:for>
+                                        </ul>
+                                    </div>
+                                </mdn-dropdown>
+                            </f:then>
+                            <f:else>
+                                <!-- Item has no children -->
+                                <a
+                                    class="menu__tab-link"
+                                    href="{menuItem.link}"
+                                    target="{menuItem.target}"
+                                    title="{menuItem.title}"
+                                    data-glean-id="menu_click_link: top-level -&gt; {menuItem.link}"
+                                >
+                                    {menuItem.title}
+                                </a>
+                            </f:else>
+                        </f:if>
+                    </div>
+                </f:for>
+            </nav>
+        </div>
+    </div>
 </nav>
