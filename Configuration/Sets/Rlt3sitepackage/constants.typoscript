@@ -7,4 +7,4 @@
 //
 // Project constants
 // ------------------------------------------
-@import './TypoScript/Constants/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Constants/*.typoscript'

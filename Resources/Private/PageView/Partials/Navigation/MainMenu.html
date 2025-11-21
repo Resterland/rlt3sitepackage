@@ -1,4 +1,4 @@
-<nav class="navigation" data-scheme="" data-open="false">
+
     <button class="navigation__button" type="button" aria-expanded="false" aria-controls="navigation__popup" aria-label="Toggle navigation"></button>
     <div class="navigation__popup" id="navigation__popup">
         <div class="navigation__menu">
@@ -8,7 +8,7 @@
                         <f:if condition="{menuItem.hasSubpages}">
                             <!-- Item has children -->
                             <f:then>
-                                <mdn-dropdown loaded="">
+                                <rl-dropdown loaded="">
                                     <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
                                         <span class="menu__tab-label">{menuItem.title}</span>
                                     </button>
@@ -27,7 +27,7 @@
                                                     <f:if condition="{menuItemLevel2.hasSubpages}">
                                                         <!-- Subitem has children -->
                                                         <f:then>
-                                                            <mdn-dropdown loaded="">
+                                                            <rl-dropdown loaded="">
                                                                 <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
                                                                     <span class="menu__tab-label">{menuItemLevel2.title}</span>
                                                                 </button>
@@ -54,7 +54,7 @@
                                                                         </f:for>
                                                                     </ul>
                                                                 </div>
-                                                            </mdn-dropdown>
+                                                            </rl-dropdown>
                                                         </f:then>
                                                         <f:else>
                                                             <!-- Subitem has no children -->
@@ -73,7 +73,7 @@
                                             </f:for>
                                         </ul>
                                     </div>
-                                </mdn-dropdown>
+                                </rl-dropdown>
                             </f:then>
                             <f:else>
                                 <!-- Item has no children -->
@@ -92,5 +92,7 @@
                 </f:for>
             </nav>
         </div>
+        <f:if condition="{settings.page.header.search.enable}">
+            <f:render partial="Structure/Search" arguments="{_all}"/>
+        </f:if>
     </div>
-</nav>

@@ -1,11 +1,11 @@
-<div class="sticky-header">
-    <header class="header-wrapper">
-        <a id="skip-link" class="visually-hidden" href="#content-main">
-            {f:translate(key:'skip-link',extensionName:'rlt3sitepackage')}
-        </a>
-        <f:comment><!-- <h2>Data in variable headerMenu</h2>
+<header class="page-layout__header">
+    <a id="skip-link" class="visually-hidden" href="#content-main">
+        {f:translate(key:'skip-link',extensionName:'rlt3sitepackage')}
+    </a>
+    <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
-        <div class="brand">
+    <nav class="navigation" data-scheme="" data-open="false">
+        <div class="navigation__logo">
             <h1 class="site-name">
                 <f:if condition="{settings.page.header.logo.enable}">
                     <f:render
@@ -15,11 +15,10 @@
                 {site.configuration.websiteTitle} - {page.pageRecord.title}
             </h1>
         </div>
-        <f:if condition="{settings.page.header.search.enable}">
-            <f:render partial="Structure/Search" arguments="{_all}"/>
-        </f:if>
+        <f:render partial="Navigation/MainMenu" arguments="{_all}"/>
         <f:if condition="{settings.page.header.languagenavigation.enable}">
             <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
         </f:if>
-    </header>
-</div>
+    </nav>
+    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+</header>

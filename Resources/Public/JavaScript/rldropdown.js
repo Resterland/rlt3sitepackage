@@ -7,16 +7,16 @@ import { randomIdString } from "utils";
  * The element in the `dropdown` slot is hidden by default,
  * and shown when the element in the `button` slot is clicked.
  * The element in the `dropdown` slot is also hidden when the user clicks
- * outside the `mdn-dropdown` element. Automatically sets `aria-` attributes.
+ * outside the `rl-dropdown` element. Automatically sets `aria-` attributes.
  *
- * @element mdn-dropdown
+ * @element rl-dropdown
  *
  * @attr {boolean} open - Whether the dropdown is open or not.
  *
  * @slot button - The element used to toggle the dropdown.
  * @slot dropdown - The element to be shown/hidden in the dropdown.
  */
-export class MDNDropdown extends LitElement {
+export class RLDropdown extends LitElement {
     static styles = css`
     :host {
         display: contents;
@@ -99,8 +99,8 @@ export class MDNDropdown extends LitElement {
 
     render() {
         return html`
-      <slot name="button" @click=${this._toggleDropDown}></slot>
-      <slot name="dropdown" ?hidden=${!this.open && this.loaded}></slot>
+          <slot name="button" @click=${this._toggleDropDown}></slot>
+          <slot name="dropdown" ?hidden=${!this.open && this.loaded}></slot>
     `;
     }
 
@@ -119,4 +119,4 @@ export class MDNDropdown extends LitElement {
     }
 }
 
-customElements.define("mdn-dropdown", MDNDropdown);
+customElements.define("rl-dropdown", RLDropdown);

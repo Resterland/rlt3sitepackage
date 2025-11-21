@@ -6,6 +6,9 @@
 <f:asset.script identifier="rldropdown" type="module"
                 src="EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js" />
 
+<f:asset.script identifier="hook" type="module"
+                src="EXT:rlt3sitepackage/Resources/Public/JavaScript/hook.js" />
+
 <f:asset.script identifier="mainjs" type="module"
                 src="EXT:rlt3sitepackage/Resources/Public/JavaScript/main.js" />
 
@@ -17,9 +20,6 @@
              priority="1" />
 <f:spaceless>
     <f:render partial="Header/Header" arguments="{_all}"/>
-    <f:render partial="Navigation/MainMenu" arguments="{_all}"/>
-
-    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
 
     <f:render section="MainContent"/>
 

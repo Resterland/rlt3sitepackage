@@ -19,5 +19,7 @@ options {
     sites {
         # These sets are already included, therefore hide them in the site configuration set editor
         hideSets := addToList(typo3/fluid-styled-content)
+      # These sets are already included, therefore hide them in the site configuration set editor
+      hideSets := addToList(typo3/indexed-search)
     }
 }

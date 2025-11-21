@@ -3,4 +3,3 @@
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Setup/*.typoscript'
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/DataProcessors/*.typoscript'
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/CustomContentElements/*.typoscript'
-@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Extensions/IndexedSearch/Setup/*.typoscript'
