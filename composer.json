@@ -23,7 +23,8 @@
     "require": {
         "typo3/cms-core": "^13.4",
         "typo3/cms-rte-ckeditor": "^13.4",
-        "typo3/cms-fluid-styled-content": "^13.4"
+        "typo3/cms-fluid-styled-content": "^13.4",
+		"apache-solr-for-typo3/solr": "^13.0"
     },
     "suggest": {
     },
@@ -41,5 +42,11 @@
         "typo3/cms": {
             "extension-key": "rlt3sitepackage"
         }
-    }
+    },
+	"config": {
+		"allow-plugins": {
+			"typo3/cms-*": true,
+			"apache-solr-for-typo3/solr": true
+		}
+	}
 }
