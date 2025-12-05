@@ -1,17 +1,22 @@
-<f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable} && {page.id} !={rootPage}">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ul>
-                <f:for each="{breadcrumb}" as="item">
-                    <f:if condition="{item.current}">
-                        <f:then>
-                            <li><span aria-current="page">{item.title}</span></li>
-                        </f:then>
-                        <f:else>
-                            <li><a href="{item.link}" title="{item.title}">{item.title}</a>
-                            </li>
-                        </f:else>
-                    </f:if>
-                </f:for>
+<f:if condition="{breadcrumb} && {settings.page.themes.breadcrumb.enable}">
+    <div class="breadcrumb-bar" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <f:for each="{breadcrumb}" as="item">
+                <f:if condition="{item.current}">
+                    <f:then>
+                        <li><span aria-current="page">{item.title}</span></li>
+                    </f:then>
+                    <f:else>
+                        <li><a href="{item.link}" title="{item.title}">{item.title}</a>
+                        </li>
+                    </f:else>
+                </f:if>
+            </f:for>
+        </ol>
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
+            <ul class="lang-menu__header">
+                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
             </ul>
-        </nav>
+        </f:if>
+    </div>
 </f:if>

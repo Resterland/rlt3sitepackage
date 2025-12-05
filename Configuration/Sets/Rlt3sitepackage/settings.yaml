@@ -15,3 +15,4 @@ styles:
         lightboxEnabled: true
         lightboxCssClass: 'lightbox'
         lightboxRelAttribute: 'lightbox'
+### EXT:solr overrides

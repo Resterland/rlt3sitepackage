@@ -1,0 +1,2 @@
+@import 'Setup/setup.typoscript'
+@import 'Setup/lib.searchbox.typoscript'

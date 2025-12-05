@@ -4,7 +4,9 @@
             <f:render partial="Navigation/FooterMenu.html" arguments="{_all}"/>
         </nav>
         <f:if condition="{settings.page.footer.languagenavigation.enable}">
-            <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+            <ul class="lang-menu__footer">
+                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+            </ul>
         </f:if>
     </f:if>
 

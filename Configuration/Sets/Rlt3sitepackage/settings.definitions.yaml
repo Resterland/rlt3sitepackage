@@ -175,12 +175,37 @@ settings:
     type: string
     default: 'auto'
 
-  # Header Indexed Search Form
+  # Header Solr Search Form
   page.header.search.enable:
     label: 'Enable Search Form'
     category: Rlt3sitepackage.header.search
     type: bool
     default: false
+
+  plugin.tx_solr.search.targetPage:
+    category: Rlt3sitepackage.header.search
+    label: 'Search Results Target Page'
+    description: 'The uid number of the page, where the search results appear. Default is set to 0 (zero). Which means the results appear on the same page.'
+    type: int
+    default: 0
+
+  plugin.solr.templateRootPath:
+    category: Rlt3sitepackage.header.search
+    label: 'Apache Solr Template Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Templates/'
+
+  plugin.solr.partialRootPath:
+    category: Rlt3sitepackage.header.search
+    label: 'Apache Solr Partial Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Partials/'
+
+  plugin.solr.layoutRootPath:
+    category: Rlt3sitepackage.header.search
+    label: 'Apache Solr Layout Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Layouts/'
 
   ### Footer settings
   page.footer.navigation.enable:

@@ -35,7 +35,7 @@ config {
 
     # Display the Admin Panel at the bottom of pages to logged in backend users
     admPanel = {$config.admPanel}
-    debug = 0
+    debug = 1
 
     // Compression and Concatenation of CSS and JS Files
     compressJs = {$config.compressJs}

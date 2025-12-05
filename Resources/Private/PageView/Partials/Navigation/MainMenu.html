@@ -1,98 +1,98 @@
 
-    <button class="navigation__button" type="button" aria-expanded="false" aria-controls="navigation__popup" aria-label="Toggle navigation"></button>
-    <div class="navigation__popup" id="navigation__popup">
-        <div class="navigation__menu">
-            <nav class="menu">
-                <f:for each="{mainMenu}" as="menuItem">
-                    <div class="menu__tab" data-section="{menuItem.title}">
-                        <f:if condition="{menuItem.hasSubpages}">
-                            <!-- Item has children -->
-                            <f:then>
-                                <rl-dropdown loaded="">
-                                    <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
-                                        <span class="menu__tab-label">{menuItem.title}</span>
-                                    </button>
-                                    <div class="menu__panel" slot="dropdown" id="">
-                                        <p class="menu__panel-title">
-                                            <a
-                                                href="{menuItem.link}"
-                                                target="{menuItem.target}"
-                                                title="{menuItem.title}"
-                                                data-glean-id="menu_click_menu: html -&gt; {menuItem.link}">
-                                                {menuItem.title}</a>
-                                        </p>
-                                        <ul>
-                                            <f:for each="{menuItem.children}" as="menuItemLevel2">
-                                                <li>
-                                                    <f:if condition="{menuItemLevel2.hasSubpages}">
-                                                        <!-- Subitem has children -->
-                                                        <f:then>
-                                                            <rl-dropdown loaded="">
-                                                                <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
-                                                                    <span class="menu__tab-label">{menuItemLevel2.title}</span>
-                                                                </button>
-                                                                <div class="menu__panel" slot="dropdown" id="">
-                                                                    <p class="menu__panel-title">
-                                                                        <a
-                                                                            href="{menuItemLevel2.link}"
-                                                                            target="{menuItemLevel2.target}"
-                                                                            title="{menuItemLevel2.title}"
-                                                                            data-glean-id="menu_click_menu: html -&gt; {menuItemLevel2.link}">
-                                                                            {menuItemLevel2.title}</a>
-                                                                    </p>
-                                                                    <ul>
-                                                                        <f:for each="{menuItemLevel2.children}"
-                                                                               as="menuItemLevel3">
-                                                                            <li>
-                                                                                <a
-                                                                                    class="menu__tab-link"
-                                                                                    href="{menuItemLevel3.link}"
-                                                                                    target="{menuItemLevel3.target}"
-                                                                                    title="{menuItemLevel3.title}"
-                                                                                    data-glean-id="menu_click_submenu: html -&gt; {menuItemLevel3.link}">{menuItemLevel3.title}</a>
-                                                                            </li>
-                                                                        </f:for>
-                                                                    </ul>
-                                                                </div>
-                                                            </rl-dropdown>
-                                                        </f:then>
-                                                        <f:else>
-                                                            <!-- Subitem has no children -->
-                                                            <a
-                                                                class="menu__tab-link"
-                                                                href="{menuItemLevel2.link}"
-                                                                target="{menuItemLevel2.target}"
-                                                                title="{menuItemLevel2.title}"
-                                                                data-glean-id="menu_click_link: top-level -&gt; {menuItemLevel2.link}"
-                                                            >
-                                                                {menuItemLevel2.title}
-                                                            </a>
-                                                        </f:else>
-                                                    </f:if>
-                                                </li>
-                                            </f:for>
-                                        </ul>
-                                    </div>
-                                </rl-dropdown>
-                            </f:then>
-                            <f:else>
-                                <!-- Item has no children -->
-                                <a
-                                    class="menu__tab-link"
-                                    href="{menuItem.link}"
-                                    target="{menuItem.target}"
-                                    title="{menuItem.title}"
-                                    data-glean-id="menu_click_link: top-level -&gt; {menuItem.link}"
-                                >
-                                    {menuItem.title}
-                                </a>
-                            </f:else>
-                        </f:if>
-                    </div>
-                </f:for>
-            </nav>
-        </div>
-        <f:if condition="{settings.page.header.search.enable}">
-            <f:render partial="Structure/Search" arguments="{_all}"/>
-        </f:if>
+<button class="navigation__button" type="button" aria-expanded="false" aria-controls="navigation__popup" aria-label="Toggle navigation"></button>
+<div class="navigation__popup" id="navigation__popup">
+    <div class="navigation__menu">
+        <nav class="menu">
+            <f:for each="{mainMenu}" as="menuItem">
+                <div class="menu__tab" data-section="{menuItem.title}">
+                    <f:if condition="{menuItem.hasSubpages}">
+                        <!-- Item has children -->
+                        <f:then>
+                            <rl-dropdown loaded="">
+                                <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
+                                    <span class="menu__tab-label">{menuItem.title}</span>
+                                </button>
+                                <div class="menu__panel" slot="dropdown" id="">
+                                    <p class="menu__panel-title">
+                                        <a
+                                            href="{menuItem.link}"
+                                            target="{menuItem.target}"
+                                            title="{menuItem.title}"
+                                            data-glean-id="menu_click_menu: html -&gt; {menuItem.link}">
+                                            {menuItem.title}</a>
+                                    </p>
+                                    <ul>
+                                        <f:for each="{menuItem.children}" as="menuItemLevel2">
+                                            <li>
+                                                <f:if condition="{menuItemLevel2.hasSubpages}">
+                                                    <!-- Subitem has children -->
+                                                    <f:then>
+                                                        <rl-dropdown loaded="">
+                                                            <button class="menu__tab-button" type="button" slot="button" aria-expanded="false" aria-controls="">
+                                                                <span class="menu__tab-label">{menuItemLevel2.title}</span>
+                                                            </button>
+                                                            <div class="menu__panel" slot="dropdown" id="">
+                                                                <p class="menu__panel-title">
+                                                                    <a
+                                                                        href="{menuItemLevel2.link}"
+                                                                        target="{menuItemLevel2.target}"
+                                                                        title="{menuItemLevel2.title}"
+                                                                        data-glean-id="menu_click_menu: html -&gt; {menuItemLevel2.link}">
+                                                                        {menuItemLevel2.title}</a>
+                                                                </p>
+                                                                <ul>
+                                                                    <f:for each="{menuItemLevel2.children}"
+                                                                           as="menuItemLevel3">
+                                                                        <li>
+                                                                            <a
+                                                                                class="menu__tab-link {f:if(condition: menuItemLevel3.current, then:'current')}"
+                                                                                href="{menuItemLevel3.link}"
+                                                                                target="{menuItemLevel3.target}"
+                                                                                title="{menuItemLevel3.title}"
+                                                                                data-glean-id="menu_click_submenu: html -&gt; {menuItemLevel3.link}">{menuItemLevel3.title}</a>
+                                                                        </li>
+                                                                    </f:for>
+                                                                </ul>
+                                                            </div>
+                                                        </rl-dropdown>
+                                                    </f:then>
+                                                    <f:else>
+                                                        <!-- Subitem has no children -->
+                                                        <a
+                                                            class="menu__tab-link {f:if(condition: menuItemLevel2.current, then:'current')}"
+                                                            href="{menuItemLevel2.link}"
+                                                            target="{menuItemLevel2.target}"
+                                                            title="{menuItemLevel2.title}"
+                                                            data-glean-id="menu_click_link: top-level -&gt; {menuItemLevel2.link}"
+                                                        >
+                                                            {menuItemLevel2.title}
+                                                        </a>
+                                                    </f:else>
+                                                </f:if>
+                                            </li>
+                                        </f:for>
+                                    </ul>
+                                </div>
+                            </rl-dropdown>
+                        </f:then>
+                        <f:else>
+                            <!-- Item has no children -->
+                            <a
+                                class="menu__tab-link {f:if(condition: menuItem.current, then:'current')}"
+                                href="{menuItem.link}"
+                                target="{menuItem.target}"
+                                title="{menuItem.title}"
+                                data-glean-id="menu_click_link: top-level -&gt; {menuItem.link}"
+                            >
+                                {menuItem.title}
+                            </a>
+                        </f:else>
+                    </f:if>
+                </div>
+            </f:for>
+        </nav>
     </div>
+    <f:if condition="{settings.page.header.search.enable}">
+        <f:render partial="Structure/Search" arguments="{_all}"/>
+    </f:if>
+</div>

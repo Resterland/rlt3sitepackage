@@ -1,23 +1,18 @@
-<f:if condition="{languagemenu}">
-    <f:then>
-        <ul class="lang-menu">
-            <f:for each="{languagemenu}" as="item">
-                <li
-                    class="lang-menu-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}" lang="">
-                    <f:if condition="{item.available}">
-                        <f:then>
-                            <a class="nav-link"
-                               href="{item.link}" hreflang="{item.hreflang}"
-                               title="{item.title}">
-                                <bdi>{item.navigationTitle}</bdi>
-                            </a>
-                        </f:then>
-                        <f:else>
-                            <span class="nav-link-text">&nbsp;</span>
-                        </f:else>
-                    </f:if>
-                </li>
-            </f:for>
-        </ul>
-    </f:then>
-</f:if>
+
+<f:for each="{languagemenu}" as="item">
+    <li
+        class="lang-menu-item {f:if(condition: item.available, else: 'text-muted')}" lang="{item.hreflang}">
+        <f:if condition="{item.available}">
+            <f:then>
+                <a class="nav-link {f:if(condition: item.active, then: 'active')}"
+                   href="{item.link}" hreflang="{item.hreflang}"
+                   title="{item.title}">
+                    <bdi>{item.navigationTitle}</bdi>
+                </a>
+            </f:then>
+            <f:else>
+                <span class="nav-link-text">&nbsp;</span>
+            </f:else>
+        </f:if>
+    </li>
+</f:for>

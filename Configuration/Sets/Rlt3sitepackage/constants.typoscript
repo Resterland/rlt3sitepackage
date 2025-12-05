@@ -8,3 +8,4 @@
 // Project constants
 // ------------------------------------------
 @import 'EXT:rlt3sitepackage/Configuration/TypoScript/Constants/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Extensions/Solr/Constants/constants.typoscript'
