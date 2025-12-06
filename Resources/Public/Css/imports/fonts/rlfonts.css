@@ -1,0 +1,11 @@
+:root {
+    /* font styles */
+    --rl-font-sans-1: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --rl-font-sans-2: "Nimbus Sans", "Liberation Sans", "DejaVu Sans", Helvetica, Arial, sans-serif;
+    --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
+    --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --rl-font-size: max(1em, 1vw);
+    --rl-font-color: var(--rl-blue-dark);
+    --rl-font-p-first: var(--rl-maroon-dark);
+    --rl-line-height: 1.5;
+}
