@@ -1,21 +1,21 @@
 @charset "UTF-8";
 /* Color */
 
-@import url("imports/colors/area.css");
-@import url("imports/colors/background.css");
-@import url("imports/colors/border.css");
-@import url("imports/colors/link.css");
-@import url("imports/colors/scrollbar.css");
-@import url("imports/colors/text.css");
+@import url("imports/colors/rlarea.css");
+@import url("imports/colors/rlbackground.css");
+@import url("imports/colors/rlborder.css");
+@import url("imports/colors/rllink.css");
+@import url("imports/colors/rlscrollbar.css");
+@import url("imports/colors/rltext.css");
 @import url("imports/colors/rlcolors.css");
 /* Fonts */
 @import url("imports/fonts/rlfonts.css");
 /* Basic Color */
-@import url("imports/colors/basic.css");
+@import url("imports/colors/rlbasic.css");
 /* Gray */
-@import url("imports/colors/gray.css");
+@import url("imports/colors/rlgray.css");
 /* Tinted */
-@import url("imports/colors/tinted.css");
+@import url("imports/colors/rltinted.css");
 /* server */
 @import url("imports/server.css");
 /* global */
@@ -23,6 +23,20 @@
 /* Font size */
 @import url("imports/fonts/fontsize.css");
 
+:root {
+    color-scheme: light dark;
+}
+[data-theme=light] {
+    color-scheme: light;
+}
+
+[data-theme=dark] {
+    color-scheme: dark;
+}
+
+[data-theme=coffee] {
+    color-scheme: coffee;
+}
 /*
 ### styling responsive
 ###  - with css grid and flexbox
@@ -617,15 +631,4 @@ footer {
     .input-group {
         align-items: center;
     }
-}
-[data-theme=light] {
-    color-scheme: light;
-}
-
-[data-theme=dark] {
-    color-scheme: dark;
-}
-
-[data-theme=coffee] {
-    color-scheme: coffee;
 }

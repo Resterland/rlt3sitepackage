@@ -1,0 +1,11 @@
+/* Gray */
+:root {
+    --rl-color-gray: hsl(0 0% 50%);
+    --rl-color-gray-90: hsl(0 0% 90%);
+    --rl-color-gray-80: hsl(0 0% 80%);
+    --rl-color-gray-60: hsl(0 0% 60%);
+    --rl-color-gray-40: hsl(0 0% 40%);
+    --rl-color-gray-20: hsl(0 0% 20%);
+    --rl-color-gray-10: hsl(0 0% 10%);
+    --rl-color-gray-05: hsl(0 0% 5%);
+}

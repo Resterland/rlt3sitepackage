@@ -1,0 +1,84 @@
+/* resterland colors */
+:root {
+    --rl-color-aqua: hsl(180 100% 50%);
+    --rl-color-aqua-90: hsl(180 100% 90%);
+    --rl-color-aqua-75: hsl(180 100% 75%);
+    --rl-color-aqua-40: hsl(180 100% 40%);
+    --rl-color-aqua-25: hsl(180 100% 25%);
+    --rl-color-aqua-15: hsl(180 100% 15%);
+
+    --rl-color-chartreuse: hsl(90 100% 50%);
+    --rl-color-chartreuse-90: hsl(90 100% 90%);
+    --rl-color-chartreuse-75: hsl(90 100% 75%);
+    --rl-color-chartreuse-40: hsl(90 100% 40%);
+    --rl-color-chartreuse-25: hsl(90 100% 25%);
+    --rl-color-chartreuse-15: hsl(90 100% 15%);
+
+    --rl-color-coffee: hsl(25 34% 50%);
+    --rl-color-coffee-90: hsl(25 34% 90%);
+    --rl-color-coffee-75: hsl(25 34% 75%);
+    --rl-color-coffee-40: hsl(25 34% 40%);
+    --rl-color-coffee-25: hsl(25 34% 25%);
+    --rl-color-coffee-15: hsl(25 34% 15%);
+
+    --rl-color-blue: hsl(217 100% 50%);
+    --rl-color-blue-90: hsl(217 100% 90%);
+    --rl-color-blue-75: hsl(217 100% 75%);
+    --rl-color-blue-40: hsl(217 100% 40%);
+    --rl-color-blue-25: hsl(217 100% 25%);
+    --rl-color-blue-15: hsl(217 100% 15%);
+
+    --rl-color-fuchsia: hsl(300 100% 50%);
+    --rl-color-fuchsia-90: hsl(300 100% 90%);
+    --rl-color-fuchsia-75: hsl(300 100% 75%);
+    --rl-color-fuchsia-40: hsl(300 100% 40%);
+    --rl-color-fuchsia-25: hsl(300 100% 25%);
+    --rl-color-fuchsia-15: hsl(300 100% 15%);
+
+    --rl-color-gold: hsl(51 100% 50%);
+    --rl-color-gold-90: hsl(51 100% 90%);
+    --rl-color-gold-75: hsl(51 100% 75%);
+    --rl-color-gold-40: hsl(51 100% 40%);
+    --rl-color-gold-25: hsl(51 100% 25%);
+    --rl-color-gold-15: hsl(51 100% 15%);
+
+    --rl-color-green: hsl(145deg 90% 30%);
+    --rl-color-green-90: hsl(145deg 40% 94%);
+    --rl-color-green-80: hsl(145deg 75% 68%);
+    --rl-color-green-20: hsl(145deg 88% 19%);
+    --rl-color-green-10: hsl(145deg 60% 12%);
+
+    --rl-color-lime: hsl(120 100% 50%);
+    --rl-color-lime-90: hsl(120 100% 90%);
+    --rl-color-lime-75: hsl(120 100% 75%);
+    --rl-color-lime-40: hsl(120 100% 40%);
+    --rl-color-lime-25: hsl(120 100% 25%);
+    --rl-color-lime-15: hsl(120 100% 15%);
+
+    --rl-color-orange: hsl(39 100% 50%);
+    --rl-color-orange-90: hsl(39 100% 90%);
+    --rl-color-orange-75: hsl(39 100% 75%);
+    --rl-color-orange-40: hsl(39 100% 40%);
+    --rl-color-orange-25: hsl(39 100% 25%);
+    --rl-color-orange-15: hsl(39 100% 15%);
+
+    --rl-color-purple: hsl(300 100% 25%);
+    --rl-color-purple-90: hsl(300 100% 90%);
+    --rl-color-purple-75: hsl(300 100% 75%);
+    --rl-color-purple-40: hsl(300 100% 40%);
+    --rl-color-purple-25: hsl(300 100% 25%);
+    --rl-color-purple-15: hsl(300 100% 15%);
+
+    --rl-color-red: hsl(0 100% 50%);
+    --rl-color-red-90: hsl(0 100% 90%);
+    --rl-color-red-75: hsl(0 100% 75%);
+    --rl-color-red-40: hsl(0 100% 40%);
+    --rl-color-red-25: hsl(0 100% 25%);
+    --rl-color-red-15: hsl(0 100% 15%);
+
+    --rl-color-yellow: hsl(60 100% 47%);
+    --rl-color-yellow-90: hsl(60 100% 90%);
+    --rl-color-yellow-80: hsl(60 100% 80%);
+    --rl-color-yellow-25: hsl(60 100% 25%);
+    --rl-color-yellow-15: hsl(60 100% 15%);
+}

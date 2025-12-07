@@ -5,7 +5,7 @@
     --rl-font-serif:  "Liberation Serif", "Nimbus Roman No 9 L",  "FreeSerif", "Hoefler Text", Times, "Times New Roman", serif;
     --rl-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --rl-font-size: max(1em, 1vw);
-    --rl-font-color: var(--rl-blue-dark);
-    --rl-font-p-first: var(--rl-maroon-dark);
+    --rl-font-color: var(--rl-color-blue-25);
+    --rl-font-p-first: var(--rl-color-red-25);
     --rl-line-height: 1.5;
 }

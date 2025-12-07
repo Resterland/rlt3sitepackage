@@ -1,0 +1,13 @@
+/* Border */
+
+:root {
+  --color-border-primary: light-dark(
+    var(--rl-color-gray-60),
+    var(--rl-color-gray-40)
+  );
+  --color-border-secondary: light-dark(
+    var(--rl-color-gray-40),
+    var(--rl-color-gray-60)
+  );
+  --color-border-active: light-dark(var(--rl-color-blue), var(--rl-color-blue-75));
+}

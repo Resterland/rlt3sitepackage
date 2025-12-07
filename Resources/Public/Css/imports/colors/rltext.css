@@ -1,0 +1,31 @@
+/* Text */
+
+/* Basic */
+
+:root {
+  --color-text-primary: light-dark(var(--rl-color-black), var(--rl-color-white));
+  --color-text-secondary: light-dark(
+    var(--rl-color-gray-40),
+    var(--rl-color-gray-60)
+  );
+}
+
+/* Tinted */
+
+:root {
+  --color-text-red: light-dark(var(--rl-color-red-25), var(--rl-color-red-90));
+  --color-text-orange: light-dark(
+    var(--rl-color-orange-25),
+    var(--rl-color-orange-90)
+  );
+  --color-text-yellow: light-dark(
+    var(--rl-color-yellow-25),
+    var(--rl-color-yellow-80)
+  );
+  --color-text-green: light-dark(var(--rl-color-green-20), var(--rl-color-green-80));
+  --color-text-blue: light-dark(var(--rl-color-blue-25), var(--rl-color-blue-90));
+  --color-text-purple: light-dark(
+    var(--rl-color-red-25),
+    var(--rl-color-red-90)
+  );
+}
