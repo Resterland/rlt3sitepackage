@@ -1,41 +1,12 @@
 @charset "UTF-8";
-/* Color */
 
-@import url("imports/colors/rlarea.css");
-@import url("imports/colors/rlbackground.css");
-@import url("imports/colors/rlborder.css");
-@import url("imports/colors/rllink.css");
-@import url("imports/colors/rlscrollbar.css");
-@import url("imports/colors/rltext.css");
-@import url("imports/colors/rlcolors.css");
-/* Fonts */
-@import url("imports/fonts/rlfonts.css");
-/* Basic Color */
-@import url("imports/colors/rlbasic.css");
-/* Gray */
-@import url("imports/colors/rlgray.css");
-/* Tinted */
-@import url("imports/colors/rltinted.css");
-/* server */
-@import url("imports/server.css");
-/* global */
-@import url("imports/global.css");
-/* Font size */
-@import url("imports/fonts/fontsize.css");
+@import url("components/color/global.css");
+
+@import url("components/server.css");
+@import url("components/global.css");
 
 :root {
     color-scheme: light dark;
-}
-[data-theme=light] {
-    color-scheme: light;
-}
-
-[data-theme=dark] {
-    color-scheme: dark;
-}
-
-[data-theme=coffee] {
-    color-scheme: coffee;
 }
 /*
 ### styling responsive
@@ -49,6 +20,13 @@ html {
     min-height: 100vh;
     width: 100%;
 }
+html[data-theme="light"] {
+    color-scheme: light;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
 
 *,
 ::before,
@@ -59,8 +37,8 @@ body {
     max-width: 97vw;
     margin: 0.5em auto;
     font: var(--rl-font-size)/var(--rl-line-height) var(--rl-font-sans-2);
-    color: var(--rl-font-color);
-    background: var(--rl-bg-color-small);
+    color: light-dark(black, white);
+    background: light-dark(white, black);
 }
 .skip-link {
     --offset: 20em;
@@ -253,7 +231,7 @@ footer {
     font-size: 0.8em;
 }
 .openstreetmap iframe {
-    border: 0.125em solid var(--rl-blue-dark);
+    border: 0.125em solid var(--color-border-primary);
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {
@@ -362,7 +340,7 @@ footer {
         --navigation-height: 4.125rem;
     }
     body {
-        background: var(--rl-bg-color-large);
+        background: var(--color-background-gold);
     }
 
     .navigation {
@@ -484,7 +462,7 @@ footer {
 @media (min-width: 45rem) and (width <= 62.49rem) {
     /* Breite beträgt mindestens 45rem */
     body {
-        background: var(--rl-bg-color-medium);
+        background: var(--color-background-coffee);
     }
     /* Dropdown navbar START */
     /* Dropdown navbar END */

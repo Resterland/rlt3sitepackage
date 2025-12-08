@@ -1,10 +1,10 @@
 
 
 :root {
-    /* background colors */
+    /* background color */
     --rl-bg-color-small: var(--color-background-aqua);
     --rl-bg-color-medium: var(--color-background-coffee);
-    --rl-bg-color-large: var(--color-background-coffee);
+    --rl-bg-color-large: var(--color-background-gold);
     --rl-bg-head: var(--color-background-page);
     --rl-bg-dropdown: var(--rl-bg-head);
     --rl-bg-main: var(--color-background-lime);

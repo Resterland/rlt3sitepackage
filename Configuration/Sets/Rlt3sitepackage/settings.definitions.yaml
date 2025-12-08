@@ -65,11 +65,11 @@ settings:
     label: 'Choose a theme'
     category: Rlt3sitepackage.themes
     type: string
-    default: 'light'
     enum:
+      light dark: 'Default'
       light: 'Light theme '
       dark: 'Dark theme '
-      coffee: 'Coffee theme '
+    default: 'light dark'
 
   page.templates.template_path:
     label: 'Page template path'

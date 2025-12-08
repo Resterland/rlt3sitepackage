@@ -4,52 +4,53 @@
 ## https://www.permissionspolicy.com/
 
 config.additionalHeaders {
-    10.header = x-xss-protection: 1; mode=block
-    20.header = x-frame-options: SAMEORIGIN
-    30.header = x-content-type: nosniff
-    40.header = Referrer-Policy: no-referrer-when-downgrade
-    #  50.header = strict-transport-security: max-age=31536000;
-    #  60.header = Permissions-Policy: autoplay=(), battery=(), camera=(), microphone=()#
-    #  70.header = Content-Security-Policy-Report-Only:
+  10.header = x-xss-protection: 1; mode=block
+  20.header = x-frame-options: SAMEORIGIN
+  30.header = x-content-type: nosniff
+  40.header = Referrer-Policy: no-referrer-when-downgrade
+  #  50.header = strict-transport-security: max-age=31536000;
+  #  60.header = Permissions-Policy: autoplay=(), battery=(), camera=(), microphone=()#
+  #  70.header = Content-Security-Policy-Report-Only:
 }
 
 config {
-    absRefPrefix = auto
-    no_cache = {$config.no_cache}
-    pageTitleFirst = 0
-    pageTitleSeparator = -
-    pageTitleSeparator.noTrimWrap = | | |
-    doctype = html5
-    xmlprologue = none
-    removeDefaultJS = {$config.removeDefaultJS}
-    sendCacheHeaders = {$config.sendCacheHeaders}
-    index_enable = 1
-    index_externals = 1
-    index_metatags = 0
-    headerComment = {$config.headerComment}
+  absRefPrefix = auto
+  no_cache = {$config.no_cache}
+  pageTitleFirst = 0
+  pageTitleSeparator = -
+  pageTitleSeparator.noTrimWrap = | | |
+  doctype = html5
+  htmlTag.attributes.data-theme={$page.themes.theme}
+  xmlprologue = none
+  removeDefaultJS = {$config.removeDefaultJS}
+  sendCacheHeaders = {$config.sendCacheHeaders}
+  index_enable = 1
+  index_externals = 1
+  index_metatags = 0
+  headerComment = {$config.headerComment}
 
-    # Spam protection
-    spamProtectEmailAddresses = -2
-    spamProtectEmailAddresses_atSubst = (at)
-    spamProtectEmailAddresses_lastDotSubst = (dot)
+  # Spam protection
+  spamProtectEmailAddresses = -2
+  spamProtectEmailAddresses_atSubst = (at)
+  spamProtectEmailAddresses_lastDotSubst = (dot)
 
-    # Display the Admin Panel at the bottom of pages to logged in backend users
-    admPanel = {$config.admPanel}
-    debug = 1
+  # Display the Admin Panel at the bottom of pages to logged in backend users
+  admPanel = {$config.admPanel}
+  debug = 1
 
-    // Compression and Concatenation of CSS and JS Files
-    compressJs = {$config.compressJs}
-    compressCss = {$config.compressCss}
-    concatenateJs = {$config.concatenateJs}
-    concatenateCss = {$config.concatenateCss}
+  // Compression and Concatenation of CSS and JS Files
+  compressJs = {$config.compressJs}
+  compressCss = {$config.compressCss}
+  concatenateJs = {$config.concatenateJs}
+  concatenateCss = {$config.concatenateCss}
 }
 
 ## Always deactivate compression and concatenation in development context
 [applicationContext == "Development/Local"]
-    config {
-        compressCss = 0
-        concatenateCss = 0
-        compressJs = 0
-        concatenateJs = 0
-    }
+  config {
+    compressCss = 0
+    concatenateCss = 0
+    compressJs = 0
+    concatenateJs = 0
+  }
 [END]

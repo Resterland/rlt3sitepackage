@@ -1,7 +1,6 @@
 page = PAGE
 page {
     typeNum = 0
-    bodyTagAdd = data-theme="{$page.themes.theme}"
     shortcutIcon = {$page.meta.favicon}
 
     headerData {
