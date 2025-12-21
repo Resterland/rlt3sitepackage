@@ -1,0 +1,28 @@
+@import "bitstream-vera-serif.css";
+
+/* Font size */
+
+:root {
+    --font-family-opensans: "Open Sans Variable", sans-serif;
+    --font-family-sans: "Nimbus Sans", "Noto Sans", sans-serif;
+    --font-family-bitstream-serif: "Bitstream Vera Serif Bold", serif;
+    --font-family-serif: "Nimbus Roman", "Noto Serif", serif;
+    --font-family-monospace: "JetBrains Mono", Courier,  "Liberation Mono",monospace;
+    --font-family-cursive: "Imperial Script", "Edwardian Script ITC", cursive;
+
+    --font-family-chewy: "Chewy", sans-serif;
+
+    --font-line-content: 1.75;
+    --font-line-normal: 1.25;
+    --font-line-ui: 1;
+
+    --font-size: max(1em, 1vw);
+    --font-size-largest: 2.5rem;
+    --font-size-larger: 2rem;
+    --font-size-large: 1.5rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.8rem;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+}

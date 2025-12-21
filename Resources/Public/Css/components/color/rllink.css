@@ -1,19 +1,19 @@
 /* Link */
 
 :root {
-    --color-link-normal: light-dark(
+    --color-link-blue: light-dark(
         var(--rl-color-blue-25),
         var(--rl-color-blue-75)
     );
-    --color-link-visited: light-dark(
+    --color-link-purple: light-dark(
         var(--rl-color-purple-25),
         var(--rl-color-purple-90)
     );
-    --color-link-active: light-dark(
+    --color-link-green: light-dark(
         var(--rl-color-green-20),
         var(--rl-color-green-90)
     );
-    --color-link-hover: light-dark(
+    --color-link-lime: light-dark(
         var(--rl-color-lime-25),
         var(--rl-color-lime-90)
     );

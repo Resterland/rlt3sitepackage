@@ -1,2 +1,3 @@
+
 lib.searchbox < plugin.tx_solr_PiSearch_Search
 lib.searchbox.search.targetPage = {$plugin.tx_solr.search.targetPage}

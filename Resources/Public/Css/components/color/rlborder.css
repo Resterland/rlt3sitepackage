@@ -9,5 +9,8 @@
     var(--rl-color-gray-40),
     var(--rl-color-gray-60)
   );
-  --color-border-active: light-dark(var(--rl-color-blue), var(--rl-color-blue-75));
+  --color-border-active: light-dark(
+      var(--rl-color-blue),
+      var(--rl-color-blue-75)
+  );
 }
