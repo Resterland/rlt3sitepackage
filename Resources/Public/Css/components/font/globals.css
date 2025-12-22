@@ -1,14 +1,12 @@
-@import "bitstream-vera-serif.css";
+@import url("ubuntu.css");
 
 /* Font size */
 
 :root {
-    --font-family-opensans: "Open Sans Variable", sans-serif;
-    --font-family-sans: "Nimbus Sans", "Noto Sans", sans-serif;
-    --font-family-bitstream-serif: "Bitstream Vera Serif Bold", serif;
-    --font-family-serif: "Nimbus Roman", "Noto Serif", serif;
-    --font-family-monospace: "JetBrains Mono", Courier,  "Liberation Mono",monospace;
-    --font-family-cursive: "Imperial Script", "Edwardian Script ITC", cursive;
+    --font-family-sans: "Ubuntu Sans", sans-serif;
+    --font-family-monospace: "Ubuntu Sans Mono", monospace;
+    --font-family-cursive: "Imperial Script", cursive;
+    --font-family-serif: "Nimbus Roman", serif;
 
     --font-family-chewy: "Chewy", sans-serif;
 

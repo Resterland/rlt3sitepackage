@@ -1,0 +1,66 @@
+/* Ubuntu Sans */
+@font-face {
+    font-family: "Ubuntu Sans";
+    src:
+        url("fonts/static/UbuntuSans-Regular.woff2") format("woff2"),
+        url("fonts/static/UbuntuSans-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ubuntu Sans";
+    src:
+        url("fonts/static/UbuntuSans-Bold.woff2") format("woff2"),
+        url("fonts/static/UbuntuSans-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Ubuntu Sans";
+    src:
+        url("fonts/static/UbuntuSans-Italic.woff2") format("woff2"),
+        url("fonts/static/UbuntuSans-Italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Ubuntu Sans";
+    src:
+        url("fonts/static/UbuntuSans-BoldItalic.woff2") format("woff2"),
+        url("fonts/static/UbuntuSans-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Ubuntu Sans Mono */
+@font-face {
+    font-family: "Ubuntu Sans Mono";
+    src:
+        url("fonts/static/UbuntuSansMono-Regular.woff2") format("woff2"),
+        url("fonts/static/UbuntuSansMono-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ubuntu Sans Mono";
+    src:
+        url("fonts/static/UbuntuSansMono-Bold.woff2") format("woff2"),
+        url("fonts/static/UbuntuSansMono-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Ubuntu Sans Mono";
+    src:
+        url("fonts/static/UbuntuSansMono-Italic.woff2") format("woff2"),
+        url("fonts/static/UbuntuSansMono-Italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Ubuntu Sans Mono";
+    src:
+        url("fonts/static/UbuntuSansMono-BoldItalic.woff2") format("woff2"),
+        url("fonts/static/UbuntuSansMono-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
