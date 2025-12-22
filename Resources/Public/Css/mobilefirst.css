@@ -21,6 +21,7 @@ html {
     overflow-wrap: break-word;
     color-scheme: light dark;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;
@@ -42,11 +43,6 @@ html[data-theme="dark"] {
 body {
     max-width: 97vw;
     margin: 0.5em auto;
-    /* System font before webfont is loaded */
-    font-family: sans-serif;
-    font: var(--font-size)/var(--font-line-normal);
-    font-weight: var(--font-weight-normal);
-    color: var(--color-text-page);
     background: var(--color-background-page);
 }
 /* Use webfont when it loads */
@@ -86,7 +82,12 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
+h2,h3,h4,h5,h6 {
+    font-family: var(--font-family-monospace);
+}
+
 p {
+    font-family: var(--font-family-sans);
     line-height: var(--font-line-normal);
     font-size: max(1.2em, 1.2vw);
 }
@@ -182,6 +183,7 @@ main {
 }
 /* some settings while developing */
 .aside-left {
+    font-family: var(--font-family-serif);
     background: var(--color-background-secondary);
 }
 main {

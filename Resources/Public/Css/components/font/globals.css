@@ -1,4 +1,5 @@
 @import url("ubuntu.css");
+@import url("special.css");
 
 /* Font size */
 
@@ -9,6 +10,9 @@
     --font-family-serif: "Nimbus Roman", serif;
 
     --font-family-chewy: "Chewy", sans-serif;
+    --font-family-imperial: "Imperial", cursive;
+    --font-family-montecarlo: "Monte Carlo", sans-serif;
+    --font-family-parisienne: "Parisienne", sans-serif;
 
     --font-line-content: 1.75;
     --font-line-normal: 1.25;

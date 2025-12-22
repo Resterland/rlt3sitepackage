@@ -4,6 +4,7 @@
     src:
         url("fonts/static/UbuntuSans-Regular.woff2") format("woff2"),
         url("fonts/static/UbuntuSans-Regular.woff") format("woff");
+    font-weight: normal;
 }
 
 @font-face {
@@ -11,7 +12,7 @@
     src:
         url("fonts/static/UbuntuSans-Bold.woff2") format("woff2"),
         url("fonts/static/UbuntuSans-Bold.woff") format("woff");
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @font-face {
@@ -19,6 +20,7 @@
     src:
         url("fonts/static/UbuntuSans-Italic.woff2") format("woff2"),
         url("fonts/static/UbuntuSans-Italic.woff") format("woff");
+    font-weight: normal;
     font-style: italic;
 }
 
@@ -27,7 +29,7 @@
     src:
         url("fonts/static/UbuntuSans-BoldItalic.woff2") format("woff2"),
         url("fonts/static/UbuntuSans-BoldItalic.woff") format("woff");
-    font-weight: 700;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -37,6 +39,7 @@
     src:
         url("fonts/static/UbuntuSansMono-Regular.woff2") format("woff2"),
         url("fonts/static/UbuntuSansMono-Regular.woff") format("woff");
+    font-weight: normal;
 }
 
 @font-face {
@@ -44,7 +47,7 @@
     src:
         url("fonts/static/UbuntuSansMono-Bold.woff2") format("woff2"),
         url("fonts/static/UbuntuSansMono-Bold.woff") format("woff");
-    font-weight: 700;
+    font-weight: bold;
 }
 
 @font-face {
@@ -52,6 +55,7 @@
     src:
         url("fonts/static/UbuntuSansMono-Italic.woff2") format("woff2"),
         url("fonts/static/UbuntuSansMono-Italic.woff") format("woff");
+    font-weight: normal;
     font-style: italic;
 }
 
@@ -60,7 +64,7 @@
     src:
         url("fonts/static/UbuntuSansMono-BoldItalic.woff2") format("woff2"),
         url("fonts/static/UbuntuSansMono-BoldItalic.woff") format("woff");
-    font-weight: 700;
+    font-weight: bold;
     font-style: italic;
 }
 

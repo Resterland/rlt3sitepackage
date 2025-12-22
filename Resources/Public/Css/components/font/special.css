@@ -1,0 +1,35 @@
+/* Chewy Regular */
+@font-face {
+    font-family: "Chewy";
+    src:
+        url("fonts/static/Chewy-Regular.woff2") format("woff2"),
+        url("fonts/static/Chewy-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+/* ImperialScript Regular */
+@font-face {
+    font-family: "Imperial";
+    src:
+        url("fonts/static/ImperialScript-Regular.woff2") format("woff2"),
+        url("fonts/static/ImperialScript-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+/* MonteCarlo Regular */
+@font-face {
+    font-family: "Monte Carlo";
+    src:
+        url("fonts/static/MonteCarlo-Regular.woff2") format("woff2"),
+        url("fonts/static/MonteCarlo-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+/* Parisienne Regular */
+@font-face {
+    font-family: "Parisienne";
+    src:
+        url("fonts/static/Parisienne-Regular.woff2") format("woff2"),
+        url("fonts/static/Parisienne-Regular.woff") format("woff");
+    font-weight: normal;
+}
