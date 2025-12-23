@@ -10,9 +10,8 @@
     --font-family-serif: "Nimbus Roman", serif;
 
     --font-family-chewy: "Chewy", sans-serif;
-    --font-family-imperial: "Imperial", cursive;
-    --font-family-montecarlo: "Monte Carlo", sans-serif;
-    --font-family-parisienne: "Parisienne", sans-serif;
+    --font-family-montecarlo: "Monte Carlo", cursive;
+    --font-family-parisienne: "Parisienne", cursive;
 
     --font-line-content: 1.75;
     --font-line-normal: 1.25;
@@ -25,6 +24,12 @@
     --font-size-normal: 1rem;
     --font-size-small: 0.8rem;
 
-    --font-weight-normal: 400;
-    --font-weight-bold: 600;
+    --font-axis-thin: 100;
+    --font-axis-extralight: 200;
+    --font-axis-light: 300;
+    --font-axis-regular: 400;
+    --font-axis-medium: 500;
+    --font-axis-semibold: 600;
+    --font-axis-bold: 700;
+    --font-axis-extrabold: 800;
 }

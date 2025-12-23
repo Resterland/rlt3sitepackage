@@ -16,16 +16,11 @@
 html {
     min-height: 100vh;
     width: 100%;
-    line-height: var(--font-line-normal);
     color: var(--color-text-primary);
     overflow-wrap: break-word;
-    color-scheme: light dark;
     scroll-behavior: smooth;
     font-family: sans-serif;
-
-    @media (prefers-reduced-motion: reduce) {
-        scroll-behavior: auto;
-    }
+    color-scheme: light dark;
 }
 html[data-theme="light"] {
     color-scheme: light;
@@ -43,11 +38,10 @@ html[data-theme="dark"] {
 body {
     max-width: 97vw;
     margin: 0.5em auto;
-    background: var(--color-background-page);
-}
-/* Use webfont when it loads */
-.fonts-loaded body {
+    font-size: var(--font-size);
+    line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
+    background: var(--color-background-page);
 }
 .skip-link {
     --offset: 20em;
@@ -61,6 +55,17 @@ body {
     width: calc(100% - var(--outline)*2);
     z-index: 1000;
 }
+/* some settings while developing */
+.aside-left {
+    background: var(--color-background-secondary);
+}
+main {
+    background: var(--color-background-primary);
+}
+.aside-right {
+    background: var(--color-background-secondary);
+}
+/* end of developing settings */
 h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
@@ -82,21 +87,31 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
-h2,h3,h4,h5,h6 {
-    font-family: var(--font-family-monospace);
-}
-
 p {
-    font-family: var(--font-family-sans);
     line-height: var(--font-line-normal);
     font-size: max(1.2em, 1.2vw);
 }
 
 p::first-letter {
-    color: var(--color-text-red);
+    background-color: light-dark(
+        var(--rl-color-coffee-15),
+        var(--rl-color-coffee-90)
+    );
+    color: light-dark(
+        var(--rl-color-coffee-90),
+        var(--rl-color-coffee-15)
+    );
     font-size: calc(2rem + 0.125vw);
-    font-weight: bold;
-    font-family: var(--font-family-cursive);
+    font-family: var(--font-family-montecarlo);
+    border-radius: 0.125rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem light-dark(
+        var(--rl-color-orange-40),
+        var(--rl-color-gold)
+    );
+    padding: 0.5rem 0.25rem;
+    padding-right: 0.5rem;
+    margin-right: 0.3rem;
+    float: left;
 }
 
 ul {
@@ -181,18 +196,6 @@ aside,
 main {
     padding: 0.5rem;
 }
-/* some settings while developing */
-.aside-left {
-    font-family: var(--font-family-serif);
-    background: var(--color-background-secondary);
-}
-main {
-    background: var(--color-background-primary);
-}
-.aside-right {
-    background: var(--color-background-secondary);
-}
-/* end of developing settings */
 
 footer {
     background: var(--color-background-page);
@@ -335,7 +338,7 @@ input,
 button,
 textarea,
 select {
-    font: var(--font-family-monospace) 0.8rem var(--font-weight-normal);
+    font: var(--font-family-cursive) 0.8rem var(--font-axis-regular);
 }
 
 button {

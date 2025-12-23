@@ -2,34 +2,38 @@
 @font-face {
     font-family: "Chewy";
     src:
+        local("Chewy"),
         url("fonts/static/Chewy-Regular.woff2") format("woff2"),
         url("fonts/static/Chewy-Regular.woff") format("woff");
-    font-weight: normal;
+    font-display: swap;
 }
 
 /* ImperialScript Regular */
 @font-face {
-    font-family: "Imperial";
+    font-family: "Imperial Script";
     src:
+        local("Imperial Script"),
         url("fonts/static/ImperialScript-Regular.woff2") format("woff2"),
         url("fonts/static/ImperialScript-Regular.woff") format("woff");
-    font-weight: normal;
+    font-display: swap;
 }
 
 /* MonteCarlo Regular */
 @font-face {
     font-family: "Monte Carlo";
     src:
+        local("MonteCarlo"),
         url("fonts/static/MonteCarlo-Regular.woff2") format("woff2"),
         url("fonts/static/MonteCarlo-Regular.woff") format("woff");
-    font-weight: normal;
+    font-display: swap;
 }
 
 /* Parisienne Regular */
 @font-face {
     font-family: "Parisienne";
     src:
+        local("Parisienne"),
         url("fonts/static/Parisienne-Regular.woff2") format("woff2"),
         url("fonts/static/Parisienne-Regular.woff") format("woff");
-    font-weight: normal;
+    font-display: swap;
 }
