@@ -92,34 +92,23 @@ p {
     font-size: max(1.2em, 1.2vw);
 }
 
-p::first-letter {
-    background-color: light-dark(
-        var(--rl-color-coffee-15),
-        var(--rl-color-coffee-90)
-    );
-    color: light-dark(
-        var(--rl-color-coffee-90),
-        var(--rl-color-coffee-15)
-    );
-    font-size: calc(2rem + 0.125vw);
-    font-family: var(--font-family-montecarlo);
-    border-radius: 0.125rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--rl-color-orange-40),
-        var(--rl-color-gold)
-    );
-    padding: 0.5rem 0.25rem;
-    padding-right: 0.5rem;
-    margin-right: 0.3rem;
-    float: left;
-}
-
 ul {
     list-style: none;
 }
 img,picture,video {
     max-width: 100%;
     height: auto;
+}
+/*input,
+button,
+textarea,
+select {
+    font: var(--font-family-cursive) 0.8rem var(--font-axis-regular);
+}*/
+
+button {
+    color: inherit;
+    cursor: pointer;
 }
 
 [hidden] {
@@ -248,13 +237,14 @@ footer {
 .copyright {
     font-size: calc(0.8em + 0.25dvw);
 }
-.active {
-    text-decoration: none;
-    background-color: var(--color-background-coffee);
-}
+.active,
 .current {
     text-decoration: none;
-    background-color: var(--color-background-coffee);
+    color: var(--color-text-blue);
+    background-color: var(--color-background-gold);
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 /* Dropdown menu navbar START */
@@ -267,14 +257,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-text-primary);
+    color: var(--color-text-blue);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
         color: var(--color-text-blue);
-        background-color: var(--color-background-blue);
+        background-color: var(--color-background-gold);
     }
 
     /* Arrow & Icon */
@@ -295,23 +285,24 @@ footer {
         scale: -1;
     }
 }
+.menu__tab-label::first-letter {
+    font-size: max(1.5rem, 1.2vw);
+    font-weight: bold;
+    font-family: var(--font-family-montecarlo);
+    margin-right: 0.1rem;
+}
 
 /* Tab Link */
 .menu__tab-link {
     /* Custom, to match the icon height */
     line-height: 1.25rem;
-    color: var(--color-link-purple);
-
-    &:hover {
-        color: var(--color-link-green);
-        background-color: var(--color-background-lime);
-    }
 }
 
 /* Panel */
 .menu__panel-title {
     padding: 0.125rem 1.4rem;
     margin: 0;
+    font-size: inherit;
     a {
         color: inherit;
     }
@@ -319,33 +310,19 @@ footer {
 /* Dropdown navbar END */
 
 a {
-    color: var(--color-link-purple);
+    color: var(--color-link-blue);
 
     &:hover {
-        color: var(--color-link-green);
-        background-color: var(--color-background-lime);
+        color: light-dark(
+            var(--rl-color-hover),
+            var(--rl-bg-hover)
+        );
+        background-color: light-dark(
+            var(--rl-bg-hover),
+            var(--rl-color-hover)
+        );
     }
 }
-form {
-    display: inline-block;
-    /* Form outline */
-    background: var(--color-background-aqua);
-    padding: 0.25em;
-    border: 1px solid var(--color-text-aqua);
-    border-radius: 0.5em;
-}
-input,
-button,
-textarea,
-select {
-    font: var(--font-family-cursive) 0.8rem var(--font-axis-regular);
-}
-
-button {
-    color: inherit;
-    cursor: pointer;
-}
-
 /* Solr search settings START */
 /* Search */
 /*.navigation__search[data-view="mobile"] {
@@ -357,9 +334,25 @@ button {
 .navigation__search {
     justify-self: end;
 }
+form {
+    display: inline-block;
+    /* Form outline */
+    background: var(--color-background-aqua);
+    padding: 0.25em;
+    border: 1px solid var(--color-text-aqua);
+    border-radius: 0.5em;
+}
 .input-group {
     display: flex;
 }
+.search-button {
+    background: var(--color-background-aqua);
+    &::after {
+        content: "";
+        mask-image: url("../Icons/icon/chevron-down.svg");
+    }
+}
+
 
 /*.input-group input {
     background: var(--color-background-primary);
@@ -465,7 +458,7 @@ button {
     /* Title */
     .menu__panel-title {
         color: var(--color-text-blue);
-        background-color: var(--color-background-blue);
+        background-color: var(--color-background-gold);
     }
     /* Dropdown navbar END */
 

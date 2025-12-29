@@ -39,6 +39,11 @@
         var(--rl-color-blue-15)
     );
 
+    --color-background-brown: light-dark(
+        var(--rl-color-brown-80),
+        var(--rl-color-brown-10)
+    );
+
     --color-background-fuchsia: light-dark(
         var(--rl-color-fuchsia-90),
         var(--rl-color-fuchsia-15)

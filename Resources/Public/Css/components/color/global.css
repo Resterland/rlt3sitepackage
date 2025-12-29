@@ -113,4 +113,12 @@
     --rl-color-yellow-80: hsl(60 100% 80%);
     --rl-color-yellow-25: hsl(60 100% 25%);
     --rl-color-yellow-15: hsl(60 100% 15%);
+
+    --rl-color-lain: hsl(0, 45%, 47%);
+    --rl-color-lain-90: hsl(0, 45%, 90%);
+
+
+    --rl-color-brown: hsl(32, 65%, 40%);
+    --rl-color-brown-80: #edd886;
+    --rl-color-brown-10: #4e3329;
 }

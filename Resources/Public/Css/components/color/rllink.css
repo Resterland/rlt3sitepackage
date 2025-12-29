@@ -17,4 +17,13 @@
         var(--rl-color-lime-25),
         var(--rl-color-lime-90)
     );
+
+    --rl-color-visited: #a5c300;
+
+    --rl-color-hover: #4e3329;
+    --rl-bg-hover: #edd886;
+
+    --rl-color-active: #cdfeaa;
+    --rl-bg-active: #a86a24;
+
 }
