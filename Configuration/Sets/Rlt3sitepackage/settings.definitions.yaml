@@ -61,15 +61,15 @@ settings:
     category: Rlt3sitepackage.themes
     type: bool
     default: true
-#  page.themes.theme:
-#    label: 'Choose a theme'
-#    category: Rlt3sitepackage.themes
-#    type: string
-#    enum:
-#      light dark: 'Default'
-#      light: 'Light theme '
-#      dark: 'Dark theme '
-#    default: 'light dark'
+  page.themes.theme:
+    label: 'Choose a theme'
+    category: Rlt3sitepackage.themes
+    type: string
+    enum:
+      light dark: 'Default'
+      light: 'Light theme '
+      dark: 'Dark theme '
+    default: 'light dark'
 
   page.templates.template_path:
     label: 'Page template path'
@@ -135,12 +135,12 @@ settings:
     type: bool
     default: true
 
-#  page.header.logo.file:
-#    label: 'Logo File'
-#    category: Rlt3sitepackage.header.logo
-#    description: 'Path to the logo of Rlt3 Site Package.'
-#    type: string
-#    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
+  page.header.logo.file:
+    label: 'Logo File'
+    category: Rlt3sitepackage.header.logo
+    description: 'Path to the logo of Rlt3 Site Package.'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
 
   page.header.logo.alt:
     label: 'Logo Alt text'
