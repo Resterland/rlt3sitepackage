@@ -1,17 +1,17 @@
 <f:link.page pageUid="{site.rootPageId}">
 
-    <f:if condition="{page.themes.theme} == 'light'">
+    <f:if condition="{settings.page.themes.theme} == 'light'">
         <f:then>
             <f:image
-                src="{page.logo.file.light}"
+                src="{settings.page.logo.file.light}"
                 width="{settings.page.header.logo.width}"
                 height="{settings.page.header.logo.height}"
                 class="middle"
             />
         </f:then>
-        <f:else if="{page.themes.theme} == 'dark')">
+        <f:else if="{settings.page.themes.theme} == 'dark')">
             <f:image
-                src="{page.logo.file.dark}"
+                src="{settings.page.logo.file.dark}"
                 width="{settings.page.header.logo.width}"
                 height="{settings.page.header.logo.height}"
                 class="middle"
