@@ -3,17 +3,18 @@
     <f:if condition="{page.themes.theme} == light">
         <f:image
             src="{page.logo.file.light}"
+            width="{settings.page.header.logo.width}"
+            height="{settings.page.header.logo.height}"
+            class="middle"
         />
     </f:if>
 
     <f:if condition="{page.themes.theme} == dark">
         <f:image
             src="{page.logo.file.dark}"
+            width="{settings.page.header.logo.width}"
+            height="{settings.page.header.logo.height}"
+            class="middle"
         />
     </f:if>
-    <f:image
-        width="{settings.page.header.logo.width}"
-        height="{settings.page.header.logo.height}"
-        class="middle"
-    />
 </f:link.page>
