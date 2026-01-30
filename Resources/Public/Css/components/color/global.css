@@ -9,7 +9,6 @@
 
 /* Basic */
 :root {
-    color-scheme: light dark;
     --rl-color-white: hsl(0 0% 100%);
     --rl-color-white-alpha-25: hsl(0 0% 100% / 25%);
     --rl-color-white-alpha-75: hsl(0 0% 100% / 75%);
