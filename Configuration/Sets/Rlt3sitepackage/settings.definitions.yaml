@@ -147,7 +147,7 @@ settings:
     category: Rlt3sitepackage.header.logo
     description: 'Path to the logo of Rlt3 Site Package.'
     type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/LogoInverted.svg'
+    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/rl-logo-inverted.svg'
 
   page.header.logo.alt:
     label: 'Logo Alt text'
