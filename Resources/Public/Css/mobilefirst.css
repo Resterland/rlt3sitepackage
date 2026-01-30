@@ -20,7 +20,6 @@ html {
     overflow-wrap: break-word;
     scroll-behavior: smooth;
     font-family: sans-serif;
-    color-scheme: light dark;
 }
 html[data-theme="light"] {
     color-scheme: light;
