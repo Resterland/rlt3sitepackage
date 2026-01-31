@@ -154,6 +154,10 @@ img.middle {
     padding-inline: var(--layout-side-padding);
     text-wrap: nowrap;
 }
+.breadcrumb-bar rl-language-switcher {
+    height: 100%;
+    display: flex;
+}
 .breadcrumb {
     align-items: center;
     display: flex;
