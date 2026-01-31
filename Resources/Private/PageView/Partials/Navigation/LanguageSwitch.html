@@ -1,5 +1,6 @@
 <rl-language-switcher>
     <div class="language-switcher">
+        <f:for each="{languagemenu}" as="languageItem">
         <rl-dropdown loaded="">
             <button
                 class="language-switcher__button"
@@ -9,11 +10,10 @@
                 aria-controls="language-switcher__dropdown"
                 aria-labelledby="current-locale"
             >
-                <span id="current-locale">Scheisse</span>
+                <span id="current-locale">{languageItem.title}</span>
             </button>
             <div slot="dropdown" class="language-switcher__dropdown" id="language-switcher__dropdown">
                 <ul class="language-switcher__list">
-                    <f:for each="{languagemenu}" as="languageItem">
                         <li>
                             <f:if condition="{languageItem.available}">
                                 <f:then>
@@ -28,9 +28,9 @@
                                 </f:else>
                             </f:if>
                         </li>
-                    </f:for>
                 </ul>
             </div>
         </rl-dropdown>
+        </f:for>
     </div>
 </rl-language-switcher>
