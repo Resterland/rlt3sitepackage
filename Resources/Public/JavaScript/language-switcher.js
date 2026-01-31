@@ -3,6 +3,17 @@ import { LitElement, html, nothing } from "lit";
 import {randomIdString} from "utils";
 
 export class RLLanguageSwitcher extends LitElement {
+  static styles = css`
+    :host {
+        display: contents;
+    }
+
+        :host(:not([loaded], :focus-within)) {
+            slot[name="dropdown"] {
+                display: none;
+            }
+        }`
+  ;
 
   static properties = {
     open: { type: Boolean },
