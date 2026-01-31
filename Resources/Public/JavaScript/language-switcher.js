@@ -1,9 +1,10 @@
 import { LitElement, html } from "lit";
 
 import {randomIdString} from "utils";
+import styles from "../Css/language-switcher.css";
 
 export class RLLanguageSwitcher extends LitElement {
-  static styles = css`
+  static styles = styles`
     :host {
         display: contents;
     }
