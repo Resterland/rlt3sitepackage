@@ -84,23 +84,6 @@ export class RLLanguageSwitcher extends LitElement {
           class="language-switcher__dropdown"
           id="language-switcher__dropdown"
         >
-          <div class="language_switcher__remember">
-            <mdn-switch
-              @toggle=${this._togglePreferredLocale}
-              ?checked=${this._isLocalePreferred}
-              >${this.l10n`Remember language`}</mdn-switch
-            >
-            <mdn-button
-              variant="plain"
-              .icon=${infoIcon}
-              icon-only
-              href="https://github.com/orgs/mdn/discussions/739"
-              target="_blank"
-              title=${this
-      .l10n`Enable this setting to always switch to the current language when available. (Click to learn more.)`}
-              >${this.l10n`Learn more`}</mdn-button
-            >
-          </div>
           <ul class="language-switcher__list">
             ${notFound
       ? this._notFoundFallback.render({
