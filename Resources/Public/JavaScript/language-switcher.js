@@ -1,4 +1,4 @@
-import { LitElement, html, nothing } from "lit";
+import { LitElement, html, css } from "lit";
 
 import {randomIdString} from "utils";
 
