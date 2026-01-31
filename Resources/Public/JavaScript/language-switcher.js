@@ -1,7 +1,5 @@
 import { LitElement, html, nothing } from "lit";
 
-import "./rldropdown";
-
 import {randomIdString} from "utils";
 
 export class RLLanguageSwitcher extends LitElement {
