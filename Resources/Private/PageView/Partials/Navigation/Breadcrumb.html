@@ -15,7 +15,12 @@
         </ol>
         <f:if condition="{settings.page.header.languagenavigation.enable}">
             <ul class="lang-menu__header">
-                <f:render partial="Navigation/LanguageMenu" arguments="{_all}"/>
+                <f:render partial="Navigation/SchemeSwitch" arguments="{_all}"/>
+            </ul>
+        </f:if>
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
+            <ul class="lang-menu__header">
+                <f:render partial="Navigation/LanguageSwitch" arguments="{_all}"/>
             </ul>
         </f:if>
     </div>
