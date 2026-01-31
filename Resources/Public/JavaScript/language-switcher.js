@@ -1,115 +1,109 @@
 import { LitElement, html, nothing } from "lit";
 
-import styles from "../Css/language-switcher.css?lit";
-
 import "./rldropdown";
 import "./switch";
+import {randomIdString} from "./utils";
 
 export class RLLanguageSwitcher extends LitElement {
-  static styles = styles;
+  static styles = css`
+    :host {
+        display: contents;
+    }
+
+        :host(:not([loaded], :focus-within)) {
+            slot[name="dropdown"] {
+                display: none;
+            }
+        }`
+  ;
 
   static properties = {
-    locale: { type: String },
-    native: { type: String },
-    translations: { type: Array },
-    url: { type: String },
-    notFound: { type: Boolean, attribute: "not-found" },
-    _preferredLocale: { state: true },
+    open: { type: Boolean },
+    loaded: { type: Boolean, reflect: true },
   };
 
   constructor() {
     super();
-    /** @type {import("@rari").Translation[]} */
-    this.translations = [];
-    this.native = "";
-    this.locale = "en-US";
-    this.url = "/";
-    this.notFound = false;
-    /** @type {string|undefined} */
-    this._preferredLocale = undefined;
+    this.open = false;
+    this.loaded = false;
   }
 
-  _notFoundFallback = new Task(this, {
-    args: () => [this.notFound],
-    task: async ([notFound]) => {
-      if (notFound) {
-        return await getEnglishDoc(location.pathname);
+  get _buttonSlotElements() {
+    return this._slotElements("button");
+  }
+
+  get _dropdownSlotElements() {
+    return this._slotElements("dropdown");
+  }
+
+  /** @param {string} name  */
+  _slotElements(name) {
+    const slot = this.shadowRoot?.querySelector(`slot[name="${name}"]`);
+    if (slot instanceof HTMLSlotElement) {
+      return slot.assignedElements();
+    }
+    return [];
+  }
+
+  /** @param {MouseEvent} event */
+  _globalClick(event) {
+    if (!event.composedPath().includes(this)) {
+      this.open = false;
+    }
+  }
+
+  /** @param {KeyboardEvent} event */
+  _globalKeyDown(event) {
+    if (this.open && event.key === "Escape") {
+      this._toggleDropDown();
+    }
+  }
+
+  _toggleDropDown() {
+    this.open = !this.open;
+  }
+
+  _setAriaAttributes() {
+    let id = this._dropdownSlotElements.find((element) => element.id)?.id;
+    if (!id) {
+      id = randomIdString("uid_");
+      this._dropdownSlotElements[0]?.setAttribute("id", id);
+    }
+    for (const element of this._buttonSlotElements) {
+      element.setAttribute("aria-expanded", this.open.toString());
+      if (id) {
+        element.setAttribute("aria-controls", id);
       }
-      return;
-    },
-  });
-
-  firstUpdated() {
-    this._preferredLocale = getPreferredLocale();
-    if (location.search) {
-      this.url += location.search;
     }
   }
 
-  get _isLocalePreferred() {
-    return this._preferredLocale == this.locale;
-  }
-
-  _togglePreferredLocale() {
-    if (this.notFound) return;
-    if (this._isLocalePreferred) {
-      resetPreferredLocale();
-      this._preferredLocale = undefined;
-    } else {
-      setPreferredLocale(this.locale);
-      this._preferredLocale = this.locale;
-    }
+  connectedCallback() {
+    super.connectedCallback();
+    this._globalClick = this._globalClick.bind(this);
+    document.addEventListener("click", this._globalClick);
+    this._globalKeyDown = this._globalKeyDown.bind(this);
+    document.addEventListener("keydown", this._globalKeyDown);
   }
 
   render() {
-    const { translations, native, locale, url, notFound } = this;
-
-    if (translations.length === 0) {
-      return nothing;
-    }
-
     return html`
+          <slot name="button" @click=${this._toggleDropDown}></slot>
+          <slot name="dropdown" ?hidden=${!this.open && this.loaded}></slot>
     `;
   }
 
-  /**
-   * @param {import("@rari").Translation[]} translations
-   * @param {string} locale
-   * @param {string} url
-   * @param {boolean} notFound
-   */
-  _renderDropdownItems(translations, locale, url, notFound = false) {
-    return translations
-      .sort((a, b) => a.locale.localeCompare(b.locale))
-      .map(
-        (translation) => html`
-          <li>
-            <a
-              class="language-switcher__option"
-              ?data-current=${locale === translation.locale}
-              @click=${resetPreferredLocale}
-              href=${url.replace(
-          `/${notFound ? "en-US" : locale}/`,
-          `/${translation.locale}/`,
-        )}
-              >${translation.native}</a
-            >
-          </li>
-        `,
-      );
+  updated() {
+    this._setAriaAttributes();
   }
 
-  _renderCurrentLocale() {
-    return html`
-      <li>
-        <a
-          class="language-switcher__option"
-          ?data-current=${true}
-          href=${this.url}
-          >${this.native}</a
-        >
-      </li>
-    `;
+  firstUpdated() {
+    this.loaded = true;
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    document.removeEventListener("click", this._globalClick);
+    document.removeEventListener("keydown", this._globalKeyDown);
   }
 }
 
