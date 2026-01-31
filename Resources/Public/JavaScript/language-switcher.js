@@ -68,43 +68,8 @@ export class RLLanguageSwitcher extends LitElement {
       return nothing;
     }
 
-    return html`<div class="language-switcher">
-      <rl-dropdown>
-        <button
-          part="button"
-          slot="button"
-          class="language-switcher__button"
-          type="button"
-          aria-labelledby="current-locale"
-        >
-          <span id="current-locale">${native ?? locale}</span>
-        </button>
-        <div
-          slot="dropdown"
-          class="language-switcher__dropdown"
-          id="language-switcher__dropdown"
-        >
-          <ul class="language-switcher__list">
-            ${notFound
-      ? this._notFoundFallback.render({
-        initial: () => this._renderCurrentLocale(),
-        pending: () => this._renderCurrentLocale(),
-        error: () => this._renderCurrentLocale(),
-        complete: (doc) =>
-          doc?.other_translations
-            ? this._renderDropdownItems(
-              doc.other_translations,
-              locale,
-              doc.mdn_url,
-              notFound,
-            )
-            : this._renderCurrentLocale(),
-      })
-      : this._renderDropdownItems(translations, locale, url)}
-          </ul>
-        </div>
-      </rl-dropdown>
-    </div>`;
+    return html`
+    `;
   }
 
   /**
