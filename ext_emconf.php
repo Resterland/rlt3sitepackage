@@ -20,5 +20,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Roland Fuhrer',
     'author_email' => 'webmaster@resterland.org',
     'author_company' => 'ResterLand',
-    'version' => '2.0.0',
+    'version' => '2.1.0',
 ];
