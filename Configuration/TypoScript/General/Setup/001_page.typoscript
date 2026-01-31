@@ -43,7 +43,7 @@ page {
       applicationContext.value.data = applicationcontext
 
       siteLanguageNavigationTitle = TEXT
-      siteLanguageNavigationTitle.data = siteLanguage:navigationTitle
+      siteLanguageNavigationTitle.value.data = siteLanguage:navigationTitle
     }
   }
 
