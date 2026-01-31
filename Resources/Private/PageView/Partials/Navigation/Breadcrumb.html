@@ -19,9 +19,9 @@
             </ul>
         </f:if>
         <f:if condition="{settings.page.header.languagenavigation.enable}">
-            <ul class="lang-menu__header">
+            <rl-language-switcher>
                 <f:render partial="Navigation/LanguageSwitch" arguments="{_all}"/>
-            </ul>
+            </rl-language-switcher>
         </f:if>
     </div>
 </f:if>
