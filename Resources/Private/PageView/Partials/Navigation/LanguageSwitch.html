@@ -1,23 +1,36 @@
 <rl-language-switcher>
     <div class="language-switcher">
-        <ul>
-            <f:for each="{languagemenu}" as="item">
-                <li
-                    class="lang-menu-item {f:if(condition: item.available, else: 'text-muted')}" lang="{item.hreflang}">
-                    <f:if condition="{item.available}">
-                        <f:then>
-                            <a class="nav-link {f:if(condition: item.active, then: 'active')}"
-                               href="{item.link}" hreflang="{item.hreflang}"
-                               title="{item.title}">
-                                <bdi>{item.navigationTitle}</bdi>
+        <f:for each="{languagemenu}" as="languageItem">
+            <rl-dropdown loaded="">
+                <button
+                    class="language-switcher__button"
+                    type="button"
+                    slot="button"
+                    aria-expanded="true"
+                    aria-controls="language-switcher__dropdown"
+                    aria-labelledby="current-locale"
+                >
+                    <span id="current-locale">{languageItem.title}</span>
+                </button>
+                <div slot="dropdown" class="language-switcher__dropdown" id="language-switcher__dropdown">
+                    <ul class="language-switcher__list">
+                        <li>
+                            <f:if condition="{languageItem.available}">
+                            <f:then>
+                            <a class="language-switcher__option {f:if(condition: languageItem.active, then: 'active')}"
+                               href="{languageItem.link}" hreflang="{languageItem.hreflang}"
+                               title="{languageItem.title}">
+                                <bdi>{languageItem.navigationTitle}</bdi>
                             </a>
-                        </f:then>
-                        <f:else>
-                            <span class="nav-link-text">&nbsp;</span>
-                        </f:else>
-                    </f:if>
-                </li>
-            </f:for>
-        </ul>
+                            </f:then>
+                                <f:else>
+                                    <span class="nav-link-text">&nbsp;</span>
+                                </f:else>
+                            </f:if>
+                        </li>
+                    </ul>
+                </div>
+            </rl-dropdown>
+        </f:for>
     </div>
 </rl-language-switcher>
