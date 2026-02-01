@@ -37,23 +37,25 @@
         }
     }
 
-    /* Icon */
-    &::before {
+    /* Arrow & Icon */
+    &::before,
+    &::after {
         width: 1.25rem;
         height: 1.25rem;
-        content: "";
         background-color: currentcolor;
-        mask-image: url("../Icons/icon/languages.svg");
         mask-size: cover;
+    }
+
+    /* Icon */
+    &::before {
+        content: "";
+        mask-image: url("../Icons/icon/languages.svg");
     }
 
     /* Arrow */
     &::after {
         content: "";
         mask-image: url("../Icons/icon/chevron-down.svg");
-    }
-    &[aria-expanded="true"]::after {
-        scale: -1;
     }
 }
 
