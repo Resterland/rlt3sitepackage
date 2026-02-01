@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 
-import {randomIdString} from "Resources/Public/JavaScript/utils";
+import {randomIdString} from "../utils";
 
 export class RLLanguageSwitcher extends LitElement {
   static styles = css`
