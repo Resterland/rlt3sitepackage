@@ -10,7 +10,7 @@
                 src="EXT:rlt3sitepackage/Resources/Public/JavaScript/colorschemeswitch.js" />
 
 <f:asset.script identifier="mybutton" type="module"
-                src="EXT:rlt3sitepackage/Resources/Public/JavaScript/my-button.js" />
+                src="EXT:rlt3sitepackage/Resources/Public/JavaScript/my-elemnts.js" />
 
 <f:asset.script identifier="hook" type="module"
                 src="EXT:rlt3sitepackage/Resources/Public/JavaScript/hook.js" />
@@ -26,7 +26,7 @@
         </li>
     </ul>
     <f:render partial="Header/Header" arguments="{_all}"/>
-
+    <my-element></my-element>
     <f:render section="MainContent"/>
 
     <f:render partial="Footer/Footer" arguments="{_all}"/>
