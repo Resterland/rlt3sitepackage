@@ -18,6 +18,6 @@ return [
     'imports' => [
         'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
-        'language-switch' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/components/language-switch.js',
+        '@vendor/rlt3sitepackage/' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/components/',
     ],
 ];
