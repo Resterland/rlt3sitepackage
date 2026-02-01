@@ -15,14 +15,31 @@ class RLColorTheme extends LitElement {
 
   render() {
     return html`
-      <p>Render a list:</p>
-      <ul>
+      <div class="color-theme">
+        <rl-dropdown>
+          <button
+            part="button"
+            slot="button"
+            class="color-theme__button"
+            type="button"
+          >
+            <span>bla bla</span>
+          </button>
+          <div
+            slot="dropdown"
+            class="color-theme__dropdown"
+            id="color-theme__dropdown"
+          >
+      <ul class="color-theme__list">
         ${this.list.map(
       (item, index) => html`
               <li>${index}: ${item}</li>
             `
     )}
       </ul>
+          </div>
+        </rl-dropdown>
+      </div>
     `;
   }
 
