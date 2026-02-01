@@ -34,21 +34,6 @@ class RLColorTheme extends LitElement {
       }
     }
   }
-  /**
-   * @param {import("lit").PropertyValues<this>} changedProperties
-   */
-  willUpdate(changedProperties) {
-    if (changedProperties.has("_mode") && globalThis.document) {
-      document.documentElement.dataset.theme = this._mode;
-      this.dispatchEvent(
-        new CustomEvent("rl-color-theme-update", {
-          bubbles: true,
-          composed: true,
-          detail: this._mode,
-        }),
-      );
-    }
-  }
 
   render() {
     return html`
