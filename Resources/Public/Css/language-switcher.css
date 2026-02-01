@@ -24,12 +24,6 @@
         color: var(--color-text-blue);
         background-color: var(--color-background-gold);
     }
-    .language-switcher__button::first-letter {
-        font-size: max(1.5rem, 1.2vw);
-        font-weight: bold;
-        font-family: var(--font-family-montecarlo);
-        margin-right: 0.1rem;
-    }
 
     @media screen and (width <= 62.49rem) {
         > span {
@@ -57,6 +51,12 @@
         content: "";
         mask-image: url("../Icons/icon/chevron-down.svg");
     }
+}
+.language-switcher__button::first-letter {
+    font-size: max(1.5rem, 1.2vw);
+    font-weight: bold;
+    font-family: var(--font-family-montecarlo);
+    margin-right: 0.1rem;
 }
 
 .language-switcher__dropdown {
