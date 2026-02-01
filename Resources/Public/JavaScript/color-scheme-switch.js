@@ -3,36 +3,14 @@ import {classMap} from 'lit/directives/class-map.js';
 
 class RLColorTheme extends LitElement {
   static properties = {
-    _mode: { state: true },
+    list: {},
+    condition: {},
   };
 
   constructor() {
     super();
-    this._mode = "light dark";
-    this._options = Object.entries({
-      "light dark": this._mode("theme-default")`OS default`,
-      light: this._mode`Light`,
-      dark: this._mode`Dark`,
-    });
-  }
-
-  /** @param {MouseEvent} event */
-  _setMode({ target }) {
-    if (target instanceof HTMLElement) {
-      const mode = target.dataset.mode;
-      if (mode === "light dark" || mode === "light" || mode === "dark") {
-        this._mode = mode;
-        try {
-          localStorage.setItem("theme", mode);
-        } catch (error) {
-          console.warn("Unable to write theme to localStorage", error);
-        }
-        const dropdown = this.shadowRoot?.querySelector("rl-dropdown");
-        if (dropdown) {
-          dropdown.open = false;
-        }
-      }
-    }
+    this.list = ['light dark', 'light', 'dark'];
+    this.condition = true;
   }
 
   render() {
