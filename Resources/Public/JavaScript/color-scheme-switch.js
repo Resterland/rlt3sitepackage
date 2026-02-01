@@ -3,60 +3,24 @@ import {classMap} from 'lit/directives/class-map.js';
 
 class RLColorTheme extends LitElement {
   static properties = {
-    enabled: {type: Boolean},
-    hidden: {type: Boolean},
+    date: {
+      converter: (attrValue) => {
+        if (attrValue) return new Date(attrValue);
+        else return undefined;
+      },
+    },
   };
 
-  static styles = css`
-    .enabled {
-      background: lightgreen;
-    }
-    .hidden {
-      opacity: 0.2;
-    }
-    .padded {
-      padding: 10px;
-    }
-  `;
-
-  constructor() {
-    super();
-    this.enabled = true;
-    this.hidden = false;
-  }
-
   render() {
-    const classes = {
-      enabled: this.enabled,
-      hidden: this.hidden,
-      padded: true,
-    };
     return html`
-      <h3>classMap directive example</h3>
-
-      <div class=${classMap(classes)}>Classy text</div>
-      <hr>
-      <label>
-        <input type="checkbox" .checked=${this.enabled} @change=${
-      this.toggleEnabled
-    }>
-        Enabled
-      </label>
-      <label>
-        <input type="checkbox" .checked=${this.hidden} @change=${
-      this.toggleHidden
-    }>
-        Hidden
-      </label>
+      ${
+      this.date
+        ? html`<p>Date is
+            <span id="datefield">${this.date.toLocaleDateString()}</span>
+          </p>`
+        : 'No date set'
+    }
     `;
-  }
-
-  toggleEnabled() {
-    this.enabled = !this.enabled;
-  }
-
-  toggleHidden() {
-    this.hidden = !this.hidden;
   }
 
 }
