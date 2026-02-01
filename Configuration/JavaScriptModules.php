@@ -16,8 +16,8 @@
 return [
     'dependencies' => ['core'],
     'imports' => [
-        'lit/' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/',
-        'utils/' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/',
-        'components/' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/components/',
+        'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
+        'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
+        'language-switch' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/components/language-switch.js',
     ],
 ];
