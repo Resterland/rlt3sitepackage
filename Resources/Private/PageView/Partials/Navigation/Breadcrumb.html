@@ -18,5 +18,8 @@
                 <f:render partial="Navigation/SchemeSwitch" arguments="{_all}"/>
             </ul>
         </f:if>
+        <f:if condition="{settings.page.header.languagenavigation.enable}">
+                <f:render partial="Navigation/LanguageSwitch" arguments="{_all}"/>
+        </f:if>
     </div>
 </f:if>
