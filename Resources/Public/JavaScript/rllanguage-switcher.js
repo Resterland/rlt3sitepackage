@@ -4,9 +4,9 @@ import {randomIdString} from "utils";
 
 import styles from "../Css/language-switcher.css?lit";
 
-import "./rldropdown.js"
+import {RLDropdown} from "./rldropdown";
 
-export class RLLanguageSwitcher extends LitElement {
+export class RLLanguageSwitcher extends RLDropdown {
   static styles = styles;
 }
 
