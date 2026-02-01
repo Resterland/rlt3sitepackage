@@ -3,23 +3,26 @@ import {classMap} from 'lit/directives/class-map.js';
 
 class RLColorTheme extends LitElement {
   static properties = {
-    date: {
-      converter: (attrValue) => {
-        if (attrValue) return new Date(attrValue);
-        else return undefined;
-      },
-    },
+    list: {},
+    condition: {},
   };
+
+  constructor() {
+    super();
+    this.list = ['Peas', 'Carrots', 'Tomatoes'];
+    this.condition = true;
+  }
 
   render() {
     return html`
-      ${
-      this.date
-        ? html`<p>Date is
-            <span id="datefield">${this.date.toLocaleDateString()}</span>
-          </p>`
-        : 'No date set'
-    }
+      <p>Render a list:</p>
+      <ul>
+        ${this.list.map(
+      (item, index) => html`
+              <li>${index}: ${item}</li>
+            `
+    )}
+      </ul>
     `;
   }
 
