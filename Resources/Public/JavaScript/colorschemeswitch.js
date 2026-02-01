@@ -1,6 +1,6 @@
-import {RLDropdown} from "./rldropdown";
+import { LitElement, html, css } from "lit";
 
-export class RLColorschemeswitch extends RLDropdown {
+export class RLColorschemeswitch extends LitElement {
 
 }
 
