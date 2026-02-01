@@ -9,7 +9,7 @@ class RLColorTheme extends LitElement {
 
   constructor() {
     super();
-    this.list = ['Peas', 'Carrots', 'Tomatoes'];
+    this.list = ['light dark', 'light', 'dark'];
     this.condition = true;
   }
 
