@@ -23,6 +23,9 @@
         </li>
     </ul>
     <f:render partial="Header/Header" arguments="{_all}"/>
+    <f:if condition="{settings.page.header.languagenavigation.enable}">
+        <f:render partial="Navigation/LanguageSwitch" arguments="{_all}"/>
+    </f:if>
     <f:render section="MainContent"/>
 
     <f:render partial="Footer/Footer" arguments="{_all}"/>
