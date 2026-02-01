@@ -52,7 +52,7 @@
         mask-image: url("../Icons/icon/chevron-down.svg");
     }
 }
-.language-switcher__button::first-letter {
+.language-switcher__button span::first-letter {
     font-size: max(1.5rem, 1.2vw);
     font-weight: bold;
     font-family: var(--font-family-montecarlo);
