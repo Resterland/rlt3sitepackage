@@ -1,10 +1,19 @@
 import { LitElement, html } from "lit";
 
-import "./rldropdown";
+import {RLDropdown} from "./rldropdown";
 
-export class RLColorTheme extends LitElement {
-  static styles = styles;
+export class RLColorTheme extends RLDropdown(LitElement) {
+  static styles = css`
+    :host {
+      display: contents;
+    }
 
+    :host(:not([loaded], :focus-within)) {
+      slot[name="dropdown"] {
+        display: none;
+      }
+    }`
+  ;
   static properties = {
     _mode: { state: true },
   };
@@ -14,9 +23,9 @@ export class RLColorTheme extends LitElement {
     /** @type {import("./types.js").ColorScheme} */
     this._mode = "light dark";
     this._options = Object.entries({
-      "light dark": this.l10n("theme-default")`OS default`,
-      light: this.l10n`Light`,
-      dark: this.l10n`Dark`,
+      "light dark": `OS default`,
+      light: `Light`,
+      dark: `Dark`,
     });
   }
 
@@ -64,9 +73,9 @@ export class RLColorTheme extends LitElement {
           class="color-theme__button"
           data-mode=${this._mode}
           type="button"
-          aria-label=${this.l10n`Switch color theme`}
+          aria-label=${`Switch color theme`}
         >
-          <span>${this.l10n`Theme`}</span>
+          <span>${`Theme`}</span>
         </button>
         <div
           slot="dropdown"
