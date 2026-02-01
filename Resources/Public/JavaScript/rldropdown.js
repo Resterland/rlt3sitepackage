@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit";
 
-import { randomIdString } from "Resources/Public/JavaScript/utils";
+import { randomIdString } from "./utils";
 
 /**
  * This element has two slots, which should take a single element each.
