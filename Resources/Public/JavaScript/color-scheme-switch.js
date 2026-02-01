@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 
-import {RLDropdown} from "./rldropdown";
+import {RLDropdown} from "rldropdown";
 
 export class RLColorTheme extends RLDropdown(LitElement) {
   static styles = css`
