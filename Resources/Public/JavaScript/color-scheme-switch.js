@@ -1,6 +1,10 @@
 import { LitElement, html, css } from "lit";
 
-export class RLColorTheme extends LitElement {
+class RLColorTheme extends LitElement {
+  render() {
+    return html`<p>Hello from my template.</p>`;
+  }
+
 }
 
 customElements.define("rl-color-theme", RLColorTheme);
