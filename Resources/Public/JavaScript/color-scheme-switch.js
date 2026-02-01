@@ -23,7 +23,7 @@ class RLColorTheme extends LitElement {
             class="color-theme__button"
             type="button"
           >
-            <span>bla bla</span>
+            <span>Themes</span>
           </button>
           <div
             slot="dropdown"
