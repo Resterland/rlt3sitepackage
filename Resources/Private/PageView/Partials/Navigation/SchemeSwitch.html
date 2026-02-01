@@ -1,18 +1,26 @@
-
-<f:for each="{languagemenu}" as="item">
-    <li
-        class="lang-menu-item {f:if(condition: item.available, else: 'text-muted')}" lang="{item.hreflang}">
-        <f:if condition="{item.available}">
-            <f:then>
-                <a class="nav-link {f:if(condition: item.active, then: 'active')}"
-                   href="{item.link}" hreflang="{item.hreflang}"
-                   title="{item.title}">
-                    <bdi>{item.navigationTitle}</bdi>
-                </a>
-            </f:then>
-            <f:else>
-                <span class="nav-link-text">&nbsp;</span>
-            </f:else>
-        </f:if>
-    </li>
-</f:for>
+<nav class="color-theme" id="color-theme">
+    <rl-dropdown loaded="">
+        <button
+            class="color-theme__button"
+            type="button"
+            slot="button"
+            aria-expanded="true"
+            aria-controls="color-theme__dropdown"
+            aria-labelledby="current-theme"
+        >
+                <span>
+                    current theme
+                </span>
+        </button>
+        <div slot="dropdown" class="color-theme__dropdown" id="color-theme__dropdown">
+            <ul class="color-theme__list">
+                    <li>
+                                <a class="color-theme__option "
+                                   href=""
+                                   title="">
+                                </a>
+                    </li>
+            </ul>
+        </div>
+    </rl-dropdown>
+</nav>
