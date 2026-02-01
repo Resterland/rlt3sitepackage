@@ -6,4 +6,4 @@ export class LanguageSwitcher extends LitElement {
 }
 
 
-customElements.define("language-switcher", RLLanguageSwitcher);
+customElements.define("language-switcher", LanguageSwitcher);
