@@ -4,17 +4,11 @@ import {classMap} from 'lit/directives/class-map.js';
 class RLColorTheme extends LitElement {
   static properties = {
     _mode: { state: true },
-    _options: {},
   };
 
   constructor() {
     super();
     this._mode = "light dark";
-    this._options = Object.entries({
-      "light dark": this._mode("theme-default")`OS default`,
-      light: this._mode`Light`,
-      dark: this._mode`Dark`,
-    });
   }
 
   /** @param {MouseEvent} event */
@@ -81,7 +75,6 @@ class RLColorTheme extends LitElement {
                       type="button"
                       @click=${this._setMode}
                     >
-                      ${option}
                     </button>
                   </li>`,
               )}
