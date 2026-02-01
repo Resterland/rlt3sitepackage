@@ -4,15 +4,16 @@ import {classMap} from 'lit/directives/class-map.js';
 class RLColorTheme extends LitElement {
   static properties = {
     _mode: { state: true },
+    _options: {},
   };
 
   constructor() {
     super();
     this._mode = "light dark";
     this._options = Object.entries({
-      "light dark": this._options("theme-default")`OS default`,
-      light: this._options`Light`,
-      dark: this._options`Dark`,
+      "light dark": this._mode("theme-default")`OS default`,
+      light: this._mode`Light`,
+      dark: this._mode`Dark`,
     });
   }
 
