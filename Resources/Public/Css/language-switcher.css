@@ -68,6 +68,9 @@
 
     padding: 0.75rem;
     margin: 0;
+
+    background-color: var(--color-background-page);
+    border: 1px solid var(--color-border-primary);
 }
 
 .language-switcher__list {
@@ -77,8 +80,6 @@
     margin: 0;
 
     list-style: none;
-
-    background-color: var(--color-background-primary);
 }
 
 .language-switcher__option {
