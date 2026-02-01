@@ -1,33 +1,62 @@
 import { LitElement, html, css } from "lit";
+import {classMap} from 'lit/directives/class-map.js';
 
 class RLColorTheme extends LitElement {
   static properties = {
-    article: {attribute: false},
+    enabled: {type: Boolean},
+    hidden: {type: Boolean},
   };
+
+  static styles = css`
+    .enabled {
+      background: lightgreen;
+    }
+    .hidden {
+      opacity: 0.2;
+    }
+    .padded {
+      padding: 10px;
+    }
+  `;
 
   constructor() {
     super();
-    this.article = {
-      title: 'Template composition',
-      text: `Defining partial templates as instance methods
-           breaks the template into manageable pieces—and
-           allows a subclass to override individual parts of the template.`,
-    };
-  }
-
-  headerTemplate() {
-    return html`<header><h1>${this.article.title}</h1></header>`;
-  }
-
-  articleTemplate() {
-    return html`<article>${this.article.text}</article>`;
+    this.enabled = true;
+    this.hidden = false;
   }
 
   render() {
+    const classes = {
+      enabled: this.enabled,
+      hidden: this.hidden,
+      padded: true,
+    };
     return html`
-      ${this.headerTemplate()}
-      ${this.articleTemplate()}
+      <h3>classMap directive example</h3>
+
+      <div class=${classMap(classes)}>Classy text</div>
+      <hr>
+      <label>
+        <input type="checkbox" .checked=${this.enabled} @change=${
+      this.toggleEnabled
+    }>
+        Enabled
+      </label>
+      <label>
+        <input type="checkbox" .checked=${this.hidden} @change=${
+      this.toggleHidden
+    }>
+        Hidden
+      </label>
     `;
+  }
+
+  toggleEnabled() {
+    this.enabled = !this.enabled;
+  }
+
+  toggleHidden() {
+    this.hidden = !this.hidden;
   }
 
 }
