@@ -25,12 +25,6 @@
         background-color: var(--color-background-gold);
     }
 
-    @media screen and (width <= 62.49rem) {
-        > span {
-            display: none;
-        }
-    }
-
     /* Arrow & Icon */
     &::before,
     &::after {
@@ -50,6 +44,12 @@
     &::after {
         content: "";
         mask-image: url("../Icons/icon/chevron-down.svg");
+    }
+
+    @media screen and (width <= 62.49rem) {
+        > span {
+            display: none;
+        }
     }
 }
 .language-switcher__button span::first-letter {
@@ -107,4 +107,5 @@
             var(--rl-bg-hover),
             var(--rl-color-hover)
         );
+    }
 }
