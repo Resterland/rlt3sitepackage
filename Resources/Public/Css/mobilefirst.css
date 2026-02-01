@@ -264,8 +264,14 @@ footer {
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-text-blue);
-        background-color: var(--color-background-gold);
+        color: light-dark(
+            var(--rl-color-hover),
+            var(--rl-bg-hover)
+        );
+        background-color: light-dark(
+            var(--rl-bg-hover),
+            var(--rl-color-hover)
+        );
     }
 
     /* Arrow & Icon */
