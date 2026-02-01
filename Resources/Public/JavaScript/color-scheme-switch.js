@@ -58,33 +58,22 @@ class RLColorTheme extends LitElement {
             part="button"
             slot="button"
             class="color-theme__button"
-            data-mode=${this._mode}
             type="button"
-            aria-label=${this._mode`Switch color theme`}
           >
-            <span>${this._mode`Theme`}</span>
+            <span>Themes</span>
           </button>
           <div
             slot="dropdown"
             class="color-theme__dropdown"
             id="color-theme__dropdown"
           >
-            <ul class="color-theme__list">
-              ${this._options.map(
-                ([mode, option]) =>
-                  html`<li>
-                    <button
-                      class="color-theme__option"
-                      data-mode=${mode}
-                      ?data-current=${mode === this._mode}
-                      type="button"
-                      @click=${this._setMode}
-                    >
-                      ${option}
-                    </button>
-                  </li>`,
-              )}
-            </ul>
+      <ul class="color-theme__list">
+        ${this.list.map(
+      (item, index) => html`
+              <li>${index}: ${item}</li>
+            `
+    )}
+      </ul>
           </div>
         </rl-dropdown>
       </div>
