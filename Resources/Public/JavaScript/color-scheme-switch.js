@@ -16,7 +16,7 @@ class RLColorTheme extends LitElement {
       background: lightgray;
     }
     .planet {
-      color: var(--planet-color, blue);
+      color: blue;
     }
   `;
 
