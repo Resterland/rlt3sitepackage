@@ -1,11 +1,20 @@
-const html = document.querySelector('html');
+function lightMode() {
+  document
+    .querySelector('meta[name="color-scheme"]')
+    .setAttribute("content", "light");
+  // document.getElementsByTagName("html")[0].style.colorScheme = "light";
+}
 
-function switchDark() {
-  html.style.setProperty("color-scheme", "dark");
+function darkMode() {
+  document
+    .querySelector('meta[name="color-scheme"]')
+    .setAttribute("content", "dark");
+  // document.getElementsByTagName("html")[0].style.colorScheme = "dark";
 }
-function switchLight() {
-  html.style.setProperty("color-scheme", "light");
-}
-function switchAuto() {
-  html.style.setProperty("color-scheme", "light dark");
+
+function autoMode() {
+  document
+    .querySelector('meta[name="color-scheme"]')
+    .setAttribute("content", "light dark");
+  // document.getElementsByTagName("html")[0].style.colorScheme = "light dark";
 }
