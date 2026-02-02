@@ -1,5 +1,30 @@
 <rl-color-theme>
-    <button onclick="darkMode()">Dark Mode</button>
-    <button onclick="lightMode()">Light Mode</button>
-    <button onclick="autoMode()">Auto Mode</button>
+    <<p>
+    <button id="autoSwitch" type="button" onclick="switchAuto()">Auto</button>
+    <button id="lightSwitch" type="button" onclick="switchLight()">Light</button>
+    <button id="darkSwitch" type="button" onclick="switchDark()">Dark</button>
+</p>
+    <fieldset>
+        <legend>Select a color mode:</legend>
+        <div>
+            <input onchange="switchAuto()" type="radio" id="auto" name="mode" value="auto" checked />
+            <label for="auto">Auto</label>
+        </div>
+        <div>
+            <input onchange="switchLight()" type="radio" id="light" name="mode" value="light" />
+            <label for="light">Light</label>
+        </div>
+        <div>
+            <input onchange="switchDark()" type="radio" id="dark" name="mode" value="dark" />
+            <label for="dark">Dark</label>
+        </div>
+    </fieldset>
+    <p>
+        <label for="lightdark">Mode:</label>
+        <select onchange="switchMode(this.value)" id="lightdark">
+            <option value="auto">Auto</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </p>
 </rl-color-theme>
