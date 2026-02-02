@@ -1,48 +1,11 @@
-import { LitElement, html, css } from "lit";
-import {classMap} from 'lit/directives/class-map.js';
+const html = document.querySelector('html');
 
-class RLColorTheme extends LitElement {
-  static properties = {
-    list: {},
-    condition: {},
-  };
-
-  constructor() {
-    super();
-    this.list = ['light dark', 'light', 'dark'];
-    this.condition = true;
-  }
-
-  render() {
-    return html`
-      <div class="color-theme">
-        <rl-dropdown>
-          <button
-            part="button"
-            slot="button"
-            class="color-theme__button"
-            type="button"
-          >
-            <span>Themes</span>
-          </button>
-          <div
-            slot="dropdown"
-            class="color-theme__dropdown"
-            id="color-theme__dropdown"
-          >
-      <ul class="color-theme__list">
-        ${this.list.map(
-      (item, index) => html`
-              <li>${index}: ${item}</li>
-            `
-    )}
-      </ul>
-          </div>
-        </rl-dropdown>
-      </div>
-    `;
-  }
-
+function switchDark() {
+  html.style.setProperty("color-scheme", "dark");
 }
-
-customElements.define("rl-color-theme", RLColorTheme);
+function switchLight() {
+  html.style.setProperty("color-scheme", "light");
+}
+function switchAuto() {
+  html.style.setProperty("color-scheme", "light dark");
+}
