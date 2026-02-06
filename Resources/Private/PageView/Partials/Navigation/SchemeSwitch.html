@@ -1,195 +1,28 @@
-<rl-color-theme>
-    <div class="buttons">
-        <button onclick="darkMode()">Dark Mode</button>
-        <button onclick="lightMode()">Light Mode</button>
-        <button onclick="autoMode()">Auto Mode</button>
+<p>
+    <button id="autoSwitch" type="button" onclick="switchAuto()">Auto</button>
+    <button id="lightSwitch" type="button" onclick="switchLight()">Light</button>
+    <button id="darkSwitch" type="button" onclick="switchDark()">Dark</button>
+</p>
+<fieldset>
+    <legend>Select a color mode:</legend>
+    <div>
+        <input onchange="switchAuto()" type="radio" id="auto" name="mode" value="auto" checked />
+        <label for="auto">Auto</label>
     </div>
-    <!-- 	<div class="buttons">
-        <button onclick="autoLight()">Auto Light</button>
-        <button onclick="autoDark()">Auto Dark</button>
-    </div> -->
-
-    <form>
-        <h3>What a nice form!</h3>
-        <label>text field
-            <br><input type="text" placeholder="Hellooo">
-        </label>
-        <br><br>
-        <label>
-            check box <input type="checkbox">
-        </label>
-        <br><br>
-        <label>
-            radio <input type="radio">
-        </label>
-        <br><br>
-        <label>
-            car brands: <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
-        </label>
-    </form>
-
-    <div class="single">
-        <header>
-            <h1>Website name</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Blog title</h2>
-                <article>
-                    <h3>Blog post title</h3>
-                    <p>Blog post content</p>
-                </article>
-                <aside>
-                    <h4>By the Way:</h4>
-                    <p>Interesting extra info</p>
-                </aside>
-            </section>
-            <section>
-                <h4>Comments</h4>
-                <article>First!</article>
-                <article>Great post!</article>
-                <article>Very informative!</article>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright Me, 2022</p>
-        </footer>
+    <div>
+        <input onchange="switchLight()" type="radio" id="light" name="mode" value="light" />
+        <label for="light">Light</label>
     </div>
-
-    <div class="site-container">
-        <div class="unstyled-site" id="dark">
-            <form>
-                <h3>What a nice form!</h3>
-                <label>text field
-                    <br><input type="text" placeholder="Hellooo">
-                </label>
-                <br><br>
-                <label>
-                    check box <input type="checkbox">
-                </label>
-                <br><br>
-                <label>
-                    radio <input type="radio">
-                </label>
-                <br><br>
-                <label>
-                    car brands: <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select>
-                </label>
-            </form>
-        </div>
-
-        <div class="unstyled-site" id="light">
-            <form>
-                <h3>What a nice form!</h3>
-                <label>text field
-                    <br><input type="text" placeholder="Hellooo">
-                </label>
-                <br><br>
-                <label>
-                    check box <input type="checkbox">
-                </label>
-                <br><br>
-                <label>
-                    radio <input type="radio">
-                </label>
-                <br><br>
-                <label>
-                    car brands: <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select>
-                </label>
-            </form>
-        </div>
+    <div>
+        <input onchange="switchDark()" type="radio" id="dark" name="mode" value="dark" />
+        <label for="dark">Dark</label>
     </div>
-    <div class="site-container">
-        <div class="unstyled-site" id="light">
-            <header>
-                <h1>Website name</h1>
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="blog">
-                    <h2>Blog title</h2>
-                    <article>
-                        <h3>Blog post title</h3>
-                        <p>Blog post content</p>
-                    </article>
-                    <aside>
-                        <h4>By the Way:</h4>
-                        <p>Interesting extra info</p>
-                    </aside>
-                </section>
-                <section>
-                    <h4>Comments</h4>
-                    <article>First!</article>
-                    <article>Great post!</article>
-                    <article>Very informative!</article>
-                </section>
-            </main>
-            <footer>
-                <p>Copyright Me, 2022</p>
-            </footer>
-        </div>
-
-        <div class="unstyled-site" id="dark">
-            <header>
-                <h1>Website name</h1>
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section>
-                    <h2>Blog title</h2>
-                    <article>
-                        <h3>Blog post title</h3>
-                        <p>Blog post content</p>
-                    </article>
-                    <aside>
-                        <h4>By the Way:</h4>
-                        <p>Interesting extra info</p>
-                    </aside>
-                </section>
-                <section>
-                    <h4>Comments</h4>
-                    <article>First!</article>
-                    <article>Great post!</article>
-                    <article>Very informative!</article>
-                </section>
-            </main>
-            <footer>
-                <p>Copyright Me, 2022</p>
-            </footer>
-        </div>
-    </div>
-</rl-color-theme>
+</fieldset>
+<p>
+    <label for="lightdark">Mode:</label>
+    <select onchange="switchMode(this.value)" id="lightdark">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</p>
