@@ -20,7 +20,7 @@ config {
   pageTitleSeparator = -
   pageTitleSeparator.noTrimWrap = | | |
   doctype = html5
- # htmlTag.attributes.data-theme={$page.themes.theme}
+  htmlTag.attributes.data-theme={$page.themes.theme}
   xmlprologue = none
   removeDefaultJS = {$config.removeDefaultJS}
   sendCacheHeaders = {$config.sendCacheHeaders}
