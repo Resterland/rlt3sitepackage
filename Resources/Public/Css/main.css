@@ -5,4 +5,5 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
+    color-scheme: light dark;
 }

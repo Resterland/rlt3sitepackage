@@ -52,6 +52,7 @@ page {
     viewport = {$page.meta.viewport}
     robots = {$page.meta.robots}
     apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+    color-scheme = "light dark"
 
 
     X-UA-Compatible = {$page.meta.compatible}
