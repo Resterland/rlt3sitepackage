@@ -1,7 +1,7 @@
 page = PAGE
 page {
   typeNum = 0
-  shortcutIcon = {$page.meta.favicon}
+  shortcutIcon = EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico
 
   headerData {
     // Flip ahead browsing for IE10/11
