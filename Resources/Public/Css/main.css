@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+html {
+    min-height: 100vh;
+    width: 100%;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+}
