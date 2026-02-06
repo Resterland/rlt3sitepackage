@@ -1,17 +1,20 @@
-const html = document.querySelector('html');
-
-// three functions used by buttons and radios
-function switchAuto() {
-  html.style.setProperty("color-scheme", "light dark");
-}
-function switchLight() {
-  html.style.setProperty("color-scheme", "light");
-}
-function switchDark() {
-  html.style.setProperty("color-scheme", "dark");
+function lightMode() {
+  // document
+  //.querySelector('meta[name="color-scheme"]')
+  //.setAttribute("content", "light");
+  document.getElementsByTagName("html")[0].style.colorScheme = "light";
 }
 
-// single function used by select element
-function switchMode(mode) {
-  html.style.setProperty("color-scheme", mode === "auto" ? "light dark" : mode);
+function darkMode() {
+  // document
+  // .querySelector('meta[name="color-scheme"]')
+  // .setAttribute("content", "dark");
+  document.getElementsByTagName("html")[0].style.colorScheme = "dark";
+}
+
+function autoMode() {
+  // document
+  // .querySelector('meta[name="color-scheme"]')
+  // .setAttribute("content", "light dark");
+  document.getElementsByTagName("html")[0].style.colorScheme = "light dark";
 }
