@@ -14,6 +14,7 @@ html {
     box-sizing: border-box;
 }
 body {
+    color-scheme: light dark;
     color: CanvasText;
     background-color: Canvas;
     padding: 1rem;
