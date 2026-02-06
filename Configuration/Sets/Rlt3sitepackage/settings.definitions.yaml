@@ -135,20 +135,6 @@ settings:
     type: bool
     default: true
 
-  page.logo.file.light:
-    label: 'Logo File Light Theme'
-    category: Rlt3sitepackage.header.logo
-    description: 'Path to the logo of Rlt3 Site Package.'
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
-
-  page.logo.file.dark:
-    label: 'Logo File Light Dark'
-    category: Rlt3sitepackage.header.logo
-    description: 'Path to the logo of Rlt3 Site Package.'
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/LogoInverted.svg'
-
   page.logo.file:
     label: 'Logo File'
     category: Rlt3sitepackage.header.logo
