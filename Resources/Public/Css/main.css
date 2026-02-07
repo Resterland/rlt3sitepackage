@@ -22,6 +22,10 @@ body {
     background: var(--color-background-page);
 }
 
+a {
+    color: var(--color-link-coffee);
+}
+
 .page-layout__header {
     display: grid;
     position: sticky;
