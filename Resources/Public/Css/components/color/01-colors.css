@@ -1,7 +1,11 @@
 /* Colors */
 
-@import url("link.css");
+@import url("border.css");
 @import url("background.css");
+@import url("text.css");
+@import url("link.css");
+@import url("scrollbar.css");
+@import url("area.css");
 
 /* Basic */
 :root {

@@ -4,16 +4,16 @@
 
 :root {
     --color-text-page: light-dark(
-        var(--rl-color-gray-05),
-        var(--rl-color-white)
+        var(--color-gray-05),
+        var(--color-white)
     );
     --color-text-primary: light-dark(
-        var(--rl-color-black),
-        var(--rl-color-white)
+        var(--color-black),
+        var(--color-white)
     );
     --color-text-secondary: light-dark(
-        var(--rl-color-gray-40),
-        var(--rl-color-gray-60)
+        var(--color-gray-40),
+        var(--color-gray-60)
     );
 }
 
@@ -21,63 +21,63 @@
 
 :root {
     --color-text-aqua: light-dark(
-        var(--rl-color-aqua-25),
-        var(--rl-color-aqua-90)
+        var(--color-aqua-25),
+        var(--color-aqua-90)
     );
 
     --color-text-chartreuse: light-dark(
-        var(--rl-color-chartreuse-15),
-        var(--rl-color-chartreuse-90)
+        var(--color-chartreuse-15),
+        var(--color-chartreuse-90)
     );
 
     --color-text-coffee: light-dark(
-        var(--rl-color-coffee-15),
-        var(--rl-color-coffee-90)
+        var(--color-coffee-15),
+        var(--color-coffee-90)
     );
 
     --color-text-blue: light-dark(
-        var(--rl-color-blue-25),
-        var(--rl-color-blue-90)
+        var(--color-blue-25),
+        var(--color-blue-90)
     );
 
     --color-text-fuchsia: light-dark(
-        var(--rl-color-fuchsia-15),
-        var(--rl-color-fuchsia-90)
+        var(--color-fuchsia-15),
+        var(--color-fuchsia-90)
     );
 
     --color-text-gold: light-dark(
-        var(--rl-color-gold-15),
-        var(--rl-color-gold-75)
+        var(--color-gold-15),
+        var(--color-gold-75)
     );
 
     --color-text-green: light-dark(
-        var(--rl-color-green-20),
-        var(--rl-color-green-80)
+        var(--color-green-25),
+        var(--color-green-75)
     );
 
     --color-text-lime: light-dark(
-        var(--rl-color-lime-15),
-        var(--rl-color-lime-90)
+        var(--color-lime-15),
+        var(--color-lime-90)
     );
 
     --color-text-orange: light-dark(
-        var(--rl-color-orange-25),
-        var(--rl-color-orange-90)
+        var(--color-orange-25),
+        var(--color-orange-90)
     );
 
     --color-text-purple: light-dark(
-        var(--rl-color-red-25),
-        var(--rl-color-red-90)
+        var(--color-red-25),
+        var(--color-red-90)
     );
 
     --color-text-red: light-dark(
-        var(--rl-color-red-25),
-        var(--rl-color-red-90)
+        var(--color-red-25),
+        var(--color-red-90)
     );
 
     --color-text-yellow: light-dark(
-        var(--rl-color-yellow-25),
-        var(--rl-color-yellow-90)
+        var(--color-yellow-25),
+        var(--color-yellow-90)
     );
 
 }
