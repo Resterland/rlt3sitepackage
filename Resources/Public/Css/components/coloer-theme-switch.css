@@ -41,7 +41,7 @@
     /* Icon */
     &::before {
         content: "";
-        mask-image: var(--color-theme-light-dark);
+        mask-image: url("../../Icons/icon/contrast.svg");
     }
 
     /* Arrow */
