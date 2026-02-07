@@ -1,16 +1,27 @@
-'use strict';
-const body = document.querySelector('body');
-const hueSlider = document.querySelector('#hueSlider');
+"use strict";
+(function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentSheet = document.getElementById("stylesheet"),
+      switcher = document.getElementById("styleswitcher");
 
-function switchDark() {
-  body.style.setProperty("color-scheme", "dark");
-}
-function switchLight() {
-  body.style.setProperty("color-scheme", "light");
-}
-function switchAuto() {
-  body.style.setProperty("color-scheme", "light dark");
-}
-
-hueSlider.addEventListener("input", () =>
-  body.style.setProperty("--hue", hueSlider.value));
+    function loadStyle() {
+      if (localStorage.getItem("stylez")) {
+        currentSheet.href = localStorage.getItem("stylez");
+      }
+    }
+    // only continue if required elements are present
+    if (currentSheet && switcher) {
+      // set previously stored stylesheet?
+      loadStyle();
+      // listen for clicks on buttons
+      switcher.addEventListener("click", function (ev) {
+        const b = ev.target; // button
+        if (b && b.hasAttribute("data-stylesheet")) {
+          // save value
+          localStorage.setItem("stylez", b.getAttribute("data-stylesheet"));
+          loadStyle();
+        }
+      });
+    }
+  });
+}());
