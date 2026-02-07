@@ -17,7 +17,7 @@
 
     font: inherit;
 
-    color: inherit;
+    color: var(--color-text-blue);
 
     cursor: pointer;
 
@@ -25,24 +25,29 @@
     border: none;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
-        background-color: var(--color-background-secondary);
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
     }
 
-    @media (min-width: 45rem) {
-        > span {
-            display: none;
-        }
-    }
-
-    &::before {
+    /* Arrow & Icon */
+    &::before,
+    &::after {
         width: 1.25rem;
         height: 1.25rem;
-
-        content: "";
-
         background-color: currentcolor;
-
         mask-size: cover;
+    }
+
+    /* Icon */
+    &::before {
+        content: "";
+        mask-image: url("../../Icons/icon/languages.svg");
+    }
+
+    /* Arrow */
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
     }
 
     &[data-mode="light dark"]::before {
@@ -56,6 +61,12 @@
     &[data-mode="dark"]::before {
         mask-image: var(--color-theme-dark);
     }
+
+    @media screen and (width <= 62.49rem) {
+        > span {
+            display: none;
+        }
+    }
 }
 
 .color-theme__dropdown {
@@ -66,7 +77,7 @@
     width: max-content;
 
     padding: 0.75rem;
-    margin: 0;
+    margin: -1px 0 0;
 
     background-color: var(--color-background-primary);
     border: 1px solid var(--color-border-primary);
@@ -79,8 +90,6 @@
     margin: 0;
 
     list-style: none;
-
-    background-color: var(--color-background-primary);
 }
 
 .color-theme__option {
@@ -103,8 +112,10 @@
     background-color: transparent;
     border: none;
 
-    &:hover {
-        background-color: var(--color-background-secondary);
+    &:hover,
+    &[data-current] {
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
     }
 
     &::before {
