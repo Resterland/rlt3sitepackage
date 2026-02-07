@@ -22,7 +22,7 @@ body {
 }
 
 a {
-    color: var(--color-link-coffee);
+    color: var(--color-link-blue);
 }
 
 a:visited {
