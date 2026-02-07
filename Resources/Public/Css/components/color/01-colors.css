@@ -72,9 +72,9 @@
 
     --color-green: hsl(145deg 90% 30%);
     --color-green-90: hsl(145deg 40% 94%);
-    --color-green-80: hsl(145deg 75% 68%);
-    --color-green-20: hsl(145deg 88% 19%);
-    --color-green-10: hsl(145deg 60% 12%);
+    --color-green-75: hsl(145deg 75% 68%);
+    --color-green-25: hsl(145deg 88% 19%);
+    --color-green-15: hsl(145deg 60% 12%);
 
     --color-lime: hsl(120 100% 50%);
     --color-lime-90: hsl(120 100% 90%);
@@ -106,7 +106,7 @@
 
     --color-yellow: hsl(60 100% 47%);
     --color-yellow-90: hsl(60 100% 90%);
-    --color-yellow-80: hsl(60 100% 80%);
+    --color-yellow-75: hsl(60 100% 80%);
     --color-yellow-25: hsl(60 100% 25%);
     --color-yellow-15: hsl(60 100% 15%);
 

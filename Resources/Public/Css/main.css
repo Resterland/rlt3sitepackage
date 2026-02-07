@@ -10,7 +10,6 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
-    font-family: sans-serif;
     color-scheme: light dark;
 }
 body {
@@ -30,8 +29,9 @@ a:visited {
     color: var(--color-link-gold);
 }
 
-a:hover {
-    color: var(--color-hover);
+a:hover,
+a:active {
+    color: var(--color-link-green);
     background: var(--bg-hover);
 }
 
