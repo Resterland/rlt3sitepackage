@@ -4,7 +4,7 @@ const mode = localStorage.getItem("mode");
 const autoSwitch = document.querySelector('#autoSwitch');
 const lightSwitch = document.querySelector('#lightSwitch');
 const darkSwitch = document.querySelector('#darkSwitch');
-document.querySelector('#autoSwitch').addEventListener("click", () => {
+document.querySelector('#autoSwitch').addEventListener("onclick", () => {
   switchAuto(CSS.escape("this?element"));
 });
 document.querySelector('#lightSwitch').addEventListener("click", () => {
