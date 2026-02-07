@@ -1,11 +1,11 @@
 /* Color */
 
-@import url("rlborder.css");
-@import url("rlbackground.css");
-@import url("rltext.css");
-@import url("rllink.css");
-@import url("rlscrollbar.css");
-@import url("rlarea.css");
+@import url("border.css");
+@import url("background.css");
+@import url("text.css");
+@import url("link.css");
+@import url("scrollbar.css");
+@import url("area.css");
 
 /* Basic */
 :root {

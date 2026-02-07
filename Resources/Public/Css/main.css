@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@import url("components/font/01-fonts.css");
+@import url("components/color/01-colors.css");
+@import url("components/development.css");
+@import url("components/globals.css");
+
 html {
     min-height: 100vh;
     width: 100%;
@@ -9,22 +14,5 @@ html {
     color-scheme: light dark;
 }
 
-*,
-::before,
-::after {
-    box-sizing: border-box;
-}
 
-.skip-link {
-    --offset: 20em;
-    --outline: 2px;
-    left: var(--outline);
-    list-style: none;
-    margin: 0;
-    position: absolute;
-    right: var(--outline);
-    top: calc(var(--offset)*-1);
-    width: calc(100% - var(--outline)*2);
-    z-index: 1000;
-}
 
