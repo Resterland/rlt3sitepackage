@@ -1,8 +1,6 @@
 import {LitElement, html} from 'lit';
 
-import styles from "../Css/language-switcher.css?lit";
-
-import "./rldropdown";
+import "rldropdown";
 
 export class ColorSchemeSwitch extends LitElement {
   static styles;
