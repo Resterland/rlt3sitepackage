@@ -26,6 +26,15 @@ a {
     color: var(--color-link-coffee);
 }
 
+a:visited {
+    color: var(--color-link-gold);
+}
+
+a:hover {
+    color: var(--color-hover);
+    background: var(--bg-hover);
+}
+
 .page-layout__header {
     display: grid;
     position: sticky;

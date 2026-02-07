@@ -10,12 +10,12 @@
         var(--color-blue-75)
     );
     --color-link-coffee: light-dark(
-        var(--color-coffee-15),
-        var(--color-coffee-90)
+        var(--color-coffee-25),
+        var(--color-coffee-75)
     );
     --color-link-gold: light-dark(
-        var(--color-gold-15),
-        var(--color-gold-90)
+        var(--color-gold-25),
+        var(--color-gold-75)
     );
     --color-link-green: light-dark(
         var(--color-green-20),
@@ -23,11 +23,11 @@
     );
     --color-link-lime: light-dark(
         var(--color-lime-25),
-        var(--color-lime-90)
+        var(--color-lime-75)
     );
     --color-link-purple: light-dark(
         var(--color-purple-25),
-        var(--color-purple-90)
+        var(--color-purple-75)
     );
 
     --color-visited: light-dark(
@@ -37,10 +37,10 @@
 
     --color-hover: light-dark(
         var(--color-gold-25),
-        var(--color-gold-90)
+        var(--color-gold-75)
     );
     --bg-hover: light-dark(
-        var(--color-gold-90),
+        var(--color-gold-75),
         var(--color-gold-25)
     );
 
