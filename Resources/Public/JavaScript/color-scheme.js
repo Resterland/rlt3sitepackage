@@ -24,9 +24,9 @@ export class ColorSchemeSwitch extends LitElement {
             class="color-theme__button"
             data-mode=${this._mode}
             type="button"
-            aria-label=${this._mode`Switch color theme`}
+            aria-label="Switch color theme"
           >
-            <span>${this._mode`Theme`}</span>
+            <span>Theme</span>
           </button>
           <div
             slot="dropdown"
