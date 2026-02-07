@@ -40,15 +40,15 @@ h1 {
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
     color: light-dark(
-        var(--rl-color-coffee-15),
-        var(--rl-color-coffee-90)
+        var(--color-coffee-15),
+        var(--color-coffee-90)
     );
     font-family: var(--font-family-chewy);
 }
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--rl-color-orange-40),
-        var(--rl-color-gold)
+        var(--color-orange-40),
+        var(--color-gold)
     );
 }
 
