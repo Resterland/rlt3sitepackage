@@ -35,10 +35,22 @@
         var(--color-chartreuse-75)
     );
 
-    --color-hover: #4e3329;
-    --bg-hover: #edd886;
+    --color-hover: light-dark(
+        var(--color-gold-25),
+        var(--color-gold-90)
+    );
+    --bg-hover: light-dark(
+        var(--color-gold-90),
+        var(--color-gold-25)
+    );
 
-    --color-active: #cdfeaa;
-    --bg-active: #a86a24;
+    --color-active: light-dark(
+        var(--color-coffee-25),
+        var(--color-coffee-75)
+    );
+    --bg-active: light-dark(
+        var(--color-coffee-75),
+        var(--color-coffee-25)
+    );
 
 }
