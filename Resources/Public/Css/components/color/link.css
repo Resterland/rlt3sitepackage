@@ -36,8 +36,8 @@
     );
 
     --bg-hover: light-dark(
-        var(--color-coffee-25),
-        var(--color-coffee-75)
+        var(--color-coffee-75),
+        var(--color-coffee-25)
     );
 
     --color-active: light-dark(
