@@ -23,6 +23,9 @@ function switchAuto() {
   lightSwitch.setAttribute("aria-pressed","false");
   darkSwitch.setAttribute("aria-pressed","false");
   autoSwitch.setAttribute("aria-pressed","true");
+  lightSwitch.setAttribute("data-mode","light");
+  darkSwitch.setAttribute("data-mode","dark");
+  autoSwitch.setAttribute("data-mode","light dark");
 }
 
 function switchLight() {
@@ -31,6 +34,9 @@ function switchLight() {
   lightSwitch.setAttribute("aria-pressed","true");
   darkSwitch.setAttribute("aria-pressed","false");
   autoSwitch.setAttribute("aria-pressed","false");
+  lightSwitch.setAttribute("data-mode","light");
+  darkSwitch.setAttribute("data-mode","dark");
+  autoSwitch.setAttribute("data-mode","light dark");
 }
 
 function switchDark() {
@@ -39,6 +45,9 @@ function switchDark() {
   lightSwitch.setAttribute("aria-pressed","false");
   darkSwitch.setAttribute("aria-pressed","true");
   autoSwitch.setAttribute("aria-pressed","false");
+  lightSwitch.setAttribute("data-mode","light");
+  darkSwitch.setAttribute("data-mode","dark");
+  autoSwitch.setAttribute("data-mode","light dark");
 }
 
 // there are likely DRYer ways to do this...

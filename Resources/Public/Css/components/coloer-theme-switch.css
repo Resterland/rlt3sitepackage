@@ -41,7 +41,7 @@
     /* Icon */
     &::before {
         content: "";
-        mask-image: url("../../Icons/icon/languages.svg");
+        mask-image: var(--color-theme-light-dark);
     }
 
     /* Arrow */
