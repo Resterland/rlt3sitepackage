@@ -55,13 +55,13 @@
     );
 
     --color-background-green: light-dark(
-        var(--color-green-80),
-        var(--color-green-20)
+        var(--color-green-75),
+        var(--color-green-25)
     );
 
     --color-background-lime: light-dark(
         var(--color-lime-90),
-        var(--color-lime-15)
+        var(--color-lime-25)
     );
 
     --color-background-orange: light-dark(
