@@ -5,6 +5,10 @@ const lightSwitch = document.querySelector('#lightSwitch');
 const darkSwitch = document.querySelector('#darkSwitch');
 const autoSwitch = document.querySelector('#autoSwitch');
 
+lightSwitch.addEventListener("onclick");
+darkSwitch.addEventListener("onclick");
+autoSwitch.addEventListener("onclick");
+
 if (mode === "light") switchLight();
 if (mode === "dark") switchDark();
 
