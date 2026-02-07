@@ -1,3 +1,4 @@
+'use strict';
 const body = document.querySelector('body');
 const hueSlider = document.querySelector('#hueSlider');
 

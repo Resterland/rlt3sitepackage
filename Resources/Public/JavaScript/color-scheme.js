@@ -1,20 +1,22 @@
-const html = document.querySelector("html");
-const mode = localStorage.getItem("mode");
+import {LitElement, html} from 'lit';
 
-if (mode === "light") switchLight();
-if (mode === "dark") switchDark();
+export class ColorSchemeSwitch extends LitElement {
+  static properties = {
+    count: {type: Number},
+  };
 
-function switchAuto() {
-  html.style.setProperty("color-scheme", "light dark");
-  localStorage.removeItem("mode");
+  constructor() {
+    super();
+    this.count = 0;
+  }
+  render() {
+    return html`
+      <p><button @click="${this._increment}">Click Me!</button></p>
+      <p>Click count: ${this.count}</p>
+    `;
+  }
+  _increment(e) {
+    this.count++;
+  }
 }
-
-function switchLight() {
-  html.style.setProperty("color-scheme", "light");
-  localStorage.setItem("mode", "light");
-}
-
-function switchDark() {
-  html.style.setProperty("color-scheme", "dark");
-  localStorage.setItem("mode", "dark");
-}
+customElements.define('color-scheme-switch', ColorSchemeSwitch);
