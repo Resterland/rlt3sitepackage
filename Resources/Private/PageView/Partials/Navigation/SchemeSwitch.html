@@ -1,5 +1,45 @@
-<p>
-    <button id="autoSwitch" aria-pressed="true" type="button" >Auto</button>
-    <button id="lightSwitch" aria-pressed="false" type="button" onclick="switchLight()">Light</button>
-    <button id="darkSwitch" aria-pressed="false" type="button" onclick="switchDark()">Dark</button>
-</p>
+<div class="color-theme">
+    <rl-dropdown>
+        <button
+            slot="button"
+            class="color-theme__button"
+            data-mode=""
+            type="button"
+            aria-label="Switch color theme"
+        >
+            <span>"Theme"</span>
+        </button>
+        <div
+            slot="dropdown"
+            class="color-theme__dropdown"
+            id="color-theme__dropdown"
+        >
+            <ul class="color-theme__list">
+                <li>
+                    <button
+                        id="autoSwitch"
+                        class="color-theme__option"
+                        aria-pressed="true"
+                        type="button"
+                    >Auto</button>
+                </li>
+                <li>
+                    <button
+                        id="lightSwitch"
+                        class="color-theme__option"
+                        aria-pressed="true"
+                        type="button"
+                    >Light</button>
+                </li>
+                <li>
+                    <button
+                        id="darkSwitch"
+                        class="color-theme__option"
+                        aria-pressed="true"
+                        type="button"
+                    >Dark</button>
+                </li>
+            </ul>
+        </div>
+    </rl-dropdown>
+</div>
