@@ -12,47 +12,8 @@ export class ColorSchemeSwitch extends LitElement {
   constructor() {
     super();
     this._mode = "light dark";
-    this._options = Object.entries({
-      "light dark": this._options("theme-default")`OS default`,
-      light: this._options`Light`,
-      dark: this._options`Dark`,
-    });
   }
 
-  /** @param {MouseEvent} event */
-  _setMode({ target }) {
-    if (target instanceof HTMLElement) {
-      const mode = target.dataset.mode;
-      if (mode === "light dark" || mode === "light" || mode === "dark") {
-        this._mode = mode;
-        try {
-          localStorage.setItem("theme", mode);
-        } catch (error) {
-          console.warn("Unable to write theme to localStorage", error);
-        }
-        const dropdown = this.shadowRoot?.querySelector("rl-dropdown");
-        if (dropdown) {
-          dropdown.open = false;
-        }
-      }
-    }
-  }
-
-  /**
-   * @param {import("lit").PropertyValues<this>} changedProperties
-   */
-  willUpdate(changedProperties) {
-    if (changedProperties.has("_mode") && globalThis.document) {
-      document.documentElement.dataset.theme = this._mode;
-      this.dispatchEvent(
-        new CustomEvent("rl-color-theme-update", {
-          bubbles: true,
-          composed: true,
-          detail: this._mode,
-        }),
-      );
-    }
-  }
   render() {
     return html`
       <div class="color-theme">
@@ -92,24 +53,6 @@ export class ColorSchemeSwitch extends LitElement {
         </rl-dropdown>
       </div>
     `;
-  }
-
-  firstUpdated() {
-    // we have to do this here and immediately cause a re-render
-    // as doing so in connectedCallback causes a hydration error:
-    // https://github.com/lit/lit/issues/1434
-
-    // this logic is also reflected in "/entry.inline.js"
-
-    let mode;
-    try {
-      mode = localStorage.getItem("theme");
-    } catch (error) {
-      console.warn("Unable to read theme from localStorage", error);
-    }
-    if (mode === "light dark" || mode === "light" || mode === "dark") {
-      this._mode = mode;
-    }
   }
 }
 customElements.define('color-scheme-switch', ColorSchemeSwitch);
