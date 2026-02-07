@@ -36,8 +36,8 @@
     );
 
     --bg-hover: light-dark(
-        var(--color-lime-75),
-        var(--color-lime-25)
+        var(--color-blue-75),
+        var(--color-blue-25)
     );
 
     --color-active: light-dark(
