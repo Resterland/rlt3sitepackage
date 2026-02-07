@@ -18,7 +18,7 @@ body {
     margin: 0.5em auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-sans), sans-serif;
     background: var(--color-background-page);
 }
 
@@ -31,11 +31,7 @@ body {
 
 .navigation {
     padding: 0 0.25em;
-    background-color: var(--color-background-page);
-    &[data-scheme="dark"] {
-        color: var(--color-text-primary);
-        color-scheme: dark;
-    }
+    background-color: var(--color-background-primary);
 }
 img.middle {
     margin: 0;
