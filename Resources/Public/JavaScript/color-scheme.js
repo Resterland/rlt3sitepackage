@@ -3,15 +3,41 @@ import {LitElement, html} from 'lit';
 import "rldropdown";
 
 export class ColorSchemeSwitch extends LitElement {
-  static styles;
+
 
   static properties = {
     _mode: { state: true },
+    _options: {},
+    themes: {},
   };
 
   constructor() {
     super();
     this._mode = "light dark";
+    this._options = Object.entries({
+      "light dark": this.themes("theme-default")`OS default`,
+      light: this.themes`Light`,
+      dark: this.themes`Dark`,
+    });
+  }
+
+  /** @param {MouseEvent} event */
+  _setMode({ target }) {
+    if (target instanceof HTMLElement) {
+      const mode = target.dataset.mode;
+      if (mode === "light dark" || mode === "light" || mode === "dark") {
+        this._mode = mode;
+        try {
+          localStorage.setItem("theme", mode);
+        } catch (error) {
+          console.warn("Unable to write theme to localStorage", error);
+        }
+        const dropdown = this.shadowRoot?.querySelector("rl-dropdown");
+        if (dropdown) {
+          dropdown.open = false;
+        }
+      }
+    }
   }
 
   render() {
@@ -24,9 +50,9 @@ export class ColorSchemeSwitch extends LitElement {
             class="color-theme__button"
             data-mode=${this._mode}
             type="button"
-            aria-label="Switch color theme"
+            aria-label=${this.themes`Switch color theme`}
           >
-            <span>Theme</span>
+            <span>${this.themes`Theme`}</span>
           </button>
           <div
             slot="dropdown"
@@ -52,7 +78,7 @@ export class ColorSchemeSwitch extends LitElement {
           </div>
         </rl-dropdown>
       </div>
-    `;
+  `;
   }
 }
 customElements.define('color-scheme-switch', ColorSchemeSwitch);
