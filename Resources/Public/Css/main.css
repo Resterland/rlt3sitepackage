@@ -2,6 +2,7 @@
 
 @import url("components/font/01-fonts.css");
 @import url("components/color/01-colors.css");
+@import url("components/coloer-theme-switch.css");
 @import url("language-switcher.css");
 @import url("components/development.css");
 @import url("components/globals.css");
