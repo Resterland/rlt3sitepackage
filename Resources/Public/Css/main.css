@@ -5,6 +5,7 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
+    font-family: sans-serif;
     color-scheme: light dark;
 }
 
@@ -13,40 +14,17 @@ html {
 ::after {
     box-sizing: border-box;
 }
-body {
-    color-scheme: light dark;
-    color: CanvasText;
-    background-color: Canvas;
-    padding: 1rem;
 
-    --theme-oklch: oklch(50% 0.25 var(--hue, 222));
-    --theme-hsl: hsl(var(--hue, 222) 75% 50%);
-}
-
-body > div {
-    margin-block: 1rem 0;
-}
-div > div {
-    display: inline-block;
-    width: 2rem;
-    height: 1rem;
-    border: 1px solid;
-}
-div.oklch {
-    background-color: var(--theme-oklch);
-}
-div.hsl {
-    background-color: var(--theme-hsl);
+.skip-link {
+    --offset: 20em;
+    --outline: 2px;
+    left: var(--outline);
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    right: var(--outline);
+    top: calc(var(--offset)*-1);
+    width: calc(100% - var(--outline)*2);
+    z-index: 1000;
 }
 
-p {
-    padding: 1rem;
-}
-p.oklch {
-    color: color-mix(in oklab, CanvasText 75%, var(--theme-oklch));
-    background-color: color-mix(in oklab, Canvas 75%, var(--theme-oklch));
-}
-p.hsl {
-    color: color-mix(in oklab, CanvasText 75%, var(--theme-hsl));
-    background-color: color-mix(in oklab, Canvas 75%, var(--theme-hsl));
-}
