@@ -20,15 +20,9 @@
     background-color: transparent;
     border: none;
 
-    &:is(:hover, [aria-expanded="true"]) {
-        color: light-dark(
-            var(--rl-color-hover),
-            var(--rl-bg-hover)
-        );
-        background-color: light-dark(
-            var(--rl-bg-hover),
-            var(--rl-color-hover)
-        );
+    &:is([aria-expanded="true"], :hover) {
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
     }
 
     /* Arrow & Icon */
@@ -73,9 +67,7 @@
     width: max-content;
 
     padding: 0.75rem;
-    margin: 0;
-
-    margin-top: -1px;
+    margin: -1px 0 0;
 
     background-color: var(--color-background-page);
     border: 1px solid var(--color-border-primary);
@@ -108,13 +100,7 @@
 
     &:hover,
     &[data-current] {
-        color: light-dark(
-            var(--rl-color-hover),
-            var(--rl-bg-hover)
-        );
-        background-color: light-dark(
-            var(--rl-bg-hover),
-            var(--rl-color-hover)
-        );
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
     }
 }
