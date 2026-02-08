@@ -68,6 +68,12 @@
         }
     }
 }
+.color-theme__button span::first-letter {
+    font-size: max(1.5rem, 1.2vw);
+    font-weight: bold;
+    font-family: var(--font-family-montecarlo);
+    margin-right: 0.1rem;
+}
 
 .color-theme__dropdown {
     position: absolute;
