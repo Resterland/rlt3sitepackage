@@ -51,10 +51,6 @@ h1 {
         var(--color-orange-40),
         var(--color-gold)
     );
-    &::before {
-        content: "";
-        mask-image: url("../Images/Logos/Default/Logo.svg");
-    }
 }
 
 .page-layout__header {
@@ -72,6 +68,7 @@ img.middle {
     width: calc(var(--font-size) + 0.35rem);
     padding-right: 0.25rem;
     vertical-align: middle;
+    fill: currentColor;
 }
 
 .breadcrumb-bar {
