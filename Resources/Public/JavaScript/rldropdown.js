@@ -1,3 +1,4 @@
+'use strict';
 import { LitElement, html, css } from "lit";
 
 import { randomIdString } from "utils";

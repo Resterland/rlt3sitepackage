@@ -37,13 +37,13 @@
     /* Icon */
     &::before {
         content: "";
-        mask-image: url("../Icons/icon/languages.svg");
+        mask-image: url("../../Icons/icon/languages.svg");
     }
 
     /* Arrow */
     &::after {
         content: "";
-        mask-image: url("../Icons/icon/chevron-down.svg");
+        mask-image: url("../../Icons/icon/chevron-down.svg");
     }
 
     @media screen and (width <= 62.49rem) {
