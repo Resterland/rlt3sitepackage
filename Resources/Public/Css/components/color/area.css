@@ -9,3 +9,19 @@
   --color-area-highlight-border: var(--color-orange);
   --color-area-link: light-dark(var(--color-orange-25), var(--color-orange-75));
 }
+
+.page-layout__header {
+    background-color: var(--color-background-primary);
+}
+.aside-left {
+    background: var(--color-background-secondary);
+}
+main {
+    background: var(--color-background-primary);
+}
+.aside-right {
+    background: var(--color-background-secondary);
+}
+footer {
+    background: var(--color-background-page);
+}
