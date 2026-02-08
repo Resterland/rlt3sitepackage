@@ -5,9 +5,9 @@
             class="color-theme__button"
             data-mode=""
             type="button"
-            aria-label="Switch color theme"
+            aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
         >
-            <span>Theme</span>
+            <span>{f:translate(key:'scheme-switch.title',extensionName:'rlt3sitepackage')}</span>
         </button>
         <div
             slot="dropdown"
@@ -21,7 +21,7 @@
                         class="color-theme__option"
                         aria-pressed="true"
                         type="button"
-                    >Auto</button>
+                    >{f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
                 </li>
                 <li>
                     <button
@@ -29,7 +29,7 @@
                         class="color-theme__option"
                         aria-pressed="true"
                         type="button"
-                    >Light</button>
+                    >{f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
                 </li>
                 <li>
                     <button
@@ -37,7 +37,7 @@
                         class="color-theme__option"
                         aria-pressed="true"
                         type="button"
-                    >Dark</button>
+                    >{f:translate(key:'scheme-switch.dark',extensionName:'rlt3sitepackage')}</button>
                 </li>
             </ul>
         </div>

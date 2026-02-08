@@ -24,6 +24,28 @@
                 <target state="translated">Langsung ke konten utama</target>
             </trans-unit>
 
+			<!-- scheme-switch -->
+			<trans-unit id="scheme-switch.title">
+				<source>Theme</source>
+				<target state="translated">Tema</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.aria_label">
+				<source>Switch color scheme</source>
+				<target state="translated">Ubah tema warna</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.auto">
+				<source>Auto</source>
+				<target state="translated">oto</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.light">
+				<source>Light</source>
+				<target state="translated">terang</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.dark">
+				<source>Dark</source>
+				<target state="translated">gelap</target>
+			</trans-unit>
+
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

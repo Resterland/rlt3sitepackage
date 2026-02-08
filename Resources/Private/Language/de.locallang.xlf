@@ -32,6 +32,28 @@
                 <target state="translated">Direkt zum Hauptinhalt</target>
             </trans-unit>
 
+			<!-- scheme-switch -->
+			<trans-unit id="scheme-switch.title">
+				<source>Theme</source>
+				<target state="translated">Thema</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.aria_label">
+				<source>Switch color scheme</source>
+				<target state="translated">Wechsle das Farbschema</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.auto">
+				<source>Auto</source>
+				<target state="translated">auto</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.light">
+				<source>Light</source>
+				<target state="translated">hell</target>
+			</trans-unit>
+			<trans-unit id="scheme-switch.dark">
+				<source>Dark</source>
+				<target state="translated">dunkel</target>
+			</trans-unit>
+
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

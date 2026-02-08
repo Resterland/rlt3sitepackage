@@ -47,6 +47,23 @@
                 <source>Scroll to top</source>
             </trans-unit>
 
+			<!-- scheme-switch -->
+			<trans-unit id="scheme-switch.title">
+				<source>Theme</source>
+			</trans-unit>
+			<trans-unit id="scheme-switch.aria_label">
+				<source>Switch color scheme</source>
+			</trans-unit>
+			<trans-unit id="scheme-switch.auto">
+				<source>Auto</source>
+			</trans-unit>
+			<trans-unit id="scheme-switch.light">
+				<source>Light</source>
+			</trans-unit>
+			<trans-unit id="scheme-switch.dark">
+				<source>Dark</source>
+			</trans-unit>
+
             <trans-unit id="cookieconsent.common.header">
                 <source>We use cookies</source>
             </trans-unit>
