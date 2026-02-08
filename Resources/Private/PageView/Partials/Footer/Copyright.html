@@ -1,7 +1,7 @@
 <div class="copyright">
     <p>
         <f:link.page pageUid="{site.rootPageId}">
-            <f:if condition="{settings.page.themes.theme} == 'light'">
+            <f:comment><!--<f:if condition="{settings.page.themes.theme} == 'light'">
                 <f:then>
                     <f:image
                         src="{settings.page.logo.file.light}"
@@ -20,7 +20,7 @@
                         height="24"
                     />
                 </f:else>
-            </f:if>
+            </f:if>--></f:comment>
         </f:link.page>&nbsp;&copy; by <f:link.external uri="https://resterland.ch/webatelier" target="_blank">
             {site.configuration.websiteTitle}
         </f:link.external>&nbsp;<f:format.date format="Y">now</f:format.date>

@@ -7,9 +7,8 @@
 categories:
   Rlt3sitepackage:
     label: 'ResterLand Site Package'
-  Rlt3sitepackage.themes:
-    description: 'Choose your preferred theme - This will chang the entire Layout'
-    label: 'Themes'
+  Rlt3sitepackage.breadcrumb:
+    label: 'Breadcrumb'
     parent: Rlt3sitepackage
   Rlt3sitepackage.templates:
     label: 'Templates'
@@ -61,15 +60,6 @@ settings:
     category: Rlt3sitepackage.themes
     type: bool
     default: true
-  page.themes.theme:
-    label: 'Choose a theme'
-    category: Rlt3sitepackage.themes
-    type: string
-    enum:
-      light dark: 'Default'
-      light: 'Light theme '
-      dark: 'Dark theme '
-    default: 'light dark'
 
   page.templates.template_path:
     label: 'Page template path'
@@ -134,27 +124,6 @@ settings:
     category: Rlt3sitepackage.header.logo
     type: bool
     default: true
-
-  page.logo.file.light:
-    label: 'Logo File Light Theme'
-    category: Rlt3sitepackage.header.logo
-    description: 'Path to the logo of Rlt3 Site Package.'
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
-
-  page.logo.file.dark:
-    label: 'Logo File Light Dark'
-    category: Rlt3sitepackage.header.logo
-    description: 'Path to the logo of Rlt3 Site Package.'
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/LogoInverted.svg'
-
-  page.logo.file:
-    label: 'Logo File'
-    category: Rlt3sitepackage.header.logo
-    description: 'Path to the logo of Rlt3 Site Package.'
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Images/Logos/Default/Logo.svg'
 
   page.header.logo.alt:
     label: 'Logo Alt text'

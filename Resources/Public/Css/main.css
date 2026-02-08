@@ -51,6 +51,10 @@ h1 {
         var(--color-orange-40),
         var(--color-gold)
     );
+    &::before {
+        content: "";
+        mask-image: url("../Images/Logos/Default/Logo.svg");
+    }
 }
 
 .page-layout__header {
