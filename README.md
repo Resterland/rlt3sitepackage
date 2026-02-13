@@ -18,7 +18,6 @@ First TYPO3 has to be installed. Then install `rlt3sitepackage`:
 ### Hint - Tip
 If you are new to TYPO3 or searching for a more sophisticated extension to get
 your project up and running, I recommend you start with [bootstrap_package]
-(https://github.
-com/benjaminkott/bootstrap_package) by Benjamin
+(https://github.com/benjaminkott/bootstrap_package) by Benjamin
 Kott.
 
