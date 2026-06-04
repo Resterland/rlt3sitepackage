@@ -3,11 +3,11 @@
     "type": "typo3-cms-extension",
     "description": "TYPO3 CMS Sitepackage Starter Kit. Contains website templates, assets, configuration and custom code for my TYPO3 projects.",
     "license": ["GPL-2.0-or-later"],
-    "homepage": "https://resterland.org",
+    "homepage": "https://resterland.com",
     "authors": [
         {
             "name": "Roland Fuhrer",
-            "email": "roland@resterland.org",
+            "email": "webmaster@resterland.com",
             "role": "Developer"
         }
     ],
@@ -25,10 +25,9 @@
 		"HTML5"
     ],
     "require": {
-        "typo3/cms-core": "^13.4",
-        "typo3/cms-rte-ckeditor": "^13.4",
-        "typo3/cms-fluid-styled-content": "^13.4",
-		"apache-solr-for-typo3/solr": "^13.0"
+        "typo3/cms-core": "^13.4 || ^14.3",
+        "typo3/cms-rte-ckeditor": "^13.4 || ^14.3",
+        "typo3/cms-fluid-styled-content": "^13.4 || ^14.3"
     },
     "suggest": {
     },
@@ -36,11 +35,6 @@
         "psr-4": {
             "Resterland\\Rlt3sitepackage\\": "Classes/"
         }
-    },
-    "scripts": {
-        "set-version": [
-            "Resterland\\Rlt3sitepackage\\Composer\\VersionScript::setVersion"
-        ]
     },
     "extra": {
         "typo3/cms": {
