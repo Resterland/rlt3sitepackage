@@ -3,3 +3,8 @@ label: Resterland TYPO3 Sitepackage
 dependencies:
   - typo3/fluid-styled-content
   - typo3/fluid-styled-content-css
+optionalDependencies:
+  - typo3/felogin
+  - apache-solr-for-typo3/solr
+  - typo3/form
+  - typo3/seo-sitemap
