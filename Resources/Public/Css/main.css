@@ -128,7 +128,6 @@ footer {
     display: block;
 }
 .openstreetmap {
-    padding: 0.5em;
     text-align: center;
 }
 .openstreetmap small {
@@ -262,7 +261,7 @@ form {
     }
 
     .content-wrapper {
-        padding-top: 0.25rem;
+        padding-top: 2.5rem;
         display: flex;
     }
 
