@@ -377,6 +377,9 @@ form {
         background-color: var(--color-background-gold);
     }
     /* Dropdown navbar END */
+    .breadcrumb-bar {
+        font-size: unset;
+    }
 }
 
 /* media between 45rem and 69.99rem */
