@@ -14,8 +14,7 @@ html {
     color-scheme: light dark;
 }
 body {
-    max-width: 97vw;
-    margin: 0.5em auto;
+    margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans), sans-serif;
