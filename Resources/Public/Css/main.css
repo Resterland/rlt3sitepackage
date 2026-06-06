@@ -18,7 +18,7 @@ body {
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans), sans-serif;
-    background: var(--color-background-page);
+    background: var(--color-background-coffee);
 }
 
 a {
@@ -50,7 +50,9 @@ h1 {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
+    background-color: var(--color-background-primary);
 }
+
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
         var(--color-orange-40),
@@ -61,7 +63,7 @@ h1 {
 .navigation,
 .breadcrumb-bar {
     padding: 0 0.25em;
-    background-color: var(--color-background-primary);
+    background-color: var(--color-background-brown);
 }
 img.middle {
     margin: 0;
@@ -261,7 +263,7 @@ form {
     }
 
     .content-wrapper {
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
         display: flex;
     }
 
