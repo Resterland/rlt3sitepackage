@@ -45,11 +45,11 @@ h1 {
     );
     font-family: var(--font-family-chewy);
 }
-
-.page-layout__header,
-.content-wrapper,
-.page-footer {
-    padding-inline: var(--layout-side-padding);
+.page-layout__header {
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
 }
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
@@ -58,14 +58,8 @@ h1 {
     );
 }
 
-.page-layout__header {
-    display: grid;
-    position: sticky;
-    top: 0;
-    z-index: var(--z-index-sticky-header);
-}
-
-.navigation {
+.navigation,
+.breadcrumb-bar {
     padding: 0 0.25em;
     background-color: var(--color-background-primary);
 }
@@ -90,7 +84,6 @@ img.middle {
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
     max-width: 100vw;
-    padding-inline: var(--layout-side-padding);
     text-wrap: nowrap;
 }
 .breadcrumb {
@@ -270,10 +263,14 @@ form {
 }*/
 /* Solr search settings END */
 
-
-
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
+
+    .page-layout__header,
+    .content-wrapper,
+    .page-footer {
+        padding-inline: var(--layout-side-padding);
+    }
 
     /*:root {
         --navigation-height: 4.125rem;
@@ -283,7 +280,7 @@ form {
         grid-template-columns: 1fr 3fr 1fr;
         column-gap: 0.25rem;
         align-items: center;
-        height: auto;
+        height:  4.125rem;
 
         /*padding-block: 0.75rem;
         padding-inline: var(--layout-side-padding);*/
