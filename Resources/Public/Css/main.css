@@ -197,12 +197,6 @@ footer {
         scale: -1;
     }
 }
-.menu__tab-label::first-letter {
-    font-size: max(1.5rem, 1.2vw);
-    font-weight: bold;
-    font-family: var(--font-family-montecarlo);
-    margin-right: 0.1rem;
-}
 
 /* Tab Link */
 .menu__tab-link {
