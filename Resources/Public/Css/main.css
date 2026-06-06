@@ -45,6 +45,12 @@ h1 {
     );
     font-family: var(--font-family-chewy);
 }
+
+.page-layout__header,
+.content-wrapper,
+.page-footer {
+    padding-inline: var(--layout-side-padding);
+}
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
         var(--color-orange-40),
