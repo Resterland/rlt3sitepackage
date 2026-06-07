@@ -54,7 +54,7 @@ h1 {
 }
 
 main {
-    background: var(--color-background-secondary);
+    background: var(--color-background-primary);
 }
 .aside-left,
 .aside-right {
@@ -274,7 +274,8 @@ form {
     }
 
     .content-wrapper {
-        padding: 1.5rem 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         display: flex;
     }
 
