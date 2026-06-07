@@ -67,9 +67,9 @@ footer {
         var(--color-orange-40),
         var(--color-gold)
     );
-    & a {
-        text-decoration: none;
-    }
+}
+.navigation__logo a {
+    text-decoration: none;
 }
 
 .navigation,
