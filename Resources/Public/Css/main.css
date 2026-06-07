@@ -225,9 +225,6 @@ footer {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    a {
-        color: inherit;
-    }
     background-color: var(--bg-hover);
 }
 /* Dropdown navbar END */
@@ -380,15 +377,12 @@ form {
     /* Panel */
     .menu__panel-title {
         padding: 0.125rem 0;
+        padding-left: 0.25rem;
         margin: 0.25rem 0;
         font-size: inherit;
-
-        a {
-            color: inherit;
-        }
     }
 
-    .menu__panel ul {
+    .menu__tab ul {
         margin: 0;
         padding: 0;
     }
