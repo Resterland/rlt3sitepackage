@@ -88,7 +88,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--color-border-primary);
+    border-top: 1px solid var(--color-background-coffee);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -149,7 +149,7 @@ footer {
     font-size: 0.8em;
 }
 .openstreetmap iframe {
-    border: 0.125em solid var(--color-border-primary);
+    border: 0.125em solid var(--color-background-coffee);
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {
@@ -170,7 +170,7 @@ footer {
 .current {
     text-decoration: none;
     color: var(--color-text-blue);
-    background-color: var(--color-background-gold);
+    background-color: var(--color-background-coffee);
     a:hover {
         text-decoration: none;
     }
