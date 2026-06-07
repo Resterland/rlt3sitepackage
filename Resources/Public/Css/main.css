@@ -55,10 +55,12 @@ h1 {
 
 main {
     background: var(--color-background-primary);
+    padding: 0.5rem 0.75rem;
 }
 .aside-left,
 .aside-right {
     background: transparent;
+    padding: 0.5rem 0.75rem;
 }
 footer {
     background: var(--color-background-primary);
@@ -123,10 +125,6 @@ img.middle {
 .lang-menu__header a {
     padding: 0 0.25em;
     display: block;
-}
-aside,
-main {
-    padding: 0.5rem;
 }
 
 footer {
