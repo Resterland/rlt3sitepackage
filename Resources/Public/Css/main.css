@@ -228,6 +228,7 @@ footer {
     a {
         color: inherit;
     }
+    background-color: var(--bg-hover);
 }
 /* Dropdown navbar END */
 
