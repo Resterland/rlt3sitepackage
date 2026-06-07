@@ -8,7 +8,9 @@
                     partial="Structure/Logo"
                     arguments="{_all}"/>
             </f:if>
-            {site.configuration.websiteTitle}
+            <f:link.page pageUid="{site.rootPageId}">
+                {site.configuration.websiteTitle}
+            </f:link.page>
         </h1>
         <f:render partial="Navigation/MainMenu" arguments="{_all}"/>
     </nav>
