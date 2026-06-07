@@ -401,10 +401,6 @@ form {
         border-right: 0.1rem solid var(--color-border-active);
         border-left: 0.1rem solid var(--color-border-active);
     }
-    .menu__panel ul {
-        margin: 0;
-        padding: 0;
-    }
 }
 
 
