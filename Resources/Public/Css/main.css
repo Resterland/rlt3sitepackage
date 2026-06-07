@@ -381,14 +381,16 @@ form {
         padding: 0.125rem 0;
         margin: 0.25rem 0;
         font-size: inherit;
+
         a {
             color: inherit;
         }
+    }
 
-    /*.menu__panel ul {
+    .menu__panel ul {
         margin: 0;
         padding: 0;
-    }*/
+    }
 
     /* Dropdown navbar END */
     .breadcrumb-bar {
