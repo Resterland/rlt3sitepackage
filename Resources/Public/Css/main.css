@@ -411,7 +411,7 @@ form {
 
 
 /* media width equal or lower than 69.99rem */
-@media (width <= 62.49rem) {
+/*@media (width <= 62.49rem) {
     :root {
         --navigation-height: 2.9rem;
     }
@@ -436,7 +436,7 @@ form {
         }
     }
 
-    /* Popup */
+    !* Popup *!
 
     .navigation__popup {
         display: none;
@@ -448,11 +448,11 @@ form {
         display: block;
     }
 
-    /* Logo */
+    !* Logo *!
     .navigation__logo {
         padding: 0.2rem;
     }
-    /* Button */
+    !* Button *!
 
     .navigation__button {
         padding: 0.7rem;
@@ -489,13 +489,13 @@ form {
         --menu-button-padding: 0.125rem 0.25rem;
     }
 
-    /* Tab */
+    !* Tab *!
     .menu__tab {
         display: grid;
         border-top: 1px solid var(--color-border-primary);
     }
 
-    /* Button */
+    !* Button *!
     .menu__tab-button {
         display: flex;
 
@@ -505,19 +505,19 @@ form {
         padding: var(--menu-button-padding);
 
         border: none;
-        /* Arrow */
+        !* Arrow *!
     }
 
     .menu__tab-button::after {
         margin-left: auto;
     }
 
-    /* Link */
+    !* Link *!
     .menu__tab-link {
         padding: var(--menu-button-padding);
     }
 
-    /* Label */
+    !* Label *!
     .menu__tab-label {
         order: -1;
     }
@@ -526,7 +526,7 @@ form {
         display: none;
     }
 
-    /* Title */
+    !* Title *!
     .menu__panel-title::after {
         position: relative;
         display: block;
@@ -534,6 +534,6 @@ form {
         content: "";
         background-color: var(--color-border-primary);
     }
-}
+}*/
 
 
