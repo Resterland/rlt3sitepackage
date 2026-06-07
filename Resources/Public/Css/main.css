@@ -245,7 +245,7 @@ footer {
 form {
     display: inline-block;
     /* Form outline */
-    background: var(--color-background-aqua);
+    background: var(--color-background-coffee);
     padding: 0.25em;
     border: 1px solid var(--color-text-aqua);
     border-radius: 0.5em;
@@ -254,7 +254,7 @@ form {
     display: flex;
 }
 .search-button {
-    background: var(--color-background-aqua);
+    background: var(--color-background-coffee);
     &::after {
         content: "";
         mask-image: url("../Icons/icon/chevron-down.svg");
@@ -372,7 +372,7 @@ form {
 
         margin-top: -1px;
 
-        background-color: var(--color-background-page);
+        background-color: var(--color-background-coffee);
         border: 1px solid var(--color-border-primary);
     }
 
