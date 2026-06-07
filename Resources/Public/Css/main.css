@@ -25,10 +25,6 @@ a {
     color: var(--color-link-blue);
 }
 
-a:visited {
-    color: unset;
-}
-
 a:hover,
 a:active {
     color: var(--color-link-green);
@@ -135,6 +131,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-size: smaller;
 }
 .footer-menu a {
     padding: 0.25em;
