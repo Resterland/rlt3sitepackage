@@ -381,11 +381,6 @@ form {
         padding: 0;
     }
 
-    /* Title */
-    .menu__panel-title {
-        color: var(--color-text-blue);
-        background-color: var(--color-background-gold);
-    }
     /* Dropdown navbar END */
     .breadcrumb-bar {
         font-size: unset;
@@ -405,6 +400,10 @@ form {
         flex-grow: 3;
         border-right: 0.1rem solid var(--color-border-active);
         border-left: 0.1rem solid var(--color-border-active);
+    }
+    .menu__panel ul {
+        margin: 0;
+        padding: 0;
     }
 }
 
