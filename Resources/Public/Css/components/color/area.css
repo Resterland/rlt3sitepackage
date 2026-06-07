@@ -9,16 +9,3 @@
   --color-area-highlight-border: var(--color-orange);
   --color-area-link: light-dark(var(--color-orange-25), var(--color-orange-75));
 }
-
-.aside-left {
-    background: transparent;
-}
-main {
-    background: transparent;
-}
-.aside-right {
-    background: transparent;
-}
-footer {
-    background: transparent;
-}
