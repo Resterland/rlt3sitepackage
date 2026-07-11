@@ -43,8 +43,7 @@
     },
 	"config": {
 		"allow-plugins": {
-			"typo3/cms-*": true,
-			"apache-solr-for-typo3/solr": true
+			"typo3/cms-*": true
 		}
 	}
 }
