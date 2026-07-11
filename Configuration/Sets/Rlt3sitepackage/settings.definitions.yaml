@@ -7,6 +7,10 @@
 categories:
   Rlt3sitepackage:
     label: 'ResterLand Site Package'
+  Rlt3sitepackage.config:
+    label: 'Configuration'
+    description: 'Global system configuration settings'
+    parent: Rlt3sitepackage
   Rlt3sitepackage.breadcrumb:
     label: 'Breadcrumb'
     parent: Rlt3sitepackage
@@ -48,10 +52,6 @@ categories:
   Rlt3sitepackage.footer.openstreetmap:
     label: 'OpenStreetMap'
     parent: Rlt3sitepackage.footer
-  Rlt3sitepackage.config:
-    label: 'Configuration'
-    description: 'Global system configuration settings'
-    parent: Rlt3sitepackage
 
 settings:
   # Breadcrumb & choose theme

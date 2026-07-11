@@ -44,6 +44,9 @@ page {
 
       siteLanguageNavigationTitle = TEXT
       siteLanguageNavigationTitle.data = siteLanguage:navigationTitle
+
+      siteName = TEXT
+      siteName.data = {$config.siteName}
     }
   }
 
