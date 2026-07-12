@@ -1,15 +1,17 @@
 # Load default processing options
 imports:
-    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
-    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
-  #  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
   # Import the placeholder plugin configuration
-    - { resource: 'EXT:ckeditor_placeholder/Configuration/RTE/PlaceholderPlugin.yaml' }
+  #- { resource: 'EXT:ckeditor_placeholder/Configuration/RTE/PlaceholderPlugin.yaml' }
 
 # Add configuration for the editor
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
+    importModules:
+      - { module: '@resterland/rlt3sitepackage/timestamp-plugin.js', exports: [ 'Timestamp' ] }
     # Size of editing area:
     height: 500
 
@@ -46,12 +48,7 @@ editor:
         - horizontalLine
         - sourceEditing
         - '|'
-        - placeholder
-
-    placeholder:
-      options:
-        - label: 'PlaceholderPlugin foo'
-          value: 'bar'
+        - timestamp
 
     heading:
       options:
@@ -85,7 +82,6 @@ editor:
         - mergeTableCells
         - tableProperties
         - tableCellProperties
-
 
 # Additional processing of tags and attributes
 processing:
