@@ -28,5 +28,3 @@ TCEMAIN {
         }
     }
 }
-# Page TSConfig
-RTE.default.preset = default
