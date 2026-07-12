@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Resterland\Rlt3sitepackage\EventListener;
 
-use Brosua\CkeditorPlaceholder\Event\RteReplacePlaceholderEvent;
+use Resterland\Rlt3sitepackage\Event\RteReplacePlaceholderEvent;
 use TYPO3\CMS\Core\Attribute\AsEventListener;
 
 

@@ -1,0 +1,7 @@
+lib.parseFunc_RTE {
+  tags.placeholder = TEXT
+  tags.placeholder {
+    current = 1
+    preUserFunc = Brosua\CkeditorPlaceholder\UserFunctions\Placeholder->replace
+  }
+}
