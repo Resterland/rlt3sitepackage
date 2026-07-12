@@ -14,10 +14,10 @@
  */
 
 return [
-    'dependencies' => ['core'],
+    'dependencies' => ['core', 'backend'],
     'imports' => [
         'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
-        '@resterland/rlt3sitepackage/utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
+        'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         '@resterland/rlt3sitepackage/rldropdown.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
         '@resterland/rlt3sitepackage/timestamp-plugin.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/timestamp-plugin.js',
     ],
