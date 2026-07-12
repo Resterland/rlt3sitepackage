@@ -10,20 +10,12 @@ imports:
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
-    htmlSupport:
-      allow:
-        - name: placeholder
-          classes: ['placeholder']
 
     importModules:
       - { module: '@resterland/rlt3sitepackage/timestamp-plugin.js', exports: [ 'Timestamp' ] }
-      - { module: '@resterland/rlt3sitepackage/placeholder-plugin.js', exports: [ 'Placeholder' ] }
-
-    extraPlugins:
-      - Placeholder
 
     # Size of editing area:
-    height: 500
+    height: 650
 
     # Additional stylesheet for the editor:
     contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:rlt3sitepackage/Resources/Public/Css/rte_ckeditor.css"]
@@ -59,6 +51,8 @@ editor:
         - sourceEditing
         - '|'
         - timestamp
+        - '|'
+        - placeholder
 
     heading:
       options:
