@@ -4,9 +4,9 @@ import {addListToDropdown, createDropdown, ViewModel} from '@ckeditor/ckeditor5-
 import {Collection} from '@ckeditor/ckeditor5-utils';
 import {GeneralHtmlSupport} from '@ckeditor/ckeditor5-html-support';
 
-export class PlaceholderPlugin extends Plugin {
+export class Placeholder extends Plugin {
     static get pluginName() {
-        return 'PlaceholderPlugin';
+        return 'Placeholder';
     }
 
     static get requires() {
@@ -74,7 +74,7 @@ class PlaceholderUI extends Plugin {
             dropdownView.buttonView.set( {
                 // The t() function helps localize the editor. All strings enclosed in t() can be
                 // translated and change when the language of the editor changes.
-                label: t( 'PlaceholderPlugin' ),
+                label: t( 'Placeholder' ),
                 tooltip: true,
                 withText: true
             } );

@@ -20,6 +20,6 @@ return [
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
         '@resterland/rlt3sitepackage/timestamp-plugin.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/timestamp-plugin.js',
-        '@resterland/rlt3sitepackage/placeholder-plugin.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder-plugin.js',
+        '@resterland/rlt3sitepackage/placeholder.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
     ],
 ];

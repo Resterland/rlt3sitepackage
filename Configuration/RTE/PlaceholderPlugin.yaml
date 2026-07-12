@@ -6,7 +6,7 @@ editor:
           classes: ['placeholder']
 
     importModules:
-      - { module: '@resterland/rlt3sitepackage/placeholder-plugin.js', exports: [ 'Placeholder' ] }
+      - { module: '@resterland/rlt3sitepackage/placeholder.js', exports: [ 'Placeholder' ] }
 
     extraPlugins:
       - Placeholder

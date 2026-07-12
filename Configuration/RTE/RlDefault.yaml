@@ -4,7 +4,7 @@ imports:
   - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
   - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
   # Import the placeholder plugin configuration
-  - { resource: 'EXT:rlt3sitepackage/Configuration/RTE/PlaceholderPlugin.yaml' }
+  - { resource: 'EXT:rlt3sitepackage/Configuration/RTE/Placeholder.yaml' }
 
 # Add configuration for the editor
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
