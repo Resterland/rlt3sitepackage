@@ -57,7 +57,7 @@ editor:
     placeholder:
       options:
         - label: 'Placeholder foo'
-          value: 'bar'
+          value: 'fuck'
 
     heading:
       options:

@@ -17,7 +17,7 @@ class RteReplacePlaceholderListener
     public function __invoke(RteReplacePlaceholderEvent $event): void
     {
         $key = $event->getPlaceholderKey();
-        if ($key === 'bar') {
+        if ($key === 'foo') {
             $event->setContent('My custom content');
         }
     }
