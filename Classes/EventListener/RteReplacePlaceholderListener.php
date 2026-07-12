@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Resterland\Rlt3sitepackage\EventListener;
+
+use Brosua\CkeditorPlaceholder\Event\RteReplacePlaceholderEvent;
+use TYPO3\CMS\Core\Attribute\AsEventListener;
+
+
+#[AsEventListener(
+    identifier: 'rlt3sitepackage/rte-replace-placeholder',
+)]
+
+class RteReplacePlaceholderListener
+{
+    public function __invoke(RteReplacePlaceholderEvent $event): void
+    {
+        $key = $event->getPlaceholderKey();
+        if ($key === 'bar') {
+            $event->setContent('My custom content');
+        }
+    }
+}
