@@ -18,8 +18,8 @@ editor:
 
     toolbar:
       items:
-        - style
         - heading
+        - style
         # grouping separator
         - '|'
         - bold
