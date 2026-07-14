@@ -22,6 +22,6 @@ return [
 #        '@resterland/rlt3sitepackage/timestamp.js' =>
 # 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/timestamp.js',
 #        '@resterland/rlt3sitepackage/placeholder.js' =>
-# 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
+ 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
     ],
 ];
