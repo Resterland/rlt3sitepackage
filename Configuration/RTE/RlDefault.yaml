@@ -12,7 +12,7 @@ editor:
   config:
 
     importModules:
-      - { module: '@resterland/rlt3sitepackage/timestamp-plugin.js', exports: [ 'Timestamp' ] }
+      - { module: '@resterland/rlt3sitepackage/timestamp.js', exports: [ 'Timestamp' ] }
 
     # Size of editing area:
     height: 650
