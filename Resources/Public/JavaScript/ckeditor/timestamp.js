@@ -1,7 +1,7 @@
 import { Plugin } from '@ckeditor/ckeditor5-core';
 import { ButtonView } from '@ckeditor/ckeditor5-ui';
 
-class Timestamp extends Plugin {
+export class Timestamp extends Plugin {
   static pluginName = 'Timestamp';
 
   init() {
