@@ -62,23 +62,19 @@ editor:
 
     placeholder:
       options:
-        - { label: 'Project Name',  value: 'resterland.ch' }
-        - { label: 'Company', value: 'ResterLand WebAtelier'}
-        - { label: 'First Name', value: 'Roland'}
-        - { label: 'Family Name', value: 'Fuhrer'}
-        - { label: 'Street', value: 'Saanenstrasse'}
-        - { label: 'House Number', value: '10'}
-        - { label: 'ZIP', value: '3770'}
-        - { label: 'Town', value: 'Zweisimmen'}
-        - { label: 'Country', value: 'Switzerland'}
-        - { label: 'Mobile Number', value: '+41 77 434 91 32'}
-        - { label: 'Signal/WhatsApp', value: '+41 77 434 91 32'}
-        - { label: 'E-Mail', value: 'webmaster@resterland.com'}
-        - { label: 'Domain', value: 'https://resterland.com'}
-
-    timestamp:
-      options:
-
+        - { label: 'Project Name',  value: 'Project Name: e.g. your domain' }
+        - { label: 'Company', value: 'Your Company'}
+        - { label: 'First Name', value: 'Your name'}
+        - { label: 'Family Name', value: 'Your family name'}
+        - { label: 'Street', value: 'Address, street'}
+        - { label: 'House Number', value: 'House number goes here'}
+        - { label: 'ZIP', value: 'Zip code'}
+        - { label: 'Town', value: 'Your town'}
+        - { label: 'Country', value: 'Your country'}
+        - { label: 'Mobile Number', value: 'Your mobile number'}
+        - { label: 'Signal/WhatsApp', value: 'Your Signal or/and WhatsApp number'}
+        - { label: 'E-Mail', value: 'Your e-mail'}
+        - { label: 'Domain', value: 'Your domain (https://example.com)'}
 
     heading:
       options:

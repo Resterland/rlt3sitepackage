@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Resterland\Rlt3sitepackage\Event\RteReplacePlaceholderEvent;
 use TYPO3\CMS\Core\Attribute\AsAllowedCallable;
 
-#[Autoconfigure(public: true)]
+[Autoconfigure(public: true)];
 final class Placeholder
 {
     public function __construct(

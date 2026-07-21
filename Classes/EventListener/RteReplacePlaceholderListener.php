@@ -8,9 +8,9 @@ use Resterland\Rlt3sitepackage\Event\RteReplacePlaceholderEvent;
 use TYPO3\CMS\Core\Attribute\AsEventListener;
 
 
-#[AsEventListener(
+[AsEventListener(
     identifier: 'rlt3sitepackage/rte-replace-placeholder',
-)]
+)];
 
 class RteReplacePlaceholderListener
 {
