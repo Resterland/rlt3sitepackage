@@ -62,9 +62,19 @@ editor:
 
     placeholder:
       options:
-        - { label: 'Domain',  value: 'resterland.ch' }
-        - { label: 'First Name',
-            value: 'Roland'}
+        - { label: 'Project Name',  value: 'resterland.ch' }
+        - { label: 'Company', value: 'ResterLand WebAtelier'}
+        - { label: 'First Name', value: 'Roland'}
+        - { label: 'Family Name', value: 'Fuhrer'}
+        - { label: 'Street', value: 'Saanenstrasse'}
+        - { label: 'House Number', value: '10'}
+        - { label: 'ZIP', value: '3770'}
+        - { label: 'Town', value: 'Zweisimmen'}
+        - { label: 'Country', value: 'Switzerland'}
+        - { label: 'Mobile Number', value: '+41 77 434 91 32'}
+        - { label: 'Signal/WhatsApp', value: '+41 77 434 91 32'}
+        - { label: 'E-Mail', value: 'webmaster@resterland.com'}
+        - { label: 'Domain', value: 'https://resterland.com'}
 
     timestamp:
       options:
