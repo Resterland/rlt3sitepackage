@@ -62,6 +62,7 @@ editor:
 
     placeholder:
       options:
+        - { label: 'Placeholder foo', value: 'foo'}
         - { label: 'Project Name',  value: 'Project Name: e.g. your domain' }
         - { label: 'Company', value: 'Your Company'}
         - { label: 'First Name', value: 'Your name'}
