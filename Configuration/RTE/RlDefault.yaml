@@ -10,8 +10,14 @@ imports:
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
+    htmlSupport:
+      allow:
+        - name: placeholder
+          classes: ['placeholder']
+
     importModules:
       - { module: '@resterland/rlt3sitepackage/timestamp.js', exports: [ 'Timestamp' ] }
+      - { module: '@resterland/rlt3sitepackage/placeholder.js', exports: [ 'Placeholder' ] }
 
     # Size of editing area:
     height: 650
@@ -49,6 +55,8 @@ editor:
         - horizontalLine
         - sourceEditing
         - '|'
+        - placeholder
+        - '|'
         - timestamp
 
     heading:
@@ -83,6 +91,9 @@ editor:
         - mergeTableCells
         - tableProperties
         - tableCellProperties
+
+    extraPlugins:
+      - Placeholder
 
 # Additional processing of tags and attributes
 processing:
