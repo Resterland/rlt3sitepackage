@@ -16,8 +16,8 @@ editor:
           classes: ['placeholder']
 
     importModules:
-      - { module: '@resterland/rlt3sitepackage/timestamp.js', exports: [ 'Timestamp' ] }
       - { module: '@resterland/rlt3sitepackage/placeholder.js', exports: [ 'Placeholder' ] }
+      - { module: '@resterland/rlt3sitepackage/timestamp.js', exports: [ 'Timestamp' ] }
 
     # Size of editing area:
     height: 650
@@ -58,6 +58,16 @@ editor:
         - placeholder
         - '|'
         - timestamp
+
+
+    placeholder:
+      options:
+        - label: 'Placeholder foo'
+          value: 'foo'
+
+    timestamp:
+      options:
+
 
     heading:
       options:
