@@ -62,8 +62,9 @@ editor:
 
     placeholder:
       options:
-        - label: 'Placeholder foo'
-          value: 'foo'
+        - { label: 'Domain',  value: 'resterland.ch' }
+        - { label: 'First Name',
+            value: 'Roland'}
 
     timestamp:
       options:
