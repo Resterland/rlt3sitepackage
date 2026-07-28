@@ -4,14 +4,6 @@
 		  original="EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf" product-name="rlt3sitepackage">
 		<header/>
 		<body>
-			<!-- Placeholders -->
-			<trans-unit id="label.ProjecName" resname="label.ProjecName">
-				<source>Project Name</source>
-			</trans-unit>
-			<trans-unit id="value.ProjecName" resname="value.ProjecName">
-				<source>Project Name: e.g. your domain</source>
-			</trans-unit>
-
 			<!-- Elements -->
 			<trans-unit id="element.h1" resname="element.h1">
 				<source>H1 Heading</source>

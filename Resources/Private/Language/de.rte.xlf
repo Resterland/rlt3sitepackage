@@ -4,15 +4,6 @@
 		  original="EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf" product-name="rlt3sitepackage">
 		<header/>
 		<body>
-			<!-- Placeholders -->
-			<trans-unit id="label.ProjecName" resname="label.ProjecName" approved="yes">
-				<source>Project Name</source>
-				<target>Projekt Name</target>
-			</trans-unit>
-			<trans-unit id="value.ProjecName" resname="value.ProjecName" approved="yes">
-				<source>Project Name: e.g. your domain</source>
-				<target>Projekt Name: z.B. ihre Domäne</target>
-			</trans-unit>
 
 			<!-- Elements -->
 			<trans-unit id="element.h1" resname="element.h1" approved="yes">

@@ -7,6 +7,15 @@
             <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
+			<!-- Placeholders -->
+			<trans-unit id="label.ProjecName" resname="label.ProjecName" approved="yes">
+				<source>Project Name</source>
+				<target>Projekt Name</target>
+			</trans-unit>
+			<trans-unit id="value.ProjecName" resname="value.ProjecName" approved="yes">
+				<source>Project Name: e.g. your domain</source>
+				<target>Projekt Name: z.B. ihre Domäne</target>
+			</trans-unit>
 
             <trans-unit id="opensubmenu">
                 <source>Open submenu</source>

@@ -6,6 +6,13 @@
             <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
+			<!-- Placeholders -->
+			<trans-unit id="label.ProjecName" resname="label.ProjecName">
+				<source>Project Name</source>
+			</trans-unit>
+			<trans-unit id="value.ProjecName" resname="value.ProjecName">
+				<source>Project Name: e.g. your domain</source>
+			</trans-unit>
 
             <trans-unit id="opensubmenu">
                 <source>Open submenu</source>
