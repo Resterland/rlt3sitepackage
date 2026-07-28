@@ -59,8 +59,8 @@ editor:
 
     placeholder:
       options:
-        - { label: 'Placeholder foo', value: 'foo'}
-        - { label: 'Project Name',  value: 'Project Name: e.g. your domain' }
+        - { label: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:label.ProjecName',  value:
+          'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:value.ProjecName' }
         - { label: 'Company', value: 'Your Company'}
         - { label: 'First Name', value: 'Your name'}
         - { label: 'Family Name', value: 'Your family name'}
