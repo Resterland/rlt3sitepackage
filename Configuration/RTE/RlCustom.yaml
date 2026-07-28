@@ -59,8 +59,8 @@ editor:
 
     placeholder:
       options:
-        - { label: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:label.ProjecName',  value:
-          'LLL:EXT:rlt3sitepackage/Resources/Private/Language/locallang.xlf:value.ProjecName' }
+        - { label: 'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:label.Project',  value:
+          'LLL:EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf:value.Project' }
         - { label: 'Company', value: 'Your Company'}
         - { label: 'First Name', value: 'Your name'}
         - { label: 'Family Name', value: 'Your family name'}
