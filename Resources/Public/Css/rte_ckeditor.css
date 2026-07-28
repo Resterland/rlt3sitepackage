@@ -34,6 +34,11 @@
     font-size: .875em;
 }
 
+.placeholder {
+    font-style: italic;
+    font-weight: bold;
+}
+
 
 .ce-table { width: 100%; max-width: 100%; }
 .ce-table th, .ce-table td { padding: 0.5em 0.75em; vertical-align: top; }
