@@ -6,10 +6,65 @@
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
 categories:
   rlt3sp: ~
+  rlt3sp.config:
+    parent: rlt3sp
   rlt3sp.templates:
     parent: rlt3sp
 
 settings:
+  ### Global Configuration
+  config.no_cache:
+    category: rlt3sp.config
+    type: bool
+    default: false
+
+  config.removeDefaultJS:
+    category: rlt3sp.config
+    type: string
+    enum:
+      '0': 'Do not remove'
+      '1': 'Remove'
+      'external': 'Move to external file'
+    default: '0'
+
+  config.compressJs:
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  config.compressCss:
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  config.concatenateJs:
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  config.concatenateCss:
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  config.admPanel:
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  config.headerComment:
+    category: rlt3sp.config
+    type: string
+    default: 'Made from scratch according to the sophisticated TYPO3 documentations found on https://docs.typo3
+    .org/m/typo3/tutorial-sitepackage/main/en-us/Index.html - '
+
+  config.sendCacheHeaders:
+    description: 'Allow appropriate caching by transparent proxies and browser clients'
+    category: rlt3sp.config
+    type: bool
+    default: true
+
+  ### Templates paths
   styles.templates.templateRootPath:
     default: ''
     type: string
