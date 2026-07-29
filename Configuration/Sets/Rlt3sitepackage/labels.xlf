@@ -48,7 +48,7 @@
 			<trans-unit id="categories.rlt3sp.footer.socialmedia">
 				<source>Social Media</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.subscriptions">
+			<trans-unit id="categories.rlt3sp.footer.socialmedia.subscriptions">
 				<source>Subscriptions</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sp.footer.openstreetmap">
