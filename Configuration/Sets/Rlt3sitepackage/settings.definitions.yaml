@@ -6,12 +6,281 @@
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
 categories:
   rlt3sp: ~
-  rlt3sp.config:
+  rlt3sp.breadcrumb:
     parent: rlt3sp
+  rlt3sp.meta:
+    parent: rlt3sp
+  rlt3sp.header:
+    parent: rlt3sp
+  rlt3sp.header.logo:
+    parent: rlt3sp.header
+  rlt3sp.header.navigation:
+    parent: rlt3sp.header
+  rlt3sp.header.search:
+    parent: rlt3sp.header
+  rlt3sp.footer:
+    parent: rlt3sp
+  rlt3sp.footer.navigation:
+    parent: rlt3sp.footer
+  rlt3sp.footer.copyright:
+    parent: rlt3sp.footer
+  rlt3sp.footer.socialmedia:
+    parent: rlt3sp.footer
+  rlt3sp.footer.socialmedia.subscriptions:
+    parent: rlt3sp.footer.socialmedia
+  rlt3sp.footer.openstreetmap:
+    parent: rlt3sp.footer
   rlt3sp.templates:
+    parent: rlt3sp
+  rlt3sp.config:
     parent: rlt3sp
 
 settings:
+  # Breadcrumb & choose theme
+  page.themes.breadcrumb.enable:
+    label: 'Enable breadcrumb navigation'
+    category: rlt3sp.themes
+    type: bool
+    default: true
+
+  ### Meta data settings
+  # Favicon
+  page.meta.favicon:
+    label: 'Favicon'
+    description: 'This icon is displayed in search engine results and in the browser tab'
+    category: rlt3sp.meta
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico'
+
+  page.meta.viewport:
+    label: 'Responsive design'
+    category: rlt3sp.meta
+    type: string
+    default: 'width=device-width, initial-scale=1'
+
+  page.meta.robots:
+    label: 'robots'
+    category: rlt3sp.meta
+    type: string
+    default: 'index,follow'
+
+  page.meta.apple-mobile-web-app-capable:
+    label: 'apple-mobile-web-app-capable'
+    category: rlt3sp.meta
+    type: string
+    default: 'no'
+
+  page.meta.compatible:
+    label: 'compatible'
+    category: rlt3sp.meta
+    type: string
+    default: 'IE=edge'
+
+  page.meta.google:
+    label: 'google'
+    category: rlt3sp.meta
+    type: string
+    default: 'notranslate'
+
+  page.meta.google-site-verification:
+    label: 'google-site-verification'
+    category: rlt3sp.meta
+    type: string
+    default: ''
+
+  ### Header
+  # Logo
+  page.header.logo.enable:
+    label: 'Enable a header Logo'
+    description: 'It will appear in the header on top of the main page'
+    category: rlt3sp.header.logo
+    type: bool
+    default: true
+
+  page.header.logo.alt:
+    label: 'Logo Alt text'
+    category: rlt3sp.header.logo
+    description: 'Alternative text of the logo for the visually impaired'
+    type: string
+    default: 'Logo'
+
+  page.header.logo.width:
+    label: 'Logo Width'
+    category: rlt3sp.header.logo
+    type: number
+    default: 64
+
+  page.header.logo.height:
+    label: 'Logo Height'
+    category: rlt3sp.header.logo
+    type: number
+    default: 0
+
+  # Header Language Navigation
+  page.header.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: rlt3sp.header.navigation
+    type: bool
+    default: true
+
+  page.header.languagenavigation.languageValue:
+    label: 'Language Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: rlt3sp.header.navigation
+    type: string
+    default: 'auto'
+
+  # Header Solr Search Form
+  page.header.search.enable:
+    label: 'Enable Search Form'
+    category: rlt3sp.header.search
+    type: bool
+    default: false
+
+  plugin.tx_solr.search.targetPage:
+    category: rlt3sp.header.search
+    label: 'Search Results Target Page'
+    description: 'The uid number of the page, where the search results appear. Default is set to 0 (zero). Which means the results appear on the same page.'
+    type: int
+    default: 0
+
+  plugin.solr.templateRootPath:
+    category: rlt3sp.header.search
+    label: 'Apache Solr Template Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Templates/'
+
+  plugin.solr.partialRootPath:
+    category: rlt3sp.header.search
+    label: 'Apache Solr Partial Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Partials/'
+
+  plugin.solr.layoutRootPath:
+    category: rlt3sp.header.search
+    label: 'Apache Solr Layout Roth Path'
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Layouts/'
+
+  ### Footer settings
+  page.footer.navigation.enable:
+    label: 'Enable Footer Navigation'
+    category: rlt3sp.footer.navigation
+    type: bool
+    default: true
+
+  page.footer.navigation.menuRoot:
+    label: 'Footer menu root uid'
+    description: 'The subpages of this page are displayed in the footer'
+    category: rlt3sp.footer.navigation
+    type: int
+    default: 6
+
+  page.footer.navigation.includeNotInMenu:
+    label: 'Include items not in menu'
+    category: rlt3sp.footer.navigation
+    type: bool
+    default: false
+
+  # Footer Language Navigation
+  page.footer.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: rlt3sp.footer.navigation
+    type: bool
+    default: true
+
+  page.footer.languagenavigation.languageValue:
+    label: ' Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: rlt3sp.footer.navigation
+    type: string
+    default: 'auto'
+
+  # Copyright settings
+  page.footer.copyright.enable:
+    label: 'Enable Copyright'
+    category: rlt3sp.footer.copyright
+    type: bool
+    default: true
+
+  # OpenStreetMap settings
+  page.footer.openstreetmap.enable:
+    label: 'Enable OpenStreetMap'
+    category: rlt3sp.footer.openstreetmap
+    type: bool
+    default: true
+
+  page.footer.openstreetmap.src:
+    label: 'OpenStreetMap Source (URL)'
+    category: rlt3sp.footer.openstreetmap
+    description: 'Source URL of the OpenStreetMap'
+    type: string
+    default: 'https://www.openstreetmap.org/export/embed.html?bbox=7.369127869606019%2C46.55292129624824%2C7.372668385505676%2C46.554544443415516&amp;layer=mapnik&amp;marker=46.55373287590018%2C7.370898127555847'
+
+  page.footer.openstreetmap.title:
+    label: 'OpenStreetMap Title'
+    category: rlt3sp.footer.openstreetmap
+    type: string
+    default: 'OpenStreetMap My Location'
+
+  page.footer.openstreetmap.width:
+    label: 'OpenStreetMap Width'
+    category: rlt3sp.footer.openstreetmap
+    type: number
+    default: 250
+
+  page.footer.openstreetmap.height:
+    label: 'OpenStreetMap Height'
+    category: rlt3sp.footer.openstreetmap
+    type: number
+    default: 206
+
+  # Social Media settings
+  page.footer.socialmedia.enable:
+    label: 'Enable Social Media'
+    category: rlt3sp.footer.socialmedia
+    type: bool
+    default: true
+
+  page.footer.socialmedia.subscriptions.github.label:
+    label: 'GitHub Label'
+    category: rlt3sp.footer.socialmedia.subscriptions
+    type: string
+    default: 'GitHub'
+
+  page.footer.socialmedia.channels.github.url:
+    label: 'GitHub Url'
+    description: 'Insert the full account url'
+    category: rlt3sp.footer.socialmedia.subscriptions
+    type: string
+    default: ''
+
+  page.footer.socialmedia.channels.linkedin.label:
+    label: 'LinkedIn Label'
+    category: rlt3sp.footer.socialmedia.subscriptions
+    type: string
+    default: 'LinkedIn'
+
+  page.footer.socialmedia.channels.linkedin.url:
+    label: 'LinkedIn Url'
+    description: 'Insert the full account url'
+    category: rlt3sp.footer.socialmedia.subscriptions
+    type: string
+    default: ''
+
+  ### Templates paths
+  styles.templates.templateRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
+  styles.templates.partialRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
+  styles.templates.layoutRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
   ### Global Configuration
   config.no_cache:
     category: rlt3sp.config
@@ -63,19 +332,5 @@ settings:
     category: rlt3sp.config
     type: bool
     default: true
-
-  ### Templates paths
-  styles.templates.templateRootPath:
-    default: ''
-    type: string
-    category: rlt3sp.templates
-  styles.templates.partialRootPath:
-    default: ''
-    type: string
-    category: rlt3sp.templates
-  styles.templates.layoutRootPath:
-    default: ''
-    type: string
-    category: rlt3sp.templates
 
 
