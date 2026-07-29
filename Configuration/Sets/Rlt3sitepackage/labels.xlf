@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file source-language="en" datatype="plaintext"
+		  original="EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/labels.xlf" date="2026-07-29UTC04:19:090"
+		  product-name="rlt3sitepackage">
+		<header/>
+		<body>
+			<trans-unit id="label">
+				<source>ResterLand TYPO3 Site Package</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sp">
+				<source>Fluid Styled Content</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sp.templates">
+				<source>Templates</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
