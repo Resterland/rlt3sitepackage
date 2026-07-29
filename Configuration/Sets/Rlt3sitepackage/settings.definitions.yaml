@@ -9,4 +9,18 @@ categories:
   rlt3sp.templates:
     parent: rlt3sp
 
+settings:
+  styles.templates.templateRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
+  styles.templates.partialRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
+  styles.templates.layoutRootPath:
+    default: ''
+    type: string
+    category: rlt3sp.templates
+
 
