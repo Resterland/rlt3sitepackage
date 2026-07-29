@@ -11,40 +11,39 @@
 			<trans-unit id="categories.rlt3sp">
 				<source>ResterLand Site Package</source>
 			</trans-unit>
-
 			<trans-unit id="categories.rlt3sp.config">
 				<source>Global Configuration</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.no_cache">
-				<source>No Cache</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.removeDefaultJS">
-				<source>Remove default JavaScript</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.compressJs">
-				<source>Compress JavaScript</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.compressCss">
-				<source>Compress CSS</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.concatenateJs">
-				<source>Concatenate JavaScript</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.concatenateCss">
-				<source>Concatenate CSS</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.admPanel">
-				<source>Administrator Panel</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.headerComment">
-				<source>Header Comment</source>
-			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config.sendCacheHeaders">
-				<source>Send cache headers</source>
-			</trans-unit>
-
 			<trans-unit id="categories.rlt3sp.templates">
 				<source>Templates</source>
+			</trans-unit>
+
+			<trans-unit id="settings.config.no_cache">
+				<source>No Cache</source>
+			</trans-unit>
+			<trans-unit id="settings.config.removeDefaultJS">
+				<source>Remove default JavaScript</source>
+			</trans-unit>
+			<trans-unit id="settings.config.compressJs">
+				<source>Compress JavaScript</source>
+			</trans-unit>
+			<trans-unit id="settings.config.compressCss">
+				<source>Compress CSS</source>
+			</trans-unit>
+			<trans-unit id="settings.config.concatenateJs">
+				<source>Concatenate JavaScript</source>
+			</trans-unit>
+			<trans-unit id="settings.config.concatenateCss">
+				<source>Concatenate CSS</source>
+			</trans-unit>
+			<trans-unit id="settings.config.admPanel">
+				<source>Administrator Panel</source>
+			</trans-unit>
+			<trans-unit id="settings.config.headerComment">
+				<source>Header Comment</source>
+			</trans-unit>
+			<trans-unit id="settings.config.sendCacheHeaders">
+				<source>Send cache headers</source>
 			</trans-unit>
 
 		</body>
