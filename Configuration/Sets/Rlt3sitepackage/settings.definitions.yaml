@@ -269,6 +269,16 @@ settings:
     default: ''
 
   ### Templates paths
+  page.templates.template_path:
+    label: 'Page template path'
+    category: rlt3sp.templates
+    description: 'Path to the templates of the ResterLand Site Package.'
+    type: string
+    enum:
+      'EXT:rlt3sitepackage/Resources/Private/PageView/': 'default'
+      'EXT:rlt3sitepackage/Resources/Private/Learning/': 'learning'
+    default: 'EXT:rlt3sitepackage/Resources/Private/PageView/'
+
   styles.templates.templateRootPath:
     default: ''
     type: string
