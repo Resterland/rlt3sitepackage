@@ -6,10 +6,10 @@
 		<header/>
 		<body>
 			<trans-unit id="label">
-				<source>ResterLand TYPO3 Site Package</source>
+				<source>ResterLand Site Package</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sp">
-				<source>ResterLand TYPO3 Site Package</source>
+				<source>ResterLand Site Package</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sp.templates">
 				<source>Templates</source>
