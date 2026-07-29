@@ -14,6 +14,9 @@
 			<trans-unit id="categories.rlt3sp.config">
 				<source>Global Configuration</source>
 			</trans-unit>
+			<trans-unit id="categories.rlt3sp.config.description">
+				<source>Global system configuration settings</source>
+			</trans-unit>
 			<trans-unit id="categories.rlt3sp.templates">
 				<source>Templates</source>
 			</trans-unit>
