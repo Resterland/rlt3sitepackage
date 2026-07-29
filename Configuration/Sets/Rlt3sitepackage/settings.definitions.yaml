@@ -7,6 +7,7 @@
 categories:
   rlt3sp: ~
   rlt3sp.config:
+    description: 'Global system configuration settings'
     parent: rlt3sp
   rlt3sp.templates:
     parent: rlt3sp
