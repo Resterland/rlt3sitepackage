@@ -26,8 +26,6 @@ categories:
     parent: rlt3sp.footer
   rlt3sp.footer.socialmedia:
     parent: rlt3sp.footer
-  rlt3sp.footer.socialmedia.subscriptions:
-    parent: rlt3sp.footer.socialmedia
   rlt3sp.footer.openstreetmap:
     parent: rlt3sp.footer
   rlt3sp.templates:
