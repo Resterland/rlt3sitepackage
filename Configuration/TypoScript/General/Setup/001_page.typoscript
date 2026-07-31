@@ -29,7 +29,7 @@ page {
   10 = PAGEVIEW
   10 {
     paths {
-      10 = EXT:rlt3sitepackage/Resources/Private/PageView/
+      10 = {$page.templates.template_path}
     }
 
     variables {
@@ -52,13 +52,13 @@ page {
 
 
   meta {
-    viewport = width=device-width, initial-scale=1
-    robots = index,follow
-    apple-mobile-web-app-capable = no
+    viewport = {$page.meta.viewport}
+    robots = {$page.meta.robots}
+    apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
     color-scheme = light dark
 
 
-    X-UA-Compatible = IE=edge
+    X-UA-Compatible = {$page.meta.compatible}
     X-UA-Compatible {
       attribute = http-equiv
     }
