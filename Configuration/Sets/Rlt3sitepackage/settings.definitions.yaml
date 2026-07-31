@@ -36,13 +36,6 @@ categories:
     parent: rlt3sp
 
 settings:
-  # Breadcrumb & choose theme
-  page.themes.breadcrumb.enable:
-    label: 'Enable breadcrumb navigation'
-    category: rlt3sp.themes
-    type: bool
-    default: true
-
   ### Meta data settings
   # Favicon
   page.meta.favicon:
@@ -115,6 +108,13 @@ settings:
     category: rlt3sp.header.logo
     type: number
     default: 0
+
+  # Breadcrumb
+  page.breadcrumb.enable:
+    label: 'Enable breadcrumb navigation'
+    category: rlt3sp.header.navigation
+    type: bool
+    default: true
 
   # Header Language Navigation
   page.header.languagenavigation.enable:
