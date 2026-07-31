@@ -58,7 +58,7 @@ page {
     color-scheme = light dark
 
 
-    X-UA-Compatible = 'IE=edge
+    X-UA-Compatible = IE=edge
     X-UA-Compatible {
       attribute = http-equiv
     }
