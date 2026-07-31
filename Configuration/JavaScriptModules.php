@@ -14,10 +14,11 @@
  */
 
 return [
-    'dependencies' => ['core'],
+    'dependencies' => ['core', 'backend'],
     'imports' => [
         'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
+        '@resterland/rlt3sitepackage/placeholder.js' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
     ],
 ];
