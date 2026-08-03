@@ -8,19 +8,20 @@ imports:
 # For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
+    htmlSupport:
+      allow:
+        - name: 'placeholder'
+          classes: ['placeholder']
+    importModules:
+      - { module: 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js', exports: [ 'Placeholder' ] }
+
+    extraPlugins:
+      - Placeholder
+
     # Size of editing area:
     height: 650
     # Additional stylesheet for the editor:
     contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:rlt3sitepackage/Resources/Public/Css/rte_ckeditor.css"]
-
-    htmlSupport:
-      allow:
-        - name: placeholder
-          classes: ['placeholder']
-
-    importModules:
-      - { module: 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js', exports: [ 'Placeholder' ] }
-
     toolbar:
       items:
         - heading
@@ -103,9 +104,6 @@ editor:
         - mergeTableCells
         - tableProperties
         - tableCellProperties
-
-    extraPlugins:
-      - Placeholder
 
 # Additional processing of tags and attributes
 processing:
