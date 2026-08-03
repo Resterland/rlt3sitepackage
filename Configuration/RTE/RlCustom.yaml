@@ -19,7 +19,7 @@ editor:
           classes: ['placeholder']
 
     importModules:
-      - { module: '@resterland/rlt3sitepackage/placeholder.js', exports: [ 'Placeholder' ] }
+      - { module: 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js', exports: [ 'Placeholder' ] }
 
     toolbar:
       items:
