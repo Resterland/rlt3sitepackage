@@ -26,10 +26,6 @@ export class Placeholder extends Plugin {
 }
 
 class PlaceholderHtmlSupport extends Plugin {
-  static get requires() {
-    return [ GeneralHtmlSupport ];
-  }
-
   init() {
     // Extend the schema with custom HTML elements.
     const dataFilter = this.editor.plugins.get( 'DataFilter' );
