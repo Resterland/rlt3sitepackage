@@ -49,6 +49,10 @@ h1 {
     background-color: var(--color-background-primary);
 }
 
+placeholder {
+    background-color: aqua;
+}
+
 main {
     background: var(--color-background-primary);
     padding: 0.5rem 0.75rem;
