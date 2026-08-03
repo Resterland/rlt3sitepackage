@@ -20,5 +20,6 @@ return [
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
         'placeholder' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
+        'placeholderhtmlelement' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder-html-element.js',
     ],
 ];

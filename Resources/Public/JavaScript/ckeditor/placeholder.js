@@ -3,7 +3,6 @@ import {toWidget, viewToModelPositionOutsideModelElement, Widget} from '@ckedito
 import {addListToDropdown, createDropdown, ViewModel} from '@ckeditor/ckeditor5-ui';
 import {Collection} from '@ckeditor/ckeditor5-utils';
 import {GeneralHtmlSupport} from '@ckeditor/ckeditor5-html-support';
-import {PlaceholderHtmlElement} from './placeholder-html-element';
 
 export class Placeholder extends Plugin {
     static get pluginName() {
