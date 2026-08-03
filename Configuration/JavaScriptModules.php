@@ -19,6 +19,6 @@ return [
         'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
-        'placeholder' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
+        '@resterland/rlt3sitepackage/placeholder' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
     ],
 ];
