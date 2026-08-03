@@ -20,4 +20,8 @@ return [
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
     ],
+    'dependencies' => ['backend'],
+    'imports' => [
+        'placeholder' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/ckeditor/placeholder.js',
+    ]
 ];
