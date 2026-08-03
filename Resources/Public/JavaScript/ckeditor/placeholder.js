@@ -25,6 +25,28 @@ export class Placeholder extends Plugin {
     }
 }
 
+class PlaceholderHtmlSupport extends Plugin {
+  static get requires() {
+    return [ GeneralHtmlSupport ];
+  }
+
+  init() {
+    // Extend the schema with custom HTML elements.
+    const dataFilter = this.editor.plugins.get( 'DataFilter' );
+    const dataSchema = this.editor.plugins.get( 'DataSchema' );
+
+    // Inline element.
+    dataSchema.registerInlineElement( {
+      view: 'element-inline',
+      model: 'placeholder',
+    } );
+
+    // Custom elements need to be registered using direct API instead of configuration.
+    dataFilter.allowElement( 'element-inline' );
+    dataFilter.allowAttributes( { name: 'element-inline', attributes: { 'data-foo': false }, classes: [ 'placeholder' ] } );
+  }
+}
+
 class PlaceholderCommand extends Command {
     execute( { value } ) {
         const editor = this.editor;
