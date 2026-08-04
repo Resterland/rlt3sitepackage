@@ -4,6 +4,15 @@
 		  original="EXT:rlt3sitepackage/Resources/Private/Language/rte.xlf" product-name="rlt3sitepackage">
 		<header/>
 		<body>
+			<!-- Placeholders -->
+			<trans-unit id="label.Project" resname="label.Project">
+				<source>Project</source>
+				<target>Projekt</target>
+			</trans-unit>
+			<trans-unit id="value.Project" resname="value.Project">
+				<source>Project Name</source>
+				<target>Projekt Name</target>
+			</trans-unit>
 
 			<!-- Elements -->
 			<trans-unit id="element.h1" resname="element.h1" approved="yes">
