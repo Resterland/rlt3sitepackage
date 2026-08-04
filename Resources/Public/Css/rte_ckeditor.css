@@ -29,7 +29,6 @@
     display: inline !important; /* [1] */
 }
 
-
 .text-small {
     font-size: .875em;
 }
@@ -40,3 +39,15 @@
 .ce-table th, .ce-table td { border-top: 1px solid #dadada; }
 .ce-table-striped tbody tr:nth-of-type(odd) { background-color: rgba(0,0,0,.05); }
 .ce-table-bordered th, .ce-table-bordered td { border: 1px solid #dadada; }
+
+.placeholder {
+    background: #ffff00;
+    padding: 4px 2px;
+    outline-offset: -2px;
+    line-height: 1em;
+    margin: 0 1px;
+}
+
+.placeholder::selection {
+    display: none;
+}
