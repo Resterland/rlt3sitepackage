@@ -20,8 +20,8 @@ export class Placeholder extends Plugin {
             view: 'placeholder',
             model: 'placeholder',
         } );
-        dataFilter.allowElement( 'placeholder' );
-        dataFilter.allowAttributes( { name: 'placeholder', classes: [ 'placeholder' ] } );
+        dataFilter.allowElement( 'span' );
+        dataFilter.allowAttributes( { name: 'span', classes: [ 'placeholder' ] } );
     }
 }
 
@@ -32,7 +32,7 @@ class PlaceholderCommand extends Command {
 
         editor.model.change( writer => {
             // Create a <placeholder> element with the "name" attribute (and all the selection attributes)...
-            const placeholder = writer.createElement( 'placeholder', {
+            const placeholder = writer.createElement( 'span', {
                 ...Object.fromEntries( selection.getAttributes() ),
                 name: value
             } );
@@ -46,7 +46,7 @@ class PlaceholderCommand extends Command {
         const model = this.editor.model;
         const selection = model.document.selection;
 
-        this.isEnabled = model.schema.checkChild(selection.focus.parent, 'placeholder');
+        this.isEnabled = model.schema.checkChild(selection.focus.parent, 'span');
     }
 }
 
