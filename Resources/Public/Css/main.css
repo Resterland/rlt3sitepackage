@@ -49,18 +49,6 @@ h1 {
     background-color: var(--color-background-primary);
 }
 
-.placeholder {
-    background: #ffff00;
-    padding: 4px 2px;
-    outline-offset: -2px;
-    line-height: 1em;
-    margin: 0 1px;
-}
-
-.placeholder::selection {
-    display: none;
-}
-
 main {
     background: var(--color-background-primary);
     padding: 0.5rem 0.75rem;
