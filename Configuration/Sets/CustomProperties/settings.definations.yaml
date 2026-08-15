@@ -1,0 +1,19 @@
+categories:
+  Rlt3sitepackage:
+    label: 'ResterLand Site Package'
+  Rlt3sitepackage.css:
+    label: 'CSS - Custom Properties'
+    description: 'Global style sheet properties (variables)'
+    parent: Rlt3sitepackage
+  Rlt3sitepackage.css.colors:
+    label: 'Colors'
+    parent: Rlt3sitepackage.css
+
+settings:
+
+  # Colors
+  plugin.rlt3sitepackage.settings.css.primary:
+    label: '--theme-primary'
+    category: Rlt3sitepackage.css.colors
+    type: string
+    default: '#b30027'

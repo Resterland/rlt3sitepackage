@@ -1,0 +1,13 @@
+/* themed properties
+---------------------------------------------------- */
+
+:root {
+    --theme-contrast: #ffffff;
+    --theme-primary: #b30027;
+    --theme-font-size: 125%;
+    --unsupported-message-display: none;
+}
+
+
+/* themed elements
+---------------------------------------------------- */
