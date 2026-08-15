@@ -7,6 +7,6 @@
 //
 // Project constants
 // ------------------------------------------
-@import 'EXT:rlt3sitepackage/Configuration/Sets/Rlt3sitepackage/Extensions/Solr/Constants/constants.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Extensions/Solr/Constants/constants.typoscript'
 
 config.siteName = GLOBAL:TYPO3_CONF_VARS|SYS|sitename

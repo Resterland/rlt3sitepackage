@@ -1,8 +1,6 @@
 #plugin.tx_frontend._CSS_DEFAULT_STYLE >
 #@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Learning/*.typoscript'
-#@import 'TypoScript/General/Setup/*.typoscript'
-@import 'TypoScript/General/Setup/*.typoscript'
-@import 'TypoScript/General/DataProcessors/*.typoscript'
-@import 'TypoScript/General/CustomContentElements/*.typoscript'
-@import '../CustomProperties/setup.typoscript'
-@import 'Extensions/Solr/setup.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/Setup/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/DataProcessors/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/General/CustomContentElements/*.typoscript'
+@import 'EXT:rlt3sitepackage/Configuration/TypoScript/Extensions/Solr/setup.typoscript'
