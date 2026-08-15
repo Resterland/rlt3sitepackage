@@ -2,3 +2,14 @@
   Custom Properties - Variables
 */
 @import "custom-properties.css";
+
+h1 {
+    color: var(--primary);
+    background-color: var(--backgr1);
+    border: medium solid var(--accent1);
+    padding: 1em 1em 1em 200px;
+}
+
+a {
+    color: var(--accent1);
+}
