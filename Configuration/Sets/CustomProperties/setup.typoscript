@@ -1,5 +1,0 @@
-page {
-  includeCSS {
-    theme = 'EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css'
-  }
-}

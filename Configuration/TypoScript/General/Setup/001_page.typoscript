@@ -67,11 +67,4 @@ page {
     google = {$page.meta.google}
     google-site-verification = {$page.meta.google-site-verification}
   }
-  includeCSS {
-    theme = 'EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css'
-  }
-  #includeJSFooter {
-  #   litelement = EXT:rlt3sitepackage/Resources/Public/JavaScript/my-rldropdown.js
-  #   litelement.type = module
-  #}
 }
