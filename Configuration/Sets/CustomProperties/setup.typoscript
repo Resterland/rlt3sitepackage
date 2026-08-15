@@ -1,5 +1,5 @@
 page {
   includeCSS {
-    theme = 'EXT:rlt3sitepackage/Resources/Public/Css/theme.css'
+    theme = 'EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css'
   }
 }
