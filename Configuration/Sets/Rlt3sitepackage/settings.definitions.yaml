@@ -6,17 +6,16 @@
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
 categories:
   rlt3sitepackage: ~
+  rlt3sitepackage.templates:
+    parent: rlt3sitepackage
+  rlt3sitepackage.meta:
+    parent: rlt3sitepackage
   rlt3sitepackage.config:
+    parent: rlt3sitepackage
+  rlt3sitepackage.theme:
     parent: rlt3sitepackage
   rlt3sitepackage.breadcrumb:
     label: 'Breadcrumb'
-    parent: rlt3sitepackage
-  rlt3sitepackage.templates:
-    label: 'Templates'
-    parent: rlt3sitepackage
-  rlt3sitepackage.meta:
-    label: 'Meta'
-    description: 'Global page meta settings'
     parent: rlt3sitepackage
   rlt3sitepackage.header:
     label: 'Header'

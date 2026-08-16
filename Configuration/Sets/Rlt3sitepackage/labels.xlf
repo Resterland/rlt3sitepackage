@@ -14,11 +14,29 @@
 			<trans-unit id="categories.description.rlt3sitepackage">
 				<source>Available configuration settings</source>
 			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.templates">
+				<source>Templates</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.templates">
+				<source>Path to the template files</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.meta">
+				<source>Head - Meta Settings</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.meta">
+				<source>Meta settings e.g.g Google verification</source>
+			</trans-unit>
 			<trans-unit id="categories.rlt3sitepackage.config">
 				<source>Configuration</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.config">
 				<source>Global system configuration settings</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.theme">
+				<source>Theme Settings</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.theme">
+				<source>Theme configuration, layout, navigation, etc.</source>
 			</trans-unit>
 
 			<trans-unit id="settings.rlt3sitepackage.colorScheme">
