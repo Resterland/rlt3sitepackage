@@ -94,38 +94,26 @@ settings:
 
   ### Meta data settings
   # Favicon
-  page.meta.favicon:
+  meta.favicon:
     label: 'Favicon'
     description: 'This icon is displayed in search engine results and in the browser tab'
     category: rlt3sitepackage.meta
     type: string
     default: 'EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico'
 
-  page.meta.robots:
-    label: 'robots'
-    category: rlt3sitepackage.meta
-    type: string
-    default: 'index,follow'
-
-  page.meta.apple-mobile-web-app-capable:
-    label: 'apple-mobile-web-app-capable'
-    category: rlt3sitepackage.meta
-    type: string
-    default: 'no'
-
-  page.meta.compatible:
+  meta.compatible:
     label: 'compatible'
     category: rlt3sitepackage.meta
     type: string
     default: 'IE=edge'
 
-  page.meta.google:
-    label: 'google'
+  meta.apple-mobile-web-app-capable:
+    label: 'apple-mobile-web-app-capable'
     category: rlt3sitepackage.meta
     type: string
-    default: 'notranslate'
+    default: 'no'
 
-  page.meta.google-site-verification:
+  meta.google-site-verification:
     label: 'google-site-verification'
     category: rlt3sitepackage.meta
     type: string

@@ -9,7 +9,28 @@
     2: 'rldropdown',
 }"/>
 
+
+<f:page.meta http-equiv="compatible" type="http-equiv" replace="true">
+    IE=edge
+</f:page.meta>
 <f:page.meta property="viewport">width=device-width, initial-scale=1.0</f:page.meta>
+<f:page.meta property="description">{item.description}</f:page.meta>
+<f:page.meta property="og:title">{item.title}</f:page.meta>
+<f:page.meta property="og:type">Template</f:page.meta>
+<f:page.meta property="apple-mobile-web-app-capable" replace="true">
+    {$meta.apple-mobile-web-app-capable}
+</f:page.meta>
+<f:page.meta property="robots" type="name">
+    index, follow
+</f:page.meta>
+<f:page.meta property="color-scheme" type="name">
+    light dark
+</f:page.meta>
+<f:page.meta property="google">notranslate</f:page.meta>
+<f:page.meta property="google-site-verification">
+    {$meta.google-site-verification}
+</f:page.meta>
+
 <f:asset.script identifier="color-theme" type="module"
                 src="EXT:rlt3sitepackage/Resources/Public/JavaScript/color-scheme.js" />
 
