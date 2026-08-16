@@ -15,8 +15,6 @@ categories:
   rlt3sitepackage.theme:
     parent: rlt3sitepackage
   rlt3sitepackage.style:
-    label: 'CSS - Layout Style'
-    description: 'Global style sheet properties (variables)'
     parent: rlt3sitepackage.theme
   rlt3sitepackage.style.colors:
     label: 'Colors'
