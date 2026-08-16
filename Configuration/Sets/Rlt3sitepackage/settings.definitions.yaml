@@ -14,6 +14,13 @@ categories:
     parent: rlt3sitepackage
   rlt3sitepackage.theme:
     parent: rlt3sitepackage
+  rlt3sitepackage.style:
+    label: 'CSS - Layout Style'
+    description: 'Global style sheet properties (variables)'
+    parent: rlt3sitepackage.theme
+  rlt3sitepackage.style.colors:
+    label: 'Colors'
+    parent: rlt3sitepackage.style
   rlt3sitepackage.breadcrumb:
     label: 'Breadcrumb'
     parent: rlt3sitepackage.theme
@@ -48,13 +55,6 @@ categories:
   rlt3sitepackage.footer.openstreetmap:
     label: 'OpenStreetMap'
     parent: rlt3sitepackage.footer
-  rlt3sitepackage.css:
-    label: 'CSS - Custom Properties'
-    description: 'Global style sheet properties (variables)'
-    parent: rlt3sitepackage.theme
-  rlt3sitepackage.css.colors:
-    label: 'Colors'
-    parent: rlt3sitepackage.css
 
 settings:
   rlt3sitepackage.colorScheme:
@@ -77,30 +77,9 @@ settings:
   # Breadcrumb & choose theme
   page.themes.breadcrumb.enable:
     label: 'Enable breadcrumb navigation'
-    category: rlt3sitepackage.theme
+    category: rlt3sitepackage.breadcrumb
     type: bool
     default: true
-
-  ### Meta data settings
-  # Favicon
-  meta.favicon:
-    label: 'Favicon'
-    description: 'This icon is displayed in search engine results and in the browser tab'
-    category: rlt3sitepackage.meta
-    type: string
-    default: 'EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico'
-
-  meta.apple-mobile-web-app-capable:
-    label: 'apple-mobile-web-app-capable'
-    category: rlt3sitepackage.meta
-    type: string
-    default: 'no'
-
-  meta.google-site-verification:
-    label: 'google-site-verification'
-    category: rlt3sitepackage.meta
-    type: string
-    default: ''
 
   ### Header
   # Logo
@@ -279,6 +258,27 @@ settings:
     label: 'LinkedIn Url'
     description: 'Insert the full account url'
     category: rlt3sitepackage.footer.socialmedia.subscriptions
+    type: string
+    default: ''
+
+  ### Meta data settings
+  # Favicon
+  meta.favicon:
+    label: 'Favicon'
+    description: 'This icon is displayed in search engine results and in the browser tab'
+    category: rlt3sitepackage.meta
+    type: string
+    default: 'EXT:rlt3sitepackage/Resources/Public/Icons/favicon.ico'
+
+  meta.apple-mobile-web-app-capable:
+    label: 'apple-mobile-web-app-capable'
+    category: rlt3sitepackage.meta
+    type: string
+    default: 'no'
+
+  meta.google-site-verification:
+    label: 'google-site-verification'
+    category: rlt3sitepackage.meta
     type: string
     default: ''
 

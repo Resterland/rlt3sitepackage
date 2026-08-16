@@ -38,6 +38,12 @@
 			<trans-unit id="categories.description.rlt3sitepackage.theme">
 				<source>Theme configuration, layout, navigation, etc.</source>
 			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.theme">
+				<source>Theme Settings</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.theme">
+				<source>Theme configuration, layout, navigation, etc.</source>
+			</trans-unit>
 
 			<trans-unit id="settings.rlt3sitepackage.colorScheme">
 				<source>Color Scheme</source>
