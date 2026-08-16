@@ -6,7 +6,8 @@
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
 categories:
   rlt3sitepackage: ~
-  rlt3sitepackage.config: ~
+  rlt3sitepackage.config:
+    parent: rlt3sitepackage
   rlt3sitepackage.breadcrumb:
     label: 'Breadcrumb'
     parent: rlt3sitepackage
