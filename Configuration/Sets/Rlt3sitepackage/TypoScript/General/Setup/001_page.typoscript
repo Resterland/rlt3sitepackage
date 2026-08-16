@@ -60,10 +60,7 @@ page {
 
   meta {
     apple-mobile-web-app-capable = {$meta.apple-mobile-web-app-capable}
-
-    X-UA-Compatible = {$meta.compatible}
-    X-UA-Compatible {
-      attribute = http-equiv
-    }
+    # Google
+    google-site-verification = {$meta.google-site-verification}
   }
 }
