@@ -57,6 +57,23 @@ categories:
     parent: rlt3sitepackage.css
 
 settings:
+  rlt3sitepackage.colorScheme:
+    default: theme-caramel-cream
+    type: string
+    enum:
+      - theme-caramel-cream
+      - theme-ocean-breeze
+      - theme-forest-mist
+      - theme-violet-velvet
+    category: rlt3sitepackage
+
+  # Colors
+  plugin.rlt3sitepackage.css.primary:
+    label: '--theme-primary'
+    category: rlt3sitepackage.css.colors
+    type: string
+    default: '#b30027'
+
   # Breadcrumb & choose theme
   page.themes.breadcrumb.enable:
     label: 'Enable breadcrumb navigation'
@@ -353,21 +370,4 @@ settings:
     category: rlt3sitepackage.config
     type: bool
     default: true
-
-  # Colors
-  plugin.rlt3sitepackage.css.primary:
-    label: '--theme-primary'
-    category: rlt3sitepackage.css.colors
-    type: string
-    default: '#b30027'
-
-  rlt3sitepackage.colorScheme:
-    default: theme-caramel-cream
-    type: string
-    enum:
-      - theme-caramel-cream
-      - theme-ocean-breeze
-      - theme-forest-mist
-      - theme-violet-velvet
-    category: rlt3sitepackage
 
