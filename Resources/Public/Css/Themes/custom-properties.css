@@ -2,7 +2,7 @@
 ---------------------------------------------------- */
 
 :root {
-    --baseHue: 240;
+    --baseHue: 32;
     --primary: hsl(var(--baseHue) 80% 40%);
     --accent1: hsl(calc(var(--baseHue) - 231) 80% 40%);
     --backgr1: hsl(calc(var(--baseHue) - 231) 80% 40% / .15);
