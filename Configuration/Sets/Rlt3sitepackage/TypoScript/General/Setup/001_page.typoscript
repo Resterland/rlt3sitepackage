@@ -61,7 +61,7 @@ page {
   meta {
     apple-mobile-web-app-capable = {$meta.apple-mobile-web-app-capable}
 
-    X-UA-Compatible = {$page.meta.compatible}
+    X-UA-Compatible = {$meta.compatible}
     X-UA-Compatible {
       attribute = http-equiv
     }
