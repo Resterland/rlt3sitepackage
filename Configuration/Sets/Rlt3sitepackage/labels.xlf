@@ -20,6 +20,9 @@
 			<trans-unit id="categories.description.rlt3sitepackage.config">
 				<source>Global system configuration settings</source>
 			</trans-unit>
+			<trans-unit id="categories.parent.rlt3sitepackage.config">
+				<source>rlt3sitepackage</source>
+			</trans-unit>
 
 			<trans-unit id="settings.rlt3sitepackage.colorScheme">
 				<source>Color Scheme</source>
