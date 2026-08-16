@@ -9,86 +9,57 @@
 				<source>ResterLand Site Package</source>
 			</trans-unit>
 
-			<trans-unit id="categories.rlt3sp">
+			<trans-unit id="categories.rlt3sitepackage">
 				<source>ResterLand Site Package</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.meta">
+			<trans-unit id="categories.rlt3sitepackage.meta">
 				<source>Meta</source>
 			</trans-unit>
-			<trans-unit id="categories.description.rlt3sp.meta">
+			<trans-unit id="categories.description.rlt3sitepackage.meta">
 				<source>Global page meta settings</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.header">
+			<trans-unit id="categories.rlt3sitepackage.header">
 				<source>Header Settings</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.header.logo">
+			<trans-unit id="categories.rlt3sitepackage.header.logo">
 				<source>Logo</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.header.navigation">
+			<trans-unit id="categories.rlt3sitepackage.header.navigation">
 				<source>Navigation</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.header.search">
+			<trans-unit id="categories.rlt3sitepackage.header.search">
 				<source>Search</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer">
+			<trans-unit id="categories.rlt3sitepackage.footer">
 				<source>Footer Settings</source>
 			</trans-unit>
-			<trans-unit id="categories.description.rlt3sp.footer">
+			<trans-unit id="categories.description.rlt3sitepackage.footer">
 				<source>Footer settings and configuration</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.navigation">
+			<trans-unit id="categories.rlt3sitepackage.footer.navigation">
 				<source>Footer Navigation</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.copyright">
+			<trans-unit id="categories.rlt3sitepackage.footer.copyright">
 				<source>Copyright</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.socialmedia">
+			<trans-unit id="categories.rlt3sitepackage.footer.socialmedia">
 				<source>Social Media</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.socialmedia.subscriptions">
+			<trans-unit id="categories.rlt3sitepackage.footer.socialmedia.subscriptions">
 				<source>Subscriptions</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.footer.openstreetmap">
+			<trans-unit id="categories.rlt3sitepackage.footer.openstreetmap">
 				<source>OpenStreetMap</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.templates">
+			<trans-unit id="categories.rlt3sitepackage.templates">
 				<source>Templates</source>
 			</trans-unit>
-			<trans-unit id="categories.rlt3sp.config">
+			<trans-unit id="categories.rlt3sitepackage.config">
 				<source>Global Configuration</source>
 			</trans-unit>
-			<trans-unit id="categories.description.rlt3sp.config">
+			<trans-unit id="categories.description.rlt3sitepackage.config">
 				<source>Global system configuration settings</source>
 			</trans-unit>
-
-			<trans-unit id="settings.config.no_cache">
-				<source>No Cache</source>
-			</trans-unit>
-			<trans-unit id="settings.config.removeDefaultJS">
-				<source>Remove default JavaScript</source>
-			</trans-unit>
-			<trans-unit id="settings.config.compressJs">
-				<source>Compress JavaScript</source>
-			</trans-unit>
-			<trans-unit id="settings.config.compressCss">
-				<source>Compress CSS</source>
-			</trans-unit>
-			<trans-unit id="settings.config.concatenateJs">
-				<source>Concatenate JavaScript</source>
-			</trans-unit>
-			<trans-unit id="settings.config.concatenateCss">
-				<source>Concatenate CSS</source>
-			</trans-unit>
-			<trans-unit id="settings.config.admPanel">
-				<source>Administrator Panel</source>
-			</trans-unit>
-			<trans-unit id="settings.config.headerComment">
-				<source>Header Comment</source>
-			</trans-unit>
-			<trans-unit id="settings.config.sendCacheHeaders">
-				<source>Send cache headers</source>
-			</trans-unit>
-
 		</body>
 	</file>
 </xliff>
