@@ -16,45 +16,45 @@ categories:
     parent: rlt3sitepackage
   rlt3sitepackage.breadcrumb:
     label: 'Breadcrumb'
-    parent: rlt3sitepackage
+    parent: rlt3sitepackage.theme
   rlt3sitepackage.header:
     label: 'Header'
-    parent: rlt3sitepackage
+    parent: rlt3sitepackage.theme
   rlt3sitepackage.header.logo:
     label: 'Logo'
-    parent: rlt3sitepackage.header
+    parent: rlt3sitepackage.theme.header
   rlt3sitepackage.header.navigation:
     label: 'Navigation'
-    parent: rlt3sitepackage.header
+    parent: rlt3sitepackage.theme.header
   rlt3sitepackage.header.search:
     label: 'Search'
-    parent: rlt3sitepackage.header
+    parent: rlt3sitepackage.theme.header
   rlt3sitepackage.footer:
     label: 'Footer'
     description: 'Footer settings and configuration'
-    parent: rlt3sitepackage
+    parent: rlt3sitepackage.theme
   rlt3sitepackage.footer.navigation:
     label: 'Navigation'
-    parent: rlt3sitepackage.footer
+    parent: rlt3sitepackage.theme.footer
   rlt3sitepackage.footer.copyright:
     label: 'Copyright'
-    parent: rlt3sitepackage.footer
+    parent: rlt3sitepackage.theme.footer
   rlt3sitepackage.footer.socialmedia:
     label: 'Social Media'
-    parent: rlt3sitepackage.footer
+    parent: rlt3sitepackage.theme.footer
   rlt3sitepackage.footer.socialmedia.subscriptions:
     label: 'Subscriptions'
-    parent: rlt3sitepackage.footer.socialmedia
+    parent: rlt3sitepackage.theme.footer.socialmedia
   rlt3sitepackage.footer.openstreetmap:
     label: 'OpenStreetMap'
-    parent: rlt3sitepackage.footer
+    parent: rlt3sitepackage.theme.footer
   rlt3sitepackage.css:
     label: 'CSS - Custom Properties'
     description: 'Global style sheet properties (variables)'
-    parent: rlt3sitepackage
+    parent: rlt3sitepackage.theme
   rlt3sitepackage.css.colors:
     label: 'Colors'
-    parent: rlt3sitepackage.css
+    parent: rlt3sitepackage.theme.css
 
 settings:
   rlt3sitepackage.colorScheme:
@@ -77,19 +77,9 @@ settings:
   # Breadcrumb & choose theme
   page.themes.breadcrumb.enable:
     label: 'Enable breadcrumb navigation'
-    category: rlt3sitepackage.themes
+    category: rlt3sitepackage.theme
     type: bool
     default: true
-
-  page.templates.template_path:
-    label: 'Page template path'
-    category: rlt3sitepackage.templates
-    description: 'Path to the templates of the ResterLand Site Package.'
-    type: string
-    enum:
-      'EXT:rlt3sitepackage/Resources/Private/PageView/': 'default'
-      'EXT:rlt3sitepackage/Resources/Private/Learning/': 'learning'
-    default: 'EXT:rlt3sitepackage/Resources/Private/PageView/'
 
   ### Meta data settings
   # Favicon
@@ -352,4 +342,14 @@ settings:
     category: rlt3sitepackage.config
     type: bool
     default: true
+
+  page.templates.template_path:
+    label: 'Page template path'
+    category: rlt3sitepackage.templates
+    description: 'Path to the templates of the ResterLand Site Package.'
+    type: string
+    enum:
+      'EXT:rlt3sitepackage/Resources/Private/PageView/': 'default'
+      'EXT:rlt3sitepackage/Resources/Private/Learning/': 'learning'
+    default: 'EXT:rlt3sitepackage/Resources/Private/PageView/'
 
