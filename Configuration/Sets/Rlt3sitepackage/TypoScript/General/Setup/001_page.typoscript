@@ -56,11 +56,4 @@ page {
       siteName.data = {$config.siteName}
     }
   }
-
-
-  meta {
-    apple-mobile-web-app-capable = {$meta.apple-mobile-web-app-capable}
-    # Google
-    google-site-verification = {$meta.google-site-verification}
-  }
 }
