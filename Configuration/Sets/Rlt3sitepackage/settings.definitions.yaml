@@ -26,16 +26,13 @@ categories:
     parent: rlt3sitepackage.style
 
   rlt3sitepackage.header:
-    label: 'Header'
     parent: rlt3sitepackage.theme
   rlt3sitepackage.footer:
-    label: 'Footer'
     description: 'Footer settings and configuration'
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.footer.socialmedia:
-    label: 'Social Media'
+  rlt3sitepackage.socialmedia:
     parent: rlt3sitepackage.footer
-  rlt3sitepackage.footer.socialmedia.subscriptions:
+  rlt3sitepackage.subscriptions:
     label: 'Subscriptions'
     parent: rlt3sitepackage.socialmedia
 

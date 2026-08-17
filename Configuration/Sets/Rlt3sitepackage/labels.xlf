@@ -60,6 +60,15 @@
 			<trans-unit id="categories.description.rlt3sitepackage.css-variables">
 				<source>Project wide custom properties, also known as css-variables.</source>
 			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.footer">
+				<source>Footer</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.socialmedia">
+				<source>Social Media</source>
+			</trans-unit>
 
 			<trans-unit id="settings.rlt3sitepackage.colorScheme">
 				<source>Color Scheme</source>
