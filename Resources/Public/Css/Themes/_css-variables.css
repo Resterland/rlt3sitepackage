@@ -2,7 +2,7 @@
 ---------------------------------------------------- */
 
 :root {
-    --baseHue: 32;
+    --baseHue: #DD997C;
     --primary: hsl(var(--baseHue) 80% 40%);
     --accent1: hsl(calc(var(--baseHue) - 231) 80% 40%);
     --backgr1: hsl(calc(var(--baseHue) - 231) 80% 40% / .15);
@@ -12,10 +12,8 @@
     --theme-primary: #b30027;
     --theme-font-size: 125%;
     --unsupported-message-display: none;
-}
 
-/* Font size */
-:root {
+    /* Font size */
     --font-family-sans: "Ubuntu Sans", sans-serif;
     --font-family-monospace: "Ubuntu Sans Mono", monospace;
     --font-family-cursive: "Imperial Script", cursive;
