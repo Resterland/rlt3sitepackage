@@ -28,28 +28,16 @@ categories:
   rlt3sitepackage.header:
     label: 'Header'
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.logo:
-    label: 'Logo'
-    parent: rlt3sitepackage.header
-  rlt3sitepackage.search:
-    label: 'Search'
-    parent: rlt3sitepackage.header
   rlt3sitepackage.footer:
     label: 'Footer'
     description: 'Footer settings and configuration'
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.footer.copyright:
-    label: 'Copyright'
-    parent: rlt3sitepackage.footer
   rlt3sitepackage.footer.socialmedia:
     label: 'Social Media'
     parent: rlt3sitepackage.footer
   rlt3sitepackage.footer.socialmedia.subscriptions:
     label: 'Subscriptions'
-    parent: rlt3sitepackage.footer.socialmedia
-  rlt3sitepackage.footer.openstreetmap:
-    label: 'OpenStreetMap'
-    parent: rlt3sitepackage.footer
+    parent: rlt3sitepackage.socialmedia
 
 settings:
   ### Navigation
@@ -62,49 +50,50 @@ settings:
 
   # Header Language Navigation
   header.languagenavigation.enable:
-    label: 'Enable Language Navigation'
-    category: rlt3sitepackage.header.navigation
+    label: 'Enable Header Language Navigation'
+    category: rlt3sitepackage.navigation
     type: bool
     default: true
 
   header.languagenavigation.languageValue:
-    label: 'Language Navigation Settings'
+    label: 'Header Language Navigation Settings'
     description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
-    category: rlt3sitepackage.header.navigation
+    category: rlt3sitepackage.navigation
     type: string
+    default: 'auto'
 
 
   # Footer Navigation
   footer.navigation.enable:
     label: 'Enable Footer Navigation'
-    category: rlt3sitepackage.footer.navigation
+    category: rlt3sitepackage.navigation
     type: bool
     default: true
 
   footer.navigation.menuRoot:
     label: 'Footer menu root uid'
     description: 'The subpages of this page are displayed in the footer'
-    category: rlt3sitepackage.footer.navigation
+    category: rlt3sitepackage.navigation
     type: int
     default: 6
 
   footer.navigation.includeNotInMenu:
     label: 'Include items not in menu'
-    category: rlt3sitepackage.footer.navigation
+    category: rlt3sitepackage.navigation
     type: bool
     default: false
 
   # Footer Language Navigation
   footer.languagenavigation.enable:
-    label: 'Enable Language Navigation'
-    category: rlt3sitepackage.footer.navigation
+    label: 'Enable Footer Language Navigation'
+    category: rlt3sitepackage.navigation
     type: bool
     default: true
 
   footer.languagenavigation.languageValue:
-    label: ' Navigation Settings'
+    label: ' Footer Language Navigation Settings'
     description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
-    category: rlt3sitepackage.footer.navigation
+    category: rlt3sitepackage.navigation
     type: string
     default: 'auto'
 
@@ -130,57 +119,57 @@ settings:
   header.logo.enable:
     label: 'Enable a header Logo'
     description: 'It will appear in the header on top of the main page'
-    category: rlt3sitepackage.header.logo
+    category: rlt3sitepackage.header
     type: bool
     default: true
 
   header.logo.alt:
     label: 'Logo Alt text'
-    category: rlt3sitepackage.header.logo
+    category: rlt3sitepackage.header
     description: 'Alternative text of the logo for the visually impaired'
     type: string
     default: 'Logo'
 
   header.logo.width:
     label: 'Logo Width'
-    category: rlt3sitepackage.header.logo
+    category: rlt3sitepackage.header
     type: number
     default: 64
 
   header.logo.height:
     label: 'Logo Height'
-    category: rlt3sitepackage.header.logo
+    category: rlt3sitepackage.header
     type: number
     default: 'auto'
 
   # Solr Search Form
   solr.search.enable:
     label: 'Enable Search Form'
-    category: rlt3sitepackage.header.search
+    category: rlt3sitepackage.header
     type: bool
     default: false
 
   plugin.tx_solr.search.targetPage:
-    category: rlt3sitepackage.header.search
+    category: rlt3sitepackage.header
     label: 'Search Results Target Page'
     description: 'The uid number of the page, where the search results appear. Default is set to 0 (zero). Which means the results appear on the same page.'
     type: int
     default: 0
 
   plugin.solr.templateRootPath:
-    category: rlt3sitepackage.header.search
+    category: rlt3sitepackage.header
     label: 'Apache Solr Template Roth Path'
     type: string
     default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Templates/'
 
   plugin.solr.partialRootPath:
-    category: rlt3sitepackage.header.search
+    category: rlt3sitepackage.header
     label: 'Apache Solr Partial Roth Path'
     type: string
     default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Partials/'
 
   plugin.solr.layoutRootPath:
-    category: rlt3sitepackage.header.search
+    category: rlt3sitepackage.header
     label: 'Apache Solr Layout Roth Path'
     type: string
     default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Layouts/'
@@ -189,46 +178,46 @@ settings:
   # Copyright settings
   footer.copyright.enable:
     label: 'Enable Copyright'
-    category: rlt3sitepackage.footer.copyright
+    category: rlt3sitepackage.footer
     type: bool
     default: true
 
   # OpenStreetMap settings
   footer.openstreetmap.enable:
     label: 'Enable OpenStreetMap'
-    category: rlt3sitepackage.footer.openstreetmap
+    category: rlt3sitepackage.footer
     type: bool
     default: true
 
   footer.openstreetmap.src:
     label: 'OpenStreetMap Source (URL)'
-    category: rlt3sitepackage.footer.openstreetmap
+    category: rlt3sitepackage.footer
     description: 'Source URL of the OpenStreetMap'
     type: string
     default: 'https://www.openstreetmap.org/export/embed.html?bbox=7.369127869606019%2C46.55292129624824%2C7.372668385505676%2C46.554544443415516&amp;layer=mapnik&amp;marker=46.55373287590018%2C7.370898127555847'
 
   footer.openstreetmap.title:
     label: 'OpenStreetMap Title'
-    category: rlt3sitepackage.footer.openstreetmap
+    category: rlt3sitepackage.footer
     type: string
     default: 'OpenStreetMap My Location'
 
   footer.openstreetmap.width:
     label: 'OpenStreetMap Width'
-    category: rlt3sitepackage.footer.openstreetmap
+    category: rlt3sitepackage.footer
     type: number
     default: 250
 
   footer.openstreetmap.height:
     label: 'OpenStreetMap Height'
-    category: rlt3sitepackage.footer.openstreetmap
+    category: rlt3sitepackage.footer
     type: number
     default: 206
 
   # Social Media settings
   footer.socialmedia.enable:
     label: 'Enable Social Media'
-    category: rlt3sitepackage.footer.socialmedia
+    category: rlt3sitepackage.footer
     type: bool
     default: true
 
