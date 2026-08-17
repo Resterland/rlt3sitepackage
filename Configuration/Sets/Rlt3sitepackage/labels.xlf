@@ -49,7 +49,7 @@
 				<source>Enable, disable navigation appearances.</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sitepackage.style">
-				<source>Layout</source>
+				<source>Style - Layout</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.style">
 				<source>Stylesheet and color scheme settings</source>
@@ -70,26 +70,26 @@
 				<source>Social Media</source>
 			</trans-unit>
 
-			<trans-unit id="settings.rlt3sitepackage.colorScheme">
+			<trans-unit id="settings.theme.colorScheme">
 				<source>Color Scheme</source>
 			</trans-unit>
-			<trans-unit id="settings.description.rlt3sitepackage.colorScheme">
+			<trans-unit id="settings.description.theme.colorScheme">
 				<source>Select the main color scheme</source>
 			</trans-unit>
-			<trans-unit id="settings.rlt3sitepackage.colorScheme.enum.theme-caramel-cream">
+			<trans-unit id="settings.theme.colorScheme.enum.theme-caramel-cream">
 				<source>Caramel Cream</source>
 			</trans-unit>
-			<trans-unit id="settings.rlt3sitepackage.colorScheme.enum.theme-ocean-breeze">
+			<trans-unit id="settings.theme.colorScheme.enum.theme-ocean-breeze">
 				<source>Ocean Breeze</source>
 			</trans-unit>
-			<trans-unit id="settings.rlt3sitepackage.colorScheme.enum.theme-forest-mist">
+			<trans-unit id="settings.theme.colorScheme.enum.theme-forest-mist">
 				<source>Forest Mist</source>
 			</trans-unit>
-			<trans-unit id="settings.rlt3sitepackage.colorScheme.enum.theme-violet-velvet">
+			<trans-unit id="settings.theme.colorScheme.enum.theme-violet-velvet">
 				<source>Violet Velvet</source>
 			</trans-unit>
 
-			<trans-unit id="settings.rlt3sitepackage.primary">
+			<trans-unit id="settings.css.primary">
 				<source>Primary Color</source>
 			</trans-unit>
 		</body>
