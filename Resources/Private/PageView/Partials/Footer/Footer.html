@@ -3,17 +3,17 @@
     data-namespace-typo3-fluid="true"
 >
 <footer class="page-footer">
-    <f:if condition="{settings.page.footer.navigation.enable}">
+    <f:if condition="{settings.footer.navigation.enable}">
         <nav class="footer-nav">
             <f:render partial="Navigation/FooterMenu.html" arguments="{_all}"/>
         </nav>
     </f:if>
 
-    <f:if condition="{settings.page.footer.openstreetmap.enable}">
+    <f:if condition="{settings.footer.openstreetmap.enable}">
         <f:render partial="Structure/OpenStreetMap" arguments="{_all}"/>
     </f:if>
 
-    <f:if condition="{settings.page.footer.copyright.enable}">
+    <f:if condition="{settings.footer.copyright.enable}">
         <f:render partial="Footer/Copyright" arguments="{_all}"/>
     </f:if>
 

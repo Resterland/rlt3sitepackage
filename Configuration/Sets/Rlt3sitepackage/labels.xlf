@@ -6,43 +6,59 @@
 		<header/>
 		<body>
 			<trans-unit id="label">
-				<source>ResterLand Site Package</source>
+				<source>Site Package Configuration</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sitepackage">
-				<source>ResterLand Site Package</source>
+				<source>Site Package Configuration</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage">
-				<source>Available configuration settings</source>
+				<source>All available configuration settings can be set and/or overwritten here.</source>
 			</trans-unit>
+
 			<trans-unit id="categories.rlt3sitepackage.templates">
 				<source>Templates</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.templates">
 				<source>Path to the template files</source>
 			</trans-unit>
+
 			<trans-unit id="categories.rlt3sitepackage.meta">
-				<source>Head - Meta Settings</source>
+				<source>Meta Settings</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.meta">
-				<source>Meta settings e.g.g Google verification</source>
+				<source>Meta settings (e.g. Google verification), which appear in the head of the page.</source>
 			</trans-unit>
+
 			<trans-unit id="categories.rlt3sitepackage.config">
-				<source>Configuration</source>
+				<source>Global System</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.config">
-				<source>Global system configuration settings</source>
+				<source>Some project wide system configuration settings can be adjusted here.</source>
 			</trans-unit>
+
 			<trans-unit id="categories.rlt3sitepackage.theme">
 				<source>Theme Settings</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.theme">
-				<source>Theme configuration, layout, navigation, etc.</source>
+				<source>Project wide theme settings, like navigation, layout style or other appearance can be adjusted here.</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.navigation">
+				<source>Enable, disable navigation appearances.</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sitepackage.style">
-				<source>CSS - Layout Style</source>
+				<source>Layout</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.style">
-				<source>Stylesheet settings</source>
+				<source>Stylesheet and color scheme settings</source>
+			</trans-unit>
+			<trans-unit id="categories.rlt3sitepackage.css-variables">
+				<source>CSS - Custom Properties</source>
+			</trans-unit>
+			<trans-unit id="categories.description.rlt3sitepackage.css-variables">
+				<source>Project wide custom properties, also known as css-variables.</source>
 			</trans-unit>
 
 			<trans-unit id="settings.rlt3sitepackage.colorScheme">
@@ -62,6 +78,10 @@
 			</trans-unit>
 			<trans-unit id="settings.rlt3sitepackage.colorScheme.enum.theme-violet-velvet">
 				<source>Violet Velvet</source>
+			</trans-unit>
+
+			<trans-unit id="settings.rlt3sitepackage.primary">
+				<source>Primary Color</source>
 			</trans-unit>
 		</body>
 	</file>

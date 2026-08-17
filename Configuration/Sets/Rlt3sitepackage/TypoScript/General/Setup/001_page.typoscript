@@ -6,7 +6,7 @@ page {
   # set color-scheme class to body tag
   bodyTagCObject = TEXT
   bodyTagCObject {
-    data = sitesettings:rlt3sitepackage.colorScheme
+    data = sitesettings:theme.colorScheme
     wrap = <body class=" | ">
   }
 

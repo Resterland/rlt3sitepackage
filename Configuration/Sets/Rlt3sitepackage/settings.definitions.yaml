@@ -12,35 +12,32 @@ categories:
     parent: rlt3sitepackage
   rlt3sitepackage.config:
     parent: rlt3sitepackage
+
   rlt3sitepackage.theme:
     parent: rlt3sitepackage
+
+  rlt3sitepackage.navigation:
+    parent: rlt3sitepackage.theme
+
   rlt3sitepackage.style:
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.style.colors:
-    label: 'Colors'
+
+  rlt3sitepackage.css-variables:
     parent: rlt3sitepackage.style
-  rlt3sitepackage.breadcrumb:
-    label: 'Breadcrumb'
-    parent: rlt3sitepackage.theme
+
   rlt3sitepackage.header:
     label: 'Header'
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.header.logo:
+  rlt3sitepackage.logo:
     label: 'Logo'
     parent: rlt3sitepackage.header
-  rlt3sitepackage.header.navigation:
-    label: 'Navigation'
-    parent: rlt3sitepackage.header
-  rlt3sitepackage.header.search:
+  rlt3sitepackage.search:
     label: 'Search'
     parent: rlt3sitepackage.header
   rlt3sitepackage.footer:
     label: 'Footer'
     description: 'Footer settings and configuration'
     parent: rlt3sitepackage.theme
-  rlt3sitepackage.footer.navigation:
-    label: 'Navigation'
-    parent: rlt3sitepackage.footer
   rlt3sitepackage.footer.copyright:
     label: 'Copyright'
     parent: rlt3sitepackage.footer
@@ -55,7 +52,64 @@ categories:
     parent: rlt3sitepackage.footer
 
 settings:
-  rlt3sitepackage.colorScheme:
+  ### Navigation
+  # Breadcrumb & choose theme
+  breadcrumb.enable:
+    label: 'Enable breadcrumb navigation'
+    default: true
+    type: bool
+    category: rlt3sitepackage.navigation
+
+  # Header Language Navigation
+  header.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: rlt3sitepackage.header.navigation
+    type: bool
+    default: true
+
+  header.languagenavigation.languageValue:
+    label: 'Language Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: rlt3sitepackage.header.navigation
+    type: string
+
+
+  # Footer Navigation
+  footer.navigation.enable:
+    label: 'Enable Footer Navigation'
+    category: rlt3sitepackage.footer.navigation
+    type: bool
+    default: true
+
+  footer.navigation.menuRoot:
+    label: 'Footer menu root uid'
+    description: 'The subpages of this page are displayed in the footer'
+    category: rlt3sitepackage.footer.navigation
+    type: int
+    default: 6
+
+  footer.navigation.includeNotInMenu:
+    label: 'Include items not in menu'
+    category: rlt3sitepackage.footer.navigation
+    type: bool
+    default: false
+
+  # Footer Language Navigation
+  footer.languagenavigation.enable:
+    label: 'Enable Language Navigation'
+    category: rlt3sitepackage.footer.navigation
+    type: bool
+    default: true
+
+  footer.languagenavigation.languageValue:
+    label: ' Navigation Settings'
+    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
+    category: rlt3sitepackage.footer.navigation
+    type: string
+    default: 'auto'
+
+  # Theme - Color Scheme
+  theme.colorScheme:
     default: theme-caramel-cream
     type: string
     enum:
@@ -63,66 +117,44 @@ settings:
       - theme-ocean-breeze
       - theme-forest-mist
       - theme-violet-velvet
-    category: rlt3sitepackage
+    category: rlt3sitepackage.style
 
-  # Colors
-  plugin.rlt3sitepackage.css.primary:
-    label: '--theme-primary'
-    category: rlt3sitepackage.css.colors
-    type: string
+  # Theme - Colors
+  css.primary:
     default: '#b30027'
-
-  # Breadcrumb & choose theme
-  page.themes.breadcrumb.enable:
-    label: 'Enable breadcrumb navigation'
-    category: rlt3sitepackage.breadcrumb
-    type: bool
-    default: true
+    type: string
+    category: rlt3sitepackage.css-variables
 
   ### Header
   # Logo
-  page.header.logo.enable:
+  header.logo.enable:
     label: 'Enable a header Logo'
     description: 'It will appear in the header on top of the main page'
     category: rlt3sitepackage.header.logo
     type: bool
     default: true
 
-  page.header.logo.alt:
+  header.logo.alt:
     label: 'Logo Alt text'
     category: rlt3sitepackage.header.logo
     description: 'Alternative text of the logo for the visually impaired'
     type: string
     default: 'Logo'
 
-  page.header.logo.width:
+  header.logo.width:
     label: 'Logo Width'
     category: rlt3sitepackage.header.logo
     type: number
     default: 64
 
-  page.header.logo.height:
+  header.logo.height:
     label: 'Logo Height'
     category: rlt3sitepackage.header.logo
     type: number
-    default: 0
-
-  # Header Language Navigation
-  page.header.languagenavigation.enable:
-    label: 'Enable Language Navigation'
-    category: rlt3sitepackage.header.navigation
-    type: bool
-    default: true
-
-  page.header.languagenavigation.languageValue:
-    label: 'Language Navigation Settings'
-    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
-    category: rlt3sitepackage.header.navigation
-    type: string
     default: 'auto'
 
-  # Header Solr Search Form
-  page.header.search.enable:
+  # Solr Search Form
+  solr.search.enable:
     label: 'Enable Search Form'
     category: rlt3sitepackage.header.search
     type: bool
@@ -154,105 +186,72 @@ settings:
     default: 'EXT:rlt3sitepackage/Resources/Private/Extensions/Solr/Layouts/'
 
   ### Footer settings
-  page.footer.navigation.enable:
-    label: 'Enable Footer Navigation'
-    category: rlt3sitepackage.footer.navigation
-    type: bool
-    default: true
-
-  page.footer.navigation.menuRoot:
-    label: 'Footer menu root uid'
-    description: 'The subpages of this page are displayed in the footer'
-    category: rlt3sitepackage.footer.navigation
-    type: int
-    default: 6
-
-  page.footer.navigation.includeNotInMenu:
-    label: 'Include items not in menu'
-    category: rlt3sitepackage.footer.navigation
-    type: bool
-    default: false
-
-  # Footer Language Navigation
-  page.footer.languagenavigation.enable:
-    label: 'Enable Language Navigation'
-    category: rlt3sitepackage.footer.navigation
-    type: bool
-    default: true
-
-  page.footer.languagenavigation.languageValue:
-    label: ' Navigation Settings'
-    description: 'Comma separated list of language uids or set to "auto" to load all enabled system languages'
-    category: rlt3sitepackage.footer.navigation
-    type: string
-    default: 'auto'
-
   # Copyright settings
-  page.footer.copyright.enable:
+  footer.copyright.enable:
     label: 'Enable Copyright'
     category: rlt3sitepackage.footer.copyright
     type: bool
     default: true
 
   # OpenStreetMap settings
-  page.footer.openstreetmap.enable:
+  footer.openstreetmap.enable:
     label: 'Enable OpenStreetMap'
     category: rlt3sitepackage.footer.openstreetmap
     type: bool
     default: true
 
-  page.footer.openstreetmap.src:
+  footer.openstreetmap.src:
     label: 'OpenStreetMap Source (URL)'
     category: rlt3sitepackage.footer.openstreetmap
     description: 'Source URL of the OpenStreetMap'
     type: string
     default: 'https://www.openstreetmap.org/export/embed.html?bbox=7.369127869606019%2C46.55292129624824%2C7.372668385505676%2C46.554544443415516&amp;layer=mapnik&amp;marker=46.55373287590018%2C7.370898127555847'
 
-  page.footer.openstreetmap.title:
+  footer.openstreetmap.title:
     label: 'OpenStreetMap Title'
     category: rlt3sitepackage.footer.openstreetmap
     type: string
     default: 'OpenStreetMap My Location'
 
-  page.footer.openstreetmap.width:
+  footer.openstreetmap.width:
     label: 'OpenStreetMap Width'
     category: rlt3sitepackage.footer.openstreetmap
     type: number
     default: 250
 
-  page.footer.openstreetmap.height:
+  footer.openstreetmap.height:
     label: 'OpenStreetMap Height'
     category: rlt3sitepackage.footer.openstreetmap
     type: number
     default: 206
 
   # Social Media settings
-  page.footer.socialmedia.enable:
+  footer.socialmedia.enable:
     label: 'Enable Social Media'
     category: rlt3sitepackage.footer.socialmedia
     type: bool
     default: true
 
-  page.footer.socialmedia.subscriptions.github.label:
+  footer.socialmedia.subscriptions.github.label:
     label: 'GitHub Label'
     category: rlt3sitepackage.footer.socialmedia.subscriptions
     type: string
     default: 'GitHub'
 
-  page.footer.socialmedia.channels.github.url:
+  footer.socialmedia.channels.github.url:
     label: 'GitHub Url'
     description: 'Insert the full account url'
     category: rlt3sitepackage.footer.socialmedia.subscriptions
     type: string
     default: ''
 
-  page.footer.socialmedia.channels.linkedin.label:
+  footer.socialmedia.channels.linkedin.label:
     label: 'LinkedIn Label'
     category: rlt3sitepackage.footer.socialmedia.subscriptions
     type: string
     default: 'LinkedIn'
 
-  page.footer.socialmedia.channels.linkedin.url:
+  footer.socialmedia.channels.linkedin.url:
     label: 'LinkedIn Url'
     description: 'Insert the full account url'
     category: rlt3sitepackage.footer.socialmedia.subscriptions
