@@ -1,0 +1,47 @@
+/* themed properties
+---------------------------------------------------- */
+
+:root {
+    --baseHue: 32;
+    --primary: hsl(var(--baseHue) 80% 40%);
+    --accent1: hsl(calc(var(--baseHue) - 231) 80% 40%);
+    --backgr1: hsl(calc(var(--baseHue) - 231) 80% 40% / .15);
+    --accent2: hsl(calc(var(--baseHue) - 200) 90% 50%);
+    --backgr2: hsl(calc(var(--baseHue) - 200) 90% 50% / .15);
+    --theme-contrast: #ffffff;
+    --theme-primary: #b30027;
+    --theme-font-size: 125%;
+    --unsupported-message-display: none;
+}
+
+/* Font size */
+:root {
+    --font-family-sans: "Ubuntu Sans", sans-serif;
+    --font-family-monospace: "Ubuntu Sans Mono", monospace;
+    --font-family-cursive: "Imperial Script", cursive;
+    --font-family-serif: "Nimbus Roman", serif;
+
+    --font-family-chewy: "Chewy", sans-serif;
+    --font-family-montecarlo: "Monte Carlo", cursive;
+    --font-family-parisienne: "Parisienne", cursive;
+
+    --font-line-content: 1.75;
+    --font-line-normal: 1.25;
+    --font-line-ui: 1;
+
+    --font-size: max(1em, 1vw);
+    --font-size-largest: 2.5rem;
+    --font-size-larger: 2rem;
+    --font-size-large: 1.5rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.8rem;
+
+    --font-axis-thin: 100;
+    --font-axis-extralight: 200;
+    --font-axis-light: 300;
+    --font-axis-regular: 400;
+    --font-axis-medium: 500;
+    --font-axis-semibold: 600;
+    --font-axis-bold: 700;
+    --font-axis-extrabold: 800;
+}

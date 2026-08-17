@@ -2,15 +2,10 @@
 /*
   Custom Properties - Variables
 */
-@import "custom-properties.css";
-
-html {
-    min-height: 100vh;
-    width: 100%;
-    overflow-wrap: break-word;
-    scroll-behavior: smooth;
-    color-scheme: light dark;
-}
+@import "_fonts.css";
+@import "_globals.css";
+@import "_css-variables.css";
+@import "_base.css";
 
 h1 {
     color: var(--primary);
