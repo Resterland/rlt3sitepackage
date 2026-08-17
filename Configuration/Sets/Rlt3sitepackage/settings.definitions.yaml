@@ -139,7 +139,7 @@ settings:
   header.logo.height:
     label: 'Logo Height'
     category: rlt3sitepackage.header
-    type: number
+    type: string
     default: 'auto'
 
   # Solr Search Form
