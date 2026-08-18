@@ -103,13 +103,6 @@
     --color-yellow-25: hsl(60 100% 25%);
     --color-yellow-15: hsl(60 100% 15%);
 
-    --baseHue: 0;
-    --primary: hsl(var(--baseHue) 34% 50%);
-    --accent1: hsl(calc(var(--baseHue) - 39) 34% 50%);
-    --backgr1: hsl(calc(var(--baseHue) - 39) 34% 50% / .15);
-    --accent2: hsl(calc(var(--baseHue) - 120) 90% 50%);
-    --backgr2: hsl(calc(var(--baseHue) + 120) 90% 50% / .15);
-
     --color-primary-75: #DD997C;
     --color-primary-100: #B45023;
 
@@ -132,6 +125,13 @@
     --color-warning-soft: #FFF8D8;
     --color-error: #D70000;
     --color-error-soft: #FFE9E9;
+
+    --baseHue: 0;
+    --primary: hsl(var(--baseHue) 34% 50%);
+    --accent1: hsl(calc(var(--baseHue) - 39) 34% 50%);
+    --backgr1: hsl(calc(var(--baseHue) - 39) 34% 50% / .15);
+    --accent2: hsl(calc(var(--baseHue) - 120) 90% 50%);
+    --backgr2: hsl(calc(var(--baseHue) + 120) 90% 50% / .15);
 
     /* Font settings */
     --font-family-sans: "Ubuntu Sans", sans-serif;

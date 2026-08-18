@@ -8,29 +8,29 @@ html {
 
 body {
     /* set dynamic default colors. These colors are changed using .theme-<name> classes.*/
-    --link-color: var(--color-primary-100);
-    --link-color-hover: var(--color-neutral-70);
-    --figure-color: var(--color-neutral-70);
+    --color-background: light-dark(
+        var(--color-neutral-0),
+        var(--color-neutral-90));
+    --link-color: light-dark(
+        var(--color-neutral-70),
+        var(--color-neutral-10));
+    --link-color-hover: light-dark(
+        var(--color-neutral-50),
+        var(--color-neutral-30));
 
     margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
-    background: var(--backgr2);
-}
-
-h1 {
-    color: var(--primary);
-    background-color: var(--backgr1);
-    border: medium solid var(--accent1);
-    padding: 1em 1em 1em 200px;
+    background: var(--color-background);
 }
 
 a {
-    color: var(--accent1);
+    color: var(--link-color);
 }
 
-p {
-    color: var(--accent2);
-    background-color: var(--backgr1);
+a:hover,
+a:active {
+    color: var(--link-color-hover);
+    background: var(--color-background);
 }
