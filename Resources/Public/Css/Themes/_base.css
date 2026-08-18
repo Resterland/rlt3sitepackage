@@ -11,12 +11,21 @@ body {
     --color-background: light-dark(
         var(--color-neutral-0),
         var(--color-neutral-90));
+    --color-background-dark: light-dark(
+        var(--color-neutral-90),
+        var(--color-neutral-0));
     --link-color: light-dark(
         var(--color-neutral-70),
         var(--color-neutral-10));
+    --link-color-dark: light-dark(
+        var(--color-neutral-10),
+        var(--color-neutral-70));
     --link-color-hover: light-dark(
         var(--color-neutral-50),
         var(--color-neutral-30));
+    --link-color-hover-dark: light-dark(
+        var(--color-neutral-30),
+        var(--color-neutral-50));
 
     margin: auto;
     font-size: var(--font-size);
@@ -41,18 +50,18 @@ h1 {
     font-family: var(--font-family-chewy);
 }
 .page-layout__header {
-    --color-background-dark: light-dark(
-        var(--color-neutral-90),
-        var(--color-neutral-0));
     display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
     background-color: var(--color-background-dark);
-}
-.page-layout__header a {
-    color: light-dark(
-        var(--color-neutral-90),
-        var(--color-neutral-0)
-    );
+
+    a {
+        color: var(--link-color-dark);
+    }
+
+    a:hover,
+    a:active {
+        color: var(--link-color-hover-dark);
+    }
 }
