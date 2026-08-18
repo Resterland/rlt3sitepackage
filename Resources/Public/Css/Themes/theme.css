@@ -3,17 +3,6 @@
   Custom Properties - Variables
 */
 @import "_fonts.css";
-@import "_globals.css";
-@import "_css-variables.css";
-@import "_base.css";
-
-h1 {
-    color: var(--primary);
-    background-color: var(--backgr1);
-    border: medium solid var(--accent1);
-    padding: 1em 1em 1em 200px;
-}
-
-a {
-    color: var(--accent1);
-}
+/*@import "_globals.css";*/
+/*@import "_css-variables.css";*/
+/*@import "_base.css";*/
