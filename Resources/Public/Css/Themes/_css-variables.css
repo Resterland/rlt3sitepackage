@@ -108,7 +108,7 @@
     --accent1: hsl(calc(var(--baseHue) - 39) 34% 50%);
     --backgr1: hsl(calc(var(--baseHue) - 39) 34% 50% / .15);
     --accent2: hsl(calc(var(--baseHue) - 120) 90% 50%);
-    --backgr2: hsl(calc(var(--baseHue) - 120) 90% 50% / .15);
+    --backgr2: hsl(calc(var(--baseHue) + 120) 90% 50% / .15);
 
     --color-primary-75: #DD997C;
     --color-primary-100: #B45023;
