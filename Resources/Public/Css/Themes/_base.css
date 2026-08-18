@@ -52,7 +52,7 @@ h1 {
 }
 .page-layout__header > a {
     color: light-dark(
-        var(--color-neutral-0),
-        var(--color-neutral-90)
+        var(--color-neutral-90),
+        var(--color-neutral-0)
     );
 }
