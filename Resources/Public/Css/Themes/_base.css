@@ -50,7 +50,7 @@ h1 {
     z-index: var(--z-index-sticky-header);
     background-color: var(--color-background-dark);
 }
-.page-layout__header a {
+.page-layout__header > a {
     color: light-dark(
         var(--color-neutral-0),
         var(--color-neutral-90)
