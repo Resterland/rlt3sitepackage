@@ -32,17 +32,12 @@ a {
 a:hover,
 a:active {
     color: var(--link-color-hover);
-    background: var(--link-color);
 }
 
 h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
-    color: light-dark(
-        var(--color-neutral-90),
-        var(--color-neutral-0)
-    );
     font-family: var(--font-family-chewy);
 }
 .page-layout__header {
@@ -54,4 +49,10 @@ h1 {
     top: 0;
     z-index: var(--z-index-sticky-header);
     background-color: var(--color-background-dark);
+}
+.page-layout__header a {
+    color: light-dark(
+        var(--color-neutral-0),
+        var(--color-neutral-90)
+    );
 }
