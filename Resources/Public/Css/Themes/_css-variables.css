@@ -103,10 +103,10 @@
     --color-yellow-25: hsl(60 100% 25%);
     --color-yellow-15: hsl(60 100% 15%);
 
-    --baseHue:145;
-    --primary: hsl(var(--baseHue) 80% 40%);
-    --accent1: hsl(calc(var(--baseHue) - 39) 80% 40%);
-    --backgr1: hsl(calc(var(--baseHue) - 39) 80% 40% / .15);
+    --baseHue:25;
+    --primary: hsl(var(--baseHue) 34% 50%);
+    --accent1: hsl(calc(var(--baseHue) - 39) 34% 50%);
+    --backgr1: hsl(calc(var(--baseHue) - 39) 34% 50% / .15);
     --accent2: hsl(calc(var(--baseHue) - 120) 90% 50%);
     --backgr2: hsl(calc(var(--baseHue) - 120) 90% 50% / .15);
 

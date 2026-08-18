@@ -16,7 +16,7 @@ body {
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
-    background: var(--color-background-coffee);
+    background: var(--backgr2);
 }
 
 h1 {
@@ -28,4 +28,9 @@ h1 {
 
 a {
     color: var(--accent1);
+}
+
+p {
+    color: var(--accent2);
+    background-color: var(--backgr1);
 }
