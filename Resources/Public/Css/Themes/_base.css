@@ -15,7 +15,7 @@ body {
     margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
-    font-family: var(--font-family-sans), sans-serif;
+    font-family: var(--font-family-sans);
     background: var(--color-background-coffee);
 }
 

@@ -8,14 +8,39 @@
     --backgr1: hsl(calc(var(--baseHue) - 231) 80% 40% / .15);
     --accent2: hsl(calc(var(--baseHue) - 200) 90% 50%);
     --backgr2: hsl(calc(var(--baseHue) - 200) 90% 50% / .15);
+
     --theme-contrast: #ffffff;
     --theme-primary: #b30027;
     --theme-font-size: 125%;
     --unsupported-message-display: none;
 
-    /* Font size */
+    /* Colors */
+    --color-primary-75: #DD997C;
+    --color-primary-100: #B45023;
+
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #FBF2EE;
+    --color-neutral-20: #ECDFD9;
+    --color-neutral-30: #D0BFB7;
+    --color-neutral-40: #BCA59A;
+    --color-neutral-50: #AB978E;
+    --color-neutral-60: #887167;
+    --color-neutral-70: #6C5246;
+    --color-neutral-80: #49362D;
+    --color-neutral-90: #220B01;
+
+    --color-info: #0E55FF;
+    --color-info-soft: #CFDEFF;
+    --color-success: #378200;
+    --color-success-soft: #F7FFF1;
+    --color-warning: #846C00;
+    --color-warning-soft: #FFF8D8;
+    --color-error: #D70000;
+    --color-error-soft: #FFE9E9;
+
+    /* Font settings */
     --font-family-sans: "Ubuntu Sans", sans-serif;
-    --font-family-monospace: "Ubuntu Sans Mono", monospace;
+    --font-family-code: "Ubuntu Sans Mono", monospace;
     --font-family-cursive: "Imperial Script", cursive;
     --font-family-serif: "Nimbus Roman", serif;
 
