@@ -47,7 +47,7 @@ h1 {
     z-index: var(--z-index-sticky-header);
     background: light-dark(
         var(--color-neutral-10),
-        var(--color-neutral-90));;
+        var(--color-neutral-90));
 }
 
 .navigation__logo {
@@ -123,12 +123,12 @@ main {
     padding: 0.5rem 0.75rem;
     background: light-dark(
         var(--color-neutral-20),
-        var(--color-neutral-80));;
+        var(--color-neutral-80));
 }
 footer {
     background: light-dark(
         var(--color-neutral-10),
-        var(--color-neutral-90));;
+        var(--color-neutral-90));
     display: grid;
 }
 .footer-menu {
@@ -150,7 +150,9 @@ footer {
     font-size: 0.8em;
 }
 .openstreetmap iframe {
-    border: 0.125em solid var(--color-background-coffee);
+    border: 0.125em solid light-dark(
+        var(--color-neutral-90),
+        var(--color-neutral-10));
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {
