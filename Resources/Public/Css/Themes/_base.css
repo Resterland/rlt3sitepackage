@@ -139,7 +139,6 @@ main {
 }
 footer {
     display: grid;
-    background: var(--color-background-primary);
 }
 .footer-menu {
     padding: 0.5em 0;

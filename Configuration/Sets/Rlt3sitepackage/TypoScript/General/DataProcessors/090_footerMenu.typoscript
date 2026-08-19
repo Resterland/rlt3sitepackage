@@ -4,7 +4,7 @@ page.10.dataProcessing {
     90 {
         as = footerMenu
         special = directory
-        special.value = {$page.footer.navigation.menuRoot}
-        includeNotInMenu = {$page.footer.navigation.includeNotInMenu}
+        special.value = {$footer.navigation.menuRoot}
+        includeNotInMenu = {$footer.navigation.includeNotInMenu}
     }
 }
