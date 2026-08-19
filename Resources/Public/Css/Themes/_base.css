@@ -121,8 +121,14 @@ main {
 .aside-right {
     background: transparent;
     padding: 0.5rem 0.75rem;
+    background: light-dark(
+        var(--color-neutral-20),
+        var(--color-neutral-80));;
 }
 footer {
+    background: light-dark(
+        var(--color-neutral-10),
+        var(--color-neutral-90));;
     display: grid;
 }
 .footer-menu {
