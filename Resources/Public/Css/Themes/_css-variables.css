@@ -115,7 +115,7 @@
     --color-neutral-60: hsl(18 14% 47%);
     --color-neutral-70: hsl(19 21% 35%);
     --color-neutral-80: hsl(19 24% 23%);
-    --color-neutral-90: var(--color-black-alpha-75);
+    --color-neutral-90: var(--color-coffee-15);
 
     --color-info: hsl(222 100% 53%);
     --color-info-soft: hsl(221 100% 91%);

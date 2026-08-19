@@ -10,7 +10,7 @@ body {
     /* set dynamic default colors. These colors are changed using .theme-<name> classes.*/
     --color-background: light-dark(
         var(--color-neutral-10),
-        var(--color-neutral-70));
+        var(--color-neutral-90));
     --link-color: light-dark(
         var(--color-primary-100),
         var(--color-primary-75));
