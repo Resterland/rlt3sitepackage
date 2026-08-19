@@ -10,7 +10,7 @@ body {
     /* set dynamic default colors. These colors are changed using .theme-<name> classes.*/
     --color-background: light-dark(
         var(--color-neutral-10),
-        var(--color-neutral-90));
+        var(--color-neutral-70));
     --link-color: light-dark(
         var(--color-primary-100),
         var(--color-primary-75));
@@ -45,12 +45,15 @@ h1 {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
+    background: light-dark(
+        var(--color-neutral-30),
+        var(--color-neutral-90));;
 }
 
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--color-orange-40),
-        var(--color-gold)
+        var(--color-neutral-80),
+        var(--color-neutral-30)
     );
 }
 .navigation__logo a {
