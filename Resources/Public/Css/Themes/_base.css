@@ -9,17 +9,14 @@ html {
 body {
     /* set dynamic default colors. These colors are changed using .theme-<name> classes.*/
     --color-background: light-dark(
-        var(--color-neutral-0),
-        var(--color-neutral-90));
+        var(--color-neutral-10),
+        var(--color-neutral-70));
     --link-color: light-dark(
-        var(--color-neutral-70),
-        var(--color-neutral-10));
+        var(--color-primary-100),
+        var(--color-primary-75));
     --link-color-hover: light-dark(
         var(--color-neutral-50),
         var(--color-neutral-30));
-    --link-color: var(--color-primary-100);
-    --link-color-hover: var(--color-neutral-70);
-    --figure-color: var(--color-neutral-70);
 
     margin: auto;
     font-size: var(--font-size);
