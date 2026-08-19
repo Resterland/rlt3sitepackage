@@ -42,12 +42,12 @@
     --color-coffee-25: hsl(25 34% 25%);
     --color-coffee-15: hsl(25 34% 15%);
 
-    --color-blue: hsl(217 100% 50%);
-    --color-blue-90: hsl(217 100% 90%);
-    --color-blue-75: hsl(217 100% 75%);
-    --color-blue-40: hsl(217 100% 40%);
-    --color-blue-25: hsl(217 100% 25%);
-    --color-blue-15: hsl(217 100% 15%);
+    --color-blue: hsl(222 100% 50%);
+    --color-blue-90: hsl(222 100% 90%);
+    --color-blue-75: hsl(222 100% 75%);
+    --color-blue-40: hsl(222 100% 40%);
+    --color-blue-25: hsl(222 100% 25%);
+    --color-blue-15: hsl(222 100% 15%);
 
     --color-fuchsia: hsl(300 100% 50%);
     --color-fuchsia-90: hsl(300 100% 90%);
@@ -103,28 +103,28 @@
     --color-yellow-25: hsl(60 100% 25%);
     --color-yellow-15: hsl(60 100% 15%);
 
-    --color-primary-75: #DD997C;
-    --color-primary-100: #B45023;
+    --color-primary-75: hsl(18 59% 68%);
+    --color-primary-100: hsl(19 67% 42%);
 
-    --color-neutral-0: #FFFFFF;
-    --color-neutral-10: #FBF2EE;
-    --color-neutral-20: #ECDFD9;
-    --color-neutral-30: #D0BFB7;
-    --color-neutral-40: #BCA59A;
-    --color-neutral-50: #AB978E;
-    --color-neutral-60: #887167;
-    --color-neutral-70: #6C5246;
-    --color-neutral-80: #49362D;
-    --color-neutral-90: #220B01;
+    --color-neutral-0: var(--color-white);
+    --color-neutral-10: hsl(18 62% 96%);
+    --color-neutral-20: hsl(19 33% 89%);
+    --color-neutral-30: hsl(19 21% 77%);
+    --color-neutral-40: hsl(19 20% 67%);
+    --color-neutral-50: hsl(19 15% 61%);
+    --color-neutral-60: hsl(18 14% 47%);
+    --color-neutral-70: hsl(19 21% 35%);
+    --color-neutral-80: hsl(19 24% 23%);
+    --color-neutral-90: var(--color-black-alpha-75);
 
-    --color-info: #0E55FF;
-    --color-info-soft: #CFDEFF;
-    --color-success: #378200;
-    --color-success-soft: #F7FFF1;
-    --color-warning: #846C00;
-    --color-warning-soft: #FFF8D8;
-    --color-error: #D70000;
-    --color-error-soft: #FFE9E9;
+    --color-info: hsl(222 100% 53%);
+    --color-info-soft: hsl(221 100% 91%);
+    --color-success: hsl(95 100% 25%);
+    --color-success-soft: hsl(94 100% 97%);
+    --color-warning: hsl(49 100% 26%);
+    --color-warning-soft: hsl(49 100% 92%);
+    --color-error: hsl(0 100% 42%);
+    --color-error-soft: hsl(0 100% 96%);
 
     --baseHue: 0;
     --primary: hsl(var(--baseHue) 34% 50%);
@@ -162,4 +162,53 @@
     --font-axis-semibold: 600;
     --font-axis-bold: 700;
     --font-axis-extrabold: 800;
+}
+
+
+.theme-ocean-breeze {
+    --color-primary-75: #78BCFF;
+    --color-primary-100: #0068CE;
+
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #EBF0F5;
+    --color-neutral-20: #D9E2EC;
+    --color-neutral-30: #B7C2D0;
+    --color-neutral-40: #9AA9BC;
+    --color-neutral-50: #8E9BAB;
+    --color-neutral-60: #677688;
+    --color-neutral-70: #46576C;
+    --color-neutral-80: #2D3A49;
+    --color-neutral-90: #011022;
+}
+
+.theme-forest-mist {
+    --color-primary-75: #86B6A6;
+    --color-primary-100: #266D55;
+
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #EDEBE9;
+    --color-neutral-20: #E3DEDA;
+    --color-neutral-30: #CCCAC8;
+    --color-neutral-40: #B3AEAA;
+    --color-neutral-50: #9F9893;
+    --color-neutral-60: #7B746F;
+    --color-neutral-70: #51463F;
+    --color-neutral-80: #443B35;
+    --color-neutral-90: #220E01;
+}
+
+.theme-violet-velvet {
+    --color-primary-75: #D0B4FF;
+    --color-primary-100: #6E1AFF;
+
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #F0EFF2;
+    --color-neutral-20: #D7D5DB;
+    --color-neutral-30: #CAC8CC;
+    --color-neutral-40: #AEAAB3;
+    --color-neutral-50: #97939F;
+    --color-neutral-60: #736F7B;
+    --color-neutral-70: #463F51;
+    --color-neutral-80: #3A3544;
+    --color-neutral-90: #0D0122;
 }
