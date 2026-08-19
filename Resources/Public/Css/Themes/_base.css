@@ -45,15 +45,6 @@ h1 {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background-color: var(--color-background-dark);
-
-    a {
-        color: var(--link-color-dark);
-    }
-    a:hover,
-    a:active {
-        color: var(--link-color-hover-dark);
-    }
 }
 
 .navigation__logo {
