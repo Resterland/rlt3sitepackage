@@ -153,6 +153,7 @@ footer {
     border: 0.125em solid light-dark(
         var(--color-neutral-90),
         var(--color-neutral-10));
+    box-sizing: border-box;
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {
