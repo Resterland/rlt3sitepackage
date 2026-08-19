@@ -17,6 +17,9 @@ body {
     --link-color-hover: light-dark(
         var(--color-neutral-50),
         var(--color-neutral-30));
+    --link-color: var(--color-primary-100);
+    --link-color-hover: var(--color-neutral-70);
+    --figure-color: var(--color-neutral-70);
 
     margin: auto;
     font-size: var(--font-size);
