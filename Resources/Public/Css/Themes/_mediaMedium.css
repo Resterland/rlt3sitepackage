@@ -1,0 +1,17 @@
+/* media between 45rem and 69.99rem */
+/*
+@media (min-width: 45rem) and (width <= 62.49rem) {
+
+    .content-wrapper {
+        display: flex;
+    }
+    .content-wrapper > * {
+        flex: 1;
+    }
+    .content-wrapper > main {
+        flex-grow: 3;
+        border-right: 0.1rem solid var(--color-border-active);
+        border-left: 0.1rem solid var(--color-border-active);
+    }
+}
+*/

@@ -6,9 +6,14 @@
 @import "_globals.css";
 @import "_scip-link.css";
 @import "_css-variables.css";
-@import "_base.css";
+@import "_mobileFirst.css";
+@import "_mediaLarge.css";
+@import "_mediaSmall.css";
+@import "_mediaMedium.css";
+
+/*@import "_base.css";
 
 @import "_header.css";
 @import "_footer.css";
 @import "_dropdown.css";
-@import "_solr.css";
+@import "_solr.css";*/
