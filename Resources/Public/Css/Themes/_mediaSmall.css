@@ -66,10 +66,10 @@
             mask-size: cover;
         }
         &[aria-expanded="true"]::before {
-            mask-image: url("../Icons/icon/cancel.svg");
+            mask-image: url("../../Icons/icon/cancel.svg");
         }
         &[aria-expanded="false"]::before {
-            mask-image: url("../Icons/icon/menu.svg");
+            mask-image: url("../../Icons/icon/menu.svg");
         }
     }
 
