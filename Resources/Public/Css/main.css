@@ -266,7 +266,7 @@ form {
 }*/
 /* Solr search settings END */
 
-/* media queries equal or larger than 70rem */
+/* media queries equal or larger than 62.5rem */
 @media (width > 62.5rem) {
 
     .page-layout__header,

@@ -1,0 +1,104 @@
+
+.page-layout__header {
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
+    background: light-dark(
+        var(--color-neutral-10),
+        var(--color-neutral-90));
+}
+
+.navigation__logo {
+    text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
+        var(--color-neutral-30),
+        var(--color-neutral-0)
+    );
+}
+.navigation__logo a {
+    text-decoration: none;
+}
+
+.navigation,
+.breadcrumb-bar {
+    padding: 0 0.25em;
+}
+.navigation {
+    background-color: var(--color-background-primary);
+}
+img.middle {
+    margin: 0;
+    width: calc(var(--font-size) + 0.35rem);
+    padding-right: 0.25rem;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+.breadcrumb-bar {
+    align-items: center;
+    border-width: 1px;
+    border-top: 1px solid var(--color-background-secondary);
+    display: flex;
+    height: var(--breadcrumbs-bar-height);
+    justify-content: end;
+    max-width: 100vw;
+    text-wrap: nowrap;
+    font-size: small;
+}
+.breadcrumb {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0 auto 0 0;
+    min-width: 0;
+    overflow-x: hidden;
+    padding: 2px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin-inline: .25rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+.lang-menu__header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang-menu__header a {
+    padding: 0 0.25em;
+    display: block;
+}
+/* media queries equal or larger than 70rem */
+@media (width > 62.5rem) {
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 0.25rem;
+        align-items: center;
+        height:  4.125rem;
+
+        /*padding-block: 0.75rem;
+        padding-inline: var(--layout-side-padding);*/
+    }
+
+    /* Logo */
+
+    .navigation__logo {
+        margin-inline-start: -6px;
+        padding-left: 0.5rem;
+        justify-self: start;
+    }
+    /* Popup */
+    .navigation__popup {
+        display: contents;
+    }
+    /* Button */
+    .navigation__button {
+        display: none;
+    }
+}

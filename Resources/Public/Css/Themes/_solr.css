@@ -1,0 +1,37 @@
+
+/* Solr search settings START */
+/* Search */
+/*.navigation__search[data-view="mobile"] {
+    display: none;
+}
+.navigation__search[data-view="desktop"] {
+    display: block;
+}*/
+.navigation__search {
+    justify-self: end;
+}
+form {
+    display: inline-block;
+    /* Form outline */
+    background: var(--color-background-coffee);
+    padding: 0.25em;
+    border: 1px solid var(--color-text-aqua);
+    border-radius: 0.5em;
+}
+.input-group {
+    display: flex;
+}
+.search-button {
+    background: var(--color-background-coffee);
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
+    }
+}
+/*.input-group input {
+    background: var(--color-background-primary);
+}
+.input-group button {
+    background: var(--color-background-secondary);
+}*/
+/* Solr search settings END */

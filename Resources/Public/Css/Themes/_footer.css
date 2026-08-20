@@ -1,0 +1,46 @@
+
+footer {
+    background: light-dark(
+        var(--color-neutral-10),
+        var(--color-neutral-90));
+    display: grid;
+}
+.footer-menu {
+    padding: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: smaller;
+}
+.footer-menu a {
+    padding: 0.25em;
+    display: block;
+}
+.lang-menu__footer,
+.footer-nav,
+.copyright {
+    font-size: calc(0.8em + 0.25dvw);
+}
+.openstreetmap {
+    text-align: center;
+}
+.openstreetmap small {
+    display: block;
+    font-size: 0.8em;
+}
+.openstreetmap iframe {
+    border: 0.125em solid light-dark(
+        var(--color-neutral-90),
+        var(--color-neutral-10));
+    box-sizing: border-box;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+.copyright {
+    text-align: center;
+}
+.copyright p {
+    font-size: 0.8em;
+}
+.copyright img {
+    vertical-align: middle;
+}

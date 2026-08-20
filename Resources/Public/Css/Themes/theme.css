@@ -7,3 +7,8 @@
 @import "_scip-link.css";
 @import "_css-variables.css";
 @import "_base.css";
+
+@import "_header.css";
+@import "_footer.css";
+@import "_dropdown.css";
+@import "_solr.css";

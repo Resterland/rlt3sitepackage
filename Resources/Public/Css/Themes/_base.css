@@ -40,79 +40,6 @@ h1 {
     text-align: center;
     font-family: var(--font-family-chewy);
 }
-.page-layout__header {
-    display: grid;
-    position: sticky;
-    top: 0;
-    z-index: var(--z-index-sticky-header);
-    background: light-dark(
-        var(--color-neutral-10),
-        var(--color-neutral-90));
-}
-
-.navigation__logo {
-    text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--color-neutral-30),
-        var(--color-neutral-0)
-    );
-}
-.navigation__logo a {
-    text-decoration: none;
-}
-
-.navigation,
-.breadcrumb-bar {
-    padding: 0 0.25em;
-}
-.navigation {
-    background-color: var(--color-background-primary);
-}
-img.middle {
-    margin: 0;
-    width: calc(var(--font-size) + 0.35rem);
-    padding-right: 0.25rem;
-    vertical-align: middle;
-    fill: currentColor;
-}
-
-.breadcrumb-bar {
-    align-items: center;
-    border-width: 1px;
-    border-top: 1px solid var(--color-background-secondary);
-    display: flex;
-    height: var(--breadcrumbs-bar-height);
-    justify-content: end;
-    max-width: 100vw;
-    text-wrap: nowrap;
-    font-size: small;
-}
-.breadcrumb {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    margin: 0 auto 0 0;
-    min-width: 0;
-    overflow-x: hidden;
-    padding: 2px;
-}
-
-.breadcrumb li:not(:last-child)::after {
-    content: "/";
-    margin-inline: .25rem;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
-}
-.lang-menu__header {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lang-menu__header a {
-    padding: 0 0.25em;
-    display: block;
-}
 
 main {
     padding: 0.5rem 0.75rem;
@@ -125,57 +52,86 @@ main {
         var(--color-neutral-20),
         var(--color-neutral-80));
 }
-footer {
-    background: light-dark(
-        var(--color-neutral-10),
-        var(--color-neutral-90));
-    display: grid;
-}
-.footer-menu {
-    padding: 0.5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: smaller;
-}
-.footer-menu a {
-    padding: 0.25em;
-    display: block;
-}
-.openstreetmap {
-    text-align: center;
-}
-.openstreetmap small {
-    display: block;
-    font-size: 0.8em;
-}
-.openstreetmap iframe {
-    border: 0.125em solid light-dark(
-        var(--color-neutral-90),
-        var(--color-neutral-10));
-    box-sizing: border-box;
-    width: 100%; /* takes precedence over the width set with the HTML width attribute */
-}
-.copyright {
-    text-align: center;
-}
-.copyright p {
-    font-size: 0.8em;
-}
-.copyright img {
-    vertical-align: middle;
-}
-.lang-menu__footer,
-.footer-nav,
-.copyright {
-    font-size: calc(0.8em + 0.25dvw);
-}
 .active,
 .current {
     text-decoration: none;
     color: var(--color-text-blue);
-    background-color: var(--color-background-coffee);
+    background: var(--color-background-coffee);
     a:hover {
         text-decoration: none;
     }
 }
+
+/* media queries equal or larger than 62.5rem */
+@media (width > 62.5rem) {
+
+    .page-layout__header,
+    .content-wrapper,
+    .page-footer {
+        padding-inline: var(--layout-side-padding);
+    }
+
+    .content-wrapper {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+    }
+
+    .content-wrapper > * {
+        flex: 1;
+    }
+    .content-wrapper > main {
+        flex-grow: 3;
+    }
+
+    .breadcrumb-bar {
+        font-size: unset;
+    }
+}
+
+/* media between 45rem and 69.99rem */
+/*
+@media (min-width: 45rem) and (width <= 62.49rem) {
+
+    .content-wrapper {
+        display: flex;
+    }
+    .content-wrapper > * {
+        flex: 1;
+    }
+    .content-wrapper > main {
+        flex-grow: 3;
+        border-right: 0.1rem solid var(--color-border-active);
+        border-left: 0.1rem solid var(--color-border-active);
+    }
+}
+*/
+/* media queries equal or larger than 70rem */
+@media (width > 62.5rem) {
+
+    .page-layout__header,
+    .content-wrapper,
+    .page-footer {
+        padding-inline: var(--layout-side-padding);
+    }
+
+    .content-wrapper {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+    }
+
+    .content-wrapper > * {
+        flex: 1;
+    }
+    .content-wrapper > main {
+        flex-grow: 3;
+    }
+
+    /*:root {
+        --navigation-height: 4.125rem;
+    }*/
+
+    /* Dropdown navbar START */
+}
+

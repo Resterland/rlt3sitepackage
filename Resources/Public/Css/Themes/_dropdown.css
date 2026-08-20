@@ -1,0 +1,124 @@
+/* Dropdown menu navbar START */
+/* Tab Button */
+.menu__tab-button {
+    margin: 0;
+    font: inherit;
+    line-height: var(--font-line-ui);
+    color: var(--color-text-blue);
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:is([aria-expanded="true"], :hover) {
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
+    }
+
+    /* Arrow & Icon */
+    &::before,
+    &::after {
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: currentcolor;
+        mask-size: cover;
+    }
+
+    /* Arrow */
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
+    }
+    &[aria-expanded="true"]::after {
+        scale: -1;
+    }
+}
+
+/* Tab Link */
+.menu__tab-link {
+    /* Custom, to match the icon height */
+    line-height: 1.25rem;
+}
+
+/* Panel */
+.menu__panel-title {
+    padding: 0.125rem 1.4rem;
+    margin: 0;
+    font-size: inherit;
+    background-color: var(--bg-hover);
+}
+/* media queries equal or larger than 70rem */
+@media (width > 62.5rem) {
+
+    .menu {
+        --menu-button-padding: 0.25rem 0.25rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 0.25rem;
+        justify-content: space-between;
+    }
+
+    /* Button */
+    .menu__tab-button {
+        display: flex;
+
+        column-gap: 0.125rem;
+        align-items: center;
+
+        padding: var(--menu-button-padding);
+
+        border: none;
+    }
+
+    .menu__tab-button[aria-expanded="true"] {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Arrow */
+    .menu__tab-button::after {
+        margin-right: -4px;
+    }
+
+    /* Link */
+    .menu__tab-link {
+        padding: 0 0.7rem;
+    }
+
+    /* Label */
+    .menu__tab-label[data-type="short"] {
+        display: none;
+    }
+
+    /* Panel */
+    .menu__panel {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1; /* prevents menu foldout to be drawn below language chooser */
+
+        margin-top: 0;
+
+        background-color: var(--color-background-primary);
+        border: 1px solid var(--color-border-primary);
+    }
+
+    /* Panel */
+    .menu__panel-title {
+        padding: 0.125rem 0;
+        padding-left: 0.25rem;
+        margin: 0.25rem 0;
+        font-size: inherit;
+    }
+
+    .menu__tab ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Dropdown navbar END */
+    .breadcrumb-bar {
+        font-size: unset;
+    }
+}
+/* Dropdown navbar END */
