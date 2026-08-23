@@ -1,4 +1,4 @@
-.light-dark-switch {
+.color-theme {
     --color-theme-light-dark: url("../../Icons/icon/contrast.svg");
     --color-theme-light: url("../../Icons/icon/sun.svg");
     --color-theme-dark: url("../../Icons/icon/moon.svg");
