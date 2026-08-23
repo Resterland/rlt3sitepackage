@@ -29,7 +29,7 @@ function switchAuto() {
 }
 
 function switchLight() {
-  html.style.setProperty("color-scheme", "light");
+  html.style.setProperty("light-dark-switch", "light");
   localStorage.setItem("mode", "light");
   lightSwitch.setAttribute("aria-pressed","true");
   darkSwitch.setAttribute("aria-pressed","false");
@@ -40,7 +40,7 @@ function switchLight() {
 }
 
 function switchDark() {
-  html.style.setProperty("color-scheme", "dark");
+  html.style.setProperty("light-dark-switch", "dark");
   localStorage.setItem("mode", "dark");
   lightSwitch.setAttribute("aria-pressed","false");
   darkSwitch.setAttribute("aria-pressed","true");
