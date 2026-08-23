@@ -76,17 +76,17 @@
 			<trans-unit id="settings.description.theme.colorScheme">
 				<source>Select the main color scheme</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-caramel-cream">
-				<source>Caramel Cream</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-default">
+				<source>Basic Default Theme</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-ocean-breeze">
-				<source>Ocean Breeze</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-aqua">
+				<source>Aqua</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-forest-mist">
-				<source>Forest Mist</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-orange">
+				<source>Orange</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-violet-velvet">
-				<source>Violet Velvet</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-lime">
+				<source>Lime</source>
 			</trans-unit>
 
 			<trans-unit id="settings.css.primary">
