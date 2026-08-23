@@ -7,8 +7,10 @@
 @import url("components/globals.css");
 
 html {
-    --dark: var(--color-neutral-80);
-    --light: var(--color-neutral-10);
+    --background: hsl(217 100% 25%);
+    --text-color: hsl(217 100% 90%);
+    --dark: var(--background);
+    --light: var(--text-color);
 
     color-scheme: light dark;
     --background: light-dark(var(--light), var(--dark));
