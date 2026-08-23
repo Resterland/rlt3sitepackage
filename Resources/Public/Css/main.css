@@ -46,14 +46,17 @@ p {
 
     padding: 1em;
 }
+.page-layout__header,
+footer {
+    color-scheme: dark;
+    background: var(--background);
+    color: var(--text);
+}
 .page-layout__header {
     display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    color-scheme: dark;
-    background: var(--background);
-    color: var(--text);
 }
 
 main {
@@ -63,11 +66,6 @@ main {
 .aside-right {
     background: transparent;
     padding: 0.5rem 0.75rem;
-}
-footer {
-    color-scheme: dark;
-    background: var(--background);
-    color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -165,7 +163,6 @@ footer {
     font-size: 0.8em;
 }
 .openstreetmap iframe {
-    border: 0.125em solid var(--color-background-coffee);
     width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {

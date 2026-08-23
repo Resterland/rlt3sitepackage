@@ -57,6 +57,7 @@
 
 /* Tinted */
 :root {
+    --aquaHue: 180;
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
     --color-aqua-75: hsl(180 100% 75%);
@@ -64,6 +65,7 @@
     --color-aqua-25: hsl(180 100% 25%);
     --color-aqua-15: hsl(180 100% 15%);
 
+    --chartreuseHue: 90;
     --color-chartreuse: hsl(90 100% 50%);
     --color-chartreuse-90: hsl(90 100% 90%);
     --color-chartreuse-75: hsl(90 100% 75%);
@@ -71,6 +73,7 @@
     --color-chartreuse-25: hsl(90 100% 25%);
     --color-chartreuse-15: hsl(90 100% 15%);
 
+    --coffeHue: 25;
     --color-coffee: hsl(25 34% 50%);
     --color-coffee-90: hsl(25 34% 90%);
     --color-coffee-75: hsl(25 34% 75%);
@@ -86,13 +89,7 @@
     --color-blue-25: hsl(217 100% 25%);
     --color-blue-15: hsl(217 100% 15%);
 
-    --color-fuchsia: hsl(300 100% 50%);
-    --color-fuchsia-90: hsl(300 100% 90%);
-    --color-fuchsia-75: hsl(300 100% 75%);
-    --color-fuchsia-40: hsl(300 100% 40%);
-    --color-fuchsia-25: hsl(300 100% 25%);
-    --color-fuchsia-15: hsl(300 100% 15%);
-
+    --goldHue: 51;
     --color-gold: hsl(51 100% 50%);
     --color-gold-90: hsl(51 100% 90%);
     --color-gold-75: hsl(51 100% 75%);
@@ -100,12 +97,14 @@
     --color-gold-25: hsl(51 100% 25%);
     --color-gold-15: hsl(51 100% 15%);
 
+    --greenHue: 145;
     --color-green: hsl(145deg 90% 30%);
     --color-green-90: hsl(145deg 40% 94%);
     --color-green-75: hsl(145deg 75% 68%);
     --color-green-25: hsl(145deg 88% 19%);
     --color-green-15: hsl(145deg 60% 12%);
 
+    --limeHue: 120;
     --color-lime: hsl(120 100% 50%);
     --color-lime-90: hsl(120 100% 90%);
     --color-lime-75: hsl(120 100% 75%);
@@ -113,6 +112,7 @@
     --color-lime-25: hsl(120 100% 25%);
     --color-lime-15: hsl(120 100% 10%);
 
+    --orangeHue: 39;
     --color-orange: hsl(39 100% 50%);
     --color-orange-90: hsl(39 100% 90%);
     --color-orange-75: hsl(39 100% 75%);
@@ -120,6 +120,7 @@
     --color-orange-25: hsl(39 100% 25%);
     --color-orange-15: hsl(39 100% 15%);
 
+    --purpleHue: 300;
     --color-purple: hsl(300 100% 25%);
     --color-purple-90: hsl(300 100% 90%);
     --color-purple-75: hsl(300 100% 75%);
@@ -127,6 +128,7 @@
     --color-purple-25: hsl(300 100% 25%);
     --color-purple-15: hsl(300 100% 15%);
 
+    --redHue: 0;
     --color-red: hsl(0 100% 50%);
     --color-red-90: hsl(0 100% 90%);
     --color-red-75: hsl(0 100% 75%);
@@ -134,6 +136,7 @@
     --color-red-25: hsl(0 100% 25%);
     --color-red-15: hsl(0 100% 15%);
 
+    --yellowHue: 60;
     --color-yellow: hsl(60 100% 47%);
     --color-yellow-90: hsl(60 100% 90%);
     --color-yellow-75: hsl(60 100% 80%);
