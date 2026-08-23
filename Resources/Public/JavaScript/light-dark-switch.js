@@ -18,7 +18,7 @@ if (mode === "light") switchLight();
 if (mode === "dark") switchDark();
 
 function switchAuto() {
-  html.style.setProperty("color-scheme", "light dark");
+  html.style.setProperty("light-dark-switch", "light dark");
   localStorage.removeItem("mode");
   lightSwitch.setAttribute("aria-pressed","false");
   darkSwitch.setAttribute("aria-pressed","false");
