@@ -6,6 +6,20 @@
 @import url("scrollbar.css");
 @import url("area.css");
 */
+.theme-default {
+    --defaultHue: var(--blueHue);
+}
+.theme-aqua {
+    --defaultHue: var(--aquaHue);
+}
+
+.theme-orange {
+    --defaultHue: var(--orangeHue);
+}
+
+.theme-lime {
+    --defaultHue: var(--limeHue);
+}
 
 /* Basic */
 :root {
@@ -55,8 +69,6 @@
 
 /* Colors */
 :root {
-    --defaultHue: var(--blueHue);
-
     --aquaHue: 180;
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
@@ -143,16 +155,4 @@
     --color-brown: hsl(32, 65%, 40%);
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
-}
-
-.theme-aqua {
-    --defaultHue: var(--aquaHue);
-}
-
-.theme-orange {
-    --defaultHue: var(--orangeHue);
-}
-
-.theme-lime {
-    --defaultHue: var(--limeHue);
 }
