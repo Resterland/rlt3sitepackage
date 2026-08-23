@@ -52,13 +52,11 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
     color-scheme: dark;
-    background-color: var(--background);
+    background: var(--background);
     color: var(--text);
 }
 
 main {
-    background-color: var(--background);
-    color: var(--text);
     padding: 0.5rem 0.75rem;
 }
 .aside-left,
@@ -67,7 +65,8 @@ main {
     padding: 0.5rem 0.75rem;
 }
 footer {
-    background-color: var(--background);
+    color-scheme: dark;
+    background: var(--background);
     color: var(--text);
 }
 
