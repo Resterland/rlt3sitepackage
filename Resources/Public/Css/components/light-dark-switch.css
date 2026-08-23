@@ -1,7 +1,7 @@
 .color-theme {
-    --color-theme-light-dark: url("../../Icons/icon/contrast.svg");
-    --color-theme-light: url("../../Icons/icon/sun.svg");
-    --color-theme-dark: url("../../Icons/icon/moon.svg");
+    --color-theme-icon-light-dark: url("../../Icons/icon/contrast.svg");
+    --color-theme-icon-light: url("../../Icons/icon/sun.svg");
+    --color-theme-icon-dark: url("../../Icons/icon/moon.svg");
 
     position: relative;
 }
@@ -51,15 +51,15 @@
     }
 
     &[data-mode="light dark"]::before {
-        mask-image: var(--color-theme-light-dark);
+        mask-image: var(--color-theme-icon-light-dark);
     }
 
     &[data-mode="light"]::before {
-        mask-image: var(--color-theme-light);
+        mask-image: var(--color-theme-icon-light);
     }
 
     &[data-mode="dark"]::before {
-        mask-image: var(--color-theme-dark);
+        mask-image: var(--color-theme-icon-dark);
     }
 
     @media screen and (width <= 62.49rem) {
@@ -130,15 +130,15 @@
     }
 
     &[data-mode="light dark"]::before {
-        mask-image: var(--color-theme-light-dark);
+        mask-image: var(--color-theme-icon-light-dark);
     }
 
     &[data-mode="light"]::before {
-        mask-image: var(--color-theme-light);
+        mask-image: var(--color-theme-icon-light);
     }
 
     &[data-mode="dark"]::before {
-        mask-image: var(--color-theme-dark);
+        mask-image: var(--color-theme-icon-dark);
     }
 
     &[data-current] {
