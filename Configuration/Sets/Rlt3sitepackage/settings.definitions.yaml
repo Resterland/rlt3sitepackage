@@ -96,13 +96,13 @@ settings:
 
   # Theme - Color Scheme
   theme.colorScheme:
-    default: theme-caramel-cream
+    default: theme-default
     type: string
     enum:
-      - theme-caramel-cream
-      - theme-ocean-breeze
-      - theme-forest-mist
-      - theme-violet-velvet
+      - theme-default
+      - theme-aqua
+      - theme-orange
+      - theme-lime
     category: rlt3sitepackage.style
 
   # Theme - Colors

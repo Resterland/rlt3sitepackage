@@ -1,5 +1,3 @@
-/* Colors */
-
 /*
 @import url("border.css");
 @import url("background.css");
@@ -55,8 +53,10 @@
     --color-gray-05: hsl(0 0% 5%);
 }
 
-/* Tinted */
+/* Colors */
 :root {
+    --defaultHue: var(--blueHue);
+
     --aquaHue: 180;
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
@@ -96,13 +96,6 @@
     --color-gold-40: hsl(51 100% 40%);
     --color-gold-25: hsl(51 100% 25%);
     --color-gold-15: hsl(51 100% 15%);
-
-    --greenHue: 145;
-    --color-green: hsl(145deg 90% 30%);
-    --color-green-90: hsl(145deg 40% 94%);
-    --color-green-75: hsl(145deg 75% 68%);
-    --color-green-25: hsl(145deg 88% 19%);
-    --color-green-15: hsl(145deg 60% 12%);
 
     --limeHue: 120;
     --color-lime: hsl(120 100% 50%);
@@ -150,4 +143,16 @@
     --color-brown: hsl(32, 65%, 40%);
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
+}
+
+.theme-aqua {
+    --defaultHue: var(--aquaHue);
+}
+
+.theme-orange {
+    --defaultHue: var(--orangeHue);
+}
+
+.theme-lime {
+    --defaultHue: var(--limeHue);
 }
