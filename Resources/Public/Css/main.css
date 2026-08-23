@@ -7,54 +7,55 @@
 @import url("components/globals.css");
 
 html {
+    --dark: var(--color-neutral-80);
+    --light: var(--color-neutral-10);
+
+    color-scheme: light dark;
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+
     min-height: 100vh;
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
-    color-scheme: light dark;
 }
 body {
     margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
-    font-family: var(--font-family-sans), sans-serif;
-    background: var(--color-background-coffee);
-}
-
-a {
-    color: var(--color-link-blue);
-}
-
-a:hover,
-a:active {
-    color: var(--color-link-green);
-    background: var(--bg-hover);
+    font-family: var(--font-family-sans);
 }
 
 h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
-    color: light-dark(
-        var(--color-coffee-15),
-        var(--color-coffee-90)
-    );
+    --scheme: "light";
     font-family: var(--font-family-chewy);
+}
+h1::after {
+    content: var(--scheme);
+}
+
+p {
+    color: light-dark(DarkGreen, Lavender);
+    background-color: light-dark(Pink, SaddleBrown);
+
+    padding: 1em;
 }
 .page-layout__header {
     display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background-color: var(--color-background-primary);
-}
-
-.placeholder {
-    background: #ffff00;
+    color-scheme: dark;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 main {
-    background: var(--color-background-primary);
+    background-color: var(--background);
+    color: var(--text);
     padding: 0.5rem 0.75rem;
 }
 .aside-left,
@@ -63,7 +64,14 @@ main {
     padding: 0.5rem 0.75rem;
 }
 footer {
-    background: var(--color-background-primary);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        --scheme: "dark";
+    }
 }
 
 .navigation__logo {
