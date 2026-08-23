@@ -72,6 +72,9 @@ footer {
     h1 {
         --scheme: "dark";
     }
+    h1::after {
+        content: var(--scheme);
+    }
 }
 
 .navigation__logo {
