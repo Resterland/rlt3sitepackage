@@ -158,19 +158,13 @@
     }
 }*/
 .theme-aqua {
-    :root {
         --h: var(--aquaHue); /* h = Hue */
-    }
 }
 
 .theme-orange {
-    :root {
         --h: var(--orangeHue); /* h = Hue */
-    }
 }
 
 .theme-lime {
-    :root {
         --h: var(--limeHue); /* h = Hue */
-    }
 }
