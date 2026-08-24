@@ -32,16 +32,16 @@
                  priority="1" />
 </f:comment>
 
-<f:if condition="{settings.colorScheme} == 'theme-aqua'">
+<f:if condition="{settings.theme.colorScheme} == theme-aqua">
     <f:then>
         <f:asset.css identifier="theme-aqua" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-aqua.css"
                      priority="1" />
     </f:then>
-    <f:else if="{settings.colorScheme} == 'theme-lime'">
+    <f:else if="{settings.theme.colorScheme} == theme-lime">
         <f:asset.css identifier="theme-lime" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
                      priority="1" />
     </f:else>
-    <f:else if="{settings.colorScheme} == 'theme-orange'">
+    <f:else if="{settings.theme.colorScheme} == 'theme-orange'">
         <f:asset.css identifier="theme-orange" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-orange.css"
                      priority="1" />
     </f:else>
