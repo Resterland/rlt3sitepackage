@@ -28,8 +28,25 @@
 
 <f:comment>
     <f:asset.css identifier="theme" href="EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css" priority="1" />
+    <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
+                 priority="1" />
 </f:comment>
-<f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
+<f:asset.css
+    identifier="<f:if condition={settings.colorScheme} == theme-lime>
+    <f:then>
+        theme-lime
+    </f:then>
+    <f:else if={settings.colorScheme} == theme-orange>
+        theme-orange
+    </f:else>
+    <f:else if={settings.colorScheme} == theme-aqua>
+        theme-aqua
+    </f:else>
+    <f:else>
+        theme-default
+    </f:else>
+    </f:if>"
+             href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
              priority="1" />
 
 
