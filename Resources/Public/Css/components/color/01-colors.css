@@ -142,30 +142,39 @@
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
 }
-:root {
-    /* dynamic color settings */
-    --defaultHue: var(--blueHue);
-    --h: var(--defaultHue); /* h = Hue */
-    --s: 100%; /* s = Saturation */
-    --l: 90%;  /* l = Lightness */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
-}
-/*.theme-default {
-    :root {
-        --h: var(--blueHue); !* h = Hue *!
+
+.theme-default {
+    body {
+        --h: var(--blueHue); /* h = Hue */
+        --s: 100%; /* s = Saturation */
+        --l: 90%;  /* l = Lightness */
+
     }
-}*/
+}
 .theme-aqua {
-    --defaultHue: var(--aquaHue); /* h = Hue */
+    body {
+        --h: var(--aquaHue); /* h = Hue */
+        --s: 100%; /* s = Saturation */
+        --l: 90%;  /* l = Lightness */
+
+    }
 }
 
 .theme-orange {
+    body {
+        --h: var(--orangeHue); /* h = Hue */
+        --s: 100%; /* s = Saturation */
+        --l: 90%;  /* l = Lightness */
+
+    }
     --defaultHue: var(--orangeHue); /* h = Hue */
 }
 
 .theme-lime {
-    --defaultHue: var(--limeHue); /* h = Hue */
+    body {
+        --h: var(--limeHue); /* h = Hue */
+        --s: 100%; /* s = Saturation */
+        --l: 90%;  /* l = Lightness */
+
+    }
 }
