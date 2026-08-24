@@ -142,6 +142,17 @@
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
 }
+:root {
+    /* dynamic color settings */
+    --defaultHue: var(--blueHue);
+    --h: var(--defaultHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
+    --light: hsl(var(--h) var(--s) var(--l));
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+}
 /*.theme-default {
     :root {
         --h: var(--blueHue); !* h = Hue *!
