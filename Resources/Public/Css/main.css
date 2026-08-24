@@ -8,8 +8,6 @@
 
 html {
     color-scheme: light dark;
-    background: var(--background);
-    color: var(--text);
 
     min-height: 100vh;
     width: 100%;
