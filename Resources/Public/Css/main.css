@@ -8,16 +8,6 @@
 
 html {
     color-scheme: light dark;
-
-    /* dynamic color settings */
-    --h: var(--defaultHue); /* h = Hue */
-    --s: 100%; /* s = Saturation */
-    --l: 90%;  /* l = Lightness */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
-
     min-height: 100vh;
     width: 100%;
     overflow-wrap: break-word;
@@ -28,6 +18,8 @@ body {
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
+    background: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--dark), var(--light));
 }
 
 h1 {
@@ -52,8 +44,9 @@ p {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background: var(--background);
-    color: var(--text);
+    color-scheme: dark;
+    background: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--dark), var(--light));
 }
 
 main {
@@ -66,8 +59,6 @@ main {
 }
 footer {
     color-scheme: dark;
-    background: var(--background);
-    color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
