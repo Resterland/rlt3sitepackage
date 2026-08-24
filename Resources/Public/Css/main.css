@@ -19,8 +19,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background-color: light-dark(var(--light), var(--dark));
-    color: light-dark(var(--dark), var(--light));
+    background-color: var(--background);
+    color: var(--text);
 }
 
 h1 {
@@ -46,9 +46,8 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
     color-scheme: dark;
-
-    background-color: light-dark(var(--light), var(--dark));
-    color: light-dark(var(--dark), var(--light));
+    background-color: var(--background);
+    color: var(--text);
 }
 
 main {
