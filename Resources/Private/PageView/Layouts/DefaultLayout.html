@@ -31,23 +31,25 @@
     <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
                  priority="1" />
 </f:comment>
-<f:asset.css
-    identifier="<f:if condition={settings.colorScheme} == theme-lime>
+
+<f:if condition="{settings.colorScheme} == 'theme-aqua'">
     <f:then>
-        theme-lime
+        <f:asset.css identifier="theme-aqua" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-aqua.css"
+                     priority="1" />
     </f:then>
-    <f:else if={settings.colorScheme} == theme-orange>
-        theme-orange
+    <f:else if="{settings.colorScheme} == 'theme-lime'">
+        <f:asset.css identifier="theme-lime" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
+                     priority="1" />
     </f:else>
-    <f:else if={settings.colorScheme} == theme-aqua>
-        theme-aqua
+    <f:else if="{settings.colorScheme} == 'theme-orange'">
+        <f:asset.css identifier="theme-orange" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-orange.css"
+                     priority="1" />
     </f:else>
     <f:else>
-        theme-default
+        <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-default"
+                     priority="1" />
     </f:else>
-    </f:if>"
-             href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
-             priority="1" />
+</f:if>
 
 
 
