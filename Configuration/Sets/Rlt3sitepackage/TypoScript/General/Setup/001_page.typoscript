@@ -4,11 +4,11 @@ page {
   shortcutIcon = {$meta.favicon}
 
   # set color-scheme class to body tag
-  bodyTagCObject = TEXT
-  bodyTagCObject {
-    data = sitesettings:theme.colorScheme
-    wrap = <body class=" | ">
-  }
+#  bodyTagCObject = TEXT
+#  bodyTagCObject {
+#    data = sitesettings:theme.colorScheme
+#    wrap = <body class=" | ">
+#  }
 
   headerData {
     // Flip ahead browsing for IE10/11
