@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 @import url("components/font/01-fonts.css");
+@import url("components/color/01-colors.css");
 @import url("components/light-dark-switch.css");
 @import url("components/language-switcher.css");
 @import url("components/globals.css");
-@import url("components/color/01-colors.css");
 
 html {
     color-scheme: light dark;
@@ -18,12 +18,6 @@ body {
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
-
-    /* dynamic color settings */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
 
     background-color: var(--background);
     color: var(--text);
