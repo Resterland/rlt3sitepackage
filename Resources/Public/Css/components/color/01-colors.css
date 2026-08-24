@@ -56,7 +56,6 @@
 /* Colors */
 :root {
     /* dynamic color settings */
-    --h: var(--defaultHue); /* h = Hue */
     --s: 100%; /* s = Saturation */
     --l: 90%;  /* l = Lightness */
     --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
@@ -153,16 +152,16 @@
 
 }
 .theme-default {
-    --defaultHue: var(--blueHue);
+    --h: var(--blueHue); /* h = Hue */
 }
 .theme-aqua {
-    --defaultHue: var(--aquaHue);
+    --h: var(--aquaHue); /* h = Hue */
 }
 
 .theme-orange {
-    --defaultHue: var(--orangeHue);
+    --h: var(--orangeHue); /* h = Hue */
 }
 
 .theme-lime {
-    --defaultHue: var(--limeHue);
+    --h: var(--limeHue); /* h = Hue */
 }
