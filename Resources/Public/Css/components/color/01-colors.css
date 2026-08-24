@@ -154,10 +154,10 @@
 
 }
 .theme-default {
-    --defaultHue: var(--blueHue);
+    --defaultHue: var(--color-blue);
 }
 .theme-aqua {
-    --defaultHue: var(--aquaHue);
+    --defaultHue: var(--color-aqua);
 }
 
 .theme-orange {
@@ -165,5 +165,5 @@
 }
 
 .theme-lime {
-    --defaultHue: var(--limeHue);
+    --defaultHue: var(--color-lime);
 }
