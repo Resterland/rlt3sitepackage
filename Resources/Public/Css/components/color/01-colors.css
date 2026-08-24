@@ -56,6 +56,7 @@
 /* Colors */
 :root {
     /* dynamic color settings */
+    --h: var(--blueHue); /* h = Hue */
     --s: 100%; /* s = Saturation */
     --l: 90%;  /* l = Lightness */
     --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
@@ -151,17 +152,25 @@
     --color-brown-10: #4e3329;
 
 }
-.theme-default {
-    --h: var(--blueHue); /* h = Hue */
-}
+/*.theme-default {
+    :root {
+        --h: var(--blueHue); !* h = Hue *!
+    }
+}*/
 .theme-aqua {
-    --h: var(--aquaHue); /* h = Hue */
+    :root {
+        --h: var(--aquaHue); /* h = Hue */
+    }
 }
 
 .theme-orange {
-    --h: var(--orangeHue); /* h = Hue */
+    :root {
+        --h: var(--orangeHue); /* h = Hue */
+    }
 }
 
 .theme-lime {
-    --h: var(--limeHue); /* h = Hue */
+    :root {
+        --h: var(--limeHue); /* h = Hue */
+    }
 }
