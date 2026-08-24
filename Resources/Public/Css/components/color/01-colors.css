@@ -55,15 +55,6 @@
 
 /* Colors */
 :root {
-    /* dynamic color settings */
-    --h: var(--blueHue); /* h = Hue */
-    --s: 100%; /* s = Saturation */
-    --l: 90%;  /* l = Lightness */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
-
     --aquaHue: 180;
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
@@ -150,7 +141,6 @@
     --color-brown: hsl(32, 65%, 40%);
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
-
 }
 /*.theme-default {
     :root {
@@ -158,13 +148,13 @@
     }
 }*/
 .theme-aqua {
-        --h: var(--aquaHue); /* h = Hue */
+    --defaultHue: var(--aquaHue); /* h = Hue */
 }
 
 .theme-orange {
-        --h: var(--orangeHue); /* h = Hue */
+    --defaultHue: var(--orangeHue); /* h = Hue */
 }
 
 .theme-lime {
-        --h: var(--limeHue); /* h = Hue */
+    --defaultHue: var(--limeHue); /* h = Hue */
 }

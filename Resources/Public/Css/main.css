@@ -6,6 +6,18 @@
 @import url("components/language-switcher.css");
 @import url("components/globals.css");
 
+:root {
+    /* dynamic color settings */
+    --defaultHue: var(--blueHue);
+    --h: var(--defaultHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
+    --light: hsl(var(--h) var(--s) var(--l));
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+}
+
 html {
     color-scheme: light dark;
     min-height: 100vh;
