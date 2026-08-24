@@ -1,0 +1,6 @@
+:root {
+    /* dynamic color settings */
+    --h: var(--aquaHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+}
