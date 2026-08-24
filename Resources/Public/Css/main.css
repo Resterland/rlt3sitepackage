@@ -18,7 +18,8 @@ body {
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
-    background: light-dark(var(--light), var(--dark));
+
+    background-color: light-dark(var(--light), var(--dark));
     color: light-dark(var(--dark), var(--light));
 }
 
@@ -45,7 +46,8 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
     color-scheme: dark;
-    background: light-dark(var(--light), var(--dark));
+
+    background-color: light-dark(var(--light), var(--dark));
     color: light-dark(var(--dark), var(--light));
 }
 
