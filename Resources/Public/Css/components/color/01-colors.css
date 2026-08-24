@@ -56,7 +56,6 @@
 /* Colors */
 :root {
     /* dynamic color settings */
-    --defaultHue: var(--blueHue);
     --h: var(--defaultHue); /* h = Hue */
     --s: 100%; /* s = Saturation */
     --l: 90%;  /* l = Lightness */
