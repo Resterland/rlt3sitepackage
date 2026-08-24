@@ -103,6 +103,7 @@ settings:
       - theme-aqua
       - theme-orange
       - theme-lime
+      - theme-coffee
     category: rlt3sitepackage.style
 
   # Theme - Colors

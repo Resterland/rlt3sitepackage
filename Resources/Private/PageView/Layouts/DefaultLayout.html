@@ -37,6 +37,10 @@
         <f:asset.css identifier="theme-aqua" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-aqua.css"
                      priority="1" />
     </f:then>
+    <f:else if="{settings.theme.colorScheme} == theme-coffee">
+        <f:asset.css identifier="theme-coffee" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-coffee.css"
+                     priority="1" />
+    </f:else>
     <f:else if="{settings.theme.colorScheme} == theme-lime">
         <f:asset.css identifier="theme-lime" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
                      priority="1" />
