@@ -1,0 +1,6 @@
+:root {
+    /* dynamic color settings */
+    --h: var(--orangeHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+}
