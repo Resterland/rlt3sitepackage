@@ -9,6 +9,15 @@
 html {
     color-scheme: light dark;
 
+    /* dynamic color settings */
+    --h: var(--defaultHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
+    --light: hsl(var(--h) var(--s) var(--l));
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+
     min-height: 100vh;
     width: 100%;
     overflow-wrap: break-word;

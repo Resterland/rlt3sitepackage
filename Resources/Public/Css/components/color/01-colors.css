@@ -141,15 +141,6 @@
     --color-brown: hsl(32, 65%, 40%);
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
-
-    /* dynamic color settings */
-    --h: var(--defaultHue); /* h = Hue */
-    --s: 100%; /* s = Saturation */
-    --l: 90%;  /* l = Lightness */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
 }
 .theme-default {
     --defaultHue: var(--blueHue);
