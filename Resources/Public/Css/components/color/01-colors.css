@@ -55,6 +55,16 @@
 
 /* Colors */
 :root {
+    /* dynamic color settings */
+    --defaultHue: var(--blueHue);
+    --h: var(--defaultHue); /* h = Hue */
+    --s: 100%; /* s = Saturation */
+    --l: 90%;  /* l = Lightness */
+    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
+    --light: hsl(var(--h) var(--s) var(--l));
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+
     --aquaHue: 180;
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
@@ -142,22 +152,12 @@
     --color-brown-80: #edd886;
     --color-brown-10: #4e3329;
 
-    /* dynamic color settings */
-    --defaultHue: var(--blueHue);
-    --h: var(--defaultHue); /* h = Hue */
-    --s: 100%; /* s = Saturation */
-    --l: 90%;  /* l = Lightness */
-    --dark: hsl(var(--h) var(--s) calc(var(--l) - 65%));
-    --light: hsl(var(--h) var(--s) var(--l));
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
-
 }
 .theme-default {
-    --defaultHue: var(--color-blue);
+    --defaultHue: var(--blueHue);
 }
 .theme-aqua {
-    --defaultHue: var(--color-aqua);
+    --defaultHue: var(--aquaHue);
 }
 
 .theme-orange {
@@ -165,5 +165,5 @@
 }
 
 .theme-lime {
-    --defaultHue: var(--color-lime);
+    --defaultHue: var(--limeHue);
 }
