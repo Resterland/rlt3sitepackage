@@ -1,0 +1,21 @@
+/*
+@import url("border.css");
+@import url("background.css");
+@import url("text.css");
+@import url("link.css");
+@import url("scrollbar.css");
+@import url("area.css");
+
+oklch(L C H / a)
+
+oklch(0.5556 0.2456 261.36)
+
+*/
+
+/* Basic */
+:root {
+    --dark: oklch(from var(--origin) l c h);
+    --light: hsl(var(--h) var(--s) var(--l));
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+}

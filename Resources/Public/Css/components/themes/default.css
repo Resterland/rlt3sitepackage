@@ -3,4 +3,10 @@
     --h: var(--blueHue); /* h = Hue */
     --s: 100%; /* s = Saturation */
     --l: 90%;  /* l = Lightness */
+
+    --L: 0.8; /* L = Lightness */
+    --C: 0.12; /* C = Chroma - always below 0.37 */
+    --H: var(--blueHue); /* h = Hue */
+
+    --origin: hsl(217 100% 50%);
 }
