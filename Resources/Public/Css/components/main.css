@@ -11,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--accent);
+    color: black;
 }
 
 h1 {

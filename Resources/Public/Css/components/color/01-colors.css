@@ -79,13 +79,13 @@
     --color-coffee-25: hsl(25 34% 25%);
     --color-coffee-15: hsl(25 34% 15%);
 
-    --blueHue: 217;
-    --color-blue: hsl(217 100% 50%);
-    --color-blue-90: hsl(217 100% 90%);
+    --blueHue: 220;
+    --color-blue: hsl(220 100% 50%);
+    --color-blue-90: hsl(220 100% 90%);
     --color-blue-75: hsl(217 100% 75%);
     --color-blue-40: hsl(217 100% 40%);
-    --color-blue-25: hsl(217 100% 25%);
-    --color-blue-15: hsl(217 100% 15%);
+    --color-blue-25: #09262e;
+    --color-blue-15: #001d4d;
 
     --goldHue: 51;
     --color-gold: hsl(51 100% 50%);

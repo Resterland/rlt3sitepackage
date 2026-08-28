@@ -1,20 +1,42 @@
 /*
-@import url("border.css");
-@import url("background.css");
-@import url("text.css");
-@import url("link.css");
-@import url("scrollbar.css");
-@import url("area.css");
+### OKLCH - explained
+    Syntax:
+    oklch(L C H / a)
 
-oklch(L C H / a)
-
-oklch(0.5556 0.2456 261.36)
-
+    - L is perceived lightness (wahrgenommene Helligkeit)
+        It ranges from 0 (black) to 1 (white).
+     - C is chroma, the saturation of color (Farbsättigung)
+         It goes from 0 (gray) to infinity.
+         In practice there is actually a limit.
+         For both P3 and sRGB the value will be always below 0.37
+      - H is the hue angle (Farbtonwinkel)
+          It goes from 0 to 360, through
+          red 20
+          yellow 90
+          green 140
+          blue 220
+          purple 320
+          and then back to red
+      - a is opacity (Deckkraft)
+          (0-1 or 0-100%)
 */
 
-/* Basic */
 :root {
-    --dark: oklch(from var(--origin) l c h);
+    /* black - white - gray */
+    --black: oklch(0 0 0);
+    --white: oklch(1 0 0);
+    /* also white, any hue with 100% L is white */
+    --white2: oklch(1 0 100);
+    --gray: oklch(0.5 0 0);
+
+    /* colors */
+    --blue: oklch(0.6 0.25 260);
+
+    /* Replace lightness and saturation to a certain lightness */
+    --accent: oklch(from var(--blue) calc(l + 0.1) 0.5 260);
+
+
+    --dark: oklch(from var(--black) l c h);
     --light: hsl(var(--h) var(--s) var(--l));
     --background: light-dark(var(--light), var(--dark));
     --text: light-dark(var(--dark), var(--light));
