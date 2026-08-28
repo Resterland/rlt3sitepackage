@@ -11,7 +11,7 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
+    background: var(--background-gradient);
     color: var(--text);
 }
 

@@ -40,7 +40,7 @@
 
     /* Replace lightness and saturation to a certain lightness */
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
-
+    --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
 
     --dark: oklch(var(--L) var(--C) calc(var(--H) - 65%));
     --light: oklch(var(--L) var(--C) var(--H));
