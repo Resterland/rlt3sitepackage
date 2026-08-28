@@ -22,6 +22,12 @@
 */
 
 :root {
+    /* hue */
+    --redHue: 20;
+    --yellowHue: 90;
+    --greenHue: 140;
+    --blueHue: 220;
+    --purpleHue: 320;
     /* black - white - gray */
     --black: oklch(0 0 0);
     --white: oklch(1 0 0);
@@ -30,14 +36,14 @@
     --gray: oklch(0.5 0 0);
 
     /* colors */
-    --blue: oklch(0.6 0.25 260);
+    --blue: oklch(0.3 0.5 220);
 
     /* Replace lightness and saturation to a certain lightness */
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
 
 
-    --dark: oklch(from var(--black) l c h);
-    --light: oklch(from var(--white) l c h);
+    --dark: oklch(var(--L) var(--C) calc(var(--H) - 65%));
+    --light: oklch(var(--L) var(--C) var(--H));
     --background: light-dark(var(--light), var(--dark));
     --text: light-dark(var(--dark), var(--light));
 }
