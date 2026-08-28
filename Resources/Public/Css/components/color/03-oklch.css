@@ -33,11 +33,11 @@
     --blue: oklch(0.6 0.25 260);
 
     /* Replace lightness and saturation to a certain lightness */
-    --accent: oklch(from var(--color-coffee) calc(l + 0.1) 0.5 260);
+    --accent: oklch(from var(--blue) calc(l + 0.1) c h);
 
 
     --dark: oklch(from var(--black) l c h);
-    --light: hsl(var(--h) var(--s) var(--l));
+    --light: oklch(from var(--white) l c h);
     --background: light-dark(var(--light), var(--dark));
     --text: light-dark(var(--dark), var(--light));
 }
