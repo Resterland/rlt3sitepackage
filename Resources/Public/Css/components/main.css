@@ -11,7 +11,9 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background: var(--background);
+    background:  oklch(
+        calc(var(--L) + 10%) 0.15 240 / 0.8
+    );
     color: var(--text);
 }
 
