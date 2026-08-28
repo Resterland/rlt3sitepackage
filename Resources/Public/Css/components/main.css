@@ -12,7 +12,7 @@ body {
     font-family: var(--font-family-sans);
 
     background:  oklch(
-        calc(var(--L) + 0.2) 0.15 240 / 0.8
+        calc(var(--L) + 0.2) var(--C) var(--H) / 0.8
     );
     color: var(--text);
 }

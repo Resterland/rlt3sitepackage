@@ -5,6 +5,6 @@
     /*--l: 90%;  !* l = Lightness *!*/
 
     --L: 0.7; /* L = Lightness */
-    --C: 0.1; /* C = Chroma - always below 0.37 */
+    --C: 0.15; /* C = Chroma - always below 0.37 */
     --H: var(--blueHue); /* h = Hue */
 }
