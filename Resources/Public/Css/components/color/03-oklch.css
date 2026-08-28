@@ -26,7 +26,7 @@
     --redHue: 20;
     --yellowHue: 90;
     --greenHue: 140;
-    --blueHue: 220;
+    --blueHue: 250;
     --purpleHue: 320;
     /* black - white - gray */
     --black: oklch(0 0 0);
@@ -42,8 +42,12 @@
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
     --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
 
-    --dark: oklch(var(--L) var(--C) calc(var(--H) - 65%));
-    --light: oklch(var(--L) var(--C) var(--H));
+    --dark: oklch(
+        calc(var(--L) + 10%) 0.15 240 / 0.8
+    );
+    --light: oklch(
+        var(--L) var(--C) var(--H) / 0.2
+    );
     --background: light-dark(var(--light), var(--dark));
     --text: light-dark(var(--dark), var(--light));
 }
