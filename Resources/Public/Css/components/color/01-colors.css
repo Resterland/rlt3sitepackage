@@ -55,6 +55,13 @@
 
 /* Colors */
 :root {
+    /* hue */
+    --redHue: 20;
+    --yellowHue: 90;
+    --greenHue: 140;
+    --blueHue: 240;
+    --purpleHue: 320;
+
     --color-aqua: hsl(180 100% 50%);
     --color-aqua-90: hsl(180 100% 90%);
     --color-aqua-75: hsl(180 100% 75%);

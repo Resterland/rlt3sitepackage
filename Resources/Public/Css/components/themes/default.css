@@ -1,9 +1,4 @@
 :root {
-    /* dynamic color settings */
-    /*--h: var(--blueHue); !* h = Hue *!*/
-    /*--s: 100%; !* s = Saturation *!*/
-    /*--l: 90%;  !* l = Lightness *!*/
-
     --L: 0.7; /* L = Lightness */
     --C: 0.15; /* C = Chroma - always below 0.37 */
     --H: var(--blueHue); /* h = Hue */
