@@ -27,10 +27,10 @@ h1::after {
 }
 
 p {
-    color: light-dark(DarkGreen, Lavender);
-    background-color: light-dark(Pink, SaddleBrown);
+    /*color: light-dark(DarkGreen, Lavender);*/
+    /*background-color: light-dark(Pink, SaddleBrown);*/
 
-    padding: 1em;
+    /*padding: 1em;*/
 }
 .page-layout__header {
     display: grid;

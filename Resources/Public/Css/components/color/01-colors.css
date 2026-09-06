@@ -20,8 +20,6 @@
       - a is opacity (Deckkraft)
           (0-1 or 0-100%)
 */
-
-
 :root {
     /* black - white - gray */
     --black: oklch(0 0 0);
@@ -33,18 +31,33 @@
     --default: oklch(var(--L) var(--C) var(--H));
 
     /* colors */
-    --blue: oklch(0.3 0.5 220);
+    --blue: oklch(0.7 0.15 240);
+    --blueHex: #0000ff;
+    --blueOklch: oklch(0.452 0.313 264.052);
+    --blueLighter:  oklch(0.7 0.15 240); /* Lighter blue */
+    --blueDarker:  oklch(0.5 0.15 240);  /* Darker blue */
+    --bgOklab:  oklab(0.2577 0.2577 0.5488 / 0.5);
+    --colorOklab: color-mix(red, blue);
+    --colorOklch:  oklch(0.7 0.15 240); /* Soft blue */
 
     /* Replace lightness and saturation to a certain lightness */
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
     --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
 
     --dark: oklch(
-        calc(var(--L) + 0.2) var(--C) var(--H) / 0.8
+        var(--L) var(--C) var(--H) / 0.5
     );
     --light: oklch(
+        var(--L) var(--C) var(--H) / 0.2
+    );
+
+    --dark1: oklch(
+        calc(var(--L) + 0.2) var(--C) var(--H) / 0.8
+    );
+    --light1: oklch(
         calc(var(--L) - 0.2) var(--C) var(--H) / 0.2
     );
+
     --background: light-dark(var(--light), var(--dark));
     --text: light-dark(var(--dark), var(--light));
 }
