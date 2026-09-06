@@ -33,10 +33,6 @@
                     <my-timer duration="60"></my-timer>
                     <my-timer duration="300"></my-timer>
 
-                    <f:render
-                        partial="Structure/Color/Chroma"
-                        arguments="{_all}"/>
-
                     <f:for each="{content.main.records}" as="record">
                         <f:cObject
                             typoscriptObjectPath="{record.mainType}"
