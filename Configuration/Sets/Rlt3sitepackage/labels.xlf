@@ -77,19 +77,22 @@
 				<source>Select the main color scheme</source>
 			</trans-unit>
 			<trans-unit id="settings.theme.colorScheme.enum.theme-default">
-				<source>Default Theme</source>
+				<source>Default Theme (Greyscale)</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-aqua">
-				<source>Aqua</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-blue">
+				<source>Blue</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-coffee">
-				<source>Coffee</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-green">
+				<source>Green</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-lime">
-				<source>Lime</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-red">
+				<source>Red</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-orange">
-				<source>Orange</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-yellow">
+				<source>Yellow</source>
+			</trans-unit>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-purple">
+				<source>Yellow</source>
 			</trans-unit>
 
 			<trans-unit id="settings.css.primary">

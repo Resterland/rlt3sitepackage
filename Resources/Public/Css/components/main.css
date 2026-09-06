@@ -15,16 +15,6 @@ body {
     color: var(--text-4);
 }
 
-.oklch {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-}
-.oklch > div {
-    height: 50px;
-    border: 1px solid black;
-}
-
 h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);

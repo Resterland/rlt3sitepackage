@@ -26,13 +26,26 @@
     --white: oklch(1 0 0);
     /* also white, any hue with 100% L is white */
     --white2: oklch(1 0 100);
-    --gray: oklch(0.5 0 0);
+    --gray: gray;
 
-    --default: oklch(var(--L) var(--C) var(--H));
+    /* base colors */
+    --red: red;
+    --yellow: yellow;
+    --green: green;
+    --blue: blue;
+    --purple: purple;
 
-    /* colors */
-    --blue: oklch(0.7 0.15 240);
-    --blueHex: #0000ff;
+    /* base chroma */
+    --base-chroma1: oklch(
+        var(--L) var(--C-chroma1) var(--H)
+    );
+    --base-chroma2: oklch(
+        var(--L) var(--C-chroma2) var(--H)
+    );
+    --base-chroma3: oklch(
+        var(--L) var(--C-chroma3) var(--H)
+    );
+
     --blueOklch: oklch(0.452 0.313 264.052);
     --blueLighter:  oklch(0.7 0.15 240); /* Lighter blue */
     --blueDarker:  oklch(0.5 0.15 240);  /* Darker blue */
@@ -43,14 +56,6 @@
     /* Replace lightness and saturation to a certain lightness */
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
     --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
-
-    --light-bg: ghostwhite;
-    --light-color: darkslategray;
-    --light-code: tomato;
-
-    --dark-bg: darkslategray;
-    --dark-color: ghostwhite;
-    --dark-code: gold;
 
     --light: oklch(
         var(--L) var(--C) var(--H) / 0.2

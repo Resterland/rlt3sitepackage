@@ -100,10 +100,11 @@ settings:
     type: string
     enum:
       - theme-default
-      - theme-aqua
-      - theme-orange
-      - theme-lime
-      - theme-coffee
+      - theme-blue
+      - theme-green
+      - theme-red
+      - theme-yellow
+      - theme-purple
     category: rlt3sitepackage.style
 
   # Theme - Colors
