@@ -93,7 +93,4 @@
 
     --background-3: light-dark(var(--light-3), var(--dark-3));
     --text-3: light-dark(var(--dark-3), var(--light-3));
-
-    --background-4: light-dark(var(--light-bg), var(--dark-bg));
-    --text-4: light-dark(var(--light-color), var(--dark-color));
 }
