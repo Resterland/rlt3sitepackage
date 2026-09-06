@@ -11,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background:  var(--background);
-    color: var(--text);
+    background-color:  var(--background-relative);
+    color: var(--text-relative);
 }
 
 h1 {
@@ -37,7 +37,7 @@ p {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background-color: var(--default);
+    background-color: var(--background);
     color: var(--text);
 }
 
@@ -46,11 +46,20 @@ main {
 }
 .aside-left,
 .aside-right {
-    background: transparent;
     padding: 0.5rem 0.75rem;
+}
+.aside-left {
+    background-color: var(--background-1);
+    color: var(--text-1);
+}
+.aside-right {
+    background-color: var(--background-2);
+    color: var(--text-2);
 }
 footer {
     color-scheme: dark;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {

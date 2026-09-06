@@ -1,5 +1,10 @@
 :root {
-    --L: 0.7; /* L = Lightness */
+    --L-dark: 0.1; /* L = Lightness */
+    --L: 0.5; /* L = Lightness */
+    --L-light: 0.9; /* L = Lightness */
+    --C-dark: 0.15; /* C = Chroma - always below 0.37 */
     --C: 0.15; /* C = Chroma - always below 0.37 */
+    --C-light: 0.15; /* C = Chroma - always below 0.37 */
     --H: var(--blueHue); /* h = Hue */
+    --base-color: blue;
 }
