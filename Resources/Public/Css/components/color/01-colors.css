@@ -58,6 +58,6 @@
         calc(var(--L) - 0.2) var(--C) var(--H) / 0.2
     );
 
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
+    --background: light-dark(var(--light1), var(--dark1));
+    --text: light-dark(var(--dark1), var(--light1));
 }
