@@ -13,21 +13,21 @@
 }
 [data-color="base"] {
     background-color: oklch(
-        var(--L-light) var(--C) var(--H)
+        var(--L) var(--C) var(--H)
     );
 }
 [data-color="base-chroma1"] {
     background-color: oklch(
-        var(--L-light) var(--C-chroma1) var(--H)
+        var(--L) var(--C-chroma1) var(--H)
     );
 }
 [data-color="base-chroma2"] {
     background-color: oklch(
-        var(--L-light) var(--C-chroma2) var(--H)
+        var(--L) var(--C-chroma2) var(--H)
     );
 }
 [data-color="base-chroma3"] {
     background-color: oklch(
-        var(--L-light) var(--C-chroma3) var(--H)
+        var(--L) var(--C-chroma3) var(--H)
     );
 }
