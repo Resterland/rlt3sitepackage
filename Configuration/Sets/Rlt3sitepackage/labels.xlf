@@ -92,7 +92,7 @@
 				<source>Yellow</source>
 			</trans-unit>
 			<trans-unit id="settings.theme.colorScheme.enum.theme-purple">
-				<source>Yellow</source>
+				<source>Purple</source>
 			</trans-unit>
 
 			<trans-unit id="settings.css.primary">
