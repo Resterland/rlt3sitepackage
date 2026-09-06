@@ -44,6 +44,17 @@
     --accent: oklch(from var(--blue) calc(l + 0.1) c h);
     --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
 
+    --light-bg: ghostwhite;
+    --light-color: darkslategray;
+    --light-code: tomato;
+
+    --dark-bg: darkslategray;
+    --dark-color: ghostwhite;
+    --dark-code: gold;
+
+    --background-4: light-dark(var(--light-bg), var(--dark-bg));
+    --text-4: light-dark(var(--light-color), var(--dark-color));
+
     --light: oklch(
         var(--L) var(--C) var(--H) / 0.2
     );
@@ -65,10 +76,10 @@
         calc(var(--L) + 0.2) var(--C) var(--H) / 0.8
     );
 
-    --light-relative: oklch(
+    --light-3: oklch(
         from var(--base-color) calc(l + 0.15) c h
     );
-    --dark-relative: oklch(
+    --dark-3: oklch(
         from var(--base-color) calc(l - 0.15) c h
     );
 
@@ -81,6 +92,6 @@
     --background-2: light-dark(var(--light-2), var(--dark-2));
     --text-2: light-dark(var(--dark-2), var(--light-2));
 
-    --background-relative: light-dark(var(--light-relative), var(--dark-relative));
-    --text-relative: light-dark(var(--dark-relative), var(--light-relative));
+    --background-3: light-dark(var(--light-3), var(--dark-3));
+    --text-3: light-dark(var(--dark-3), var(--light-3));
 }
