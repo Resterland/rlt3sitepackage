@@ -51,6 +51,9 @@ main {
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
+
+    background-color:  var(--background);
+    color: var(--text);
 }
 .aside-left {
     /* forces light color-scheme */
@@ -61,6 +64,9 @@ main {
     color-scheme: dark;
 }
 footer {
+
+    background-color:  var(--background);
+    color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -9,5 +9,6 @@
     --C-chroma1: 0.2;
     --C-chroma2: 0.1;
     --C-chroma3: 0.01;
-    --H: var(--base-color); /* h = Hue */
+    /* h = Hue */
+    --H: var(--blueHue);
 }

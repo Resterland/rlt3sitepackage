@@ -1,4 +1,5 @@
 :root {
+    --base-color: var(--yellow);
     /* L = Lightness */
     --L: 0.5;
     --L-light: 0.9;
@@ -8,6 +9,5 @@
     --C-chroma1: 0.2;
     --C-chroma2: 0.1;
     --C-chroma3: 0.01;
-    --H: var(--base-color); /* h = Hue */
-    --base-color: var(--yellow);
+    --H: var(--yellowHue); /* h = Hue */
 }
