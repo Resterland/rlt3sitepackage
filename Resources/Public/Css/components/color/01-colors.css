@@ -58,10 +58,10 @@
     --background-gradient: linear-gradient(to left, oklch(0.7 0.15 240), oklch(0.7 0.15 0));
 
     --light: oklch(
-        from var(--base-color) calc(l + 0.15) c h
+        from var(--base-color) calc(l + 0.18) c h
     );
     --dark: oklch(
-        from var(--base-color) calc(l - 0.15) c h
+        from var(--base-color) calc(l - 0.18) c h
     );
 
     --light-L: oklch(
@@ -79,10 +79,10 @@
     );
 
     --light-3: oklch(
-        from var(--base-color) calc(l + 0.15) c h
+        from var(--base-color) calc(l + 0.2) c h
     );
     --dark-3: oklch(
-        from var(--base-color) calc(l - 0.15) c h
+        from var(--base-color) calc(l - 0.2) c h
     );
 
     --background: light-dark(var(--light), var(--dark));
