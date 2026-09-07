@@ -1,5 +1,5 @@
 :root {
-    --base-color: var(--yellow);
+    --base-color: var(--red);
     /* L = Lightness */
     --L: 0.5;
     --L-light: 0.9;
