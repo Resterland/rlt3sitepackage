@@ -93,7 +93,6 @@ footer {
     padding: 0 0.25em;
 }
 .navigation {
-    background-color: var(--background-C);
 }
 img.middle {
     margin: 0;
@@ -106,7 +105,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--color-background-secondary);
+    border-top: 1px solid var(--background-C);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -183,8 +182,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--color-text-blue);
-    background-color: var(--color-background-coffee);
+    color: var(--text-L);
+    background-color: var(--background-L);
     a:hover {
         text-decoration: none;
     }
@@ -196,14 +195,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-text-blue);
+    color: var(--text-3);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-link-green);
-        background-color: var(--bg-hover);
+        color: var(--text);
+        background-color: var(--background);
     }
 
     /* Arrow & Icon */
@@ -236,7 +235,7 @@ footer {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background-color: var(--bg-hover);
+    background-color: var(--background-3);
 }
 /* Dropdown navbar END */
 
@@ -254,9 +253,9 @@ footer {
 form {
     display: inline-block;
     /* Form outline */
-    background: var(--color-background-coffee);
+    background: var(--background-3);
     padding: 0.25em;
-    border: 1px solid var(--color-text-aqua);
+    border: 1px solid var(--background-C);
     border-radius: 0.5em;
 }
 .input-group {
@@ -381,7 +380,7 @@ form {
         margin-top: 0;
 
         background-color: var(--color-background-primary);
-        border: 1px solid var(--color-border-primary);
+        border: 1px solid var(--background-C);
     }
 
     /* Panel */
@@ -475,7 +474,7 @@ form {
         border: none;
 
         &:hover {
-            background-color: var(--color-background-secondary);
+            background-color: var(--background-C);
         }
         &::before {
             display: block;
@@ -504,7 +503,7 @@ form {
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid var(--color-border-primary);
+        border-top: 1px solid var(--background-C);
     }
 
     /* Button */
@@ -544,6 +543,6 @@ form {
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--color-border-primary);
+        background-color: var(--background-C);
     }
 }
