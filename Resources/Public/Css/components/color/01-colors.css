@@ -65,17 +65,17 @@
     );
 
     --light-L: oklch(
-        var(--L-light) var(--C-chroma3) var(--H)
+        from var(--base-color) calc(l + 0.15) var(--C-chroma1) h
     );
     --dark-L: oklch(
-        var(--L-dark) var(--C-chroma1) var(--H)
+        from var(--base-color) calc(l - 0.15) var(--C-chroma3) h
     );
 
     --light-C: oklch(
-        from var(--base-color) l c h
+        from var(--base-color) calc(l + 0.15) calc(c + 0.1) h
     );
     --dark-C: oklch(
-        from var(--base-color) l c h
+        from var(--base-color) calc(l - 0.15) calc(c - 0.1) h
     );
 
     --light-3: oklch(
