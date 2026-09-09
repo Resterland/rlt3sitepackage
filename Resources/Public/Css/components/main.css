@@ -11,7 +11,7 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background-color:  var(--background-L);
+    background-color:  var(--linear-gradient-top-oklch);
     color: var(--text-L);
 }
 
@@ -38,8 +38,7 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background-color:  var(--background);
-    color: var(--text);
+    background-color:  var(--linear-gradient-bottom-oklch);
 }
 
 main {
@@ -51,22 +50,22 @@ main {
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
-
-    background-color:  var(--background);
-    color: var(--text);
 }
 .aside-left {
     /* forces light color-scheme */
     color-scheme: light;
+
+    background-color:  var(--linear-gradient-left-oklch);
 }
 .aside-right {
     /* forces dark color-scheme */
     color-scheme: dark;
+
+    background-color:  var(--linear-gradient-right-oklch);
 }
 footer {
 
-    background-color:  var(--background);
-    color: var(--text);
+    background-color:  var(--linear-gradient-bottom);
 }
 
 @media (prefers-color-scheme: dark) {
