@@ -11,7 +11,7 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background-color:  var(--linear-gradient-top-oklch);
+    background:  var(--linear-gradient-top-oklch);
     color: var(--text-L);
 }
 
@@ -38,7 +38,7 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background-color:  var(--linear-gradient-bottom-oklch);
+    background:  var(--linear-gradient-bottom-oklch);
 }
 
 main {
@@ -55,17 +55,17 @@ main {
     /* forces light color-scheme */
     color-scheme: light;
 
-    background-color:  var(--linear-gradient-left-oklch);
+    background:  var(--linear-gradient-left-oklch);
 }
 .aside-right {
     /* forces dark color-scheme */
     color-scheme: dark;
 
-    background-color:  var(--linear-gradient-right-oklch);
+    background:  var(--linear-gradient-right-oklch);
 }
 footer {
 
-    background-color:  var(--linear-gradient-bottom);
+    background:  var(--linear-gradient-bottom);
 }
 
 @media (prefers-color-scheme: dark) {
