@@ -1,6 +1,6 @@
 :root {
     --base-color: gray;
-    --base-hue:266;
+    --base-lightness:0.5;
     --base-chroma:0;
-    --base-lightness:0.6;
+    --base-hue:0;
 }
