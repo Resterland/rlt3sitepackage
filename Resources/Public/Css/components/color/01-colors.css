@@ -114,7 +114,7 @@
     --light-C: oklch(
         from var(--base-color)
         calc(var(--base-lightness) + 0.35)
-        calc(var(--base-chroma) + 0.1)
+        var(--base-chroma)
         var(--base-hue)
     );
     --dark-C: oklch(
