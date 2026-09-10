@@ -99,13 +99,11 @@
     --gold: gold;
 
     --light: oklch(
-        from var(--base-color)
         var(--base-lightness)
         var(--base-chroma)
         var(--base-hue)
     );
     --dark: oklch(
-        from var(--base-color)
         calc(var(--base-lightness) - 0.15)
         var(--base-chroma)
         var(--base-hue)
