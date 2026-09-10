@@ -182,8 +182,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--text-L);
-    background-color: var(--background-L);
+    color: var(--text);
+    background-color: var(--background);
     a:hover {
         text-decoration: none;
     }
