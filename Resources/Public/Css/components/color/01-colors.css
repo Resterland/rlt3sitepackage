@@ -21,47 +21,86 @@
           (0-1 or 0-100%)
 */
 :root {
-    /* hue */
-    --grayHue: 0;
-    --redHue: 20;
-    --yellowHue: 90;
-    --greenHue: 140;
-    --blueHue: 240;
-    --purpleHue: 320;
-
-    --base-color: var(--gray);
-
-    /* L = Lightness */
-    --L: 0.5;
-    --L-light: 0.9;
-    --L-dark: 0.1;
-    /* C = Chroma - always below 0.37 */
-    --C: 0.25;
-    --C-chroma1: 0.2;
-    --C-chroma2: 0.1;
-    --C-chroma3: 0.01;
-    --H: var(--grayHue); /* h = Hue */
-
-    /* black - white - gray */
-    --black: oklch(0 0 0);
-    --white: oklch(1 0 0);
-    /* also white, any hue with 100% L is white */
-    --white2: oklch(1 0 100);
-    --gray: gray;
-
-    --default: oklch(var(--L) var(--C) var(--H));
+    --base-hue:266;
+    --base-chroma:.01;
+    --base-lightness:0.9;
+    --accent:#222;
+    --white:oklch(1 0 0);
+    --gray-000:oklch(calc(1 * var(--base-lightness)) 0 var(--base-hue));
+    --gray-100:oklch(calc(.98 * var(--base-lightness)) calc(.2 * var(--base-chroma)) var(--base-hue));
+    --gray-200:oklch(calc(.94 * var(--base-lightness)) calc(.4 * var(--base-chroma)) var(--base-hue));
+    --gray-300:oklch(calc(.85 * var(--base-lightness)) calc(.6 * var(--base-chroma)) var(--base-hue));
+    --gray-400:oklch(calc(.8 * var(--base-lightness)) calc(.8 * var(--base-chroma)) var(--base-hue));
+    --gray-500:oklch(calc(.75 * var(--base-lightness)) calc(1 * var(--base-chroma)) var(--base-hue));
+    --gray-600:oklch(calc(.7 * var(--base-lightness)) calc(1.2 * var(--base-chroma)) var(--base-hue));
+    --gray-700:oklch(calc(.65 * var(--base-lightness)) calc(1.4 * var(--base-chroma)) var(--base-hue));
+    --gray-800:oklch(calc(.6 * var(--base-lightness)) calc(1.6 * var(--base-chroma)) var(--base-hue));
+    --gray-900:oklch(calc(.55 * var(--base-lightness)) calc(1.8 * var(--base-chroma)) var(--base-hue));
+    --gray-1000:oklch(calc(.5 * var(--base-lightness)) calc(2 * var(--base-chroma)) var(--base-hue));
+    --gray-1100:oklch(calc(.45 * var(--base-lightness)) calc(2.2 * var(--base-chroma)) var(--base-hue));
+    --gray-1200:oklch(calc(.4 * var(--base-lightness)) calc(2.4 * var(--base-chroma)) var(--base-hue));
+    --gray-1300:oklch(calc(.35 * var(--base-lightness)) calc(2.6 * var(--base-chroma)) var(--base-hue));
+    --gray-1400:oklch(calc(.3 * var(--base-lightness)) calc(2.8 * var(--base-chroma)) var(--base-hue));
 
     /* base colors */
-    --red: oklch(0.70 0.26 29);
-    --yellow: yellow;
-    --orange: oklch(0.80 0.26 73);
-    --green: green;
     --blue: blue;
+    --blue-000:oklch(15% 0 220);
+    --blue-100:oklch(20% .5 220);
+    --blue-200:oklch(25% .5 220);
+    --blue-300:oklch(30% .5 220);
+    --blue-400:oklch(35% .5 220);
+    --blue-500:oklch(40% .5 220);
+    --blue-600:oklch(45% .5 220);
+    --blue-700:oklch(50% .5 220);
+    --blue-800:oklch(55% .5 220);
+    --blue-900:oklch(60% .5 220);
+    --red: red;
+    --red-000:oklch(15% 0 0);
+    --red-100:oklch(20% .5 0);
+    --red-200:oklch(25% .5 0);
+    --red-300:oklch(30% .5 0);
+    --red-400:oklch(35% .5 0);
+    --red-500:oklch(40% .5 0);
+    --red-600:oklch(45% .5 0);
+    --red-700:oklch(50% .5 0);
+    --red-800:oklch(55% .5 0);
+    --red-900:oklch(60% .5 0);
+    --green: green;
+    --green-000:oklch(15% 0 120);
+    --green-100:oklch(20% .5 120);
+    --green-200:oklch(25% .5 120);
+    --green-300:oklch(30% .5 120);
+    --green-400:oklch(35% .5 120);
+    --green-500:oklch(40% .5 120);
+    --green-600:oklch(45% .5 120);
+    --green-700:oklch(50% .5 120);
+    --green-800:oklch(55% .5 120);
+    --green-900:oklch(60% .5 120);
+    --orange: orange;
+    --orange-000:oklch(15% 0 73);
+    --orange-100:oklch(20% .5 73);
+    --orange-200:oklch(25% .5 73);
+    --orange-300:oklch(30% .5 73);
+    --orange-400:oklch(35% .5 73);
+    --orange-500:oklch(40% .5 73);
+    --orange-600:oklch(45% .5 73);
+    --orange-700:oklch(50% .5 73);
+    --orange-800:oklch(55% .5 73);
+    --orange-900:oklch(60% .5 73);
     --purple: purple;
+    --purple-000:oklch(15% 0 320);
+    --purple-100:oklch(20% .5 320);
+    --purple-200:oklch(25% .5 320);
+    --purple-320:oklch(32% .5 320);
+    --purple-400:oklch(35% .5 320);
+    --purple-500:oklch(40% .5 320);
+    --purple-600:oklch(45% .5 320);
+    --purple-700:oklch(50% .5 320);
+    --purple-800:oklch(55% .5 320);
+    --purple-900:oklch(60% .5 320);
+    --yellow: yellow;
 
     /* Replace lightness and saturation to a certain lightness */
-    --accent: oklch(from var(--blue) calc(l + 0.1) c h);
-
     --linear-gradient-left: linear-gradient(
         to left,
         oklch(0.7 0.15 50 / 0.9),
@@ -77,12 +116,27 @@
         oklch(0.7 0.15 50 / 0.9),
         oklch(0.5 0.15 60)
     );
+    --linear-gradient-bottom: linear-gradient(
+        to bottom,
+        oklch(0.7 0.15 50 / 0.9),
+        oklch(0.5 0.15 60)
+    );
+    --linear-gradient-right-gray: linear-gradient(
+        to top,
+        oklch(0.7 0.15 50 / 0.9),
+        oklch(0.5 0.15 60)
+    );
+    --linear-gradient-left-gray: linear-gradient(
+        to top,
+        oklch(0.7 0.15 50 / 0.9),
+        oklch(0.5 0.15 60)
+    );
     --linear-gradient-top-gray: linear-gradient(
         to top,
         oklch(0.7 0.15 50 / 0.9),
         oklch(0.5 0.15 60)
     );
-    --linear-gradient-bottom: linear-gradient(
+    --linear-gradient-bottom-gray: linear-gradient(
         to bottom,
         oklch(0.7 0.15 50 / 0.9),
         oklch(0.5 0.15 60)
@@ -94,7 +148,7 @@
         oklch(0.80 0.26 73),
         oklch(0.70 0.26 120),
         oklch(0.70 0.26 180),
-        oklch(0.70 0.26 240),
+        oklch(0.70 0.26 220),
         oklch(0.70 0.26 300)
     );
     --linear-gradient-right-oklch: linear-gradient(
@@ -103,7 +157,7 @@
         oklch(0.80 0.26 73),
         oklch(0.70 0.26 120),
         oklch(0.70 0.26 180),
-        oklch(0.70 0.26 240),
+        oklch(0.70 0.26 220),
         oklch(0.70 0.26 300)
     );
     --linear-gradient-top-oklch: linear-gradient(
@@ -112,7 +166,7 @@
         oklch(0.80 0.26 73),
         oklch(0.70 0.26 120),
         oklch(0.70 0.26 180),
-        oklch(0.70 0.26 240),
+        oklch(0.70 0.26 220),
         oklch(0.70 0.26 300)
     );
     --linear-gradient-bottom-oklch: linear-gradient(
@@ -121,7 +175,7 @@
         oklch(0.80 0.26 73),
         oklch(0.70 0.26 120),
         oklch(0.70 0.26 180),
-        oklch(0.70 0.26 240),
+        oklch(0.70 0.26 220),
         oklch(0.70 0.26 300)
     );
 
