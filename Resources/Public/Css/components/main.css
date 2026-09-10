@@ -11,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background:  var(--background);
-    color: var(--text);
+    background:  var(--background-C);
+    color: var(--text-C);
 }
 
 h1 {
@@ -38,15 +38,15 @@ p {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background:  var(--background-L);
-    color: var(--text-L);
+    background:  var(--background);
+    color: var(--text);
 }
 
 main {
     padding: 0.5rem 0.75rem;
 
-    background-color:  var(--background-3);
-    color: var(--text-3);
+    background-color:  var(--background-L);
+    color: var(--text-L);
 }
 .aside-left,
 .aside-right {
