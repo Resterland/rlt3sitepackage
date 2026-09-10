@@ -99,6 +99,7 @@
     --purple-800:oklch(55% .5 320);
     --purple-900:oklch(60% .5 320);
     --yellow: yellow;
+    --gold: gold;
 
     /* Replace lightness and saturation to a certain lightness */
     --linear-gradient-left: linear-gradient(
