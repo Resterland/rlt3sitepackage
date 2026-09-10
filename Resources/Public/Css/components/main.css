@@ -39,6 +39,7 @@ p {
     z-index: var(--z-index-sticky-header);
 
     background:  var(--background-L);
+    color: var(--text-L);
 }
 
 main {
@@ -56,16 +57,19 @@ main {
     color-scheme: light;
 
     background:  var(--background-C);
+    color: var(--text-C);
 }
 .aside-right {
     /* forces dark color-scheme */
     color-scheme: dark;
 
     background:  var(--background-C);
+    color: var(--text-C);
 }
 footer {
 
     background:  var(--background-L);
+    color: var(--text-L);
 }
 
 @media (prefers-color-scheme: dark) {
