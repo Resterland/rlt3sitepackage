@@ -52,7 +52,7 @@ main {
 .aside-right {
     padding: 0.5rem 0.75rem;
 
-    background:  var(--background-C);
+    background:  var(--background-3);
     color: var(--text-C);
 }
 .aside-left {
@@ -65,8 +65,8 @@ main {
 }
 footer {
 
-    background:  var(--background-C);
-    color: var(--text-C);
+    background:  var(--background-3);
+    color: var(--text-3);
 }
 
 @media (prefers-color-scheme: dark) {

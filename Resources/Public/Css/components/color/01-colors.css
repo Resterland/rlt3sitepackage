@@ -125,10 +125,16 @@
     );
 
     --light-3: oklch(
-        from var(--base-color) calc(l + 0.2) var(--base-chroma) var(--base-hue)
+        from var(--base-color)
+        calc(var(--base-lightness) + 0.45)
+        var(--base-chroma)
+        var(--base-hue)
     );
     --dark-3: oklch(
-        from var(--base-color) calc(l - 0.2) var(--base-chroma) var(--base-hue)
+        from var(--base-color)
+        calc(var(--base-lightness) - 0.35)
+        var(--base-chroma)
+        var(--base-hue)
     );
 
     --background: light-dark(var(--light), var(--dark));
