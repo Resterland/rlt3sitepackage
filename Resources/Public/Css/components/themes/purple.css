@@ -1,13 +1,6 @@
 :root {
     --base-color: purple;
-    /* L = Lightness */
-    --L: 0.5;
-    --L-light: 0.9;
-    --L-dark: 0.1;
-    /* C = Chroma - always below 0.37 */
-    --C: 0.4;
-    --C-chroma1: 0.2;
-    --C-chroma2: 0.1;
-    --C-chroma3: 0.01;
-    --H: var(--purpleHue); /* h = Hue */
+    --base-hue:266;
+    --base-chroma:.01;
+    --base-lightness:0.9;
 }
