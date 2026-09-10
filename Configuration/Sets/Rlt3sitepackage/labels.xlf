@@ -88,6 +88,9 @@
 			<trans-unit id="settings.theme.colorScheme.enum.theme-red">
 				<source>Red</source>
 			</trans-unit>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-orange">
+				<source>Orange</source>
+			</trans-unit>
 			<trans-unit id="settings.theme.colorScheme.enum.theme-yellow">
 				<source>Yellow</source>
 			</trans-unit>

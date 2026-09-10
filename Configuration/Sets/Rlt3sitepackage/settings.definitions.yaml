@@ -103,6 +103,7 @@ settings:
       - theme-blue
       - theme-green
       - theme-red
+      - theme-orange
       - theme-yellow
       - theme-purple
     category: rlt3sitepackage.style

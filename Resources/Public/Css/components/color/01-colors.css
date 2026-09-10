@@ -180,10 +180,12 @@
     );
 
     --light: oklch(
-        from var(--base-color) calc(l + 0.18) c h
+        from var(--base-color)
+        calc(1 * var(--base-lightness)) 0 var(--base-hue)
     );
     --dark: oklch(
-        from var(--base-color) calc(l - 0.18) c h
+        from var(--base-color)
+        calc(.2 * var(--base-lightness)) 0 var(--base-hue)
     );
 
     --light-L: oklch(

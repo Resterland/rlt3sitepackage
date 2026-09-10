@@ -1,13 +1,3 @@
 :root {
-    --base-color: var(--green);
-    /* L = Lightness */
-    --L: 0.5;
-    --L-light: 0.9;
-    --L-dark: 0.1;
-    /* C = Chroma - always below 0.37 */
-    --C: 0.4;
-    --C-chroma1: 0.2;
-    --C-chroma2: 0.1;
-    --C-chroma3: 0.01;
-    --H: var(--greenHue); /* h = Hue */
+    --base-color: green;
 }
