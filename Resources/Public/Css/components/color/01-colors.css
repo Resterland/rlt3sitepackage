@@ -100,7 +100,7 @@
 
     --light: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) + 0.35)
+        var(--base-lightness)
         var(--base-chroma)
         var(--base-hue)
     );
