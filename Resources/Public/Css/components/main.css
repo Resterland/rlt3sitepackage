@@ -11,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background:  var(--background);
-    color: var(--text);
+    background:  var(--background-C);
+    color: var(--text-C);
 }
 
 h1 {
@@ -51,25 +51,22 @@ main {
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
+
+    background:  var(--background-C);
+    color: var(--text-C);
 }
 .aside-left {
     /* forces light color-scheme */
     color-scheme: light;
-
-    background:  var(--background);
-    color: var(--text);
 }
 .aside-right {
     /* forces dark color-scheme */
     color-scheme: dark;
-
-    background:  var(--background);
-    color: var(--text);
 }
 footer {
 
-    background:  var(--background);
-    color: var(--text);
+    background:  var(--background-C);
+    color: var(--text-C);
 }
 
 @media (prefers-color-scheme: dark) {
