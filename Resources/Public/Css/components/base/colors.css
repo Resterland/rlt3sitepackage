@@ -5,7 +5,7 @@
 
     - L is perceived lightness (wahrgenommene Helligkeit)
         It ranges from 0 (black) to 1 (white).
-     - C is chroma, the saturation of color (Farbsättigung)
+     - C is chroma, the saturation of base (Farbsättigung)
          It goes from 0 (gray) to infinity.
          In practice there is actually a limit.
          For both P3 and sRGB the value will be always below 0.37

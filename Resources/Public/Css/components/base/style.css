@@ -27,8 +27,8 @@ h1::after {
 }
 
 p {
-    /*color: light-dark(DarkGreen, Lavender);*/
-    /*background-color: light-dark(Pink, SaddleBrown);*/
+    /*base: light-dark(DarkGreen, Lavender);*/
+    /*background-base: light-dark(Pink, SaddleBrown);*/
 
     /*padding: 1em;*/
 }
@@ -56,11 +56,11 @@ main {
     color: var(--text-3);
 }
 .aside-left {
-    /* forces light color-scheme */
+    /* forces light base-scheme */
     color-scheme: light;
 }
 .aside-right {
-    /* forces dark color-scheme */
+    /* forces dark base-scheme */
     color-scheme: dark;
 }
 footer {
@@ -269,10 +269,10 @@ form {
     }
 }
 /*.input-group input {
-    background: var(--color-background-primary);
+    background: var(--base-background-primary);
 }
 .input-group button {
-    background: var(--color-background-secondary);
+    background: var(--base-background-secondary);
 }*/
 /* Solr search settings END */
 
@@ -414,8 +414,8 @@ form {
     }
     .content-wrapper > main {
         flex-grow: 3;
-        border-right: 0.1rem solid var(--color-border-active);
-        border-left: 0.1rem solid var(--color-border-active);
+        border-right: 0.1rem solid var(--base-border-active);
+        border-left: 0.1rem solid var(--base-border-active);
     }
 }
 */

@@ -3,7 +3,7 @@ page {
   typeNum = 0
   shortcutIcon = {$meta.favicon}
 
-  # set color-scheme class to body tag
+  # set base-scheme class to body tag
 #  bodyTagCObject = TEXT
 #  bodyTagCObject {
 #    data = sitesettings:theme.colorScheme
