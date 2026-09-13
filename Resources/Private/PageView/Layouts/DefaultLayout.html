@@ -14,9 +14,9 @@
     IE=edge
 </f:page.meta>
 <f:page.meta property="viewport">width=device-width, initial-scale=1.0</f:page.meta>
+<f:page.meta property="color-scheme" type="name">light dark</f:page.meta>
 <f:page.meta property="apple-mobile-web-app-capable" replace="true">{settings.meta.apple-mobile-web-app-capable}</f:page.meta>
 <f:page.meta property="robots" type="name">index, follow</f:page.meta>
-<f:page.meta property="color-scheme" type="name">light dark</f:page.meta>
 <f:page.meta property="google">notranslate</f:page.meta>
 <f:page.meta property="google-site-verification" type="name">{settings.meta.google-site-verification}</f:page.meta>
 
@@ -30,42 +30,38 @@
     <f:asset.css identifier="theme" href="EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css" priority="1" />
     <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
                  priority="1" />
-
-
-    <f:if condition="{settings.theme.colorScheme} == theme-blue">
-        <f:then>
-            <f:asset.css identifier="theme-blue" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-blue.css"
-                         priority="1" />
-        </f:then>
-        <f:else if="{settings.theme.colorScheme} == theme-green">
-            <f:asset.css identifier="theme-green" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-green.css"
-                         priority="1" />
-        </f:else>
-        <f:else if="{settings.theme.colorScheme} == theme-red">
-            <f:asset.css identifier="theme-red" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-red.css"
-                         priority="1" />
-        </f:else>
-        <f:else if="{settings.theme.colorScheme} == theme-orange">
-            <f:asset.css identifier="theme-orange" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-orange.css"
-                         priority="1" />
-        </f:else>
-        <f:else if="{settings.theme.colorScheme} == theme-yellow">
-            <f:asset.css identifier="theme-yellow" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-yellow.css"
-                         priority="1" />
-        </f:else>
-        <f:else if="{settings.theme.colorScheme} == theme-purple">
-            <f:asset.css identifier="theme-purple" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-purple.css"
-                         priority="1" />
-        </f:else>
-        <f:else>
-            <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/index-default.css"
-                         priority="1" />
-        </f:else>
-    </f:if>
 </f:comment>
 
-<f:asset.css identifier="default-scheme" href="EXT:rlt3sitepackage/Resources/Public/Css/index-default.css"
-             priority="1" />
+<f:if condition="{settings.theme.colorScheme} == theme-blue">
+    <f:then>
+        <f:asset.css identifier="theme-blue" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-blue.css"
+                     priority="1" />
+    </f:then>
+    <f:else if="{settings.theme.colorScheme} == theme-green">
+        <f:asset.css identifier="theme-green" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-green.css"
+                     priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == theme-red">
+        <f:asset.css identifier="theme-red" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-red.css"
+                     priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == theme-orange">
+        <f:asset.css identifier="theme-orange" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-orange.css"
+                     priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == theme-yellow">
+        <f:asset.css identifier="theme-yellow" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-yellow.css"
+                     priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == theme-purple">
+        <f:asset.css identifier="theme-purple" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-purple.css"
+                     priority="1" />
+    </f:else>
+    <f:else>
+        <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/index-default.css"
+                     priority="1" />
+    </f:else>
+</f:if>
 
 <f:spaceless>
     <ul class="skip-link">
