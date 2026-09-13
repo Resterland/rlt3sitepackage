@@ -9,16 +9,16 @@ const html = document.querySelector('html');
 
 // three functions used by buttons
 function switchAuto() {
-  html.style.setProperty("color-scheme", "light dark");
+  html.style.setProperty("base-scheme", "light dark");
 }
 function switchLight() {
-  html.style.setProperty("color-scheme", "light");
+  html.style.setProperty("base-scheme", "light");
 }
 function switchDark() {
-  html.style.setProperty("color-scheme", "dark");
+  html.style.setProperty("base-scheme", "dark");
 }
 
 // single function used by select element and radio fieldset
 function switchMode(mode) {
-  html.style.setProperty("color-scheme", mode === "auto" ? "light dark" : mode);
+  html.style.setProperty("base-scheme", mode === "auto" ? "light dark" : mode);
 }

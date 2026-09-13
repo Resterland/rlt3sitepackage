@@ -1,7 +1,7 @@
 .color-theme {
-    --color-theme-icon-light-dark: url("../../Icons/icon/contrast.svg");
-    --color-theme-icon-light: url("../../Icons/icon/sun.svg");
-    --color-theme-icon-dark: url("../../Icons/icon/moon.svg");
+    --color-theme-icon-light-dark: url("../../../Icons/icon/contrast.svg");
+    --color-theme-icon-light: url("../../../Icons/icon/sun.svg");
+    --color-theme-icon-dark: url("../../../Icons/icon/moon.svg");
 
     position: relative;
 }
@@ -40,13 +40,13 @@
     /* Icon */
     &::before {
         content: "";
-        mask-image: url("../../Icons/icon/contrast.svg");
+        mask-image: url("../../../Icons/icon/contrast.svg");
     }
 
     /* Arrow */
     &::after {
         content: "";
-        mask-image: url("../../Icons/icon/chevron-down.svg");
+        mask-image: url("../../../Icons/icon/chevron-down.svg");
     }
 
     &[data-mode="light dark"]::before {
