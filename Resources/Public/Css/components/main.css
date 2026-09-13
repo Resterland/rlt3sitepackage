@@ -19,17 +19,10 @@ h1 {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
-    --scheme: "light";
     font-family: var(--font-family-chewy);
 }
-
-@media (prefers-color-scheme: dark) {
-    h1 {
-        --scheme: "dark";
-    }
-}
 h1::after {
-    content: var(--scheme);
+    content: "what the fuck";
 }
 
 p {
