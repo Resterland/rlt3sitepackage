@@ -8,20 +8,19 @@
       0: 'lit',
       1: 'utils',
       2: 'rldropdown',
-    4: 'hook',
-}"
+      3: 'scheme-switcher',
+      4: 'hook',
+    }"
 />
 
 <f:page.meta property="X-UA-Compatible" type="http-equiv" replace="true">
     IE=edge
 </f:page.meta>
 <f:page.meta property="viewport">width=device-width, initial-scale=1.0</f:page.meta>
-<f:page.meta property="color-scheme" type="name">light dark</f:page.meta>
 <f:page.meta property="robots" type="name">index, follow</f:page.meta>
 
 
 <f:comment>
-    3: 'scheme-switcher',
 
     includeJsFiles="{
     0: 'EXT:rlt3sitepackage/Resources/Public/JavaScript/light-dark-switch.js',
@@ -35,6 +34,8 @@
     <f:asset.css identifier="theme" href="EXT:rlt3sitepackage/Resources/Public/Css/Themes/theme.css" priority="1" />
     <f:asset.css identifier="theme-default" href="EXT:rlt3sitepackage/Resources/Public/Css/theme-lime.css"
                  priority="1" />
+
+    <f:page.meta property="color-scheme" type="name">light dark</f:page.meta>
 </f:comment>
 
 <f:if condition="{settings.theme.colorScheme} == theme-blue">

@@ -1,5 +1,55 @@
 /* variables */
 :root {
+    /* light - dark */
+
+    --light: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) * 1)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+    --dark: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) * .5)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+
+    --light-C: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) + 0.05)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+    --dark-C: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) - 0.25)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+
+    --light-3: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) + 0.01)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+    --dark-3: oklch(
+        from var(--base-color)
+        calc(var(--base-lightness) - 0.35)
+        var(--base-chroma)
+        var(--base-hue)
+    );
+
+    --background: light-dark(var(--light), var(--dark));
+    --text: light-dark(var(--dark), var(--light));
+
+    --background-C: light-dark(var(--light-C), var(--dark-C));
+    --text-C: light-dark(var(--dark-C), var(--light-C));
+
+    --background-3: light-dark(var(--light-3), var(--dark-3));
+    --text-3: light-dark(var(--dark-3), var(--light-3));
+
     --breadcrumbs-bar-height: 2rem;
     --top-banner-height: 3.375rem;
     --navigation-height: 5rem;
