@@ -11,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background:  var(--background-C);
-    color: var(--text-C);
+    background:  var(--color-background-page);
+    color: var(--color-text-page);
 }
 
 h1 {
@@ -37,36 +37,20 @@ p {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-
-    background:  var(--background);
-    color: var(--text);
+    background-color: var(--color-background-coffee);
+    color: var(--color-text-coffee);
 }
 
 main {
     padding: 0.5rem 0.75rem;
-
-    background-color:  var(--background);
-    color: var(--text);
 }
 .aside-left,
 .aside-right {
+    background: transparent;
     padding: 0.5rem 0.75rem;
-
-    background:  var(--background-3);
-    color: var(--text-3);
-}
-.aside-left {
-    /* forces light color-scheme */
-    color-scheme: light;
-}
-.aside-right {
-    /* forces dark color-scheme */
-    color-scheme: dark;
 }
 footer {
-
-    background:  var(--background-3);
-    color: var(--text-3);
+    color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,8 +64,8 @@ footer {
 
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--orange-300),
-        var(--gold)
+        var(--color-orange-40),
+        var(--color-gold)
     );
 }
 .navigation__logo a {
@@ -93,6 +77,7 @@ footer {
     padding: 0 0.25em;
 }
 .navigation {
+    background-color: var(--color-background-primary);
 }
 img.middle {
     margin: 0;
@@ -105,7 +90,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--background-C);
+    border-top: 1px solid var(--color-background-secondary);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -182,8 +167,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--text);
-    background-color: var(--background);
+    color: var(--color-text-blue);
+    background-color: var(--color-background-coffee);
     a:hover {
         text-decoration: none;
     }
@@ -195,14 +180,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--text-3);
+    color: var(--color-text-blue);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--text);
-        background-color: var(--background);
+        color: var(--color-link-green);
+        background-color: var(--bg-hover);
     }
 
     /* Arrow & Icon */
@@ -235,7 +220,7 @@ footer {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background-color: var(--background-3);
+    background-color: var(--bg-hover);
 }
 /* Dropdown navbar END */
 
@@ -253,9 +238,9 @@ footer {
 form {
     display: inline-block;
     /* Form outline */
-    background: var(--background-3);
+    background: var(--color-background-coffee);
     padding: 0.25em;
-    border: 1px solid var(--background-C);
+    border: 1px solid var(--color-text-aqua);
     border-radius: 0.5em;
 }
 .input-group {
@@ -380,7 +365,7 @@ form {
         margin-top: 0;
 
         background-color: var(--color-background-primary);
-        border: 1px solid var(--background-C);
+        border: 1px solid var(--color-border-primary);
     }
 
     /* Panel */
@@ -474,7 +459,7 @@ form {
         border: none;
 
         &:hover {
-            background-color: var(--background-C);
+            background-color: var(--color-background-secondary);
         }
         &::before {
             display: block;
@@ -503,7 +488,7 @@ form {
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid var(--background-C);
+        border-top: 1px solid var(--color-border-primary);
     }
 
     /* Button */
@@ -543,6 +528,6 @@ form {
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--background-C);
+        background-color: var(--color-border-primary);
     }
 }
