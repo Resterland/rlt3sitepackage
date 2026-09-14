@@ -2,9 +2,15 @@
 
 @import url("components/base/globals.css");
 @import url("components/font/fonts.css");
-@import url("components/themes/default.css");
 @import url("components/base/colors.css");
 @import url("components/base/variables.css");
 @import url("components/base/light-dark-switch.css");
 @import url("components/base/language-switcher.css");
 @import url("components/main.css");
+
+:root {
+    --base-color: oklch(0.6 0 0);
+    --base-lightness:0.9;
+    --base-chroma:.01;
+    --base-hue:266;
+}
