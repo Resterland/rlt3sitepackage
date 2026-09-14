@@ -30,28 +30,16 @@
 
 /* Basic Colors */
 :root {
-    --color-white: hsl(0 0% 100%);
-    --color-white-alpha-25: hsl(0 0% 100% / 25%);
-    --color-white-alpha-75: hsl(0 0% 100% / 75%);
-
-    --color-black: hsl(0 0% 0%);
-    --color-black-alpha-25: hsl(0 0% 0% / 25%);
-    --color-black-alpha-75: hsl(0 0% 0% / 75%);
 }
 
 /* Black - White - Greyscale */
 :root {
     --white:oklch(1 0 0);
     --black:oklch(0 0 0);
+    --black-alpha-15: oklch(0 0 0 / 0.15);
+    --black-alpha-75: oklch(0 0 0 / 0.75);
 
-    --color-gray: hsl(0 0% 50%);
-    --color-gray-90: hsl(0 0% 90%);
-    --color-gray-80: hsl(0 0% 80%);
-    --color-gray-60: hsl(0 0% 60%);
-    --color-gray-40: hsl(0 0% 40%);
-    --color-gray-20: hsl(0 0% 20%);
-    --color-gray-10: hsl(0 0% 10%);
-    --color-gray-05: hsl(0 0% 5%);
+    --gray: oklch(0.5 0 0);
 }
 
 /* Red - Yellow - Green - Blue - Purple */
@@ -62,3 +50,4 @@
     --blue: oklch(0.452 0.313 264.052);
     --purple: oklch(0.421 0.193 328.363);
 }
+
