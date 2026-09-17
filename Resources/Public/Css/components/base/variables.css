@@ -4,41 +4,35 @@
 
     --light: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) * 1)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l * 1)
+        c h
     );
     --dark: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) * .5)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l * .5)
+        c h
     );
 
     --light-C: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) + 0.05)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l + 0.05)
+        c h
     );
     --dark-C: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) - 0.25)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l - 0.25)
+        c h
     );
 
     --light-3: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) + 0.01)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l + 0.01)
+        c h
     );
     --dark-3: oklch(
         from var(--base-color)
-        calc(var(--base-lightness) - 0.35)
-        var(--base-chroma)
-        var(--base-hue)
+        calc(l - 0.35)
+        c h
     );
 
     --background: light-dark(var(--light), var(--dark));

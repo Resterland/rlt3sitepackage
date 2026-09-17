@@ -30,6 +30,9 @@
 
 /* Basic Colors */
 :root {
+    --base-lightness:0.9;
+    --base-chroma:.01;
+    --base-hue:266;
 }
 
 /* Black - White - Greyscale */
@@ -38,16 +41,16 @@
     --black:oklch(0 0 0);
     --black-alpha-15: oklch(0 0 0 / 0.15);
     --black-alpha-75: oklch(0 0 0 / 0.75);
-
-    --gray: oklch(0.5 0 0);
 }
 
 /* Red - Yellow - Green - Blue - Purple */
 :root {
-    --red: oklch(0.628 0.258 29.234);
-    --yellow: oklch(0.968 0.211 109.769);
-    --green: oklch(0.52 0.177 142.495);
-    --blue: oklch(0.452 0.313 264.052);
-    --purple: oklch(0.421 0.193 328.363);
+    --gray: oklch(0.5 0 0);
+    --blue: oklch(0.45 0.25 264);
+    --green: oklch(0.52 0.25 142);
+    --orange: oklch(0.79 0.25 70);
+    --purple: oklch(0.42 0.25 328);
+    --red: oklch(0.62 0.25 29);
+    --yellow: oklch(0.96 0.25 109);
 }
 

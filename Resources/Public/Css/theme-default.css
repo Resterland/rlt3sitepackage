@@ -9,8 +9,5 @@
 @import url("components/main.css");
 
 :root {
-    --base-color: oklch(0.5 0 0);
-    --base-lightness:0.9;
-    --base-chroma:.01;
-    --base-hue:266;
+    --base-color: var(--gray);
 }
