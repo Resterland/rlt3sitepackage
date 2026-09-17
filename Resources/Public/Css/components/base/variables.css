@@ -4,7 +4,7 @@
 
     --light: oklch(
         from var(--base-color)
-        calc(l * 1)
+        calc(l / .5)
         c h
     );
     --dark: oklch(
