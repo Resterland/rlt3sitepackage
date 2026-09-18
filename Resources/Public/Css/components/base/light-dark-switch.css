@@ -1,8 +1,4 @@
 .color-theme {
-    --color-theme-icon-light-dark: url("../../../Icons/icon/contrast.svg");
-    --color-theme-icon-light: url("../../../Icons/icon/sun.svg");
-    --color-theme-icon-dark: url("../../../Icons/icon/moon.svg");
-
     position: relative;
 }
 .color-theme__button {
@@ -49,16 +45,16 @@
         mask-image: url("../../../Icons/icon/chevron-down.svg");
     }
 
-    &[data-mode="light dark"]::before {
-        mask-image: var(--color-theme-icon-light-dark);
+    & [data-mode="light dark"]::before {
+        mask-image: url("../../../Icons/icon/contrast.svg");
     }
 
     &[data-mode="light"]::before {
-        mask-image: var(--color-theme-icon-light);
+        mask-image: url("../../../Icons/icon/sun.svg");
     }
 
     &[data-mode="dark"]::before {
-        mask-image: var(--color-theme-icon-dark);
+        mask-image: url("../../../Icons/icon/moon.svg");
     }
 
     @media screen and (width <= 62.49rem) {
@@ -129,15 +125,15 @@
     }
 
     &[data-mode="light dark"]::before {
-        mask-image: var(--color-theme-icon-light-dark);
+        mask-image: url("../../../Icons/icon/contrast.svg");
     }
 
     &[data-mode="light"]::before {
-        mask-image: var(--color-theme-icon-light);
+        mask-image: url("../../../Icons/icon/sun.svg");
     }
 
     &[data-mode="dark"]::before {
-        mask-image: var(--color-theme-icon-dark);
+        mask-image: url("../../../Icons/icon/moon.svg");
     }
 
     &[data-current] {
