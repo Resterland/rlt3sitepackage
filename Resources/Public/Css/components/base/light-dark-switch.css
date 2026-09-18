@@ -45,18 +45,6 @@
         mask-image: url("../../../Icons/icon/chevron-down.svg");
     }
 
-    & [data-mode="light dark"]::before {
-        mask-image: url("../../../Icons/icon/contrast.svg");
-    }
-
-    &[data-mode="light"]::before {
-        mask-image: url("../../../Icons/icon/sun.svg");
-    }
-
-    &[data-mode="dark"]::before {
-        mask-image: url("../../../Icons/icon/moon.svg");
-    }
-
     @media screen and (width <= 62.49rem) {
         > span {
             display: none;
