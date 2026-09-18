@@ -19,7 +19,5 @@ return [
         'lit' => 'EXT:core/Resources/Public/JavaScript/Contrib/lit/index.js',
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
-        'hook' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/hook.js',
-        'light-dark-switch' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/light-dark-switch.js',
     ],
 ];
