@@ -1,17 +1,17 @@
 'use strict';
 const html = document.querySelector("html");
 const mode = localStorage.getItem("mode");
-const autoSwitch = document.querySelector('#autoSwitch');
-const lightSwitch = document.querySelector('#lightSwitch');
-const darkSwitch = document.querySelector('#darkSwitch');
+const autoSwitch = document.querySelector('#switchAuto');
+const lightSwitch = document.querySelector('#switchLight');
+const darkSwitch = document.querySelector('#switchDark');
 
-document.querySelector('#autoSwitch').addEventListener("click", () => {
+document.querySelector('#switchAuto').addEventListener("click", () => {
   switchAuto(CSS.escape("this?element"));
 });
-document.querySelector('#lightSwitch').addEventListener("click", () => {
+document.querySelector('#switchLight').addEventListener("click", () => {
   switchLight(CSS.escape("this?element"));
 });
-document.querySelector('#darkSwitch').addEventListener("click", () => {
+document.querySelector('#switchDark').addEventListener("click", () => {
   switchDark(CSS.escape("this?element"));
 });
 
