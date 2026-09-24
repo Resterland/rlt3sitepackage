@@ -72,6 +72,8 @@
 
     background: var(--background);
     border: 1px solid var(--black);
+
+    color: var(--text);
 }
 
 .language-switcher__option {
@@ -87,14 +89,9 @@
 
     font: inherit;
 
-    color: var(--blue);
-
-    background-color: transparent;
-    border: none;
-
     &:hover,
     &[data-current] {
-        color: var(--green);
-        background-color: var(--orange);
+        background: Canvas;
+        color: CanvasText;
     }
 }

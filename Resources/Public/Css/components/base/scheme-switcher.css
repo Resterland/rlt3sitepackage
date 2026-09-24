@@ -71,6 +71,8 @@
 
     background-color: lightblue;
     border: darkblue;
+
+    color: var(--text);
 }
 
 .scheme__option {
@@ -86,12 +88,7 @@
 
     font: inherit;
 
-    color: var(--blue);
-
     cursor: pointer;
-
-    background-color: transparent;
-    border: none;
 
     &:hover,
     &[data-current] {
