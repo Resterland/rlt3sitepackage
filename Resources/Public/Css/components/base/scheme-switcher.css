@@ -59,8 +59,7 @@
 
     padding: 0.25rem 1rem;
 
-    background-color: lightblue;
-    border: 1px solid darkblue;
+    background: Canvas;
 }
 
 .scheme-switch__list {
