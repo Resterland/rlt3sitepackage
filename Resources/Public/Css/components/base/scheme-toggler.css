@@ -1,0 +1,14 @@
+.theme-toggle {
+    --size: 2rem;
+    --icon-fill: hsl(210 10% 70%);
+    --icon-fill-hover: hsl(210 15% 90%);
+    background: none;
+    border: none;
+    padding: 0;
+    inline-size: var(--size);
+    block-size: var(--size);
+    border-radius: 50%;
+    cursor: pointer;
+    touch-action: manipulation;
+    outline-offset: 5px;
+}
