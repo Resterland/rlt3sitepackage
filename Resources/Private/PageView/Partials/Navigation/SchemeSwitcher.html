@@ -1,8 +1,8 @@
-<div class="scheme">
+<div class="scheme-switcher">
     <rl-dropdown>
         <button
             slot="button"
-            class="scheme-switch__button"
+            class="scheme-switcher__button"
             data-mode=""
             type="button"
             aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
@@ -11,20 +11,26 @@
         </button>
         <div
             slot="dropdown"
-            class="scheme-switch__dropdown"
-            id="scheme-switch__dropdown"
+            class="scheme-switcher__dropdown"
+            id="scheme-switcher__dropdown"
         >
-            <ul class="scheme-switch__list">
-                <li class="scheme-switch__item">
+            <ul class="scheme-switcher__list">
+                <li class="scheme-switcher__item">
                     <button
-                        id="autoSwitch"
-                        type="button"
-                        class="scheme__option"
+                        class="theme-toggle"
+                        id="theme-toggle"
+                        title="Toggles light & dark"
+                        aria-label="auto"
                         aria-pressed="true"
+                        aria-live="polite"
                         onclick="switchAuto()"
-                    >{f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
+                    >
+                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            …
+                        </svg>
+                        {f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
                 </li>
-                <li class="scheme-switch__item">
+                <li class="scheme-switcher__item">
                     <button
                         id="lightSwitch"
                         type="button"
@@ -33,7 +39,7 @@
                         onclick="switchLight()"
                     >{f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
                 </li>
-                <li class="scheme-switch__item">
+                <li class="scheme-switcher__item">
                     <button
                         id="darkSwitch"
                         type="button"

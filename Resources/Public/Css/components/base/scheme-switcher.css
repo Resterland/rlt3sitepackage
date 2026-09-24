@@ -1,7 +1,7 @@
-.scheme {
+.scheme-switcher {
     position: relative;
 }
-.scheme-switch__button {
+.scheme-switcher__button {
     display: flex;
 
     column-gap: 0.25rem;
@@ -50,7 +50,7 @@
     }
 }
 
-.scheme-switch__dropdown {
+.scheme-switcher__dropdown {
     position: absolute;
     right: 0;
     z-index: 1;
@@ -64,7 +64,7 @@
     color: HighlightText;
 }
 
-.scheme-switch__list {
+.scheme-switcher__list {
     width: max-content;
 
     padding: 0;
@@ -72,14 +72,14 @@
 
     list-style: none;
 }
-.scheme-switch__item {
+.scheme-switcher__item {
     margin-bottom: 0.15rem;
 
     &:last-child {
         margin: 0;
     }
 }
-.scheme__option {
+.theme-toggle {
     display: flex;
 
     column-gap: 0.25rem;
