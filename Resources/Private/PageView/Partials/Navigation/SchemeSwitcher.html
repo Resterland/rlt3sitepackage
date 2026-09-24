@@ -1,8 +1,8 @@
-<div class="color-theme">
+<div class="scheme">
     <rl-dropdown>
         <button
             slot="button"
-            class="color-theme__button"
+            class="scheme-switch__button"
             data-mode=""
             type="button"
             aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
@@ -11,15 +11,15 @@
         </button>
         <div
             slot="dropdown"
-            class="color-theme__dropdown"
-            id="color-theme__dropdown"
+            class="scheme-switch__dropdown"
+            id="scheme-switch__dropdown"
         >
-            <ul class="color-theme__list">
+            <ul class="scheme-switch__list">
                 <li>
                     <button
                         id="autoSwitch"
                         type="button"
-                        class="color-theme__option"
+                        class="scheme__option"
                         aria-pressed="true"
                         onclick="switchAuto()"
                     >{f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
@@ -28,7 +28,7 @@
                     <button
                         id="lightSwitch"
                         type="button"
-                        class="color-theme__option"
+                        class="scheme__option"
                         aria-pressed="true"
                         onclick="switchLight()"
                     >{f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
@@ -37,7 +37,7 @@
                     <button
                         id="darkSwitch"
                         type="button"
-                        class="color-theme__option"
+                        class="scheme__option"
                         aria-pressed="true"
                         onclick="switchDark()"
                     >{f:translate(key:'scheme-switch.dark',extensionName:'rlt3sitepackage')}</button>
