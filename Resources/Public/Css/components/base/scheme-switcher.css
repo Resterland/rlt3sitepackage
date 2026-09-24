@@ -18,8 +18,8 @@
     border: none;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
-        color: var(--green);
-        background-color: var(--orange);
+        color: Highlight;
+        background-color: HighlightText;
     }
 
     /* Arrow & Icon */
@@ -60,6 +60,8 @@
     padding: 0.25rem 1rem;
 
     background: Highlight;
+
+    color: HighlightText;
 }
 
 .scheme-switch__list {
@@ -69,8 +71,6 @@
     margin: 0;
 
     list-style: none;
-
-    color: var(--text);
 }
 .scheme-switch__item {
     margin-bottom: 0.15rem;
@@ -99,8 +99,8 @@
 
     &:hover,
     &[data-current] {
-        color: var(--green);
-        background-color: var(--orange);
+        color: Highlight;
+        background-color: HighlightText;
     }
 
     &::before {
