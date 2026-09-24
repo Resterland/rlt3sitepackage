@@ -19,8 +19,8 @@
     border: none;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--green);
-        background-color: var(--orange);
+        color: Highlight;
+        background-color: HighlightText;
     }
 
     /* Arrow & Icon */
@@ -60,6 +60,10 @@
 
     padding: 0.75rem;
     margin: -1px 0 0;
+
+    background: Highlight;
+
+    color: HighlightText;
 }
 
 .language-switcher__list {
@@ -69,11 +73,6 @@
     margin: 0;
 
     list-style: none;
-
-    background: var(--background);
-    border: 1px solid var(--black);
-
-    color: var(--text);
 }
 
 .language-switcher__option {
@@ -91,7 +90,7 @@
 
     &:hover,
     &[data-current] {
-        background: Canvas;
-        color: CanvasText;
+        color: Highlight;
+        background-color: HighlightText;
     }
 }
