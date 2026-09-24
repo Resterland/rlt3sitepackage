@@ -63,8 +63,8 @@
     padding: 0.75rem;
     margin: -1px 0 0;
 
-    background-color: var(--color-background-primary);
-    border: 1px solid var(--color-border-primary);
+    background-color: Canvas;
+    border: 1px solid var(--black);
 }
 
 .language-switcher__list {
@@ -89,12 +89,14 @@
 
     font: inherit;
 
+    color: var(--blue);
+
     background-color: transparent;
     border: none;
 
     &:hover,
     &[data-current] {
-        color: var(--color-link-green);
-        background-color: var(--bg-hover);
+        color: var(--green);
+        background-color: var(--orange);
     }
 }
