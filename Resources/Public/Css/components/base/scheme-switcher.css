@@ -61,7 +61,7 @@
     margin: -1px 0 0;
 
     background-color: lightblue;
-    border: darkblue;
+    border: 1px solid darkblue;
 }
 
 .scheme-switch__list {
@@ -71,6 +71,9 @@
     margin: 0;
 
     list-style: none;
+
+    background: none;
+    border: none;
 
     color: var(--text);
 }
