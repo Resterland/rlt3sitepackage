@@ -13,11 +13,11 @@
 
     font: inherit;
 
-    color: var(--color-text-blue);
+    color: var(--text);
 
     cursor: pointer;
 
-    background-color: transparent;
+    background-color: Canvas;
     border: none;
 
     &:is([aria-expanded="true"], :hover) {

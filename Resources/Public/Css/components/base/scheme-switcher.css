@@ -12,12 +12,12 @@
 
     font: inherit;
 
-    color: var(--color-text-blue);
+    color: var(--text);
 
     cursor: pointer;
 
-    background-color: transparent;
-    border: none;
+    background-color: lightblue;
+    border: darkblue;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
         color: var(--green);
