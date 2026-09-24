@@ -107,15 +107,18 @@
         mask-size: cover;
     }
 
-    &[data-mode="light dark"]::before {
+    &::before {
+        content: "";
         mask-image: url("../../../Icons/icon/contrast.svg");
     }
 
     &[data-mode="light"]::before {
+        content: "";
         mask-image: url("../../../Icons/icon/sun.svg");
     }
 
     &[data-mode="dark"]::before {
+        content: "";
         mask-image: url("../../../Icons/icon/moon.svg");
     }
 
