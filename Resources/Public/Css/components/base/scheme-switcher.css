@@ -72,8 +72,8 @@
 
     list-style: none;
 
-    background: none;
-    border: none;
+    background: var(--background);
+    border: 1px solid var(--black);
 
     color: var(--text);
 }
@@ -92,6 +92,9 @@
     font: inherit;
 
     cursor: pointer;
+
+    background: transparent;
+    border: none;
 
     &:hover,
     &[data-current] {
