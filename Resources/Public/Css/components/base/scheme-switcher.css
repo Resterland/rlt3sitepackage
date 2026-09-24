@@ -112,6 +112,11 @@
         mask-image: url("../../../Icons/icon/contrast.svg");
     }
 
+    &[data-mode="light dark"]::before {
+        content: "";
+        mask-image: url("../../../Icons/icon/contrast.svg");
+    }
+
     &[data-mode="light"]::before {
         content: "";
         mask-image: url("../../../Icons/icon/sun.svg");
