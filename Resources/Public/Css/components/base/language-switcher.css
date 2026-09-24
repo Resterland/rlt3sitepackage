@@ -13,11 +13,9 @@
 
     font: inherit;
 
-    color: var(--text);
-
     cursor: pointer;
 
-    background-color: Canvas;
+    background: transparent;
     border: none;
 
     &:is([aria-expanded="true"], :hover) {
@@ -62,9 +60,6 @@
 
     padding: 0.75rem;
     margin: -1px 0 0;
-
-    background: var(--background);
-    border: 1px solid var(--black);
 }
 
 .language-switcher__list {
@@ -74,6 +69,9 @@
     margin: 0;
 
     list-style: none;
+
+    background: var(--background);
+    border: 1px solid var(--black);
 }
 
 .language-switcher__option {

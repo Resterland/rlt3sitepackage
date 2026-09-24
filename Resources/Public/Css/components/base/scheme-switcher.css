@@ -12,12 +12,10 @@
 
     font: inherit;
 
-    color: var(--text);
-
     cursor: pointer;
 
-    background-color: lightblue;
-    border: darkblue;
+    background: transparent;
+    border: none;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
         color: var(--green);
@@ -61,9 +59,6 @@
 
     padding: 0.75rem;
     margin: -1px 0 0;
-
-    background: var(--background);
-    border: 1px solid var(--black);
 }
 
 .scheme-switch__list {
@@ -73,6 +68,9 @@
     margin: 0;
 
     list-style: none;
+
+    background-color: lightblue;
+    border: darkblue;
 }
 
 .scheme__option {
