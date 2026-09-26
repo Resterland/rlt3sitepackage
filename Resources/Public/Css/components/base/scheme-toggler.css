@@ -25,6 +25,11 @@
         stroke-linecap: round;
     }
 
+    & > [data-theme="dark"] & {
+        --icon-fill: hsl(210 10% 70%);
+        --icon-fill-hover: hsl(210 15% 90%);
+    }
+
     @media (hover: none) {
         --size: 48px;
     }
