@@ -37,7 +37,6 @@ h1::after {
 [data-theme="dark"] {
     h1::after {
         color-scheme: dark;
-
         content: "dark";
     }
 }
