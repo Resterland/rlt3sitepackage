@@ -8,7 +8,7 @@
   & > :is(.moon, .sun) {
     fill: var(--icon-fill);
 
-    & .scheme-toggle:is(:hover, :focus-visible) > & {
+    .scheme-toggle:is(:hover, :focus-visible) > & {
       fill: var(--icon-fill-hover);
     }
   }
@@ -17,12 +17,12 @@
     stroke: var(--icon-fill);
     stroke-width: 2px;
 
-    & .scheme-toggle:is(:hover, :focus-visible) & {
+    .scheme-toggle:is(:hover, :focus-visible) & {
       stroke: var(--icon-fill-hover);
     }
   }
 
-  & [data-theme="dark"] & {
+  [data-theme="dark"] & {
     & > .sun {
       transform: scale(1.75);
     }
@@ -61,7 +61,7 @@
       }
     }
 
-    & [data-theme="dark"] & {
+    [data-theme="dark"] & {
       & > .sun {
         transform: scale(1.75);
         transition-timing-function: var(--ease-3);
