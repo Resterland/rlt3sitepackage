@@ -3,7 +3,7 @@
         <button
             slot="button"
             class="scheme-switcher__button"
-            data-mode=""
+            title="Switch between light &amp; dark"
             type="button"
             aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
         >
@@ -17,13 +17,12 @@
             <ul class="scheme-switcher__list">
                 <li class="scheme-switcher__item">
                     <button
-                        class="theme-toggle"
-                        id="theme-toggle"
-                        title="Toggles light & dark"
+                        class="auto"
+                        id="auto"
+                        title="Let the OS decide"
                         aria-label="auto"
                         aria-pressed="true"
                         aria-live="polite"
-                        onclick="switchAuto()"
                     >
                         <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
                             …
@@ -33,7 +32,6 @@
                 <li class="scheme-switcher__item">
                     <button
                         id="lightSwitch"
-                        type="button"
                         class="scheme__option"
                         aria-pressed="true"
                         onclick="switchLight()"
