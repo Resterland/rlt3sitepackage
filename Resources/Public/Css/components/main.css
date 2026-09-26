@@ -33,11 +33,11 @@ h1 {
 h1::after {
 
     content: "light";
-    [data-theme="dark"] {
-        color-scheme: dark;
+}
+h1::after [data-theme="dark"] {
+    color-scheme: dark;
 
-        content: "dark";
-    }
+    content: "dark";
 }
 
 p {
