@@ -1,4 +1,4 @@
-/*@import "sun-and-moon.css";*/
+@import "sun-and-moon.css";
 
 .scheme-toggle {
     --size: 2rem;
@@ -16,7 +16,6 @@
 
     cursor: pointer;
     touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
 
     outline-offset: 5px;
 
