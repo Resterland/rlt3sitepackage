@@ -34,10 +34,12 @@ h1::after {
 
     content: "light";
 }
-h1::after [data-theme="dark"] {
-    color-scheme: dark;
+[data-theme="dark"] {
+    h1::after {
+        color-scheme: dark;
 
-    content: "dark";
+        content: "dark";
+    }
 }
 
 p {
