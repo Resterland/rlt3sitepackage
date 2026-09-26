@@ -32,7 +32,12 @@ h1 {
 }
 h1::after {
 
-    content: "what the fuck";
+    content: "light";
+    &[data-theme="dark"] {
+        color-scheme: dark;
+
+        content: "dark";
+    }
 }
 
 p {
