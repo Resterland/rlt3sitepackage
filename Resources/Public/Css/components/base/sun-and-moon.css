@@ -22,7 +22,7 @@
     }
   }
 
-  [data-theme="dark"] & {
+  & [data-theme="dark"] & {
     & > .sun {
       transform: scale(1.75);
     }
