@@ -27,7 +27,6 @@
             <f:if condition="{content.main.records}">
                 <!-- TYPO3SEARCH_begin -->
                 <main id="content-main">
-                    <f:render partial="Navigation/SchemeToggler" arguments="{_all}"/>
                     <f:for each="{content.main.records}" as="record">
                         <f:cObject
                             typoscriptObjectPath="{record.mainType}"

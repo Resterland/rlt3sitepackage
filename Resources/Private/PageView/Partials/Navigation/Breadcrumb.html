@@ -18,6 +18,8 @@
             </f:for>
         </ol>
 
+        <f:render partial="Navigation/SchemeToggler" arguments="{_all}"/>
+
         <f:render partial="Navigation/SchemeSwitcher" arguments="{_all}"/>
 
         <f:if condition="{settings.header.languagenavigation.enable}">
