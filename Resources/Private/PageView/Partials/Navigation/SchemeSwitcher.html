@@ -1,8 +1,4 @@
-<html
-    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    data-namespace-typo3-fluid="true"
->
-<div class="scheme-switcher">
+<div class="scheme-switcher" aria-label="Color scheme switcher">
     <rl-dropdown>
         <button
             slot="button"
@@ -24,6 +20,7 @@
                     <button
                         class="auto"
                         id="auto"
+                        value="light dark"
                         title="Let the OS decide"
                         aria-label="auto"
                         aria-pressed="true"
@@ -35,10 +32,13 @@
                 </li>
                 <li class="scheme-switcher__item">
                     <button
-                        id="lightSwitch"
-                        class="scheme__option"
-                        aria-pressed="true"
-                        onclick="switchLight()"
+                        id="light"
+                        class="light"
+                        value="light"
+                        title="Light Scheme"
+                        aria-label="light"
+                        aria-pressed="false"
+                        aria-live="polite"
                     >
                         <f:render partial="SVG/sun.svg" arguments="{_all}"/>
 
@@ -46,11 +46,13 @@
                 </li>
                 <li class="scheme-switcher__item">
                     <button
-                        id="darkSwitch"
-                        type="button"
-                        class="scheme__option"
-                        aria-pressed="true"
-                        onclick="switchDark()"
+                        id="dark"
+                        class="dark"
+                        value="dark"
+                        title="Dark Scheme"
+                        aria-label="dark"
+                        aria-pressed="false"
+                        aria-live="polite"
                     >
                         <f:render partial="SVG/moon.svg" arguments="{_all}"/>
 
@@ -60,4 +62,3 @@
         </div>
     </rl-dropdown>
 </div>
-</html>
