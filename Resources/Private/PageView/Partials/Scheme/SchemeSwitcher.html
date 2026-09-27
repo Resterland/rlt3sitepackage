@@ -1,0 +1,30 @@
+<div class="scheme-switcher" aria-label="Color scheme switcher">
+    <rl-dropdown>
+        <button
+            slot="button"
+            class="scheme-switcher__button"
+            title="Switch between light &amp; dark"
+            type="button"
+            aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
+        >
+            <span>{f:translate(key:'scheme-switch.title',extensionName:'rlt3sitepackage')}</span>
+        </button>
+        <div
+            slot="dropdown"
+            class="scheme-switcher__dropdown"
+        >
+            <ul class="scheme-switcher__list">
+                <li class="scheme-switcher__item">
+                    <f:render partial="Scheme/Auto" arguments="{_all}"/>
+                </li>
+                <li class="scheme-switcher__item">
+
+                    <f:render partial="Scheme/Light" arguments="{_all}"/>
+                </li>
+                <li class="scheme-switcher__item">
+                    <f:render partial="Scheme/Dark" arguments="{_all}"/>
+                </li>
+            </ul>
+        </div>
+    </rl-dropdown>
+</div>
