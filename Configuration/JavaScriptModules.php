@@ -20,5 +20,6 @@ return [
         'utils' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/utils/index.js',
         'rldropdown' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/rldropdown.js',
         'scheme-toggle' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/scheme-toggle.js',
+        'scheme-switcher' => 'EXT:rlt3sitepackage/Resources/Public/JavaScript/scheme-switcher.js',
     ],
 ];
