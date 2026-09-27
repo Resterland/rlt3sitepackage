@@ -11,7 +11,7 @@
             type="button"
             aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
         >
-            <f:render partial="SVG/contrast" arguments="{_all}"/>
+            <f:render partial="SVG/contrast.svg" arguments="{_all}"/>
             <span>{f:translate(key:'scheme-switch.title',extensionName:'rlt3sitepackage')}</span>
         </button>
         <div
@@ -29,7 +29,7 @@
                         aria-pressed="true"
                         aria-live="polite"
                     >
-                        <f:render partial="SVG/contrast" arguments="{_all}"/>
+                        <f:render partial="SVG/contrast.svg" arguments="{_all}"/>
 
                         {f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
                 </li>
@@ -40,7 +40,7 @@
                         aria-pressed="true"
                         onclick="switchLight()"
                     >
-                        <f:render partial="SVG/sun" arguments="{_all}"/>
+                        <f:render partial="SVG/sun.svg" arguments="{_all}"/>
 
                         {f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
                 </li>
@@ -52,7 +52,7 @@
                         aria-pressed="true"
                         onclick="switchDark()"
                     >
-                        <f:render partial="SVG/moon" arguments="{_all}"/>
+                        <f:render partial="SVG/moon.svg" arguments="{_all}"/>
 
                         {f:translate(key:'scheme-switch.dark',extensionName:'rlt3sitepackage')}</button>
                 </li>
