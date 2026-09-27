@@ -1,3 +1,7 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
 <div class="scheme-switcher">
     <rl-dropdown>
         <button
@@ -7,6 +11,7 @@
             type="button"
             aria-label="{f:translate(key:'scheme-switch.aria_label',extensionName:'rlt3sitepackage')}"
         >
+            <f:render partial="SVG/contrast" arguments="{_all}"/>
             <span>{f:translate(key:'scheme-switch.title',extensionName:'rlt3sitepackage')}</span>
         </button>
         <div
@@ -24,9 +29,8 @@
                         aria-pressed="true"
                         aria-live="polite"
                     >
-                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-                            …
-                        </svg>
+                        <f:render partial="SVG/contrast" arguments="{_all}"/>
+
                         {f:translate(key:'scheme-switch.auto',extensionName:'rlt3sitepackage')}</button>
                 </li>
                 <li class="scheme-switcher__item">
@@ -35,7 +39,10 @@
                         class="scheme__option"
                         aria-pressed="true"
                         onclick="switchLight()"
-                    >{f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
+                    >
+                        <f:render partial="SVG/sun" arguments="{_all}"/>
+
+                        {f:translate(key:'scheme-switch.light',extensionName:'rlt3sitepackage')}</button>
                 </li>
                 <li class="scheme-switcher__item">
                     <button
@@ -44,9 +51,13 @@
                         class="scheme__option"
                         aria-pressed="true"
                         onclick="switchDark()"
-                    >{f:translate(key:'scheme-switch.dark',extensionName:'rlt3sitepackage')}</button>
+                    >
+                        <f:render partial="SVG/moon" arguments="{_all}"/>
+
+                        {f:translate(key:'scheme-switch.dark',extensionName:'rlt3sitepackage')}</button>
                 </li>
             </ul>
         </div>
     </rl-dropdown>
 </div>
+</html>
