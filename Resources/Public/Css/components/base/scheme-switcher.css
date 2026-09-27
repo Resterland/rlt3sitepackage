@@ -31,12 +31,6 @@
         mask-size: cover;
     }
 
-    /* Icon */
-    &::before {
-        content: "";
-        mask-image: url("../../../Icons/icon/contrast.svg");
-    }
-
     /* Arrow */
     &::after {
         content: "";
