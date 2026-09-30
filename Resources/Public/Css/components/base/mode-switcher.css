@@ -1,0 +1,20 @@
+html {
+    background-color: light-dark(lavender, rebeccapurple)
+}
+
+html:has(#mode-switcher [value="light"]:checked){
+    color-scheme: light;
+}
+
+html:has(#mode-switcher [value="dark"]:checked){
+    color-scheme: dark;
+}
+
+.scheme-switcher {
+    width: max-content;
+    margin: 3rem auto;
+    font-size: 200%;
+}
+select {
+    font-size: inherit;
+}

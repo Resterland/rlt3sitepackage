@@ -1,5 +1,5 @@
 <div class="scheme-switcher" aria-label="Color scheme switcher">
-    <rl-dropdown>
+    <!--<rl-dropdown>
         <button
             slot="button"
             class="scheme-switcher__button"
@@ -13,9 +13,7 @@
             slot="dropdown"
             class="scheme-switcher__dropdown"
         >
-            <ul class="scheme-switcher__list"> <li class="scheme-switcher__item">
-                <f:render partial="Scheme/SchemeToggler" arguments="{_all}"/>
-            </li>
+            <ul class="scheme-switcher__list">
                 <li class="scheme-switcher__item">
                     <f:render partial="Scheme/Auto" arguments="{_all}"/>
                 </li>
@@ -28,5 +26,11 @@
                 </li>
             </ul>
         </div>
-    </rl-dropdown>
+    </rl-dropdown>-->
+    <label for="mode-switcher">Mode:</label>
+    <select id="mode-switcher">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
 </div>
