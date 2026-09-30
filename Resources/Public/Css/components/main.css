@@ -13,6 +13,7 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
+    --theme-oklch: oklch(50% 0.25 var(--hue, 222));
 }
 body {
     margin: auto;
@@ -58,6 +59,7 @@ p {
 
 main {
     padding: 0.5rem 0.75rem;
+    background-color: var(--theme-oklch);
 }
 .aside-left,
 .aside-right {
