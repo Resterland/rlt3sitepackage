@@ -2,13 +2,13 @@ html {
 
     color-scheme: light dark;
 
-    &[data-theme="dark"] {
+    /*&[data-theme="dark"] {
         color-scheme: dark;
 
         @supports not (color-scheme: dark) {
             background: #111;
         }
-    }
+    }*/
     min-height: 100vh;
     width: 100%;
     overflow-wrap: break-word;
