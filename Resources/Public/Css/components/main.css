@@ -13,8 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    color-scheme: light dark;
-
     margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);

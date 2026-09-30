@@ -2,13 +2,13 @@ const body = document.querySelector('body');
 const hueSlider = document.querySelector('#hueSlider');
 
 function switchDark() {
-  body.setProperty("color-scheme", "dark");
+  body.style.setProperty("color-scheme", switchDark.value);
 }
 function switchLight() {
-  body.setProperty("color-scheme", "light");
+  body.style.setProperty("color-scheme", switchLight.value);
 }
 function switchAuto() {
-  body.setProperty("color-scheme", "light dark");
+  body.style.setProperty("color-scheme", switchAuto.value);
 }
 
 hueSlider.addEventListener("input", () =>
