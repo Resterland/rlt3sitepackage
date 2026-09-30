@@ -41,7 +41,7 @@
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+    [data-theme="auto"] {
     & > .sun {
       transition: transform .5s var(--ease-elastic-3);
     }
