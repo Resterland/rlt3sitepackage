@@ -1,7 +1,5 @@
 html {
 
-    /*color-scheme: light dark;*/
-
     /*&[data-theme="dark"] {
         color-scheme: dark;
 
@@ -13,9 +11,10 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
-    --theme-oklch: oklch(50% 0.25 var(--hue, 222));
 }
 body {
+    color-scheme: light dark;
+
     margin: auto;
     font-size: var(--font-size);
     line-height: var(--font-line-normal);
@@ -23,6 +22,7 @@ body {
 
     background: Canvas;
     color: CanvasText;
+    --theme-oklch: oklch(50% 0.25 var(--hue, 222));
 }
 
 h1 {
