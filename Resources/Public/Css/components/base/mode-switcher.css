@@ -1,7 +1,3 @@
-html {
-    background-color: light-dark(lavender, rebeccapurple)
-}
-
 html:has(#mode-switcher [value="light"]:checked){
     color-scheme: light;
 }
