@@ -13,7 +13,9 @@
             slot="dropdown"
             class="scheme-switcher__dropdown"
         >
-            <ul class="scheme-switcher__list">
+            <ul class="scheme-switcher__list"> <li class="scheme-switcher__item">
+                <f:render partial="Scheme/SchemeToggler" arguments="{_all}"/>
+            </li>
                 <li class="scheme-switcher__item">
                     <f:render partial="Scheme/Auto" arguments="{_all}"/>
                 </li>
