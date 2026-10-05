@@ -1,18 +1,15 @@
-'use strict';
+const body = document.querySelector('body');
+const hueSlider = document.querySelector('#hueSlider');
 
-const colorScheme = document.querySelector('meta[name=color-scheme]');
-const switchButtons = document.querySelectorAll('button');
+function switchDark() {
+  body.style.setProperty("color-scheme", "dark");
+}
+function switchLight() {
+  body.style.setProperty("color-scheme", "light");
+}
+function switchAuto() {
+  body.style.setProperty("color-scheme", "light dark");
+}
 
-switchButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const currentButton = button;
-
-    switchButtons.forEach(
-      button => button.setAttribute(
-        'aria-pressed', button === currentButton
-      )
-    );
-
-    colorScheme.content = button.value;
-  });
-});
+hueSlider.addEventListener("input", () =>
+  body.style.setProperty("--hue", hueSlider.value));

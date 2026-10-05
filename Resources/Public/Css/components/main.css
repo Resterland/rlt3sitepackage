@@ -18,6 +18,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
+
+    color-scheme: dark;
     background: Canvas;
     color: CanvasText;
     --theme-oklch: oklch(50% 0.25 var(--hue, 222));
