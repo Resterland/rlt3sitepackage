@@ -9,9 +9,7 @@ page {
 #    data = sitesettings:theme.colorScheme
 #    wrap = <body class=" | ">
 #  }
-  bodyTagAdd {
-    class="color-scheme: light dark"
-  }
+  bodyTagAdd = style="color-scheme: light dark"
 
   headerData {
     // Flip ahead browsing for IE10/11
