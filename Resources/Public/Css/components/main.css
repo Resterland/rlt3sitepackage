@@ -11,6 +11,13 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
+
+    --black: oklch(0% 0 0);
+    --white: oklch(100% 0 0);
+    color-scheme: light dark;
+
+    --background: light-dark(var(--white), var(--black));
+    --text: light-dark(var(--black), var(--white));
 }
 body {
     margin: auto;
@@ -18,9 +25,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background: Canvas;
-    color: CanvasText;
-    --theme-oklch: oklch(50% 0.25 var(--hue, 222));
+    background-color: var(--background);
+    color: var(--text);
 }
 
 h1 {
@@ -57,8 +63,8 @@ p {
 
 main {
     padding: 0.5rem 0.75rem;
-    color: color-mix(in oklab, CanvasText 75%, var(--theme-oklch));
-    background-color: color-mix(in oklab, Canvas 75%, var(--theme-oklch));
+    background-color: var(--background);
+    color: var(--text);
 }
 .aside-left,
 .aside-right {
@@ -67,7 +73,8 @@ main {
     padding: 0.5rem 0.75rem;
 }
 footer {
-    color-scheme: dark;
+    color: light-dark(DarkGreen, Lavender);
+    background-color: light-dark(Pink, SaddleBrown);
 }
 
 .navigation__logo {
