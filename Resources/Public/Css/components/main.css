@@ -12,8 +12,6 @@ html {
     overflow-wrap: break-word;
     scroll-behavior: smooth;
 
-    --black: oklch(0% 0 0);
-    --white: oklch(100% 0 0);
     color-scheme: light dark;
 
     --background: light-dark(var(--white), var(--black));
@@ -38,12 +36,6 @@ h1 {
 h1::after {
 
     content: "light";
-}
-[data-theme="dark"] {
-    h1::after {
-        color-scheme: dark;
-        content: "dark";
-    }
 }
 
 p {

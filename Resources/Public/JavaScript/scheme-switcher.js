@@ -1,5 +1,8 @@
 const html = document.querySelector("html");
 const mode = localStorage.getItem("mode");
+const lightSwitch = document.querySelector('#lightSwitch');
+const darkSwitch = document.querySelector('#darkSwitch');
+const autoSwitch = document.querySelector('#autoSwitch');
 
 if (mode === "light") switchLight();
 if (mode === "dark") switchDark();
@@ -7,14 +10,23 @@ if (mode === "dark") switchDark();
 function switchAuto() {
   html.style.setProperty("color-scheme", "light dark");
   localStorage.removeItem("mode");
+  lightSwitch.setAttribute("aria-pressed","false");
+  darkSwitch.setAttribute("aria-pressed","false");
+  autoSwitch.setAttribute("aria-pressed","true");
 }
 
 function switchLight() {
   html.style.setProperty("color-scheme", "light");
   localStorage.setItem("mode", "light");
+  lightSwitch.setAttribute("aria-pressed","true");
+  darkSwitch.setAttribute("aria-pressed","false");
+  autoSwitch.setAttribute("aria-pressed","false");
 }
 
 function switchDark() {
   html.style.setProperty("color-scheme", "dark");
   localStorage.setItem("mode", "dark");
+  lightSwitch.setAttribute("aria-pressed","false");
+  darkSwitch.setAttribute("aria-pressed","true");
+  autoSwitch.setAttribute("aria-pressed","false");
 }
