@@ -12,4 +12,4 @@ function switchAuto() {
 }
 
 hueSlider.addEventListener("input", () =>
-  body.style.setProperty("--hue", hueSlider.value));
+  html.style.setProperty("--hue", hueSlider.value));
