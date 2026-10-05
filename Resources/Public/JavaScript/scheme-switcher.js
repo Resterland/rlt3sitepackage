@@ -1,3 +1,5 @@
+'use strict';
+
 const html = document.querySelector("html");
 const mode = localStorage.getItem("mode");
 const lightSwitch = document.querySelector('#lightSwitch');
