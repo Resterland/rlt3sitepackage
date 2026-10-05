@@ -10,7 +10,7 @@ page {
 #    wrap = <body class=" | ">
 #  }
   bodyTagAdd {
-    style="light dark"
+    style="color-scheme: light dark"
   }
 
   headerData {
