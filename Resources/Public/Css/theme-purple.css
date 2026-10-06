@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 @import url("components/font/fonts.css");
-@import url("components/base/colors.css");
-@import url("components/base/variables.css");
-@import url("components/base/scheme-switcher.css");
-@import url("components/base/globals.css");
+@import url("components/colors/colors.css");
+@import url("components/schemes/light-dark-contrast.css");
+@import url("components/schemes/scheme-switcher.css");
+@import url("components/globals/globals.css");
 @import url("components/main.css");
 
 :root {

@@ -1,7 +1,7 @@
 
-.scheme-auto,
-.scheme-light,
-.scheme-dark {
+.autoSwitch,
+.switchLight,
+.darkSwitch {
     display: flex;
 
     column-gap: 0.25rem;
