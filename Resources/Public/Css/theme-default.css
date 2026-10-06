@@ -5,6 +5,7 @@
 @import url("components/colors/colors.css");
 @import url("components/schemes/light-dark-contrast.css");
 @import "components/globals/variables.css";
+@import "components/globals/switchers.css";
 @import url("components/schemes/scheme-switcher.css");
 @import url("components/globals/language-switcher.css");
 @import url("components/main.css");

@@ -1,70 +1,16 @@
-.scheme-switcher {
-    background: transparent;
-}
 .scheme-switcher__button {
-    display: flex;
-
-    column-gap: 0.25rem;
-    align-items: center;
-
-    padding: 0 0.5rem;
-    margin: 0;
 
     font-style: italic;
-
-    cursor: pointer;
-
-    background: transparent;
-    border: none;
-
-    &:is(:hover, :focus, [aria-expanded="true"]) {
-        color: Highlight;
-        background-color: HighlightText;
-    }
-
-    /* Arrow & Icon */
-    &::before,
-    &::after {
-        width: 1.25rem;
-        height: 1.25rem;
-        background-color: currentcolor;
-        mask-size: cover;
-    }
-
-    /* Arrow */
-    &::after {
-        content: "";
-        mask-image: url("../../../Icons/icon/chevron-down.svg");
-    }
-
-    @media screen and (width <= 62.49rem) {
-        > span {
-            display: none;
-        }
-    }
 }
 
 .scheme-switcher__dropdown {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-
     width: max-content;
 
     padding: 0.25rem 1rem;
-
-    background: Highlight;
-
-    color: HighlightText;
 }
 
 .scheme-switcher__list {
     width: max-content;
-
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
 }
 .scheme-switcher__item {
     margin-bottom: 0.15rem;
