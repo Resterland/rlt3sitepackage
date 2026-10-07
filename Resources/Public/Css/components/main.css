@@ -5,9 +5,6 @@ html {
     scroll-behavior: smooth;
 
     color-scheme: light dark;
-
-    --background: light-dark(var(--white), var(--black));
-    --text: light-dark(var(--black), var(--white));
 }
 body {
     margin: auto;
@@ -35,8 +32,9 @@ h1 {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background-color: Highlight;
-    color: HighlightText;
+
+    background-color: var(--background-C);
+    color: var(--text-C);
 }
 
 main {
@@ -51,8 +49,8 @@ main {
     padding: 0.5rem 0.75rem;
 }
 footer {
-    color: light-dark(DarkGreen, Lavender);
-    background-color: light-dark(Pink, SaddleBrown);
+    background-color: var(--background-C);
+    color: var(--text-C);
 }
 
 .navigation__logo {
@@ -70,7 +68,8 @@ footer {
     padding: 0 0.25em;
 }
 .navigation {
-    background-color: var(--color-background-primary);
+    background-color: var(--background-3);
+    color: var(--text-3);
 }
 img.middle {
     margin: 0;
@@ -83,7 +82,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--color-background-secondary);
+    border-top: 1px solid var(--background-3);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -160,8 +159,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--color-text-blue);
-    background-color: var(--color-background-coffee);
+    color: var(--background-3);
+    background-color: var(--text-3);
     a:hover {
         text-decoration: none;
     }
@@ -173,14 +172,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-text-blue);
+    color: var(--text-3);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-link-green);
-        background-color: var(--bg-hover);
+        color: var(--background-3);
+        background-color: var(--text-3);
     }
 
     /* Arrow & Icon */
@@ -213,7 +212,8 @@ footer {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background-color: var(--bg-hover);
+    color: var(--background-3);
+    background-color: var(--text-3);
 }
 /* Dropdown navbar END */
 
@@ -231,16 +231,16 @@ footer {
 form {
     display: inline-block;
     /* Form outline */
-    background: var(--color-background-coffee);
+    background: var(--background-3);
     padding: 0.25em;
-    border: 1px solid var(--color-text-aqua);
+    border: 1px solid var(--blue);
     border-radius: 0.5em;
 }
 .input-group {
     display: flex;
 }
 .search-button {
-    background: var(--color-background-coffee);
+    background: var(--background-3);
     &::after {
         content: "";
         mask-image: url("../../Icons/icon/chevron-down.svg");
@@ -357,8 +357,8 @@ form {
 
         margin-top: 0;
 
-        background-color: var(--color-background-primary);
-        border: 1px solid var(--color-border-primary);
+        background-color: var(--background-3);
+        border: 1px solid var(--red);
     }
 
     /* Panel */
@@ -452,7 +452,7 @@ form {
         border: none;
 
         &:hover {
-            background-color: var(--color-background-secondary);
+            background-color: var(--background-3);
         }
         &::before {
             display: block;
@@ -481,7 +481,7 @@ form {
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid var(--color-border-primary);
+        border-top: 1px solid var(--red);
     }
 
     /* Button */
@@ -521,6 +521,6 @@ form {
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--color-border-primary);
+        background-color: var(--background-3);
     }
 }
