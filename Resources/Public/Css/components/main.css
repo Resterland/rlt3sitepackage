@@ -22,10 +22,6 @@ h1 {
     text-align: center;
     font-family: var(--font-family-chewy);
 }
-/*h1::after {
-
-    content: "light";
-}*/
 
 .page-layout__header {
     display: grid;
@@ -47,8 +43,7 @@ footer {
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
         var(--orange),
-        var(--yellow),
-    );
+        var(--yellow));
 }
 .navigation__logo a {
     text-decoration: none;
@@ -71,7 +66,9 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--green);
+    border-top: 1px solid light-dark(
+        var(--green),
+        var(--yellow));
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
