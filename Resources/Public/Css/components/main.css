@@ -32,31 +32,22 @@ h1 {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-
-    background-color: var(--background-C);
-    color: var(--text-C);
 }
 
 main {
     padding: 0.5rem 0.75rem;
-    background-color: var(--background);
-    color: var(--text);
 }
 .aside-left,
 .aside-right {
-    background-color: var(--background-3);
-    color: var(--text-3);
     padding: 0.5rem 0.75rem;
 }
 footer {
-    background-color: var(--background-C);
-    color: var(--text-C);
 }
 
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        orange,
-        lightgoldenrodyellow);
+        var(--orange),
+        var(--yellow),
     );
 }
 .navigation__logo a {
@@ -68,8 +59,6 @@ footer {
     padding: 0 0.25em;
 }
 .navigation {
-    background-color: var(--background-3);
-    color: var(--text-3);
 }
 img.middle {
     margin: 0;
@@ -82,7 +71,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid var(--background-3);
+    border-top: 1px solid var(--green);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -159,8 +148,6 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--background-3);
-    background-color: var(--text-3);
     a:hover {
         text-decoration: none;
     }
@@ -172,14 +159,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--text-3);
+    color: light-dark(var(--yellow) var(--green));
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--background-3);
-        background-color: var(--text-3);
+        color: light-dark(var(--yellow) var(--green));
+        background-color: light-dark(var(--green) var(--yellow));
     }
 
     /* Arrow & Icon */
@@ -212,8 +199,8 @@ footer {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    color: var(--background-3);
-    background-color: var(--text-3);
+    color: light-dark(var(--yellow) var(--green));
+    background-color: light-dark(var(--green) var(--yellow));
 }
 /* Dropdown navbar END */
 
@@ -231,16 +218,16 @@ footer {
 form {
     display: inline-block;
     /* Form outline */
-    background: var(--background-3);
+    background: light-dark(var(--yellow) var(--green));
     padding: 0.25em;
-    border: 1px solid var(--blue);
+    border: 1px solid light-dark(var(--blue) var(--red));
     border-radius: 0.5em;
 }
 .input-group {
     display: flex;
 }
 .search-button {
-    background: var(--background-3);
+    background: light-dark(var(--yellow) var(--green));
     &::after {
         content: "";
         mask-image: url("../../Icons/icon/chevron-down.svg");
@@ -357,8 +344,7 @@ form {
 
         margin-top: 0;
 
-        background-color: var(--background-3);
-        border: 1px solid var(--red);
+        border: 1px solid light-dark(var(--red) var(--gray));
     }
 
     /* Panel */
@@ -452,7 +438,7 @@ form {
         border: none;
 
         &:hover {
-            background-color: var(--background-3);
+            background-color: light-dark(var(--yellow) var(--green));
         }
         &::before {
             display: block;
@@ -481,7 +467,7 @@ form {
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid var(--red);
+        border-top: 1px solid light-dark(var(--yellow) var(--green));
     }
 
     /* Button */
@@ -521,6 +507,6 @@ form {
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--background-3);
+        background-color: light-dark(var(--yellow) var(--green));
     }
 }

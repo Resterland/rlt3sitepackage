@@ -52,5 +52,7 @@
     --purple: oklch(0.42 0.25 328);
     --red: oklch(0.62 0.25 29);
     --yellow: oklch(0.96 0.25 109);
+
+    --accent: oklch(0.7 0.14 113);
 }
 

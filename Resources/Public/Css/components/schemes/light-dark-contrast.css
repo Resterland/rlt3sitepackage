@@ -2,16 +2,8 @@
 :root {
     /* light - dark */
 
-    --light: oklch(
-        from var(--base-color)
-        calc(l / .5)
-        c h
-    );
-    --dark: oklch(
-        from var(--base-color)
-        calc(l * .5)
-        c h
-    );
+    --light: oklch(from var(--base-color) calc(l + .4) c h);
+    --dark: oklch(from var(--base-color) calc(l - .4) c h);
 
     --light-C: oklch(
         from var(--base-color)
