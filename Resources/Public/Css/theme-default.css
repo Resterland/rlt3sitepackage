@@ -10,6 +10,7 @@
 @import "components/globals/language-switcher.css";
 @import "components/main.css";
 @import "components/globals/media-above-62rem.css";
+@import "components/globals/media-lower-62rem.css";
 
 :root {
     --base-color: var(--gray);
