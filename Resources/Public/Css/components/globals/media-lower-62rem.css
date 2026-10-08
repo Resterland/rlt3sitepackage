@@ -51,7 +51,7 @@
         border: none;
 
         &:hover {
-            background-color: light-dark(var(--yellow) var(--green));
+            background-color: var(--background-200);
         }
         &::before {
             display: block;
@@ -80,7 +80,7 @@
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid light-dark(var(--yellow) var(--green));
+        border-top: 1px solid var(--background-200);
     }
 
     /* Button */
@@ -120,6 +120,6 @@
         display: block;
         height: 1px;
         content: "";
-        background-color: light-dark(var(--yellow) var(--green));
+        background-color: var(--background-200);
     }
 }

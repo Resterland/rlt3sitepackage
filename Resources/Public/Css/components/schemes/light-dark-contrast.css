@@ -5,11 +5,11 @@
     --light-000: oklch(from var(--base-color) calc(l + 0.4) c h);
     --dark-000: oklch(from var(--base-color) calc(l - 0.4) c h);
 
-    --light-100: oklch(from var(--base-color) calc(l + 0.9) c h);
-    --dark-100: oklch(from var(--base-color) calc(l - 0.9) c h);
+    --light-100: oklch(from var(--base-color) calc(l + 0.7) c h);
+    --dark-100: oklch(from var(--base-color) calc(l - 0.7) c h);
 
-    --light-200: oklch(from var(--base-color) calc(l + 0.2) c h);
-    --dark-200: oklch(from var(--base-color) calc(l - 0.2) c h);
+    --light-200: oklch(from var(--base-color) calc(l + 0.25) c h);
+    --dark-200: oklch(from var(--base-color) calc(l - 0.25) c h);
 
     --background-000: light-dark(var(--light-000), var(--dark-000));
     --text-000: light-dark(var(--dark-000), var(--light-000));
