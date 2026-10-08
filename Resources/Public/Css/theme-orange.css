@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
-@import url("components/font/fonts.css");
-@import url("components/colors/colors.css");
-@import url("components/schemes/light-dark-contrast.css");
-@import url("components/schemes/scheme-switcher.css");
-@import url("components/globals/language-switcher.css");
-@import url("components/globals/globals.css");
-@import url("components/main.css");
+@import "components/globals/globals.css";
+@import "components/font/fonts.css";
+@import "components/colors/colors.css";
+@import "components/schemes/light-dark-contrast.css";
+@import "components/globals/variables.css";
+@import "components/globals/switchers.css";
+@import "components/schemes/scheme-switcher.css";
+@import "components/globals/language-switcher.css";
+@import "components/main.css";
+@import "components/globals/media-above-62rem.css";
+@import "components/globals/media-lower-62rem.css";
 
 :root {
     --base-color: var(--orange);
