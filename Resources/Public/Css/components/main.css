@@ -197,11 +197,14 @@ footer {
 }
 
 /* Panel */
+.menu__panel {
+    background: var(--background-200);
+}
 .menu__panel-title {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background-color: var(--background-200);
+    background: var(--text-200);
 }
 /* Dropdown navbar END */
 

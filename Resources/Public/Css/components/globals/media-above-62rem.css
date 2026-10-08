@@ -100,8 +100,7 @@
 
         margin-top: 0;
 
-        background-color: light-dark(var(--yellow) var(--purple));
-        border: 1px solid var(--background-100);
+        border: 1px solid var(--text-200);
     }
 
     /* Panel */
