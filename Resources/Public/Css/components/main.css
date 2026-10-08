@@ -3,7 +3,6 @@ html {
     width: 100%;
     overflow-wrap: break-word;
     scroll-behavior: smooth;
-
     color-scheme: light dark;
 }
 body {
@@ -12,8 +11,8 @@ body {
     line-height: var(--font-line-normal);
     font-family: var(--font-family-sans);
 
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--background-000);
+    color: var(--text-000);
 }
 
 h1 {
@@ -29,8 +28,8 @@ h1 {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background-color: var(--text);
-    color: var(--background);
+    background-color: var(--background-100);
+    color: var(--text-100);
 }
 
 main {
@@ -44,9 +43,7 @@ footer {
 }
 
 .navigation__logo {
-    text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--orange),
-        var(--yellow));
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-000);
 }
 .navigation__logo a {
     text-decoration: none;

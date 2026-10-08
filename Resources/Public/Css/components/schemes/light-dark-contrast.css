@@ -2,37 +2,21 @@
 :root {
     /* light - dark */
 
-    --light: oklch(from var(--base-color) calc(l + .4) c h);
-    --dark: oklch(from var(--base-color) calc(l - .4) c h);
+    --light-000: oklch(from var(--base-color) calc(l + 0.4) c h);
+    --dark-000: oklch(from var(--base-color) calc(l - 0.4) c h);
 
-    --light-C: oklch(
-        from var(--base-color)
-        calc(l + 0.05)
-        c h
-    );
-    --dark-C: oklch(
-        from var(--base-color)
-        calc(l - 0.25)
-        c h
-    );
+    --light-100: oklch(from var(--base-color) calc(l + 0.9) c h);
+    --dark-100: oklch(from var(--base-color) calc(l - 0.9) c h);
 
-    --light-3: oklch(
-        from var(--base-color)
-        calc(l + 0.01)
-        c h
-    );
-    --dark-3: oklch(
-        from var(--base-color)
-        calc(l - 0.35)
-        c h
-    );
+    --light-200: oklch(from var(--base-color) calc(l + 0.2) c h);
+    --dark-200: oklch(from var(--base-color) calc(l - 0.2) c h);
 
-    --background: light-dark(var(--light), var(--dark));
-    --text: light-dark(var(--dark), var(--light));
+    --background-000: light-dark(var(--light-000), var(--dark-000));
+    --text-000: light-dark(var(--dark-000), var(--light-000));
 
-    --background-C: light-dark(var(--light-C), var(--dark-C));
-    --text-C: light-dark(var(--dark-C), var(--light-C));
+    --background-100: light-dark(var(--light-100), var(--dark-100));
+    --text-100: light-dark(var(--dark-100), var(--light-100));
 
-    --background-3: light-dark(var(--light-3), var(--dark-3));
-    --text-3: light-dark(var(--dark-3), var(--light-3));
+    --background-200: light-dark(var(--light-200), var(--dark-200));
+    --text-200: light-dark(var(--dark-200), var(--light-200));
 }
