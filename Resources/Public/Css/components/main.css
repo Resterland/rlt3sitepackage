@@ -56,8 +56,7 @@ footer {
 .breadcrumb-bar {
     padding: 0 0.25em;
 }
-.navigation {
-}
+
 img.middle {
     margin: 0;
     width: calc(var(--font-size) + 0.35rem);
