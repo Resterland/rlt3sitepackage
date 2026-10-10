@@ -28,13 +28,6 @@
 @import url("scrollbar.css");
 @import url("area.css");*/
 
-/* Basic Colors */
-:root {
-    --base-lightness:0.9;
-    --base-chroma:.01;
-    --base-hue:266;
-}
-
 /* Black - White - Greyscale */
 :root {
     --white:oklch(1 0 0);
@@ -54,5 +47,21 @@
     --yellow: oklch(0.96 0.25 109);
 
     --accent: oklch(0.7 0.14 113);
+}
+
+:root {
+    --color-primary-75: #78BCFF;
+    --color-primary-100: #0068CE;
+
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #EBF0F5;
+    --color-neutral-20: #D9E2EC;
+    --color-neutral-30: #B7C2D0;
+    --color-neutral-40: #9AA9BC;
+    --color-neutral-50: #8E9BAB;
+    --color-neutral-60: #677688;
+    --color-neutral-70: #46576C;
+    --color-neutral-80: #2D3A49;
+    --color-neutral-90: #011022;
 }
 

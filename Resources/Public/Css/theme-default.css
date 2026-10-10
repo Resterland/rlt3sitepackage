@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-/*
 @import "components/globals/globals.css";
 @import "components/font/fonts.css";
 @import "components/colors/colors.css";
 @import "components/schemes/light-dark-contrast.css";
+
+/*
 @import "components/globals/variables.css";
 @import "components/globals/switchers.css";
 @import "components/schemes/scheme-switcher.css";
