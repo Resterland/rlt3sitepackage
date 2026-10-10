@@ -4,13 +4,13 @@
 @import "components/font/fonts.css";
 @import "components/colors/colors.css";
 @import "components/schemes/light-dark-contrast.css";
+@import "components/main.css";
 
 /*
 @import "components/globals/variables.css";
 @import "components/globals/switchers.css";
 @import "components/schemes/scheme-switcher.css";
 @import "components/globals/language-switcher.css";
-@import "components/main.css";
 @import "components/globals/media-above-62rem.css";
 @import "components/globals/media-lower-62rem.css";
 */
