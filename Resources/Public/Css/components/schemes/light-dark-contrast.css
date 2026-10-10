@@ -25,5 +25,5 @@
     --text-200: light-dark(var(--dark-200), var(--light-200));
 
     --link-color: light-dark(var(--dark-link), var(--light--link));
-    --link-color-hover: light-dark(oklch(from var(--blue) calc(l - 0.15) c h), oklch(from var(--blue) calc(l + 0.35) c h));
+    --link-color-hover: oklch(from var(--blue) calc(l + 0.15) c h);
 }
