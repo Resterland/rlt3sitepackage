@@ -40,7 +40,7 @@
 				<source>Theme Settings</source>
 			</trans-unit>
 			<trans-unit id="categories.description.rlt3sitepackage.theme">
-				<source>Project wide theme settings, like navigation, layout style or other appearance can be adjusted here.</source>
+				<source>Every project has a different theme. Choose it here.</source>
 			</trans-unit>
 			<trans-unit id="categories.rlt3sitepackage.navigation">
 				<source>Navigation</source>
@@ -76,30 +76,29 @@
 			<trans-unit id="settings.description.theme.colorScheme">
 				<source>Select the main color scheme</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-default">
-				<source>Default Theme (Greyscale)</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-resterland">
+				<source>Default Theme (Resterland)</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-blue">
-				<source>Blue</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-roesten">
+				<source>Roaster</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-green">
-				<source>Green</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-railwayspotter">
+				<source>Railway Spotter</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-red">
-				<source>Red</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-vptmob">
+				<source>VPT MOB</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-orange">
-				<source>Orange</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-caramel-cream">
+				<source>caramel-cream</source>
 			</trans-unit>
-			<trans-unit id="settings.theme.colorScheme.enum.theme-yellow">
-				<source>Yellow</source>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-ocean-breeze">
+				<source>ocean-breeze</source>
+			</trans-unit>
+			<trans-unit id="settings.theme.colorScheme.enum.theme-forest-mist">
+				<source>forest-mist</source>
 			</trans-unit>
 			<trans-unit id="settings.theme.colorScheme.enum.theme-purple">
-				<source>Purple</source>
-			</trans-unit>
-
-			<trans-unit id="settings.css.primary">
-				<source>Primary Color</source>
+				<source>violet-velvet</source>
 			</trans-unit>
 		</body>
 	</file>

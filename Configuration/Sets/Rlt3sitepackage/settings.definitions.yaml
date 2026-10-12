@@ -96,23 +96,18 @@ settings:
 
   # Theme - Color Scheme
   theme.colorScheme:
-    default: theme-default
+    default: theme-resterland
     type: string
     enum:
-      - theme-default
-      - theme-blue
-      - theme-green
-      - theme-red
-      - theme-orange
-      - theme-yellow
-      - theme-purple
+      - theme-resterland
+      - theme-roesten
+      - theme-railwayspotter
+      - theme-vptmob
+      - theme-caramel-cream
+      - theme-ocean-breeze
+      - theme-forest-mist
+      - theme-violet-velvet
     category: rlt3sitepackage.style
-
-  # Theme - Colors
-  css.primary:
-    default: '#b30027'
-    type: string
-    category: rlt3sitepackage.css-variables
 
   ### Header
   # Logo
