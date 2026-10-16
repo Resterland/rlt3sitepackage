@@ -1,8 +1,8 @@
 .theme-roesten {
     --brand-color: var(--maroon);
 
-    --accent: oklch(from var(--brand-color) 0.87 0.01 h);
+    --accent: light-dark(oklch(from var(--brand-color) 0.87 c h), oklch(from var(--brand-color) 0.1 c h));
 
-    --text: oklch(from var(--brand-color) 0.17 0.06 h);
+    --text: light-dark(oklch(from var(--brand-color) 0.17 c h), oklch(from var(--brand-color) 0.99 c h));
 }
 
