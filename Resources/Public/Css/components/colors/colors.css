@@ -60,7 +60,7 @@
     --brown: oklch(0.63 0.13 70);
     --orange: oklch(0.79 0.17 70);
 
-    --accent: oklch(0.7 0.14 113);
+    --accent: oklch(from var(--black-alpha-75) 0.87 0.06 h);
 }
 
 :root {
