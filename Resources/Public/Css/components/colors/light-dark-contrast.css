@@ -1,17 +1,17 @@
 /* variables */
 :root {
     /* contrast */
-    --light-000: oklch(from var(--base-color) calc(l + 0.45) c h);
-    --dark-000: oklch(from var(--base-color) calc(l - 0.25) c h);
+    --light-000: oklch(from var(--brand-color) calc(l + 0.45) c h);
+    --dark-000: oklch(from var(--brand-color) calc(l - 0.25) c h);
 
     --light--link: oklch(from var(--blue) calc(l + 0.45) c h);
     --dark-link: oklch(from var(--blue) calc(l - 0.25) c h);
 
-    --light-100: oklch(from var(--base-color) calc(l + 0.7) c h);
-    --dark-100: oklch(from var(--base-color) calc(l - 0.7) c h);
+    --light-100: oklch(from var(--brand-color) calc(l + 0.7) c h);
+    --dark-100: oklch(from var(--brand-color) calc(l - 0.7) c h);
 
-    --light-200: oklch(from var(--base-color) calc(l + 0.25) c h);
-    --dark-200: oklch(from var(--base-color) calc(l - 0.25) c h);
+    --light-200: oklch(from var(--brand-color) calc(l + 0.25) c h);
+    --dark-200: oklch(from var(--brand-color) calc(l - 0.25) c h);
 }
 :root {
     /* light - dark */

@@ -67,28 +67,12 @@
     --accent: light-dark(oklch(from var(--brand-color) 0.87 c h), oklch(from var(--brand-color) 0.1 c h));
     --text: light-dark(oklch(from var(--brand-color) 0.17 c h), oklch(from var(--brand-color) 0.99 c h));
 
-    --color-primary: var(--black-alpha-15);
-    --color-secundary: var(--gray);
+    --color-info: light-dark(oklch(from var(--navy) 0.87 c h), oklch(from var(--navy) 0.1 c h));
+    --color-success: light-dark(oklch(from var(--green) 0.87 c h), oklch(from var(--green) 0.1 c h));
+    --color-warning: light-dark(oklch(from var(--yellow) 0.87 c h), oklch(from var(--yellow) 0.1 c h));
+    --color-error: light-dark(oklch(from var(--red) 0.87 c h), oklch(from var(--red) 0.1 c h));
 
-    --color-info: #0E55FF;
-    --color-info-soft: #CFDEFF;
-    --color-success: #378200;
-    --color-success-soft: #F7FFF1;
-    --color-warning: #846C00;
-    --color-warning-soft: #FFF8D8;
-    --color-error: #D70000;
-    --color-error-soft: #FFE9E9;
-
-    --color-neutral-0: #FFFFFF;
-    --color-neutral-10: #EBF0F5;
-    --color-neutral-20: #D9E2EC;
-    --color-neutral-30: #B7C2D0;
-    --color-neutral-40: #9AA9BC;
-    --color-neutral-50: #8E9BAB;
-    --color-neutral-60: #677688;
-    --color-neutral-70: #46576C;
-    --color-neutral-80: #2D3A49;
-    --color-neutral-90: #011022;
+    --color-neutral: light-dark(oklch(from var(--gray) 0.87 c h), oklch(from var(--gray) 0.1 c h));
 }
 
 
