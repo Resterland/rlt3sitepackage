@@ -3,8 +3,8 @@
 @import "components/globals/globals.css";
 @import "components/font/fonts.css";
 @import "components/globals/variables.css";
-@import "components/colors/colors.css";
 @import "components/themes/themes.css";
+@import "components/colors/colors.css";
 @import "components/globals/mediaMobileFirst.css";
 
 /*
