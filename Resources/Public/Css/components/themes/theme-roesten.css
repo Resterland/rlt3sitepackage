@@ -1,4 +1,6 @@
-:root {
-    --base-color: var(--maroon);
+.theme-roesten {
+    :root {
+        --base-color: var(--maroon);
+    }
 }
 

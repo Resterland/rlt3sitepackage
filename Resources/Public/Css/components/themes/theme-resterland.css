@@ -1,4 +1,6 @@
-:root {
-    --base-color: var(--blue);
+.theme-resterland {
+    :root {
+        --base-color: var(--blue);
+    }
 }
 
