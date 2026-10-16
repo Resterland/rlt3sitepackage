@@ -96,17 +96,18 @@ settings:
 
   # Theme - Color Scheme
   theme.colorScheme:
-    default: theme-resterland
+    default: theme-default
     type: string
     enum:
+      - theme-caramel-cream
+      - theme-default
+      - theme-forest-mist
+      - theme-ocean-breeze
+      - theme-railwayspotter
       - theme-resterland
       - theme-roesten
-      - theme-railwayspotter
-      - theme-vptmob
-      - theme-caramel-cream
-      - theme-ocean-breeze
-      - theme-forest-mist
       - theme-violet-velvet
+      - theme-vptmob
     category: rlt3sitepackage.style
 
   ### Header
