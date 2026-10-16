@@ -1,5 +1,3 @@
 .theme-vptmob {
-    :root {
-        --base-color: var(--red);
-    }
+    --base-color: var(--red);
 }

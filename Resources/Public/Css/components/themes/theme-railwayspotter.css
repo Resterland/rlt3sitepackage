@@ -1,5 +1,3 @@
 .theme-railwayspotter {
-    :root {
-        --base-color: var(--green);
-    }
+    --base-color: var(--green);
 }
