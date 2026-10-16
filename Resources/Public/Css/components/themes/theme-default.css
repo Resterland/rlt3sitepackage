@@ -1,3 +1,5 @@
+:root {
+    --brand-color: var(--black);
+}
 .theme-default {
-    --brand-color: var(--black-alpha-75);
 }

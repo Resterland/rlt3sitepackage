@@ -1,4 +1,7 @@
-.theme-roesten {
+:root {
     --brand-color: var(--maroon);
+}
+
+.theme-roesten {
 }
 
