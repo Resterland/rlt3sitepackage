@@ -4,9 +4,9 @@
 @import "components/font/fonts.css";
 @import "components/globals/variables.css";
 @import "components/colors/colors.css";
-@import "components/themes/themes.css";
 
 /*
+@import "components/themes/themes.css";
 @import "components/switcher/light-dark-contrast.css";
 @import "components/mediaMobileFirst.css";
 @import "components/globals/switchers.css";
