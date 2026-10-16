@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "../globals/globals.css";
+@import "../font/fonts.css";
+@import "../colors/colors.css";
+@import "../colors/light-dark-contrast.css";
+@import "../globals/variables.css";
+@import "../switcher/switchers.css";
+@import "../switcher/scheme-switcher.css";
+@import "../switcher/language-switcher.css";
+@import "../globals/mediaMobileFirst.css";
+@import "../globals/mediaLarge.css";
+@import "../globals/mediaMedium.css";
+
+:root {
+    --base-color: var(--green);
+}

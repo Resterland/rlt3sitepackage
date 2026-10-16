@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+:root {
+    --base-color: var(--gray);
+}

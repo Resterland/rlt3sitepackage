@@ -30,28 +30,52 @@
 
 /* Black - White - Greyscale */
 :root {
-    --white:oklch(1 0 0);
-    --black:oklch(0 0 0);
+    --white:oklch(1 0 0);  /* #ffffff */
+    --black:oklch(0 0 0);  /* #000000 */
+    --gray: oklch(0.63 0 0);
     --black-alpha-15: oklch(0 0 0 / 0.15);
     --black-alpha-75: oklch(0 0 0 / 0.75);
 }
 
-/* Red - Yellow - Green - Blue - Purple */
+/* Base Colors */
 :root {
-    --gray: oklch(0.5 0 0);
-    --blue: oklch(0.45 0.25 264);
-    --green: oklch(0.52 0.25 142);
-    --orange: oklch(0.79 0.25 70);
-    --purple: oklch(0.42 0.25 328);
-    --red: oklch(0.62 0.25 29);
-    --yellow: oklch(0.96 0.25 109);
+    --maroon: oklch(0.4 0.25 30);
+    --red: oklch(0.63 0.25 30);
+
+    --purple: oklch(0.43 0.19 329);
+    --fuchsia: oklch(0.7 0.31 329);
+
+    --green: oklch(0.53 0.17 142);
+    --lime: oklch(0.86 0.28 142);
+
+    --olive: oklch(0.58 0.2 110);
+    --yellow: oklch(0.95 0.2 110);
+
+    --navy: oklch(0.42 0.21 264);
+    --blue: oklch(0.48 0.25 264);
+
+    --teal: oklch(0.59 0.1 193);
+    --aqua: oklch(0.90 0.15 193);
+
+    --brown: oklch(0.63 0.13 70);
+    --orange: oklch(0.79 0.17 70);
 
     --accent: oklch(0.7 0.14 113);
 }
 
 :root {
-    --color-primary-75: #78BCFF;
-    --color-primary-100: #0068CE;
+    /* Colors */
+    --color-primary: var(--brown);
+    --color-secundary: var(--orange);
+
+    --color-info: #0E55FF;
+    --color-info-soft: #CFDEFF;
+    --color-success: #378200;
+    --color-success-soft: #F7FFF1;
+    --color-warning: #846C00;
+    --color-warning-soft: #FFF8D8;
+    --color-error: #D70000;
+    --color-error-soft: #FFE9E9;
 
     --color-neutral-0: #FFFFFF;
     --color-neutral-10: #EBF0F5;
@@ -65,35 +89,4 @@
     --color-neutral-90: #011022;
 }
 
-.theme-forest-mist {
-    --color-primary-75: #86B6A6;
-    --color-primary-100: #266D55;
-
-    --color-neutral-0: #FFFFFF;
-    --color-neutral-10: #EDEBE9;
-    --color-neutral-20: #E3DEDA;
-    --color-neutral-30: #CCCAC8;
-    --color-neutral-40: #B3AEAA;
-    --color-neutral-50: #9F9893;
-    --color-neutral-60: #7B746F;
-    --color-neutral-70: #51463F;
-    --color-neutral-80: #443B35;
-    --color-neutral-90: #220E01;
-}
-
-.theme-violet-velvet {
-    --color-primary-75: #D0B4FF;
-    --color-primary-100: #6E1AFF;
-
-    --color-neutral-0: #FFFFFF;
-    --color-neutral-10: #F0EFF2;
-    --color-neutral-20: #D7D5DB;
-    --color-neutral-30: #CAC8CC;
-    --color-neutral-40: #AEAAB3;
-    --color-neutral-50: #97939F;
-    --color-neutral-60: #736F7B;
-    --color-neutral-70: #463F51;
-    --color-neutral-80: #3A3544;
-    --color-neutral-90: #0D0122;
-}
 
