@@ -1,7 +1,8 @@
-:root {
-    --brand-color: var(--maroon);
-}
-
 .theme-roesten {
+    --brand-color: var(--maroon);
+
+    --accent: oklch(from var(--brand-color) 0.87 0.01 h);
+
+    --text: oklch(from var(--brand-color) 0.17 0.06 h);
 }
 
