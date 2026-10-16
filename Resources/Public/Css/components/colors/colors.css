@@ -65,8 +65,8 @@
 
 :root {
     /* Colors */
-    --color-primary: var(--brown);
-    --color-secundary: var(--orange);
+    --color-primary: var(--black-alpha-15);
+    --color-secundary: var(--gray);
 
     --color-info: #0E55FF;
     --color-info-soft: #CFDEFF;
