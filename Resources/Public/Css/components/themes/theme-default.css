@@ -1,5 +1,3 @@
 .theme-default {
-    :root {
-        --base-color: var(--gray);
-    }
+    --base-color: var(--gray);
 }
