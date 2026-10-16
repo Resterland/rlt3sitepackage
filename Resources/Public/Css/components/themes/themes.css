@@ -1,4 +1,3 @@
-@import "theme-default.css";
 @import "theme-caramel-cream.css";
 @import "theme-forest-mist.css";
 @import "theme-ocean-breeze.css";
@@ -9,5 +8,5 @@
 @import "theme-vptmob.css";
 
 /*
-
+@import "theme-default.css";
 */
