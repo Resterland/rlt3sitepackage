@@ -15,6 +15,12 @@
     --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
 
 }
+
+:root {
+    /* Colors */
+    --accent: light-dark(var(--light-L-95), var(--dark-L-10));
+    --text: light-dark(var(--dark-L-17),  var(--light-L-99));
+}
 /*
     --background-000: light-dark(var(--light-000), var(--dark-000));
     --text-000: light-dark(var(--dark-000), var(--light-000));
