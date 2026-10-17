@@ -10,8 +10,5 @@
 @import "components/switcher/scheme-switcher.css";
 @import "components/switcher/language-switcher.css";
 @import "components/globals/mediaMobileFirst.css";
-
-/*
-@import "components/globals/mediaLarge.css";
 @import "components/globals/mediaMedium.css";
-*/
+@import "components/globals/mediaLarge.css";
