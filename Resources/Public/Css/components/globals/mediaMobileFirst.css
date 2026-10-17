@@ -60,7 +60,7 @@ footer {
 
 img.middle {
     margin: 0;
-    width: calc(var(--font-size) + 0.35rem);
+    width: calc(var(--font-size) + 0.75rem);
     padding-right: 0.25rem;
     vertical-align: middle;
     fill: currentColor;

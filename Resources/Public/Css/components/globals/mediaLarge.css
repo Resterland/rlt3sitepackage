@@ -40,6 +40,14 @@
         padding-left: 0.5rem;
         justify-self: start;
     }
+
+    img.middle {
+        margin: 0;
+        width: calc(var(--font-size) + 1.25rem);
+        padding-right: 0.25rem;
+        vertical-align: middle;
+        fill: currentColor;
+    }
     /* Popup */
     .navigation__popup {
         display: contents;
