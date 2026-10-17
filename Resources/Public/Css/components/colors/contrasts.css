@@ -15,37 +15,18 @@
     --dark-L-17: 0.17 c h;
 
     /* Primitive Colors */
-    --color-primitive-primary:
-        light-dark(
-            oklch(
-                from var(--blue) var(--light-L-90)),
-                from var(--blue) var(--dark-L-12));
-    --color-primitive-secundary:
-        light-dark(
-            oklch(
-                from var(--aqua) var(--light-L-90)),
-                from var(--aqua) var(--dark-L-12));
-    --color-primitive-neutral:
-        light-dark(
-            oklch(
-                from var(--gray) var(--light-L-90)),
-                from var(--gray) var(--dark-L-12));
-    --color-primitive-white:
-        light-dark(var(--white), var(--black));
+    --color-primitive-primary: light-dark(oklch(from var(--blue) var(--light-L-90)),from var(--blue) var(--dark-L-12));
+    --color-primitive-secundary: light-dark(oklch(from var(--aqua) var(--light-L-90)),from var(--aqua) var(--dark-L-12));
+    --color-primitive-neutral:light-dark(oklch(from var(--gray) var(--light-L-90)),from var(--gray) var(--dark-L-12));
+    --color-primitive-white:light-dark(var(--white), var(--black));
 
 }
 
 :root {
     /* Colors */
 
-    --accent: light-dark(
-        oklch(
-            from var(--brand-color) var(--light-L-95)),
-            from var(--brand-color) var(--dark-L-10));
-    --color-text: light-dark(
-        oklch(
-            from var(--brand-color) var(--dark-L-17)),
-        from var(--brand-color) var(--light-L-99));
+    --accent: light-dark(oklch(from var(--brand-color) var(--light-L-95)),from var(--brand-color) var(--dark-L-10));
+    --color-text: light-dark(oklch(from var(--brand-color) var(--dark-L-17)),from var(--brand-color) var(--light-L-99));
 
     /* Semantic Colors */
     --color-text-default: var(--color-primitive-neutral);
