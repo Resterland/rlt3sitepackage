@@ -12,7 +12,7 @@ body {
     font-family: var(--font-family-sans);
 
     background: var(--accent);
-    color: var(--text);
+    color: var(--color-text);
 }
 
 h1 {
@@ -28,8 +28,8 @@ h1 {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background: var(--background-000);
-    color: var(--text-000);
+    background: var(--color-text);
+    color: var(--accent);
 }
 
 main {
@@ -148,8 +148,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--text-200);
-    background-color: var(--background-200);
+    color: var(--color-primitive-secundary);
+    background-color: var(--color-primitive-neutral);
     a:hover {
         text-decoration: none;
     }
@@ -161,14 +161,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--text-100);
+    color: var(--color-primitive-neutral);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--text-000);
-        background-color: var(--background-000);
+        color: var(--color-primitive-secundary);
+        background-color: var(--color-primitive-neutral);
     }
 
     /* Arrow & Icon */
@@ -198,13 +198,13 @@ footer {
 
 /* Panel */
 .menu__panel {
-    background: var(--background-200);
+    background: var(--color-primitive-neutral);
 }
 .menu__panel-title {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background: var(--text-200);
+    background: var(--color-text);
 }
 /* Dropdown navbar END */
 

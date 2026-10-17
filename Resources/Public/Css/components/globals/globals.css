@@ -24,12 +24,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--color-text-default);
 }
 
 a:hover,
 a:active {
-    color: var(--link-color-hover);
+    color: var(--color-interactive-default);
 }
 
 p {
