@@ -30,9 +30,63 @@
     <f:asset.script identifier="scheme-toggle" src="EXT:rlt3sitepackage/Resources/Public/JavaScript/hue-slider.js" />
 </f:comment>
 
-<f:asset.css identifier="project-style" href="EXT:rlt3sitepackage/Resources/Public/Css/style.css"
-             priority="1" />
+<f:if condition="{settings.theme.colorScheme} == {theme-caramel-cream}">
+    <f:then>
+        <f:asset.css
+            identifier="theme-caramel-cream"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-caramel-cream.css"
+            priority="1" />
+    </f:then>
+    <f:else if="{settings.theme.colorScheme} == {theme-forest-mist}">
+        <f:asset.css
+            identifier="theme-forest-mist"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-forest-mist.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-ocean-breeze}">
+        <f:asset.css
+            identifier="theme-ocean-breeze"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-ocean-breeze.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-railwayspotter}">
+        <f:asset.css
+            identifier="theme-railwayspotter"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-railwayspotter.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-resterland}">
+        <f:asset.css
+            identifier="theme-resterland"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-resterland.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-roesten}">
+        <f:asset.css
+            identifier="theme-roesten"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-roesten.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-violet-velvet}">
+        <f:asset.css
+            identifier="theme-violet-velvet"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-violet-velvet.css"
+            priority="1" />
+    </f:else>
+    <f:else if="{settings.theme.colorScheme} == {theme-vptmob}">
+        <f:asset.css
+            identifier="theme-vptmob"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/components/themes/theme-vptmob.css"
+            priority="1" />
+    </f:else>
+    <f:else>
+        <f:asset.css
+            identifier="default-style"
+            href="EXT:rlt3sitepackage/Resources/Public/Css/style.css"
+            priority="1" />
+    </f:else>
 
+</f:if>
 
 <f:page.meta property="apple-mobile-web-app-capable" replace="true">{settings.meta.apple-mobile-web-app-capable}</f:page.meta>
 <f:page.meta property="google">notranslate</f:page.meta>

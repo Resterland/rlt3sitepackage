@@ -1,20 +1,21 @@
-/* variables */
+/* light - dark contrasts */
+/* L-value (percentage) = perceived lightness */
 :root {
-    /* contrast */
-    --light-000: oklch(from var(--brand-color) calc(l + 0.45) c h);
-    --dark-000: oklch(from var(--brand-color) calc(l - 0.25) c h);
-
-    --light--link: oklch(from var(--blue) calc(l + 0.45) c h);
-    --dark-link: oklch(from var(--blue) calc(l - 0.25) c h);
-
-    --light-100: oklch(from var(--brand-color) calc(l + 0.7) c h);
-    --dark-100: oklch(from var(--brand-color) calc(l - 0.7) c h);
-
-    --light-200: oklch(from var(--brand-color) calc(l + 0.25) c h);
-    --dark-200: oklch(from var(--brand-color) calc(l - 0.25) c h);
+    /* light variables */
+    --light-L-85: oklch(from var(--brand-color) 0.85 c h);
+    --light-L-90: oklch(from var(--brand-color) 0.9 c h);
+    --light-L-95: oklch(from var(--brand-color) 0.95 c h);
+    --light-L-99: oklch(from var(--brand-color) 0.99 c h);
 }
 :root {
-    /* light - dark */
+    /* dark variables */
+    --dark-L-10: oklch(from var(--brand-color) 0.1 c h);
+    --dark-L-12: oklch(from var(--brand-color) 0.12 c h);
+    --dark-L-15: oklch(from var(--brand-color) 0.15 c h);
+    --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
+
+}
+/*
     --background-000: light-dark(var(--light-000), var(--dark-000));
     --text-000: light-dark(var(--dark-000), var(--light-000));
 
@@ -26,4 +27,19 @@
 
     --link-color: light-dark(var(--dark-link), var(--light--link));
     --link-color-hover: oklch(from var(--blue) calc(l + 0.15) c h);
-}
+    ### light variables calc
+    --light-000: oklch(from var(--brand-color) calc(l + 0.45) c h);
+
+    --light--link: oklch(from var(--blue) calc(l + 0.45) c h);
+
+    --light-100: oklch(from var(--brand-color) calc(l + 0.7) c h);
+
+    --light-200: oklch(from var(--brand-color) calc(l + 0.25) c h);
+
+    ### dark variables calc
+    --dark-000: oklch(from var(--brand-color) calc(l - 0.25) c h);
+    --dark-link: oklch(from var(--blue) calc(l - 0.25) c h);
+    --dark-200: oklch(from var(--brand-color) calc(l - 0.25) c h);
+    --dark-100: oklch(from var(--brand-color) calc(l - 0.7) c h);
+
+ */

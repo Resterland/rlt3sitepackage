@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "themes.css";
+
 .theme-caramel-cream {
     --color-primary-75: #DD997C;
     --color-primary-100: #B45023;

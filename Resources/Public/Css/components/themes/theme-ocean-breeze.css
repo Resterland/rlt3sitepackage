@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "themes.css";
+
 .theme-ocean-breeze {
     --color-primary: var(--blue);
     --color-secundary: var(--aqua);

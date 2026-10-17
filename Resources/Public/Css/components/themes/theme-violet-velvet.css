@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "themes.css";
+
 .theme-violet-velvet {
     --color-primary-75: #D0B4FF;
     --color-primary-100: #6E1AFF;

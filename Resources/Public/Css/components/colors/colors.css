@@ -64,8 +64,8 @@
 :root {
     /* Colors */
     --brand-color: var(--black);
-    --accent: light-dark(oklch(from var(--brand-color) 0.87 c h), oklch(from var(--brand-color) 0.1 c h));
-    --text: light-dark(oklch(from var(--brand-color) 0.17 c h), oklch(from var(--brand-color) 0.99 c h));
+    --accent: light-dark(var(--light-L-95), var(--dark-L-10));
+    --text: light-dark(var(--dark-L-17),  var(--light-L-99));
 
     --color-info: light-dark(oklch(from var(--navy) 0.87 c h), oklch(from var(--navy) 0.1 c h));
     --color-success: light-dark(oklch(from var(--green) 0.87 c h), oklch(from var(--green) 0.1 c h));

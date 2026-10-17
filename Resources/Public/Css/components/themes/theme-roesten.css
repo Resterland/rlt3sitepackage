@@ -1,6 +1,15 @@
+@charset "UTF-8";
+@import "themes.css";
+
+:root {
+    --brand-color: var(--maroon);
+}
+
+/*
 .theme-roesten {
     --brand-color: var(--maroon);
     --accent: light-dark(oklch(from var(--brand-color) 0.87 c h), oklch(from var(--brand-color) 0.1 c h));
     --text: light-dark(oklch(from var(--brand-color) 0.17 c h), oklch(from var(--brand-color) 0.99 c h));
 }
 
+*/

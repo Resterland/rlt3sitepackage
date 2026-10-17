@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "themes.css";
+
 .theme-forest-mist {
     --color-primary-75: #86B6A6;
     --color-primary-100: #266D55;
