@@ -7,19 +7,45 @@ html {
 }
 body {
     margin: auto;
-    font-size: var(--font-size);
-    line-height: var(--font-line-normal);
+    font-size: var(--fluid-xs);
+    line-height: var(--fluid-leading-body);
     font-family: var(--font-family-sans);
 
     background: var(--accent);
     color: var(--color-text);
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+    line-height: var(--fluid-leading-heading);
+}
+
+h1 { font-size: var(--fluid-5xl); }
+h2 { font-size: var(--fluid-4xl); }
+h3 { font-size: var(--fluid-3xl); }
+h4 { font-size: var(--fluid-2xl); }
+h5 { font-size: var(--fluid-xl); }
+h6 { font-size: var(--fluid-lg); }
+
+h1.navigation__logo {
     letter-spacing: 0.015em;
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
     font-family: var(--font-family-chewy);
+}
+
+p {
+
+}
+
+a {
+    color: var(--color-text-default);
+}
+
+a:hover,
+a:active {
+    color: var(--color-interactive-default);
 }
 
 .page-layout__header {

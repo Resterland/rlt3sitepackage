@@ -1,11 +1,15 @@
 /* light - dark contrasts */
-/* L-value (percentage) = perceived lightness */
+/* OKLCH L-value (percentage) = perceived lightness */
 :root {
     /* light variables */
     --light-L-85: oklch(from var(--brand-color) 0.85 c h);
     --light-L-90: oklch(from var(--brand-color) 0.9 c h);
     --light-L-95: oklch(from var(--brand-color) 0.95 c h);
     --light-L-99: oklch(from var(--brand-color) 0.99 c h);
+
+    --light-primary: oklch(from var(--brand-color) 0.85 c h);
+    --light-secundary: oklch(from var(--brand-color) 0.85 c h);
+    --light-neutral: oklch(from var(--gray) 0.85 c h);
 }
 :root {
     /* dark variables */
@@ -15,10 +19,10 @@
     --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
 
     /* Primitive Colors */
-    --color-primitive-primary:
+    --color-primary:
         light-dark(oklch(from var(--blue) 0.9 c h),
         oklch(from var(--blue) 0.12 c h));
-    --color-primitive-secundary:
+    --color-secundary:
         light-dark(oklch(from var(--aqua) 0.9 c h),
         oklch(from var(--aqua) 0.12 c h));
     --color-primitive-neutral:
