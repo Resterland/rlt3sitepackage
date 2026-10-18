@@ -51,7 +51,7 @@ a:active {
 .page-layout__header,
 .content-wrapper,
 .page-footer {
-    width: var(--layout-side-padding);
+    padding-inline: var(--layout-side-padding);
 }
 
 .page-layout__header {
