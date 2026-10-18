@@ -27,8 +27,7 @@ h5 { font-size: var(--font-size-h5); }
 h6 { font-size: var(--font-size-h6); }
 
 h1.navigation__logo {
-    letter-spacing: var(--letter-spacing-tight);
-    font-size: clamp(1.4rem, 2.5vw, 2.0rem);
+    letter-spacing: var(--letter-spacing);
     text-align: center;
     font-family: var(--font-family-chewy);
 }

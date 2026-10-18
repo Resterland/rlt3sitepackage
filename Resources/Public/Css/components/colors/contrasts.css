@@ -58,7 +58,7 @@
 
     --color-accent: var(--color-secundary);
 
-    --text-shadow-color: light-dark(var(--aqua),var(--yellow));
+    --text-shadow-color: light-dark(var(--aqua),var(--orange));
     --border--line-color: light-dark(var(--green), var(--yellow));
 
 
