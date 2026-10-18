@@ -51,7 +51,7 @@
         border: none;
 
         &:hover {
-            background-color: var(--background-200);
+            background-color: var(--color-hover);
         }
         &::before {
             display: block;
@@ -75,13 +75,13 @@
 
     .menu {
         --menu-button-padding: 0.125rem 0.25rem;
-        background: var(--background-200);
+        background: var(--color-hover);
     }
 
     /* Tab */
     .menu__tab {
         display: grid;
-        border-top: 1px solid var(--background-200);
+        border-top: 1px solid var(--border--line-color);
     }
 
     /* Button */
@@ -121,6 +121,6 @@
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--background-200);
+        background-color: var(--color-hover);
     }
 }

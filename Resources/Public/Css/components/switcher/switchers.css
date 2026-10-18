@@ -21,8 +21,8 @@
     border: none;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
-        color: var(--text-200);
-        background-color: var(--background-200);
+        color: var(--color-text);
+        background-color: var(--color-hover);
     }
 
     /* Arrow & Icon */
@@ -56,9 +56,6 @@
     width: 100%;
 
     padding: 0.75rem;
-
-    color: var(--text-200);
-    background-color: var(--background-200);
 }
 
 .language-switcher__list,
@@ -89,7 +86,7 @@
 
     &:hover,
     &[data-current] {
-        color: Highlight;
-        background-color: HighlightText;
+        color: var(--color-text);
+        background-color: var(--color-hover);
     }
 }
