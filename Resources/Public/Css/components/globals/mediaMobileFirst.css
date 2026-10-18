@@ -7,7 +7,6 @@ html {
 }
 body {
     margin: 0 auto;
-    width: var(--layout-side-padding);
     font-size: var(--fluid-xs);
     line-height: var(--fluid-leading-body);
     font-family: var(--font-family-sans);
@@ -52,6 +51,7 @@ a:active {
 .page-layout__header,
 .content-wrapper,
 .page-footer {
+    width: var(--layout-side-padding);
 }
 
 .page-layout__header {
