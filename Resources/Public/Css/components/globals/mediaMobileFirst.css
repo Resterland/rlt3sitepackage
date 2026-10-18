@@ -11,8 +11,8 @@ body {
     line-height: var(--fluid-leading-body);
     font-family: var(--font-family-sans);
 
-    background: var(--accent);
-    color: var(--color-text);
+    background: var(--color-background-default);
+    color: var(--color-text-default);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,12 +40,18 @@ p {
 }
 
 a {
-    color: var(--color-text-default);
+    background: var(--color-neutral);
+    color: var(--color-interactive-default);
 }
-
 a:hover,
 a:active {
+    background: var(--color-neutral);
     color: var(--color-interactive-default);
+}
+.page-layout__header,
+.content-wrapper,
+.page-footer {
+    width: min(1000px, calc(70% + 100px));
 }
 
 .page-layout__header {
@@ -54,8 +60,7 @@ a:active {
     top: 0;
     z-index: var(--z-index-sticky-header);
 
-    background: var(--color-text);
-    color: var(--accent);
+    background: var(--color-secundary);
 }
 
 main {
@@ -64,6 +69,7 @@ main {
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
+    background: var(--color-neutral);
 }
 footer {
 }
@@ -174,8 +180,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--color-primitive-secundary);
-    background-color: var(--color-primitive-neutral);
+    color: var(--color-text-default);
+    background-color: var(--color-secundary);
     a:hover {
         text-decoration: none;
     }
@@ -187,14 +193,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-primitive-neutral);
+    color: var(--color-text-default);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-primitive-secundary);
-        background-color: var(--color-primitive-neutral);
+        color: var(--color-interactive-default);
+        background-color: var(--color-text-default);
     }
 
     /* Arrow & Icon */
@@ -224,13 +230,13 @@ footer {
 
 /* Panel */
 .menu__panel {
-    background: var(--color-primitive-neutral);
+    background: var(--color-neutral);
 }
 .menu__panel-title {
     padding: 0.125rem 1.4rem;
     margin: 0;
     font-size: inherit;
-    background: var(--color-text);
+    background: inherit;
 }
 /* Dropdown navbar END */
 

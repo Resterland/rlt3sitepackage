@@ -2,48 +2,52 @@
 /* OKLCH L-value (percentage) = perceived lightness */
 :root {
     /* light variables */
+    --light: var(--white);
     --light-L-85: oklch(from var(--brand-color) 0.85 c h);
     --light-L-90: oklch(from var(--brand-color) 0.9 c h);
     --light-L-95: oklch(from var(--brand-color) 0.95 c h);
     --light-L-99: oklch(from var(--brand-color) 0.99 c h);
 
-    --light-primary: oklch(from var(--brand-color) 0.85 c h);
-    --light-secundary: oklch(from var(--brand-color) 0.85 c h);
+    --light-primary: oklch(from var(--blue) 0.85 c h);
+    --light-secundary: oklch(from var(--maroon) 0.85 c h);
     --light-neutral: oklch(from var(--gray) 0.85 c h);
+
+    --light-error: oklch(from var(--red) 0.85 c h);
+    --light-danger: oklch(from var(--orange) 0.85 c h);
+    --light-succes: oklch(from var(--green) 0.85 c h);
 }
 :root {
     /* dark variables */
+    --dark: var(--black);
     --dark-L-10: oklch(from var(--brand-color) 0.1 c h);
     --dark-L-12: oklch(from var(--brand-color) 0.12 c h);
     --dark-L-15: oklch(from var(--brand-color) 0.15 c h);
     --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
 
+    --dark-primary: oklch(from var(--blue) 0.17 c h);
+    --dark-secundary: oklch(from var(--maroon) 0.17 c h);
+    --dark-neutral: oklch(from var(--gray) 0.17 c h);
+
+    --dark-error: oklch(from var(--red) 0.17 c h);
+    --dark-danger: oklch(from var(--orange) 0.17 c h);
+    --dark-succes: oklch(from var(--green) 0.17 c h);
+
     /* Primitive Colors */
-    --color-primary:
-        light-dark(oklch(from var(--blue) 0.9 c h),
-        oklch(from var(--blue) 0.12 c h));
-    --color-secundary:
-        light-dark(oklch(from var(--aqua) 0.9 c h),
-        oklch(from var(--aqua) 0.12 c h));
-    --color-primitive-neutral:
-        light-dark(oklch(from var(--gray) 0.9 c h),
-        oklch(from var(--gray) 0.12 c h));
-    --color-primitive-white:
-        light-dark(var(--white), var(--black));
+    --color-primary: light-dark(var(--light-primary), var(--dark-primary));
+    --color-secundary: light-dark(var(--light-secundary), var(--dark-secundary));
+    --color-neutral: light-dark(var(--light-neutral), var(--dark-neutral));
 
 }
 
 :root {
-    /* Colors */
-
-    --accent: light-dark(var(--light-L-95), var(--dark-L-10));
-    --color-text: light-dark(var(--dark-L-17),  var(--light-L-99));
-
     /* Semantic Colors */
-    --color-text-default: var(--color-primitive-neutral);
-    --color-text-muted: #6b7280;
-    --color-background-default: var(--color-primitive-white);
-    --color-interactive-default: var(--color-primitive-primary);
+    --color-background-default: var(--color-primary);
+
+    --color-accent: light-dark(var(--light-L-95), var(--dark-L-10));
+
+    --color-interactive-default: light-dark(var(--light-L-95), var(--dark-L-10));
+
+    --color-text-default: light-dark(var(--dark-L-17),  var(--light-L-99));
 
     /* Spacing */
     --space-1: 0.25rem;

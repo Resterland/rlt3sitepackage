@@ -38,7 +38,8 @@
     --font-size-3xl: 1.875rem;   /* 30px - h3 */
     --font-size-4xl: 2.25rem;    /* 36px - h2 */
     --font-size-5xl: 3rem;       /* 48px - h1 */
-    /* Fluid scale: scales between 320px and 1200px viewport */
+    /* Fluid scales */
+    --fluid-font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
     --fluid-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
     --fluid-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
     --fluid-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
@@ -55,6 +56,7 @@
     --line-height-normal: 1.5;    /* body minimum */
     --line-height-relaxed: 1.625; /* body recommended */
     --line-height-loose: 1.75;    /* long-form reading */
+    /* Fluid scale: scales between 320px and 1200px viewport */
     --fluid-leading-heading: clamp(1.1, 1.05 + 0.15vw, 1.3);
     --fluid-leading-body: clamp(1.5, 1.4 + 0.1vw, 1.75);
 
