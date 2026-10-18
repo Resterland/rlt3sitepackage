@@ -51,7 +51,10 @@ a:active {
 .page-layout__header,
 .content-wrapper,
 .page-footer {
-    padding-inline: var(--layout-side-padding);
+    padding-inline: clamp(
+        1rem,
+        calc((100vw - 1440px + (2rem)) / 2),
+        62.5rem);
 }
 
 .page-layout__header {
