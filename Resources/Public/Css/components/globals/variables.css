@@ -6,9 +6,5 @@
     --sticky-header-height: calc(var(--navigation-height) + var(--breadcrumbs-bar-height));
     --z-index-sticky-header: 100;
     --z-index-sidebar-mobile: 90;
-    --layout-side-padding-min: 1rem;
-    --layout-side-padding: max(
-        var(--layout-side-padding-min),
-        calc((100vw - 1440px + (2rem)) / 2)
-    );
+    --layout-side-padding: clamp(0.1rem, calc((100vw - 1440px + (2rem)) / 2), 10rem);
 }
