@@ -10,8 +10,8 @@
     --light-L-95: oklch(from var(--brand-color) 0.95 c h);
     --light-L-99: oklch(from var(--brand-color) 0.99 c h);
 
-    --light-primary: oklch(from var(--light-L-85) l c h);
-    --light-secundary: oklch(from var(--light-L-95) l c h);
+    --light-primary: oklch(from var(--light-L-95) l c h);
+    --light-secundary: oklch(from var(--light-L-85) l c h);
 
     --light-neutral: oklch(from var(--gray) 0.85 c h);
 
@@ -28,8 +28,8 @@
     --dark-L-15: oklch(from var(--brand-color) 0.15 c h);
     --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
 
-    --dark-primary: oklch(from var(--dark-L-10) l c h);
-    --dark-secundary: oklch(from var(--dark-L-17) l c h);
+    --dark-primary: oklch(from var(--dark-L-17) l c h);
+    --dark-secundary: oklch(from var(--dark-L-12) l c h);
 
     --dark-neutral: oklch(from var(--gray) 0.17 c 240);
 
@@ -57,6 +57,9 @@
     --color-interactive-text: var(--color-text-interactive);
 
     --color-accent: var(--color-secundary);
+
+    --text-shadow-color: light-dark(var(--aqua),var(--yellow));
+    --border--line-color: light-dark(var(--green), var(--yellow));
 
 
     /* Spacing */

@@ -68,18 +68,15 @@ main {
     padding: 0.5rem 0.75rem;
 }
 .aside-left {
-    border-right: 1px solid var(--color-neutral);
+    border-right: 1px solid var(--border--line-color);
 }
 .aside-right {
-    border-left: 1px solid var(--color-neutral);
+    border-left: 1px solid var(--border--line-color);
 }
 
 
 .navigation__logo {
-    text-shadow: 0.1rem 0.1rem 0.1rem light-dark(
-        var(--yellow),
-        var(--purple)
-    );
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
 }
 .navigation__logo a {
     text-decoration: none;
@@ -101,9 +98,7 @@ img.middle {
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
-    border-top: 1px solid light-dark(
-        var(--green),
-        var(--yellow));
+    border-top: 1px solid var(--border--line-color);
     display: flex;
     height: var(--breadcrumbs-bar-height);
     justify-content: end;
@@ -141,7 +136,7 @@ img.middle {
 
 footer {
     display: grid;
-    background: var(--color-neutral);
+    background: var(--color-secundary);
 }
 .footer-menu {
     padding: 0.5em 0;
