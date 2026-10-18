@@ -6,7 +6,8 @@ html {
     color-scheme: light dark;
 }
 body {
-    margin: auto;
+    margin: 0 auto;
+    width: min(1000px, calc(70% + 100px));
     font-size: var(--fluid-xs);
     line-height: var(--fluid-leading-body);
     font-family: var(--font-family-sans);
@@ -51,7 +52,6 @@ a:active {
 .page-layout__header,
 .content-wrapper,
 .page-footer {
-    width: min(1000px, calc(70% + 100px));
 }
 
 .page-layout__header {
