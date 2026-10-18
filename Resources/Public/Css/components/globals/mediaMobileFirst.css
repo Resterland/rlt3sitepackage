@@ -7,7 +7,7 @@ html {
 }
 body {
     margin: 0 auto;
-    width: min(1000px, calc(70% + 100px));
+    width: var(--layout-side-padding);
     font-size: var(--fluid-xs);
     line-height: var(--fluid-leading-body);
     font-family: var(--font-family-sans);
@@ -41,7 +41,7 @@ p {
 }
 
 a {
-    background: var(--color-neutral);
+    background: transparent;
     color: var(--color-interactive-default);
 }
 a:hover,
