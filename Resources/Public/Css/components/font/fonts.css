@@ -29,7 +29,7 @@
  */
 :root {
     /* Font sizes */
-    --font-size: max(1.2rem, 1.2vw);
+    --font-size: max(1.1rem, 1.05vw);
     --font-size-h1: clamp(1.8rem, 2.5vw, 2.8rem);
     --font-size-h2: clamp(1.5rem, 2.2vw, 2.5rem);
     --font-size-h3: clamp(1.2rem, 2.5vw, 2.2rem);
