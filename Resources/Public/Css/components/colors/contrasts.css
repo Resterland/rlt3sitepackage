@@ -1,6 +1,8 @@
 /* light - dark contrasts */
 /* OKLCH L-value (percentage) = perceived lightness */
 :root {
+    --brand-color: var(--black);
+
     /* light variables */
     --light: var(--white);
     --light-L-85: oklch(from var(--brand-color) 0.85 c h);
@@ -8,10 +10,12 @@
     --light-L-95: oklch(from var(--brand-color) 0.95 c h);
     --light-L-99: oklch(from var(--brand-color) 0.99 c h);
 
-    --light-primary: oklch(from var(--blue) 0.85 c h);
-    --light-secundary: oklch(from var(--maroon) 0.85 c h);
+    --light-primary: oklch(from var(--light-L-85));
+    --light-secundary: oklch(from var(--light-L-95));
+
     --light-neutral: oklch(from var(--gray) 0.85 c h);
 
+    --light-interactive: oklch(from var(--blue) 0.85 c h);
     --light-error: oklch(from var(--red) 0.85 c h);
     --light-danger: oklch(from var(--orange) 0.85 c h);
     --light-succes: oklch(from var(--green) 0.85 c h);
@@ -24,10 +28,12 @@
     --dark-L-15: oklch(from var(--brand-color) 0.15 c h);
     --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
 
-    --dark-primary: oklch(from var(--blue) 0.17 c h);
-    --dark-secundary: oklch(from var(--maroon) 0.17 c h);
-    --dark-neutral: oklch(from var(--gray) 0.17 c h);
+    --dark-primary: oklch(from var(--dark-L-10));
+    --dark-secundary: oklch(from var(--dark-L-17));
 
+    --dark-neutral: oklch(from var(--gray) 0.17 c 240);
+
+    --dark-interactive: oklch(from var(--blue) 0.17 c h);
     --dark-error: oklch(from var(--red) 0.17 c h);
     --dark-danger: oklch(from var(--orange) 0.17 c h);
     --dark-succes: oklch(from var(--green) 0.17 c h);
@@ -36,18 +42,21 @@
     --color-primary: light-dark(var(--light-primary), var(--dark-primary));
     --color-secundary: light-dark(var(--light-secundary), var(--dark-secundary));
     --color-neutral: light-dark(var(--light-neutral), var(--dark-neutral));
+    --color-interactive: light-dark(var(--light-interactive), var(--dark-interactive));
+    --color-text-interactive: light-dark(var(--dark-interactive),  var(--light-interactive));
+
+    --color-primary-text: light-dark(var(--dark-L-17),  var(--light-L-99));
 
 }
 
 :root {
     /* Semantic Colors */
-    --color-background-default: var(--color-primary);
+    --color-background: var(--color-primary);
+    --color-text: var(--color-primary-text);
+    --color-hover: var(--color-interactive);
+    --color-interactive-text: var(--color-text-interactive);
 
-    --color-accent: light-dark(var(--light-L-95), var(--dark-L-10));
-
-    --color-interactive-default: light-dark(var(--light-L-95), var(--dark-L-10));
-
-    --color-text-default: light-dark(var(--dark-L-17),  var(--light-L-99));
+    --color-accent: var(--color-secundary);
 
     /* Spacing */
     --space-1: 0.25rem;
@@ -62,7 +71,7 @@
     /* Focus */
     --focus-ring-width: 2px;
     --focus-ring-offset: 2px;
-    --focus-ring-color: var(--color-interactive-default);
+    --focus-ring-color: var(--color-hover);
 
     /* Motion */
     --duration-fast: 100ms;

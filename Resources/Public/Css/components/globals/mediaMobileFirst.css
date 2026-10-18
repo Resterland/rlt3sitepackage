@@ -7,29 +7,27 @@ html {
 }
 body {
     margin: 0 auto;
-    font-size: var(--fluid-xs);
-    line-height: var(--fluid-leading-body);
+    font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
-    background: var(--color-background-default);
-    color: var(--color-text-default);
+    background: var(--color-background);
+    color: var(--color-text);
 }
 
 h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
-    line-height: var(--fluid-leading-heading);
 }
 
-h1 { font-size: var(--fluid-5xl); }
-h2 { font-size: var(--fluid-4xl); }
-h3 { font-size: var(--fluid-3xl); }
-h4 { font-size: var(--fluid-2xl); }
-h5 { font-size: var(--fluid-xl); }
-h6 { font-size: var(--fluid-lg); }
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
 
 h1.navigation__logo {
-    letter-spacing: 0.015em;
+    letter-spacing: var(--letter-spacing-tight);
     font-size: clamp(1.4rem, 2.5vw, 2.0rem);
     text-align: center;
     font-family: var(--font-family-chewy);
@@ -41,12 +39,12 @@ p {
 
 a {
     background: transparent;
-    color: var(--color-interactive-default);
+    color: var(--color-interactive-text);
 }
 a:hover,
 a:active {
-    background: var(--color-neutral);
-    color: var(--color-interactive-default);
+    background: var(--color-hover);
+    color: var(--color-interactive-text);
 }
 .page-layout__header,
 .content-wrapper,
@@ -59,7 +57,6 @@ a:active {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-
     background: var(--color-secundary);
 }
 
@@ -69,9 +66,15 @@ main {
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
-    background: var(--color-neutral);
+}
+.aside-left {
+    border-right: 1px solid var(--color-neutral);
+}
+.aside-right {
+    border-left: 1px solid var(--color-neutral);
 }
 footer {
+    background: var(--color-neutral);
 }
 
 
@@ -180,8 +183,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--color-text-default);
-    background-color: var(--color-secundary);
+    color: var(--color-text);
+    background-color: var(--color-hover);
     a:hover {
         text-decoration: none;
     }
@@ -193,14 +196,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-text-default);
+    color: var(--color-interactive-text);
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-interactive-default);
-        background-color: var(--color-text-default);
+        color: var(--color-text);
+        background-color: var(--color-hover);
     }
 
     /* Arrow & Icon */
