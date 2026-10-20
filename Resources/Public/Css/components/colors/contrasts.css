@@ -7,7 +7,7 @@
     --color-primary-l: 0.628;
     --color-primary-c: 0.2577;
     --color-primary-h: 29.23;
-    --color-primary: oklch(var(--color-primary-l), var(--color-primary-l), var(--color-primary-l));
+    --color-primary: oklch(var(--color-primary-l) var(--color-primary-c) var(--color-primary-h));
 
   --brand-color: var(--black);
 
