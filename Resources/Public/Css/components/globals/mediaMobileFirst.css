@@ -5,13 +5,17 @@ html {
     scroll-behavior: smooth;
     color-scheme: light dark;
 }
+/* user agent styles */
+textarea {
+    background: field;
+    color: fieldtext;
+}
 body {
     margin: 0 auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
-
-    background: var(--color-background);
-    color: var(--color-text);
+    color: CanvasText;
+    background-color: Canvas;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -33,7 +37,7 @@ h1.navigation__logo {
 }
 
 p {
-
+    color: contrast-color(purple);
 }
 
 a {
