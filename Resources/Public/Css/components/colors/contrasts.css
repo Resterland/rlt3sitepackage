@@ -2,16 +2,19 @@
 /* OKLCH L-value (percentage) = perceived lightness */
 :root {
     /* Primitive Colors
-    --color-primary: oklch(0.628 0.2577 29.23);
+    --red: oklch(0.628 0.2577 29.23);
      */
     --color-primary-l: 0.628;
     --color-primary-c: 0.2577;
     --color-primary-h: 29.23;
-    --color-primary: oklch(var(--color-primary-l) var(--color-primary-c) var(--color-primary-h));
+    --lighten-20: 0.2;
+    --darken-20: 0.2;
 
   --brand-color: var(--black);
 
   /* light variables */
+    --color-primary-light: oklch(calc(var(--color-primary-l) + var(--lighten-20)) var(--color-primary-c) var(--color-primary-h));
+
     --light: var(--white);
     --light-L-85: oklch(from var(--brand-color) 0.85 c h);
     --light-L-90: oklch(from var(--brand-color) 0.9 c h);
@@ -30,6 +33,7 @@
 }
 :root {
     /* dark variables */
+    --color-primary-dark: oklch(calc(var(--color-primary-l) - var(--darken-20)) var(--color-primary-c) var(--color-primary-h));
     --dark: var(--black);
     --dark-L-10: oklch(from var(--brand-color) 0.1 c h);
     --dark-L-12: oklch(from var(--brand-color) 0.12 c h);
@@ -47,14 +51,16 @@
     --dark-succes: oklch(from var(--green) 0.17 c h);
 
     /* Primitive Colors
-    --color-primary: light-dark(var(--light-primary), var(--dark-primary));
+    --color-primary: oklch(var(--color-primary-l) var(--color-primary-c) var(--color-primary-h));
+ */
+    --color-primary: light-dark(var(--color-primary-light), var(--color-primary-dark));
+
     --color-secundary: light-dark(var(--light-secundary), var(--dark-secundary));
     --color-neutral: light-dark(var(--light-neutral), var(--dark-neutral));
     --color-interactive: light-dark(var(--light-interactive), var(--dark-interactive));
     --color-text-interactive: light-dark(var(--dark-interactive),  var(--light-interactive));
 
     --color-primary-text: light-dark(var(--dark-L-17),  var(--light-L-99));
- */
 }
 
 :root {

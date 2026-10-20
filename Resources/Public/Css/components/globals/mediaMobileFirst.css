@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
-    color: CanvasText;
+    color: var(--color-primary-text);
     background-color: var(--color-primary);
 }
 
