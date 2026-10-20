@@ -13,7 +13,10 @@
   --brand-color: var(--black);
 
   /* light variables */
-    --color-primary-light: oklch(calc(var(--color-primary-l) + var(--lighten-20)) var(--color-primary-c) var(--color-primary-h));
+    --color-primary-light: oklch(
+        from var(--brand-color)
+        calc(l + var(--lighten-20))
+    c h);
 
     --light: var(--white);
     --light-L-85: oklch(from var(--brand-color) 0.85 c h);
@@ -32,8 +35,14 @@
     --light-succes: oklch(from var(--green) 0.85 c h);
 }
 :root {
-    /* dark variables */
+    /* dark variables
     --color-primary-dark: oklch(calc(var(--color-primary-l) - var(--darken-20)) var(--color-primary-c) var(--color-primary-h));
+    */
+    --color-primary-dark: oklch(
+        from var(--brand-color)
+        calc(l - var(--darken-20))
+        c h);
+
     --dark: var(--black);
     --dark-L-10: oklch(from var(--brand-color) 0.1 c h);
     --dark-L-12: oklch(from var(--brand-color) 0.12 c h);
