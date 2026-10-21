@@ -2,7 +2,7 @@
 @import "themes.css";
 
 :root {
-    --brand-color: var(--blue);
+    --brand-color: var(--maroon);
 }
 
 /*.theme-resterland {
