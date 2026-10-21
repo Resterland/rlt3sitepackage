@@ -15,27 +15,21 @@
             position: fixed;
             inset: 0;
             z-index: 2;
-
             align-content: start;
-
             height: auto;
-
             overflow-y: auto;
         }
     }
 
     /* Popup */
-
     .navigation__popup {
         display: none;
         grid-column: 1 / -1;
         justify-self: stretch;
     }
-
     .navigation[data-open="true"] .navigation__popup {
         display: block;
     }
-
     /* Logo */
     .navigation__logo {
         padding: 0.2rem;
@@ -47,22 +41,17 @@
         margin: 0;
         cursor: pointer;
         outline-offset: -2px;
-        background-color: transparent;
         border: none;
-
+        /*background-color: transparent;*/
         &:hover {
-            background-color: var(--color-hover);
+            /*background-color: var(--color-hover);*/
         }
         &::before {
             display: block;
-
             width: 1.5rem;
             height: 1.5rem;
-
             content: "";
-
-            background-color: currentcolor;
-
+            /*background-color: currentcolor;*/
             mask-size: cover;
         }
         &[aria-expanded="true"]::before {
@@ -72,55 +61,44 @@
             mask-image: url("../../../Icons/icon/menu.svg");
         }
     }
-
     .menu {
         --menu-button-padding: 0.125rem 0.25rem;
-        background: var(--color-hover);
+        /*background: var(--color-hover);*/
     }
-
     /* Tab */
     .menu__tab {
         display: grid;
         border-top: 1px solid var(--border--line-color);
     }
-
     /* Button */
     .menu__tab-button {
         display: flex;
-
         column-gap: 0.25rem;
         align-items: center;
-
         padding: var(--menu-button-padding);
-
         border: none;
         /* Arrow */
     }
-
     .menu__tab-button::after {
         margin-left: auto;
     }
-
     /* Link */
     .menu__tab-link {
         padding: var(--menu-button-padding);
     }
-
     /* Label */
     .menu__tab-label {
         order: -1;
     }
-
     .menu__tab-label[data-type="short"] {
         display: none;
     }
-
     /* Title */
     .menu__panel-title::after {
         position: relative;
         display: block;
         height: 1px;
         content: "";
-        background-color: var(--color-hover);
+        /*background-color: var(--color-hover);*/
     }
 }

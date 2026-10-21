@@ -1,0 +1,67 @@
+/*
+### OKLCH - explained
+    Syntax:
+    oklch(L C H / a)
+
+    - L is perceived lightness (wahrgenommene Helligkeit)
+        It ranges from 0 (black) to 1 (white).
+     - C is chroma, the saturation of color (Farbsättigung)
+         It goes from 0 (gray) to infinity.
+         In practice there is actually a limit.
+         For both P3 and sRGB the value will be always below 0.37
+      - H is the hue angle (Farbtonwinkel)
+          It goes from 0 to 360, through
+          red 20
+          yellow 90
+          green 140
+          blue 220
+          purple 320
+          and then back to red
+      - a is opacity (Deckkraft)
+          (0-1 or 0-100%)
+*/
+/* Black - White - Greyscale */
+:root {
+    --black-alpha-15: oklch(0 0 0 / 0.15);
+    --black-alpha-75: oklch(0 0 0 / 0.75);
+}
+
+:root {
+    /* <named colors> for
+        light background
+        - dark text
+    */
+    --white:oklch(1 0 0);  /* #ffffff */
+    --aqua: oklch(0.905399 0.15455 194.769); /* #00ffff */
+    --aquamarine: oklch(0.915 0.1304 168.99); /* #7FFFD4 */
+    --chocolate: oklch(0.6344 0.155 50.27); /* #D2691E */
+    --gold: oklch(0.886771 0.182186 95.3305); /* #FFD700 */
+    --gray: oklch(0.5999 0 0); /* #808080 */
+    --lime: oklch(0.86644 0.294827 142.4953); /* #00ff00 */
+    --orange: oklch(0.7927 0.171 70.67); /* #FFA500 */
+    --peru: oklch(0.6782 0.1227 62.18); /* #CD853F */
+    --salmon: oklch(0.735 0.1515 28.06); /* #FA8072 */
+    --tan: oklch(0.7862 0.0638 74.62); /* #D2B48C */
+    --yellow: oklch(0.968 0.211 109.77); /* #ffff00 */
+}
+
+:root {
+    /* <named colors> for
+        dark background
+        - light text
+    */
+    --black:oklch(0 0 0);  /* #000000 */
+    --blue: oklch(0.452014 0.313214 264.052); /* #0000ff */
+    --fuchsia: oklch(0.7017 0.3225 328.36); /* #ff00ff */
+    --green: oklch(0.519752 0.176858 142.4953); /* #008000 */
+    --indigo: oklch(0.339 0.1793 301.68); /* #4B0082 */
+    --maroon: oklch(0.376692 0.154577 29.2339); /* #800000 */
+    --navy: oklch(0.27115 0.187888 264.052); /* #000080 */
+    --olive: oklch(0.580665 0.126576 109.7692); /* #808000 */
+    --purple: oklch(0.420914 0.193453 328.3634); /* #800080 */
+    --red: oklch(0.628 0.2577 29.23); /* #ff0000 */
+    --saddlebrown: oklch(0.4708 0.1121 50.85); /* #8B4513 */
+    --teal: oklch(0.5431 0.0927 194.77); /* #008080 */
+}
+
+

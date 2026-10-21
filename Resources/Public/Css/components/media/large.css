@@ -1,11 +1,12 @@
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
-    /*.page-layout__header,
+    /*
+    .page-layout__header,
     .content-wrapper,
     .page-footer {
         padding-inline: var(--layout-side-padding);
-    }*/
-
+    }
+    */
     .content-wrapper {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -28,25 +29,21 @@
         column-gap: 0.25rem;
         align-items: center;
         height:  4.125rem;
-
         /*padding-block: 0.75rem;
         padding-inline: var(--layout-side-padding);*/
     }
-
     /* Logo */
-
     .navigation__logo {
         margin-inline-start: -6px;
         padding-left: 0.5rem;
         justify-self: start;
     }
-
     img.middle {
         margin: 0;
         width: calc(var(--font-size) + 1.25rem);
         padding-right: 0.25rem;
         vertical-align: middle;
-        fill: currentColor;
+        /*fill: currentColor;*/
     }
     /* Popup */
     .navigation__popup {
@@ -56,7 +53,6 @@
     .navigation__button {
         display: none;
     }
-
     /* Dropdown navbar START */
     .menu {
         --menu-button-padding: 0.25rem 0.25rem;
@@ -66,51 +62,39 @@
         column-gap: 0.25rem;
         justify-content: space-between;
     }
-
     /* Button */
     .menu__tab-button {
         display: flex;
-
         column-gap: 0.125rem;
         align-items: center;
-
         padding: var(--menu-button-padding);
-
         border: none;
     }
-
     .menu__tab-button[aria-expanded="true"] {
         position: relative;
         z-index: 1;
     }
-
     /* Arrow */
     .menu__tab-button::after {
         margin-right: -4px;
     }
-
     /* Link */
     .menu__tab-link {
         padding: 0 0.7rem;
     }
-
     /* Label */
     .menu__tab-label[data-type="short"] {
         display: none;
     }
-
     /* Panel */
     .menu__panel {
         position: absolute;
         right: 0;
         left: 0;
         z-index: 1; /* prevents menu foldout to be drawn below language chooser */
-
         margin-top: 0;
-
         border: 1px solid var(--border--line-color);
     }
-
     /* Panel */
     .menu__panel-title {
         padding: 0.125rem 0;
@@ -118,12 +102,10 @@
         margin: 0.25rem 0;
         font-size: inherit;
     }
-
     .menu__tab ul {
         margin: 0;
         padding: 0;
     }
-
     /* Dropdown navbar END */
     .breadcrumb-bar {
         font-size: unset;

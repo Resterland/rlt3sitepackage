@@ -7,13 +7,14 @@ html {
 }
 /* user agent styles */
 textarea {
-    background: field;
-    color: fieldtext;
+    background: Field;
+    color: FieldText;
 }
 body {
     margin: 0 auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
+
     color: var(--color-primary-text);
     background-color: var(--color-primary);
 }
@@ -40,13 +41,13 @@ p {
 }
 
 a {
-    background: transparent;
-    color: var(--color-interactive-text);
+    /*background: transparent;
+    color: var(--color-interactive-text);*/
 }
 a:hover,
 a:active {
-    background: var(--color-hover);
-    color: var(--color-interactive-text);
+    /*background: var(--color-hover);
+    color: var(--color-interactive-text);*/
 }
 .page-layout__header,
 .content-wrapper,
@@ -59,7 +60,8 @@ a:active {
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background: var(--color-secundary);
+
+    /*background: var(--color-secundary);*/
 }
 
 main {

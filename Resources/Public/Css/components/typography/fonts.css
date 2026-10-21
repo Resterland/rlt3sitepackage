@@ -1,9 +1,7 @@
-@import url("ubuntu.css");
-@import url("special.css");
-
-/* Font size */
-
+@import "ubuntu.css";
+@import "special.css";
 :root {
+    /* Font families */
     --font-family-sans: "Ubuntu Sans", sans-serif;
     --font-family-monospace: "Ubuntu Sans Mono", monospace;
     --font-family-cursive: "Imperial Script", cursive;
@@ -18,17 +16,15 @@
     --font-line-ui: 1;
 
     /*
-    --font-size: max(1em, 1vw);
-    --font-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+    --typography-size: max(1em, 1vw);
+    --typography-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
     */
-    --font-size: clamp(1rem, 0.25rem + 1vw, 2rem);
-}
-
-/* Standard Scale (1.25 ratio - Major Third)
-(https://www.humanstandards.org/code-design-tokens/accessible-typography/)
- */
-:root {
     /* Font sizes */
+    /*--font-size: clamp(1rem, 0.25rem + 1vw, 2rem);*/
+
+    /* Standard Scale (1.25 ratio - Major Third)
+    (https://www.humanstandards.org/code-design-tokens/accessible-typography/)
+     */
     --font-size: max(1rem, 0.25vw);
     --font-size-h1: clamp(1.8rem, 2.5vw, 2.6rem);
     --font-size-h2: clamp(1.5rem, 2.5vw, 2.3rem);
@@ -46,30 +42,4 @@
     --font-size-3xl: 1.875rem;   /* 30px - h3 */
     --font-size-4xl: 2.25rem;    /* 36px - h2 */
     --font-size-5xl: 3rem;       /* 48px - h1 */
-    /* Fluid scales */
-
-    /* Line heights */
-    --line-height-tight: 1.25;    /* headings */
-    --line-height-snug: 1.375;    /* subheadings */
-    --line-height-normal: 1.5;    /* body minimum */
-    --line-height-relaxed: 1.625; /* body recommended */
-    --line-height-loose: 1.75;    /* long-form reading */
-    /* Fluid scale: scales between 320px and 1200px viewport */
-    --fluid-leading-heading: clamp(1.1, 1.05 + 0.15vw, 1.3);
-    --fluid-leading-body: clamp(1.5, 1.4 + 0.1vw, 1.75);
-
-    /* Letter spacing */
-    --letter-spacing: 0.015em;
-    --letter-spacing-tight: -0.025em;  /* large headings */
-    --letter-spacing-normal: 0;
-    --letter-spacing-wide: 0.025em;    /* all caps, small text */
-    --letter-spacing-wider: 0.05em;    /* uppercase labels */
-
-    /* Paragraph spacing */
-    --paragraph-spacing: 1.5em;  /* 1.5× font size */
-
-    /* Line length */
-    --measure-narrow: 45ch;
-    --measure-base: 65ch;
-    --measure-wide: 80ch;
 }

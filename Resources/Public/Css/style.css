@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
-@import "components/globals/globals.css";
-@import "components/font/fonts.css";
-@import "components/globals/variables.css";
-@import "components/colors/colors.css";
-@import "components/colors/contrasts.css";
+@import "components/global/globals.css";
+@import "components/accessibility/skipLink.css";
+@import "components/typography/fonts.css";
+@import "components/typography/lines.css";
+@import "components/typography/spacing.css";
+@import "components/global/variables.css";
+@import "components/global/colors.css";
+@import "components/color/contrasts.css";
 @import "components/switcher/switchers.css";
 @import "components/switcher/scheme-switcher.css";
 @import "components/switcher/language-switcher.css";
-@import "components/globals/mediaMobileFirst.css";
-@import "components/globals/mediaMedium.css";
-@import "components/globals/mediaLarge.css";
+@import "components/media/mobileFirst.css";
+@import "components/media/medium.css";
+@import "components/media/large.css";
