@@ -1,8 +1,6 @@
 @import "light.css";
 @import "dark.css";
-
 :root {
-    --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
     --text-shadow-color: light-dark(var(--aqua),var(--orange));
     --border--line-color: light-dark(var(--aqua), var(--orange));
 }

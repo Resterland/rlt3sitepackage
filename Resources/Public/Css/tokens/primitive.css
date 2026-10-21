@@ -5,7 +5,6 @@
 :root {
     /* Primitive Colors */
     --color-primary: light-dark(var(--color-primary-light), var(--color-primary-dark));
-
     --color-secundary: light-dark(var(--color-secundary-light), var(--color-secundary-dark));
     --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
     --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));

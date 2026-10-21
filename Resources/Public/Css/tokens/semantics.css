@@ -3,12 +3,8 @@
 @import "../typography/spacing.css";
 :root {
     /* Semantic Colors */
-    /*--color-background: var(--color-primary);*/
-    /*--color-accent: var(--color-secundary);*/
-
-    /*--color-text: var(--color-primary-text);*/
-
-    /*--color-interactive-text: var(--color-text-interactive);*/
-
-    /*--color-primary-text: light-dark(var(--dark-L-17),  var(--light-L-99));*/
+    --color-primary-text: light-dark(var(--color-primary-dark),  var(--color-primary-light));
+    --color-secundary-text: light-dark(var(--color-secundary-dark),  var(--color-secundary-light));
+    --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
+    --color-neutral-text: light-dark(var(--color-interactive-dark),  var(--color-neutral-light));
 }
