@@ -67,7 +67,7 @@
     /* brand-color is the base primary color depending
         on the theme chosen.
      */
-    --brand-color: var(--gray);
+    --brand-color: var(--black);
 }
 
 
