@@ -1,0 +1,12 @@
+
+@import "../typography/lines.css";
+@import "../typography/spacing.css";
+:root {
+     /* Semantic Colors */
+     --color-background: var(--color-primary);
+     --color-text: var(--color-primary-text);
+     --color-hover: var(--color-interactive);
+     --color-interactive-text: var(--color-text-interactive);
+
+     --color-accent: var(--color-secundary);
+ }

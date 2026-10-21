@@ -1,0 +1,11 @@
+@import "light.css";
+@import "dark.css";
+
+:root {
+    --color-text-interactive: light-dark(var(--dark-interactive),  var(--light-interactive));
+
+    --color-primary-text: light-dark(var(--dark-L-17),  var(--light-L-99));
+
+    --text-shadow-color: light-dark(var(--aqua),var(--orange));
+    --border--line-color: light-dark(var(--aqua), var(--orange));
+}

@@ -1,0 +1,34 @@
+/* OKLCH L-value (percentage) = perceived lightness */
+:root {
+    /* light variables */
+    --lighten-10: 0.1;
+    --lighten-20: 0.2;
+    --lighten-30: 0.3;
+    --lighten-40: 0.4;
+    --lighten-50: 0.5;
+    --lighten-60: 0.6;
+    --lighten-70: 0.7;
+    --lighten-80: 0.8;
+    --lighten-90: 0.9;
+
+    --light: var(--white);
+    --light-L-85: oklch(from var(--brand-color) 0.85 c h);
+    --light-L-90: oklch(from var(--brand-color) 0.9 c h);
+    --light-L-95: oklch(from var(--brand-color) 0.95 c h);
+    --light-L-99: oklch(from var(--brand-color) 0.99 c h);
+
+    --color-primary-light: oklch(
+        from var(--brand-color)
+        calc(l + var(--lighten-90))
+        c h);
+
+    --light-primary: oklch(from var(--light-L-95) l c h);
+    --light-secundary: oklch(from var(--light-L-85) l c h);
+
+    --light-neutral: oklch(from var(--gray) 0.85 c h);
+
+    --light-interactive: oklch(from var(--blue) 0.85 c h);
+    --light-error: oklch(from var(--red) 0.85 c h);
+    --light-danger: oklch(from var(--orange) 0.85 c h);
+    --light-succes: oklch(from var(--green) 0.85 c h);
+}

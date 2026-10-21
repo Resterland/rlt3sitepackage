@@ -1,0 +1,11 @@
+@import "../color/colors.css";
+@import "../color/contrasts.css";
+@import "../typography/spaces.css";
+
+:root {
+    /* Primitive Colors */
+    --color-primary: light-dark(var(--color-primary-light), var(--color-primary-dark));
+    --color-secundary: light-dark(var(--light-secundary), var(--dark-secundary));
+    --color-neutral: light-dark(var(--light-neutral), var(--dark-neutral));
+    --color-interactive: light-dark(var(--light-interactive), var(--dark-interactive));
+}

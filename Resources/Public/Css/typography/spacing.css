@@ -1,10 +1,4 @@
 :root {
-    /* Spacing */
-    --space-1: 0.25rem;
-    --space-2: 0.5rem;
-    --space-4: 1rem;
-    --space-6: 1.5rem;
-
     /* Letter spacing */
     --letter-spacing: 0.015em;
     --letter-spacing-tight: -0.025em; /* large headings */

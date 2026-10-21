@@ -22,6 +22,11 @@
 */
 /* Black - White - Greyscale */
 :root {
+    /* brand-color is the base primary color depending
+        on the theme chosen.
+     */
+    --brand-color: var(--black);
+
     --black-alpha-15: oklch(0 0 0 / 0.15);
     --black-alpha-75: oklch(0 0 0 / 0.75);
 }

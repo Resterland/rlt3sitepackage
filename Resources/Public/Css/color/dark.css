@@ -1,0 +1,33 @@
+
+:root {
+    /* dark variables  */
+    --darken-10: 0.1;
+    --darken-20: 0.2;
+    --darken-30: 0.3;
+    --darken-40: 0.4;
+    --darken-50: 0.5;
+    --darken-60: 0.6;
+    --darken-70: 0.7;
+    --darken-80: 0.8;
+    --darken-90: 0.9;
+
+    --dark: var(--black);
+    --dark-L-10: oklch(from var(--brand-color) 0.1 c h);
+    --dark-L-12: oklch(from var(--brand-color) 0.12 c h);
+    --dark-L-15: oklch(from var(--brand-color) 0.15 c h);
+    --dark-L-17: oklch(from var(--brand-color) 0.17 c h);
+
+    --color-primary-dark: oklch(from var(--brand-color)
+    calc(l - var(--darken-90))
+    c h);
+
+    --dark-primary: oklch(from var(--dark-L-17) l c h);
+    --dark-secundary: oklch(from var(--dark-L-12) l c h);
+
+    --dark-neutral: oklch(from var(--gray) 0.17 c 240);
+
+    --dark-interactive: oklch(from var(--blue) 0.17 c h);
+    --dark-error: oklch(from var(--red) 0.17 c h);
+    --dark-danger: oklch(from var(--orange) 0.17 c h);
+    --dark-succes: oklch(from var(--green) 0.17 c h);
+}

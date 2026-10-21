@@ -215,7 +215,7 @@ footer {
     /* Arrow */
     &::after {
         content: "";
-        mask-image: url("../../../Icons/icon/chevron-down.svg");
+        mask-image: url("../../Icons/icon/chevron-down.svg");
     }
     &[aria-expanded="true"]::after {
         scale: -1;
@@ -266,7 +266,7 @@ form {
     background: light-dark(var(--yellow) var(--green));
     &::after {
         content: "";
-        mask-image: url("../../../Icons/icon/chevron-down.svg");
+        mask-image: url("../../Icons/icon/chevron-down.svg");
     }
 }
 
