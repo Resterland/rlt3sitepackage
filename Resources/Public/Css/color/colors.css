@@ -64,10 +64,14 @@
     --teal: oklch(0.5431 0.0927 194.77); /* #008080 */
 }
 :root {
-    /* brand-color is the base primary color depending
+    /* these colors are the base primitive color depending
         on the theme chosen.
      */
-    --brand-color: var(--black);
+    --primary-color: var(--black);
+    --secundary-color: var(--maroon);
+    --error-color: var(--red);
+    --success-color: var(--green);
+
 }
 
 

@@ -11,24 +11,33 @@
     --lighten-80: 0.8;
     --lighten-90: 0.9;
 
-    --light: var(--white);
-    --light-L-85: oklch(from var(--brand-color) 0.85 c h);
-    --light-L-90: oklch(from var(--brand-color) 0.9 c h);
-    --light-L-95: oklch(from var(--brand-color) 0.95 c h);
-    --light-L-99: oklch(from var(--brand-color) 0.99 c h);
-
     --color-primary-light: oklch(
-        from var(--brand-color)
+        from var(--primary-color)
         calc(l + var(--lighten-90))
         c h);
 
-    --light-primary: oklch(from var(--light-L-95) l c h);
-    --light-secundary: oklch(from var(--light-L-85) l c h);
+    --color-secundary-light: oklch(
+        from var(--secundary-color)
+        calc(l + var(--lighten-90))
+        c h);
 
-    --light-neutral: oklch(from var(--gray) 0.85 c h);
+    --color-neutral-light: oklch(
+        from var(--primary-color)
+        calc(l + var(--lighten-90))
+        c h);
 
-    --light-interactive: oklch(from var(--blue) 0.85 c h);
-    --light-error: oklch(from var(--red) 0.85 c h);
-    --light-danger: oklch(from var(--orange) 0.85 c h);
-    --light-succes: oklch(from var(--green) 0.85 c h);
+    --color-interactive-light: oklch(
+        from var(--primary-color)
+        calc(l + var(--lighten-60))
+        c h);
+
+    --color-error-light: oklch(
+        from var(--error-color)
+        calc(l + var(--lighten-60))
+        c h);
+
+    --color-success-light: oklch(
+        from var(--success-color)
+        calc(l + var(--lighten-60))
+        c h);
 }

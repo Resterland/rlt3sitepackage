@@ -2,5 +2,5 @@
 @import "themes.css";
 
 :root {
-    --brand-color: var(--blue);
+    --primary-color: var(--blue);
 }

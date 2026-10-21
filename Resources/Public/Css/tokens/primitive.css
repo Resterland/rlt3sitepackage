@@ -5,7 +5,10 @@
 :root {
     /* Primitive Colors */
     --color-primary: light-dark(var(--color-primary-light), var(--color-primary-dark));
-    --color-secundary: light-dark(var(--light-secundary), var(--dark-secundary));
-    --color-neutral: light-dark(var(--light-neutral), var(--dark-neutral));
-    --color-interactive: light-dark(var(--light-interactive), var(--dark-interactive));
+
+    --color-secundary: light-dark(var(--color-secundary-light), var(--color-secundary-dark));
+    --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
+    --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
+    --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
+    --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
 }

@@ -2,7 +2,7 @@
 @import "themes.css";
 
 :root {
-    --brand-color: var(--saddlebrown);
+    --primary-color: var(--saddlebrown);
 }
 
 /*

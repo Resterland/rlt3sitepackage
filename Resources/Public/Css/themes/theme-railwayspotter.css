@@ -2,7 +2,7 @@
 @import "themes.css";
 
 :root {
-    --brand-color: var(--indigo);
+    --primary-color: var(--indigo);
 }
 
 /*.theme-railwayspotter {

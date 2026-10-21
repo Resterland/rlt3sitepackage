@@ -2,7 +2,7 @@
 @import "themes.css";
 
 :root {
-    --brand-color: var(--red);
+    --primary-color: var(--red);
 }
 /*.theme-vptmob {
     --brand-color: var(--red);
