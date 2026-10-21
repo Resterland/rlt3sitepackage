@@ -22,11 +22,6 @@
 */
 /* Black - White - Greyscale */
 :root {
-    /* brand-color is the base primary color depending
-        on the theme chosen.
-     */
-    --brand-color: var(--black);
-
     --black-alpha-15: oklch(0 0 0 / 0.15);
     --black-alpha-75: oklch(0 0 0 / 0.75);
 }
@@ -67,6 +62,12 @@
     --red: oklch(0.628 0.2577 29.23); /* #ff0000 */
     --saddlebrown: oklch(0.4708 0.1121 50.85); /* #8B4513 */
     --teal: oklch(0.5431 0.0927 194.77); /* #008080 */
+}
+:root {
+    /* brand-color is the base primary color depending
+        on the theme chosen.
+     */
+    --brand-color: var(--gray);
 }
 
 
