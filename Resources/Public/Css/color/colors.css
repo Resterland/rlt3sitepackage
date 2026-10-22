@@ -67,8 +67,10 @@
     /* these colors are the base primitive color depending
         on the theme chosen.
      */
-    --primary-color: var(--black);
-    --secundary-color: var(--maroon);
+    --primary-color: var(--indigo);
+    --secundary-color: var(--navy);
+    --neutral-color: var(--gray);
+    --interactive-color: var(--blue);
     --error-color: var(--red);
     --success-color: var(--green);
 

@@ -10,4 +10,9 @@
     --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
     --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
     --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
+
+    --color-primary-text: light-dark(var(--color-primary-dark),  var(--color-primary-light));
+    --color-secundary-text: light-dark(var(--color-secundary-dark),  var(--color-secundary-light));
+    --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
+    --color-neutral-text: light-dark(var(--color-interactive-dark),  var(--color-neutral-light));
 }

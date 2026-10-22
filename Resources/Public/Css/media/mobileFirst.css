@@ -67,18 +67,20 @@ a:active {
 
 main {
     padding: 0.5rem 0.75rem;
+    background: var(--color-neutral);
+    color: var(--color-neutral-text);
 }
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
-    background: var(--color-neutral);
-    color: var(--color-neutral-text);
 }
 .aside-left {
     border-right: 1px solid var(--border--line-color);
+    background: var(--color-success);
 }
 .aside-right {
     border-left: 1px solid var(--border--line-color);
+    background: var(--color-error);
 }
 
 
@@ -143,8 +145,8 @@ img.middle {
 
 footer {
     display: grid;
-    background: var(--color-secundary);
-    color: var(--color-secundary-text);
+    /*background: var(--color-secundary);
+    color: var(--color-secundary-text);*/
 }
 .footer-menu {
     padding: 0.5em 0;
@@ -184,8 +186,8 @@ footer {
 .active,
 .current {
     text-decoration: none;
-    color: var(--color-interactive-text);
-    background-color: var(--color-neutral-text);
+    /*color: var(--color-interactive-text);
+    background-color: var(--color-neutral-text);*/
     a:hover {
         text-decoration: none;
     }
@@ -197,14 +199,14 @@ footer {
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
-    color: var(--color-interactive-text);
     white-space: nowrap;
     cursor: pointer;
-    background-color: transparent;
+   /* background-color: transparent;
+    color: var(--color-interactive-text);*/
 
     &:is([aria-expanded="true"], :hover) {
-        color: var(--color-interactive-text);
-        background-color: var(--color-neutral-text);
+        /*background-color: var(--color-neutral-text);
+        color: var(--color-interactive-text);*/
     }
 
     /* Arrow & Icon */

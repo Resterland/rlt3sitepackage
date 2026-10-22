@@ -3,8 +3,4 @@
 @import "../typography/spacing.css";
 :root {
     /* Semantic Colors */
-    --color-primary-text: light-dark(var(--color-primary-dark),  var(--color-primary-light));
-    --color-secundary-text: light-dark(var(--color-secundary-dark),  var(--color-secundary-light));
-    --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
-    --color-neutral-text: light-dark(var(--color-interactive-dark),  var(--color-neutral-light));
 }

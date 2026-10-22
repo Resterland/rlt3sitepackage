@@ -22,18 +22,18 @@
         c h);
 
     --color-neutral-light: oklch(
-        from var(--primary-color)
-        calc(l + var(--lighten-80))
+        from var(--neutral-color)
+        calc(l + var(--lighten-90))
         c h);
 
     --color-interactive-light: oklch(
-        from var(--primary-color)
-        calc(l + var(--lighten-60))
+        from var(--interactive-color)
+        calc(l + var(--lighten-90))
         c h);
 
     --color-error-light: oklch(
         from var(--error-color)
-        calc(l + var(--lighten-60))
+        calc(l + var(--lighten-90))
         c h);
 
     --color-success-light: oklch(
