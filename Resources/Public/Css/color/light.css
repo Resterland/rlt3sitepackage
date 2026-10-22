@@ -23,7 +23,7 @@
 
     --color-neutral-light: oklch(
         from var(--primary-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--lighten-80))
         c h);
 
     --color-interactive-light: oklch(

@@ -17,26 +17,26 @@
 
     --color-secundary-dark: oklch(
         from var(--secundary-color)
-        calc(l + var(--darken-90))
+        calc(l - var(--darken-90))
         c h);
 
     --color-neutral-dark: oklch(
         from var(--primary-color)
-        calc(l + var(--darken-90))
+        calc(l - var(--darken-20))
         c h);
 
     --color-interactive-dark: oklch(
         from var(--primary-color)
-        calc(l + var(--darken-60))
+        calc(l - var(--darken-60))
         c h);
 
     --color-error-dark: oklch(
         from var(--error-color)
-        calc(l + var(--darken-60))
+        calc(l - var(--darken-60))
         c h);
 
     --color-success-dark: oklch(
         from var(--success-color)
-        calc(l + var(--darken-60))
+        calc(l - var(--darken-60))
         c h);
 }
