@@ -201,12 +201,12 @@ footer {
     line-height: var(--font-line-ui);
     white-space: nowrap;
     cursor: pointer;
-   /* background-color: transparent;
-    color: var(--color-interactive-text);*/
+    background-color: transparent;
+    color: var(--color-interactive-text);
 
     &:is([aria-expanded="true"], :hover) {
-        /*background-color: var(--color-neutral-text);
-        color: var(--color-interactive-text);*/
+        background-color: var(--color-interactive);
+        color: var(--color-interactive-text);
     }
 
     /* Arrow & Icon */
