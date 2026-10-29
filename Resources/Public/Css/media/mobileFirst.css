@@ -236,7 +236,7 @@ footer {
 
 /* Panel */
 .menu__panel {
-    background: var(--color-neutral);
+    background: inherit;
 }
 .menu__panel-title {
     padding: 0.125rem 1.4rem;
