@@ -63,7 +63,6 @@ main {
     background: var(--color-error);
 }
 
-
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
 }
