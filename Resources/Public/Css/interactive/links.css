@@ -1,22 +1,22 @@
 a:link {
-    color: #6900ff;
+    color: var(--color-interactive-text);
 }
 
 a:visited {
-    color: #a5c300;
+    color: var(--color-error);
 }
 
 a:focus {
     text-decoration: none;
-    background: #bae498;
+    background: var(--color-error);
 }
 
 a:hover {
     text-decoration: none;
-    background: #cdfeaa;
+    background: var(--color-success);
 }
 
 a:active {
-    background: #6900ff;
-    color: #cdfeaa;
+    background: var(--color-interactive-text);
+    color: var(--color-interactive);
 }
