@@ -1,4 +1,7 @@
 @import "basics.css";
+@import "../typography/fonts.css";
+@import "../typography/lines.css";
+@import "../interactive/links.css";
 
 /* Globals
 input,

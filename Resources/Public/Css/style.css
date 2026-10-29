@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import "global/01-globals.css";
 @import "accessibility/skipLink.css";
-@import "typography/fonts.css";
+@import "global/01-globals.css";
 
 /*
 @import "global/variables.css";
