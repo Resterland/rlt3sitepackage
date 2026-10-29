@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
-@import "../global/globals.css";
+@import "../global/01-globals.css";
 @import "../accessibility/skipLink.css";
 @import "../typography/fonts.css";
 @import "../global/variables.css";
 @import "../tokens/primitive.css";
 @import "../tokens/semantics.css";
-@import "../switcher/switchers.css";
+@import "../interactive/switchers.css";
 @import "../tokens/components.css";
-@import "../switcher/scheme-switcher.css";
-@import "../switcher/language-switcher.css";
+@import "../interactive/scheme-switcher.css";
+@import "../interactive/language-switcher.css";
 @import "../media/mobileFirst.css";
 @import "../media/medium.css";
 @import "../media/large.css";
