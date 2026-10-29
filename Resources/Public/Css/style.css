@@ -2,11 +2,11 @@
 
 @import "accessibility/skipLink.css";
 @import "global/01-globals.css";
+@import "tokens/primitive.css";
+@import "tokens/semantics.css";
 
 /*
 @import "global/variables.css";
-@import "tokens/primitive.css";
-@import "tokens/semantics.css";
 @import "tokens/components.css";
 @import "interactive/switchers.css";
 @import "interactive/scheme-switcher.css";
