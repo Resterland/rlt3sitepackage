@@ -5,6 +5,7 @@
 @import "tokens/color-palette.css";
 @import "tokens/semantics.css";
 @import "media/mobileFirst.css";
+@import "media/large.css";
 
 /*
 @import "global/variables.css";
@@ -12,8 +13,6 @@
 @import "interactive/switchers.css";
 @import "interactive/scheme-switcher.css";
 @import "interactive/language-switcher.css";
-@import "media/mobileFirst.css";
 @import "media/medium.css";
-@import "media/large.css";
 
 */
