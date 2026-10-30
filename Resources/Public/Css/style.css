@@ -14,7 +14,7 @@
     /* these colors are the base colors depending
         on the theme chosen.
      */
-    --primary-color: var(--hue-red);
+    --primary-color: var(--indigo);
     --secundary-color: var(--navy);
     --interactive-color: var(--blue);
     --error-color: var(--red);

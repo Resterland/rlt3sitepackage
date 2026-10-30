@@ -44,6 +44,6 @@
     --surface-0-dark: oklch(0 0 0);
     --surface-1-dark: oklch(0.29 0.01 300);
     --surface-2-dark: oklch(0.29 0 0 / 85%);
-    --surface-3-dark: oklch(var(--darken-30) var(--chroma-15) var(--primary-color));
+    --surface-3-dark: oklch(var(--darken-30) var(--chroma-15) var(--hue-red));
     --text-primary-dark: oklch(1 0 0);
 }
