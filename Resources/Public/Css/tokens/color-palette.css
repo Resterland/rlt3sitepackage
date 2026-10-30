@@ -1,6 +1,8 @@
 @import "../color/colors.css";
 @import "../color/light.css";
 @import "../color/dark.css";
+@import "semantics.css";
+@import "components.css";
 
 :root {
     /* Primitive Colors */
