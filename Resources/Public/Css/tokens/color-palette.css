@@ -1,4 +1,7 @@
 @import "../color/colors.css";
+@import "../color/light.css";
+@import "../color/dark.css";
+
 :root {
     /* Primitive Colors */
     --color-primary: light-dark(var(--surface-0), var(--surface-0-dark));
