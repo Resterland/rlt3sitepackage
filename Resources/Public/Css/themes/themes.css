@@ -4,7 +4,7 @@
 @import "../accessibility/skipLink.css";
 @import "../typography/fonts.css";
 @import "../global/variables.css";
-@import "../tokens/primitive.css";
+@import "../tokens/color-palette.css";
 @import "../tokens/semantics.css";
 @import "../interactive/switchers.css";
 @import "../tokens/components.css";

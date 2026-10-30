@@ -4,14 +4,14 @@
 
 :root {
     /* Primitive Colors */
-    --color-primary: light-dark(var(--color-primary-light), var(--color-primary-dark));
+    --color-primary: light-dark(var(--surface-0), var(--surface-0-dark));
     --color-secundary: light-dark(var(--color-secundary-light), var(--color-secundary-dark));
     --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
     --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
     --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
     --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
 
-    --color-primary-text: light-dark(var(--color-primary-dark),  var(--color-primary-light));
+    --color-primary-text: light-dark(var(--text-primary-dark),  var(--text-primary));
     --color-secundary-text: light-dark(var(--color-secundary-dark),  var(--color-secundary-light));
     --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
     --color-neutral-text: light-dark(var(--color-interactive-dark),  var(--color-neutral-light));
