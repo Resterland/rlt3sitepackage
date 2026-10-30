@@ -4,6 +4,7 @@
 @import "global/01-globals.css";
 @import "tokens/color-palette.css";
 @import "tokens/semantics.css";
+@import "media/mobileFirst.css";
 
 /*
 @import "global/variables.css";
