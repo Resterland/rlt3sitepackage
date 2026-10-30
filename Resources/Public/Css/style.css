@@ -2,7 +2,7 @@
 
 @import "accessibility/skipLink.css";
 @import "global/01-globals.css";
-@import "tokens/semantics.css";
+@import "tokens/color-palette.css";
 @import "media/mobileFirst.css";
 @import "media/large.css";
 
