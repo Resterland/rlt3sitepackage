@@ -1,7 +1,4 @@
 @import "../color/colors.css";
-@import "../color/contrasts.css";
-@import "../typography/spaces.css";
-
 :root {
     /* Primitive Colors */
     --color-primary: light-dark(var(--surface-0), var(--surface-0-dark));

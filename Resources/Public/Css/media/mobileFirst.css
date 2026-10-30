@@ -18,18 +18,6 @@ h1.navigation__logo {
     font-family: var(--font-family-chewy);
 }
 
-
-
-a {
-    /*background: transparent;
-    */
-    color: var(--color-interactive-text);
-}
-a:hover,
-a:active {
-    /*background: var(--color-hover);
-    color: var(--color-interactive-text);*/
-}
 .page-layout__header,
 .content-wrapper,
 .page-footer {
@@ -47,8 +35,6 @@ a:active {
 
 main {
     padding: 0.5rem 0.75rem;
-    background: var(--color-neutral);
-    color: var(--color-neutral-text);
 }
 .aside-left,
 .aside-right {

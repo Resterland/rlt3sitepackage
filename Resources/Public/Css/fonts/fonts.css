@@ -16,8 +16,8 @@
     --font-line-ui: 1;
 
     /*
-    --typography-size: max(1em, 1vw);
-    --typography-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+    --fonts-size: max(1em, 1vw);
+    --fonts-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
     */
     /* Font sizes */
     /*--font-size: clamp(1rem, 0.25rem + 1vw, 2rem);*/

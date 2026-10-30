@@ -1,6 +1,4 @@
-
-@import "../typography/lines.css";
-@import "../typography/spacing.css";
+@import "color-palette.css";
 :root {
     /* Semantic Colors */
 }
