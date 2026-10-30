@@ -12,19 +12,24 @@ body {
     background-color: var(--color-primary);
 }
 
-h1.navigation__logo {
-    letter-spacing: var(--letter-spacing);
-    text-align: center;
-    font-family: var(--font-family-chewy);
-}
+/*
+Die Standardvorlage ist in vier Layoutklassen unterteilt.
+Es handelt sich um die folgenden drei sowie eine weitere
+am Anfang, die aus einer eigenen CSS-Datei importiert wird.
 
-.page-layout__header,
-.content-wrapper,
+-------------------
+
+The default template is divided into 4 layout classes.
+These are the following three, plus one at the top,
+which is imported from a dedicated CSS file.
+ */
+.page-header,
+.page-content,
 .page-footer {
     padding-inline: var(--layout-side-padding);
 }
 
-.page-layout__header {
+.page-content {
     display: grid;
     position: sticky;
     top: 0;
@@ -49,18 +54,6 @@ main {
     background: var(--color-error);
 }
 
-.navigation__logo {
-    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
-}
-.navigation__logo a {
-    text-decoration: none;
-}
-
-.navigation,
-.breadcrumb-bar {
-    padding: 0 0.25em;
-}
-
 img.middle {
     margin: 0;
     width: calc(var(--font-size) + 0.75rem);
@@ -69,70 +62,10 @@ img.middle {
     fill: currentColor;
 }
 
-.breadcrumb-bar {
-    align-items: center;
-    border-width: 1px;
-    border-top: 1px solid var(--border--line-color);
-    display: flex;
-    height: var(--breadcrumbs-bar-height);
-    justify-content: end;
-    max-width: 100vw;
-    text-wrap: nowrap;
-    font-size: small;
-}
-.breadcrumb {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    margin: 0 auto 0 0;
-    min-width: 0;
-    overflow-x: hidden;
-    padding: 2px;
-}
-
-.breadcrumb li:not(:last-child)::after {
-    content: "/";
-    margin-inline: .25rem;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
-}
-.lang-menu__header {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lang-menu__header a {
-    padding: 0 0.25em;
-    display: block;
-}
-
 footer {
     display: grid;
     /*background: var(--color-secundary);
     color: var(--color-secundary-text);*/
-}
-.footer-menu {
-    padding: 0.5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: smaller;
-}
-.footer-menu a {
-    padding: 0.25em;
-    display: block;
-}
-.openstreetmap {
-    text-align: center;
-}
-.openstreetmap small {
-    display: block;
-    font-size: 0.8em;
-}
-.openstreetmap iframe {
-    width: 100%; /* takes precedence over the width set with the HTML width attribute */
 }
 .copyright {
     text-align: center;
@@ -146,70 +79,10 @@ footer {
 .lang-menu__footer,
 .footer-nav,
 .copyright {
-    font-size: calc(0.8em + 0.25dvw);
-}
-.active,
-.current {
-    text-decoration: none;
-    /*color: var(--color-interactive-text);
-    background-color: var(--color-neutral-text);*/
-    a:hover {
-        text-decoration: none;
-    }
+    font-size: var(--font-size-smaller);
 }
 
-/* Dropdown menu navbar START */
-/* Tab Button */
-.menu__tab-button {
-    margin: 0;
-    font: inherit;
-    line-height: var(--font-line-ui);
-    white-space: nowrap;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--color-interactive-text);
 
-    &:is([aria-expanded="true"], :hover) {
-        background-color: var(--color-interactive);
-        color: var(--color-interactive-text);
-    }
-
-    /* Arrow & Icon */
-    &::before,
-    &::after {
-        width: 1.25rem;
-        height: 1.25rem;
-        background-color: currentcolor;
-        mask-size: cover;
-    }
-
-    /* Arrow */
-    &::after {
-        content: "";
-        mask-image: url("../../Icons/icon/chevron-down.svg");
-    }
-    &[aria-expanded="true"]::after {
-        scale: -1;
-    }
-}
-
-/* Tab Link */
-.menu__tab-link {
-    /* Custom, to match the icon height */
-    line-height: 1.25rem;
-}
-
-/* Panel */
-.menu__panel {
-    background: inherit;
-}
-.menu__panel-title {
-    padding: 0.125rem 1.4rem;
-    margin: 0;
-    font-size: inherit;
-    background: inherit;
-}
-/* Dropdown navbar END */
 
 /* Solr search settings START */
 /* Search */

@@ -13,4 +13,8 @@
     --measure-narrow: 45ch;
     --measure-base: 65ch;
     --measure-wide: 80ch;
+
+    --font-line-content: 1.75;
+    --font-line-normal: 1.25;
+    --font-line-ui: 1;
 }

@@ -10,11 +10,6 @@
     --font-family-chewy: "Chewy", sans-serif;
     --font-family-montecarlo: "Monte Carlo", cursive;
     --font-family-parisienne: "Parisienne", cursive;
-
-    --font-line-content: 1.75;
-    --font-line-normal: 1.25;
-    --font-line-ui: 1;
-
     /*
     --fonts-size: max(1em, 1vw);
     --fonts-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
@@ -25,7 +20,8 @@
     /* Standard Scale (1.25 ratio - Major Third)
     (https://www.humanstandards.org/code-design-tokens/accessible-typography/)
      */
-    --font-size: max(1rem, 0.25vw);
+    --font-size: max(1rem, 0.25dvw);
+    --font-size-smaller: calc(0.8em + 0.25dvw);
     --font-size-h1: clamp(1.8rem, 2.5vw, 2.6rem);
     --font-size-h2: clamp(1.5rem, 2.5vw, 2.3rem);
     --font-size-h3: clamp(1.2rem, 2.5vw, 2.0rem);

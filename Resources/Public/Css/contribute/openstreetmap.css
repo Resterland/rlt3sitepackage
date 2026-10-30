@@ -1,0 +1,10 @@
+.openstreetmap {
+    text-align: center;
+}
+.openstreetmap small {
+    display: block;
+    font-size: 0.8em;
+}
+.openstreetmap iframe {
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}

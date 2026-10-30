@@ -1,22 +1,22 @@
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
     /*
-    .page-layout__header,
+    .page-header,
     .content-wrapper,
     .page-footer {
         padding-inline: var(--layout-side-padding);
     }
     */
-    .content-wrapper {
+    .page-content {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         display: flex;
     }
 
-    .content-wrapper > * {
+    .page-content > * {
         flex: 1;
     }
-    .content-wrapper > main {
+    .page-content > main {
         flex-grow: 3;
     }
 

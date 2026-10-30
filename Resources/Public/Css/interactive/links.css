@@ -20,3 +20,12 @@ a:active {
     background: var(--color-interactive-text);
     color: var(--color-interactive);
 }
+.active,
+.current {
+    text-decoration: none;
+    /*color: var(--color-interactive-text);
+    background-color: var(--color-neutral-text);*/
+    a:hover {
+        text-decoration: none;
+    }
+}
