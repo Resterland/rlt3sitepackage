@@ -1,12 +1,9 @@
 @import "basics.css";
-@import "../fonts/fonts.css";
 @import "lines.css";
 @import "spacing.css";
-@import "../interactive/links.css";
-@import "../interactive/buttons.css";
 
 /* Globals
-
+@import "variables.css";
 [hidden] {
     display: none !important;
 }

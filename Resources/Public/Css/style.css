@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 @import "accessibility/skipLink.css";
-@import "global/01-globals.css";
+@import "fonts/fonts.css";
+@import "global/01-components.css";
+@import "interactive/01-components.css";
 @import "tokens/color-palette.css";
 @import "media/mobileFirst.css";
 @import "media/large.css";
