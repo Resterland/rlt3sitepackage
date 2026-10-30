@@ -5,6 +5,8 @@
 @import "components.css";
 
 :root {
+    --neutral-color: var(--gray);
+
     /* Primitive Colors */
     --color-primary: light-dark(var(--surface-0), var(--surface-0-dark));
     --color-secundary: light-dark(var(--color-secundary-light), var(--color-secundary-dark));

@@ -3,4 +3,8 @@
 
 :root {
     --primary-color: var(--purple);
+    --secundary-color: var(--fuchsia);
+    --interactive-color: var(--blue);
+    --error-color: var(--red);
+    --success-color: var(--green);
 }

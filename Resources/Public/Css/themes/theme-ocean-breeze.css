@@ -3,4 +3,8 @@
 
 :root {
     --primary-color: var(--blue);
+    --secundary-color: var(--aquamarine);
+    --interactive-color: var(--salmon);
+    --error-color: var(--red);
+    --success-color: var(--green);
 }

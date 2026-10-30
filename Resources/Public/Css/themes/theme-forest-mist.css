@@ -2,5 +2,9 @@
 @import "themes.css";
 
 :root {
-    --primary-color: var(--green);
+    --primary-color: var(--olive);
+    --secundary-color: var(--lime);
+    --interactive-color: var(--blue);
+    --error-color: var(--red);
+    --success-color: var(--green);
 }

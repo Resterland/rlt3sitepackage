@@ -2,7 +2,11 @@
 @import "themes.css";
 
 :root {
-    --primary-color: var(--indigo);
+    --primary-color: var(--yellow);
+    --secundary-color: var(--gold);
+    --interactive-color: var(--blue);
+    --error-color: var(--red);
+    --success-color: var(--green);
 }
 
 /*.theme-railwayspotter {
