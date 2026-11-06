@@ -18,16 +18,16 @@
     --color-secundary: light-dark(var(--surface-3), var(--surface-3-dark));
     --text-color-secundary: light-dark(var(--surface-3-dark),  var(--surface-3));
 
-    --color-neutral: light-dark(var(--color-neutral), var(--color-neutral-dark));
-    --text-color-neutral: light-dark(var(--color-neutral-dark),  var(--color-neutral));
+    --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
+    --text-color-neutral: light-dark(var(--color-neutral-dark),  var(--color-neutral-light));
 
-    --color-success:light-dark(var(--color-success), var(--color-success-dark));
-    --text-color-success:light-dark(var(--color-success-dark), var(--color-success));
+    --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
+    --text-color-success:light-dark(var(--color-success-dark), var(--color-success-light));
 
-    --color-error: light-dark(var(--color-error), var(--color-error-dark));
-    --text-color-error: light-dark(var(--color-error-dark), var(--color-error));
+    --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
+    --text-color-error: light-dark(var(--color-error-dark), var(--color-error-light));
 
 
-    --color-interactive: light-dark(var(--color-interactive), var(--color-interactive-dark));
-    --text-color-interactive: light-dark(var(--color-interactive-dark),  var(--color-interactive));
+    --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
+    --text-color-interactive: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
 }

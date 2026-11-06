@@ -33,10 +33,10 @@
 :root {
     --background-01:  oklch(var(--l-90) var(--c-250) var(--h-320));
     --surface-3: oklch(var(--l-90) var(--c-015) var(--h-90));
-    --color-neutral: oklch(var(--l-90) var(--c-0) var(--h-0));
-    --color-interactive: oklch(var(--l-90) var(--c-0) var(--h-220));
-    --color-success: oklch(var(--l-90) var(--c-0) var(--h-140));
-    --color-error: oklch(var(--l-90) var(--c-0) var(--h-20));
+    --color-neutral-light: oklch(var(--l-90) var(--c-0) var(--h-0));
+    --color-interactive-light: oklch(var(--l-90) var(--c-0) var(--h-220));
+    --color-success-light: oklch(var(--l-90) var(--c-0) var(--h-140));
+    --color-error-light: oklch(var(--l-90) var(--c-0) var(--h-20));
    /*
    --surface-0: oklch(0.96 0.005 300);
     --surface-1: oklch(1 0 0);
