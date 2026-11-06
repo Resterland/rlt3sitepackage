@@ -9,14 +9,12 @@
 @import "components.css";
 
 :root {
-    --neutral-color: var(--gray);
-
     /* Primitive Colors */
     --color-primary: light-dark(var(--background-01), var(--background-01-dark));
     --text-color-primary: light-dark(var(--background-01-dark),  var(--background-01));
 
-    --color-secundary: light-dark(var(--surface-3), var(--surface-3-dark));
-    --text-color-secundary: light-dark(var(--surface-3-dark),  var(--surface-3));
+    --color-secundary: light-dark(var(--background-02), var(--background-02-dark));
+    --text-color-secundary: light-dark(var(--background-02-dark),  var(--background-02));
 
     --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
     --text-color-neutral: light-dark(var(--color-neutral-dark),  var(--color-neutral-light));

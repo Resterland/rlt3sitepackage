@@ -31,9 +31,9 @@
 }
 :root {
     --background-01-dark: oklch(var(--l-20) var(--c-250) var(--h-320));
-    --surface-3-dark: oklch(var(--l-20) var(--c-015) var(--h-90));
-    --color-neutral-dark: oklch(var(--l-20) var(--c-0) var(--h-0));
-    --color-interactive-dark: oklch(var(--l-20) var(--c-0) var(--h-220));
-    --color-success-dark: oklch(var(--l-20) var(--c-0) var(--h-140));
-    --color-error-dark: oklch(var(--l-20) var(--c-0) var(--h-20));
+    --background-02-dark: oklch(var(--l-20) var(--c-015) var(--h-90));
+    --color-neutral-dark: oklch(var(--l-45) var(--c-010) var(--h-0));
+    --color-interactive-dark: oklch(var(--l-20) var(--c-010) var(--h-220));
+    --color-success-dark: oklch(var(--l-20) var(--c-010) var(--h-140));
+    --color-error-dark: oklch(var(--l-45) var(--c-010) var(--h-20));
 }
