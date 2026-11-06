@@ -32,7 +32,7 @@
 }
 :root {
     --background-01-dark:  oklch(var(--l-20) var(--c-250) var(--h-320));
-    --surface-3-dark: oklch(var(--l-30) var(--c-015) var(--l-20));
+    --surface-3-dark: oklch(var(--l-30) var(--c-015) var(--h-320));
     --surface-0-dark: oklch(0 0 0);
     --surface-1-dark: oklch(0.29 0.01 300);
     --surface-2-dark: oklch(0.29 0 0 / 85%);
