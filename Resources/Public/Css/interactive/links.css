@@ -1,5 +1,5 @@
 a:link {
-    color: var(--color-interactive-text);
+    color: var(--text-color-interactive);
 }
 
 a:visited {
@@ -17,7 +17,7 @@ a:hover {
 }
 
 a:active {
-    background: var(--color-interactive-text);
+    background: var(--text-color-interactive);
     color: var(--color-interactive);
 }
 .active,

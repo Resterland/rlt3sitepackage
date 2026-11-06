@@ -25,7 +25,7 @@
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
         background-color: var(--color-interactive);
-        color: var(--color-interactive-text);
+        color: var(--text-color-interactive);
     }
 
     /* Arrow & Icon */
@@ -90,6 +90,6 @@
     &:hover,
     &[data-current] {
         background-color: var(--color-interactive);
-        color: var(--color-interactive-text);
+        color: var(--text-color-interactive);
     }
 }

@@ -8,7 +8,7 @@ body {
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
-    color: var(--color-primary-text);
+    color: var(--text-color-primary);
     background-color: var(--color-primary);
 }
 
@@ -29,17 +29,22 @@ which is imported from a dedicated CSS file.
     padding-inline: var(--layout-side-padding);
 }
 
+.page-header {
+    background: var(--color-neutral);
+    color: var(--text-color-neutral);
+}
+
 .page-content {
     display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
-    background: var(--color-secundary);
-    color: var(--color-secundary-text);
 }
 
 main {
     padding: 0.5rem 0.75rem;
+    background: var(--color-secundary);
+    color: var(--text-color-secundary);
 }
 .aside-left,
 .aside-right {
@@ -48,10 +53,12 @@ main {
 .aside-left {
     border-right: 1px solid var(--border--line-color);
     background: var(--color-success);
+    color: var(--text-color-success);
 }
 .aside-right {
     border-left: 1px solid var(--border--line-color);
     background: var(--color-error);
+    color: var(--text-color-error);
 }
 
 img.middle {
@@ -64,8 +71,6 @@ img.middle {
 
 footer {
     display: grid;
-    /*background: var(--color-secundary);
-    color: var(--color-secundary-text);*/
 }
 .copyright {
     text-align: center;

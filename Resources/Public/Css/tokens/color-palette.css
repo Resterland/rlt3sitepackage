@@ -13,14 +13,21 @@
 
     /* Primitive Colors */
     --color-primary: light-dark(var(--background-01), var(--background-01-dark));
-    --color-secundary: light-dark(var(--surface-3), var(--surface-3-dark));
-    --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
-    --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
-    --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
-    --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
+    --text-color-primary: light-dark(var(--background-01-dark),  var(--background-01));
 
-    --color-primary-text: light-dark(var(--background-01-dark),  var(--background-01));
-    --color-secundary-text: light-dark(var(--surface-3-dark),  var(--surface-3));
-    --color-interactive-text: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
-    --color-neutral-text: light-dark(var(--color-interactive-dark),  var(--color-neutral-light));
+    --color-secundary: light-dark(var(--surface-3), var(--surface-3-dark));
+    --text-color-secundary: light-dark(var(--surface-3-dark),  var(--surface-3));
+
+    --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
+    --text-color-neutral: light-dark(var(--color-neutral-dark),  var(--color-neutral-light));
+
+    --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
+    --text-color-success:light-dark(var(--color-success-dark), var(--color-success-light));
+
+    --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
+    --text-color-error: light-dark(var(--color-error-dark), var(--color-error-light));
+
+
+    --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
+    --text-color-interactive: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
 }
