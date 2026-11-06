@@ -1,49 +1,40 @@
 
 :root {
-    /* dark variables  */
-    --darken-10: 0.1;
-    --darken-20: 0.2;
-    --darken-30: 0.3;
-    --darken-40: 0.4;
-    --darken-50: 0.5;
-    --darken-60: 0.6;
-    --darken-70: 0.7;
-    --darken-80: 0.8;
-    --darken-90: 0.9;
 
     --color-primary-dark: oklch(from var(--primary-color)
-    calc(l - var(--darken-10))
+    calc(l - var(--l-10))
     c h);
 
     --color-secundary-dark: oklch(
         from var(--secundary-color)
-        calc(l - var(--darken-10))
+        calc(l - var(--l-10))
         c h);
 
     --color-neutral-dark: oklch(
         from var(--neutral-color)
-        calc(l - var(--darken-10))
+        calc(l - var(--l-10))
         c h);
 
     --color-interactive-dark: oklch(
         from var(--interactive-color)
-        calc(l - var(--darken-10))
+        calc(l - var(--l-10))
         c h);
 
     --color-error-dark: oklch(
         from var(--error-color)
-        calc(l - var(--darken-10))
+        calc(l - var(--l-10))
         c h);
 
     --color-success-dark: oklch(
         from var(--success-color)
-        calc(l - var(--darken-10))
+        calc(l - var(--l-10))
         c h);
 }
 :root {
+    --background-01-dark:  oklch(var(--l-20) var(--c-250) var(--h-320));
+    --surface-3-dark: oklch(var(--l-30) var(--c-015) var(--l-20));
     --surface-0-dark: oklch(0 0 0);
     --surface-1-dark: oklch(0.29 0.01 300);
     --surface-2-dark: oklch(0.29 0 0 / 85%);
-    --surface-3-dark: oklch(var(--darken-30) var(--chroma-15) var(--hue-red));
     --text-primary-dark: oklch(1 0 0);
 }

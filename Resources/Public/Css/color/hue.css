@@ -1,7 +1,15 @@
 :root {
-    --hue-red: 20;
-    --hue-yellow: 90;
-    --hue-green: 140;
-    --hue-blue: 220;
-    --hue-purple: 320;
+    /* hue variables
+        --hue-red: 20;
+        --hue-yellow: 90;
+        --hue-green: 140;
+        --hue-blue: 220;
+        --hue-purple: 320;
+     */
+    --h-0: 0;
+    --h-20: 20;
+    --h-90: 90;
+    --h-140: 140;
+    --h-220: 220;
+    --h-320: 320;
 }

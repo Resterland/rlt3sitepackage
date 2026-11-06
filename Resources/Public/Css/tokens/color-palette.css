@@ -1,7 +1,8 @@
 @import "../color/colors.css";
+@import "../color/lightness.css";
 @import "../color/chroma.css";
 @import "../color/hue.css";
-@import "../color/opacity.css";
+@import "../color/alpha.css";
 @import "../color/light.css";
 @import "../color/dark.css";
 @import "semantics.css";
@@ -12,7 +13,7 @@
 
     /* Primitive Colors */
     --color-primary: light-dark(var(--surface-3), var(--surface-3-dark));
-    --color-secundary: light-dark(var(--color-secundary-light), var(--color-secundary-dark));
+    --color-secundary: light-dark(var(--background-01), var(--background-01-dark));
     --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
     --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
     --color-error: light-dark(var(--color-error-light), var(--color-error-dark));

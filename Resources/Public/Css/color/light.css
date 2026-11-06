@@ -1,51 +1,41 @@
 /* OKLCH L-value (percentage) = perceived lightness */
 :root {
-    /* light variables */
-    --lighten-10: 0.1;
-    --lighten-20: 0.2;
-    --lighten-30: 0.3;
-    --lighten-40: 0.4;
-    --lighten-50: 0.5;
-    --lighten-60: 0.6;
-    --lighten-70: 0.7;
-    --lighten-80: 0.8;
-    --lighten-90: 0.9;
-
     --color-primary-light: oklch(
         from var(--primary-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--l-90))
         c h);
 
     --color-secundary-light: oklch(
         from var(--secundary-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--l-90))
         c h);
 
     --color-neutral-light: oklch(
         from var(--neutral-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--l-90))
         c h);
 
     --color-interactive-light: oklch(
         from var(--interactive-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--l-90))
         c h);
 
     --color-error-light: oklch(
         from var(--error-color)
-        calc(l + var(--lighten-90))
+        calc(l + var(--l-90))
         c h);
 
     --color-success-light: oklch(
         from var(--success-color)
-        calc(l + var(--lighten-60))
+        calc(l + var(--l-90))
         c h);
 }
 :root {
+    --background-01:  oklch(var(--l-90) var(--c-250) var(--h-320));
+    --surface-3: oklch(var(--l-90) var(--c-015) var(--l-20));
     --surface-0: oklch(0.96 0.005 300);
     --surface-1: oklch(1 0 0);
     --surface-2: oklch(0.99 0 0 / 85%);
-    --surface-3: oklch(var(--lighten-90) var(--chroma-00) var(--hue-red));
     --text-primary: oklch(0 0 0);
     --text-secondary: oklch(0.54 0 0);
     --accent: oklch(0.57 0.18 286);
