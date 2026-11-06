@@ -1,6 +1,6 @@
 /* OKLCH L-value (percentage) = perceived lightness */
 :root {
-    --color-primary-light: oklch(
+    /*--color-primary-light: oklch(
         from var(--primary-color)
         calc(l + var(--l-90))
         c h);
@@ -28,16 +28,22 @@
     --color-success-light: oklch(
         from var(--success-color)
         calc(l + var(--l-90))
-        c h);
+        c h);*/
 }
 :root {
     --background-01:  oklch(var(--l-90) var(--c-250) var(--h-320));
-    --surface-3: oklch(var(--l-90) var(--c-015) var(--h-320));
-    --surface-0: oklch(0.96 0.005 300);
+    --surface-3: oklch(var(--l-90) var(--c-015) var(--h-90));
+    --color-neutral: oklch(var(--l-90) var(--c-0) var(--h-0));
+    --color-interactive: oklch(var(--l-90) var(--c-0) var(--h-220));
+    --color-success: oklch(var(--l-90) var(--c-0) var(--h-140));
+    --color-error: oklch(var(--l-90) var(--c-0) var(--h-20));
+   /*
+   --surface-0: oklch(0.96 0.005 300);
     --surface-1: oklch(1 0 0);
     --surface-2: oklch(0.99 0 0 / 85%);
     --text-primary: oklch(0 0 0);
     --text-secondary: oklch(0.54 0 0);
     --accent: oklch(0.57 0.18 286);
     --danger: oklch(0.59 0.23 7);
+    */
 }

@@ -1,7 +1,6 @@
 
 :root {
-
-    --color-primary-dark: oklch(from var(--primary-color)
+  /*  --color-primary-dark: oklch(from var(--primary-color)
     calc(l - var(--l-10))
     c h);
 
@@ -28,13 +27,13 @@
     --color-success-dark: oklch(
         from var(--success-color)
         calc(l - var(--l-10))
-        c h);
+        c h);*/
 }
 :root {
-    --background-01-dark:  oklch(var(--l-20) var(--c-250) var(--h-320));
-    --surface-3-dark: oklch(var(--l-30) var(--c-015) var(--h-320));
-    --surface-0-dark: oklch(0 0 0);
-    --surface-1-dark: oklch(0.29 0.01 300);
-    --surface-2-dark: oklch(0.29 0 0 / 85%);
-    --text-primary-dark: oklch(1 0 0);
+    --background-01-dark: oklch(var(--l-20) var(--c-250) var(--h-320));
+    --surface-3-dark: oklch(var(--l-20) var(--c-015) var(--h-90));
+    --color-neutral-dark: oklch(var(--l-20) var(--c-0) var(--h-0));
+    --color-interactive-dark: oklch(var(--l-20) var(--c-0) var(--h-220));
+    --color-success-dark: oklch(var(--l-20) var(--c-0) var(--h-140));
+    --color-error-dark: oklch(var(--l-20) var(--c-0) var(--h-20));
 }
