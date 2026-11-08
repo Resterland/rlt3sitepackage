@@ -30,7 +30,7 @@ which is imported from a dedicated CSS file.
 }
 
 .page-header {
-    background: var(--accent-color);
+    /*background: var(--accent-color);*/
 }
 
 .page-content {
@@ -42,7 +42,6 @@ which is imported from a dedicated CSS file.
 
 main {
     padding: 0.5rem 0.75rem;
-    background: var(--neutral-color);
 }
 .aside-left,
 .aside-right {

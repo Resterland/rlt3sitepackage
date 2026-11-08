@@ -22,8 +22,7 @@ a:hover,
     color: var(--interactive-color);
 }
 
-/*a:active,
+a:active,
 [data-current] {
-    background: transparent;
-    color: var(--neutral-text);
-}*/
+    text-decoration: none;
+}
