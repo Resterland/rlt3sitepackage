@@ -15,6 +15,9 @@
     padding: 0 0.5rem;
     margin: 0;
 
+    background: transparent;
+    color: var(--primary-text);
+
     /*background: transparent;
     border: none;*/
 
@@ -53,8 +56,6 @@
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--border--line-color);
-
-    background: var(--primary-color);
 }
 
 .language-switcher__list,
@@ -62,6 +63,8 @@
     text-align: center;
     padding: 0;
     margin: 0;
+
+    background: var(--primary-color);
 }
 
 .language-switcher__option {

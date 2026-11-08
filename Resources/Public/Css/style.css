@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import "accessibility/skipLink.css";
-@import "contribute/openstreetmap.css";
 @import "fonts/fonts.css";
 @import "global/01-components.css";
 @import "interactive/01-components.css";
@@ -9,6 +8,7 @@
 @import "media/mobileFirst.css";
 @import "media/medium.css";
 @import "media/large.css";
+@import "contribute/openstreetmap.css";
 
 :root {
     /* these colors are the base colors depending

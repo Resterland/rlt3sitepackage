@@ -30,7 +30,7 @@ which is imported from a dedicated CSS file.
 }
 
 .page-header {
-    /*background: var(--accent-color);*/
+    background: var(--accent-color);
 }
 
 .page-content {
