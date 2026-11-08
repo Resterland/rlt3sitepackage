@@ -32,9 +32,9 @@
     background: transparent;
     border: none;
 
-    &:hover,
+    /*&:hover,
     &[data-current] {
         background: var(--success-color);
         color: var(--neutral-text);
-    }
+    }*/
 }

@@ -9,24 +9,19 @@
 .language-switcher__button,
 .scheme-switcher__button {
     display: flex;
-
     column-gap: 0.25rem;
     align-items: center;
-
     padding: 0 0.5rem;
     margin: 0;
-
     font: inherit;
-
-    cursor: pointer;
 
     background: transparent;
     border: none;
 
-    &:is(:hover, :focus, [aria-expanded="true"]) {
+    /*&:is(:hover, :focus, [aria-expanded="true"]) {
         background: var(--warning-color);
         color: var(--interactive-text);
-    }
+    }*/
 
     /* Arrow & Icon */
     &::before,
@@ -87,9 +82,9 @@
     background: transparent;
     border: none;
 
-    &:hover,
-    &[data-current] {
-        background: var(--success-color);
-        color: var(--neutral-text);
-    }
+    /*&:hover,*/
+    /*&[data-current] {*/
+    /*    background: var(--success-color);*/
+    /*    color: var(--neutral-text);*/
+    /*}*/
 }
