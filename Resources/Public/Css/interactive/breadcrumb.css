@@ -8,6 +8,7 @@
     max-width: 100vw;
     text-wrap: nowrap;
     font-size: small;
+    padding: 0.5rem 0;
 }
 .breadcrumb {
     align-items: center;
