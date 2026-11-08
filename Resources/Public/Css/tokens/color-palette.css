@@ -5,7 +5,6 @@
 @import "../color/alpha.css";
 @import "../color/light.css";
 @import "../color/dark.css";
-@import "semantics.css";
 @import "components.css";
 
 :root {

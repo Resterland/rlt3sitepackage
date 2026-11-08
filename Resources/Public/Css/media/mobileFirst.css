@@ -31,7 +31,6 @@ which is imported from a dedicated CSS file.
 
 .page-header {
     background: var(--accent-color);
-    color: var(--accent-text);
 }
 
 .page-content {
@@ -44,21 +43,18 @@ which is imported from a dedicated CSS file.
 main {
     padding: 0.5rem 0.75rem;
     background: var(--neutral-color);
-    color: var(--neutral-text);
 }
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
 }
 .aside-left {
-    border-right: 1px solid var(--warning-text);
+    border-right: 1px solid var(--border--line-color);
     background: var(--info-color);
-    color: var(--info-text);
 }
 .aside-right {
-    border-left: 1px solid var(--info-text);
-    background: var(--warning-color);
-    color: var(--warning-text);
+    border-left: 1px solid var(--border--line-color);
+    background: var(--success-color);
 }
 
 img.middle {

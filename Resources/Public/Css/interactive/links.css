@@ -1,40 +1,34 @@
 a:link {
+    text-decoration: underline;
     color: var(--interactive-text);
 }
 
 a:visited {
-    color: var(--success-text);
+    color: var(--gold);
 }
 
 a:focus {
-    text-decoration: underline;
-    background: var(--info-text);
+    background: var(--gold);
 }
 
-a:hover {
+a:hover,
+[aria-expanded="true"]
+{
     text-decoration: none;
-    background: var(--warning-color);
-    color: var(--interactive-text);
-}
-[aria-expanded="true"] {
-    background: var(--warning-color);
-    color: var(--interactive-text);
+    background: var(--interactive-text);
+    color: var(--interactive-color);
 }
 
-a:active {
-    background: var(--success-color);
-    color: var(--neutral-text);
-}
+a:active,
 .active,
-.current {
+.current,
+[data-current] {
     text-decoration: none;
+    background: var(--gold);
+    color: var(--neutral-text);
     /*color: var(--color-interactive-text);
     background-color: var(--color-neutral-text);*/
     a:hover {
         text-decoration: none;
     }
-}
-[data-current] {
-    background: var(--success-color);
-    color: var(--neutral-text);
 }

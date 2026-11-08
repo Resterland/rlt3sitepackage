@@ -15,7 +15,7 @@
     /* Focus */
     --focus-ring-width: 2px;
     --focus-ring-offset: 2px;
-    --focus-ring-color: var(--color-hover);
+    /*--focus-ring-color: var(--color-hover);*/
 
     /* Motion */
     --duration-fast: 100ms;
