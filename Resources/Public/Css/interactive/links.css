@@ -2,6 +2,7 @@ a:link {
     text-decoration: underline;
     color: var(--interactive-text);
 }
+/*
 
 a:visited {
     color: transparent;
@@ -11,6 +12,7 @@ a:focus {
     background: var(--interactive-color);
     color: var(--interactive-text);
 }
+*/
 
 a:hover,
 [aria-expanded="true"]

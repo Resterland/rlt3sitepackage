@@ -77,10 +77,10 @@
     padding: 0.25rem;
     margin: 0;
 
-    font: inherit;
+    /*font: inherit;
 
     background: transparent;
-    border: none;
+    border: none;*/
 
     /*&:hover,*/
     /*&[data-current] {*/
