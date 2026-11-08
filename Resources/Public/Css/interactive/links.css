@@ -1,24 +1,25 @@
 a:link {
-    color: var(--text-color-interactive);
+    color: var(--interactive-text);
 }
 
 a:visited {
-    color: var(--color-error);
+    color: var(--success-text);
 }
 
 a:focus {
     text-decoration: none;
-    background: var(--color-error);
+    background: var(--info-text);
 }
 
 a:hover {
     text-decoration: none;
-    background: var(--color-success);
+    background: var(--warning-color);
+    color: var(--interactive-text);
 }
 
 a:active {
-    background: var(--text-color-interactive);
-    color: var(--color-interactive);
+    background: var(--success-color);
+    color: var(--neutral-text);
 }
 .active,
 .current {

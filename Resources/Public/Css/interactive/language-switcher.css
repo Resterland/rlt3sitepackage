@@ -34,7 +34,7 @@
 
     &:hover,
     &[data-current] {
-        color: var(--color-interactive);
-        background-color: var(--text-color-interactive);
+        background: var(--success-color);
+        color: var(--neutral-text);
     }
 }

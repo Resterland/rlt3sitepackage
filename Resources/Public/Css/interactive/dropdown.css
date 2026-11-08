@@ -6,12 +6,13 @@
     line-height: var(--font-line-ui);
     white-space: nowrap;
     cursor: pointer;
-    background-color: transparent;
-    color: var(--color-interactive-text);
+
+    background:  var(--primary-color);
+    color: var(--primary-text);
 
     &:is([aria-expanded="true"], :hover) {
-        background-color: var(--color-interactive);
-        color: var(--color-interactive-text);
+        background: var(--interactive-color);
+        color: var(--interactive-text);
     }
 
     /* Arrow & Icon */

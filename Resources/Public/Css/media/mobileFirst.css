@@ -8,8 +8,8 @@ body {
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
-    color: var(--text-color-primary);
-    background-color: var(--color-primary);
+    background: var(--primary-color);
+    color: var(--primary-text);
 }
 
 /*
@@ -30,8 +30,8 @@ which is imported from a dedicated CSS file.
 }
 
 .page-header {
-    background: var(--color-neutral);
-    color: var(--text-color-neutral);
+    background: var(--accent-color);
+    color: var(--accent-text);
 }
 
 .page-content {
@@ -43,22 +43,22 @@ which is imported from a dedicated CSS file.
 
 main {
     padding: 0.5rem 0.75rem;
-    background: var(--color-secundary);
-    color: var(--text-color-secundary);
+    background: var(--neutral-color);
+    color: var(--neutral-text);
 }
 .aside-left,
 .aside-right {
     padding: 0.5rem 0.75rem;
 }
 .aside-left {
-    border-right: 1px solid var(--border--line-color);
-    background: var(--color-success);
-    color: var(--text-color-success);
+    border-right: 1px solid var(--warning-text);
+    background: var(--info-color);
+    color: var(--info-text);
 }
 .aside-right {
-    border-left: 1px solid var(--border--line-color);
-    background: var(--color-error);
-    color: var(--text-color-error);
+    border-left: 1px solid var(--info-text);
+    background: var(--warning-color);
+    color: var(--warning-text);
 }
 
 img.middle {

@@ -24,8 +24,8 @@
     border: none;
 
     &:is(:hover, :focus, [aria-expanded="true"]) {
-        background-color: var(--color-interactive);
-        color: var(--text-color-interactive);
+        background: var(--warning-color);
+        color: var(--interactive-text);
     }
 
     /* Arrow & Icon */
@@ -89,7 +89,7 @@
 
     &:hover,
     &[data-current] {
-        background-color: var(--color-interactive);
-        color: var(--text-color-interactive);
+        background: var(--success-color);
+        color: var(--neutral-text);
     }
 }
