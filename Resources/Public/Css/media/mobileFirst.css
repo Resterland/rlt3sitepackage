@@ -38,6 +38,7 @@ which is imported from a dedicated CSS file.
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
+    padding: 0.25rem 0;
 }
 
 main {
