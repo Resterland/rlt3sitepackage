@@ -4,11 +4,12 @@ a:link {
 }
 
 a:visited {
-    color: var(--gold);
+    color: transparent;
 }
 
 a:focus {
-    background: var(--gold);
+    background: var(--interactive-color);
+    color: var(--interactive-text);
 }
 
 a:hover,
@@ -19,16 +20,8 @@ a:hover,
     color: var(--interactive-color);
 }
 
-a:active,
-.active,
-.current,
+/*a:active,
 [data-current] {
-    text-decoration: none;
-    background: var(--gold);
+    background: transparent;
     color: var(--neutral-text);
-    /*color: var(--color-interactive-text);
-    background-color: var(--color-neutral-text);*/
-    a:hover {
-        text-decoration: none;
-    }
-}
+}*/
