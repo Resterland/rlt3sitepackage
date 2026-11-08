@@ -10,22 +10,27 @@
 
 :root {
     /* Primitive Colors */
-    --color-primary: light-dark(var(--background-01), var(--background-01-dark));
-    --text-color-primary: light-dark(var(--background-01-dark),  var(--background-01));
+    --primary-color: light-dark(var(--rl-001), var(--rl-101));
+    --primary-text: light-dark(var(--rl-101),  var(--rl-001));
 
-    --color-secundary: light-dark(var(--background-02), var(--background-02-dark));
-    --text-color-secundary: light-dark(var(--background-02-dark),  var(--background-02));
+    --accent-color: light-dark(var(--rl-107), var(--rl-101));
+    --accent-text: light-dark(var(--rl-101),  var(--rl-107));
 
-    --color-neutral: light-dark(var(--color-neutral-light), var(--color-neutral-dark));
-    --text-color-neutral: light-dark(var(--color-neutral-dark),  var(--color-neutral-light));
+    --neutral-color: light-dark(var(--rl-white), var(--black));
+    --neutral-text: light-dark(var(--black),  var(--rl-white));
 
-    --color-success:light-dark(var(--color-success-light), var(--color-success-dark));
-    --text-color-success:light-dark(var(--color-success-dark), var(--color-success-light));
+    --interactive-color: light-dark(var(--rl-003), var(--rl-103));
+    --interactive-text: light-dark(var(--rl-103),  var(--rl-003));
 
-    --color-error: light-dark(var(--color-error-light), var(--color-error-dark));
-    --text-color-error: light-dark(var(--color-error-dark), var(--color-error-light));
+    --success-color:light-dark(var(--rl-002), var(--rl-102));
+    --success-text:light-dark(var(--rl-102), var(--rl-002));
 
+    --warning-color: light-dark(var(--rl-004), var(--rl-104));
+    --warning-text: light-dark(var(--rl-104), var(--rl-004));
 
-    --color-interactive: light-dark(var(--color-interactive-light), var(--color-interactive-dark));
-    --text-color-interactive: light-dark(var(--color-interactive-dark),  var(--color-interactive-light));
+    --error-color: light-dark(var(--rl-005), var(--rl-105));
+    --error-text: light-dark(var(--rl-105), var(--rl-005));
+
+    --info-color: light-dark(var(--rl-006), var(--rl-106));
+    --info-text: light-dark(var(--rl-106),  var(--rl-006));
 }

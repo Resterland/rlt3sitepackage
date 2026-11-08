@@ -13,11 +13,15 @@
 :root {
     /* these colors are the base colors depending
         on the theme chosen.
+    --color-primary:var(--rl-001);
+    --color-accent: var(--rl-002);
+
+    --color-interactive: var(--rl-003);
+
+    --color-success: var(--lime);
+    --color-warning: var(--orange);
+    --color-error: var(--red);
+    --color-info: var(--aquamarine);
      */
-    --primary-color: var(--indigo);
-    --secundary-color: var(--navy);
-    --interactive-color: var(--blue);
-    --error-color: var(--red);
-    --success-color: var(--green);
 
 }
