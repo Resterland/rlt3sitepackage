@@ -19,4 +19,4 @@ p { line-height: var(--line-height-normal)}
 ul { list-style: none; }
 img, picture, video { max-width: 100%; height: auto; }
 input, button, textarea, select { font: inherit; }
-button { cursor: crosshair;}
+button {cursor: pointer;}

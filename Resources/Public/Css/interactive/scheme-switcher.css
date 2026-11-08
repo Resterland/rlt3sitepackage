@@ -1,13 +1,8 @@
-.scheme-switcher__button {
-    font-style: italic;
-}
-
 .scheme-switcher__dropdown {
     width: max-content;
 
     padding: 0.25rem 1rem;
 }
-
 .scheme-switcher__list {
     width: max-content;
 }
