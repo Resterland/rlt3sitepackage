@@ -22,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: clamp(10vw, 10 * (1vw + 1vh) / 2, 95vw);
+    width: min(95vw, 62.5rem);
 }
 
 /*
