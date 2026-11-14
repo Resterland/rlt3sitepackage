@@ -22,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: clamp(var(--body-min), none, var(--body-max));
+    width: clamp(var(--body-max), var(--body-val), var(--body-min));
 }
 
 /*
