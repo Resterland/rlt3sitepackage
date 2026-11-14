@@ -16,14 +16,13 @@
 }
 body {
     margin: 0 auto;
-    font-size: var(--font-size);
+    font-size: clamp(1rem, 10 * (1vw + 1vh) / 2, none);
     font-family: var(--font-family-sans);
 
     background: var(--primary-color);
     color: var(--primary-text);
 
-    /*width: var(--body-side-padding);*/
-}
+    width: min(87vw, calc(70% + 2rem));}
 
 /*
 Die Standardvorlage ist in vier Layoutklassen unterteilt.
@@ -34,11 +33,11 @@ The default template is divided into 4 layout classes.
 These are the following three, plus skip link at the top,
 which is imported from a dedicated CSS file.
  */
-.page-header,
+/*.page-header,
 .page-content,
 .page-footer {
     padding-inline: var(--layout-side-padding);
-}
+}*/
 
 .page-header {
     background: var(--accent-color);
