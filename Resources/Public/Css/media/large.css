@@ -3,7 +3,7 @@
     .page-header,
     .page-content,
     .page-footer {
-        padding-inline: var(--layout-side-padding);
+        padding-inline: max(1rem, calc((100vw - 1440px + (2rem)) / 2));
     }
     .page-content {
        /* padding-top: 1.5rem;
