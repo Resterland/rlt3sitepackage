@@ -4,12 +4,14 @@
     color: FieldText;
 }*/
 body {
-    margin: auto;
+    margin: 0 auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
     background: var(--primary-color);
     color: var(--primary-text);
+
+    width: min(1000px, calc(70% + 100px));
 }
 
 /*
