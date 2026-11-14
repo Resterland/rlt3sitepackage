@@ -9,9 +9,9 @@
         var(--layout-side-padding-min),
         calc((100vw - 1440px + (2rem)) / 2)
     );
-    --body-min: 10vw;
+    --body-min: min(1000px, calc(70% + 100px));
     --body-val: 50vw;
-    --body-max: 87vw;
+    --body-max: min(1000px, calc(70% + 100px));
     --body-width: clamp(var(--body-min), var(--body-val), var(--body-max));
 }
 body {
@@ -22,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: min(1000px, calc(70% + 100px));
+    width: clamp(10vw, 10 * (1vw + 1vh) / 2, 95vw);
 }
 
 /*
