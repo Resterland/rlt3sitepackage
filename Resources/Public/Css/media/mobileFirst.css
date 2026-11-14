@@ -22,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: var(--body-side-padding);
+    /*width: var(--body-side-padding);*/
 }
 
 /*
