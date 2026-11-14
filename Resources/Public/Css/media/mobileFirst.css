@@ -3,6 +3,9 @@
     background: Field;
     color: FieldText;
 }*/
+:root {
+    --body-width: clamp(min(10vw, 20rem), 300px, max(90vw, 55rem));
+}
 body {
     margin: 0 auto;
     font-size: var(--font-size);
@@ -11,7 +14,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: min(1000px, calc(70% + 100px));
+    width: var(--body-width);
 }
 
 /*
