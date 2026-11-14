@@ -1,9 +1,9 @@
 @import "basics.css";
+@import "variables.css";
 @import "lines.css";
 @import "spacing.css";
 
 /* Globals
-@import "variables.css";
 [hidden] {
     display: none !important;
 }
