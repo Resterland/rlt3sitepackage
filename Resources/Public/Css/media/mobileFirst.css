@@ -4,7 +4,7 @@
     color: FieldText;
 }*/
 :root {
-    --body-width: clamp(min(10vw, 20rem), 300px, max(90vw, 55rem));
+    --body-width: clamp(10vw, calc((100vw - 13vw + (2rem)) / 2), 10rem);
 }
 body {
     margin: 0 auto;
