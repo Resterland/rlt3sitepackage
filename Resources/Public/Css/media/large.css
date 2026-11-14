@@ -1,12 +1,10 @@
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
-    /*
     .page-header,
-    .content-wrapper,
+    .page-content,
     .page-footer {
         padding-inline: var(--layout-side-padding);
     }
-    */
     .page-content {
        /* padding-top: 1.5rem;
         padding-bottom: 1.5rem;*/

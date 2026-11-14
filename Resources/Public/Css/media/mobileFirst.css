@@ -1,8 +1,8 @@
 /* user agent styles */
-textarea {
+/*textarea {
     background: Field;
     color: FieldText;
-}
+}*/
 body {
     margin: 0 auto;
     font-size: var(--font-size);
@@ -16,11 +16,9 @@ body {
 Die Standardvorlage ist in vier Layoutklassen unterteilt.
 Es handelt sich um die folgenden drei sowie eine weitere
 am Anfang, die aus einer eigenen CSS-Datei importiert wird.
-
 -------------------
-
 The default template is divided into 4 layout classes.
-These are the following three, plus one at the top,
+These are the following three, plus skip link at the top,
 which is imported from a dedicated CSS file.
  */
 .page-header,
