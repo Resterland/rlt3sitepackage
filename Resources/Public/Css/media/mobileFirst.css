@@ -4,7 +4,10 @@
     color: FieldText;
 }*/
 :root {
-    --body-width: clamp(10vw, calc((100vw - 13vw + (2rem)) / 2), 10rem);
+    --body-min: 10vw;
+    --body-val: 50vw;
+    --body-max: 87vw;
+    --body-width: clamp(var(--body-min), var(--body-val), var(--body-max));
 }
 body {
     margin: 0 auto;
