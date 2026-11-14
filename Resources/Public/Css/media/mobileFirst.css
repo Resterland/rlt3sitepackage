@@ -16,13 +16,13 @@
 }
 body {
     margin: 0 auto;
-    font-size: clamp(1rem, 10 * (1vw + 1vh) / 2, none);
+    font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: min(87vw, calc(70% + 2rem));}
+    width: min(1440px, calc(70% + 100px));}
 
 /*
 Die Standardvorlage ist in vier Layoutklassen unterteilt.
