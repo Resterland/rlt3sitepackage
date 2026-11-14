@@ -4,7 +4,7 @@
     color: FieldText;
 }*/
 body {
-    margin: 0 auto;
+    margin: auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
