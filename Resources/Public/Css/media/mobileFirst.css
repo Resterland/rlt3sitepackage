@@ -4,6 +4,11 @@
     color: FieldText;
 }*/
 :root {
+    --body-side-padding-min: 1rem;
+    --body-side-padding: max(
+        var(--layout-side-padding-min),
+        calc((100vw - 1440px + (2rem)) / 2)
+    );
     --body-min: 10vw;
     --body-val: 50vw;
     --body-max: 87vw;
@@ -17,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: clamp(75px, 25vw, 125px);
+    width: var(--body-side-padding);
 }
 
 /*
@@ -29,11 +34,11 @@ The default template is divided into 4 layout classes.
 These are the following three, plus skip link at the top,
 which is imported from a dedicated CSS file.
  */
-/*.page-header,
+.page-header,
 .page-content,
 .page-footer {
     padding-inline: var(--layout-side-padding);
-}*/
+}
 
 .page-header {
     background: var(--accent-color);
