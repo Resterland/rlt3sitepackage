@@ -17,7 +17,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: var(--body-width);
+    width: clamp(75px, 25vw, 125px);
 }
 
 /*
