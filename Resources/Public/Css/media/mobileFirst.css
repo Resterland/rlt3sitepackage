@@ -22,7 +22,7 @@ body {
     background: var(--primary-color);
     color: var(--primary-text);
 
-    width: min(87vw, calc((100vw - 90vw + (1rem)) / 2));
+    width: min(1000px, calc(70% + 100px));
 }
 
 /*
