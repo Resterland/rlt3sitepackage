@@ -1,0 +1,11 @@
+/* user agent styles */
+textarea {
+    background: Field;
+    color: FieldText;
+}
+body {
+    margin: auto;
+    font-family: var(--font-family-sans);
+    background: var(--primary-color);
+    color: var(--primary-text);
+}

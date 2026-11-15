@@ -1,6 +1,7 @@
+@import "fonts/fonts.css";
 @import "basics.css";
-@import "lines.css";
-@import "spacing.css";
+@import "size.css";
+@import "space.css";
 
 /* Globals
 [hidden] {

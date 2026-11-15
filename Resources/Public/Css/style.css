@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
 @import "accessibility/skipLink.css";
-@import "fonts/fonts.css";
 @import "global/01-components.css";
 @import "interactive/01-components.css";
 @import "tokens/color-palette.css";
-@import "media/mobileFirst.css";
-@import "media/medium.css";
-@import "media/large.css";
+@import "media/fluid.css";
 @import "contribute/openstreetmap.css";
 
 :root {
