@@ -56,17 +56,13 @@ img.middle {
 
 footer {
     display: grid;
+    font-size: var(--font-size-smaller);
 }
 .copyright {
     text-align: center;
 }
 .copyright img {
     vertical-align: middle;
-}
-.lang-menu__footer,
-.footer-nav,
-.copyright {
-    font-size: var(--font-size-smaller);
 }
 
 /* Solr search settings START */

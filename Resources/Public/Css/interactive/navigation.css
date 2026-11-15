@@ -13,18 +13,6 @@ h1.navigation__logo {
 .navigation {
     padding-inline: var(--layout-side-padding);
 }
-
-.lang-menu__header {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lang-menu__header a {
-    padding: 0 0.25em;
-    display: block;
-}
 .footer-menu {
     padding: 0.5em 0;
     display: flex;
