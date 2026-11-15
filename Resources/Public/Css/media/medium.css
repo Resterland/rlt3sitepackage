@@ -3,6 +3,9 @@
     :root {
         --navigation-height: 2.9rem;
     }
+    body {
+        width: clamp(min(15vw, 90rem), 98vw, max(99vw, 90rem));
+    }
     .navigation {
         display: grid;
         grid-template-columns: 1fr min-content min-content;

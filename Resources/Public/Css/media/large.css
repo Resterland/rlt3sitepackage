@@ -1,7 +1,7 @@
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
     body {
-        width: clamp(var(--body-min), var(--body-val), var(--body-max));
+        width: clamp(min(15vw, 90rem), 95vw, max(98vw, 90rem));
     }
     .page-content {
        /* padding-top: 1.5rem;
@@ -23,8 +23,6 @@
         column-gap: 0.25rem;
         align-items: center;
         height:  4.125rem;
-        /*padding-block: 0.75rem;
-        padding-inline: var(--layout-side-padding);*/
     }
     /* Logo */
     .navigation__logo {
@@ -37,7 +35,6 @@
         width: calc(var(--font-size) + 1.25rem);
         padding-right: 0.25rem;
         vertical-align: middle;
-        /*fill: currentColor;*/
     }
     /* Popup */
     .navigation__popup {
