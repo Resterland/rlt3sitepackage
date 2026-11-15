@@ -2,17 +2,17 @@
 @media (width <= 62.49rem) {
     /*:root {
         --navigation-height: 2.9rem;
-    }*/
+    }
     body {
         width: clamp(min(15vw, 90rem), 98vw, max(99vw, 90rem));
-    }
+    }*/
     .navigation {
         display: grid;
         grid-template-columns: 1fr min-content min-content;
         column-gap: 0.25rem;
         align-items: center;
         justify-items: start;
-        height: var(--navigation-height);
+        height:  4.125rem;
 
         &[data-open="true"] {
             position: fixed;
