@@ -11,7 +11,7 @@ h1.navigation__logo {
 }
 
 .navigation {
-    padding: var(--layout-side-padding);
+    padding-inline: var(--layout-side-padding);
 }
 
 .lang-menu__header {
