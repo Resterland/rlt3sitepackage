@@ -1,28 +1,15 @@
 /* user agent styles */
-/*textarea {
+textarea {
     background: Field;
     color: FieldText;
-}*/
-:root {
-    --body-side-padding-min: 1rem;
-    --body-side-padding: max(
-        var(--layout-side-padding-min),
-        calc((100vw - 1440px + (2rem)) / 2)
-    );
-    --body-min: min(15vw, 90rem);
-    --body-val: 90vw;
-    --body-max: max(95vw, 90rem);
-    --body-width: clamp(var(--body-min), var(--body-val), var(--body-max));
 }
 body {
-    margin: 0 auto;
+    margin: auto;
     font-size: var(--font-size);
     font-family: var(--font-family-sans);
 
     background: var(--primary-color);
     color: var(--primary-text);
-
-    width: clamp(var(--body-min), var(--body-val), var(--body-max));
 }
 
 /*
@@ -95,8 +82,6 @@ footer {
 .copyright {
     font-size: var(--font-size-smaller);
 }
-
-
 
 /* Solr search settings START */
 /* Search */

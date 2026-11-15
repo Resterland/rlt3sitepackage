@@ -12,6 +12,16 @@
         calc((100vw - 1440px + (2rem)) / 2)
     );
 
+    --body-side-padding-min: 1rem;
+    --body-side-padding: max(
+        var(--layout-side-padding-min),
+        calc((100vw - 1440px + (2rem)) / 2)
+    );
+    --body-min: min(15vw, 90rem);
+    --body-val: 90vw;
+    --body-max: max(95vw, 90rem);
+    --body-width: clamp(var(--body-min), var(--body-val), var(--body-max));
+
     /* Touch Targets */
     --touch-target-minimum: 1.5rem;
     --touch-target-comfortable: 2.75rem;
