@@ -15,7 +15,10 @@ h4 { font-size: var(--font-size-h4); }
 h5 { font-size: var(--font-size-h5); }
 h6 { font-size: var(--font-size-h6); }
 
-p { line-height: var(--line-height-normal)}
+p {
+    line-height: var(--line-height-normal);
+    font-size: var(--font-size);
+}
 code { font-family: var(--font-family-monospace) }
 blockquote { font-family: var(--font-family-cursive) }
 ul { list-style: none; }
