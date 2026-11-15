@@ -20,6 +20,7 @@ p {
 }
 code { font-family: var(--font-family-monospace) }
 blockquote { font-family: var(--font-family-cursive) }
+article { font-family: var(--font-family-serif) }
 ul { list-style: none; }
 img, picture, video { max-width: 100%; height: auto; }
 input, button, textarea, select { font: inherit; }

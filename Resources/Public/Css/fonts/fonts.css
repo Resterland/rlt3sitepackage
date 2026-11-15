@@ -2,25 +2,16 @@
 @import "special.css";
 :root {
     /* Font families */
-    --font-family-sans: "Ubuntu Sans", sans-serif;
-    --font-family-monospace: "Ubuntu Sans Mono", monospace;
+    --font-family-sans: "Noto Sans", Inter, sans-serif, "Noto Color Emoji";
+    --font-family-monospace: ui-monospace, "DejaVu Sans Mono", monospace;
+    --font-family-serif: "Noto Sans", serif;
     --font-family-cursive: "Imperial Script", cursive;
-    --font-family-serif: "Nimbus Roman", serif;
 
     --font-family-chewy: "Chewy", sans-serif;
     --font-family-montecarlo: "Monte Carlo", cursive;
     --font-family-parisienne: "Parisienne", cursive;
-    /*
-    --fonts-size: max(1em, 1vw);
-    --fonts-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
-    */
-    /* Font sizes */
-    /*--font-size: clamp(1rem, 0.25rem + 1vw, 2rem);*/
 
-    /* Standard Scale (1.25 ratio - Major Third)
-    (https://www.humanstandards.org/code-design-tokens/accessible-typography/)
-     */
-    --font-size: max(1rem, 0.25dvw);
+    --font-size-base: clamp(1rem, calc(1rem * 3vw), 2rem);
     --font-size-normal: clamp(1rem, 0.25vw, 1.5rem);
     --font-size-smaller: calc(0.8em + 0.25vw);
     --font-size-h1: clamp(1.6rem, 2.5vw, 2.6rem);
@@ -29,14 +20,4 @@
     --font-size-h4: clamp(0.9rem, 2.5vw, 1.7rem);
     --font-size-h5: clamp(0.8rem, 2.5vw, 1.4rem);
     --font-size-h6: clamp(.75rem, 2.5vw, 1.1rem);
-
-    --font-size-xs: 0.75rem;     /* 12px - minimum readable */
-    --font-size-sm: 0.875rem;    /* 14px - secondary text */
-    --font-size-base: 1rem;      /* 16px - body text */
-    --font-size-lg: 1.125rem;    /* 18px - emphasized body */
-    --font-size-xl: 1.25rem;     /* 20px - small headings */
-    --font-size-2xl: 1.5rem;     /* 24px - h4, large text threshold */
-    --font-size-3xl: 1.875rem;   /* 30px - h3 */
-    --font-size-4xl: 2.25rem;    /* 36px - h2 */
-    --font-size-5xl: 3rem;       /* 48px - h1 */
 }
