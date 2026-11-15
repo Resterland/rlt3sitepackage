@@ -3,24 +3,17 @@
     body {
         width: clamp(var(--body-min), var(--body-val), var(--body-max));
     }
-    /*.page-header,
-    .page-content,
-    .page-footer {
-        padding-inline: var(--layout-side-padding);
-    }*/
     .page-content {
        /* padding-top: 1.5rem;
         padding-bottom: 1.5rem;*/
         display: flex;
     }
-
     .page-content > * {
         flex: 1;
     }
     .page-content > main {
         flex-grow: 3;
     }
-
     /*:root {
         --navigation-height: 4.125rem;
     }*/
