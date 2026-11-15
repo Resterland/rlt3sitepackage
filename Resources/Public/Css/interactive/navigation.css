@@ -10,9 +10,8 @@ h1.navigation__logo {
     text-decoration: none;
 }
 
-.navigation,
-.breadcrumb-bar {
-    padding: 0 0.25em;
+.navigation {
+    padding: var(--layout-side-padding);
 }
 
 .lang-menu__header {
@@ -26,7 +25,6 @@ h1.navigation__logo {
     padding: 0 0.25em;
     display: block;
 }
-
 .footer-menu {
     padding: 0.5em 0;
     display: flex;

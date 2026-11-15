@@ -22,7 +22,6 @@ which is imported from a dedicated CSS file.
  */
 .page-header {
     background: var(--accent-color);
-    padding-inline: var(--layout-side-padding);
     display: grid;
     position: sticky;
     top: 0;
