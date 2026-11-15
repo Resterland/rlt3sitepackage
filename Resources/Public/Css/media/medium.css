@@ -1,8 +1,8 @@
-/* media width equal or lower than 69.99rem */
+/* media width equal or lower than 62.49rem */
 @media (width <= 62.49rem) {
-    :root {
+    /*:root {
         --navigation-height: 2.9rem;
-    }
+    }*/
     body {
         width: clamp(min(15vw, 90rem), 98vw, max(99vw, 90rem));
     }

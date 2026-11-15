@@ -1,11 +1,9 @@
-/* media queries equal or larger than 70rem */
-@media (width > 62.5rem) {
+/* media queries equal or larger than 62.5rem */
+@media (width > 62.49rem) {
     body {
         width: clamp(min(15vw, 90rem), 95vw, max(98vw, 90rem));
     }
     .page-content {
-       /* padding-top: 1.5rem;
-        padding-bottom: 1.5rem;*/
         display: flex;
     }
     .page-content > * {
