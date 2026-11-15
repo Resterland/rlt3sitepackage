@@ -22,18 +22,12 @@ which is imported from a dedicated CSS file.
  */
 .page-header {
     background: var(--accent-color);
-}
-.page-content {
+    padding-inline: var(--layout-side-padding);
     display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
     padding: 0.25rem 0;
-}
-.page-header,
-.page-content,
-.page-footer {
-    padding-inline: var(--layout-side-padding);
 }
 
 main {
