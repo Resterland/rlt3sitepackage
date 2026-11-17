@@ -1,11 +1,12 @@
 @import "fonts/fonts.css";
-@import "basics.css";
-@import "size.css";
-@import "space.css";
+
 
 /* Globals
 [hidden] {
     display: none !important;
+    @import "basics.css";
+@import "size.css";
+@import "space.css";
 }
 @import "variables.css";
  */
