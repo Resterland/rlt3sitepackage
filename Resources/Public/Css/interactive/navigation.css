@@ -3,6 +3,13 @@ h1.navigation__logo {
     text-align: center;
     font-family: var(--font-family-chewy);
 }
+img.middle {
+    margin: 0;
+    width: calc(var(--step-3) + 0.75rem);
+    padding-right: 0.25rem;
+    vertical-align: middle;
+    fill: currentColor;
+}
 .navigation__logo {
     text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
 }

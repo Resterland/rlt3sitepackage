@@ -45,14 +45,6 @@ main {
     background: var(--success-color);
 }
 
-img.middle {
-    margin: 0;
-    width: calc(var(--font-size-base) + 0.75rem);
-    padding-right: 0.25rem;
-    vertical-align: middle;
-    fill: currentColor;
-}
-
 footer {
     display: grid;
     font-size: var(--font-size-smaller);
