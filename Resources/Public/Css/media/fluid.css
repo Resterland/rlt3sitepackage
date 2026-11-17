@@ -9,4 +9,11 @@ body {
     line-height: var(--fluid-leading-body);
     background: var(--primary-color);
     color: var(--primary-text);
+
+    max-width: var(--grid-max-width);
+    padding-inline: var(--grid-gutter);
+    margin-inline: auto;
+
+    display: grid;
+    gap: var(--grid-gutter);
 }
