@@ -4,11 +4,38 @@
 @import "space.css";
 @import "grid.css";
 
+/* variables */
+:root {
+    --breadcrumbs-bar-height: 2rem;
+    --top-banner-height: 3.375rem;
+    --navigation-height: 5rem;
+    --sticky-header-height: calc(var(--navigation-height) + var(--breadcrumbs-bar-height));
+    --z-index-sticky-header: 100;
+    --z-index-sidebar-mobile: 90;
+    --layout-side-padding-min: 1rem;
+    --layout-side-padding: max(
+        var(--layout-side-padding-min),
+        calc((100vw - 1440px + (2rem)) / 2)
+    );
+
+    /* Touch Targets */
+    --touch-target-minimum: 1.5rem;
+    --touch-target-comfortable: 2.75rem;
+
+    /* Focus */
+    --focus-ring-width: 2px;
+    --focus-ring-offset: 2px;
+    /*--focus-ring-color: var(--color-hover);*/
+
+    /* Motion */
+    --duration-fast: 100ms;
+    --duration-normal: 200ms;
+    --easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
 
 /* Globals
 [hidden] {
     display: none !important;
 @import "size.css";
 }
-@import "variables.css";
  */
