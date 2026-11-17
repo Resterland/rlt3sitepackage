@@ -1,5 +1,5 @@
 h1.navigation__logo {
-    letter-spacing: var(--space-s-l);
+    letter-spacing: var(--letter-spacing-fluid);
     text-align: center;
     font-family: var(--font-family-chewy);
 }
