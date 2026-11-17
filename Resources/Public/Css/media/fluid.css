@@ -47,3 +47,9 @@ main {
 .copyright img {
     vertical-align: middle;
 }
+/* media queries equal or larger than 62.5rem */
+@media (width > 62.49rem) {
+    .page-content {
+        display: flex;
+    }
+}

@@ -54,12 +54,7 @@
     --space-6: 1.5rem;
 
     /* Letter spacing */
-    --letter-spacing: 0.015em;
-    --letter-spacing-tight: -0.025em; /* large headings */
-    --letter-spacing-normal: 0;
-    --letter-spacing-wide: 0.025em; /* all caps, small text */
-    --letter-spacing-wider: 0.05em; /* uppercase labels */
-    --letter-spacing-fluid: clamp(0.015rem, 0.02rem + 0.4348vw, 0.025rem);
+    --letter-spacing-fluid: clamp(0.015rem, 0.05rem + 0.4348vw, 0.075rem);
 
 
     /* Paragraph spacing */
