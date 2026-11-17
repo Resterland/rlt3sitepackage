@@ -16,3 +16,35 @@ body {
     display: grid;
     gap: var(--grid-gutter);
 }
+.page-header {
+    background: var(--accent-color);
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
+}
+
+main {
+    padding: 0.5rem 0.75rem;
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+.aside-left,
+.aside-right {
+    padding: 0.5rem 0.75rem;
+}
+.aside-left {
+    border-right: 1px solid var(--border--line-color);
+    background: var(--info-color);
+}
+.aside-right {
+    border-left: 1px solid var(--border--line-color);
+    background: var(--success-color);
+}
+
+.copyright {
+    text-align: center;
+}
+.copyright img {
+    vertical-align: middle;
+}
