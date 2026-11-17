@@ -6,7 +6,6 @@ textarea {
 body {
     margin: auto;
     font-family: var(--font-family-sans);
-    line-height: var(--fluid-leading-body);
     background: var(--primary-color);
     color: var(--primary-text);
 
