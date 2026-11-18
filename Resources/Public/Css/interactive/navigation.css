@@ -22,7 +22,8 @@ h1.sitetitle {
 }
 /* media queries equal or larger than 62.5rem */
 @media (width > 62.49rem) {
-    .navigation {
+    .navigation,
+    .navigation__popup {
         display: flex;
     }
 }

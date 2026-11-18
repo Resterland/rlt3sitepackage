@@ -24,6 +24,7 @@ body {
 }
 .page-header-logo {
     background: yellowgreen;
+    display: flex;
 }
 
 main {
