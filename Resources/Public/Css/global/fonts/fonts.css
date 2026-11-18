@@ -2,9 +2,9 @@
 @import "special.css";
 :root {
     /* Font families */
-    --font-family-sans: "Source Sans 3", Inter, Ubuntu, sans-serif;
+    --font-family-sans: Ubuntu, "Source Sans 3", Inter, "Noto Sans",sans-serif;
     --font-family-serif: Literata, serif;
-    --font-family-monospace: ui-monospace, Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+    --font-family-monospace: ui-monospace, "DejaVu Sans Mono", monospace;
     --font-family-cursive: cursive;
 
     --font-family-chewy: "Chewy", sans-serif;

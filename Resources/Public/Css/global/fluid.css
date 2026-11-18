@@ -5,17 +5,27 @@ Where PREFERRED typically combines viewport and relative units.
 Critical: Always include a rem component in the preferred value.
 Using vw alone breaks zoom accessibility.
  */
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1240,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
-    /* Fluid type scale: scales between 320px and 1200px viewport */
-    --fluid-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-    --fluid-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
-    --fluid-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-    --fluid-lg: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
-    --fluid-xl: clamp(1.25rem, 1rem + 1vw, 2rem);
-    --fluid-2xl: clamp(1.5rem, 1.1rem + 1.5vw, 2.5rem);
-    --fluid-3xl: clamp(1.875rem, 1.2rem + 2.5vw, 3.5rem);
-    --fluid-4xl: clamp(2.25rem, 1.5rem + 3vw, 4.5rem);
-    --fluid-5xl: clamp(3rem, 2rem + 4vw, 6rem);
+    /* Step -2: 12.642px → 12.8px */
+    --step--2: clamp(0.7901rem, 0.7867rem + 0.0172vw, 0.8rem);
+    /* Step -1: 14.2222px → 16px */
+    --step--1: clamp(0.8889rem, 0.8502rem + 0.1932vw, 1rem);
+    /* Step 0: 16px → 20px */
+    --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+    /* Step 1: 18px → 25px */
+    --step-1: clamp(1.125rem, 0.9728rem + 0.7609vw, 1.5625rem);
+    /* Step 2: 20.25px → 31.25px */
+    --step-2: clamp(1.2656rem, 1.0265rem + 1.1957vw, 1.9531rem);
+    /* Step 3: 22.7813px → 39.0625px */
+    --step-3: clamp(1.4238rem, 1.0699rem + 1.7697vw, 2.4414rem);
+    /* Step 4: 25.6289px → 48.8281px */
+    --step-4: clamp(1.6018rem, 1.0975rem + 2.5217vw, 3.0518rem);
+    /* Step 5: 28.8325px → 61.0352px */
+    --step-5: clamp(1.802rem, 1.102rem + 3.5003vw, 3.8147rem);
+    /* Step 6: 32.4366px → 76.2939px */
+    --step-6: clamp(2.0273rem, 1.0739rem + 4.7671vw, 4.7684rem);
 
     /* Fluid Line Height */
     --fluid-leading-heading: clamp(1.1, 1.05 + 0.15vw, 1.3);
