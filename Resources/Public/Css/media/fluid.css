@@ -22,6 +22,9 @@ body {
     top: 0;
     z-index: var(--z-index-sticky-header);
 }
+.page-header-logo {
+    background: yellowgreen;
+}
 
 main {
     padding: 0.5rem 0.75rem;
@@ -40,7 +43,14 @@ main {
     border-left: 1px solid var(--border--line-color);
     background: var(--success-color);
 }
-
+/* Logo Image */
+img.middle {
+    margin: 0;
+    width: calc(var(--step-3) + 0.75rem);
+    padding-right: 0.25rem;
+    vertical-align: middle;
+    fill: currentColor;
+}
 .copyright {
     text-align: center;
 }

@@ -1,19 +1,12 @@
-h1.navigation__logo {
+h1.sitetitle {
     letter-spacing: var(--letter-spacing-fluid);
     text-align: center;
     font-family: var(--font-family-chewy);
 }
-img.middle {
-    margin: 0;
-    width: calc(var(--step-3) + 0.75rem);
-    padding-right: 0.25rem;
-    vertical-align: middle;
-    fill: currentColor;
-}
-.navigation__logo {
+.sitetitle {
     text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
 }
-.navigation__logo a {
+.sitetitle a {
     text-decoration: none;
 }
 .footer-menu {
