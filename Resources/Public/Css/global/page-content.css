@@ -23,4 +23,10 @@ article {
     .page-content {
         display: flex;
     }
+    .page-content > * {
+        flex: 1;
+    }
+    .page-content > main {
+        flex-grow: 3;
+    }
 }
