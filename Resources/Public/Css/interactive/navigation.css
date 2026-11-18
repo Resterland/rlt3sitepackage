@@ -22,8 +22,22 @@ h1.sitetitle {
 }
 /* media queries equal or larger than 62.5rem */
 @media (width > 62.49rem) {
-    .navigation,
-    .navigation__popup {
+    .navigation {
         display: flex;
+    }
+    /* Popup */
+    .navigation__popup {
+        display: contents;
+    }
+    /* Button */
+    .navigation__button {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: var(--grid-gutter);
+        justify-content: space-between;
     }
 }
