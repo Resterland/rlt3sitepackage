@@ -20,8 +20,6 @@ body {
     max-width: var(--grid-max-width);
     padding-inline: var(--grid-gutter);
     margin-inline: auto;
-
-    display: grid;
     gap: var(--grid-gutter);
 }
 h1,h2,h3,h4,h5,h6 {
