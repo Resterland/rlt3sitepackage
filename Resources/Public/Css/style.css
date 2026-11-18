@@ -4,7 +4,6 @@
 @import "global/01-components.css";
 @import "interactive/01-components.css";
 @import "tokens/color-palette.css";
-@import "media/fluid.css";
 @import "contribute/openstreetmap.css";
 
 :root {

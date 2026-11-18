@@ -44,45 +44,10 @@ main {
     border-left: 1px solid var(--border--line-color);
     background: var(--success-color);
 }
-
-footer {
-    display: grid;
-    font-size: var(--font-size-smaller);
-}
 .copyright {
     text-align: center;
 }
 .copyright img {
     vertical-align: middle;
-}
-
-/* Solr search settings START */
-/* Search */
-/*.navigation__search[data-view="mobile"] {
-    display: none;
-}
-.navigation__search[data-view="desktop"] {
-    display: block;
-}*/
-.navigation__search {
-    justify-self: end;
-}
-form {
-    display: inline-block;
-    /* Form outline */
-    background: light-dark(var(--yellow) var(--green));
-    padding: 0.25em;
-    border: 1px solid light-dark(var(--blue) var(--red));
-    border-radius: 0.5em;
-}
-.input-group {
-    display: flex;
-}
-.search-button {
-    background: light-dark(var(--yellow) var(--green));
-    &::after {
-        content: "";
-        mask-image: url("../../Icons/icon/chevron-down.svg");
-    }
 }
 

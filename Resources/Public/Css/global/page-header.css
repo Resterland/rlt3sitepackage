@@ -1,0 +1,44 @@
+:root {
+    --breadcrumbs-bar-height: 2rem;
+    --top-banner-height: 3.375rem;
+    --navigation-height: 5rem;
+    --sticky-header-height: calc(var(--navigation-height) + var(--breadcrumbs-bar-height));
+    --z-index-sticky-header: 100;
+    --z-index-sidebar-mobile: 90;
+}
+.page-header {
+    background: var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
+}
+.page-header-logo {
+    background: yellowgreen;
+    display: flex;
+}
+h1.sitetitle {
+    letter-spacing: var(--letter-spacing-fluid);
+    text-align: center;
+    font-family: var(--font-family-chewy);
+}
+.sitetitle {
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
+}
+.sitetitle a {
+    text-decoration: none;
+}
+/* media queries equal or larger than 62.5rem */
+@media (width > 62.49rem) {
+    /* Header Navigation for large media */
+    .navigation {
+        display: flex;
+    }
+    /* Popup */
+    .navigation__popup {
+        display: contents;
+    }
+    /* Don't desplay the Hamburger button on wide screens */
+    .navigation__button {
+        display: none;
+    }
+}

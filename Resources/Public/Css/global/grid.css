@@ -4,6 +4,12 @@
     --grid-max-width: 87.50rem;
     --grid-gutter: var(--space-s-l, clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem));
     --grid-columns: 12;
+
+    --layout-side-padding-min: 1rem;
+    --layout-side-padding: max(
+        var(--layout-side-padding-min),
+        calc((100vw - 1440px + (2rem)) / 2)
+    );
 }
 
 .u-container {
