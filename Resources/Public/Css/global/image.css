@@ -1,10 +1,10 @@
 img, picture, video { max-width: 100%; height: auto; }
 /* Logo Image */
-img.middle {
-    margin: 0;
+img.logo {
+   /* margin: 0;
     width: calc(var(--step-3) + 0.75rem);
     padding-right: 0.25rem;
     vertical-align: middle;
-    fill: currentColor;
+    fill: currentColor;*/
 }
 

@@ -24,7 +24,7 @@ h1.sitetitle {
 .sitetitle {
     text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
 }
-.sitetitle a {
+.sitetitle a:link {
     text-decoration: none;
 }
 /* media queries equal or larger than 62.5rem */
