@@ -7,8 +7,8 @@
     justify-content: end;
     max-width: 100vw;
     text-wrap: nowrap;
-    font-size: small;
-    padding: 0.5rem 0;
+    font-size: var(--step--2);
+    padding: 0.5rem;
 }
 .breadcrumb {
     align-items: center;
