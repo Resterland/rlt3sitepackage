@@ -33,6 +33,7 @@ h1.sitetitle {
     .navigation__button {
         display: none;
     }
+    /* Dropdown navbar START */
     .menu {
         position: relative;
         display: flex;
@@ -40,4 +41,49 @@ h1.sitetitle {
         column-gap: var(--grid-gutter);
         justify-content: space-between;
     }
+    /* Button */
+    .menu__tab-button {
+        display: flex;
+        column-gap: 0.125rem;
+        align-items: center;
+        padding: var(--menu-button-padding);
+        border: none;
+    }
+    .menu__tab-button[aria-expanded="true"] {
+        position: relative;
+        z-index: 1;
+    }
+    /* Arrow */
+    .menu__tab-button::after {
+        margin-right: -4px;
+    }
+    /* Link */
+    .menu__tab-link {
+        padding: 0 0.7rem;
+    }
+    /* Label */
+    .menu__tab-label[data-type="short"] {
+        display: none;
+    }
+    /* Panel */
+    .menu__panel {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1; /* prevents menu foldout to be drawn below language chooser */
+        margin-top: 0;
+        border: 1px solid var(--border--line-color);
+    }
+    /* Panel */
+    .menu__panel-title {
+        padding: 0.125rem 0;
+        padding-left: 0.25rem;
+        margin: 0.25rem 0;
+        font-size: inherit;
+    }
+    .menu__tab ul {
+        margin: 0;
+        padding: 0;
+    }
+    /* Dropdown navbar END */
 }
