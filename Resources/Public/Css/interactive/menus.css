@@ -8,10 +8,10 @@
     background: transparent;
     color: var(--primary-text);
 
-    /*&:is([aria-expanded="true"], :hover) {
+    &:is([aria-expanded="true"], :hover) {
         background: var(--interactive-color);
         color: var(--interactive-text);
-    }*/
+    }
 
     /* Arrow & Icon */
     &::before,
@@ -102,6 +102,13 @@
         margin: 0;
         padding: 0;
     }
+}/* media width equal or lower than 62.49rem */
+@media (width <= 62.49rem) {
+    .menu {
+        display: grid;
+        background: var(--primary-color);
+    }
+
 }
 /* Dropdown navbar END */
 
