@@ -1,9 +1,9 @@
 footer {
     display: grid;
-    font-size: var(--fluid-xs);
 }
 .copyright {
     text-align: center;
+    font-size: calc(0.8em + 0.25dvw);
 }
 .copyright img {
     vertical-align: middle;

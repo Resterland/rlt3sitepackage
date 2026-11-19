@@ -26,3 +26,12 @@ a:active,
 [data-current] {
     text-decoration: none;
 }
+.active,
+.current {
+    text-decoration: none;
+    color: var(--interactive-text);
+    background-color: var(--interactive-color);
+    a:hover {
+        text-decoration: none;
+    }
+}
