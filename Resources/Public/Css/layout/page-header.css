@@ -21,6 +21,17 @@
     background: yellowgreen;
     display: flex;
 }
+h1.sitetitle {
+    letter-spacing: var(--letter-spacing-fluid);
+    text-align: center;
+    font-family: var(--font-family-chewy);
+}
+.sitetitle {
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
+}
+.sitetitle a:link {
+    text-decoration: none;
+}
 .breadcrumb-bar {
     align-items: center;
     border-width: 1px;
@@ -49,17 +60,104 @@
     padding-right: 0.25rem;
     padding-left: 0.25rem;
 }
-h1.sitetitle {
-    letter-spacing: var(--letter-spacing-fluid);
-    text-align: center;
-    font-family: var(--font-family-chewy);
+.lang-menu__header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sitetitle {
-    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
+.lang-menu__header a {
+    padding: 0 0.25em;
+    display: block;
 }
-.sitetitle a:link {
-    text-decoration: none;
+
+/* Dropdown menu navbar START */
+/* Tab Button */
+.menu__tab-button {
+    margin: 0;
+    font: inherit;
+    line-height: var(--fluid-leading-heading);
+    color: var(--primary-text);
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:is([aria-expanded="true"], :hover) {
+        color: var(--interactive-text);
+        background-color: var(--interactive-color);
+    }
+
+    /* Arrow & Icon */
+    &::before,
+    &::after {
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: currentcolor;
+        mask-size: cover;
+    }
+
+    /* Arrow */
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
+    }
+    &[aria-expanded="true"]::after {
+        scale: -1;
+    }
 }
+
+/* Tab Link */
+.menu__tab-link {
+    /* Custom, to match the icon height */
+    line-height: 1.25rem;
+}
+
+/* Panel */
+.menu__panel-title {
+    padding: 0.125rem 1.4rem;
+    margin: 0;
+    font-size: inherit;
+    background-color: aqua;
+}
+/* Dropdown navbar END */
+
+/* Solr search settings START */
+/* Search */
+/*.navigation__search[data-view="mobile"] {
+    display: none;
+}
+.navigation__search[data-view="desktop"] {
+    display: block;
+}*/
+.navigation__search {
+    justify-self: end;
+}
+form {
+    display: inline-block;
+    /* Form outline */
+    background: var(--primary-color);
+    padding: 0.25em;
+    border: 1px solid var(--border--line-color);
+    border-radius: 0.5em;
+}
+.input-group {
+    display: flex;
+}
+.search-button {
+    background: var(--primary-color);
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
+    }
+}
+/*.input-group input {
+    background: var(--base-background-primary);
+}
+.input-group button {
+    background: var(--base-background-secondary);
+}*/
+/* Solr search settings END */
 /* media queries equal or larger than 62.5rem */
 @media (width > 62.49rem) {
     /* Header Navigation for large media */
@@ -73,5 +171,130 @@ h1.sitetitle {
     /* Don't desplay the Hamburger button on wide screens */
     .navigation__button {
         display: none;
+    }
+}
+/* media width equal or lower than 69.99rem */
+@media (width <= 62.49rem) {
+    :root {
+        --navigation-height: 2.9rem;
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr min-content min-content;
+        column-gap: 0.25rem;
+        align-items: center;
+        justify-items: start;
+        height: var(--navigation-height);
+
+        &[data-open="true"] {
+            position: fixed;
+            inset: 0;
+            z-index: 2;
+
+            align-content: start;
+
+            height: auto;
+
+            overflow-y: auto;
+        }
+    }
+
+    /* Popup */
+
+    .navigation__popup {
+        display: none;
+        grid-column: 1 / -1;
+        justify-self: stretch;
+    }
+
+    .navigation[data-open="true"] .navigation__popup {
+        display: block;
+    }
+
+    /* Logo */
+    .page-header-logo {
+        padding: 0.2rem;
+    }
+    /* Button */
+
+    .navigation__button {
+        padding: 0.7rem;
+        margin: 0;
+        cursor: pointer;
+        outline-offset: -2px;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            background-color: var(--accent-text);
+        }
+        &::before {
+            display: block;
+
+            width: 1.5rem;
+            height: 1.5rem;
+
+            content: "";
+
+            background-color: currentcolor;
+
+            mask-size: cover;
+        }
+        &[aria-expanded="true"]::before {
+            mask-image: url("../../Icons/icon/cancel.svg");
+        }
+        &[aria-expanded="false"]::before {
+            mask-image: url("../../Icons/icon/menu.svg");
+        }
+    }
+
+    .menu {
+        --menu-button-padding: 0.125rem 0.25rem;
+    }
+
+    /* Tab */
+    .menu__tab {
+        display: grid;
+        border-top: 1px solid var(--border--line-color);
+    }
+
+    /* Button */
+    .menu__tab-button {
+        display: flex;
+
+        column-gap: 0.25rem;
+        align-items: center;
+
+        padding: var(--menu-button-padding);
+
+        border: none;
+        /* Arrow */
+    }
+
+    .menu__tab-button::after {
+        margin-left: auto;
+    }
+
+    /* Link */
+    .menu__tab-link {
+        padding: var(--menu-button-padding);
+    }
+
+    /* Label */
+    .menu__tab-label {
+        order: -1;
+    }
+
+    .menu__tab-label[data-type="short"] {
+        display: none;
+    }
+
+    /* Title */
+    .menu__panel-title::after {
+        position: relative;
+        display: block;
+        height: 1px;
+        content: "";
+        background-color: var(--accent-color);
     }
 }

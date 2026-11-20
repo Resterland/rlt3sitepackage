@@ -1,6 +1,17 @@
 footer {
     display: grid;
 }
+.footer-menu {
+    padding: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: smaller;
+}
+.footer-menu a {
+    padding: 0.25em;
+    display: block;
+}
 .copyright {
     text-align: center;
     font-size: calc(0.8em + 0.25dvw);
