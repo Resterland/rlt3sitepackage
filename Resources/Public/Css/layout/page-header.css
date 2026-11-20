@@ -1,0 +1,96 @@
+:root {
+    --breadcrumbs-bar-height: 2rem;
+    --top-banner-height: 3.375rem;
+    --navigation-height: 5rem;
+    --sticky-header-height: calc(var(--navigation-height) + var(--breadcrumbs-bar-height));
+    --z-index-sticky-header: 100;
+    --z-index-sidebar-mobile: 90;
+}
+.page-header {
+    background: var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
+}
+.page-header-logo {
+    background: yellowgreen;
+    display: flex;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr min-content min-content;
+    column-gap: var(--grid-gutter);
+    align-items: center;
+    justify-items: start;
+    height: 4.125rem;
+
+    &[data-open="true"] {
+        position: fixed;
+        inset: 0;
+        z-index: 2;
+        align-content: start;
+        height: auto;
+        overflow-y: auto;
+    }
+}
+/* Button */
+.navigation__button {
+    padding: 0.7rem;
+    margin: 0;
+    cursor: pointer;
+    outline-offset: -2px;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        /*background-color: var(--color-hover);*/
+    }
+    &::before {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        content: "";
+        background-color: currentcolor;
+        mask-size: cover;
+    }
+    &[aria-expanded="true"]::before {
+        mask-image: url("../../Icons/icon/cancel.svg");
+    }
+    &[aria-expanded="false"]::before {
+        mask-image: url("../../Icons/icon/menu.svg");
+    }
+}
+/* Popup */
+.navigation__popup {
+    display: none;
+    grid-column: 1 / -1;
+    justify-self: stretch;
+}
+.navigation[data-open="true"] .navigation__popup {
+    display: block;
+}
+h1.sitetitle {
+    letter-spacing: var(--letter-spacing-fluid);
+    text-align: center;
+    font-family: var(--font-family-chewy);
+}
+.sitetitle {
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
+}
+.sitetitle a:link {
+    text-decoration: none;
+}
+/* media queries equal or larger than 62.5rem */
+@media (width > 62.49rem) {
+    /* Header Navigation for large media */
+    .navigation {
+        display: flex;
+    }
+    /* Popup */
+    .navigation__popup {
+        display: contents;
+    }
+    /* Don't desplay the Hamburger button on wide screens */
+    .navigation__button {
+        display: none;
+    }
+}

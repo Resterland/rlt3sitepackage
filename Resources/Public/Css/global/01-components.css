@@ -1,16 +1,25 @@
 @import "fonts/fonts.css";
 @import "fonts/font-size.css";
 @import "basics.css";
+@import "../tokens/color-palette.css";
 @import "links.css";
 @import "fluid.css";
 @import "space.css";
 @import "grid.css";
 @import "image.css";
-@import "page-header.css";
+/*@import "page-header.css";
 @import "page-content.css";
-@import "page-footer.css";
+@import "page-footer.css";*/
 
 /* variables */
+:root {
+    --breadcrumbs-bar-height: 2rem;
+    --top-banner-height: 3.375rem;
+    --navigation-height: 5rem;
+    --sticky-header-height: calc(var(--navigation-height) + var(--breadcrumbs-bar-height));
+    --z-index-sticky-header: 100;
+    --z-index-sidebar-mobile: 90;
+}
 :root {
     /* Touch Targets */
     --touch-target-minimum: 1.5rem;
