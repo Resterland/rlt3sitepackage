@@ -3,7 +3,6 @@
 @import "accessibility/skipLink.css";
 @import "global/01-components.css";
 @import "interactive/01-components.css";
-/*@import "tokens/color-palette.css";*/
 @import "contribute/openstreetmap.css";
 @import "layout/page-header.css";
 @import "layout/page-content.css";
