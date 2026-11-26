@@ -40,8 +40,13 @@
     overflow-x: hidden;
     padding: 2px;
 }
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin-inline: .25rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
 /* Button */
-
 .navigation__button {
     padding: 0.7rem;
     margin: 0;
