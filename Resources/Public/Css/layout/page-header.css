@@ -79,18 +79,51 @@
     }
 }
 /* Dropdown navbar START */
-.menu {
-    /*--menu-button-padding: 0.25rem 0.25rem;*/
-    position: relative;
-    display: flex;
-    align-items: center;
-    column-gap: var(--grid-gutter);
-    justify-content: space-between;
+/* Tab Button */
+.menu__tab-button {
+    margin: 0;
+    font: inherit;
+    line-height: var(--font-line-ui);
+    white-space: nowrap;
+    background: transparent;
+
+    &:is([aria-expanded="true"], :hover) {
+        color: var(--interactive-text);
+        background-color: var(--interactive-color);
+    }
+
+    /* Arrow & Icon */
+    &::before,
+    &::after {
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: currentcolor;
+        mask-size: cover;
+    }
+
+    /* Arrow */
+    &::after {
+        content: "";
+        mask-image: url("../../Icons/icon/chevron-down.svg");
+    }
+    &[aria-expanded="true"]::after {
+        scale: -1;
+    }
 }
+
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
     :root {
         --navigation-height: 2.9rem;
-}
+        --menu-button-padding: 0.25rem 0.25rem;
+    }
+    /* Dropdown navbar START */
+    /*.menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: var(--grid-gutter);
+        justify-content: space-between;
+    }*/
 
 }
