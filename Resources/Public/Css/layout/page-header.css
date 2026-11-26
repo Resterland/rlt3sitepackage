@@ -1,5 +1,5 @@
 :root {
-    --navigation-height: 2.9rem;
+    --navigation-height: 5rem;
     --menu-button-padding: 0.125rem 0.25rem;
     --font-line-ui: 1;
 }
@@ -41,7 +41,8 @@
     border: none;
 
     &:hover {
-        background-color: var(--accent-text);
+        background-color: var(--interactive-color);
+        color: var(--interactive-text);
     }
     &::before {
         display: block;
@@ -61,4 +62,11 @@
     &[aria-expanded="false"]::before {
         mask-image: url("../../Icons/icon/menu.svg");
     }
+}
+/* media queries equal or larger than 70rem */
+@media (width > 62.5rem) {
+    :root {
+        --navigation-height: 2.9rem;
+}
+
 }
