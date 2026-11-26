@@ -1,6 +1,6 @@
 'use strict';
 const button = document.querySelector(`[aria-controls="navigation__popup"]`);
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector(".page-header-navi");
 if (button instanceof HTMLElement && navigation instanceof HTMLElement) {
   button.addEventListener("click", () => {
     const open = (!(navigation.dataset.open === "true")).toString();

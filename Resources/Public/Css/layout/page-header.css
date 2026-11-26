@@ -21,7 +21,6 @@
     grid-area: nav;
     background: var(--success-color);
     color: var(--success-text);
-    display: flex;
 }
 .breadcrumb-bar {
     grid-area: bread;
