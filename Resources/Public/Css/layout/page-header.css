@@ -78,6 +78,15 @@
         mask-image: url("../../Icons/icon/menu.svg");
     }
 }
+/* Dropdown navbar START */
+.menu {
+    /*--menu-button-padding: 0.25rem 0.25rem;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: var(--grid-gutter);
+    justify-content: space-between;
+}
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
     :root {
