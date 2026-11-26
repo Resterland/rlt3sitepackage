@@ -3,3 +3,6 @@
     --menu-button-padding: 0.125rem 0.25rem;
     --font-line-ui: 1;
 }
+.page-header {
+    display: grid;
+}
