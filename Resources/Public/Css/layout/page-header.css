@@ -5,4 +5,27 @@
 }
 .page-header {
     display: grid;
+    grid-template-areas:
+    "logo nav nav"
+    "bread bread bread";
+    background: var(--accent-color);
+    color: var(--accent-text);
+}
+.page-header-logo {
+    grid-area: logo;
+    background: var(--warning-color);
+    color: var(--warning-text);
+    display: flex;
+}
+.page-header-navi {
+    grid-area: nav;
+    background: var(--success-color);
+    color: var(--success-text);
+    display: flex;
+}
+.breadcrumb-bar {
+    grid-area: bread;
+    background: var(--error-color);
+    color: var(--error-text);
+    display: flex;
 }
