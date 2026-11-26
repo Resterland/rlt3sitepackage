@@ -119,6 +119,18 @@
 .menu__tab-label[data-type="short"] {
     display: none;
 }
+/* Title */
+.menu__panel-title::after {
+    position: relative;
+    display: block;
+    height: 1px;
+    content: "";
+    background-color: var(--error-color);
+}
+/* Link */
+.menu__tab-link {
+    padding: var(--menu-button-padding);
+}
 
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
