@@ -90,7 +90,6 @@
 .scheme-switcher__button,
 .menu__tab-button {
     display: flex;
-    column-gap: var(--grid-gutter);
     align-items: center;
     padding: var(--menu-button-padding);
     border: none;
@@ -139,10 +138,6 @@
     content: "";
     background-color: var(--error-color);
 }
-/* Link */
-.menu__tab-link {
-    padding: var(--menu-button-padding);
-}
 
 /* media queries equal or larger than 70rem */
 @media (width > 62.5rem) {
@@ -150,13 +145,5 @@
         --navigation-height: 2.9rem;
         --menu-button-padding: 0.25rem 0.25rem;
     }
-    /* Dropdown navbar START */
-    /*.menu {
-        position: relative;
-        display: flex;
-        align-items: center;
-        column-gap: var(--grid-gutter);
-        justify-content: space-between;
-    }*/
 
 }
