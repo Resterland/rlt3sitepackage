@@ -80,6 +80,9 @@
     grid-column: 1 / -1;
     justify-self: stretch;
 }
+.page-header-navi[data-open="true"] .navigation__popup {
+    display: block;
+}
 /* Dropdown navbar START */
 /* Tab Button */
 .menu__tab-button {
