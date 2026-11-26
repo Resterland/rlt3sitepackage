@@ -86,10 +86,12 @@
 }
 /* Dropdown navbar START */
 /* Tab Button */
+.menu__tab-button {
+    display: flex;
+}
 .language-switcher__button,
 .scheme-switcher__button,
 .menu__tab-button {
-    display: flex;
     align-items: center;
     padding: var(--menu-button-padding);
     border: none;
