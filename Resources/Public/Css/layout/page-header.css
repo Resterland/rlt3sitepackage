@@ -61,14 +61,10 @@
     }
     &::before {
         display: block;
-
         width: 1.5rem;
         height: 1.5rem;
-
         content: "";
-
         background-color: currentcolor;
-
         mask-size: cover;
     }
     &[aria-expanded="true"]::before {
@@ -81,6 +77,11 @@
 /* Dropdown navbar START */
 /* Tab Button */
 .menu__tab-button {
+    display: flex;
+    column-gap: var(--grid-gutter);
+    align-items: center;
+    padding: var(--menu-button-padding);
+    border: none;
     margin: 0;
     font: inherit;
     line-height: var(--font-line-ui);
@@ -103,12 +104,20 @@
 
     /* Arrow */
     &::after {
+        margin-left: auto;
         content: "";
         mask-image: url("../../Icons/icon/chevron-down.svg");
     }
     &[aria-expanded="true"]::after {
         scale: -1;
     }
+}
+/* Label */
+.menu__tab-label {
+    order: -1;
+}
+.menu__tab-label[data-type="short"] {
+    display: none;
 }
 
 /* media queries equal or larger than 70rem */
