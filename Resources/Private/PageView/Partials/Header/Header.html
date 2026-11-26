@@ -5,19 +5,19 @@
 <header class="page-header">
     <f:comment><!-- <h2>Data in variable headerMenu</h2>
     <f:debug inline="true">{headerMenu}</f:debug>--></f:comment>
+    <div class="page-header-logo">
+        <f:if condition="{settings.header.logo.enable}">
+            <f:render
+                partial="Structure/Logo"
+                arguments="{_all}"/>
+        </f:if>
+        <h1 class="sitetitle">
+            <f:link.page pageUid="{site.rootPageId}">
+                {site.configuration.websiteTitle}
+            </f:link.page>
+        </h1>
+    </div>
     <nav class="navigation" data-scheme="" data-open="false">
-        <div class="page-header-logo">
-            <f:if condition="{settings.header.logo.enable}">
-                <f:render
-                    partial="Structure/Logo"
-                    arguments="{_all}"/>
-            </f:if>
-            <h1 class="sitetitle">
-                <f:link.page pageUid="{site.rootPageId}">
-                    {site.configuration.websiteTitle}
-                </f:link.page>
-            </h1>
-        </div>
         <f:render partial="Navigation/MainMenu" arguments="{_all}"/>
     </nav>
     <f:if condition="{settings.breadcrumb.enable}">
