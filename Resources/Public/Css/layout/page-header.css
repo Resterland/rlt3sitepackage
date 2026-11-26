@@ -7,10 +7,11 @@
     --z-index-sidebar-mobile: 90;
 }
 .page-header {
-    background: var(--accent-color);
+    display: grid;
     position: sticky;
     top: 0;
     z-index: var(--z-index-sticky-header);
+    background: var(--accent-color);
 }
 .page-header-logo {
     margin: 0;
