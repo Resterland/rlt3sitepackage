@@ -19,6 +19,22 @@
     color: var(--warning-text);
     display: flex;
 }
+.logo {
+     margin: 0;
+     width: calc(var(--step-3) + 0.75rem);
+     padding-right: 0.25rem;
+     vertical-align: middle;
+     fill: currentColor;
+ }
+.sitetitle {
+    letter-spacing: var(--letter-spacing-fluid);
+    text-align: center;
+    font-family: var(--font-family-chewy);
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--text-shadow-color);
+}
+.sitetitle a:link {
+    text-decoration: none;
+}
 .page-header-navi {
     grid-area: nav;
     background: var(--success-color);
