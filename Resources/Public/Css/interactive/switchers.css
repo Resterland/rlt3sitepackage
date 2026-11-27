@@ -68,6 +68,9 @@
         background-color: var(--interactive-color);
         color: var(--interactive-text);
     }
+    &> svg {
+        margin-right: 0.125rem;
+    }
 }
 
 .language-switcher__list,
