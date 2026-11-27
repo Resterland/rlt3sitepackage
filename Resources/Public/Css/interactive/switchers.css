@@ -41,7 +41,6 @@
     }
 }
 .language-switcher__button {
-     font: inherit;
      /* Icon */
      &::before {
          content: "";
@@ -57,6 +56,11 @@
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--border--line-color);
+    background: var(--error-color);
+    color: var(--error-text);
+}
+.scheme-switcher__dropdown > button {
+    border:none;
 }
 
 .language-switcher__list,
