@@ -4,6 +4,7 @@
 .language-switcher,
 .scheme-switcher {
     position: relative;
+    width: 5rem;
 }
 
 .language-switcher__button,
@@ -56,6 +57,7 @@
     border: 1px solid var(--border--line-color);
     background: var(--error-color);
     color: var(--error-text);
+    width: 5rem;
 }
 .scheme-switcher__item > button {
     display: flex;
@@ -69,7 +71,7 @@
         color: var(--interactive-text);
     }
     &> svg {
-        margin-right: 0.125rem;
+        margin-right: 0.25rem;
     }
 }
 
