@@ -51,19 +51,17 @@
 .language-switcher__dropdown,
 .scheme-switcher__dropdown {
     position: absolute;
-    right: 0;
     z-index: 1;
-    width: 100%;
-    padding: 0.75rem;
+    padding: 0.125rem;
     border: 1px solid var(--border--line-color);
     background: var(--error-color);
     color: var(--error-text);
 }
 .scheme-switcher__item > button {
-    padding: 0.7rem;
+    display: flex;
+    padding: 0.125rem;
     margin: 0;
     cursor: pointer;
-    outline-offset: -2px;
     background-color: transparent;
     border: none;
     &:hover {
@@ -74,7 +72,6 @@
 
 .language-switcher__list,
 .scheme-switcher__list {
-    text-align: center;
     padding: 0;
     margin: 0;
 }
