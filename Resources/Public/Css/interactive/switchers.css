@@ -59,7 +59,7 @@
     background: var(--error-color);
     color: var(--error-text);
 }
-.scheme-switcher__dropdown > button {
+.scheme-switcher__item > button {
     border:none;
 }
 
@@ -68,8 +68,6 @@
     text-align: center;
     padding: 0;
     margin: 0;
-
-    background: var(--primary-color);
 }
 
 .language-switcher__option {
