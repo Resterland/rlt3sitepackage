@@ -60,7 +60,16 @@
     color: var(--error-text);
 }
 .scheme-switcher__item > button {
-    border:none;
+    padding: 0.7rem;
+    margin: 0;
+    cursor: pointer;
+    outline-offset: -2px;
+    background-color: transparent;
+    border: none;
+    &:hover {
+        background-color: var(--interactive-color);
+        color: var(--interactive-text);
+    }
 }
 
 .language-switcher__list,
